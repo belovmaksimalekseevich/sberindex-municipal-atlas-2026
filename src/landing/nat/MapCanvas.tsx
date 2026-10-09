@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type RefObject } from 'react'
+import { useEffect, useEffectEvent, useRef, useState, type RefObject } from 'react'
 import { MAP, N } from './natdata'
 import { dprFor } from '../canvasNet'
 import { scaleOf } from '../zoom'
@@ -66,7 +66,7 @@ export function MapCanvas({ fill, ring = null, ringFill, onHover, tipRef, onPick
     const io = new IntersectionObserver(es => { if (es.some(e => e.isIntersecting)) { setNear(true); io.disconnect() } }, { rootMargin: '100% 0px' }); io.observe(el)
     return () => { ro.disconnect(); io.disconnect() }
   }, [])
-  const fillRef = useRef(fill); fillRef.current = fill
+  const currentFill = useEffectEvent((ti: number) => fill(ti))
   const last = useRef(0)
   useEffect(() => {
     const el = cv.current
@@ -75,10 +75,10 @@ export function MapCanvas({ fill, ring = null, ringFill, onHover, tipRef, onPick
     const W2 = Math.round(w * dpr), H2 = Math.round(h * dpr)
     // палитра и номер цвета каждого контура (255 — контур вне справочника, не рисуется)
     const css = getComputedStyle(wrap.current!), memo = new Map<string, number>(), palette: string[] = []
-    const f = fillRef.current, fills = new Uint8Array(IDS.length)
+    const fills = new Uint8Array(IDS.length)
     TI.forEach((ti, k) => {
       if (ti < 0) { fills[k] = 255; return }
-      const c = f(ti)
+      const c = currentFill(ti)
       let pi = memo.get(c)
       if (pi == null) { pi = palette.length; palette.push(c.startsWith('var(') ? css.getPropertyValue(c.slice(4, -1)).trim() || '#999' : c); memo.set(c, pi) }
       fills[k] = pi

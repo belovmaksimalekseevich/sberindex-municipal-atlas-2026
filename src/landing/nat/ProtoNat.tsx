@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import { LAST, N, SCOPE, monthIn, monthLabel } from './natdata'
 import { MONTHS, catalogOf, useConfig } from '../data'
-import { useView } from '../state'
+import { useView } from '../selection'
 import { MapAtlas } from './MapAtlas'
 import { Bare, Sec, Tabs } from './Head'
 import { Groups } from '../Groups'

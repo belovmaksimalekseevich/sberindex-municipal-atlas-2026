@@ -2,7 +2,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { CATS, MONTHS, T, catalogOf, monthLabel, num, rankColor, rankOrder, rub, type ConfigMonth } from './data'
 import cardsRaw from './i26/cards_SSE6_December.json'
 import { displaySpendingText } from './displayNames'
-import { useView } from './state'
+import { useView } from './selection'
 import { WithConfig } from './Toolbar'
 import { Sec } from './nat/Head'
 

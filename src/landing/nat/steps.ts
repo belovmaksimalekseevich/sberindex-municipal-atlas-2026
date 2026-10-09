@@ -16,22 +16,24 @@ export function whenFull(f: () => void) {
   return () => removeEventListener(FULL_EVENT, on)
 }
 
-/** Шаги рассказа: активен шаг, пересекающий линию на 60% высоты окна (на узком экране — на 80%: картинка занимает верх окна). */
+/** Шаг — последняя карточка, достигшая середины окна (80% высоты на узком экране). */
 const LINE = () => (innerWidth < 861 ? 0.8 : 0.5)
 export function useSteps(root: RefObject<HTMLElement | null>, setStep: (i: number) => void) {
   useGSAP(() => {
     const els = [...root.current!.querySelectorAll<HTMLElement>('[data-step]')]
-    els.forEach(el => {
-      const i = Number(el.dataset.step)
-      const pc = Math.round(LINE() * 100)
-      ScrollTrigger.create({ trigger: el, start: `top ${pc}%`, end: `bottom ${pc}%`, onToggle: s => { if (s.isActive && !nav.busy) setStep(i) } })
-    })
+    let current = -1
     const settle = () => {
+      if (!els.length) return
       const line = innerHeight * LINE()
-      let cur = -1
-      els.forEach((el, k) => { if (el.getBoundingClientRect().top <= line) cur = k })
-      if (cur >= 0) setStep(Number(els[cur].dataset.step))
+      let index = 0
+      els.forEach((el, k) => { if (el.getBoundingClientRect().top <= line) index = k })
+      const next = Number(els[index].dataset.step)
+      if (next !== current) { current = next; setStep(next) }
     }
+    const update = () => { if (!nav.busy) settle() }
+    // Один диапазон включает и промежутки между карточками: быстрый скролл не пропускает шаг.
+    ScrollTrigger.create({ trigger: root.current, start: 'top bottom', end: 'bottom top', onUpdate: update, onRefresh: update })
+    update()
     addEventListener(NAV_END, settle)
     return () => removeEventListener(NAV_END, settle)
   }, { scope: root })

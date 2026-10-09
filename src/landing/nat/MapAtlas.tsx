@@ -1,9 +1,9 @@
-import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { memo, useCallback, useEffect, useEffectEvent, useMemo, useRef, useState } from 'react'
 import { ChevronLeft, ChevronRight, Pause, Play } from 'lucide-react'
 import { MapCanvas } from './MapCanvas'
 import { LAST, MAP, NEW_TERRITORIES, N, rankColor as staticColor } from './natdata'
 import { MONTHS, T, catalogOf, clusterOf, rankColor, monthLabel, monthShort, rankOrder, retry, rub, useConfig, type ConfigMonth } from '../data'
-import { useMo, useView } from '../state'
+import { useMo, useView } from '../selection'
 
 const fillOf = (cm: ConfigMonth, focus: number | null) => (ti: number) => {
   const raw = cm.lab[ti]
@@ -55,15 +55,20 @@ function AtlasReady({ data }: { data: ConfigMonth[] }) {
   const [focus, setFocus] = useState<number | null>(null)
   const [tipTi, setTipTi] = useState<number | null>(null)
   const box = useRef<HTMLDivElement>(null), tipEl = useRef<HTMLDivElement>(null)
-  const miRef = useRef(mi); miRef.current = mi
+  const nextMonth = useEffectEvent(() => setMi((mi + 1) % MONTHS.length))
   const pickMonth = useCallback((i: number) => { setPlay(false); setMi(i) }, [setMi])
   const cm = data[mi], order = rankOrder(cm), month = MONTHS[mi].month
   const none = useMemo(() => cm.lab.filter(l => typeof l !== 'number').length, [cm])
   const noGeometry = useMemo(() => cm.lab.filter((l, ti) => typeof l === 'number' && !MAP.paths[T[ti].id]).length, [cm])
-  useEffect(() => { setFocus(null); setTipTi(null) }, [mi])
+  const [interactionMonth, setInteractionMonth] = useState(mi)
+  if (interactionMonth !== mi) {
+    setInteractionMonth(mi)
+    setFocus(null)
+    setTipTi(null)
+  }
   useEffect(() => {
     if (!play) return
-    const t = setInterval(() => { if (!document.hidden) setMi((miRef.current + 1) % MONTHS.length) }, 900)
+    const t = setInterval(() => { if (!document.hidden) nextMonth() }, 900)
     const io = new IntersectionObserver(es => { if (!es[es.length - 1].isIntersecting) setPlay(false) })
     if (box.current) io.observe(box.current)
     return () => { clearInterval(t); io.disconnect() }

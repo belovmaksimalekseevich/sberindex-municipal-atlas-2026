@@ -1,8 +1,9 @@
 import { useMemo, useRef, useState } from 'react'
+import { stability } from './stability'
 import mapRaw from './i26/map.json'
 import newTerr from './i26/newterr.json'
-import { base, MONTHS, T, catalogOf, monthLabel, monthShort, num, groupColor, type ConfigMonth } from './data'
-import { useSelection } from './state'
+import { MONTHS, T, catalogOf, monthLabel, monthShort, num, groupColor, type ConfigMonth } from './data'
+import { useSelection } from './selection'
 import { SectionControls } from './SiteHeader'
 import { WithConfig } from './Toolbar'
 import { useChapter, useOnEnter } from './reveal'
@@ -14,28 +15,6 @@ const KINDS = [
   { kind: 'switch', label: 'полная история со сменами' },
   { kind: 'bottom', label: 'неполная история' },
 ] as const
-
-/** Смена присвоения на соседних общих ID после сохранённого max-overlap сопоставления. */
-export function stability(config: string, months: ConfigMonth[]) {
-  const trans = base.transitions[config] ?? []
-  const rows = T.map((_, ti) => {
-    const ranks = months.map(cm => cm.display_group[ti])
-    let switches = 0, comparedPairs = 0
-    trans.forEach(t => {
-      const mi = months.findIndex(m => m.month === t.from)
-      const left = months[mi]?.lab[ti], right = months[mi + 1]?.lab[ti]
-      if (typeof left === 'number' && typeof right === 'number') {
-        comparedPairs++
-        if (t.from_raw_to_raw[String(left)] !== right) switches++
-      }
-    })
-    const observed = ranks.filter(r => r != null).length, complete = observed === months.length
-    const kind = !complete ? 'bottom' : switches > 0 ? 'switch' : 'top'
-    return { ti, ranks, switches, kind, observed, complete, comparedPairs }
-  })
-  const moves = trans.map(t => ({ t, n: t.matched_changed_n }))
-  return { rows, moves, total: moves.reduce((s, x) => s + x.n, 0), common: trans.reduce((s, t) => s + t.common, 0) }
-}
 
 export function Flow() {
   const ref = useChapter<HTMLElement>()
@@ -143,7 +122,7 @@ function SwitchMap({ rows, ti, setTi }: { rows: ReturnType<typeof stability>['ro
     <figure className="m-0 min-w-0">
       <h3 className="font-[family-name:var(--display)] text-[24px] uppercase leading-none">Где меняли группу</h3>
       <div ref={box} className="relative mt-4 border-2 border-ink bg-white p-2"
-        onPointerMove={e => { const a = (e.target as Element).getAttribute?.('data-ti'); if (a == null) { setTip(null); return } const r = box.current!.getBoundingClientRect(); setTip({ ti: +a, x: e.clientX - r.left, y: e.clientY - r.top }) }}
+        onPointerMove={e => { const a = (e.target as Element).getAttribute?.('data-ti'); if (a == null) { setTip(null); return } const r = box.current!.getBoundingClientRect(); setTip({ ti: +a, x: Math.min(e.clientX - r.left + 12, box.current!.clientWidth - 250), y: e.clientY - r.top }) }}
         onPointerLeave={() => setTip(null)}>
         <svg viewBox={`0 0 ${MAPF.W} ${MAPF.H}`} className="block w-full" role="img" aria-label="Карта МО, менявших группу">
           <path d={MAPF.out + newTerr.path} fill="#EEF0F4" stroke="#fff" strokeWidth={0.3} />
@@ -153,7 +132,7 @@ function SwitchMap({ rows, ti, setTi }: { rows: ReturnType<typeof stability>['ro
         </svg>
         {tip && (
           <div className="pointer-events-none absolute z-10 grid max-w-[240px] gap-0.5 bg-ink px-3 py-2 text-[13px] text-white shadow-[5px_5px_0_var(--mark)]"
-            style={{ left: Math.min(tip.x + 12, (box.current?.clientWidth ?? 600) - 250), top: tip.y + 12 }}>
+            style={{ left: tip.x, top: tip.y + 12 }}>
             <b>{T[tip.ti].name}</b><span className="text-[#D5D8E0]">{T[tip.ti].region ?? ''}</span>
             <span>Число смен в наблюдаемых соседних парах — {sw.get(tip.ti) ?? 0}; публикаций — {rows[tip.ti].observed}/24</span>
           </div>

@@ -1,9 +1,10 @@
 import type { ReactNode } from 'react'
 import { Sec } from './Head'
 import { LAST, N, TRACK, monthIn, num, rub, rankOrder, rankColor } from './natdata'
-import { FAR, StoryScene, groups, pairName, ratio, seen, vmax, vmin } from './Scene'
+import { StoryScene } from './Scene'
+import { FAR, groups, pairName, ratio, seen, vmax, vmin } from './sceneData'
 import { MONTHS } from '../data'
-import { ChapterScrolly, chapterSteps } from './Chapters2'
+import { StoryFigures } from './Chapters2'
 
 // ---- описательная география групп: доля МО группы с большей медианой по крупным зонам (по координатам центров МО)
 const geoStats = (() => {
@@ -88,7 +89,6 @@ function CmpPair() {
  *  шаги 7–10 — графики. Картинка закреплена, шаги прокручиваются рядом. */
 export function StoryChapters(): ReactNode {
   const g0 = groups[0], g1 = groups.at(-1)!
-  const st = chapterSteps()
   const TOTAL = 10
   const L = (i: number, k: string) => `${i} из ${TOTAL} · ${k}`
   return (
@@ -102,12 +102,7 @@ export function StoryChapters(): ReactNode {
         { k: L(5, 'Проекция профилей'), scene: 'graphPair', cmp: <CmpPair />, t: <>Покажем две сохранённые координаты профиля: уровень расходов и контраст выбранных категорий с Total. Это проекция X0/X1, а не раскладка по связям и не полная многомерная геометрия.{fb && <> Выделенная далёкая пара соединена ребром экономической близости; рядом приведены её исходные расходы.</>} Вид можно двигать и масштабировать.</> },
         { k: L(6, 'Группы в проекции'), scene: 'graphGroups', t: <>Цвет показывает присвоение NCut10. По этой двумерной картинке нельзя заключить, что все десять групп отделены в полном пространстве. Линии — экранное подмножество сети близости, не потоки и не все связи.</> },
       ]} />
-      <ChapterScrolly chapter="" steps={[
-        { ...st.ch4[2], k: L(7, 'Чем различаются') },
-        { ...st.ch5[1], k: L(8, 'Состав во времени'), t: <>Группы соседних месяцев сопоставлены по максимальному пересечению на общих ID. ARI соседних разбиений: {TRACK.ariMin == null ? '—' : num(TRACK.ariMin, 2)}–{TRACK.ariMax == null ? '—' : num(TRACK.ariMax, 2)}, медиана {TRACK.ariMed == null ? '—' : num(TRACK.ariMed, 2)}. Среди {n(TRACK.total)} полных историй хотя бы одна смена у <b>{n(TRACK.switching)}</b> МО; неполных историй — {n(N.terr.length - TRACK.total)}. Цвета связывают присвоения, но не доказывают постоянные экономические типы.</> },
-        { ...st.ch6[0], k: L(9, 'Подробно или укрупнённо') },
-        { ...st.ch7[1], k: L(10, 'Надёжность') },
-      ]} />
+      <StoryFigures label={L} temporalText={<>Группы соседних месяцев сопоставлены по максимальному пересечению на общих ID. ARI соседних разбиений: {TRACK.ariMin == null ? '—' : num(TRACK.ariMin, 2)}–{TRACK.ariMax == null ? '—' : num(TRACK.ariMax, 2)}, медиана {TRACK.ariMed == null ? '—' : num(TRACK.ariMed, 2)}. Среди {n(TRACK.total)} полных историй хотя бы одна смена у <b>{n(TRACK.switching)}</b> МО; неполных историй — {n(N.terr.length - TRACK.total)}. Цвета связывают присвоения, но не доказывают постоянные экономические типы.</>} />
     </Sec>
   )
 }

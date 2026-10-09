@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 import { LEAD, catalogOf, retry, useConfig, type ConfigMonth } from './data'
-import { useSelection } from './state'
+import { useSelection } from './selection'
 
 // Выбор варианта и месяца переехал в шапку (SiteHeader). Здесь остался общий шлюз данных для глав.
 

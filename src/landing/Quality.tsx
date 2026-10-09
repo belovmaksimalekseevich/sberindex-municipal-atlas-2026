@@ -1,5 +1,5 @@
 import { base, MONTHS, catalogOf, num, monthLabel, monthsCount, type Metric } from './data'
-import { useView } from './state'
+import { useView } from './selection'
 import { Sec } from './nat/Head'
 
 const IDS = ['SW', 'CH', 'S_Dbw', 'AVI', 'AVU', 'MQ'] as const

@@ -1,5 +1,5 @@
 import { base, MONTHS, catalogOf, monthLabel, num, type Metric } from './data'
-import { useView } from './state'
+import { useView } from './selection'
 import evidenceRaw from './i26/supporting_evidence.json'
 import { Sec } from './nat/Head'
 import { displayEvidenceText } from './evidenceDisplay'

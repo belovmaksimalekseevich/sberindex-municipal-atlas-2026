@@ -3,7 +3,7 @@ import { reduced } from '../motion'
 import { useSteps } from './steps'
 import { LAST, N, monthLabel, num, rankColor, rankOrder, rub } from './natdata'
 import { LEAD, MONTHS, base, median, groupColor, type ConfigMonth } from '../data'
-import { stability } from '../Flow'
+import { stability } from '../stability'
 import supportRaw from '../i26/supporting_evidence.json'
 import leadRaw from '../i26/lead.json'
 import { MapCanvas } from './MapCanvas'
@@ -80,11 +80,11 @@ const topSwitch = N.terr.map((_, i) => i).filter(i => SW[i]).sort((a, b) => SW[b
 
 /** История фиксированного NCut10; цвета связаны сохранёнными межмесячными соответствиями. */
 function MonthMap() {
-  const [mi, setMi] = useState(0)
+  const [mi, setMi] = useState(() => reduced() ? LAST : 0)
   const fig = useRef<HTMLElement>(null)
   // проигрывание только пока карта на экране: вне экрана каждая смена месяца — перерисовка 2,6 тыс. контуров впустую
   useEffect(() => {
-    if (reduced()) { setMi(LAST); return }
+    if (reduced()) return
     let t = 0
     const io = new IntersectionObserver(es => {
       const on = es[es.length - 1].isIntersecting
@@ -145,7 +145,7 @@ function Subsample() {
   </div></figure>
 }
 /** Сюжет остаётся фиксированным NCut10 / декабрь 2024; активные экраны ниже управляются выбором. */
-export function chapterSteps() {
+function chapterSteps() {
   const ratios = N.categories.map((c, k) => ({ c, r: (HI.median[k] ?? 0) / (LO.median[k] || 1) })).filter(x => x.c.role === 'category')
   const maxR = ratios.reduce((a, b) => b.r > a.r ? b : a), minR = ratios.reduce((a, b) => b.r < a.r ? b : a)
   return {
@@ -165,4 +165,16 @@ export function chapterSteps() {
       { k: 'Подвыборки', fig: <Subsample />, t: <>Для июня и декабря 2024 убирали 20% МО и заново рассчитывали нормировку, сеть и разбиения. По десять проверок каждого метода. SSE6 устойчивее в среднем, однако исходная проблемная группа NCut10 G7 не восстановлена целиком; её геометрия при SSE6 хуже SSE10 во всех десяти декабрьских подвыборках. Это границы результата, не вероятность «правильного» типа.</> },
     ] as FigStep[],
   }
+}
+
+export function StoryFigures({ label: L, temporalText }: { label: (index: number, title: string) => string; temporalText: ReactNode }): ReactNode {
+  const st = chapterSteps()
+  return (
+      <ChapterScrolly chapter="" steps={[
+        { ...st.ch4[2], k: L(7, 'Чем различаются') },
+        { ...st.ch5[1], k: L(8, 'Состав во времени'), t: temporalText },
+        { ...st.ch6[0], k: L(9, 'Подробно или укрупнённо') },
+        { ...st.ch7[1], k: L(10, 'Надёжность') },
+      ]} />
+  )
 }

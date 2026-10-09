@@ -29,7 +29,13 @@ export function NetExpand({ title, caption, net }: { title: string; caption?: st
   const [picked, setPicked] = useState<number | null>(net.selected ?? null)
   const ratio = useViewportRatio(open)
   const { cm, obs } = net
-  useEffect(() => { setFocus(null); setPicked(net.selected ?? null) }, [cm.config_id, cm.month, net.selected])
+  const selection = `${cm.config_id}:${cm.month}:${net.selected ?? ''}`
+  const [previousSelection, setPreviousSelection] = useState(selection)
+  if (previousSelection !== selection) {
+    setPreviousSelection(selection)
+    setFocus(null)
+    setPicked(net.selected ?? null)
+  }
   const pick = (ti: number) => { setPicked(ti); net.onPick?.(ti) }
   const lab = picked !== null ? cm.lab[picked] : null
   const pc = typeof lab === 'number' ? clusterOf(cm, lab) : undefined

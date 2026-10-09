@@ -25,7 +25,13 @@ export function Network({ cm, net, obs, focus = null, selected = null, onPick, s
   const tip = useRef<HTMLDivElement>(null)
   const mv = useRef({ raf: 0, x: 0, y: 0 })
   useEffect(() => () => cancelAnimationFrame(mv.current.raf), [])
-  useEffect(() => setHoverTi(null), [cm.config_id, cm.month])
+  const scope = `${cm.config_id}:${cm.month}`
+  const [hoverScope, setHoverScope] = useState(scope)
+  if (hoverScope !== scope) {
+    setHoverScope(scope)
+    setHoverTi(null)
+  }
+  useEffect(() => { cancelAnimationFrame(mv.current.raf); mv.current.raf = 0 }, [scope])
 
   useEffect(() => {
     const el = cv.current!
@@ -36,22 +42,20 @@ export function Network({ cm, net, obs, focus = null, selected = null, onPick, s
 
   // раскладка вписывается в холст с сохранением пропорций
   // Точки могут перекрываться: это сохранённая проекция двух координат, без раздвигания узлов.
-  const drawW = useRef(0)
-  const pos = useMemo(() => {
+  const { pos, drawWidth } = useMemo(() => {
     const m = new Map<number, P>()
-    if (!size) return m
+    if (!size) return { pos: m, drawWidth: 0 }
     const W = size, H = size / ratio, pad = small ? 10 : 16
     const a = Math.max(0.6, Math.min(2.2, aspect || 1))
     const iw = W - 2 * pad, ih = H - 2 * pad
     const w = a > iw / ih ? iw : ih * a, h = a > iw / ih ? iw / a : ih
     const ox = pad + (iw - w) / 2, oy = pad + (ih - h) / 2
     lay.forEach((p, ti) => m.set(ti, { x: ox + p[0] * w, y: oy + p[1] * h }))
-    drawW.current = w
-    return m
+    return { pos: m, drawWidth: w }
   }, [lay, aspect, size, ratio, small])
 
   const active = hoverTi != null ? (typeof cm.lab[hoverTi] === 'number' ? (cm.lab[hoverTi] as number) : null) : focus
-  const rOf = () => Math.max(1.1, Math.min(small ? 2.4 : 3, (3.1 * drawW.current) / 880))
+  const radius = Math.max(1.1, Math.min(small ? 2.4 : 3, (3.1 * drawWidth) / 880))
   // поток: сеть рисуется там и приходит картинкой; без потока — в основном потоке
   const last = useRef(0)
   useEffect(() => {
@@ -68,7 +72,7 @@ export function Network({ cm, net, obs, focus = null, selected = null, onPick, s
         let pi = memo.get(c); if (pi == null) { pi = palette.length; palette.push(c); memo.set(c, pi) } fills[i] = pi
       }
       const my = ++last.current
-      const request = requestBitmap({ type: 'net', o: { w, h, dpr: dprFor(w, h, undefined, cvScale), pos: posA, edges: edgesOf(net).slice(), fills, palette, group, active: active ?? -1, r: rOf(), ring: hoverTi ?? selected ?? -1 } },
+      const request = requestBitmap({ type: 'net', o: { w, h, dpr: dprFor(w, h, undefined, cvScale), pos: posA, edges: edgesOf(net).slice(), fills, palette, group, active: active ?? -1, r: radius, ring: hoverTi ?? selected ?? -1 } },
         bmp => { if (last.current !== my || !cv.current) bmp.close(); else showBitmap(cv.current, bmp) })
       return () => { cancelBitmap(request) }
     }
@@ -77,12 +81,12 @@ export function Network({ cm, net, obs, focus = null, selected = null, onPick, s
     cm.clusters.forEach(c => col.set(c.g, cssColor(el, rankColor(cm, c.g))))
     const paper = '#fff', mute = '#C3C8D2'
     drawNet({
-      ctx, dpr, w, h, view: ID_VIEW, pos, edges: net.edges, r: rOf(),
+      ctx, dpr, w, h, view: ID_VIEW, pos, edges: net.edges, r: radius,
       color: i => { const l = cm.lab[i]; return typeof l === 'number' ? (active != null && l !== active ? mute : col.get(l)!) : paper },
       hiEdge: active != null ? (s, t) => cm.lab[s] === active && cm.lab[t] === active : undefined,
       ring: hoverTi ?? selected,
     })
-  }, [pos, size, ratio, cm, net, active, hoverTi, selected, small, workerFailed])
+  }, [pos, size, ratio, cm, net, active, hoverTi, selected, radius, workerFailed])
 
   const onMove = (e: React.PointerEvent<HTMLCanvasElement>) => {
     const r = e.currentTarget.getBoundingClientRect(), m = mv.current, z = scaleOf(e.currentTarget)

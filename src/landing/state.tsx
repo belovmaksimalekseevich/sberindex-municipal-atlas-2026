@@ -1,5 +1,6 @@
 // Общий выбор на всю страницу: вариант (метод и представление), месяц и МО. Все разделы показывают одно и то же сочетание.
-import { createContext, use, useEffect, useMemo, useState, type ReactNode } from 'react'
+import { useEffect, useMemo, useState, type ReactNode } from 'react'
+import { ViewCtx, MoCtx } from './selection'
 import { LEAD, MONTHS, T, catalogOf } from './data'
 
 // Выбор хранится в адресе (?v=вариант&m=месяц&mo=МО), чтобы ссылкой можно было поделиться ровно этим видом.
@@ -16,13 +17,6 @@ function readUrl() {
     }
   } catch { return {} }
 }
-
-interface View { config: string; setConfig: (id: string) => void; mi: number; setMi: (i: number) => void }
-interface Mo { ti: number; setTi: (ti: number) => void }
-type Selection = View & Mo
-// два контекста: выбор МО в паспорте не перерисовывает таблицы и сети, выбор месяца — паспорт
-const ViewCtx = createContext<View | null>(null)
-const MoCtx = createContext<Mo | null>(null)
 
 export function SelectionProvider({ children, defaultTi }: { children: ReactNode; defaultTi: number }) {
   const [init] = useState(readUrl)
@@ -43,19 +37,4 @@ export function SelectionProvider({ children, defaultTi }: { children: ReactNode
   const view = useMemo(() => ({ config, setConfig, mi, setMi }), [config, mi])
   const mo = useMemo(() => ({ ti, setTi }), [ti])
   return <ViewCtx value={view}><MoCtx value={mo}>{children}</MoCtx></ViewCtx>
-}
-
-export function useView(): View {
-  const v = use(ViewCtx)
-  if (!v) throw new Error('useView вне SelectionProvider')
-  return v
-}
-export function useMo(): Mo {
-  const v = use(MoCtx)
-  if (!v) throw new Error('useMo вне SelectionProvider')
-  return v
-}
-/** Всё сразу (подписка на оба контекста) — для старых разделов. */
-export function useSelection(): Selection {
-  return { ...useView(), ...useMo() }
 }

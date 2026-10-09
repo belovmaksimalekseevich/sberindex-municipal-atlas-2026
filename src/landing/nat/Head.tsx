@@ -1,4 +1,4 @@
-import { createContext, use, useEffect, useRef, useState, type ReactNode } from 'react'
+import { createContext, use, useEffect, useEffectEvent, useState, type ReactNode } from 'react'
 
 /** Заголовок раздела: номер и вопрос закреплены под полосой глав, пока идёт раздел; ниже — короткий ответ. */
 export function ChapterHead({ id, n, title, answer }: { id?: string; n: string; title: ReactNode; answer: ReactNode; as?: 'section' | 'header' }) {
@@ -38,9 +38,10 @@ export interface Tab { id: string; label: string; body: ReactNode }
  *  Переход по ссылке на панель (#groups) открывает её (событие tab:open из goTo). */
 export function Tabs({ items, label }: { items: Tab[]; label: string }) {
   const [cur, setCur] = useState(items[0].id)
-  const ids = useRef(items.map(t => t.id)); ids.current = items.map(t => t.id)
+  const ids = items.map(t => t.id)
+  const openTab = useEffectEvent((id: string) => { if (ids.includes(id)) setCur(id) })
   useEffect(() => {
-    const on = (e: Event) => { const id = (e as CustomEvent<string>).detail; if (ids.current.includes(id)) setCur(id) }
+    const on = (e: Event) => openTab((e as CustomEvent<string>).detail)
     addEventListener('tab:open', on)
     return () => removeEventListener('tab:open', on)
   }, [])
@@ -49,7 +50,7 @@ export function Tabs({ items, label }: { items: Tab[]; label: string }) {
   const key = (e: React.KeyboardEvent) => {
     if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return
     e.preventDefault()
-    const k = ids.current.indexOf(cur), nx = ids.current[(k + (e.key === 'ArrowRight' ? 1 : ids.current.length - 1)) % ids.current.length]
+    const k = ids.indexOf(cur), nx = ids[(k + (e.key === 'ArrowRight' ? 1 : ids.length - 1)) % ids.length]
     choose(nx); (e.currentTarget.querySelector(`#${nx}-tab`) as HTMLElement | null)?.focus()
   }
   return (

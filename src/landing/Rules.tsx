@@ -1,6 +1,6 @@
 import { useRef } from 'react'
-import { GRAPH_PROJECTION_NOTE, LEAD, MONTHS, base, catalogOf, clusterOf, fileUrl, monthLabel, prefetchNet, rankColor, rankOrder, retry, retryNet, useConfig, useNearViewport, useNet } from './data'
-import { useMo, useView } from './state'
+import { GRAPH_PROJECTION_NOTE, MONTHS, base, catalogOf, clusterOf, fileUrl, monthLabel, rankColor, rankOrder, retry, retryNet, useConfig, useNearViewport, useNet } from './data'
+import { useMo, useView } from './selection'
 import { Network } from './Network'
 import { NetExpand } from './NetExpand'
 import { Sec, Tabs } from './nat/Head'
@@ -40,6 +40,3 @@ export function Rules() {
     ]} />
   </Sec>
 }
-
-/** Декабрьская сеть общая для трёх моделей; единый кэш исключает повторные запросы. */
-export function prefetchRuleNets() { prefetchNet(LEAD, MONTHS.at(-1)!.month) }
