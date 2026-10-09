@@ -16,7 +16,7 @@
     "verify:data": "node scripts/verify-data.mjs",
     "verify:dist": "node scripts/verify-data.mjs --dist",
     "verify:documents": "node scripts/verify-documents.mjs",
-    "test:runtime": "node scripts/verify-runtime-faults.cjs"
+    "test:runtime": "node scripts/verify-runtime-faults.cjs && node scripts/verify-network-interaction.cjs"
   },
   "dependencies": {
     "@fontsource-variable/golos-text": "^5.3.0",

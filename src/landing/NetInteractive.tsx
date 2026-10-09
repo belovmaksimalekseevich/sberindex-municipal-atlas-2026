@@ -27,16 +27,30 @@ export function NetInteractive({ cm, net, focus, selected, onPick, ratio, label 
   }, [lay, aspect, w, h])
   const pos = useRef(new Map<number, P>())
   const view = useRef<View>({ ...ID_VIEW })
+  const raf = useRef(0)
+  const ptrs = useRef(new Map<number, P>())
+  const drag = useRef<{ i: number | null; last: P; moved: number } | null>(null)
+  const pinch = useRef<number | null>(null)
   const zoomLabel = useRef<HTMLSpanElement>(null)
   const [hover, setHover] = useState<number | null>(null)
+  const scope = `${cm.config_id}:${cm.month}`
+  const [hoverContext, setHoverContext] = useState({ scope, net })
+  if (hoverContext.scope !== scope || hoverContext.net !== net) {
+    setHoverContext({ scope, net })
+    setHover(null)
+  }
   useEffect(() => {
+    cancelAnimationFrame(raf.current)
+    ptrs.current.clear()
+    drag.current = null
+    pinch.current = null
     pos.current = new Map(base)
     view.current = { ...ID_VIEW }
     if (zoomLabel.current) zoomLabel.current.textContent = '100%'
-  }, [base])
+  }, [base, scope])
+  useEffect(() => () => cancelAnimationFrame(raf.current), [])
   useEffect(() => { const el = cv.current!; const ro = new ResizeObserver(() => setW(el.clientWidth)); ro.observe(el); return () => ro.disconnect() }, [])
 
-  const raf = useRef(0)
   const redraw = () => {
     cancelAnimationFrame(raf.current)
     raf.current = requestAnimationFrame(() => {
@@ -71,9 +85,6 @@ export function NetInteractive({ cm, net, focus, selected, onPick, ratio, label 
     el.addEventListener('wheel', on, { passive: false })
     return () => { el.removeEventListener('wheel', on); el.removeEventListener('pointerdown', arm) }
   })
-  const ptrs = useRef(new Map<number, P>())
-  const drag = useRef<{ i: number | null; last: P; moved: number } | null>(null)
-  const pinch = useRef<number | null>(null)
   const onDown = (e: React.PointerEvent) => {
     cv.current!.setPointerCapture(e.pointerId)
     const p = toLocal(e.clientX, e.clientY); ptrs.current.set(e.pointerId, p)
@@ -88,7 +99,11 @@ export function NetInteractive({ cm, net, focus, selected, onPick, ratio, label 
     const g = drag.current; if (!g) return
     const dx = p.x - g.last.x, dy = p.y - g.last.y; g.last = p; g.moved += Math.abs(dx) + Math.abs(dy)
     if (g.i == null) { view.current.x += dx; view.current.y += dy }
-    else if (g.moved > 3) { const q = pos.current.get(g.i)!; pos.current.set(g.i, { x: q.x + dx / view.current.k, y: q.y + dy / view.current.k }) }
+    else if (g.moved > 3) {
+      const q = pos.current.get(g.i)
+      if (!q) { drag.current = null; return }
+      pos.current.set(g.i, { x: q.x + dx / view.current.k, y: q.y + dy / view.current.k })
+    }
     redraw()
   }
   const onUp = (e: React.PointerEvent) => {
