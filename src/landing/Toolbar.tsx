@@ -16,7 +16,7 @@ export function WithConfig({ children, id }: { children: (months: ConfigMonth[])
   return (
     <div role="alert" className="my-6 rounded-lg border border-line bg-surface p-6">
       <p className="font-semibold">Не удалось загрузить вариант «{catalogOf(cid).display_name}»</p>
-      <p className="mt-1 text-[15px] text-muted-ink">{entry.message}. Проверьте соединение и повторите, либо вернитесь к варианту, выбранному исследованием.</p>
+      <p className="mt-1 text-[15px] text-muted-ink">{entry.message}. Проверьте соединение и повторите либо вернитесь к варианту, выбранному исследованием.</p>
       <div className="mt-4 flex flex-wrap gap-3">
         <button onClick={() => retry(cid)} className="btn btn-solid">Повторить загрузку</button>
         {cid !== LEAD && <button onClick={() => sel.setConfig(LEAD)} className="btn btn-line">Вернуться к выбранному</button>}

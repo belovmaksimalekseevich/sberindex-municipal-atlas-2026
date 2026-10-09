@@ -1,0 +1,822 @@
+{
+  "UTC": "2026-10-09T13:53:57.738439+00:00",
+  "status": "PASS_ACTUAL_OPERATIONAL_CLOSURE_AND_LOCAL_TRANSFER",
+  "passed": true,
+  "checks_passed": 118,
+  "checks": [
+    {
+      "name": "fixed_manifest_driver_collector",
+      "passed": true
+    },
+    {
+      "name": "exact_current_package_members",
+      "passed": true
+    },
+    {
+      "name": "registered_grid44_K6_K8",
+      "passed": true
+    },
+    {
+      "name": "completed_grid44_88",
+      "passed": true
+    },
+    {
+      "name": "new_registration_no_retry_no_K10",
+      "passed": true
+    },
+    {
+      "name": "fixed_runtime_pins",
+      "passed": true
+    },
+    {
+      "name": "fixed_resource_envelope",
+      "passed": true
+    },
+    {
+      "name": "measured_admission_42_without_quality",
+      "passed": true
+    },
+    {
+      "name": "admission_time_RSS_disk",
+      "passed": true
+    },
+    {
+      "name": "outer_launch_and_exit",
+      "passed": true
+    },
+    {
+      "name": "closure_wall_deadline",
+      "passed": true
+    },
+    {
+      "name": "postexit_all_owners_quiescent",
+      "passed": true
+    },
+    {
+      "name": "postexit_counts_archive_binding",
+      "passed": true
+    },
+    {
+      "name": "positive_complete_local_transfer",
+      "passed": true
+    },
+    {
+      "name": "archive_verified_size_SHA_binding",
+      "passed": true
+    },
+    {
+      "name": "exact_extracted_inventory",
+      "passed": true
+    },
+    {
+      "name": "actual_output_and_ZIP_under_caps",
+      "passed": true
+    },
+    {
+      "name": "source_after_and_transfer_fingerprints",
+      "passed": true
+    },
+    {
+      "name": "archived_metadata_matches_sidecars",
+      "passed": true
+    },
+    {
+      "name": "44_unique_processes_and_commits",
+      "passed": true
+    },
+    {
+      "name": "R202412-K08-full:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202412-K08-full:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202412-K08-full:early_full_parity",
+      "passed": true
+    },
+    {
+      "name": "R202412-K08-D01:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202412-K08-D01:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202406-K06-D01:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202406-K06-D01:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202406-K06-D02:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202406-K06-D02:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202406-K06-D03:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202406-K06-D03:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202406-K06-D04:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202406-K06-D04:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202406-K06-D05:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202406-K06-D05:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202406-K06-D06:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202406-K06-D06:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202406-K06-D07:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202406-K06-D07:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202406-K06-D08:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202406-K06-D08:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202406-K06-D09:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202406-K06-D09:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202406-K06-D10:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202406-K06-D10:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202406-K06-full:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202406-K06-full:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202406-K06-full:early_full_parity",
+      "passed": true
+    },
+    {
+      "name": "R202406-K08-D01:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202406-K08-D01:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202406-K08-D02:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202406-K08-D02:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202406-K08-D03:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202406-K08-D03:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202406-K08-D04:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202406-K08-D04:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202406-K08-D05:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202406-K08-D05:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202406-K08-D06:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202406-K08-D06:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202406-K08-D07:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202406-K08-D07:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202406-K08-D08:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202406-K08-D08:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202406-K08-D09:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202406-K08-D09:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202406-K08-D10:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202406-K08-D10:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202406-K08-full:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202406-K08-full:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202406-K08-full:early_full_parity",
+      "passed": true
+    },
+    {
+      "name": "R202412-K06-D01:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202412-K06-D01:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202412-K06-D02:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202412-K06-D02:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202412-K06-D03:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202412-K06-D03:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202412-K06-D04:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202412-K06-D04:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202412-K06-D05:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202412-K06-D05:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202412-K06-D06:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202412-K06-D06:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202412-K06-D07:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202412-K06-D07:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202412-K06-D08:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202412-K06-D08:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202412-K06-D09:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202412-K06-D09:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202412-K06-D10:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202412-K06-D10:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202412-K06-full:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202412-K06-full:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202412-K06-full:early_full_parity",
+      "passed": true
+    },
+    {
+      "name": "R202412-K08-D02:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202412-K08-D02:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202412-K08-D03:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202412-K08-D03:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202412-K08-D04:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202412-K08-D04:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202412-K08-D05:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202412-K08-D05:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202412-K08-D06:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202412-K08-D06:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202412-K08-D07:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202412-K08-D07:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202412-K08-D08:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202412-K08-D08:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202412-K08-D09:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202412-K08-D09:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "R202412-K08-D10:process_commit_and_budget",
+      "passed": true
+    },
+    {
+      "name": "R202412-K08-D10:metadata_bound_to_verified_archive",
+      "passed": true
+    },
+    {
+      "name": "calibration01:pool_closed_and_limits",
+      "passed": true
+    },
+    {
+      "name": "calibration02:pool_closed_and_limits",
+      "passed": true
+    },
+    {
+      "name": "main:pool_closed_and_limits",
+      "passed": true
+    },
+    {
+      "name": "new_calibrations_final_once",
+      "passed": true
+    },
+    {
+      "name": "pipeline_and_frozen_collector_finished",
+      "passed": true
+    },
+    {
+      "name": "all_read_sources_unchanged",
+      "passed": true
+    }
+  ],
+  "counts": {
+    "tasks": 44,
+    "logical_partitions": 88,
+    "closed_processes": 44,
+    "calibrations": 2,
+    "main_tasks": 42,
+    "full_reference_parities": 8,
+    "collector_present": 88,
+    "collector_complete_stability_groups": 8,
+    "archive_members": 4014,
+    "unique_worker_owner_identities": 44
+  },
+  "resources": {
+    "wall_seconds_including_export": 2156.7709763460007,
+    "outer_wall_seconds": 2156.9661734104156,
+    "max_task_wall_seconds": 288.1736708720018,
+    "max_worker_sampled_RSS_bytes": 919105536,
+    "pool_peak_sampled_RSS_bytes": {
+      "calibration01": 951644160,
+      "calibration02": 658038784,
+      "main": 2294386688
+    },
+    "pool_peak_active_workers": {
+      "calibration01": 1,
+      "calibration02": 1,
+      "main": 6
+    },
+    "CPU_task_counts": {
+      "0": 9,
+      "1": 7,
+      "2": 7,
+      "3": 7,
+      "4": 8,
+      "5": 6
+    },
+    "raw_exported_bytes": 1515037815,
+    "archive_bytes": 1515911731,
+    "combined_raw_and_archive_bytes": 3030949546
+  },
+  "archive_sha256": "acfc46573a47b23cd477ba2457ebe7edb2e399f91f50354d9f2948e0406b10bd",
+  "manifest_sha256": "dd0e91c9383b7cfaa03c668edc135add56c19eed86e07af4d54b38749a970313",
+  "driver_sha256": "56f43612ad91b9c796e213d8cf2751df32c85f0c8465f1b1d2e0a4999bfc745e",
+  "sources": {
+    "package/MANIFEST.json": "dd0e91c9383b7cfaa03c668edc135add56c19eed86e07af4d54b38749a970313",
+    "package/TASKS.json": "7ba7387eb20bce28470f5de9207e9b836f161c6c66e597cea1fa62fedb128beb",
+    "package/PROTOCOL.json": "178c0ca1b1851e42880310dc492b5ce4cdcb596e5ffe04766f056d7190f252a2",
+    "download_r00/campaign/REGISTRATION.json": "08d6f2bad2a24f80f2e6f68cc2e9d5df5fb816c41a94facf66a3ccac2504724d",
+    "download_r00/campaign/QUEUE.json": "725e749304fe3c676673ddbeed4f57f08a873fe068f0118dc7f8a587a1600b6e",
+    "download_r00/campaign/ADMISSION.json": "90311364cc921f564c1e85275fff914907f23bc70ef3f1d33a0a4a957501b2f3",
+    "download_r00/campaign/MEASUREMENTS.json": "2a61b4cdb9ea620b580a0de415f8a471c5e7de29816dafd46c191925b0ca4713",
+    "download_r00/EXPORT.json": "b068c3f3e21d63126012c48f0ee3d3f0fb3ade4e0228475b9ee97be8f185815b",
+    "download_r00/CLOSURE.json": "92b85625d71366895ab425fa19447a9020f3bb16eea5bcc995a3d6f6e8db89db",
+    "download_r00/LOCAL_TRANSFER_VERIFIED.json": "67f904996b64f22b8ab6d3aad49e51381664558c6d124f14496aff7e4f23222f",
+    "download_r00/DOWNLOAD_PIPELINE.json": "74f10d0f387a36450a16f1f6dddaa5884a979d8ed37c85fb778f73ef23cfb7a7",
+    "download_r00/control/LAUNCH.json": "9a0c5f08cb528955ec0a88c2f3b5e0b850cb44c71c571d9cabdcbd4ade3b9b31",
+    "download_r00/control/EXIT.json": "3a3e7ee8217d4c4fbdc2beaf5a56bb2ab7f8a501689c6b47e0fa9cccf8b76dbf",
+    "download_r00/control/FINAL_READBACK.json": "085f065e50c79a34d682062276533e89edfcf422ffd4ded1777e38673743614d",
+    "download_r00/control/DRIVER_OWNER.json": "40a45fa1980e3366efb9e0af93511889b635dab65e83968894985d57a9a8779e",
+    "readback_r00/READBACK.json": "da000572b92880e07ab736b278b3b21a8f1829c689f885bd9a5cfba295dba5e9",
+    "download_r00/campaign/work/calibration01/R202412-K08-full/process_receipt.json": "3bf20b008758de6d37c75f641efac2695a2572133dc600b4dd49bfc68ca441bc",
+    "download_r00/campaign/work/calibration01/R202412-K08-full/launch.json": "6e17121e7d12ba99b7703be7ff41da2fee7a76666026423e2d901153f037c467",
+    "download_r00/campaign/work/calibration01/R202412-K08-full/intent.json": "6a137f91a813a9f9b782fc744daf50aa8b2c9048341ae6f62186bd603f7a2d02",
+    "download_r00/campaign/work/calibration01/R202412-K08-full/validated.json": "f08262e52c6c10b0b1c84d537ff6486e8f2c10390e73592debc2f142ee419db5",
+    "download_r00/campaign/work/calibration01/R202412-K08-full/output/COMMIT.json": "18eb9af55410d8250a830a3c30e007b2f1de1b927adf7af8edd49fd83a7c38c3",
+    "download_r00/campaign/work/calibration01/R202412-K08-full/output/registration.json": "432611f53d540d0d7226548d725ba4f0354c418aa8698be7085330026fff5bf6",
+    "download_r00/campaign/work/calibration02/R202412-K08-D01/process_receipt.json": "b0e20c2ec6996f68248b3d68204ea57b35969b5e2d53e26df991da680feb974d",
+    "download_r00/campaign/work/calibration02/R202412-K08-D01/launch.json": "bc5fe5eb2f6dd35f8465a9ecf42d7681d09469c8752874a1ee773154c3450c71",
+    "download_r00/campaign/work/calibration02/R202412-K08-D01/intent.json": "035fa022dee17dead56a24f239c09fdd62445ef7e3a76bb1075eb771b41365bd",
+    "download_r00/campaign/work/calibration02/R202412-K08-D01/validated.json": "475d1c7362d3cc51c8aaff7c7dee59e43221ad37651a0a4d78e811450802e17e",
+    "download_r00/campaign/work/calibration02/R202412-K08-D01/output/COMMIT.json": "78757739921b98f51cd3f61e4352079c59d2804ec787b1e40ec1e2929bcc484c",
+    "download_r00/campaign/work/calibration02/R202412-K08-D01/output/registration.json": "18110876941ce443cd834c6d6e4a567241b4c4463842860f7c63c5be9d62e66f",
+    "download_r00/campaign/work/main/R202406-K06-D01/process_receipt.json": "06f1e7c3969d1b6999093d43ce5eb49deb4da7ea4d00a7d71ca177ad7ecf19cc",
+    "download_r00/campaign/work/main/R202406-K06-D01/launch.json": "70da6a4777fc90c7985200791e864f01726d215682b17f7a8028eb65cf17ceb6",
+    "download_r00/campaign/work/main/R202406-K06-D01/intent.json": "37eb1237954d3f7366a7bb9f1dd83ca4c789aea66678a18970817fbe6e56e075",
+    "download_r00/campaign/work/main/R202406-K06-D01/validated.json": "9255a55f104fef0c5ddc67e4e6660f1f179d07b4efe3e7d56fb6312219282abe",
+    "download_r00/campaign/work/main/R202406-K06-D01/output/COMMIT.json": "34bc378c5c1a5c6a6d1eca57afb7a03b2b95cbbf725169c500d421b87ad4c8c9",
+    "download_r00/campaign/work/main/R202406-K06-D01/output/registration.json": "88f22f6c412aec7cec7dacf9e3fadb27fc0e753f151dedd80b34d0b19fcc7fce",
+    "download_r00/campaign/work/main/R202406-K06-D02/process_receipt.json": "a9fcbec1bbd1aa7d55a1c8c681c30c832fa71671c1d619f870b3a9440a4570c2",
+    "download_r00/campaign/work/main/R202406-K06-D02/launch.json": "69cb7ff843e6ec7c7475caf50e5b331bf664fd869df3af236a03ea9f1ddb4f2a",
+    "download_r00/campaign/work/main/R202406-K06-D02/intent.json": "04eb9fe82467ed9c1790739b28637f347e9ee1193a49ec6f6e70a599ff59eeea",
+    "download_r00/campaign/work/main/R202406-K06-D02/validated.json": "5a04dc6801cd12129ee0b9c5d14164dd3effbc358e859b622d854880b1409807",
+    "download_r00/campaign/work/main/R202406-K06-D02/output/COMMIT.json": "1e9ecf38a2ac94a50548107fe14913140d78bef91f57a42a4c74cbf1ac9d0ce5",
+    "download_r00/campaign/work/main/R202406-K06-D02/output/registration.json": "501fc34255588f95fa6ccd544eb2432d6aa7bf15ce27ee59533263c4784d6b26",
+    "download_r00/campaign/work/main/R202406-K06-D03/process_receipt.json": "28216a89b666900c3c2ccc57b049242ee7245fdbc308a70c1fa30ebe68493717",
+    "download_r00/campaign/work/main/R202406-K06-D03/launch.json": "aca42a03744cfcc0bde782edd263452c8fe313670f7867c2687b8aa84843662d",
+    "download_r00/campaign/work/main/R202406-K06-D03/intent.json": "f472930c4a860c488792b607691661dfe2b0c591424d4349b0949d7181c5fc49",
+    "download_r00/campaign/work/main/R202406-K06-D03/validated.json": "da06e67ff514fc8d5aaa7dc2161140161e72353b92a8c25193f6e4a43bb7b38d",
+    "download_r00/campaign/work/main/R202406-K06-D03/output/COMMIT.json": "00bd71e41a6becd1f071f328e134b2c31b59f9a4ccd0ce6f6f0be3b513b47045",
+    "download_r00/campaign/work/main/R202406-K06-D03/output/registration.json": "ded7aaf5f79de797eed86f560219bf3239db4b9567bccd3da3c9656052dc2e35",
+    "download_r00/campaign/work/main/R202406-K06-D04/process_receipt.json": "8b54f2cded4b55cfbf9d1da5dcf390a607ed730b841328abf7f02d096f595310",
+    "download_r00/campaign/work/main/R202406-K06-D04/launch.json": "abf8c4be9e02540713cabf473633867a1105b9b3a8d7b37ff1c7f187b4fb51e6",
+    "download_r00/campaign/work/main/R202406-K06-D04/intent.json": "c35f510e3118c86e8323f104e2191305598a392f60cacb74a80a401f1d84eecd",
+    "download_r00/campaign/work/main/R202406-K06-D04/validated.json": "c0e25e43a0a7dbb5a280c50dc9b570bc64907ebab6a5571894fc47f98200cb24",
+    "download_r00/campaign/work/main/R202406-K06-D04/output/COMMIT.json": "37b321b85efccf141a0934f3817c26a24dae487b1f6d7ae11ac7a1b97c9b7d3d",
+    "download_r00/campaign/work/main/R202406-K06-D04/output/registration.json": "199db1a6342302a0695c4779a46d15843039099fb3a81bf53fa47c4377e2b68f",
+    "download_r00/campaign/work/main/R202406-K06-D05/process_receipt.json": "8fe3e28abe1dfe6a43e10aec02355ebcf5400cb7b8ae2c0bfec62dfbce5d671c",
+    "download_r00/campaign/work/main/R202406-K06-D05/launch.json": "ffb4b8c3e475303964e2d57c148625120237ef3c2c0f63aba506da0ff594a264",
+    "download_r00/campaign/work/main/R202406-K06-D05/intent.json": "265fa9b54cdcd96fd70f155f234e13b8e666c9af4ed112406c04d7315e0ad6c1",
+    "download_r00/campaign/work/main/R202406-K06-D05/validated.json": "3933f17385788d478023ff6386ac07730a902cfea1ecf6919fbf32c4ac8bc3b3",
+    "download_r00/campaign/work/main/R202406-K06-D05/output/COMMIT.json": "9b1ba4a5b723815d3057cd91328e44846a46264d6817549e83aafeef2b1e78f8",
+    "download_r00/campaign/work/main/R202406-K06-D05/output/registration.json": "a3626b0ef9795ecaf65cf8ccf885850656a6e98e2a53ee37d2e282199ea8ef7d",
+    "download_r00/campaign/work/main/R202406-K06-D06/process_receipt.json": "3845834783bc07325423afeedd8b06b5b9cb05b2017da16f69af69459278c6e2",
+    "download_r00/campaign/work/main/R202406-K06-D06/launch.json": "b1a1bf40c7ddbb34eca852f1c65f99714a90b7a72cacab585e30c86a64e9e838",
+    "download_r00/campaign/work/main/R202406-K06-D06/intent.json": "f05aa14fca321bec7eb6321a0760f5e261e66db94be190444e8395a4c87cb080",
+    "download_r00/campaign/work/main/R202406-K06-D06/validated.json": "7fbde77b000b6db062f5705bc54a6b73e994f3e408109e7ede996a331ebe05e6",
+    "download_r00/campaign/work/main/R202406-K06-D06/output/COMMIT.json": "5af0dcaa7d5982d74b819e19db084c2ef22eab03208daf608e37a98190cbf792",
+    "download_r00/campaign/work/main/R202406-K06-D06/output/registration.json": "e9f094bb4ecb82703d18f262b27f101bb871ae3f1db57b8786a3831150f31b13",
+    "download_r00/campaign/work/main/R202406-K06-D07/process_receipt.json": "f69ff2831af2c6a24d8c3d5f51ced198d6f53578c6709aab9cb63f615b11d612",
+    "download_r00/campaign/work/main/R202406-K06-D07/launch.json": "1bd9d9a50ad2010860b8a742c21d17e32fefa40e8aedf0e41749514309aa32e3",
+    "download_r00/campaign/work/main/R202406-K06-D07/intent.json": "fda3616678a6887e13ed461b6fbafef9c0275b5df9baaffb68130b871e9d7736",
+    "download_r00/campaign/work/main/R202406-K06-D07/validated.json": "ef3979eb4ce2ea5fcf447f4b4fe157ed4aecd6cdda28704976a66e84b22d4cdb",
+    "download_r00/campaign/work/main/R202406-K06-D07/output/COMMIT.json": "f4b41a538218d8562c139e539ebf1909b5444d2c0df7fb1263ffcf65f34f6ef7",
+    "download_r00/campaign/work/main/R202406-K06-D07/output/registration.json": "5df789c55447521bc7435c741f0129ef612a70fb0d88d892b75d7f65be64de6b",
+    "download_r00/campaign/work/main/R202406-K06-D08/process_receipt.json": "3bd9deaf34cc792e8e18d44c50e6ab6b2c81067356fd4f0eb1e1fc53edff8af5",
+    "download_r00/campaign/work/main/R202406-K06-D08/launch.json": "c446f47c0d3d8a708ef785f266a28cf203fa20ff1471d28721655571ba2af801",
+    "download_r00/campaign/work/main/R202406-K06-D08/intent.json": "eaaa4f75fe5bb530ca0135c0b06de74d487d876564242c5657b31a385a8f9385",
+    "download_r00/campaign/work/main/R202406-K06-D08/validated.json": "e07738bb6a5480302a8b6e0374f61268d4a835f317f85da3b349771617e78c39",
+    "download_r00/campaign/work/main/R202406-K06-D08/output/COMMIT.json": "14f1cf57b33a87e40134ee504f1665cac869245473af9ed4b526c518af617efb",
+    "download_r00/campaign/work/main/R202406-K06-D08/output/registration.json": "74a6d75dfeb7b1de928886fa708d23df5a06fb9d16213424aef0902d7be64732",
+    "download_r00/campaign/work/main/R202406-K06-D09/process_receipt.json": "181d5c234c411ac89c0adc565552a13a127b41c079b02f93486c1c6e770577eb",
+    "download_r00/campaign/work/main/R202406-K06-D09/launch.json": "ce2024d1f4e895f97e313a70766b937163c8e8858cdf8b489eafcfb014bd8ddf",
+    "download_r00/campaign/work/main/R202406-K06-D09/intent.json": "001541ec87e9f318758a188486cdb6c050bc1cdbc4a05e5d05364069d977e707",
+    "download_r00/campaign/work/main/R202406-K06-D09/validated.json": "3e0bf6a834ea046934b9a990dbd9db8dfe1937eadf2533704d4d571f59473f0e",
+    "download_r00/campaign/work/main/R202406-K06-D09/output/COMMIT.json": "c59ea83f1540892430135a00f79b0d30fa21c4318fabca59011694ca58b7f1bb",
+    "download_r00/campaign/work/main/R202406-K06-D09/output/registration.json": "0cbd9c2d5ed10ec275a48e57ec7f7f93b87b6ef95c27562480fde3eb97265e22",
+    "download_r00/campaign/work/main/R202406-K06-D10/process_receipt.json": "5b03d33fe83d078ccef4574d74c260d40625cf6219980f257964fceceb987baa",
+    "download_r00/campaign/work/main/R202406-K06-D10/launch.json": "772aa5fd5fa01d724d20e8facfce9fb19b6d8748a178f5a8df3dfc2f59faf1f7",
+    "download_r00/campaign/work/main/R202406-K06-D10/intent.json": "a52339887375b76eeb3c3754d25e305380f530c757746267081aa5adfceb6348",
+    "download_r00/campaign/work/main/R202406-K06-D10/validated.json": "a60d3b2d575f95ba0fa75b83f1e3b6a849a6518a16836ce0e9f573990c0a59ec",
+    "download_r00/campaign/work/main/R202406-K06-D10/output/COMMIT.json": "bb6cc0702bc026bf2b397a18fb562a167deee2551a9c422c2d67b7bb1a7f3d1c",
+    "download_r00/campaign/work/main/R202406-K06-D10/output/registration.json": "68045dda9a0902d4d356e5d03e0b1cf190a8cbb17a2f9e9c320a3e3615ca0d21",
+    "download_r00/campaign/work/main/R202406-K06-full/process_receipt.json": "ca1c649e1a2211f477e248e0918de8adf140d3e9b6d35ff318e0e256587825d1",
+    "download_r00/campaign/work/main/R202406-K06-full/launch.json": "f7ca19769397457a02590aa675d2ff181e4a02611d1ef45dc4bab73521c2171c",
+    "download_r00/campaign/work/main/R202406-K06-full/intent.json": "c170dc2373e9994b0bd7a3faa61382fdcc578fa92c573b83cf542fbbc5b1f2a5",
+    "download_r00/campaign/work/main/R202406-K06-full/validated.json": "b8253619f8d439b8312a4e577b72c54750a9866162ef5aca8af9f374710ee427",
+    "download_r00/campaign/work/main/R202406-K06-full/output/COMMIT.json": "1729392ff70524555a84308b24399e01fdae78a73ee5f468d07f36433068cb9d",
+    "download_r00/campaign/work/main/R202406-K06-full/output/registration.json": "9c8a048202fc664992f9d588bd6a770f38e43e76007abc71205353debb89fcdd",
+    "download_r00/campaign/work/main/R202406-K08-D01/process_receipt.json": "de7c43ca67774f450e43196abe01b6507c236d80016746227c2c98b1474d6c54",
+    "download_r00/campaign/work/main/R202406-K08-D01/launch.json": "791a2b449fa519ca7b24621be02b459b03469252122dbba845f6e1d1c8d26f18",
+    "download_r00/campaign/work/main/R202406-K08-D01/intent.json": "4a1268919f979010de646be90df524023d2ef06c61544c2291384f160051cc8f",
+    "download_r00/campaign/work/main/R202406-K08-D01/validated.json": "2046e130b368e7911aceceee7e9d212b3954b24f9150ba0c0270986542fa54df",
+    "download_r00/campaign/work/main/R202406-K08-D01/output/COMMIT.json": "3793098878208df38e99290299a78ceb65c2c19624bd0404f419365f0054782d",
+    "download_r00/campaign/work/main/R202406-K08-D01/output/registration.json": "4ece23f8dd1d8b3bae691b2e4a974fdb5b6bdb4e9a2291415eca3e1b2b3e1b1f",
+    "download_r00/campaign/work/main/R202406-K08-D02/process_receipt.json": "28b911dbb00fe0a26db67c968c2aff695638b23329d04f4da6aaf5b1e564171d",
+    "download_r00/campaign/work/main/R202406-K08-D02/launch.json": "52064563c5e725a9e80b7936310644cbfeef95ee2348e9e981eba0e2fd981d47",
+    "download_r00/campaign/work/main/R202406-K08-D02/intent.json": "0d99222771470221c40008a7a10324225d23e7e60032a3cdfc45b2906afcf168",
+    "download_r00/campaign/work/main/R202406-K08-D02/validated.json": "21674704b06244a52607660e7f62d039f24623c5983465642e70de4696907d1f",
+    "download_r00/campaign/work/main/R202406-K08-D02/output/COMMIT.json": "c4576c0410ce5e9d42ed3a84ad6901a6c4afd300f6a1e32b44611dbd3579a072",
+    "download_r00/campaign/work/main/R202406-K08-D02/output/registration.json": "d133addda59f94455979164d6af7f5a3f76abf8d1bd3f03d10103ef4ee33f5cb",
+    "download_r00/campaign/work/main/R202406-K08-D03/process_receipt.json": "f94da8beb4b32b31b655a71388264a01ecd210e4aebf25f71729ff7ba71cb663",
+    "download_r00/campaign/work/main/R202406-K08-D03/launch.json": "73dffba9a9ed5f4d6b4195cefd3bed17343515a2b980b18c18b5456eb6a9b6d8",
+    "download_r00/campaign/work/main/R202406-K08-D03/intent.json": "31819022d1b44676b2846dbc9b2a96acb7fff2376b3da5d613a678c2cc418200",
+    "download_r00/campaign/work/main/R202406-K08-D03/validated.json": "4d7762899c81c669830340bbda84ba3def16541c3279ff51fc935754460e6e00",
+    "download_r00/campaign/work/main/R202406-K08-D03/output/COMMIT.json": "e1bd8399eb8519f66d57381a2363bdbcb08f3c1bdbc61b3d99dcde03a2647f4a",
+    "download_r00/campaign/work/main/R202406-K08-D03/output/registration.json": "5c9f023d209af75913c85a9582fcdeaff8a44fc8fba06febfb7cf855bdbe2aa9",
+    "download_r00/campaign/work/main/R202406-K08-D04/process_receipt.json": "a19688c8b9cdaf2495f7969f73d53044b573d29bb66a937ea2d79ab6788e3777",
+    "download_r00/campaign/work/main/R202406-K08-D04/launch.json": "8c3e10be263c9051d7a7f62c97f464978359550421aa339950456e6a15571ba3",
+    "download_r00/campaign/work/main/R202406-K08-D04/intent.json": "bb5bc5af3e203f69e9b018c757c8b7d0f9b5524ff43e45e4c4fe87087197ee3d",
+    "download_r00/campaign/work/main/R202406-K08-D04/validated.json": "eff1e4b5584381526736400481ea6a70d1aebea199714b70206fedad76d13178",
+    "download_r00/campaign/work/main/R202406-K08-D04/output/COMMIT.json": "47b9d161a31f2f28f093d337329d020780ba1fb8276325e98c1c602f2b7513c9",
+    "download_r00/campaign/work/main/R202406-K08-D04/output/registration.json": "3c16f646dfd07faf4cd9cd5b2360f8a1f1bdd924012d6bb4107b5c7701c82b28",
+    "download_r00/campaign/work/main/R202406-K08-D05/process_receipt.json": "4fd2100264af5941e6d598cfcad5c8b134fb872454002eb310857eb27c9acd97",
+    "download_r00/campaign/work/main/R202406-K08-D05/launch.json": "febcf29db257be9d3bf4992b9df83062127b1c7ba5a485f95c73440d571d2b73",
+    "download_r00/campaign/work/main/R202406-K08-D05/intent.json": "d967fda1d003493bf4238c3902f90dd8dac93ff30a49665a5b021163df173f20",
+    "download_r00/campaign/work/main/R202406-K08-D05/validated.json": "452e70099aed69fee3783d1577282e3061aeaa397a9819bb33804c25979e0a2a",
+    "download_r00/campaign/work/main/R202406-K08-D05/output/COMMIT.json": "c1d75ffda13ef0da993732b8fe7d210d0b214d28a7e10e5ec1d67b0d9205ff0e",
+    "download_r00/campaign/work/main/R202406-K08-D05/output/registration.json": "b2d8ec2e3250257043303f3ace60bf887db743acad01c7210b5af97ef4658f35",
+    "download_r00/campaign/work/main/R202406-K08-D06/process_receipt.json": "368f7ee46cd7ecc259b805733ada4d27f8b5ae371debe82239bd8df2a794cd4e",
+    "download_r00/campaign/work/main/R202406-K08-D06/launch.json": "2de2cf2fbe06ea662309fea705acae893d8fd9d6a8cd0f6ef31ddf0f0267d616",
+    "download_r00/campaign/work/main/R202406-K08-D06/intent.json": "91b3a4e9bea1701319302b8d131cfe4863561d2d7db0426e2c575fa45fbd273e",
+    "download_r00/campaign/work/main/R202406-K08-D06/validated.json": "593cd218a07182b67052ffb69194db45db7a989ae45b519e9b8d08f3ef616360",
+    "download_r00/campaign/work/main/R202406-K08-D06/output/COMMIT.json": "f8f089b33cd25c558843051f996d36fb45e0a099525d82444273b569caa349ba",
+    "download_r00/campaign/work/main/R202406-K08-D06/output/registration.json": "96a4cd0ebb305bb0df6114604194ffa66963752a6a98333ae15706960d966d1c",
+    "download_r00/campaign/work/main/R202406-K08-D07/process_receipt.json": "3b35c4d98053c46c6a83b19338a8b2a6eb1cd7f752247bf0aa0da7cf578843cb",
+    "download_r00/campaign/work/main/R202406-K08-D07/launch.json": "1278d3c508f5d6b4ffd2d0226433cfc76b406d6d78c97d7799f7c77d3e10369b",
+    "download_r00/campaign/work/main/R202406-K08-D07/intent.json": "090093f1354a7b048f7b4a6dbfc13b7b1cdefa71564dbd3f88e5a30c51bac278",
+    "download_r00/campaign/work/main/R202406-K08-D07/validated.json": "4e35aca5eeab8f1a4f1e75364f85a46f4ccd0287de1ee0344fa50836560e19e1",
+    "download_r00/campaign/work/main/R202406-K08-D07/output/COMMIT.json": "7636b466965d46953913170be9df448293d4d9a613e985bb1d853301bfe15d30",
+    "download_r00/campaign/work/main/R202406-K08-D07/output/registration.json": "f578938500e22f1a809204aae6340ffda539a80913158fd2659b4989fa680dad",
+    "download_r00/campaign/work/main/R202406-K08-D08/process_receipt.json": "88994e1ac24eb6b4bf898e451aec13c20943a6d952b1f96469d99e190a9fba05",
+    "download_r00/campaign/work/main/R202406-K08-D08/launch.json": "2c9b5556357f401d34774555b10707ed8a1c05bcd2e1f9c8b5f21da1dbcc7364",
+    "download_r00/campaign/work/main/R202406-K08-D08/intent.json": "d6d3f773f64473b2583c48cd8d222e93503d8832839ac2767ac0ef443aa77794",
+    "download_r00/campaign/work/main/R202406-K08-D08/validated.json": "dda27900a163b504a5eb1aa56692e201846a49d7033d5bcabb8d11a136bd7ac8",
+    "download_r00/campaign/work/main/R202406-K08-D08/output/COMMIT.json": "428160c90898aea411d4ce9248d88b4f8dcb3fc74504cbab6a323c763db1d8ba",
+    "download_r00/campaign/work/main/R202406-K08-D08/output/registration.json": "16229927c96deefeefc7413be9f01cca987af4ce14e47f23ae57d1bc5be79af7",
+    "download_r00/campaign/work/main/R202406-K08-D09/process_receipt.json": "9e2a0dfc2c99aebf822e53bca0480a7a7f0c5592f38dd26c3026e7b023d4119c",
+    "download_r00/campaign/work/main/R202406-K08-D09/launch.json": "a07e0904cf09f67952d2514d353391231d6eaf8dd26de037610cf8afdcb3e89c",
+    "download_r00/campaign/work/main/R202406-K08-D09/intent.json": "bcda581a6eb85f488960c95cb405d2e8ffc39d3fe3974405eb7297f9633caf9d",
+    "download_r00/campaign/work/main/R202406-K08-D09/validated.json": "dbece501c84b218eefbc79053f89bcea7b044e24410d48fb97dc70f74528fd48",
+    "download_r00/campaign/work/main/R202406-K08-D09/output/COMMIT.json": "679f50d5820972f0bfc3a86c8328064ac7a6926505bafb200d4013c1799a9ec7",
+    "download_r00/campaign/work/main/R202406-K08-D09/output/registration.json": "a10facf28c2ba19116beecdf9ec703c10d0d01774ca6c857bbaba8f780f8cd82",
+    "download_r00/campaign/work/main/R202406-K08-D10/process_receipt.json": "15bdb51579707ca04284018e6d77b5909fcc36316ba25adce8935c59a9acc265",
+    "download_r00/campaign/work/main/R202406-K08-D10/launch.json": "5a6b68d8bbfb13d587f34b11d79d2d20c6e7d85d0c847f879775777ead457e36",
+    "download_r00/campaign/work/main/R202406-K08-D10/intent.json": "88efd6624bcec1c3441cf9ddabf7abca7dd635e5e02a8121452f5f04f26b91ce",
+    "download_r00/campaign/work/main/R202406-K08-D10/validated.json": "d95b0a6f9481dc2eb72c31916ee4a207ed4008f41165bb12319b643ba60cbdd4",
+    "download_r00/campaign/work/main/R202406-K08-D10/output/COMMIT.json": "01010ccf989a7e71caee40ef7e75486822ad11a073389d91f64087482ad1f15c",
+    "download_r00/campaign/work/main/R202406-K08-D10/output/registration.json": "4e9e9e8e339e4d20f4ec6b8d631ee49ba0183e4f86fc1be261fe85228a0d66e7",
+    "download_r00/campaign/work/main/R202406-K08-full/process_receipt.json": "11eb754615c67c4ae2247e212cacac8fa9c6c4953e339b0cd20d525dc6787fa3",
+    "download_r00/campaign/work/main/R202406-K08-full/launch.json": "96947cc6322744c1a6d80fcbbf488ec0c6b802084711432f681cc8db86bfff6b",
+    "download_r00/campaign/work/main/R202406-K08-full/intent.json": "3cb6c7b81ab2c467bffa8a34a6c0cc7341cff331bbcc8f503e86ef8bd0a5ec8e",
+    "download_r00/campaign/work/main/R202406-K08-full/validated.json": "e110f31b4244472728f6ea4bcfefd150a80aa955c5982145b611563c7ed7c03e",
+    "download_r00/campaign/work/main/R202406-K08-full/output/COMMIT.json": "f90d12154583f0cacf43095e75f4b7912924b4203c41fc1a959bfb54817e6512",
+    "download_r00/campaign/work/main/R202406-K08-full/output/registration.json": "f660a33754c7473be86834f05a393446402b35d219b73e4d2b4e7cb22b719b9f",
+    "download_r00/campaign/work/main/R202412-K06-D01/process_receipt.json": "714a2345e2fa2d14e01309b75dd944bbc4ce53482bfe397340ea7be8c51addef",
+    "download_r00/campaign/work/main/R202412-K06-D01/launch.json": "af58b89e0197bbf329a1b9112d3492f8bd841e893fbe4b43f66b9b54e02b7d85",
+    "download_r00/campaign/work/main/R202412-K06-D01/intent.json": "448083ee8964bff401e10f7aad527706b324b336eafde9362b69c65b4f77e051",
+    "download_r00/campaign/work/main/R202412-K06-D01/validated.json": "776f1377bde3cf564049791169799550181a9990cc65e6bbf97bb4add9c42d63",
+    "download_r00/campaign/work/main/R202412-K06-D01/output/COMMIT.json": "81132df9c74cb1472c70b3acc34d5b34b5d56626bb3c449011184c235d0e3fca",
+    "download_r00/campaign/work/main/R202412-K06-D01/output/registration.json": "85e7a591651559cae72fa7c7adf1c9818ecb9872183c7a0198198ed0afe86f5e",
+    "download_r00/campaign/work/main/R202412-K06-D02/process_receipt.json": "432cd247bb027471860f856aad2326cd8da79ef10b7a988a88e04305a40dd82a",
+    "download_r00/campaign/work/main/R202412-K06-D02/launch.json": "47e20e105cec5c877e4e15acf96c0c46092658fe8e0488b7a72e63168e0ba950",
+    "download_r00/campaign/work/main/R202412-K06-D02/intent.json": "6606ae8a6ca6c5625fc558752576c88c52b3bcf81b4c0b5ab902ee5f46199148",
+    "download_r00/campaign/work/main/R202412-K06-D02/validated.json": "60ca3543a61a0453e686cf1b1b5abfe3ecd03a322c97beaf0f53779059bfc09c",
+    "download_r00/campaign/work/main/R202412-K06-D02/output/COMMIT.json": "4e29a6bb20603d752957855bd0151f6d7f96eaa5355127773aa083b788e4c31a",
+    "download_r00/campaign/work/main/R202412-K06-D02/output/registration.json": "6f7044d9243905dd9af3ba0a0252c9e28b742a1e5dd02ac5bb9f97c39a38152a",
+    "download_r00/campaign/work/main/R202412-K06-D03/process_receipt.json": "9bd670f025571d6758a73445504e49b5cd1dee771b13428df1b9a17b690dfcd7",
+    "download_r00/campaign/work/main/R202412-K06-D03/launch.json": "223871a10469f176505e768454d8a1490632e8511594ec94daa52f96e4a152fa",
+    "download_r00/campaign/work/main/R202412-K06-D03/intent.json": "3cad33fc295df912be92ad239117c21693c5cb0a013f7cb289f2e9dc04b6dac0",
+    "download_r00/campaign/work/main/R202412-K06-D03/validated.json": "d36b62d03ae1e050eeb6b4d376aadf5fde68d260b969196a7b62a82cf764c513",
+    "download_r00/campaign/work/main/R202412-K06-D03/output/COMMIT.json": "d22ed6098a415b4b08b1a917cf87f13fe65c976a38c733ac5fd0d1faf0320b91",
+    "download_r00/campaign/work/main/R202412-K06-D03/output/registration.json": "330d5823e020458065bae5b786a4217e28b05c845d5aa704bd18005885b8f174",
+    "download_r00/campaign/work/main/R202412-K06-D04/process_receipt.json": "45914c41aaa531d9f0a789fe913502f13d53ebf139150e47be288891fac4addd",
+    "download_r00/campaign/work/main/R202412-K06-D04/launch.json": "ca6f5e4aaf1f657d7b5a78cb48f051e0baf4839b1285a3ebb4d2f54590b3e43c",
+    "download_r00/campaign/work/main/R202412-K06-D04/intent.json": "fc6845d9323a7f84b68daaf15657a39de5d22f782c78bb9e76e203ce1fa98e55",
+    "download_r00/campaign/work/main/R202412-K06-D04/validated.json": "e34fe3522bff326ceff0544e87ce3e202535814b73c01e1e27912d12b0006f0a",
+    "download_r00/campaign/work/main/R202412-K06-D04/output/COMMIT.json": "e5962e2878eb35081b01126f248c8f3798237f61cc7a8fe938d72a6499c343d7",
+    "download_r00/campaign/work/main/R202412-K06-D04/output/registration.json": "ed604df344bd1a26709d5025934abcedb9b8f6f304002607550de5fdd20dd893",
+    "download_r00/campaign/work/main/R202412-K06-D05/process_receipt.json": "fb98b57681f50fe989f7a23d7bf032db2f5f17b7637865674bf9c93f4a71ac8f",
+    "download_r00/campaign/work/main/R202412-K06-D05/launch.json": "93c2b615cbf93033b4991ffb73899d6f7bfacdf48d08e3bdb13407c72d40353c",
+    "download_r00/campaign/work/main/R202412-K06-D05/intent.json": "d6e13fe35004cb49c2a434c407ec90bc41c047cdc8cfe2f4eff2b227864ea7d0",
+    "download_r00/campaign/work/main/R202412-K06-D05/validated.json": "2f517c9ec510f1574e66738eae6f4eef72d1b41f42269525741aac255d37627c",
+    "download_r00/campaign/work/main/R202412-K06-D05/output/COMMIT.json": "aad9f49743c98b90daaac516f1642c3dbc69b20c8f4c9f33d579c0e7cdc1d6ca",
+    "download_r00/campaign/work/main/R202412-K06-D05/output/registration.json": "f4726252a4e93bab15370134e436edd74d22282a60d70d5a9abbe2b23baeb198",
+    "download_r00/campaign/work/main/R202412-K06-D06/process_receipt.json": "26a70342718490615a247135a69e14a14aeec71b9c6e6573dd72d92e19a07388",
+    "download_r00/campaign/work/main/R202412-K06-D06/launch.json": "8c31d026ebc6729ea3a2b75771adb1afe33bf3aaa3ccb4b6bf2d11342ebdb81a",
+    "download_r00/campaign/work/main/R202412-K06-D06/intent.json": "a8e105ea9954f5b6664ceeecbb1b7604337449ff76706244767a2222e025474f",
+    "download_r00/campaign/work/main/R202412-K06-D06/validated.json": "e852caa589edc0a722cde9928e59307a53a7279df0f48a9a8a7134a72cac3a11",
+    "download_r00/campaign/work/main/R202412-K06-D06/output/COMMIT.json": "af01e3ce3bac18d65c98c1a31c498476cfd093cbaca4cc0cb731e94a38018fef",
+    "download_r00/campaign/work/main/R202412-K06-D06/output/registration.json": "494c84ec0562f18492435c59e5a735f73f9485177d3e29f5bf3305f2cce194de",
+    "download_r00/campaign/work/main/R202412-K06-D07/process_receipt.json": "761108f41abb2dddf882f0689f6a15f67ca15daaa6b4fda51a7ee17f319e3086",
+    "download_r00/campaign/work/main/R202412-K06-D07/launch.json": "a47b4c16b57c298b445a8057eed59babb4aede4495ed74b7064ea721af5d2301",
+    "download_r00/campaign/work/main/R202412-K06-D07/intent.json": "b89868e3371e78815234aa3b36259d45722f5b5cd9f9ea3387bb99756153e1e8",
+    "download_r00/campaign/work/main/R202412-K06-D07/validated.json": "0eec4284f1f8982d0c3c76c82348b907efc9d911404d170cdd6ae965058ac6d5",
+    "download_r00/campaign/work/main/R202412-K06-D07/output/COMMIT.json": "1f6408b05935aaaf35eb6da6900c317065e23047768eced473f1d11ab933f6bd",
+    "download_r00/campaign/work/main/R202412-K06-D07/output/registration.json": "ec396787cc43a9f599805f123a922af52d9a28523446d5f140d26f709a74d20e",
+    "download_r00/campaign/work/main/R202412-K06-D08/process_receipt.json": "5ff5bbdc1ba7b41eb8ea220b04eb04b6d7c3bfbaaf1f4d47b4e51f1d9be835bc",
+    "download_r00/campaign/work/main/R202412-K06-D08/launch.json": "2cb82cab1876bead9dd9778b54ebf8bcfe65b0839fa5bc8953e49dfd6b711a39",
+    "download_r00/campaign/work/main/R202412-K06-D08/intent.json": "ae8be2f28822184d0c9da5bd54f3803fa60777e5f46f094cc2b3df64dc53e28f",
+    "download_r00/campaign/work/main/R202412-K06-D08/validated.json": "dd9bded9c72115203478f0a06a231fdf8d13597c4fc7821101cb34240b111458",
+    "download_r00/campaign/work/main/R202412-K06-D08/output/COMMIT.json": "c4105bf837a7de19e5bcaf6ecaa34f3b009cb859f0721094dde6a189649a5176",
+    "download_r00/campaign/work/main/R202412-K06-D08/output/registration.json": "dbab6dbf3e7615c949225c002db372711b66d915b816feb0606439a673b0fc7b",
+    "download_r00/campaign/work/main/R202412-K06-D09/process_receipt.json": "3e993d8cf30c88fcccd2c07adb0ede710f428e581f8b50a7c09746a2bc9eb577",
+    "download_r00/campaign/work/main/R202412-K06-D09/launch.json": "26c165529be567f09dc56f024eb84d1c85868bde827717e95d1342320aba2386",
+    "download_r00/campaign/work/main/R202412-K06-D09/intent.json": "a7388e183301199632f173a021a7a1891269ccde834aba3a462de88e362e0d3a",
+    "download_r00/campaign/work/main/R202412-K06-D09/validated.json": "b11986363433b224092416aaee252031d621ca357e3197e044d5deebafd1d50a",
+    "download_r00/campaign/work/main/R202412-K06-D09/output/COMMIT.json": "9b5d8f636d623b0945e35183a1c359a51eed2405841f5205d58e9bdef8d6c402",
+    "download_r00/campaign/work/main/R202412-K06-D09/output/registration.json": "0d503503c4b859594fe8253774cc75ca0ba65d4fb42b9dfd33b174fe6729e8c8",
+    "download_r00/campaign/work/main/R202412-K06-D10/process_receipt.json": "2472f8b5065b7c4facf0c8758c52ebfae66742b46287265682433ab00b342b98",
+    "download_r00/campaign/work/main/R202412-K06-D10/launch.json": "b679783fcaf1ce69befe6f74f43c69b376448b48bfe9937e26eff43a77521ba6",
+    "download_r00/campaign/work/main/R202412-K06-D10/intent.json": "75d33cdee9c2263d029a017ceacdb215dd1c4602918a69535ae62603f8db1668",
+    "download_r00/campaign/work/main/R202412-K06-D10/validated.json": "d2f57eeee057fc0d036941e73b8f0ae10b7bcdad0e476c8bff1c866fec7d2450",
+    "download_r00/campaign/work/main/R202412-K06-D10/output/COMMIT.json": "480197bc9122f40e23eda5a9b628265b2f0fa4ea3692ca2eed436b7eea72539f",
+    "download_r00/campaign/work/main/R202412-K06-D10/output/registration.json": "553af5c1f50f42d07e0ab806e71bf3b0cbbdd5b4353dd99babb71e08848eeaad",
+    "download_r00/campaign/work/main/R202412-K06-full/process_receipt.json": "cc2e4cb63cd76a1265a021b4a2316290e5585dbbfda612ecc70b80a38808988c",
+    "download_r00/campaign/work/main/R202412-K06-full/launch.json": "f9642afa1ca9e47009923c2ee07d9284804701beeda9d89840a92301f27c4054",
+    "download_r00/campaign/work/main/R202412-K06-full/intent.json": "a81c32f17b765ad107e52e3c5a05ed6370e3ad1f55f505982f60f82b01aa8ce9",
+    "download_r00/campaign/work/main/R202412-K06-full/validated.json": "caa09fc24cc54b55ee519673d70c2b12737d5fa93c942b08607f6da6dd6b4a2e",
+    "download_r00/campaign/work/main/R202412-K06-full/output/COMMIT.json": "28e1beab050e873fea744d0e62860733bb855c47f29a586ae6b7728f5d148a8f",
+    "download_r00/campaign/work/main/R202412-K06-full/output/registration.json": "d8d4498977ba84848d13fa55f44ccb7416033df94736ac5eba0f578940ace87f",
+    "download_r00/campaign/work/main/R202412-K08-D02/process_receipt.json": "5fc449aa9179ff98baebf575dd469048118ed2965998feb8ba7ca9c87a9c8416",
+    "download_r00/campaign/work/main/R202412-K08-D02/launch.json": "b9c32f499ef3b58a97943386c53ce90bf314f7ca112dbf01e43931faed64432f",
+    "download_r00/campaign/work/main/R202412-K08-D02/intent.json": "e59f036aff90284d97e54688c0222005eb9ad4bc28dcba576b5a62e4d3f01d9a",
+    "download_r00/campaign/work/main/R202412-K08-D02/validated.json": "ece8f2e336c89d8219a6ba8fa93019edb459706580de91c27fec63ae12c78f0c",
+    "download_r00/campaign/work/main/R202412-K08-D02/output/COMMIT.json": "a15197b064f75d3c13078b92635b9185879641fc1fd5ca448bfaa191c61c10e5",
+    "download_r00/campaign/work/main/R202412-K08-D02/output/registration.json": "978ad0f0dbcf25f15d39fef7c03d926d9fecd13bf9890bafe2683bbe6d4452ed",
+    "download_r00/campaign/work/main/R202412-K08-D03/process_receipt.json": "b45bad30a7b82dbc6cdeaec74cb58a5d806cfef677c799e031d01566becd20cf",
+    "download_r00/campaign/work/main/R202412-K08-D03/launch.json": "641bb03a9f638eed3f0a02a8e62a895576647413a297be3b7cba2d1b4eee9ddc",
+    "download_r00/campaign/work/main/R202412-K08-D03/intent.json": "be9b7600b2665c6d82608ea681373132db15c3b6b59671355ff6bbc4ba110681",
+    "download_r00/campaign/work/main/R202412-K08-D03/validated.json": "ed66400c71911d11e4c572e472a03e55010f54f4bba6de997404a4b748094576",
+    "download_r00/campaign/work/main/R202412-K08-D03/output/COMMIT.json": "c5bcbf149ecb4baaaf8cd00bab1700f592b6fe51e7ec71a84c7dc620209e89e8",
+    "download_r00/campaign/work/main/R202412-K08-D03/output/registration.json": "bb60f22969b3c271a5d94a3fd4c52c506b6792acea072d9dcb3bee2077502387",
+    "download_r00/campaign/work/main/R202412-K08-D04/process_receipt.json": "19464653b944bbafe1cbc4b8a0de0f9c185f47597034839dd35ffdf7a1709cc5",
+    "download_r00/campaign/work/main/R202412-K08-D04/launch.json": "8b2974d7e99b678d4bb25e67af1b67503a4c3b976092db3dfd683a44f1605efc",
+    "download_r00/campaign/work/main/R202412-K08-D04/intent.json": "5dcf0d34025127285e267a078a3fe35ec81731fc4ad08a50353b0d60b8597964",
+    "download_r00/campaign/work/main/R202412-K08-D04/validated.json": "56364dab4617ef07e701de92856b301dd71d5838f46ffd630b8568797514e9e4",
+    "download_r00/campaign/work/main/R202412-K08-D04/output/COMMIT.json": "94b43633c7c280bf0c134f872cb17f969c788f0a56831aa1b00cf5aa1d6036dd",
+    "download_r00/campaign/work/main/R202412-K08-D04/output/registration.json": "7ed37752ddf00147df65ae18093a9c4fe402bb2d5ed18b7b100c622abc8dc935",
+    "download_r00/campaign/work/main/R202412-K08-D05/process_receipt.json": "00b073f7e68a5e91155a23d1518ce2330c9094a8376100269d612c7a252bff29",
+    "download_r00/campaign/work/main/R202412-K08-D05/launch.json": "7f691374426c79697025429c3d1ded93077fb7ccc32de460c919992facc4e70d",
+    "download_r00/campaign/work/main/R202412-K08-D05/intent.json": "b5874b129ecbde7a987b8ce165436da91897acb73685a9e5ea71829d86876d14",
+    "download_r00/campaign/work/main/R202412-K08-D05/validated.json": "f07c7787b51f30101b6ccb7b921b5f1d71eedc056bf9f2832732c6d07fd0287a",
+    "download_r00/campaign/work/main/R202412-K08-D05/output/COMMIT.json": "5101a7c154ddf7f2b2c9829c72f568d9859a9c0f37d368a4e0912da22f6bbf80",
+    "download_r00/campaign/work/main/R202412-K08-D05/output/registration.json": "2985ca7be5c17894a41e30a2fba994d3faab1d0aa3a23ff67ed3d0dc762b4b20",
+    "download_r00/campaign/work/main/R202412-K08-D06/process_receipt.json": "b976eb2761c81dd0f23e860d0079c41d30b1d394212de2159129adff1e8ce972",
+    "download_r00/campaign/work/main/R202412-K08-D06/launch.json": "9016e4d5a4f58a51c8866b900bd338455e90bde0af9f41bd44dd08c24b9a9843",
+    "download_r00/campaign/work/main/R202412-K08-D06/intent.json": "5f34bf5e181cef041119323ee6634e9a12b868d42379f47674691c10b81419b8",
+    "download_r00/campaign/work/main/R202412-K08-D06/validated.json": "ff5558388be79ebca1a4cbfdf31f2612f19fabe73ad163e1251be378c29a61d4",
+    "download_r00/campaign/work/main/R202412-K08-D06/output/COMMIT.json": "cb926a95dec7be028a6716c90c8e9dc95ce94dc52b0fcc7c8f24ecc3006cca8a",
+    "download_r00/campaign/work/main/R202412-K08-D06/output/registration.json": "da79480303eb176104920c56ed3d14fbc13f00dbe0d3befc65f186694df0305f",
+    "download_r00/campaign/work/main/R202412-K08-D07/process_receipt.json": "a76fd9f5366dca369a0ccb28f0ea972679e5e779fe174a750c64ed1aa7188475",
+    "download_r00/campaign/work/main/R202412-K08-D07/launch.json": "db70ec1dead82fc8bf92235c398d4342764f69e7bed9048618252a08486c4b44",
+    "download_r00/campaign/work/main/R202412-K08-D07/intent.json": "0de6fcbbebadba4d8dc476d9016596b7e06af78828a56c0727a2fc95493071e8",
+    "download_r00/campaign/work/main/R202412-K08-D07/validated.json": "16514ad1d3ae143aed3527e574c4d2dc8e3fe1bdd23797778258279f81daf85e",
+    "download_r00/campaign/work/main/R202412-K08-D07/output/COMMIT.json": "a29e63a1023e750ae7ff3e9a3bdfb0085355d22131360086487ed30395a85eec",
+    "download_r00/campaign/work/main/R202412-K08-D07/output/registration.json": "d16df3dfa23820a4aba8f7dcad7d53bebee36d04ae53ab64c5ca839d0cca55ba",
+    "download_r00/campaign/work/main/R202412-K08-D08/process_receipt.json": "59ec620eab26f3f92177f33dca7cac137d43bd5c5d8259cfdcb23027955d0455",
+    "download_r00/campaign/work/main/R202412-K08-D08/launch.json": "25db26791f49ff23a454e31ff0d905ffe86b4f37c97519ec52e47cee8152ed28",
+    "download_r00/campaign/work/main/R202412-K08-D08/intent.json": "f301b6451ae220cd57bec571f807d8b7d8b4b40295bc6de24086222bd8289749",
+    "download_r00/campaign/work/main/R202412-K08-D08/validated.json": "58cd793fa8da5b155e2ca8db06e578fb976e50c798bca4dc3b7fdb5945602748",
+    "download_r00/campaign/work/main/R202412-K08-D08/output/COMMIT.json": "b19712a588da4e7d7340b4198b6c8e0eeeea6071b95b5557fba8984a219b0dd3",
+    "download_r00/campaign/work/main/R202412-K08-D08/output/registration.json": "8603c8fa9f78d5e814300a062f79bc1b88bdaf1749a9fdcfabec574163a49b47",
+    "download_r00/campaign/work/main/R202412-K08-D09/process_receipt.json": "139de40929b8fb609fda0ab2faa52c05d04adbba962541f948a2cd4dfd8f37b3",
+    "download_r00/campaign/work/main/R202412-K08-D09/launch.json": "e6ca1e0b6283ab18b62ad2743d02b72e39f0f26e6e3e713dc19da483b7048deb",
+    "download_r00/campaign/work/main/R202412-K08-D09/intent.json": "7e900ce5f0a57c654a2a284780c85eb9a94f7a03c6ea6154f3bc86aa657c2a09",
+    "download_r00/campaign/work/main/R202412-K08-D09/validated.json": "73500bcaeabb28a40e90382bc77ce3706731f386c1327bcdb09c8e53c95664f6",
+    "download_r00/campaign/work/main/R202412-K08-D09/output/COMMIT.json": "e03902ae51691a7c1a3670c2685a08e28f535b7b92234c676f654e9df10831c3",
+    "download_r00/campaign/work/main/R202412-K08-D09/output/registration.json": "a3b83911f948832c8ca41d9c7cfe3d039d1d313d83488caf5e937fd09d79a26b",
+    "download_r00/campaign/work/main/R202412-K08-D10/process_receipt.json": "088a30efd5f551665a069f9ace8ee75d61c8d4c6df92912b8f4c741cabdaa13c",
+    "download_r00/campaign/work/main/R202412-K08-D10/launch.json": "0ba4eb319e008a80cd5702355444ef15defea09b12febdae0eb075ded487f222",
+    "download_r00/campaign/work/main/R202412-K08-D10/intent.json": "8202f0d762f1cb7c4bbd31f97bd6a68f24b04646ad6a3dcf85d3f3253f7e3bcd",
+    "download_r00/campaign/work/main/R202412-K08-D10/validated.json": "7ba39a7a06785ac371c6ff18b3c9256f7f79938b7d4beb63dae8ef38fa17ce4b",
+    "download_r00/campaign/work/main/R202412-K08-D10/output/COMMIT.json": "4ff1b6b5cee63398aaf2d97edfce677a0aee821f5098c8df17aaa755c038c88c",
+    "download_r00/campaign/work/main/R202412-K08-D10/output/registration.json": "c34a1a2e174e759fd5486d3b95deb205c978c86e195e4c3c83f7047e45ea25b2",
+    "download_r00/campaign/work/calibration01/receipt.json": "ec122b64847e36c6609475d49098c114003f9d8324396adcf4742abe70737aa9",
+    "download_r00/campaign/work/calibration01/progress.json": "e5698381b4a47ce115d1521dd9988feedbac882bb56716a1df7e3ece4bafa4b6",
+    "download_r00/campaign/work/calibration02/receipt.json": "edfd99ba34b758898ab69ff7f310194e304a21e2f4dc0ac088f773d0b7f1e188",
+    "download_r00/campaign/work/calibration02/progress.json": "d7e4459c5af60c5a51addd2b1426bf895c5b23fb65fa8ba10c318c9242da1c30",
+    "download_r00/campaign/work/main/receipt.json": "a685181d5c1a6ec24cdccd52ed33a757d229bd771eba52e6b3fd19778c1e4822",
+    "download_r00/campaign/work/main/progress.json": "2e189ec8bc767464733f9da1ed4212f74e9a752c1f72f242658f6516ac614bd0"
+  },
+  "scope": "Actual operational source reconciliation. Full ZIP SHA/CRC/all member hashing is inherited from the bound LOCAL_TRANSFER_VERIFIED receipt; selected process/control/COMMIT bytes independently matched to descriptor. No duplicate whole archive pass.",
+  "limitations": [
+    "Linux owner liveness is established by target FINAL_READBACK timestamp, not by local Windows PID inspection.",
+    "RSS values are sampled, not a continuous kernel-enforced maximum.",
+    "Reviewer authored driver/downloader: separate independent reviewer/root acceptance remains required."
+  ],
+  "scientific_acceptance": false,
+  "model_promoted": false,
+  "primary_K10_changed": false,
+  "VM_poweroff_performed": false,
+  "new_fits": 0,
+  "SSH": 0
+}

@@ -1,0 +1,212 @@
+{
+  "schema": "wave5-root-scientific-registration-v1",
+  "status": "REGISTERED_BEFORE_NEW_OUTCOMES_IMPLEMENTATION_PENDING",
+  "UTC": "2026-10-08T06:24:58.565334+00:00",
+  "study_id": "SEASONAL_PEER_TRANSFER_2024_R00",
+  "proposal_path": "workstreams/hypothesis_wave5_design_20261008_r00/PROPOSAL.json",
+  "proposal_sha256": "1bd182ecc40fd493eb7970c61961646c6207048cf68a4dfc2af9822222339fd7",
+  "protocol": {
+    "schema": "wave5-seasonal-peer-transfer-proposal-v1",
+    "status": "design_only_root_gate_pending",
+    "study_id": "SEASONAL_PEER_TRANSFER_2024_R00",
+    "actual_outcomes_read": false,
+    "native_fits_executed": 0,
+    "SSH_calls": 0,
+    "question": "Does restriction to an own-current-month NCut K10 group improve a five-peer forecast of the next spending change beyond unrestricted nearest peers, own seasonal history and SSE groups?",
+    "novelty": "Predictive usefulness of historical peer changes; previous trajectory, confidence, same-month peer and cluster-stability tests did not score this temporal target.",
+    "origins": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11"
+    ],
+    "horizon_months": 1,
+    "calibration_months": [
+      "2023-01",
+      "2023-02",
+      "2023-03",
+      "2023-04",
+      "2023-05",
+      "2023-06",
+      "2023-07",
+      "2023-08",
+      "2023-09",
+      "2023-10",
+      "2023-11",
+      "2023-12"
+    ],
+    "reference": {
+      "method": "Separate explicit fit_reference12: median of the 12 month-specific median pairwise distances, unchanged physical blocks and distance arithmetic, observed support separately each calibration month.",
+      "scale_keys": [
+        "L",
+        "h",
+        "R"
+      ],
+      "geometry": "LHCLR alpha=0.5 beta=0.5; fixed 2023 reference for all current, historical and target coordinates",
+      "forbidden": [
+        "24-month scales",
+        "saved labels fitted using 24-month scales",
+        "24-month complete-case support",
+        "duplicating calendar to satisfy old fit_reference guard",
+        "target-dependent normalization"
+      ],
+      "raw_2023_recompute_required": true
+    },
+    "support": {
+      "fit": "All IDs observed at current origin t; no requirement that target t+1 exists.",
+      "query_and_peer_pool": "mask[t] & mask[t-1] & mask[t-12] & mask[t-11], determined before target mask",
+      "self_peer": false,
+      "future_scoring": "Only after immutable predictions are saved, score predeclared queries observed at t+1. Report original query denominator, future missingness, prediction availability and scored denominator separately.",
+      "fit_or_peer_refilter_on_target_availability": false,
+      "replacement_peer_if_future_missing": false
+    },
+    "clustering": {
+      "methods": [
+        "NCut_union15_sigma1",
+        "SSE"
+      ],
+      "K": 10,
+      "seeds": [
+        1000003,
+        1104732,
+        1209461,
+        1314190,
+        1418919,
+        1523648,
+        1628377,
+        1733106
+      ],
+      "native_engine": "Unchanged exact Lloyd/NCut/SpectralEngine primitives; dedicated K10 adapter, without changing old K-domain guards or calling the six-ICVI finish stage.",
+      "max_iterations": 300,
+      "selection": "Original own_representative: converged starts only, own exact objective minimum, scale/1e10 tolerance, canonical labels then seed_index. NCut scale K; SSE scale max(1,SST).",
+      "retry_or_extra_seeds": false,
+      "all_attempt_statuses_saved": true,
+      "future_labels_or_metrics_select_seed": false
+    },
+    "peers": {
+      "count": 5,
+      "distance": "Euclidean in unchanged current X6, except LEVEL_NN5 uses absolute current logTotal difference",
+      "tie_break": "Exact dyadic squared distance then ascending numeric source ID; same deterministic rule for all peer methods",
+      "weights": "uniform 1/5",
+      "cluster_restriction": "same current own-method K10 group",
+      "fewer_than_five": "typed unavailable, no fallback, no smaller k, no removal from registered denominator"
+    },
+    "prediction": {
+      "seasonal_transition_for_origin_index_t": "X[j,t-11] - X[j,t-12], with January2023 index0 and January2024 index12",
+      "peer_forecast": "Mean of the selected five IDs' historical same-calendar 2023 transitions",
+      "target": "X[i,t+1] - X[i,t]",
+      "never_predict_from_actual_future_peers": true,
+      "methods": [
+        "NCut_NN5",
+        "SSE_NN5",
+        "GLOBAL_X6_NN5",
+        "LEVEL_NN5",
+        "OWN_SEASONAL",
+        "PERSISTENCE_ZERO",
+        "OWN_LAST_CHANGE",
+        "GLOBAL_SEASONAL_MEAN"
+      ],
+      "own_seasonal": "X[i,t-11]-X[i,t-12]",
+      "own_last_change": "X[i,t]-X[i,t-1]",
+      "global_seasonal_mean": "Mean historical same-calendar transition across the predeclared peer pool excluding the query ID",
+      "implementation_separation": "Persist source-bound predictions/peers before evaluator opens t+1 values or future availability; evaluation cannot return choices to fitting/prediction."
+    },
+    "evaluation": {
+      "primary_loss": "Euclidean norm of predicted-minus-actual delta X6",
+      "aggregation": "Equal weight per scored ID within each origin, then equal weight for each of all 11 origins",
+      "component_disclosure": [
+        "absolute logTotal-change error",
+        "absolute h-change error",
+        "R4 change error",
+        "all 11 origin losses",
+        "coverage and unavailable rows"
+      ],
+      "no_p_values": "11 overlapping origins are not independent replications; no retrospective significance claim",
+      "missing_prediction": "Any candidate prediction unavailable on an observed-target registered query makes complete-cohort joint success unavailable; conditional descriptive results separately labelled, no successful-subset verdict.",
+      "zero_control_loss": "Ratios null; use original multiplicative inequalities directly, never divide by zero"
+    },
+    "proposed_gate_requires_root_freeze_before_outcomes": {
+      "primary_controls": [
+        "GLOBAL_X6_NN5",
+        "OWN_SEASONAL",
+        "SSE_NN5"
+      ],
+      "each_primary_control": "NCut mean-origin loss <= 0.99 * control loss AND for every origin NCut loss <= 1.05 * control loss",
+      "numerical_thresholds_not_statistical_significance": true,
+      "all_origins_and_predictions_required": true,
+      "additional_simple_control_guard_for_general_utility_claim": "NCut mean-origin loss must not exceed each of PERSISTENCE_ZERO, OWN_LAST_CHANGE, GLOBAL_SEASONAL_MEAN and LEVEL_NN5; otherwise at most a named-control-specific result, never generally best forecast.",
+      "negative_or_mixed_is_terminal": true,
+      "automatic_model_promotion": false
+    },
+    "compute": {
+      "reference_stages": 1,
+      "origin_tasks": 11,
+      "models": 22,
+      "native_seed_slots": 176,
+      "eigensolves_max": 11,
+      "graph_builds_max": 11,
+      "additional_six_ICVI": 0,
+      "candidate_grid": "one geometry, one K, one neighbor count, one horizon, original fixed eight seeds",
+      "proposed_runtime": "Reference stage plus fixed January/July pilots, then remaining nine origins on up to three single-thread workers; no outcome-based admission. Root supplies new explicit absolute deadline; suggested wall900s and reserve180s are proposals, not guarantees.",
+      "resource_admission": "After reference and the two included pilots: 2*max(pilot end-to-end seconds)*ceil(9/3)+180 must fit remaining wall and deadline. No automatic broader study if it passes."
+    },
+    "required_synthetic_checks_before_execution": [
+      "Changing any t+1 value or mask cannot alter a source-bound prediction, peer selection, current fit inputs or reference",
+      "Changing 2024 values cannot alter the 2023 reference",
+      "Never read future peer transitions; hand-computable seasonal transfer fixture",
+      "Self exclusion, exact distance ties, scarce peer groups and missing targets remain explicit",
+      "Source ID/label permutation invariance and all11 aggregation",
+      "Own-seasonal, persistence and own-last baselines match direct hand calculations"
+    ],
+    "limits": [
+      "Retrospective algorithmically past-only backtest; the historical panel has already been inspected in earlier research, so it is not an untouched holdout.",
+      "Published nominal resident spending, not income, transaction-flow truth, causal impact, inflation adjustment or independently collected external Y.",
+      "Historical data revision/publication lags are not documented here; no claim of a point-in-time deployable forecast before actual source publication.",
+      "The preceding calendar year's peer dynamics may not transfer; a negative result is informative and does not change frozen cluster roles.",
+      "Prediction improvement would support this bounded analog-selection use case only, not superior overall clustering or competitor ranking."
+    ]
+  },
+  "root_decision": {
+    "accepted_all_scientific_choices_in_proposal": true,
+    "accepted_gate": {
+      "primary_controls": [
+        "GLOBAL_X6_NN5",
+        "OWN_SEASONAL",
+        "SSE_NN5"
+      ],
+      "each_primary_control": "NCut mean-origin loss <= 0.99 * control loss AND for every origin NCut loss <= 1.05 * control loss",
+      "numerical_thresholds_not_statistical_significance": true,
+      "all_origins_and_predictions_required": true,
+      "additional_simple_control_guard_for_general_utility_claim": "NCut mean-origin loss must not exceed each of PERSISTENCE_ZERO, OWN_LAST_CHANGE, GLOBAL_SEASONAL_MEAN and LEVEL_NN5; otherwise at most a named-control-specific result, never generally best forecast.",
+      "negative_or_mixed_is_terminal": true,
+      "automatic_model_promotion": false
+    },
+    "gate_is_now_frozen": true,
+    "additional_descriptive_outputs": [
+      "fraction of exact peer-set equality against GLOBAL_X6_NN5",
+      "loss and coverage by current NCut group; never replaces primary aggregation"
+    ],
+    "no_automatic_model_promotion": true,
+    "no_parameter_search_or_posthoc_gate_change": true,
+    "native_fits_before_registration": 0,
+    "new_targets_predictions_errors_read_before_registration": false,
+    "scientific_scope": "One algorithmically past-only retrospective seasonal peer backtest; same published spending source; not a point-in-time historical data vintage or untouched holdout."
+  },
+  "operations": {
+    "absolute_deadline_UTC": null,
+    "reason": "Finalize deadline only after frozen source, synthetic verification and VM staging are ready.",
+    "maximum_computation_seconds": 1200,
+    "additional_inner_closure_seconds": 180,
+    "maximum_outer_seconds": 1380,
+    "root_only_SSH": true,
+    "no_unknown_native_retry": true,
+    "old_results_and_frontend_immutable": true
+  }
+}

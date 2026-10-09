@@ -27,6 +27,7 @@ jobs:
       - run: npm ci
       - run: npm run verify:data
       - run: npm run lint
+      - run: npm run test:runtime
       - run: npm run build
       - run: npm run verify:dist
       - run: touch dist/.nojekyll

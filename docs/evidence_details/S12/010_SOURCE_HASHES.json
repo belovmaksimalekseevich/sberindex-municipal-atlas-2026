@@ -1,0 +1,20 @@
+{
+  "workstreams/research_closure_20261008_r00/analogue_test/corrected_r02/PROTOCOL.json": "16a32f3bc4f7024dae2e8e4a739b18cbcda9a2e97c7536dd7d550e38ab21bc58",
+  "workstreams/research_closure_20261008_r00/analogue_test/corrected_r02/PROTOCOL.md": "71f4e73d88af0d879450d88eb0f94ffaff1e958d275081439754da4d7811f437",
+  "workstreams/research_closure_20261008_r00/analogue_test/AMENDMENT_2.json": "01cf0cd9a985b87b5a0c9ff553d332933fa579b312d83f059a8d9ca2f08006d4",
+  "workstreams/research_closure_20261008_r00/analogue_test/AMENDMENT_2.md": "928f0102769d8d0b9f7ffd3b588d34e89d1817360ddf30915228eaf4b1431ec7",
+  "workstreams/research_closure_20261008_r00/readback/corrected_r01/TYPE_REGISTRY.json": "926fff983ef4ae7274e91cb5fcb001062e42de85c040e4971d72e6473b586c78",
+  "data/raw/municipal_dictionary/t_dict_municipal_districts.xlsx": "4150658c3298fbc87ed79838f503f3a5b9a28da33257ff803c7d9231ddb775d6",
+  "data/raw/metadata_municipal_dict_sberindex_2.txt": "cbe7f24ff94123812ec32b74d100d2a4c2c0befe8e661ba806a32322ce270611",
+  "workstreams/research_closure_20261008_r00/analogue_test/corrected_r02/run_test.py": "dd0759fdde52fddcd004f5183e461405107ab94bb940fe9a5b7c559ca8044130",
+  "workstreams/local_finalization_20261008_r00/portable/staging/r01/municipal_typology/code/science/context/input/context2024.npz": "9f0c47a99464db78f9d10fcf5318a43cd905b92861b44cc7123b9a099d44f6ae",
+  "workstreams/local_finalization_20261008_r00/portable/staging/r01/municipal_typology/code/science/context/input/core_ID_context.csv": "f83e8d03cb82605125bf7c288321e3f5893705511c84bd4eb8447a603ef00329",
+  "workstreams/local_finalization_20261008_r00/portable/staging/r01/municipal_typology/code/science/context/input/schema.json": "8e3a94b515db1ab54d5b0c6e061142efa3bf91105c93ee5f1ebc641348ef8ecb",
+  "workstreams/local_finalization_20261008_r00/portable/staging/r01/municipal_typology/code/science/context/input/SEMANTICS.md": "843d5a629733542badb8d61b877889bdbc77d7b7a41d2ef0984d6b40d2841f61",
+  "workstreams/local_finalization_20261008_r00/portable/staging/r01/municipal_typology/code/science/national/data/input2190.npz": "e4abc1a00495fae8280213b85c326169a1a0f5efcf7504400964b69b296c0547",
+  "workstreams/local_finalization_20261008_r00/portable/staging/r01/municipal_typology/code/science/national/data/reported2190.npz": "e5cd11d4295be6e20b11446eb48ffedaa1b31155c199adea327a39396da206bf",
+  "workstreams/local_finalization_20261008_r00/portable/staging/r01/municipal_typology/code/science/national/data/reference.json": "733bf0c121b441bea7f423e2e10aa2dddfd9aa76e8bd152462d4bb4020c2052f",
+  "workstreams/local_finalization_20261008_r00/portable/staging/r01/municipal_typology/code/science/national/engine/vendor/kernels.py": "0d9ae437f4eef1cc698473b7171db460e52d082e83fe52aff8f7686fdf24c3bc",
+  "workstreams/local_finalization_20261008_r00/portable/staging/r01/municipal_typology/code/saved/national/2024-12/NCut_K10.json.gz": "1758bd0e968f9d53e469735b27d642d0df67e6482fc814b06ca79442c756cbc3",
+  "workstreams/local_finalization_20261008_r00/portable/staging/r01/municipal_typology/code/saved/national/2024-12/SSE_K10.json.gz": "151a11cdbbbe64a78faee11c4970f37fc2225e48ba75347fc46632da54ed923f"
+}

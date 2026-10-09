@@ -1,0 +1,2045 @@
+{
+  "schema": "worked-economic-cases-20261008-v1",
+  "status": "COMPLETED_DESCRIPTIVE_CASES_NO_FIT",
+  "scope": {
+    "common_IDs": 1666,
+    "common_regions": 69,
+    "labels_month": "2024-12",
+    "context_year": 2024,
+    "excluding_federal_cities_N": 1445,
+    "new_fit": false,
+    "new_SSH": false,
+    "new_download": false
+  },
+  "geometry": {
+    "spending": "Reused kernels.embed with frozen reference.json; fit_reference not called.",
+    "context": "Five transformed coordinates divided by common-support IQR",
+    "context_IQR": [
+      1.3986871858391297,
+      0.34252476470845306,
+      0.556425690276539,
+      0.08426318678983082,
+      0.1652394984060454
+    ],
+    "categories": [
+      "Все категории",
+      "Продовольствие",
+      "Здоровье",
+      "Общественное питание",
+      "Транспорт",
+      "Маркетплейсы"
+    ]
+  },
+  "case1": {
+    "anchor": {
+      "ID": "1971",
+      "native_oktmo8": "65701000",
+      "supplier_name": "городской округ город Екатеринбург",
+      "supplier_type": "городской округ",
+      "supplier_region": "Свердловская область",
+      "december_consumption_RUB": {
+        "Все категории": 50463.0,
+        "Продовольствие": 17614.0,
+        "Здоровье": 2753.0,
+        "Общественное питание": 2955.0,
+        "Транспорт": 3198.0,
+        "Маркетплейсы": 6997.0
+      },
+      "context_2024": {
+        "population_jan1_2024": 1580109.0,
+        "market_access_2024": 298.5,
+        "organization_salary_RUB_2024": 101589.0,
+        "organization_workers_per_resident_2024": 0.2967909175885967,
+        "education_worker_share_2024": 0.10279937393648099
+      },
+      "NCut_group": 6,
+      "SSE_group": 6,
+      "NCut_SW": 0.4634870847247734,
+      "SSE_SW": 0.5051401850919259
+    },
+    "selection_attempts": [
+      {
+        "Total_relative_tolerance": 0.1,
+        "candidate_N": 5
+      }
+    ],
+    "population_eligible_candidate_N": 10,
+    "candidate_pool": [
+      {
+        "ID": "1523",
+        "native_oktmo8": "22701000",
+        "supplier_name": "городской округ город Нижний Новгород",
+        "supplier_type": "городской округ",
+        "supplier_region": "Нижегородская область",
+        "december_consumption_RUB": {
+          "Все категории": 47006.0,
+          "Продовольствие": 17075.0,
+          "Здоровье": 2538.0,
+          "Общественное питание": 2000.0,
+          "Транспорт": 2794.0,
+          "Маркетплейсы": 7530.0
+        },
+        "context_2024": {
+          "population_jan1_2024": 1228702.0,
+          "market_access_2024": 367.7,
+          "organization_salary_RUB_2024": 91812.7,
+          "organization_workers_per_resident_2024": 0.31655112468279534,
+          "education_worker_share_2024": 0.11211553245043669
+        },
+        "NCut_group": 0,
+        "SSE_group": 6,
+        "NCut_SW": 0.18106163773818057,
+        "SSE_SW": 0.2944322639822856,
+        "Total_relative_absolute_difference": 0.0685056377940273,
+        "spending_X_distance": 0.29341260475924513,
+        "context5_IQR_distance": 0.6886242484486335,
+        "same_NCut_group": false,
+        "same_SSE_group": true
+      },
+      {
+        "ID": "1874",
+        "native_oktmo8": "36701000",
+        "supplier_name": "городской округ Самара",
+        "supplier_type": "городской округ",
+        "supplier_region": "Самарская область",
+        "december_consumption_RUB": {
+          "Все категории": 45651.0,
+          "Продовольствие": 16060.0,
+          "Здоровье": 2383.0,
+          "Общественное питание": 2568.0,
+          "Транспорт": 2694.0,
+          "Маркетплейсы": 7525.0
+        },
+        "context_2024": {
+          "population_jan1_2024": 1159044.0,
+          "market_access_2024": 384.7,
+          "organization_salary_RUB_2024": 81323.7,
+          "organization_workers_per_resident_2024": 0.28617118935950664,
+          "education_worker_share_2024": 0.10798800066327992
+        },
+        "NCut_group": 0,
+        "SSE_group": 6,
+        "NCut_SW": 0.12562228570871428,
+        "SSE_SW": 0.3079610667649501,
+        "Total_relative_absolute_difference": 0.09535699423339872,
+        "spending_X_distance": 0.26644930616868706,
+        "context5_IQR_distance": 0.8754811215456353,
+        "same_NCut_group": false,
+        "same_SSE_group": true
+      },
+      {
+        "ID": "2190",
+        "native_oktmo8": "71701000",
+        "supplier_name": "городской округ город Тюмень",
+        "supplier_type": "городской округ",
+        "supplier_region": "Тюменская область",
+        "december_consumption_RUB": {
+          "Все категории": 52623.0,
+          "Продовольствие": 18559.0,
+          "Здоровье": 2732.0,
+          "Общественное питание": 2982.0,
+          "Транспорт": 3259.0,
+          "Маркетплейсы": 7798.0
+        },
+        "context_2024": {
+          "population_jan1_2024": 861098.0,
+          "market_access_2024": 337.9,
+          "organization_salary_RUB_2024": 106290.0,
+          "organization_workers_per_resident_2024": 0.24600568111875767,
+          "education_worker_share_2024": 0.11064743786437557
+        },
+        "NCut_group": 6,
+        "SSE_group": 6,
+        "NCut_SW": 0.4865744887610785,
+        "SSE_SW": 0.4818837391625063,
+        "Total_relative_absolute_difference": 0.042803638309256264,
+        "spending_X_distance": 0.11513553043369394,
+        "context5_IQR_distance": 0.7455594458046635,
+        "same_NCut_group": true,
+        "same_SSE_group": true
+      },
+      {
+        "ID": "666",
+        "native_oktmo8": "04701000",
+        "supplier_name": "городской округ город Красноярск",
+        "supplier_type": "городской округ",
+        "supplier_region": "Красноярский край",
+        "december_consumption_RUB": {
+          "Все категории": 50327.0,
+          "Продовольствие": 17886.0,
+          "Здоровье": 2373.0,
+          "Общественное питание": 2639.0,
+          "Транспорт": 3305.0,
+          "Маркетплейсы": 7219.0
+        },
+        "context_2024": {
+          "population_jan1_2024": 1206237.0,
+          "market_access_2024": 203.8,
+          "organization_salary_RUB_2024": 98129.1,
+          "organization_workers_per_resident_2024": 0.23546782265839963,
+          "education_worker_share_2024": 0.13749955990564378
+        },
+        "NCut_group": 6,
+        "SSE_group": 6,
+        "NCut_SW": 0.36328714617820806,
+        "SSE_SW": 0.5416300879745624,
+        "Total_relative_absolute_difference": 0.002695043893545801,
+        "spending_X_distance": 0.14797980023437562,
+        "context5_IQR_distance": 1.3068127564515073,
+        "same_NCut_group": true,
+        "same_SSE_group": true
+      },
+      {
+        "ID": "727",
+        "native_oktmo8": "57701000",
+        "supplier_name": "городской округ Пермский",
+        "supplier_type": "городской округ",
+        "supplier_region": "Пермский край",
+        "december_consumption_RUB": {
+          "Все категории": 46941.0,
+          "Продовольствие": 16815.0,
+          "Здоровье": 2418.0,
+          "Общественное питание": 2628.0,
+          "Транспорт": 2962.0,
+          "Маркетплейсы": 6725.0
+        },
+        "context_2024": {
+          "population_jan1_2024": 1026912.0,
+          "market_access_2024": 350.9,
+          "organization_salary_RUB_2024": 88118.2,
+          "organization_workers_per_resident_2024": 0.2706804477890997,
+          "education_worker_share_2024": 0.09781447304516756
+        },
+        "NCut_group": 0,
+        "SSE_group": 6,
+        "NCut_SW": -0.03435568244109198,
+        "SSE_SW": 0.3990225902801795,
+        "Total_relative_absolute_difference": 0.0697937102431484,
+        "spending_X_distance": 0.183306542203119,
+        "context5_IQR_distance": 0.6653227095697728,
+        "same_NCut_group": false,
+        "same_SSE_group": true
+      }
+    ],
+    "Total_order_IDs": [
+      "666",
+      "2190",
+      "1523",
+      "727",
+      "1874"
+    ],
+    "context_order_IDs": [
+      "727",
+      "1523",
+      "2190",
+      "1874",
+      "666"
+    ],
+    "completed_action": "Constructed same-administrative-type size/Total candidate pool and two explicit ranked shortlists; no transfer-policy or investment recommendation."
+  },
+  "case2": {
+    "eligible_pair_N": 7905,
+    "zero_access_pairs_excluded": 0,
+    "close_pair_pool_N": 200,
+    "close_pair_pool_max_X_distance": 0.11802250761040532,
+    "pair": [
+      {
+        "ID": "1131",
+        "native_oktmo8": "24633000",
+        "supplier_name": "Шуйский муниципальный район",
+        "supplier_type": "муниципальный район",
+        "supplier_region": "Ивановская область",
+        "december_consumption_RUB": {
+          "Все категории": 32565.0,
+          "Продовольствие": 13535.0,
+          "Здоровье": 1174.0,
+          "Общественное питание": 738.0,
+          "Транспорт": 1405.0,
+          "Маркетплейсы": 6786.0
+        },
+        "context_2024": {
+          "population_jan1_2024": 19184.0,
+          "market_access_2024": 425.0,
+          "organization_salary_RUB_2024": 42714.8,
+          "organization_workers_per_resident_2024": 0.056818181818181816,
+          "education_worker_share_2024": 0.4073394495412844
+        },
+        "NCut_group": 3,
+        "SSE_group": 3,
+        "NCut_SW": 0.11237518783445728,
+        "SSE_SW": 0.4290792626888096
+      },
+      {
+        "ID": "1163",
+        "native_oktmo8": "25640000",
+        "supplier_name": "Усольский муниципальный район",
+        "supplier_type": "муниципальный район",
+        "supplier_region": "Иркутская область",
+        "december_consumption_RUB": {
+          "Все категории": 32951.0,
+          "Продовольствие": 12325.0,
+          "Здоровье": 1154.0,
+          "Общественное питание": 768.0,
+          "Транспорт": 1585.0,
+          "Маркетплейсы": 7406.0
+        },
+        "context_2024": {
+          "population_jan1_2024": 47850.0,
+          "market_access_2024": 187.0,
+          "organization_salary_RUB_2024": 83332.4,
+          "organization_workers_per_resident_2024": 0.17118077324973877,
+          "education_worker_share_2024": 0.2197533878647296
+        },
+        "NCut_group": 3,
+        "SSE_group": 3,
+        "NCut_SW": 0.23486616478732475,
+        "SSE_SW": 0.46171801145490166
+      }
+    ],
+    "X_distance": 0.1123011269601385,
+    "market_access_ratio": 2.272727272727273,
+    "Total_ratio": 1.0118532166436358,
+    "context5_IQR_distance": 3.253948357631822,
+    "close_pool": [
+      {
+        "IDs": [
+          "1140",
+          "1333"
+        ],
+        "X_distance": 0.03019424312158089,
+        "market_access_ratio": 1.4837333333333333
+      },
+      {
+        "IDs": [
+          "988",
+          "1107"
+        ],
+        "X_distance": 0.04555326949834202,
+        "market_access_ratio": 1.0093619118009363
+      },
+      {
+        "IDs": [
+          "1413",
+          "1778"
+        ],
+        "X_distance": 0.04902360048496636,
+        "market_access_ratio": 1.244488977955912
+      },
+      {
+        "IDs": [
+          "1875",
+          "1876"
+        ],
+        "X_distance": 0.05081721923503178,
+        "market_access_ratio": 1.0321570859419464
+      },
+      {
+        "IDs": [
+          "25",
+          "29"
+        ],
+        "X_distance": 0.0511147962392912,
+        "market_access_ratio": 1.06209453197405
+      },
+      {
+        "IDs": [
+          "1448",
+          "1461"
+        ],
+        "X_distance": 0.053249758654040205,
+        "market_access_ratio": 1.0026840490797546
+      },
+      {
+        "IDs": [
+          "1461",
+          "1465"
+        ],
+        "X_distance": 0.056865512214770486,
+        "market_access_ratio": 1.1267254601226995
+      },
+      {
+        "IDs": [
+          "2144",
+          "2275"
+        ],
+        "X_distance": 0.057232354647880554,
+        "market_access_ratio": 1.1436251920122888
+      },
+      {
+        "IDs": [
+          "1107",
+          "2044"
+        ],
+        "X_distance": 0.05830383500681258,
+        "market_access_ratio": 1.0940700808625337
+      },
+      {
+        "IDs": [
+          "1443",
+          "1461"
+        ],
+        "X_distance": 0.058449981600374186,
+        "market_access_ratio": 1.1249999999999998
+      },
+      {
+        "IDs": [
+          "33",
+          "48"
+        ],
+        "X_distance": 0.060471033397232386,
+        "market_access_ratio": 1.0166559897501601
+      },
+      {
+        "IDs": [
+          "1575",
+          "1764"
+        ],
+        "X_distance": 0.06126355605354363,
+        "market_access_ratio": 1.106415792720543
+      },
+      {
+        "IDs": [
+          "1396",
+          "1408"
+        ],
+        "X_distance": 0.062083875355727465,
+        "market_access_ratio": 1.1537944929482875
+      },
+      {
+        "IDs": [
+          "988",
+          "2282"
+        ],
+        "X_distance": 0.06499909589218734,
+        "market_access_ratio": 1.329763063940279
+      },
+      {
+        "IDs": [
+          "540",
+          "2257"
+        ],
+        "X_distance": 0.06514690736629,
+        "market_access_ratio": 1.6047251249432075
+      },
+      {
+        "IDs": [
+          "1443",
+          "1448"
+        ],
+        "X_distance": 0.06534405829250792,
+        "market_access_ratio": 1.1219885277246653
+      },
+      {
+        "IDs": [
+          "1125",
+          "2298"
+        ],
+        "X_distance": 0.06621746576156612,
+        "market_access_ratio": 1.2133726647000982
+      },
+      {
+        "IDs": [
+          "1710",
+          "1737"
+        ],
+        "X_distance": 0.0664239121347524,
+        "market_access_ratio": 1.0175977653631285
+      },
+      {
+        "IDs": [
+          "1443",
+          "1465"
+        ],
+        "X_distance": 0.06655460706880884,
+        "market_access_ratio": 1.0015337423312884
+      },
+      {
+        "IDs": [
+          "1667",
+          "2252"
+        ],
+        "X_distance": 0.06690127119743024,
+        "market_access_ratio": 1.0653251676873725
+      },
+      {
+        "IDs": [
+          "10",
+          "448"
+        ],
+        "X_distance": 0.06861188267753977,
+        "market_access_ratio": 1.051206302314131
+      },
+      {
+        "IDs": [
+          "32",
+          "1693"
+        ],
+        "X_distance": 0.06923717669753134,
+        "market_access_ratio": 1.0236016812156483
+      },
+      {
+        "IDs": [
+          "1464",
+          "1481"
+        ],
+        "X_distance": 0.06974580970208098,
+        "market_access_ratio": 1.029265493496557
+      },
+      {
+        "IDs": [
+          "506",
+          "989"
+        ],
+        "X_distance": 0.07079712261110546,
+        "market_access_ratio": 1.8246182322998612
+      },
+      {
+        "IDs": [
+          "926",
+          "1937"
+        ],
+        "X_distance": 0.07090278346771417,
+        "market_access_ratio": 1.1012302284710018
+      },
+      {
+        "IDs": [
+          "224",
+          "1136"
+        ],
+        "X_distance": 0.0711028825516744,
+        "market_access_ratio": 1.3670133729569094
+      },
+      {
+        "IDs": [
+          "307",
+          "1895"
+        ],
+        "X_distance": 0.0713589952255068,
+        "market_access_ratio": 1.0834570834570836
+      },
+      {
+        "IDs": [
+          "2171",
+          "2179"
+        ],
+        "X_distance": 0.07211703452922767,
+        "market_access_ratio": 1.0608718766613505
+      },
+      {
+        "IDs": [
+          "1303",
+          "1707"
+        ],
+        "X_distance": 0.07330232058408823,
+        "market_access_ratio": 1.0647181628392484
+      },
+      {
+        "IDs": [
+          "26",
+          "422"
+        ],
+        "X_distance": 0.07369605677757662,
+        "market_access_ratio": 1.0348623853211008
+      },
+      {
+        "IDs": [
+          "62",
+          "65"
+        ],
+        "X_distance": 0.07436467800423402,
+        "market_access_ratio": 1.0196560196560196
+      },
+      {
+        "IDs": [
+          "668",
+          "1533"
+        ],
+        "X_distance": 0.07454906560835478,
+        "market_access_ratio": 1.5311222171740118
+      },
+      {
+        "IDs": [
+          "1160",
+          "1778"
+        ],
+        "X_distance": 0.07465373859976557,
+        "market_access_ratio": 1.6550580431177444
+      },
+      {
+        "IDs": [
+          "1484",
+          "1500"
+        ],
+        "X_distance": 0.07542254609188016,
+        "market_access_ratio": 1.061315733446881
+      },
+      {
+        "IDs": [
+          "2033",
+          "2044"
+        ],
+        "X_distance": 0.07547442451840645,
+        "market_access_ratio": 1.161189358372457
+      },
+      {
+        "IDs": [
+          "1410",
+          "1764"
+        ],
+        "X_distance": 0.07563476448391085,
+        "market_access_ratio": 1.2316471314003703
+      },
+      {
+        "IDs": [
+          "1415",
+          "1419"
+        ],
+        "X_distance": 0.07624726335235832,
+        "market_access_ratio": 1.0300523848910947
+      },
+      {
+        "IDs": [
+          "1951",
+          "2264"
+        ],
+        "X_distance": 0.07635775918311344,
+        "market_access_ratio": 1.026099706744868
+      },
+      {
+        "IDs": [
+          "21",
+          "418"
+        ],
+        "X_distance": 0.07694256272174187,
+        "market_access_ratio": 1.155246913580247
+      },
+      {
+        "IDs": [
+          "1316",
+          "2041"
+        ],
+        "X_distance": 0.07756563308904998,
+        "market_access_ratio": 1.291681670867843
+      },
+      {
+        "IDs": [
+          "1491",
+          "1501"
+        ],
+        "X_distance": 0.07762965998475174,
+        "market_access_ratio": 1.0041457560549858
+      },
+      {
+        "IDs": [
+          "295",
+          "1689"
+        ],
+        "X_distance": 0.07808158646058166,
+        "market_access_ratio": 1.1475462077756533
+      },
+      {
+        "IDs": [
+          "1144",
+          "2039"
+        ],
+        "X_distance": 0.07813208176996737,
+        "market_access_ratio": 1.5387554585152838
+      },
+      {
+        "IDs": [
+          "1444",
+          "1467"
+        ],
+        "X_distance": 0.07835300599369771,
+        "market_access_ratio": 1.004914004914005
+      },
+      {
+        "IDs": [
+          "14",
+          "705"
+        ],
+        "X_distance": 0.07836712606266137,
+        "market_access_ratio": 1.0619335347432024
+      },
+      {
+        "IDs": [
+          "1764",
+          "2318"
+        ],
+        "X_distance": 0.07885839892604068,
+        "market_access_ratio": 1.2890191239975324
+      },
+      {
+        "IDs": [
+          "1198",
+          "1575"
+        ],
+        "X_distance": 0.08003070586197884,
+        "market_access_ratio": 1.113744075829384
+      },
+      {
+        "IDs": [
+          "670",
+          "2320"
+        ],
+        "X_distance": 0.08003652379271667,
+        "market_access_ratio": 1.7297047970479704
+      },
+      {
+        "IDs": [
+          "289",
+          "1691"
+        ],
+        "X_distance": 0.08006860109738413,
+        "market_access_ratio": 1.1078825347758887
+      },
+      {
+        "IDs": [
+          "1009",
+          "2280"
+        ],
+        "X_distance": 0.08021586330896634,
+        "market_access_ratio": 1.1359663321463256
+      },
+      {
+        "IDs": [
+          "986",
+          "1523"
+        ],
+        "X_distance": 0.08111632754479474,
+        "market_access_ratio": 1.10960021756867
+      },
+      {
+        "IDs": [
+          "996",
+          "2177"
+        ],
+        "X_distance": 0.08141283929394771,
+        "market_access_ratio": 1.0253076387276527
+      },
+      {
+        "IDs": [
+          "269",
+          "481"
+        ],
+        "X_distance": 0.08145364487083205,
+        "market_access_ratio": 1.041462712352433
+      },
+      {
+        "IDs": [
+          "1448",
+          "1465"
+        ],
+        "X_distance": 0.083917847761952,
+        "market_access_ratio": 1.1237093690248567
+      },
+      {
+        "IDs": [
+          "26",
+          "27"
+        ],
+        "X_distance": 0.08428471861370374,
+        "market_access_ratio": 1.0783938814531548
+      },
+      {
+        "IDs": [
+          "25",
+          "481"
+        ],
+        "X_distance": 0.0843465178514892,
+        "market_access_ratio": 1.1173926475131295
+      },
+      {
+        "IDs": [
+          "1986",
+          "2288"
+        ],
+        "X_distance": 0.08436014662402153,
+        "market_access_ratio": 1.0208728652751424
+      },
+      {
+        "IDs": [
+          "540",
+          "547"
+        ],
+        "X_distance": 0.08451804814136263,
+        "market_access_ratio": 1.0077838827838828
+      },
+      {
+        "IDs": [
+          "66",
+          "77"
+        ],
+        "X_distance": 0.08467892085613206,
+        "market_access_ratio": 1.0333778371161548
+      },
+      {
+        "IDs": [
+          "543",
+          "1174"
+        ],
+        "X_distance": 0.08511491416093177,
+        "market_access_ratio": 1.2893401015228425
+      },
+      {
+        "IDs": [
+          "418",
+          "1632"
+        ],
+        "X_distance": 0.08533608462425957,
+        "market_access_ratio": 1.3388429752066116
+      },
+      {
+        "IDs": [
+          "588",
+          "807"
+        ],
+        "X_distance": 0.08566416666185699,
+        "market_access_ratio": 1.0825622775800712
+      },
+      {
+        "IDs": [
+          "1443",
+          "1445"
+        ],
+        "X_distance": 0.08580608379292877,
+        "market_access_ratio": 1.1194200686760776
+      },
+      {
+        "IDs": [
+          "457",
+          "715"
+        ],
+        "X_distance": 0.08606161440045905,
+        "market_access_ratio": 1.0422045680238332
+      },
+      {
+        "IDs": [
+          "1330",
+          "1932"
+        ],
+        "X_distance": 0.08657147340184566,
+        "market_access_ratio": 1.0728214503351616
+      },
+      {
+        "IDs": [
+          "1303",
+          "2251"
+        ],
+        "X_distance": 0.0868605119769397,
+        "market_access_ratio": 1.0964234620886981
+      },
+      {
+        "IDs": [
+          "1149",
+          "1173"
+        ],
+        "X_distance": 0.08691671964772968,
+        "market_access_ratio": 1.0740140464613723
+      },
+      {
+        "IDs": [
+          "1575",
+          "2144"
+        ],
+        "X_distance": 0.08697311008320037,
+        "market_access_ratio": 1.3774961597542243
+      },
+      {
+        "IDs": [
+          "1710",
+          "1717"
+        ],
+        "X_distance": 0.08739590735329243,
+        "market_access_ratio": 1.0381875178113424
+      },
+      {
+        "IDs": [
+          "1117",
+          "2337"
+        ],
+        "X_distance": 0.08817553244468482,
+        "market_access_ratio": 1.1557732455436005
+      },
+      {
+        "IDs": [
+          "25",
+          "27"
+        ],
+        "X_distance": 0.08849062316148278,
+        "market_access_ratio": 1.031548757170172
+      },
+      {
+        "IDs": [
+          "1429",
+          "2322"
+        ],
+        "X_distance": 0.0885241803591936,
+        "market_access_ratio": 1.0224570673712021
+      },
+      {
+        "IDs": [
+          "1444",
+          "1475"
+        ],
+        "X_distance": 0.08861935667043042,
+        "market_access_ratio": 1.068796068796069
+      },
+      {
+        "IDs": [
+          "555",
+          "1909"
+        ],
+        "X_distance": 0.08910653649327434,
+        "market_access_ratio": 1.6139270487920416
+      },
+      {
+        "IDs": [
+          "1681",
+          "1725"
+        ],
+        "X_distance": 0.0896937224786971,
+        "market_access_ratio": 1.1081576535288724
+      },
+      {
+        "IDs": [
+          "989",
+          "1668"
+        ],
+        "X_distance": 0.08975619183642618,
+        "market_access_ratio": 1.1539362013462102
+      },
+      {
+        "IDs": [
+          "1030",
+          "1755"
+        ],
+        "X_distance": 0.09006350954877342,
+        "market_access_ratio": 1.1727360618756042
+      },
+      {
+        "IDs": [
+          "539",
+          "1918"
+        ],
+        "X_distance": 0.09057850140229914,
+        "market_access_ratio": 1.5415921288014311
+      },
+      {
+        "IDs": [
+          "680",
+          "2165"
+        ],
+        "X_distance": 0.09089722229555453,
+        "market_access_ratio": 1.8583749432591918
+      },
+      {
+        "IDs": [
+          "1007",
+          "2251"
+        ],
+        "X_distance": 0.09090093180735156,
+        "market_access_ratio": 1.0734029484029484
+      },
+      {
+        "IDs": [
+          "504",
+          "1258"
+        ],
+        "X_distance": 0.09114627259007604,
+        "market_access_ratio": 1.404359430604982
+      },
+      {
+        "IDs": [
+          "1142",
+          "2192"
+        ],
+        "X_distance": 0.09118603544513858,
+        "market_access_ratio": 1.4130773222625845
+      },
+      {
+        "IDs": [
+          "58",
+          "531"
+        ],
+        "X_distance": 0.09132106387884192,
+        "market_access_ratio": 1.412075804319083
+      },
+      {
+        "IDs": [
+          "1904",
+          "2301"
+        ],
+        "X_distance": 0.09157812983943572,
+        "market_access_ratio": 1.1067741935483872
+      },
+      {
+        "IDs": [
+          "1569",
+          "2087"
+        ],
+        "X_distance": 0.09212700838893273,
+        "market_access_ratio": 1.0246110325318245
+      },
+      {
+        "IDs": [
+          "521",
+          "569"
+        ],
+        "X_distance": 0.09238914971724234,
+        "market_access_ratio": 1.0072694229895502
+      },
+      {
+        "IDs": [
+          "383",
+          "1893"
+        ],
+        "X_distance": 0.09284116773670664,
+        "market_access_ratio": 1.0062537224538415
+      },
+      {
+        "IDs": [
+          "717",
+          "1144"
+        ],
+        "X_distance": 0.09306781575769522,
+        "market_access_ratio": 1.1495633187772927
+      },
+      {
+        "IDs": [
+          "2042",
+          "2184"
+        ],
+        "X_distance": 0.09339096363409785,
+        "market_access_ratio": 1.2500811951932447
+      },
+      {
+        "IDs": [
+          "991",
+          "1001"
+        ],
+        "X_distance": 0.09414545349462022,
+        "market_access_ratio": 1.0149988282165456
+      },
+      {
+        "IDs": [
+          "1875",
+          "2320"
+        ],
+        "X_distance": 0.09445281990712974,
+        "market_access_ratio": 1.0671599317017644
+      },
+      {
+        "IDs": [
+          "1445",
+          "1461"
+        ],
+        "X_distance": 0.09448632581568098,
+        "market_access_ratio": 1.0049846625766872
+      },
+      {
+        "IDs": [
+          "43",
+          "61"
+        ],
+        "X_distance": 0.09468201633418062,
+        "market_access_ratio": 1.0595429674927583
+      },
+      {
+        "IDs": [
+          "43",
+          "1634"
+        ],
+        "X_distance": 0.0948676209123629,
+        "market_access_ratio": 1.380293501048218
+      },
+      {
+        "IDs": [
+          "670",
+          "1875"
+        ],
+        "X_distance": 0.09496104365960628,
+        "market_access_ratio": 1.6208487084870846
+      },
+      {
+        "IDs": [
+          "1732",
+          "2267"
+        ],
+        "X_distance": 0.09506945261626518,
+        "market_access_ratio": 1.026853473438412
+      },
+      {
+        "IDs": [
+          "833",
+          "1557"
+        ],
+        "X_distance": 0.09518537211593295,
+        "market_access_ratio": 1.1055450535601765
+      },
+      {
+        "IDs": [
+          "553",
+          "2094"
+        ],
+        "X_distance": 0.09518931817849825,
+        "market_access_ratio": 1.606954225352113
+      },
+      {
+        "IDs": [
+          "1488",
+          "1501"
+        ],
+        "X_distance": 0.09519157812982651,
+        "market_access_ratio": 1.0704041720990873
+      },
+      {
+        "IDs": [
+          "1694",
+          "1697"
+        ],
+        "X_distance": 0.09543051390017566,
+        "market_access_ratio": 1.0006550933508025
+      },
+      {
+        "IDs": [
+          "1656",
+          "2305"
+        ],
+        "X_distance": 0.09547410184661544,
+        "market_access_ratio": 1.2210101010101009
+      },
+      {
+        "IDs": [
+          "1211",
+          "2333"
+        ],
+        "X_distance": 0.09576878182279376,
+        "market_access_ratio": 1.1079177233023387
+      },
+      {
+        "IDs": [
+          "922",
+          "1762"
+        ],
+        "X_distance": 0.09620230966423303,
+        "market_access_ratio": 1.2141641130405176
+      },
+      {
+        "IDs": [
+          "1222",
+          "1718"
+        ],
+        "X_distance": 0.09672486670802244,
+        "market_access_ratio": 1.0185706246482837
+      },
+      {
+        "IDs": [
+          "1681",
+          "2255"
+        ],
+        "X_distance": 0.09677433487583512,
+        "market_access_ratio": 1.066911090742438
+      },
+      {
+        "IDs": [
+          "1722",
+          "2152"
+        ],
+        "X_distance": 0.09696222055579844,
+        "market_access_ratio": 1.6037306642402183
+      },
+      {
+        "IDs": [
+          "362",
+          "373"
+        ],
+        "X_distance": 0.0971025613994829,
+        "market_access_ratio": 1.011754334410814
+      },
+      {
+        "IDs": [
+          "56",
+          "68"
+        ],
+        "X_distance": 0.09748169231397699,
+        "market_access_ratio": 1.0306881587104773
+      },
+      {
+        "IDs": [
+          "295",
+          "1932"
+        ],
+        "X_distance": 0.09756367199605023,
+        "market_access_ratio": 1.0971968312004876
+      },
+      {
+        "IDs": [
+          "1445",
+          "1465"
+        ],
+        "X_distance": 0.0977041230977316,
+        "market_access_ratio": 1.1211369706219
+      },
+      {
+        "IDs": [
+          "1107",
+          "2033"
+        ],
+        "X_distance": 0.0977199682156786,
+        "market_access_ratio": 1.2704225352112675
+      },
+      {
+        "IDs": [
+          "1926",
+          "2254"
+        ],
+        "X_distance": 0.09773082931372845,
+        "market_access_ratio": 1.010109763142692
+      },
+      {
+        "IDs": [
+          "33",
+          "1661"
+        ],
+        "X_distance": 0.09792256603960506,
+        "market_access_ratio": 1.2585249801744647
+      },
+      {
+        "IDs": [
+          "1539",
+          "1563"
+        ],
+        "X_distance": 0.09812848752230506,
+        "market_access_ratio": 1.0
+      },
+      {
+        "IDs": [
+          "26",
+          "29"
+        ],
+        "X_distance": 0.09830385600790449,
+        "market_access_ratio": 1.0159574468085106
+      },
+      {
+        "IDs": [
+          "27",
+          "29"
+        ],
+        "X_distance": 0.09832153717320086,
+        "market_access_ratio": 1.095602294455067
+      },
+      {
+        "IDs": [
+          "303",
+          "1160"
+        ],
+        "X_distance": 0.09861242467124663,
+        "market_access_ratio": 2.0127142067440578
+      },
+      {
+        "IDs": [
+          "757",
+          "1726"
+        ],
+        "X_distance": 0.09889479902907776,
+        "market_access_ratio": 1.2112228692429856
+      },
+      {
+        "IDs": [
+          "1203",
+          "1213"
+        ],
+        "X_distance": 0.09977738649254099,
+        "market_access_ratio": 1.0200350613573754
+      },
+      {
+        "IDs": [
+          "1523",
+          "1575"
+        ],
+        "X_distance": 0.10000865649336038,
+        "market_access_ratio": 1.025090604962364
+      },
+      {
+        "IDs": [
+          "1116",
+          "1904"
+        ],
+        "X_distance": 0.100292902577524,
+        "market_access_ratio": 1.0425531914893615
+      },
+      {
+        "IDs": [
+          "1719",
+          "2043"
+        ],
+        "X_distance": 0.10052103786308862,
+        "market_access_ratio": 1.3676300578034681
+      },
+      {
+        "IDs": [
+          "1467",
+          "1475"
+        ],
+        "X_distance": 0.10055838575583975,
+        "market_access_ratio": 1.0635696821515892
+      },
+      {
+        "IDs": [
+          "40",
+          "75"
+        ],
+        "X_distance": 0.10074631326610906,
+        "market_access_ratio": 1.1118464592984778
+      },
+      {
+        "IDs": [
+          "1116",
+          "2041"
+        ],
+        "X_distance": 0.1008606825528439,
+        "market_access_ratio": 1.288080662585524
+      },
+      {
+        "IDs": [
+          "905",
+          "1157"
+        ],
+        "X_distance": 0.10140798142414585,
+        "market_access_ratio": 1.5372549019607842
+      },
+      {
+        "IDs": [
+          "280",
+          "398"
+        ],
+        "X_distance": 0.10154963896476844,
+        "market_access_ratio": 1.0014819205690575
+      },
+      {
+        "IDs": [
+          "32",
+          "1658"
+        ],
+        "X_distance": 0.10155755496466495,
+        "market_access_ratio": 1.2771278741427996
+      },
+      {
+        "IDs": [
+          "1404",
+          "2189"
+        ],
+        "X_distance": 0.10199685785188836,
+        "market_access_ratio": 1.398107468739439
+      },
+      {
+        "IDs": [
+          "1109",
+          "2194"
+        ],
+        "X_distance": 0.10240027337285972,
+        "market_access_ratio": 1.295630725863284
+      },
+      {
+        "IDs": [
+          "562",
+          "564"
+        ],
+        "X_distance": 0.10246510211293411,
+        "market_access_ratio": 1.0654117647058823
+      },
+      {
+        "IDs": [
+          "926",
+          "1929"
+        ],
+        "X_distance": 0.10260615757528434,
+        "market_access_ratio": 1.2042179261862918
+      },
+      {
+        "IDs": [
+          "289",
+          "2259"
+        ],
+        "X_distance": 0.10262546384201589,
+        "market_access_ratio": 1.0304772857964346
+      },
+      {
+        "IDs": [
+          "1035",
+          "1737"
+        ],
+        "X_distance": 0.10274103721445291,
+        "market_access_ratio": 1.1401273885350318
+      },
+      {
+        "IDs": [
+          "206",
+          "1501"
+        ],
+        "X_distance": 0.10367429203587582,
+        "market_access_ratio": 1.6406417112299465
+      },
+      {
+        "IDs": [
+          "25",
+          "26"
+        ],
+        "X_distance": 0.10390157024258224,
+        "market_access_ratio": 1.0454124189063947
+      },
+      {
+        "IDs": [
+          "1205",
+          "2172"
+        ],
+        "X_distance": 0.10396399514863243,
+        "market_access_ratio": 1.0346644481419855
+      },
+      {
+        "IDs": [
+          "1204",
+          "2317"
+        ],
+        "X_distance": 0.10407289636793929,
+        "market_access_ratio": 1.2726008344923503
+      },
+      {
+        "IDs": [
+          "905",
+          "1161"
+        ],
+        "X_distance": 0.10437277018247486,
+        "market_access_ratio": 1.410071942446043
+      },
+      {
+        "IDs": [
+          "1985",
+          "2192"
+        ],
+        "X_distance": 0.10445841270174777,
+        "market_access_ratio": 1.0936467131839882
+      },
+      {
+        "IDs": [
+          "382",
+          "1939"
+        ],
+        "X_distance": 0.10482597757027881,
+        "market_access_ratio": 1.0183727034120735
+      },
+      {
+        "IDs": [
+          "992",
+          "2203"
+        ],
+        "X_distance": 0.10497816698932254,
+        "market_access_ratio": 1.3125212080081439
+      },
+      {
+        "IDs": [
+          "291",
+          "1733"
+        ],
+        "X_distance": 0.10525579442861908,
+        "market_access_ratio": 1.0437047756874096
+      },
+      {
+        "IDs": [
+          "1040",
+          "1937"
+        ],
+        "X_distance": 0.10554543478945982,
+        "market_access_ratio": 1.023619533992978
+      },
+      {
+        "IDs": [
+          "1134",
+          "1979"
+        ],
+        "X_distance": 0.1055853883087252,
+        "market_access_ratio": 1.3938091143594153
+      },
+      {
+        "IDs": [
+          "667",
+          "892"
+        ],
+        "X_distance": 0.10599622658335098,
+        "market_access_ratio": 1.328398384925976
+      },
+      {
+        "IDs": [
+          "1633",
+          "2305"
+        ],
+        "X_distance": 0.10622436714249611,
+        "market_access_ratio": 1.204944178628389
+      },
+      {
+        "IDs": [
+          "1218",
+          "2042"
+        ],
+        "X_distance": 0.10649766645852947,
+        "market_access_ratio": 1.2146800909386166
+      },
+      {
+        "IDs": [
+          "1525",
+          "2033"
+        ],
+        "X_distance": 0.10666918852931115,
+        "market_access_ratio": 1.1934272300469484
+      },
+      {
+        "IDs": [
+          "28",
+          "420"
+        ],
+        "X_distance": 0.10690497208412847,
+        "market_access_ratio": 1.1179327089836975
+      },
+      {
+        "IDs": [
+          "920",
+          "1422"
+        ],
+        "X_distance": 0.10695059383535024,
+        "market_access_ratio": 1.226797385620915
+      },
+      {
+        "IDs": [
+          "2042",
+          "2300"
+        ],
+        "X_distance": 0.10728762249118724,
+        "market_access_ratio": 1.0006499837504061
+      },
+      {
+        "IDs": [
+          "1160",
+          "1413"
+        ],
+        "X_distance": 0.10752196151726287,
+        "market_access_ratio": 2.0597014925373136
+      },
+      {
+        "IDs": [
+          "897",
+          "1221"
+        ],
+        "X_distance": 0.10765535027493853,
+        "market_access_ratio": 1.348596256684492
+      },
+      {
+        "IDs": [
+          "555",
+          "1689"
+        ],
+        "X_distance": 0.10768479637121271,
+        "market_access_ratio": 1.4864992894362863
+      },
+      {
+        "IDs": [
+          "216",
+          "240"
+        ],
+        "X_distance": 0.10785847436258444,
+        "market_access_ratio": 1.131731886865556
+      },
+      {
+        "IDs": [
+          "375",
+          "1758"
+        ],
+        "X_distance": 0.10791824994574174,
+        "market_access_ratio": 1.0106502242152466
+      },
+      {
+        "IDs": [
+          "2087",
+          "2089"
+        ],
+        "X_distance": 0.10792155499387686,
+        "market_access_ratio": 1.0673267326732674
+      },
+      {
+        "IDs": [
+          "922",
+          "1727"
+        ],
+        "X_distance": 0.10805430790154044,
+        "market_access_ratio": 1.2141641130405176
+      },
+      {
+        "IDs": [
+          "452",
+          "1142"
+        ],
+        "X_distance": 0.10838743766919597,
+        "market_access_ratio": 1.065905552672548
+      },
+      {
+        "IDs": [
+          "25",
+          "269"
+        ],
+        "X_distance": 0.10898128786063244,
+        "market_access_ratio": 1.072907012666049
+      },
+      {
+        "IDs": [
+          "59",
+          "364"
+        ],
+        "X_distance": 0.1094178879873439,
+        "market_access_ratio": 1.1063492063492064
+      },
+      {
+        "IDs": [
+          "1028",
+          "1722"
+        ],
+        "X_distance": 0.11008076688266903,
+        "market_access_ratio": 1.084281759458628
+      },
+      {
+        "IDs": [
+          "1557",
+          "1780"
+        ],
+        "X_distance": 0.11017269673299224,
+        "market_access_ratio": 1.2021240150736554
+      },
+      {
+        "IDs": [
+          "1319",
+          "1348"
+        ],
+        "X_distance": 0.11052649703823451,
+        "market_access_ratio": 1.2394686907020873
+      },
+      {
+        "IDs": [
+          "375",
+          "1952"
+        ],
+        "X_distance": 0.11057458700533437,
+        "market_access_ratio": 1.0072625698324023
+      },
+      {
+        "IDs": [
+          "507",
+          "820"
+        ],
+        "X_distance": 0.11106742073488869,
+        "market_access_ratio": 1.3550065019505853
+      },
+      {
+        "IDs": [
+          "1697",
+          "1698"
+        ],
+        "X_distance": 0.11139832648359839,
+        "market_access_ratio": 1.051097281362594
+      },
+      {
+        "IDs": [
+          "2186",
+          "2336"
+        ],
+        "X_distance": 0.11149397032665175,
+        "market_access_ratio": 1.0645502645502645
+      },
+      {
+        "IDs": [
+          "1203",
+          "2298"
+        ],
+        "X_distance": 0.11150851426797159,
+        "market_access_ratio": 1.3087512291052112
+      },
+      {
+        "IDs": [
+          "1916",
+          "1929"
+        ],
+        "X_distance": 0.11176032844993256,
+        "market_access_ratio": 1.0137186223000583
+      },
+      {
+        "IDs": [
+          "1131",
+          "1163"
+        ],
+        "X_distance": 0.1123011269601385,
+        "market_access_ratio": 2.272727272727273
+      },
+      {
+        "IDs": [
+          "2148",
+          "2189"
+        ],
+        "X_distance": 0.11238666822559494,
+        "market_access_ratio": 1.914391485423415
+      },
+      {
+        "IDs": [
+          "2294",
+          "2330"
+        ],
+        "X_distance": 0.11268686665372891,
+        "market_access_ratio": 1.2876811594202897
+      },
+      {
+        "IDs": [
+          "1394",
+          "1407"
+        ],
+        "X_distance": 0.11282930753902361,
+        "market_access_ratio": 1.003770028275212
+      },
+      {
+        "IDs": [
+          "1135",
+          "2282"
+        ],
+        "X_distance": 0.11359572145112397,
+        "market_access_ratio": 1.6537842190016103
+      },
+      {
+        "IDs": [
+          "1287",
+          "1290"
+        ],
+        "X_distance": 0.1137971783842898,
+        "market_access_ratio": 1.0589214380825567
+      },
+      {
+        "IDs": [
+          "569",
+          "1642"
+        ],
+        "X_distance": 0.11390668891766456,
+        "market_access_ratio": 1.1416328371673432
+      },
+      {
+        "IDs": [
+          "1705",
+          "2267"
+        ],
+        "X_distance": 0.11416579322335725,
+        "market_access_ratio": 1.1389627659574468
+      },
+      {
+        "IDs": [
+          "1917",
+          "1951"
+        ],
+        "X_distance": 0.1145214103114751,
+        "market_access_ratio": 1.0117302052785924
+      },
+      {
+        "IDs": [
+          "61",
+          "383"
+        ],
+        "X_distance": 0.11467807584177249,
+        "market_access_ratio": 1.0807853234631477
+      },
+      {
+        "IDs": [
+          "29",
+          "269"
+        ],
+        "X_distance": 0.11478079214509118,
+        "market_access_ratio": 1.0101803374054683
+      },
+      {
+        "IDs": [
+          "841",
+          "1726"
+        ],
+        "X_distance": 0.11488941615099595,
+        "market_access_ratio": 1.7899557801642452
+      },
+      {
+        "IDs": [
+          "386",
+          "929"
+        ],
+        "X_distance": 0.11531783890990642,
+        "market_access_ratio": 1.1827550669872895
+      },
+      {
+        "IDs": [
+          "450",
+          "677"
+        ],
+        "X_distance": 0.11569856707609734,
+        "market_access_ratio": 1.1273370389085395
+      },
+      {
+        "IDs": [
+          "1446",
+          "1448"
+        ],
+        "X_distance": 0.11584862009338937,
+        "market_access_ratio": 1.2657308809293322
+      },
+      {
+        "IDs": [
+          "770",
+          "1065"
+        ],
+        "X_distance": 0.11591851445205918,
+        "market_access_ratio": 1.0604551920341394
+      },
+      {
+        "IDs": [
+          "25",
+          "422"
+        ],
+        "X_distance": 0.11596791301287422,
+        "market_access_ratio": 1.010194624652456
+      },
+      {
+        "IDs": [
+          "293",
+          "1696"
+        ],
+        "X_distance": 0.11599127374200362,
+        "market_access_ratio": 1.1676394293125811
+      },
+      {
+        "IDs": [
+          "486",
+          "497"
+        ],
+        "X_distance": 0.11644566593910499,
+        "market_access_ratio": 1.0091819699499165
+      },
+      {
+        "IDs": [
+          "1874",
+          "2275"
+        ],
+        "X_distance": 0.1165077188396699,
+        "market_access_ratio": 1.2918065815983881
+      },
+      {
+        "IDs": [
+          "383",
+          "1634"
+        ],
+        "X_distance": 0.11658847047495234,
+        "market_access_ratio": 1.4079664570230608
+      },
+      {
+        "IDs": [
+          "1658",
+          "2292"
+        ],
+        "X_distance": 0.11671109187302463,
+        "market_access_ratio": 1.2420330778539732
+      },
+      {
+        "IDs": [
+          "1719",
+          "1899"
+        ],
+        "X_distance": 0.11684155427295458,
+        "market_access_ratio": 1.0025423728813558
+      },
+      {
+        "IDs": [
+          "528",
+          "1694"
+        ],
+        "X_distance": 0.11697286217282082,
+        "market_access_ratio": 1.3505747126436782
+      },
+      {
+        "IDs": [
+          "1776",
+          "1902"
+        ],
+        "X_distance": 0.11704907420212585,
+        "market_access_ratio": 1.0939278937381405
+      },
+      {
+        "IDs": [
+          "1158",
+          "2203"
+        ],
+        "X_distance": 0.11766495760296418,
+        "market_access_ratio": 1.5502367175170964
+      },
+      {
+        "IDs": [
+          "31",
+          "41"
+        ],
+        "X_distance": 0.11768169793566136,
+        "market_access_ratio": 1.0030959752321982
+      },
+      {
+        "IDs": [
+          "1004",
+          "1785"
+        ],
+        "X_distance": 0.11790205208843,
+        "market_access_ratio": 1.334664005322688
+      },
+      {
+        "IDs": [
+          "1410",
+          "2318"
+        ],
+        "X_distance": 0.11802250761040532,
+        "market_access_ratio": 1.0465815176558977
+      }
+    ],
+    "selection_warning": "Intentionally maximum access contrast within the predeclared 200 closest eligible spending pairs; illustrative, not typical effect or validation.",
+    "completed_action": "Flagged selected spending analogues as non-equivalent in market access; retained spending comparison but prohibited unqualified contextual substitution."
+  },
+  "case3": {
+    "eligible_negative_NCut_positive_SSE_N": 204,
+    "territory": {
+      "ID": "1480",
+      "native_oktmo8": "46776000",
+      "supplier_name": "городской округ Ступино",
+      "supplier_type": "городской округ",
+      "supplier_region": "Московская область",
+      "december_consumption_RUB": {
+        "Все категории": 51486.0,
+        "Продовольствие": 18462.0,
+        "Здоровье": 2367.0,
+        "Общественное питание": 2225.0,
+        "Транспорт": 3023.0,
+        "Маркетплейсы": 9755.0
+      },
+      "context_2024": {
+        "population_jan1_2024": 118129.0,
+        "market_access_2024": 441.1,
+        "organization_salary_RUB_2024": 102284.6,
+        "organization_workers_per_resident_2024": 0.2474328911613575,
+        "education_worker_share_2024": 0.10178247630777652
+      },
+      "NCut_group": 7,
+      "SSE_group": 6,
+      "NCut_SW": -0.6545682273221969,
+      "SSE_SW": 0.5459339499820934
+    },
+    "group_profiles_same_support": {
+      "NCut": {
+        "group": 7,
+        "N_common": 132,
+        "N_full": 182,
+        "consumption_RUB_median": {
+          "Все категории": 49261.0,
+          "Продовольствие": 19008.0,
+          "Здоровье": 1613.5,
+          "Общественное питание": 1621.5,
+          "Транспорт": 2233.0,
+          "Маркетплейсы": 7629.5
+        },
+        "context_2024_median": {
+          "population_jan1_2024": 25525.0,
+          "market_access_2024": 170.7,
+          "organization_salary_RUB_2024": 111061.45,
+          "organization_workers_per_resident_2024": 0.2937909999634172,
+          "education_worker_share_2024": 0.13976272097869194
+        },
+        "negative_SW_N_full": 116
+      },
+      "SSE": {
+        "group": 6,
+        "N_common": 164,
+        "N_full": 203,
+        "consumption_RUB_median": {
+          "Все категории": 52938.0,
+          "Продовольствие": 18273.5,
+          "Здоровье": 2499.0,
+          "Общественное питание": 2946.5,
+          "Транспорт": 3260.0,
+          "Маркетплейсы": 8971.0
+        },
+        "context_2024_median": {
+          "population_jan1_2024": 83338.5,
+          "market_access_2024": 396.45,
+          "organization_salary_RUB_2024": 100353.5,
+          "organization_workers_per_resident_2024": 0.21963616692879456,
+          "education_worker_share_2024": 0.1273809442901726
+        },
+        "negative_SW_N_full": 5
+      }
+    },
+    "post_selection_same_supplier_type_nonfederal_profiles": {
+      "NCut": {
+        "group": 7,
+        "supplier_type": "городской округ",
+        "N": 40,
+        "consumption_RUB_median": {
+          "Все категории": 50944.5,
+          "Продовольствие": 18953.5,
+          "Здоровье": 2006.5,
+          "Общественное питание": 2153.5,
+          "Транспорт": 2655.5,
+          "Маркетплейсы": 8443.5
+        },
+        "context_2024_median": {
+          "population_jan1_2024": 66767.5,
+          "market_access_2024": 211.10000000000002,
+          "organization_salary_RUB_2024": 103929.1,
+          "organization_workers_per_resident_2024": 0.26552418674130385,
+          "education_worker_share_2024": 0.12659568971427188
+        }
+      },
+      "SSE": {
+        "group": 6,
+        "supplier_type": "городской округ",
+        "N": 70,
+        "consumption_RUB_median": {
+          "Все категории": 50501.5,
+          "Продовольствие": 18515.5,
+          "Здоровье": 2327.5,
+          "Общественное питание": 2457.0,
+          "Транспорт": 2954.5,
+          "Маркетплейсы": 8656.5
+        },
+        "context_2024_median": {
+          "population_jan1_2024": 158532.5,
+          "market_access_2024": 335.29999999999995,
+          "organization_salary_RUB_2024": 93465.95,
+          "organization_workers_per_resident_2024": 0.2557206614822921,
+          "education_worker_share_2024": 0.11698336709627041
+        }
+      }
+    },
+    "completed_action": "Marked NCut assignment as boundary/ambiguous and exposed the saved SSE alternative for scrutiny; neither labels nor economic functions changed."
+  },
+  "sources_sha256": {
+    "workstreams/economic_interpretation_20261008_r00/use_cases/PROTOCOL.md": "0ecdcb930e041bb62f56e5d44cf28beaa0be5fc7fb480a2f8b692f802b39fadc",
+    "workstreams/economic_interpretation_20261008_r00/use_cases/POST_SELECTION_CHECK.md": "f372c43260c93ca9135217b5d8c1d57464ba4f1991e320f55295f897adb62472",
+    "workstreams/local_finalization_20261008_r00/portable/staging/r01/municipal_typology/code/science/context/input/context2024.npz": "9f0c47a99464db78f9d10fcf5318a43cd905b92861b44cc7123b9a099d44f6ae",
+    "workstreams/local_finalization_20261008_r00/portable/staging/r01/municipal_typology/code/science/context/input/core_ID_context.csv": "f83e8d03cb82605125bf7c288321e3f5893705511c84bd4eb8447a603ef00329",
+    "workstreams/local_finalization_20261008_r00/portable/staging/r01/municipal_typology/code/science/national/data/input2190.npz": "e4abc1a00495fae8280213b85c326169a1a0f5efcf7504400964b69b296c0547",
+    "workstreams/local_finalization_20261008_r00/portable/staging/r01/municipal_typology/code/science/national/data/reported2190.npz": "e5cd11d4295be6e20b11446eb48ffedaa1b31155c199adea327a39396da206bf",
+    "workstreams/local_finalization_20261008_r00/portable/staging/r01/municipal_typology/code/science/national/data/reference.json": "733bf0c121b441bea7f423e2e10aa2dddfd9aa76e8bd152462d4bb4020c2052f",
+    "workstreams/local_finalization_20261008_r00/portable/staging/r01/municipal_typology/code/science/national/engine/vendor/kernels.py": "0d9ae437f4eef1cc698473b7171db460e52d082e83fe52aff8f7686fdf24c3bc",
+    "workstreams/local_finalization_20261008_r00/portable/staging/r01/municipal_typology/code/saved/national/2024-12/NCut_K10.json.gz": "1758bd0e968f9d53e469735b27d642d0df67e6482fc814b06ca79442c756cbc3",
+    "workstreams/local_finalization_20261008_r00/portable/staging/r01/municipal_typology/code/saved/national/2024-12/SSE_K10.json.gz": "151a11cdbbbe64a78faee11c4970f37fc2225e48ba75347fc46632da54ed923f"
+  },
+  "source_hashes_unchanged_after_read": true,
+  "limitations": [
+    "Descriptive examples selected on observed outcomes are not an independent validation or measure of business benefit.",
+    "Conditional exact-code territorial admission is not a certificate of stable physical boundaries.",
+    "Wages cover organizations excluding small businesses, not all resident incomes; workers/residents is not resident employment and can exceed one.",
+    "Annual context and December spending have different temporal aggregation.",
+    "No economic sector, causal role, investment policy or true label inferred.",
+    "Native SW retains the full 2103-ID December reference; group contextual medians use common 1666 IDs."
+  ]
+}

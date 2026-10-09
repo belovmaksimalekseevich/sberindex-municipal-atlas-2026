@@ -1,0 +1,76 @@
+{
+  "schema": "analogue-hidden-salary-protocol-20261008-v1",
+  "status": "FROZEN_BEFORE_RESULTS",
+  "question": "Do frozen December cluster labels improve retrieval of five cross-region analogues for descriptive reconstruction of the held-out 2024 organization salary field?",
+  "scope": {
+    "base_common_IDs_expected": 1666,
+    "exclude_supplier_regions": ["Москва", "Санкт-Петербург"],
+    "nonfederal_IDs_expected_before_validation": 1445,
+    "spending_month": "2024-12",
+    "salary_reference_period": "2024 full-year average monthly organization wage",
+    "population_date": "2024-01-01",
+    "new_clustering_fits": false,
+    "new_SSH": false,
+    "new_downloads": false,
+    "context6_labels_allowed": false,
+    "untouched_holdout": false
+  },
+  "admission": {
+    "join": "Exact supplier ID; same ID and CSV/NPZ order; verify reference-year numbers and municipality names/types from core_ID_context.csv.",
+    "metadata_required": ["ID", "supplier_region", "supplier_type", "supplier_name", "native_oktmo8"],
+    "numeric_required": "Observed December spending and finite frozen X; positive Total and organization salary; positive population; nonnegative market_access and workers/residents; education share in [0,1].",
+    "missing_or_invalid": "Exclude from query and candidate universe with explicit field reasons; never zero-impute. Target validity participates only in admission, never target values in ranking. No assumption that all 1445 pass.",
+    "type_equivalence": "Exact literal supplier_type; no mixing of municipal districts, urban districts or intracity territories.",
+    "candidate_rule": "Admitted territory, same supplier_type and supplier_region different from query; query necessarily excluded.",
+    "minimum_candidates": 5
+  },
+  "methods": {
+    "total": "Five nearest by abs(log reported December Total_j - log Total_i).",
+    "spending": "Five nearest by Euclidean distance in published frozen six-dimensional X; kernels.embed and saved reference.json, no refit of scales.",
+    "context_no_salary": "Five nearest by Euclidean distance in four coordinates: log population, log1p market_access, log1p workers/residents, arcsin sqrt education share. Divide each coordinate difference by its IQR among this query's eligible candidates, using NumPy linear quantiles. Equal coordinate weights; no salary coordinate or context6 label.",
+    "NCut_hard": "Five nearest by frozen X among eligible candidates with identical frozen NCut10 December group. Unavailable if fewer than five; no fallback.",
+    "SSE_hard": "Same hard rule using SSE10 labels.",
+    "NCut_soft": "Take up to three nearest same-NCut-group eligible candidates by X, then fill to five with nearest remaining eligible candidates by X, regardless of group. Candidates cannot repeat.",
+    "SSE_soft": "Same soft rule using SSE10 labels.",
+    "median": "Median log salary of all eligible candidates, requiring at least five; no retrieved five and no salary-based selection."
+  },
+  "numerics": {
+    "distance_dtype": "float64",
+    "context_zero_IQR": "If any of four candidate IQRs is zero or nonfinite, context_no_salary is unavailable; do not remove feature or add epsilon. Other methods remain available.",
+    "ties": "Ascending distance, then ascending numeric supplier ID; no rounding before sorting.",
+    "prediction_retrieval": "Arithmetic mean of log salaries of exactly five selected candidates.",
+    "prediction_median": "Median of log salaries of all same-type other-region eligible candidates.",
+    "prediction_RUB": "exp(prediction_log); no lognormal correction.",
+    "target": "log positive 2024 organization salary; observed annual field, not future-time outcome"
+  },
+  "evaluation": {
+    "primary_support": "Intersection of queries for which every one of eight methods is available, fixed by availability only, not error.",
+    "primary_error": "Mean absolute log salary error within each query region, then unweighted mean over represented regions; each region equal weight.",
+    "secondary_errors": ["Equal-region MAE in RUB using exp(log prediction)", "Equal-query pooled MAE log and RUB, explicitly secondary"],
+    "coverage": "Per method query and region counts out of admitted universe; reason for unavailable; shared primary support and counts by region and supplier_type.",
+    "support_sensitivity": "Also evaluate six non-hard methods on their common support (total, spending, context_no_salary, NCut_soft, SSE_soft, median). Evaluate each hard method against spending and context_no_salary on their pairwise common support. Do not compare errors from method-specific supports as if fair.",
+    "comparisons": "For each cluster retrieval method compare to spending and context_no_salary on primary support; record equal-region absolute/relative delta and counts of regions improved/tied/worsened.",
+    "positive_gate": "A cluster method has a numerical improvement in this fixed protocol only if its primary equal-region log MAE is strictly lower than BOTH spending and context_no_salary. No significance or generalization claim from a tiny delta. Report coverage and region-level heterogeneity regardless.",
+    "negative_gate": "If no cluster method beats both controls, report added-value claim not confirmed for this task; retain direct/global retrieval and clusters as navigation. Do not retune parameters or replace target/month.",
+    "no_p_values": "No independent-sample significance assumed for related municipalities/overlapping candidate sets; no p-value or causal claim."
+  },
+  "quality_assurance": [
+    "Source SHA256 before and after",
+    "Exact unique ID joins and observed December coverage",
+    "Strict same-type other-region candidate constraints and no repeated/self candidate",
+    "Salary permutation and alteration of salary X_raw column leave admitted valid support and every selected ID unchanged",
+    "Retrieval input contract contains no salary values or annual context6 labels",
+    "Recompute all predictions from selected IDs and raw salary",
+    "Recompute primary and secondary aggregates from per-query outputs",
+    "Deterministic repeated retrieval and artifact comparison"
+  ],
+  "limits": [
+    "Organization salary excluding small businesses is not residents' income.",
+    "The source cohort has conditional territorial admission and selection bias; same administrative type does not certify comparable physical boundaries.",
+    "Frozen national labels and spending normalization use full retrospective panel; this is transductive retrieval, not an entirely region-held-out clustering pipeline.",
+    "Upstream use of socio-economic data in modeled spending is unknown.",
+    "Prior salary diagnostics and examples were already examined; target is not untouched holdout.",
+    "Worker and education ratios may share upstream data with wage series; omission of direct salary does not prove source independence.",
+    "Negative results do not invalidate useful descriptive profiles, but no ROI, time-saving, functional-type or forecast benefit is inferred."
+  ]
+}

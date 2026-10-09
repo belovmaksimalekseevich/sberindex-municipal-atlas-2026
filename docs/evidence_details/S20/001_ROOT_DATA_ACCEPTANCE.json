@@ -1,0 +1,735 @@
+{
+  "UTC": "2026-10-09T14:41:48.846541+00:00",
+  "passed": true,
+  "status": "ACCEPTED_CONTENT_AND_DATA_BEFORE_FRONTEND",
+  "checks": [
+    {
+      "name": "protected_source:workstreams/fresh_audit_20261009_r00/current_code_r04/PACKAGE_MANIFEST.json",
+      "passed": true
+    },
+    {
+      "name": "protected_source:workstreams/resolution_challenger_20261009_r00/ROOT_FINAL_ACCEPTANCE.json",
+      "passed": true
+    },
+    {
+      "name": "protected_source:workstreams/resolution_challenger_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "protected_source:workstreams/research_vm_20261009_r00/FINAL_ROOT_ACCEPTANCE_r00.json",
+      "passed": true
+    },
+    {
+      "name": "protected_source:workstreams/fresh_audit_20261009_r00/current_content_r01/CONTENT_DELTA.json",
+      "passed": true
+    },
+    {
+      "name": "protected_source:ТЗ_кластеризация_СберИндекс_2026.md",
+      "passed": true
+    },
+    {
+      "name": "independent_cards_pass",
+      "passed": true
+    },
+    {
+      "name": "reviewed_card_binding:workstreams/frontend_integration_20261009_r00/content/SSE6_CARDS.json",
+      "passed": true
+    },
+    {
+      "name": "reviewed_card_binding:workstreams/frontend_integration_20261009_r00/content/SSE6_CARDS.md",
+      "passed": true
+    },
+    {
+      "name": "reviewed_card_binding:workstreams/frontend_integration_20261009_r00/content/SSE6_G0.json",
+      "passed": true
+    },
+    {
+      "name": "reviewed_card_binding:workstreams/frontend_integration_20261009_r00/content/SSE6_G0.md",
+      "passed": true
+    },
+    {
+      "name": "reviewed_card_binding:workstreams/frontend_integration_20261009_r00/content/SSE6_G1.json",
+      "passed": true
+    },
+    {
+      "name": "reviewed_card_binding:workstreams/frontend_integration_20261009_r00/content/SSE6_G1.md",
+      "passed": true
+    },
+    {
+      "name": "reviewed_card_binding:workstreams/frontend_integration_20261009_r00/content/SSE6_G2.json",
+      "passed": true
+    },
+    {
+      "name": "reviewed_card_binding:workstreams/frontend_integration_20261009_r00/content/SSE6_G2.md",
+      "passed": true
+    },
+    {
+      "name": "reviewed_card_binding:workstreams/frontend_integration_20261009_r00/content/SSE6_G3.json",
+      "passed": true
+    },
+    {
+      "name": "reviewed_card_binding:workstreams/frontend_integration_20261009_r00/content/SSE6_G3.md",
+      "passed": true
+    },
+    {
+      "name": "reviewed_card_binding:workstreams/frontend_integration_20261009_r00/content/SSE6_G4.json",
+      "passed": true
+    },
+    {
+      "name": "reviewed_card_binding:workstreams/frontend_integration_20261009_r00/content/SSE6_G4.md",
+      "passed": true
+    },
+    {
+      "name": "reviewed_card_binding:workstreams/frontend_integration_20261009_r00/content/SSE6_G5.json",
+      "passed": true
+    },
+    {
+      "name": "reviewed_card_binding:workstreams/frontend_integration_20261009_r00/content/SSE6_G5.md",
+      "passed": true
+    },
+    {
+      "name": "reviewed_card_binding:workstreams/frontend_integration_20261009_r00/content/AUTHOR_QA.json",
+      "passed": true
+    },
+    {
+      "name": "supporting_pass",
+      "passed": true
+    },
+    {
+      "name": "supporting_bound",
+      "passed": true
+    },
+    {
+      "name": "independent_data_pass",
+      "passed": true
+    },
+    {
+      "name": "independent_data_bound",
+      "passed": true
+    },
+    {
+      "name": "author_data_bound",
+      "passed": true
+    },
+    {
+      "name": "temporal_baseline_bound",
+      "passed": true
+    },
+    {
+      "name": "export_binding:annual.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:base.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:cards_SSE6_December.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:config/NCut_K10.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:config/SSE_K06.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:config/SSE_K10.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:DATA_CONTRACT.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:lead.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:leadnet.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:NATIVE_PARITY.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:net/shared_mixed/2023-01.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:net/shared_mixed/2023-02.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:net/shared_mixed/2023-03.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:net/shared_mixed/2023-04.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:net/shared_mixed/2023-05.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:net/shared_mixed/2023-06.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:net/shared_mixed/2023-07.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:net/shared_mixed/2023-08.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:net/shared_mixed/2023-09.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:net/shared_mixed/2023-10.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:net/shared_mixed/2023-11.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:net/shared_mixed/2023-12.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:net/shared_mixed/2024-01.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:net/shared_mixed/2024-02.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:net/shared_mixed/2024-03.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:net/shared_mixed/2024-04.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:net/shared_mixed/2024-05.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:net/shared_mixed/2024-06.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:net/shared_mixed/2024-07.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:net/shared_mixed/2024-08.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:net/shared_mixed/2024-09.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:net/shared_mixed/2024-10.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:net/shared_mixed/2024-11.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:net/shared_mixed/2024-12.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:PROVENANCE.json",
+      "passed": true
+    },
+    {
+      "name": "export_binding:stability_SSE6.json",
+      "passed": true
+    },
+    {
+      "name": "explicit_three_views",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:NCut_K10:2023-01",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K10:2023-01",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K06:2023-01",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:NCut_K10:2023-02",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K10:2023-02",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K06:2023-02",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:NCut_K10:2023-03",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K10:2023-03",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K06:2023-03",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:NCut_K10:2023-04",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K10:2023-04",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K06:2023-04",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:NCut_K10:2023-05",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K10:2023-05",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K06:2023-05",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:NCut_K10:2023-06",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K10:2023-06",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K06:2023-06",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:NCut_K10:2023-07",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K10:2023-07",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K06:2023-07",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:NCut_K10:2023-08",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K10:2023-08",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K06:2023-08",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:NCut_K10:2023-09",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K10:2023-09",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K06:2023-09",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:NCut_K10:2023-10",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K10:2023-10",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K06:2023-10",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:NCut_K10:2023-11",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K10:2023-11",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K06:2023-11",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:NCut_K10:2023-12",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K10:2023-12",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K06:2023-12",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:NCut_K10:2024-01",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K10:2024-01",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K06:2024-01",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:NCut_K10:2024-02",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K10:2024-02",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K06:2024-02",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:NCut_K10:2024-03",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K10:2024-03",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K06:2024-03",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:NCut_K10:2024-04",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K10:2024-04",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K06:2024-04",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:NCut_K10:2024-05",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K10:2024-05",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K06:2024-05",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:NCut_K10:2024-06",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K10:2024-06",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K06:2024-06",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:NCut_K10:2024-07",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K10:2024-07",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K06:2024-07",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:NCut_K10:2024-08",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K10:2024-08",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K06:2024-08",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:NCut_K10:2024-09",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K10:2024-09",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K06:2024-09",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:NCut_K10:2024-10",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K10:2024-10",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K06:2024-10",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:NCut_K10:2024-11",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K10:2024-11",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K06:2024-11",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:NCut_K10:2024-12",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K10:2024-12",
+      "passed": true
+    },
+    {
+      "name": "cell_summary:SSE_K06:2024-12",
+      "passed": true
+    },
+    {
+      "name": "card_assignment:SSE_K06:0",
+      "passed": true
+    },
+    {
+      "name": "card_title:SSE_K06:0",
+      "passed": true
+    },
+    {
+      "name": "SSE6_members:0",
+      "passed": true
+    },
+    {
+      "name": "card_assignment:SSE_K06:1",
+      "passed": true
+    },
+    {
+      "name": "card_title:SSE_K06:1",
+      "passed": true
+    },
+    {
+      "name": "SSE6_members:1",
+      "passed": true
+    },
+    {
+      "name": "card_assignment:SSE_K06:2",
+      "passed": true
+    },
+    {
+      "name": "card_title:SSE_K06:2",
+      "passed": true
+    },
+    {
+      "name": "SSE6_members:2",
+      "passed": true
+    },
+    {
+      "name": "card_assignment:SSE_K06:3",
+      "passed": true
+    },
+    {
+      "name": "card_title:SSE_K06:3",
+      "passed": true
+    },
+    {
+      "name": "SSE6_members:3",
+      "passed": true
+    },
+    {
+      "name": "card_assignment:SSE_K06:4",
+      "passed": true
+    },
+    {
+      "name": "card_title:SSE_K06:4",
+      "passed": true
+    },
+    {
+      "name": "SSE6_members:4",
+      "passed": true
+    },
+    {
+      "name": "card_assignment:SSE_K06:5",
+      "passed": true
+    },
+    {
+      "name": "card_title:SSE_K06:5",
+      "passed": true
+    },
+    {
+      "name": "SSE6_members:5",
+      "passed": true
+    },
+    {
+      "name": "card_assignment:NCut_K10:0",
+      "passed": true
+    },
+    {
+      "name": "card_title:NCut_K10:0",
+      "passed": true
+    },
+    {
+      "name": "card_assignment:NCut_K10:1",
+      "passed": true
+    },
+    {
+      "name": "card_title:NCut_K10:1",
+      "passed": true
+    },
+    {
+      "name": "card_assignment:NCut_K10:2",
+      "passed": true
+    },
+    {
+      "name": "card_title:NCut_K10:2",
+      "passed": true
+    },
+    {
+      "name": "card_assignment:NCut_K10:3",
+      "passed": true
+    },
+    {
+      "name": "card_title:NCut_K10:3",
+      "passed": true
+    },
+    {
+      "name": "card_assignment:NCut_K10:4",
+      "passed": true
+    },
+    {
+      "name": "card_title:NCut_K10:4",
+      "passed": true
+    },
+    {
+      "name": "card_assignment:NCut_K10:5",
+      "passed": true
+    },
+    {
+      "name": "card_title:NCut_K10:5",
+      "passed": true
+    },
+    {
+      "name": "card_assignment:NCut_K10:6",
+      "passed": true
+    },
+    {
+      "name": "card_title:NCut_K10:6",
+      "passed": true
+    },
+    {
+      "name": "card_assignment:NCut_K10:7",
+      "passed": true
+    },
+    {
+      "name": "card_title:NCut_K10:7",
+      "passed": true
+    },
+    {
+      "name": "card_assignment:NCut_K10:8",
+      "passed": true
+    },
+    {
+      "name": "card_title:NCut_K10:8",
+      "passed": true
+    },
+    {
+      "name": "card_assignment:NCut_K10:9",
+      "passed": true
+    },
+    {
+      "name": "card_title:NCut_K10:9",
+      "passed": true
+    },
+    {
+      "name": "embedded_cards_identical",
+      "passed": true
+    },
+    {
+      "name": "annual_not_monthly_model",
+      "passed": true
+    },
+    {
+      "name": "frontend_still_unchanged",
+      "passed": true
+    }
+  ],
+  "checks_n": 178,
+  "data_directory": "data_engineering/output_r03",
+  "data_manifest_sha256": "30d794acf66dc3be538149d13d887615f296ba7a9210e2f7c9574ab5f4d8067b",
+  "independent_receipt": "review/EXPORT_REVIEW.json",
+  "independent_receipt_sha256": "8ce7d22ac838c41490621dde1937268e61325e0678d4a3adcd5974148fce519c",
+  "source_baseline_sha256": "ff1fdf3a78804cf8982c13840a7ca156ba0cc2645ce0e605a09c3734af266e5e",
+  "cards": 6,
+  "monthly_views": 3,
+  "months": 24,
+  "partitions": 72,
+  "temporal_pairs": 69,
+  "annual_context_N": 1666,
+  "frontend_accepted": false,
+  "publication_performed": false,
+  "fits": 0,
+  "SSH": 0
+}

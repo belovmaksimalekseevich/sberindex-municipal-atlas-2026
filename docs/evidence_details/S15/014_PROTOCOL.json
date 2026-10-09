@@ -1,0 +1,92 @@
+{
+  "schema": "WAVE4-CONFIDENCE-PREREG-v1",
+  "status": "registered_before_new_confidence_outcomes",
+  "hypothesis": "A single fixed combination of own silhouette rank and cross-method peer agreement can identify lower own-method perturbation risk better than silhouette rank alone.",
+  "scope": {
+    "months": ["2023-03", "2023-06", "2023-09", "2024-03", "2024-06", "2024-09"],
+    "methods": ["NCut", "SSE"],
+    "K": 10,
+    "full_partitions": 12,
+    "draw_tasks": 60,
+    "draw_partitions": 120,
+    "draws_per_month": 10,
+    "draws": "All ten original accepted DT24 national 80-percent draws, with original own preprocessing/reference refit; not the later graph-pilot two-draw fixed-reference experiment.",
+    "new_native_fits": 0,
+    "labels_changed": false,
+    "context_typology_included": false,
+    "December_direct_evidence": false
+  },
+  "peer_jaccard": {
+    "definition": "For the same focal ID i, exclude i from each peer set. Let c be the contingency cell containing i and a,b its two marginal group sizes on the identical support. J=(c-1)/(a+b-c-1).",
+    "empty_union": "J=1 if the denominator is zero; disclose all such cases and group sizes, never remove them.",
+    "one_empty_set": "J=0 when exactly one peer set is empty.",
+    "label_invariance": "No label matching, Hungarian assignment, temporal lineage or equality of arbitrary group numbers is used."
+  },
+  "fixed_scores": {
+    "agreement_A": "For every full-month ID, peer_jaccard of its own full NCut10 and full SSE10 groups on the common full-month support.",
+    "midrank": "Ascending average rank among all N full-month IDs, with equal values receiving equal ranks; percentile=(rank-0.5)/N where ranks are 1-based. Agreement ties must be identified using exact integer fractions, not rounded display numbers.",
+    "baseline": "B_m=midrank(own full pointwise SW_m).",
+    "candidate": "Q_m=0.5*(midrank(own full pointwise SW_m)+midrank(A)).",
+    "frozen_weight": 0.5,
+    "no_search": "No other weights, cutoffs, scores, alternate definitions, seeds, methods or score calibration are searched. Scores use full partitions and full SW only, never draw labels or risks."
+  },
+  "validation_target": {
+    "per_draw": "For each method separately and each registered draw, restrict that method's own full labels to exactly the draw IDs. Compare restricted-full peer sets with that same method's saved draw peer sets; loss=1-peer_jaccard.",
+    "per_ID": "Arithmetic mean of losses over every registered draw containing this ID. The observation count is retained explicitly; no minimum-count filtering, draw split or imputation.",
+    "zero_observations": "Typed unknown. Any such full ID, missing draw, unavailable required partition, non-finite full SW or source mismatch makes the affected method/month incomplete and prevents the joint positive decision. Do not silently shrink support.",
+    "not_tautology": "The score compares the two methods on full data; the target compares each method with its own independently rebuilt subsample partitions. Method disagreement can coexist with high own stability; agreement is not defined to be stability.",
+    "not_existing_global_Jmin": "Peer-Jaccard is a new local neighborhood-retention diagnostic. It neither replaces nor reinterprets accepted global ARI/Hungarian Jaccard stability results."
+  },
+  "primary_metric": {
+    "coverages": [0.2, 0.4, 0.6, 0.8, 1.0],
+    "retention": "At each coverage c and for each score separately, retain the highest-scored fraction c WITHIN EACH own full group. Each full group has total retained weight exactly c*n_group. At a boundary tie assign every tied ID the same fractional weight needed to reach that total; never break the tie by ID or risk.",
+    "risk": "Within each of the ten full groups compute retained-weight mean per-ID loss. Primary risk is the unweighted mean of these ten group risks. Thus no group can be removed to obtain an apparent gain; small groups remain included.",
+    "AURC": "Trapezoidal integral of primary risk over c=.2,.4,.6,.8,1, divided by .8. Lower is better. The interval below .2 is not extrapolated.",
+    "delta": "candidate AURC minus baseline AURC, per method and month.",
+    "method_summary": "Equal-weight mean of the six monthly AURC deltas; report every monthly delta and worst monthly regression."
+  },
+  "joint_primary_gate": {
+    "BOTH_methods_required": true,
+    "all_six_months_all_ten_draws_all_full_IDs_required": true,
+    "each_method_mean_delta_max": -0.005,
+    "each_method_worst_month_delta_max": 0.01,
+    "numeric_comparison_tolerance": 1e-12,
+    "threshold_origin": "Root selected these practical thresholds prospectively before new score-risk outcomes. They are not literature-derived significance levels.",
+    "interpretation": "Pass supports this particular perturbation-risk ranking on the registered months. Fail/mixed/incomplete is reported without score adjustment. No cluster/model replacement, probability calibration, economic truth or generalization beyond the tested scope follows."
+  },
+  "secondary_disclosures": [
+    "All five coverage risks and their deltas, without choosing a successful coverage as a new primary endpoint.",
+    "All ten own-group risk curves and AURC deltas for every method/month, including poorly performing groups.",
+    "Pooled municipality-weighted risk curves using unrestricted score ranking, explicitly secondary; not substituted for the group-stratified primary.",
+    "Full-support ID count, per-ID observation-count distribution, unknown counts, empty-peer-union counts, and exact source status/eligibility fields without filtering on all-six-ICVI eligibility.",
+    "Scores, per-ID risk, source labels, full SW, group, observation count and all registered per-draw losses in machine-readable output."
+  ],
+  "limits": [
+    "Exploratory retrospective validation on already observed same-source resampling outcomes; not a new holdout or external socioeconomic endpoint.",
+    "Full-data labels and silhouette scores are transductive. A confidence rank is not a probability of correct membership.",
+    "Repeated draws, municipalities and months are dependent; do not claim binomial significance or independent-observation confidence intervals.",
+    "Cluster size and geometry can affect both agreement and resampling risk; fixed per-group coverage limits group exclusion but does not establish causality.",
+    "Known original stability results motivated this diagnostic. No existing unfavorable run is removed, no new partition is trained, and prior negative/mixed hypotheses remain unchanged.",
+    "Annual context1666/69, December2103 passports, regional OOF1642 and the fixed2016 panel are distinct supports and are not used here."
+  ],
+  "required_synthetic_checks": [
+    "Independent label permutations leave A and own-method peer losses unchanged.",
+    "Identical peer partitions give zero loss; one empty and two empty peer sets follow the frozen conventions.",
+    "Contingency formula equals explicit peer-set enumeration on tiny inputs.",
+    "Scores unchanged when only draw labels are altered; validation losses respond to that alteration.",
+    "Fractional cutoff ties preserve exactly c*n_group and are invariant to ID ordering.",
+    "All groups, including singleton groups, contribute to the primary; zero observed draws and missing registered partitions make the decision incomplete.",
+    "Gate exact boundaries -0.005/+0.01, joint-method requirement and normalized trapezoidal arithmetic."
+  ],
+  "execution": {
+    "status": "source_preparation_only_until_root_GO",
+    "single_worker": true,
+    "native_fits": 0,
+    "new_graphs": 0,
+    "eigensolves": 0,
+    "silhouette_recomputations": 0,
+    "maximum_seconds": 1200,
+    "rss_GiB": 2,
+    "root_is_only_VM_operator": true
+  }
+}

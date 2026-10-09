@@ -2,7 +2,7 @@
 @source not "./i26";
 @source not "../proto2";
 @import "tw-animate-css";
-@import "shadcn/tailwind.css";
+@import "../vendor/shadcn/tailwind.css";
 @import "@fontsource-variable/golos-text";
 @import "@fontsource-variable/jetbrains-mono";
 @import "@fontsource/fira-sans-extra-condensed/cyrillic-800.css";

@@ -1,0 +1,906 @@
+{
+  "status": "STRUCTURAL_AND_NUMERIC_READBACK_COMPLETE",
+  "scope": "national_observed_data_resolution_challenger",
+  "chunks": 44,
+  "logical_partitions": 88,
+  "partitions_present": 88,
+  "full_reference_parities": 8,
+  "stability_groups_complete": 8,
+  "package_manifest_sha256": "dd0e91c9383b7cfaa03c668edc135add56c19eed86e07af4d54b38749a970313",
+  "protocol_sha256": "178c0ca1b1851e42880310dc492b5ce4cdcb596e5ffe04766f056d7190f252a2",
+  "task_proofs": [
+    {
+      "passed": true,
+      "task_id": "R202412-K08-full",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "18eb9af55410d8250a830a3c30e007b2f1de1b927adf7af8edd49fd83a7c38c3",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202412-K08-D01",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "78757739921b98f51cd3f61e4352079c59d2804ec787b1e40ec1e2929bcc484c",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202406-K06-D01",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "34bc378c5c1a5c6a6d1eca57afb7a03b2b95cbbf725169c500d421b87ad4c8c9",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202406-K06-D02",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "1e9ecf38a2ac94a50548107fe14913140d78bef91f57a42a4c74cbf1ac9d0ce5",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202406-K06-D03",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "00bd71e41a6becd1f071f328e134b2c31b59f9a4ccd0ce6f6f0be3b513b47045",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202406-K06-D04",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "37b321b85efccf141a0934f3817c26a24dae487b1f6d7ae11ac7a1b97c9b7d3d",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202406-K06-D05",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "9b1ba4a5b723815d3057cd91328e44846a46264d6817549e83aafeef2b1e78f8",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202406-K06-D06",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "5af0dcaa7d5982d74b819e19db084c2ef22eab03208daf608e37a98190cbf792",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202406-K06-D07",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "f4b41a538218d8562c139e539ebf1909b5444d2c0df7fb1263ffcf65f34f6ef7",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202406-K06-D08",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "14f1cf57b33a87e40134ee504f1665cac869245473af9ed4b526c518af617efb",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202406-K06-D09",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "c59ea83f1540892430135a00f79b0d30fa21c4318fabca59011694ca58b7f1bb",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202406-K06-D10",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "bb6cc0702bc026bf2b397a18fb562a167deee2551a9c422c2d67b7bb1a7f3d1c",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202406-K06-full",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "1729392ff70524555a84308b24399e01fdae78a73ee5f468d07f36433068cb9d",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202406-K08-D01",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "3793098878208df38e99290299a78ceb65c2c19624bd0404f419365f0054782d",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202406-K08-D02",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "c4576c0410ce5e9d42ed3a84ad6901a6c4afd300f6a1e32b44611dbd3579a072",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202406-K08-D03",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "e1bd8399eb8519f66d57381a2363bdbcb08f3c1bdbc61b3d99dcde03a2647f4a",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202406-K08-D04",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "47b9d161a31f2f28f093d337329d020780ba1fb8276325e98c1c602f2b7513c9",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202406-K08-D05",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "c1d75ffda13ef0da993732b8fe7d210d0b214d28a7e10e5ec1d67b0d9205ff0e",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202406-K08-D06",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "f8f089b33cd25c558843051f996d36fb45e0a099525d82444273b569caa349ba",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202406-K08-D07",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "7636b466965d46953913170be9df448293d4d9a613e985bb1d853301bfe15d30",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202406-K08-D08",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "428160c90898aea411d4ce9248d88b4f8dcb3fc74504cbab6a323c763db1d8ba",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202406-K08-D09",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "679f50d5820972f0bfc3a86c8328064ac7a6926505bafb200d4013c1799a9ec7",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202406-K08-D10",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "01010ccf989a7e71caee40ef7e75486822ad11a073389d91f64087482ad1f15c",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202406-K08-full",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "f90d12154583f0cacf43095e75f4b7912924b4203c41fc1a959bfb54817e6512",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202412-K06-D01",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "81132df9c74cb1472c70b3acc34d5b34b5d56626bb3c449011184c235d0e3fca",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202412-K06-D02",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "4e29a6bb20603d752957855bd0151f6d7f96eaa5355127773aa083b788e4c31a",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202412-K06-D03",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "d22ed6098a415b4b08b1a917cf87f13fe65c976a38c733ac5fd0d1faf0320b91",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202412-K06-D04",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "e5962e2878eb35081b01126f248c8f3798237f61cc7a8fe938d72a6499c343d7",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202412-K06-D05",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "aad9f49743c98b90daaac516f1642c3dbc69b20c8f4c9f33d579c0e7cdc1d6ca",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202412-K06-D06",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "af01e3ce3bac18d65c98c1a31c498476cfd093cbaca4cc0cb731e94a38018fef",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202412-K06-D07",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "1f6408b05935aaaf35eb6da6900c317065e23047768eced473f1d11ab933f6bd",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202412-K06-D08",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "c4105bf837a7de19e5bcaf6ecaa34f3b009cb859f0721094dde6a189649a5176",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202412-K06-D09",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "9b5d8f636d623b0945e35183a1c359a51eed2405841f5205d58e9bdef8d6c402",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202412-K06-D10",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "480197bc9122f40e23eda5a9b628265b2f0fa4ea3692ca2eed436b7eea72539f",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202412-K06-full",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "28e1beab050e873fea744d0e62860733bb855c47f29a586ae6b7728f5d148a8f",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202412-K08-D02",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "a15197b064f75d3c13078b92635b9185879641fc1fd5ca448bfaa191c61c10e5",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202412-K08-D03",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "c5bcbf149ecb4baaaf8cd00bab1700f592b6fe51e7ec71a84c7dc620209e89e8",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202412-K08-D04",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "94b43633c7c280bf0c134f872cb17f969c788f0a56831aa1b00cf5aa1d6036dd",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202412-K08-D05",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "5101a7c154ddf7f2b2c9829c72f568d9859a9c0f37d368a4e0912da22f6bbf80",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202412-K08-D06",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "cb926a95dec7be028a6716c90c8e9dc95ce94dc52b0fcc7c8f24ecc3006cca8a",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202412-K08-D07",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "a29e63a1023e750ae7ff3e9a3bdfb0085355d22131360086487ed30395a85eec",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202412-K08-D08",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "b19712a588da4e7d7340b4198b6c8e0eeeea6071b95b5557fba8984a219b0dd3",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202412-K08-D09",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "e03902ae51691a7c1a3670c2685a08e28f535b7b92234c676f654e9df10831c3",
+      "scientific_acceptance": false
+    },
+    {
+      "passed": true,
+      "task_id": "R202412-K08-D10",
+      "logical_partitions": 2,
+      "partitions_present": 2,
+      "cells": [
+        {
+          "method": "NCut",
+          "partition_present": true,
+          "status": "completed"
+        },
+        {
+          "method": "SSE",
+          "partition_present": true,
+          "status": "completed"
+        }
+      ],
+      "COMMIT_sha256": "4ff1b6b5cee63398aaf2d97edfce677a0aee821f5098c8df17aaa755c038c88c",
+      "scientific_acceptance": false
+    }
+  ],
+  "new_fits_during_readback": 0,
+  "K10_new_fits": 0,
+  "scientific_acceptance": false,
+  "model_promoted": false,
+  "reading_rules": [
+    "Full parity and operational completion are prerequisites, not scientific success",
+    "Better stability and geometry with retained measured contrasts may support a coarser exploratory view, not automatic replacement of K10",
+    "Better geometry with lost original-profile contrasts is an explicit resolution tradeoff, not a clear improvement",
+    "Different NCut/SSE, month or metric directions are a mixed result; report all, no tuned composite score or post-hoc pass threshold",
+    "If no consistent gain, retain K10 and record negative challenger result",
+    "Existing administrative sensitivity, negative analogue test and absence of causal explanation remain unresolved regardless of this outcome"
+  ],
+  "limits": "Requires process/export acceptance and independent scientific interpretation. No new admin test, independent observations, hierarchy or automatic model winner."
+}

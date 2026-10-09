@@ -1,0 +1,149 @@
+{
+  "protocol_id": "EXTERNAL-POPCHANGE-DT24-DEC2024-K10-v1",
+  "status": "frozen_before_population_comparison_pending_review",
+  "question": "Do frozen December2024 national spending NCut10 labels add regional held-out description of Jan2024 to Jan2025 population change beyond the full spending profile, quadratic level, initial population and same-geometry SSE10?",
+  "exploratory": true,
+  "previous_findings_known": "Salary K10 mixed and road diagnostic negative were known before proposing this separate target. No new target association examined.",
+  "scope": {
+    "population": "Published municipal estimated total resident population on January1, not employed workers, not migration flows. One pair of stock estimates per admitted municipality.",
+    "target": "ln(PopJan2025/PopJan2024)",
+    "stock_dates": [
+      "2024-01-01",
+      "2025-01-01"
+    ],
+    "N": 1473,
+    "regions": 66,
+    "spending_and_labels_month": "2024-12",
+    "source_release": "Rosstat-derived Tochno v20250918",
+    "all_models_same_support": true
+  },
+  "admission": {
+    "source": "feasibility_r00, exact original CSV member plus supplier workbook",
+    "rule": "Exact unique native upper-level code; safe history unchanged/type-name only; identical pair native/stable/interval/history; source lo<2024 hi>=2025; exact same supplier version active bothyears, unique native owner, region continuity; no Chechnya known gap; positive finite stocks/person/Jan1; no substantive comments. No name or stable-code fallback, no recovery waivers.",
+    "source_hi2025_semantics": "Publisher metadata line325: current code receives2025; inclusive release-end, not automatic actual cessation in2025.",
+    "exclusions": 630,
+    "physical_boundary_certificate": false,
+    "mask_change_after_scores": false
+  },
+  "features": {
+    "C": [
+      "X_all6",
+      "Q",
+      "logPopulation0"
+    ],
+    "D": [
+      "X_all6",
+      "Q",
+      "logPopulation0",
+      "NCut10_all10"
+    ],
+    "E": [
+      "X_all6",
+      "Q",
+      "logPopulation0",
+      "SSE10_all10"
+    ],
+    "F": [
+      "X_degree2_all27",
+      "logPopulation0"
+    ]
+  },
+  "feature_details": {
+    "X": "Exact saved national full-support December X6, no subset rebuild; population was not explicit training coordinate of this national geometry.",
+    "T": "Natural log of reported December total spending, exact reported source column Total",
+    "Q": "T squared before train-only standardization",
+    "F": "All six X linear, all six squared, fifteen i<j products, then logPopulation0; same logPopulation0 in every design; no interaction selection from Y.",
+    "intercept": "Unpenalized; no reference category."
+  },
+  "folds": {
+    "outer": 5,
+    "inner": 4,
+    "repeats": 1,
+    "rule": "Sort supplier regions by descending admitted count then lexical canonical raw region code; greedily assign to smallest ID count then smallest fold index. Recompute inner assignments using outer train regions only. Never use Y/labels in fold formation."
+  },
+  "regression": {
+    "models": 4,
+    "alphas": [
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "maximum_regression_fits": 420,
+    "inner": 400,
+    "outer": 20,
+    "extra_all_data_fits": 0,
+    "solver": "Inherited exact np.linalg.svd Ridge unpenalized intercept; standardization ddof0 fit on training only; zero std->1; alpha by inner region-equal OOF MAE, largest alpha within1e-12 of minimum.",
+    "missing_training_category": "Retain all10 columns, scale1 coefficient0; disclose no fold change."
+  },
+  "symmetric_label_encoding": {
+    "K": 10,
+    "all_columns": true,
+    "reference_category": null
+  },
+  "decision_rules": {
+    "numeric_tolerance_log_MAE": 1e-10,
+    "primary": [
+      "D-C",
+      "D-E"
+    ],
+    "consistent": "Both global region-macro deltas strictly<-1e-10, all5 outer fold deltas strictly<-1e-10, all leave-one-region deltas strictly<-1e-10.",
+    "no_increment": "Both primary global deltas>=-1e-10.",
+    "otherwise": "mixed_or_region_sensitive",
+    "secondary": [
+      "D-F",
+      "E-C"
+    ],
+    "D_F_interpretation": "If NCut fails to improve over fixed full degree2 control, no claim of unique network information or generic nonlinear superiority. Report full fold/region/LOO results.",
+    "relative_gains": true,
+    "business_effect_threshold": null,
+    "automatic_model_promotion": false,
+    "multiple_comparisons": "One exploratory target, two joint primary contrasts; no p-values, no selecting successful subgroup/year, all four contrasts disclosed."
+  },
+  "interpretation_limits": [
+    "Conditional territory admission is not a physical boundary certificate. Excluded630 ID and entire missing regions constrain generalization.",
+    "Retrospective descriptive target: stock change during2024 versus December2024 spending; no prospective forecast, causal effect or separate migration claim.",
+    "Held-out Y only: spending X/scales and labels frozen on full2023-24 panel; transductive, not end-to-end holdout.",
+    "Upstream Sber use of population or Rosstat unknown; per-resident spending denominators may relate to population estimates. No independent-information guarantee.",
+    "Annualcontext6 includes population and other socioeconomic features; this does not validate context6.",
+    "Changes in population estimates may include revisions/registration effects, natural change, migration and uncaptured boundary inconsistencies.",
+    "No future demographic years or alternate transformations tried; no fit-based target trimming.",
+    "National original metric eligibility/null flags retained; valid saved partitions can be described externally despite undefined S_Dbw, not promoted to all-six-metric validity."
+  ],
+  "bindings": {
+    "national_operational_receipt_sha256": "c94c52b87553af53d98292ed4fc8aaa6d63f56c96cd4986c86e23ce7814e1206",
+    "national_archive_sha256": "b703fcb13f10d2653b2587c42eb8ec4ac383822ead07f7c6e6975b1e2e7db3b3",
+    "archive_verification_sha256": "e26cf6b6341e7026cf072870c635307343180735875f41f9d5be28b4eb939531",
+    "commit_sha256": "5ff27af43162761d1f104ab0541321caed5b67ef3e0aa8a6e526a5c93e3c8979",
+    "monthly_cache.npz": {
+      "archive_member": "months/DT24-M0024/output/monthly_cache.npz",
+      "sha256": "ebb59940e4998bf2f9acce5ef3f98228fdff69674451f2febf76de3ddd082dc5"
+    },
+    "cells/NCut_K10/result.json": {
+      "archive_member": "months/DT24-M0024/output/cells/NCut_K10/result.json",
+      "sha256": "3baa21384dd37989aaa1d17229cf8cf46cd737685d1df3795d9c9887f8827414"
+    },
+    "cells/SSE_K10/result.json": {
+      "archive_member": "months/DT24-M0024/output/cells/SSE_K10/result.json",
+      "sha256": "a77b729667db95cc095cf8d63b14c073b53cc8f7426ec17973d95e6df3256c04"
+    },
+    "NCut_inherited_flags": {
+      "eligible_for_comparison": false,
+      "issues": [
+        "metric:S_Dbw:undefined"
+      ],
+      "partition_present": true,
+      "override": false
+    },
+    "SSE_inherited_flags": {
+      "eligible_for_comparison": false,
+      "issues": [
+        "metric:S_Dbw:undefined"
+      ],
+      "partition_present": true,
+      "override": false
+    }
+  },
+  "actual_associations_before_registration": 0
+}

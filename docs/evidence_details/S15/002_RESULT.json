@@ -1,0 +1,155 @@
+{
+  "status": "COMPLETE_INDEPENDENT_SAVED_RESULT_PASS",
+  "scientific_outcome": "mixed_or_region_sensitive",
+  "actual_revision": "r02",
+  "N": 1631,
+  "regions": 75,
+  "years": 1,
+  "label_month": "2023-12",
+  "definitions": {
+    "A": "T + T²",
+    "B": "T + T² + NCut10",
+    "C": "Полный X (6 координат) + T²",
+    "D": "Полный X + T² + NCut10",
+    "E": "Полный X + T² + SSE10"
+  },
+  "global_metrics": {
+    "A": {
+      "region_macro_MAE_logY": 0.15125576977488642,
+      "municipality_MAE_logY": 0.14729506869735104,
+      "municipality_RMSE_logY": 0.19771673671597842
+    },
+    "B": {
+      "region_macro_MAE_logY": 0.14808158064663868,
+      "municipality_MAE_logY": 0.14493246287984124,
+      "municipality_RMSE_logY": 0.19598231189373053
+    },
+    "C": {
+      "region_macro_MAE_logY": 0.1415735952731666,
+      "municipality_MAE_logY": 0.14269125045815548,
+      "municipality_RMSE_logY": 0.1932059078366175
+    },
+    "D": {
+      "region_macro_MAE_logY": 0.13851462885415983,
+      "municipality_MAE_logY": 0.1417628326946612,
+      "municipality_RMSE_logY": 0.1928765316014669
+    },
+    "E": {
+      "region_macro_MAE_logY": 0.13991607786158847,
+      "municipality_MAE_logY": 0.13969827207301774,
+      "municipality_RMSE_logY": 0.18923915834606037
+    }
+  },
+  "contrasts": [
+    {
+      "contrast": "B-A",
+      "delta_region_macro_MAE_logY": -0.003174189128247736,
+      "outer_fold_deltas": [
+        -0.0056086583177003034,
+        -0.006132800056004379,
+        -0.0021288991580995305,
+        -0.008534065274945572,
+        0.0057745936978103925
+      ],
+      "leave_one_region_mean_min": -0.004537141904059003,
+      "leave_one_region_mean_max": -0.0021563057850330193,
+      "primary": false,
+      "relative_delta_error": -0.020985573859244336,
+      "delta_municipality_MAE_logY": -0.0023626058175097997,
+      "folds_improved": 4,
+      "folds_total": 5,
+      "regions_improved": 44,
+      "regions_worse": 31,
+      "regions_total": 75,
+      "maximum_LOO_excluded_region": "83",
+      "maximum_LOO_excluded_region_name": "Ненецкий автономный округ",
+      "maximum_LOO_excluded_region_N": 2,
+      "excluded_region_delta": -0.07849755652613677
+    },
+    {
+      "contrast": "D-C",
+      "delta_region_macro_MAE_logY": -0.0030589664190067913,
+      "outer_fold_deltas": [
+        -0.0024768836209841387,
+        0.0015089950804454194,
+        -0.00720545947749894,
+        -0.004328819757228214,
+        -0.0027729280260940874
+      ],
+      "leave_one_region_mean_min": -0.003879200674427187,
+      "leave_one_region_mean_max": -0.00203402264866548,
+      "primary": true,
+      "relative_delta_error": -0.02160689931695602,
+      "delta_municipality_MAE_logY": -0.0009284177634942825,
+      "folds_improved": 4,
+      "folds_total": 5,
+      "regions_improved": 40,
+      "regions_worse": 35,
+      "regions_total": 75,
+      "maximum_LOO_excluded_region": "49",
+      "maximum_LOO_excluded_region_name": "Магаданская область",
+      "maximum_LOO_excluded_region_N": 1,
+      "excluded_region_delta": -0.07890480542426381
+    },
+    {
+      "contrast": "D-E",
+      "delta_region_macro_MAE_logY": -0.0014014490074286579,
+      "outer_fold_deltas": [
+        -0.0007993894578171726,
+        0.0012299383541128908,
+        0.003036463926319667,
+        0.0016092172508507141,
+        -0.011378219757309875
+      ],
+      "leave_one_region_mean_min": -0.0020258732451078855,
+      "leave_one_region_mean_max": 0.00020929185704627785,
+      "primary": true,
+      "relative_delta_error": -0.0100163542950013,
+      "delta_municipality_MAE_logY": 0.002064560621643452,
+      "folds_improved": 2,
+      "folds_total": 5,
+      "regions_improved": 32,
+      "regions_worse": 43,
+      "regions_total": 75,
+      "maximum_LOO_excluded_region": "49",
+      "maximum_LOO_excluded_region_name": "Магаданская область",
+      "maximum_LOO_excluded_region_N": 1,
+      "excluded_region_delta": -0.12059627297857389
+    },
+    {
+      "contrast": "E-C",
+      "delta_region_macro_MAE_logY": -0.0016575174115781338,
+      "outer_fold_deltas": [
+        -0.0016774941631669661,
+        0.0002790567263325286,
+        -0.010241923403818605,
+        -0.005938037008078929,
+        0.008605291731215787
+      ],
+      "leave_one_region_mean_min": -0.0027729428264690673,
+      "leave_one_region_mean_max": -0.0008472916721219217,
+      "primary": false,
+      "relative_delta_error": -0.011707814641423423,
+      "delta_municipality_MAE_logY": -0.0029929783851377345,
+      "folds_improved": 3,
+      "folds_total": 5,
+      "regions_improved": 43,
+      "regions_worse": 32,
+      "regions_total": 75,
+      "maximum_LOO_excluded_region": "77",
+      "maximum_LOO_excluded_region_name": "Москва",
+      "maximum_LOO_excluded_region_N": 2,
+      "excluded_region_delta": -0.061614222131337826
+    }
+  ],
+  "independent_receipt_sha256": "4779abda19c55e1fd2aee285a748630e2f5c21248fb16160c663c71daa11b9f5",
+  "independent_manifest_sha256": "48c39986293438a4be245b1fba5d36282ea11f2d138433d143abf433d33422f2",
+  "transport_receipt_sha256": "20558bf1ded43ab8ec79f0c11fd249c276faf6448798ad6722080ac493f11a2e",
+  "root_role_decision_sha256": "63b7e2d964e225d30009d288ad7acec9d771a2050f5ba9a6fb8d8b03da127c5a",
+  "automatic_model_promotion": false,
+  "new_fits": 0,
+  "new_SVD_calls": 0,
+  "unknown_saved_fits": 0,
+  "complete_planned_525": true,
+  "conclusion": "Small mean descriptive increment beyond full profile; NCut versus SSE advantage is fold/region-sensitive and reverses under municipality weighting. No universal superiority, forecast, causality, new independent information or practical effect threshold established."
+}

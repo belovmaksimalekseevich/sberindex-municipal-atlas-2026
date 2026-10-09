@@ -1,0 +1,43 @@
+{
+  "complete_all11_common_observed_target_support": true,
+  "mean_origin_loss": {
+    "NCut_NN5": 0.17721259254943178,
+    "SSE_NN5": 0.17711892086408454,
+    "GLOBAL_X6_NN5": 0.17706783975324764,
+    "LEVEL_NN5": 0.18686728863713975,
+    "OWN_SEASONAL": 0.20533971068545354,
+    "PERSISTENCE_ZERO": 0.23582394846928081,
+    "OWN_LAST_CHANGE": 0.3789443976560042,
+    "GLOBAL_SEASONAL_MEAN": 0.17145330908140063
+  },
+  "primary_comparisons": {
+    "GLOBAL_X6_NN5": {
+      "relative_gain": -0.0008174990804985516,
+      "control_mean_positive": true,
+      "mean_gain_at_least_1pct": false,
+      "each_origin_regression_at_most_5pct": true
+    },
+    "OWN_SEASONAL": {
+      "relative_gain": 0.1369784638447643,
+      "control_mean_positive": true,
+      "mean_gain_at_least_1pct": true,
+      "each_origin_regression_at_most_5pct": true
+    },
+    "SSE_NN5": {
+      "relative_gain": -0.0005288632343187771,
+      "control_mean_positive": true,
+      "mean_gain_at_least_1pct": false,
+      "each_origin_regression_at_most_5pct": true
+    }
+  },
+  "primary_pass": false,
+  "simple_control_noninferiority": {
+    "PERSISTENCE_ZERO": true,
+    "OWN_LAST_CHANGE": true,
+    "GLOBAL_SEASONAL_MEAN": false,
+    "LEVEL_NN5": true
+  },
+  "general_utility_pass": false,
+  "status": "fail",
+  "automatic_model_promotion": false
+}

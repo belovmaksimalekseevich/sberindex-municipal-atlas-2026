@@ -1,0 +1,19 @@
+{
+  "status": "PASS_LOCAL_MEANINGFUL_QA",
+  "checks": [
+    "retrieval_contract_has_no_salary_or_context6",
+    "all_core_exact_types_verified_halfopen_against_primary_workbook",
+    "salary_permutation_preserves_all_public_arrays",
+    "salary_permutation_preserves_every_selected_ID",
+    "positive_salary_permutation_preserves_target_validity",
+    "all_neighbors_same_type_other_region_unique_nonself",
+    "all_hard_neighbors_same_frozen_group",
+    "all_predictions_and_errors_recomputed_from_exported_neighbor_IDs",
+    "every_panel_support_and_equal_region_aggregate_recomputed_from_CSV",
+    "input_hashes_unchanged_after_computation"
+  ],
+  "salary_permutation_seed": 2026100805,
+  "selection_sha256_canonical": "0a5eedd7574465c01908f7308c5174fb18677e6987d358756306b3f9e23abb5d",
+  "independent_review": false,
+  "limits": "QA establishes implemented retrieval and aggregation behavior; it is not scientific validation or independent acceptance."
+}

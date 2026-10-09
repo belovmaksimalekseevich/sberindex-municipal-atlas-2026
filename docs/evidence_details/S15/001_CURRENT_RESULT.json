@@ -1,0 +1,112 @@
+{
+  "UTC": "2026-10-08T09:19:26.763635+00:00",
+  "status": "LOCAL_FINALIZATION_ACTIVE",
+  "primary": {
+    "role": "primary_monthly_attributed_network",
+    "method": "NCut",
+    "K": 10,
+    "period": "2023-01 through 2024-12",
+    "support": "native observed IDs per month;2190 catalog,50521 ID-month observations",
+    "source_study_id": "DT24-MIXED-GRID-v1",
+    "purpose_ru": "Основной месячный сетевой слой для сравнения профилей расходов и описания изменений между месяцами.",
+    "rationale_ru": "Среди проверенных подробных K10/K20 NCut10 сочетает более высокую среднюю воспроизводимость состава групп и исходную сетевую постановку. Это выбранный компромисс, а не универсальная победа над SSE.",
+    "limits_ru": "Национальная subsample-проверка охватывает шесть месяцев по десять выборок, не все24месяца. У NCut10 худший месяц и отдельные группы существенно слабее среднего; S_Dbw конечен лишь в2месяцах. Экономические названия должны описывать расходы, а не автоматически отрасль/функцию МО."
+  },
+  "roles": [
+    {
+      "role": "primary_monthly_attributed_network",
+      "method": "NCut",
+      "K": 10,
+      "period": "2023-01 through 2024-12",
+      "support": "native observed IDs per month;2190 catalog,50521 ID-month observations",
+      "source_study_id": "DT24-MIXED-GRID-v1",
+      "purpose_ru": "Основной месячный сетевой слой для сравнения профилей расходов и описания изменений между месяцами.",
+      "rationale_ru": "Среди проверенных подробных K10/K20 NCut10 сочетает более высокую среднюю воспроизводимость состава групп и исходную сетевую постановку. Это выбранный компромисс, а не универсальная победа над SSE.",
+      "limits_ru": "Национальная subsample-проверка охватывает шесть месяцев по десять выборок, не все24месяца. У NCut10 худший месяц и отдельные группы существенно слабее среднего; S_Dbw конечен лишь в2месяцах. Экономические названия должны описывать расходы, а не автоматически отрасль/функцию МО."
+    },
+    {
+      "role": "mandatory_same_geometry_comparator",
+      "method": "SSE",
+      "K": 10,
+      "period": "2023-01 through 2024-12",
+      "purpose_ru": "Сильный геометрический контроль на тех же данных и в той же mixed-геометрии.",
+      "rationale_ru": "Средний SW около0.2582 против0.2179 уNCut10; отрицательные SW2504/50521 против7021/50521. Худший месяц macroJ0.6456 против0.5613 уNCut10. Контроль сохраняется явно, эти преимущества не скрываются."
+    },
+    {
+      "role": "exploratory_fine_monthly_resolution",
+      "method": "NCut",
+      "K": 20,
+      "period": "2023-01 through 2024-12",
+      "purpose_ru": "Подробное исследовательское разрешение с явными ограничениями.",
+      "limits_ru": "Средний macroJ0.6310 ниже0.7470 уK10;23/120 проверенных полных групп имеют средний J<0.5 против5/60 уK10. Это описательный порог, не зарегистрированный gate. Не считать20 постоянными экономическими типами. K10/K20 NCut не образуют вложенную иерархию."
+    },
+    {
+      "role": "annual_context_profiles",
+      "method": "context6 KMeans",
+      "K": 6,
+      "period": "2024",
+      "support": "1666 conditionally admitted IDs in69 regions",
+      "purpose_ru": "Годовые описательные контекстные профили для сравнения похожих территорий и объяснения различий.",
+      "limits_ru": "Высокая типичная воспроизводимость с существенным обнаруженным хвостом. Три серии по10выборок раскрываются отдельно: средние ARI0.983603/0.983360/0.913700, в последней worstARI0.507537 иworstJmin1/394. Признаки контекста участвовали вfit, поэтому их различия не независимая внешняя проверка. Это отдельная опора и период, не национальная календарнаяK6 и не родительская иерархия дляNCut10/20."
+    },
+    {
+      "role": "retained_research_catalog",
+      "methods": [
+        "SSE",
+        "Ward",
+        "NCut"
+      ],
+      "K": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        16,
+        20
+      ],
+      "purpose_ru": "Сохранить все504 результата, полный набор шестиICVI со статусами, профили и неудачные варианты. ПрочиеK — сравнение и диагностика; устойчивостьK10не переносить наK4/6/8/12/16."
+    }
+  ],
+  "metric_policy": {
+    "raw_frozen_eligibility_unchanged": true,
+    "all6finite_is_original_internal_gate_not_jury_requirement": true,
+    "no_null_to_zero_or_evaluator_change": true,
+    "all504_have_labels_and_five_finite_metrics": true,
+    "S_Dbw_finite_cells": 175,
+    "S_Dbw_typed_undefined_cells": 329,
+    "selected_layer_does_not_rewrite_frozen_ineligible_flags": true
+  },
+  "time_and_cross_layer_policy": {
+    "temporal_mapping": "pairwise maximum-overlap only; retain raw contingency, entries/exits and ties; no inherent lineage",
+    "annual_vs_monthly": "many-to-many crosswalk on explicit intersection only; never sum6+10 into16types",
+    "new_external_validation": "use fixed independent outcome and prior protocol on saved NCut10/SSE10 labels; no K/method retuning from outcome"
+  },
+  "fresh_replay_accepted": true,
+  "national_partitions": 504,
+  "context_partitions": 28,
+  "latest_hypothesis": "NOT_CONFIRMED",
+  "automatic_model_promotion": false,
+  "raw_category_order": [
+    "Total",
+    "Продовольствие",
+    "Здоровье",
+    "Общественное питание",
+    "Транспорт",
+    "Маркетплейсы"
+  ],
+  "not_current": [
+    "legacy K2 as final model",
+    "real64 as national coverage",
+    "unverified functional group labels",
+    "10 plus 6 equals 16 types"
+  ],
+  "constraints": {
+    "no_frontend_changes": true,
+    "Zhenya_package_deferred": true,
+    "no_VM_work": true,
+    "no_publication_or_submission": true,
+    "old_experiment_files_immutable": true
+  },
+  "source_index": "SOURCE_INDEX.json"
+}

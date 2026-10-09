@@ -117,9 +117,9 @@ function FlowBody({ months }: { months: ConfigMonth[] }) {
             </div>
           </div>
           <div className="border-2 border-ink p-4">
-            <p className="text-[15px]"><span className="font-semibold">{T[ti].name}</span>{T[ti].region ? `, ${T[ti].region}` : ''}: {sel.switches} смен после сопоставления в {sel.comparedPairs} наблюдаемых соседних парах; публикаций {sel.observed} из {months.length}.</p>
+            <p className="text-[15px]"><span className="font-semibold">{T[ti].name}</span>{T[ti].region ? `, ${T[ti].region}` : ''}: число смен после сопоставления — {sel.switches}; соседних пар с наблюдениями — {sel.comparedPairs}; публикаций — {sel.observed} из {months.length}.</p>
             <div className="mt-3 grid grid-cols-24 gap-0.5" role="img" aria-label="Группа выбранного МО по месяцам">
-              {sel.ranks.map((r, i) => <span key={i} title={`${monthLabel(MONTHS[i].month)}: ${r == null ? 'нет публикации' : `цвет ${r + 1}; raw G${months[i].lab[ti]}`}`} className={`h-5 ${r == null ? 'hatch' : ''}`} style={r == null ? undefined : { background: groupColor(r) }} />)}
+              {sel.ranks.map((r, i) => <span key={i} title={`${monthLabel(MONTHS[i].month)}: ${r == null ? 'нет публикации' : `цвет ${r + 1}; исходная G${months[i].lab[ti]}`}`} className={`h-5 ${r == null ? 'hatch' : ''}`} style={r == null ? undefined : { background: groupColor(r) }} />)}
             </div>
             <p className="mt-2 text-[12px] text-muted-ink">Цвета согласованы по максимальному пересечению состава соседних месяцев; штриховка — нет публикации. Цвет не означает постоянный экономический тип.</p>
           </div>
@@ -155,7 +155,7 @@ function SwitchMap({ rows, ti, setTi }: { rows: ReturnType<typeof stability>['ro
           <div className="pointer-events-none absolute z-10 grid max-w-[240px] gap-0.5 bg-ink px-3 py-2 text-[13px] text-white shadow-[5px_5px_0_var(--mark)]"
             style={{ left: Math.min(tip.x + 12, (box.current?.clientWidth ?? 600) - 250), top: tip.y + 12 }}>
             <b>{T[tip.ti].name}</b><span className="text-[#D5D8E0]">{T[tip.ti].region ?? ''}</span>
-            <span>{sw.get(tip.ti) ?? 0} смен в наблюдаемых соседних парах; {rows[tip.ti].observed}/24 публикаций</span>
+            <span>Число смен в наблюдаемых соседних парах — {sw.get(tip.ti) ?? 0}; публикаций — {rows[tip.ti].observed}/24</span>
           </div>
         )}
       </div>

@@ -1,0 +1,65 @@
+{
+  "status": "PASS_pipeline_feature_exclusion",
+  "categories": [
+    "Все категории",
+    "Продовольствие",
+    "Здоровье",
+    "Общественное питание",
+    "Транспорт",
+    "Маркетплейсы"
+  ],
+  "shapes": {
+    "z": [
+      24,
+      2190,
+      6
+    ],
+    "mask": [
+      24,
+      2190
+    ],
+    "ids": [
+      2190
+    ],
+    "months": [
+      24
+    ],
+    "categories": [
+      6
+    ]
+  },
+  "observed_rows": 50521,
+  "z_equals_log_reported_exactly": true,
+  "max_absolute_difference": 0.0,
+  "external_inputs_excluded": [
+    "road_distances",
+    "market_access",
+    "salary",
+    "population",
+    "sector_outcomes"
+  ],
+  "geometry_Y_is": "symmetric spending coordinates, not external target",
+  "context6_included": [
+    "market_access_2024",
+    "salary_2024",
+    "population_2024",
+    "worker_structure_2024",
+    "spending_CLR"
+  ],
+  "context6_roads_included": false,
+  "limitation": "Does not establish independence of upstream Sber estimated spending from its source covariates.",
+  "source_paths_and_SHA256": {
+    "workstreams/detailed_typology_national_20261007_r00/package_r03/SOURCE_BINDING.json": "e758ab8640eb36979f180b8948c47c7cc18b45db142f9440fa6c44f914618015",
+    "workstreams/detailed_typology_national_20261007_r00/package_r03/data/input2190.npz": "e4abc1a00495fae8280213b85c326169a1a0f5efcf7504400964b69b296c0547",
+    "workstreams/detailed_typology_national_20261007_r00/package_r03/data/reported2190.npz": "e5cd11d4295be6e20b11446eb48ffedaa1b31155c199adea327a39396da206bf",
+    "workstreams/detailed_typology_national_20261007_r00/package_r03/data/reference.json": "733bf0c121b441bea7f423e2e10aa2dddfd9aa76e8bd152462d4bb4020c2052f",
+    "workstreams/detailed_typology_national_20261007_r00/package_r03/engine/vendor/kernels.py": "0d9ae437f4eef1cc698473b7171db460e52d082e83fe52aff8f7686fdf24c3bc",
+    "workstreams/detailed_typology_national_20261007_r00/package_r03/engineering/detailed_typology_national_20261007_r00/run_month.py": "122ea2e6063c710012b5e6ba1df6ff8f7c9aa157ce8df44a31d960b2722c5b61",
+    "workstreams/detailed_typology_national_20261007_r00/package_r03/engineering/detailed_typology_national_20261007_r00/adapter.py": "c62e2d05107a78ee1f5e3c4231a6cd5b0f4334883131463c314d22a117d36bac",
+    "workstreams/geographic_context_delivery_20261007_r00/frozen_inputs/protocol.json": "9f5a9356b81534825a1bd03b2c140d1e1eba9dda6f9b8450f273b8fc44643f33",
+    "workstreams/geographic_context_delivery_20261007_r00/reproducibility/evaluate.py": "45bf06736a1433499ad317ac11d356af369de9b78befe3c99062d99e5668ba6b",
+    "workstreams/external_utility_20261007_r00/frozen_r00/protocol.json": "99458ad115b537675915fbd59718bda0c7ff8fe151690d943547675fa53bd659",
+    "workstreams/context_typology_20261007_r00/package/preprocessing.py": "fb99bd54c1d288839d34209c126e764ef62ba55ad89dc6b67b7035565916bc69",
+    "workstreams/detailed_typology_campaign_20261007_r00/prior_results_index.json": "98ff82d98b4d01f44fe860f6e34fd1c5e4c8b451c11fec37e11c0e5979cbef7e"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "2024-12": {
+    "5": {
+      "region_equal_gain": 0.07202615993252992,
+      "ID_weighted_gain_descriptive": 0.12138947515935264,
+      "conditional_randomization_lower_tail_p": 0.001,
+      "null_draws": 999,
+      "observed_normalized_distance": 0.9279738400674701,
+      "exact_null_normalized_distance": 1.0,
+      "empirical_null_normalized_mean": 1.0006506639762702,
+      "median_regional_gain": 0.05102964407179378,
+      "positive_region_count": 40,
+      "positive_region_fraction": 0.7017543859649122,
+      "region_count": 57,
+      "ID_count": 1642,
+      "leave_one_region_out_gain_min": 0.06424048873319345,
+      "leave_one_region_out_gain_max": 0.075729436956951,
+      "excluding_federal_cities_gain": 0.057078402464742155
+    },
+    "10": {
+      "region_equal_gain": 0.04335407899660437,
+      "ID_weighted_gain_descriptive": 0.08343171641296303,
+      "conditional_randomization_lower_tail_p": 0.001,
+      "null_draws": 999,
+      "observed_normalized_distance": 0.9566459210033956,
+      "exact_null_normalized_distance": 1.0,
+      "empirical_null_normalized_mean": 1.0005357825097552,
+      "median_regional_gain": 0.022494531409613883,
+      "positive_region_count": 38,
+      "positive_region_fraction": 0.6666666666666666,
+      "region_count": 57,
+      "ID_count": 1642,
+      "leave_one_region_out_gain_min": 0.036942646079232096,
+      "leave_one_region_out_gain_max": 0.045867104261183456,
+      "excluding_federal_cities_gain": 0.030930644390606016
+    }
+  },
+  "2024-06": {
+    "5": {
+      "region_equal_gain": 0.05716887209170396,
+      "ID_weighted_gain_descriptive": 0.10936246815873851,
+      "conditional_randomization_lower_tail_p": 0.001,
+      "null_draws": 999,
+      "observed_normalized_distance": 0.942831127908296,
+      "exact_null_normalized_distance": 1.0,
+      "empirical_null_normalized_mean": 1.000461695905913,
+      "median_regional_gain": 0.039451957632057555,
+      "positive_region_count": 44,
+      "positive_region_fraction": 0.7457627118644068,
+      "region_count": 59,
+      "ID_count": 1661,
+      "leave_one_region_out_gain_min": 0.0499337388715583,
+      "leave_one_region_out_gain_max": 0.06086956773233876,
+      "excluding_federal_cities_gain": 0.04369836067595115
+    },
+    "10": {
+      "region_equal_gain": 0.039097269197293616,
+      "ID_weighted_gain_descriptive": 0.08005934462534052,
+      "conditional_randomization_lower_tail_p": 0.001,
+      "null_draws": 999,
+      "observed_normalized_distance": 0.9609027308027064,
+      "exact_null_normalized_distance": 1.0,
+      "empirical_null_normalized_mean": 1.0004213171350138,
+      "median_regional_gain": 0.023057887319913428,
+      "positive_region_count": 39,
+      "positive_region_fraction": 0.6610169491525424,
+      "region_count": 59,
+      "ID_count": 1661,
+      "leave_one_region_out_gain_min": 0.033037945752551895,
+      "leave_one_region_out_gain_max": 0.04200943833955209,
+      "excluding_federal_cities_gain": 0.027758510692018602
+    }
+  }
+}

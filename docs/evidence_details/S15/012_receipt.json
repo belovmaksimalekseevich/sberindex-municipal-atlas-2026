@@ -1,0 +1,266 @@
+{
+  "status": "PASS",
+  "scope": "independent saved actual arithmetic only",
+  "package_pins": {
+    "package_manifest_sha256": "f309e81582efe6b09af69826a44978943f2dc1eccae4033132e2a37b3707dd5a",
+    "protocol_sha256": "a9c53fcc85388e2fff6a750fce1f1bc053a277bcd112f9295b12cd9fbc019f7e",
+    "source_binding_sha256": "c6c28423f470a42fb13506c50eb9b9d53f1dd474287c9abd89525dd155a850cc"
+  },
+  "checks": {
+    "root_verified_OP_receipt_SHA": 1,
+    "registered_package_pin": 3,
+    "package_member_SHA": 12,
+    "exact_four_result_members": 1,
+    "closed_result_member_SHA": 4,
+    "complete_both_months": 1,
+    "original_registration": 1,
+    "no_model_promotion": 1,
+    "reported_no_native_fits": 1,
+    "source_elapsed_budget": 2019,
+    "road_source_SHA": 6,
+    "exact_ordered_support": 2,
+    "exact_block_support": 2,
+    "unique_block_names": 2,
+    "block_size_region_identity": 1642,
+    "saved_partition_SHA": 4,
+    "completed_fixed_model": 4,
+    "full_partition_labels": 4,
+    "no_missing_or_trimmed_IDs": 4,
+    "restricted_label_binding": 4,
+    "original_K10_counts": 4,
+    "positive_unique_same_region_road": 72006,
+    "fixed_region_count": 2,
+    "min_region12": 116,
+    "registered_real_month_scope": 2,
+    "region_order": 2,
+    "exact_two_method_results": 2,
+    "all_regional_records": 2,
+    "exact_two_k": 4,
+    "region_metadata": 464,
+    "all10_label_counts": 464,
+    "degree_extrema": 464,
+    "mobility_integer_flags": 1856,
+    "mobility_expected_changes_shape": 464,
+    "mobility_expected_changes_finite": 464,
+    "mobility_expected_changes_numeric_cells": 464,
+    "mobility_expected_changes_numeric_match": 464,
+    "exact_regional_H_shape": 464,
+    "exact_regional_H_finite": 464,
+    "exact_regional_H_numeric_cells": 464,
+    "exact_regional_H_numeric_match": 464,
+    "exact_regional_E_shape": 464,
+    "exact_regional_E_finite": 464,
+    "exact_regional_E_numeric_cells": 464,
+    "exact_regional_E_numeric_match": 464,
+    "exact_regional_excess_shape": 464,
+    "exact_regional_excess_finite": 464,
+    "exact_regional_excess_numeric_cells": 464,
+    "exact_regional_excess_numeric_match": 464,
+    "all999_regional_null_shape": 8,
+    "all999_regional_null_finite": 8,
+    "all999_regional_null_numeric_cells": 463536,
+    "all999_regional_null_numeric_match": 8,
+    "all999_macro_null_shape": 8,
+    "all999_macro_null_finite": 8,
+    "all999_macro_null_numeric_cells": 7992,
+    "all999_macro_null_numeric_match": 8,
+    "aggregate_observed_H_shape": 8,
+    "aggregate_observed_H_finite": 8,
+    "aggregate_observed_H_numeric_cells": 8,
+    "aggregate_observed_H_numeric_match": 8,
+    "aggregate_analytic_E_shape": 8,
+    "aggregate_analytic_E_finite": 8,
+    "aggregate_analytic_E_numeric_cells": 8,
+    "aggregate_analytic_E_numeric_match": 8,
+    "aggregate_macro_absolute_excess_shape": 8,
+    "aggregate_macro_absolute_excess_finite": 8,
+    "aggregate_macro_absolute_excess_numeric_cells": 8,
+    "aggregate_macro_absolute_excess_numeric_match": 8,
+    "aggregate_permutation_mean_shape": 8,
+    "aggregate_permutation_mean_finite": 8,
+    "aggregate_permutation_mean_numeric_cells": 8,
+    "aggregate_permutation_mean_numeric_match": 8,
+    "aggregate_permutation_variance_population_shape": 8,
+    "aggregate_permutation_variance_population_finite": 8,
+    "aggregate_permutation_variance_population_numeric_cells": 8,
+    "aggregate_permutation_variance_population_numeric_match": 8,
+    "aggregate_permutation_min_shape": 8,
+    "aggregate_permutation_min_finite": 8,
+    "aggregate_permutation_min_numeric_cells": 8,
+    "aggregate_permutation_min_numeric_match": 8,
+    "aggregate_permutation_max_shape": 8,
+    "aggregate_permutation_max_finite": 8,
+    "aggregate_permutation_max_numeric_cells": 8,
+    "aggregate_permutation_max_numeric_match": 8,
+    "aggregate_ID_weighted_excess_descriptive_shape": 8,
+    "aggregate_ID_weighted_excess_descriptive_finite": 8,
+    "aggregate_ID_weighted_excess_descriptive_numeric_cells": 8,
+    "aggregate_ID_weighted_excess_descriptive_numeric_match": 8,
+    "aggregate_leave_one_region_out_min_shape": 8,
+    "aggregate_leave_one_region_out_min_finite": 8,
+    "aggregate_leave_one_region_out_min_numeric_cells": 8,
+    "aggregate_leave_one_region_out_min_numeric_match": 8,
+    "aggregate_leave_one_region_out_max_shape": 8,
+    "aggregate_leave_one_region_out_max_finite": 8,
+    "aggregate_leave_one_region_out_max_numeric_cells": 8,
+    "aggregate_leave_one_region_out_max_numeric_match": 8,
+    "aggregate_expected_changed_IDs_per_draw_shape": 8,
+    "aggregate_expected_changed_IDs_per_draw_finite": 8,
+    "aggregate_expected_changed_IDs_per_draw_numeric_cells": 8,
+    "aggregate_expected_changed_IDs_per_draw_numeric_match": 8,
+    "aggregate_without_federal_cities_excess_shape": 8,
+    "aggregate_without_federal_cities_excess_finite": 8,
+    "aggregate_without_federal_cities_excess_numeric_cells": 8,
+    "aggregate_without_federal_cities_excess_numeric_match": 8,
+    "aggregate_integer_permutation_count": 8,
+    "aggregate_integer_heterogeneous_blocks": 8,
+    "aggregate_integer_movable_IDs": 8,
+    "exact_constant_assignment_flag": 8,
+    "empirical_null_flag": 8,
+    "exact_upper_tail_count": 8,
+    "exact_p_plus_one": 8,
+    "family_exactly_two": 1,
+    "primary_exact_p_Holm_alpha": 2,
+    "positive_effect_primary_boolean": 2,
+    "NCut_minus_SSE_descriptive_shape": 4,
+    "NCut_minus_SSE_descriptive_finite": 4,
+    "NCut_minus_SSE_descriptive_numeric_cells": 4,
+    "NCut_minus_SSE_descriptive_numeric_match": 4,
+    "June_descriptive_no_primary": 1,
+    "consumed_sources_unchanged": 29
+  },
+  "total_checks": 558597,
+  "max_abs_numeric_error": 1.5959455978986625e-16,
+  "months": 2,
+  "method_month_k_cells": 8,
+  "regional_cells": 464,
+  "null_replay_draws_per_month": 999,
+  "primary_tests": 2,
+  "Holm_alpha": 0.05,
+  "runtime_seconds": 36.85899999993853,
+  "actual_results_read_after_root_release": true,
+  "author_run_calls": 0,
+  "new_clustering_fits": 0,
+  "new_graph_fits": 0,
+  "new_SW": 0,
+  "SSH": 0,
+  "automatic_model_promotion": false,
+  "source_bindings": {
+    "C:\\Users\\Максим\\Documents\\ChatGPT\\сберИндекс\\workstreams\\k10_external_received_20261008_r00\\road_independent_closure_r00.json": {
+      "sha256": "3eed07b06cae14ce22686f1a7535f80decdd1c676dd8a771e7232a458e6bc91f",
+      "bytes": 2057
+    },
+    "C:\\Users\\Максим\\Documents\\ChatGPT\\сберИндекс\\workstreams\\k10_road_label_diagnostic_20261008_r00\\package\\MANIFEST.json": {
+      "sha256": "f309e81582efe6b09af69826a44978943f2dc1eccae4033132e2a37b3707dd5a",
+      "bytes": 1231
+    },
+    "C:\\Users\\Максим\\Documents\\ChatGPT\\сберИндекс\\workstreams\\k10_road_label_diagnostic_20261008_r00\\package\\PROTOCOL.json": {
+      "sha256": "a9c53fcc85388e2fff6a750fce1f1bc053a277bcd112f9295b12cd9fbc019f7e",
+      "bytes": 4834
+    },
+    "C:\\Users\\Максим\\Documents\\ChatGPT\\сберИндекс\\workstreams\\k10_road_label_diagnostic_20261008_r00\\package\\SOURCE_BINDING.json": {
+      "sha256": "c6c28423f470a42fb13506c50eb9b9d53f1dd474287c9abd89525dd155a850cc",
+      "bytes": 6914
+    },
+    "C:\\Users\\Максим\\Documents\\ChatGPT\\сберИндекс\\workstreams\\k10_road_label_diagnostic_20261008_r00\\package\\ARTIFICIAL_ADAPTER_QA.json": {
+      "sha256": "e75dd5dff3b5e7ac85b979ccf423bfeb7cd17ba39f38c32518bb3216ba21c2e9",
+      "bytes": 694
+    },
+    "C:\\Users\\Максим\\Documents\\ChatGPT\\сберИндекс\\workstreams\\k10_road_label_diagnostic_20261008_r00\\package\\ARTIFICIAL_QA.json": {
+      "sha256": "67c1d4fbfb87a0cf453bc76842409cfe99a8112897ef299d47c37f045cf95f7b",
+      "bytes": 9702
+    },
+    "C:\\Users\\Максим\\Documents\\ChatGPT\\сберИндекс\\workstreams\\k10_road_label_diagnostic_20261008_r00\\package\\INPUT_PROOF.json": {
+      "sha256": "7e93c139635fe1cb56adfa15d0c6178a55cd75008045e78fd2d2ffb9a22826c6",
+      "bytes": 3137
+    },
+    "C:\\Users\\Максим\\Documents\\ChatGPT\\сберИндекс\\workstreams\\k10_road_label_diagnostic_20261008_r00\\package\\OLD_ROAD_PROTOCOL.json": {
+      "sha256": "9f5a9356b81534825a1bd03b2c140d1e1eba9dda6f9b8450f273b8fc44643f33",
+      "bytes": 4722
+    },
+    "C:\\Users\\Максим\\Documents\\ChatGPT\\сберИндекс\\workstreams\\k10_road_label_diagnostic_20261008_r00\\package\\README.md": {
+      "sha256": "ea98848d8c5186b6b75edc7332d1749c85e8cba9f33ccc7d5a1d163c809d0f47",
+      "bytes": 10769
+    },
+    "C:\\Users\\Максим\\Documents\\ChatGPT\\сберИндекс\\workstreams\\k10_road_label_diagnostic_20261008_r00\\package\\adapter_fixtures.py": {
+      "sha256": "1822b12e8b68fd9b7abe005dd7552aebd8e04593586370006c9cac05083f3291",
+      "bytes": 4485
+    },
+    "C:\\Users\\Максим\\Documents\\ChatGPT\\сберИндекс\\workstreams\\k10_road_label_diagnostic_20261008_r00\\package\\evaluator.py": {
+      "sha256": "de131e8fa0e261b3b556d163eaeec28a83bb5db31152ada4f917e7567de5074b",
+      "bytes": 10648
+    },
+    "C:\\Users\\Максим\\Documents\\ChatGPT\\сберИндекс\\workstreams\\k10_road_label_diagnostic_20261008_r00\\package\\fixtures.py": {
+      "sha256": "bf207ea770e17a662aea51d9578c82e6ab415cefc28dafc06727e35f457cd6e9",
+      "bytes": 4612
+    },
+    "C:\\Users\\Максим\\Documents\\ChatGPT\\сберИндекс\\workstreams\\k10_road_label_diagnostic_20261008_r00\\package\\input_adapter.py": {
+      "sha256": "d822d23ea780ddf63175771341cea2ad915fad140dfd0c9004892e8e18b7d386",
+      "bytes": 5227
+    },
+    "C:\\Users\\Максим\\Documents\\ChatGPT\\сберИндекс\\workstreams\\k10_road_label_diagnostic_20261008_r00\\package\\run.py": {
+      "sha256": "7623f5bb9c66bc253a1a85a2f82b729f81978a370f2fe9f711f0a470cab58d67",
+      "bytes": 2755
+    },
+    "C:\\Users\\Максим\\Documents\\ChatGPT\\сберИндекс\\workstreams\\k10_external_received_20261008_r00\\road_extracted_r00\\output\\result\\OUTPUT_MANIFEST.json": {
+      "sha256": "82de5c0d047d5a90f390c36f4658d3c1debf4288ffa57b63f78f4adf445e32c8",
+      "bytes": 377
+    },
+    "C:\\Users\\Максим\\Documents\\ChatGPT\\сберИндекс\\workstreams\\k10_external_received_20261008_r00\\road_extracted_r00\\output\\result\\2024-06.json": {
+      "sha256": "5714a9596accffa16f088a18ca14393c485e9c035350b49e20e10dc1b6ae8b5a",
+      "bytes": 7620090
+    },
+    "C:\\Users\\Максим\\Documents\\ChatGPT\\сберИндекс\\workstreams\\k10_external_received_20261008_r00\\road_extracted_r00\\output\\result\\2024-12.json": {
+      "sha256": "9f66ea16a9cd7170bfb9ce0d9b78eb8ce909e6eec85ff19bf16ced805dcc390d",
+      "bytes": 7373847
+    },
+    "C:\\Users\\Максим\\Documents\\ChatGPT\\сберИндекс\\workstreams\\k10_external_received_20261008_r00\\road_extracted_r00\\output\\result\\receipt.json": {
+      "sha256": "ac86a95de9c5b3cbdb3522fcce1c30542f17a029ecf23addc63148c961a11987",
+      "bytes": 588
+    },
+    "C:\\Users\\Максим\\Documents\\ChatGPT\\сберИндекс\\workstreams\\k10_external_received_20261008_r00\\road_extracted_r00\\output\\result\\registration.json": {
+      "sha256": "6c03d2678ac2a9e8f6d8010a2a147b6f69fb1de9558afa5136e06a8465ef11a3",
+      "bytes": 564
+    },
+    "C:\\Users\\Максим\\Documents\\ChatGPT\\сберИндекс\\workstreams\\k10_external_vm_binding_20261008_r00\\road_payload_r00\\bundle\\inputs\\2024-12\\territories.csv": {
+      "sha256": "bb5f0ebeca763936f539bfdfb6aa1dd79221063e2bdd3a70af337a14efe98600",
+      "bytes": 255330
+    },
+    "C:\\Users\\Максим\\Documents\\ChatGPT\\сберИндекс\\workstreams\\k10_external_vm_binding_20261008_r00\\road_payload_r00\\bundle\\inputs\\2024-12\\blocks.json": {
+      "sha256": "3a0627868f9b397954c07ca027d49fae145d62352a4831087315e3a44c6f0fed",
+      "bytes": 106709
+    },
+    "C:\\Users\\Максим\\Documents\\ChatGPT\\сберИндекс\\workstreams\\k10_external_vm_binding_20261008_r00\\road_payload_r00\\bundle\\inputs\\2024-12\\road_distances.csv": {
+      "sha256": "9c5ef9951d7e0186d60df8b84db48752cba8f68ab2e93816a3303cd2bb5be204",
+      "bytes": 571843
+    },
+    "C:\\Users\\Максим\\Documents\\ChatGPT\\сберИндекс\\workstreams\\k10_external_vm_binding_20261008_r00\\road_payload_r00\\bundle\\inputs\\2024-12\\NCut_K10_result.json": {
+      "sha256": "3baa21384dd37989aaa1d17229cf8cf46cd737685d1df3795d9c9887f8827414",
+      "bytes": 460640
+    },
+    "C:\\Users\\Максим\\Documents\\ChatGPT\\сберИндекс\\workstreams\\k10_external_vm_binding_20261008_r00\\road_payload_r00\\bundle\\inputs\\2024-12\\SSE_K10_result.json": {
+      "sha256": "a77b729667db95cc095cf8d63b14c073b53cc8f7426ec17973d95e6df3256c04",
+      "bytes": 455946
+    },
+    "C:\\Users\\Максим\\Documents\\ChatGPT\\сберИндекс\\workstreams\\k10_external_vm_binding_20261008_r00\\road_payload_r00\\bundle\\inputs\\2024-06\\territories.csv": {
+      "sha256": "2c5876023ddf1ede5ffaa715ec01c8b613f1e13ac1a31d85aa325d6b43791319",
+      "bytes": 257599
+    },
+    "C:\\Users\\Максим\\Documents\\ChatGPT\\сберИндекс\\workstreams\\k10_external_vm_binding_20261008_r00\\road_payload_r00\\bundle\\inputs\\2024-06\\blocks.json": {
+      "sha256": "ee89300b5e2168381b6fe137d1f14339fdd77db7df945cbfefe6fc5ffecafc01",
+      "bytes": 108081
+    },
+    "C:\\Users\\Максим\\Documents\\ChatGPT\\сберИндекс\\workstreams\\k10_external_vm_binding_20261008_r00\\road_payload_r00\\bundle\\inputs\\2024-06\\road_distances.csv": {
+      "sha256": "a0daae41c5caa1010a0e2d8dc04074fb24237e05ca88d1b703e9bcc0fd26704b",
+      "bytes": 572880
+    },
+    "C:\\Users\\Максим\\Documents\\ChatGPT\\сберИндекс\\workstreams\\k10_external_vm_binding_20261008_r00\\road_payload_r00\\bundle\\inputs\\2024-06\\NCut_K10_result.json": {
+      "sha256": "01b35fb13e61e20274f5da599723a1618075b37317a2876f8cfece80ba1a03d5",
+      "bytes": 456628
+    },
+    "C:\\Users\\Максим\\Documents\\ChatGPT\\сберИндекс\\workstreams\\k10_external_vm_binding_20261008_r00\\road_payload_r00\\bundle\\inputs\\2024-06\\SSE_K10_result.json": {
+      "sha256": "b1d3125c451e1cb43716a6b8f83ee3e1e8634cfa31df98e450de36eeb61386fc",
+      "bytes": 452254
+    }
+  }
+}

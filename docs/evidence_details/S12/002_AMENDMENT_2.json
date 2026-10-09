@@ -1,0 +1,15 @@
+{
+  "schema": "analogue-authoritative-halfopen-type-correction-v2",
+  "status": "FROZEN_BEFORE_CORRECTED_R02_RESULTS",
+  "reason": "Independent review read primary supplier metadata: year_to excludes its year. The prior readback used an inclusive upper endpoint, creating false 57-ID type ambiguities. The exclusion of these IDs in r01 was a preparation bug, not a property of the source data.",
+  "authoritative_source": "data/raw/metadata_municipal_dict_sberindex_2.txt, pages 1 and 2",
+  "year_rule": "year_from <= 2024 < year_to; missing lower/upper endpoints treated as negative/positive infinity per corrected registry",
+  "corrected_registry": "Use independently rebuilt readback/corrected_r01 exact-type registry and support proof when available; bind exact source paths and SHA256 before corrected execution.",
+  "r02_rule": "Use corrected exact supplier_type for every matched original context ID, check names and codes, and include all original nonfederal IDs that pass unchanged numeric/metadata checks. Do not exclude the former 57 on the basis of the withdrawn inclusive-interval diagnosis.",
+  "expected_nonfederal_before_validation": 1445,
+  "unchanged": ["December2024 expense slice", "2024 salary target", "7 retrieval methods and median control", "5 analogues", "same supplier_type and another region", "all distance transforms and IQR zero rule", "hard and soft quotas", "tie rules", "common-support regional weighting", "negative/positive criterion"],
+  "history": {"initial_conditional_r00": "initial_conditional_types_r00/", "incorrect_exclusion_r01": "historical_strict_exclusion_r01/", "corrected_primary": "corrected_r02/"},
+  "claim_status": "The 1388-ID r01 result is superseded as primary because its admission rule was wrong. Its negative numbers remain historical evidence only. The corrected result may agree or differ; no result assumed before execution.",
+  "no_new_fit": true,
+  "no_SSH": true
+}

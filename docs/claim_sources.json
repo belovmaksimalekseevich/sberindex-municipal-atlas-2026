@@ -1,7 +1,7 @@
 {
   "schema": "report-claims-v1",
-  "created_utc": "2026-10-09T15:56:37.570372+00:00",
-  "manuscript_sha256": "e43d23e31476278a7ce3eb628f805275e050e19e4e7036747eb45e35fd3f230e",
+  "created_utc": "2026-10-09T16:52:27.789603+00:00",
+  "manuscript_sha256": "e5372cf485a2959eb867dd7e66e2bf9f063200c1f2b9309eca2252f2689aa903",
   "sources": {
     "S01": {
       "title": "Задание и критерии конкурса в проверенной редакции",
@@ -11,7 +11,7 @@
       "bytes": 40026
     },
     "S02": {
-      "title": "Методология признаков графов и шести индексов",
+      "title": "Методология признаков, графов и шести индексов",
       "path": "workstreams/local_finalization_20261008_r00/methods/METHODS.md",
       "portable_path": "evidence/S02.md",
       "sha256": "72b460ad87c07f2148dd9ed606ddbea6b14d24cf70155a7412df79d3358bf600",

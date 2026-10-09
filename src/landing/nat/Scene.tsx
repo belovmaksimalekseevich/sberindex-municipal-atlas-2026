@@ -7,7 +7,7 @@ import { useSteps } from './steps'
 import { MONTHS } from '../data'
 import { H, MAPY, SCENE, SceneRenderer, W, sceneSwarms, setSceneData, type SceneData, type SceneKey, type StepMsg, type View } from './sceneCore'
 import type { ToWorker } from './sceneWorker'
-import { canvasWorker, ensureLocalPaths, onWorker } from './workerHost'
+import { canvasWorker, ensureLocalPaths, failCanvasWorker, onWorker, toWorker, useWorkerFailed } from './workerHost'
 import golosLat from '@fontsource-variable/golos-text/files/golos-text-latin-wght-normal.woff2?url'
 import golosCyr from '@fontsource-variable/golos-text/files/golos-text-cyrillic-wght-normal.woff2?url'
 import golosExt from '@fontsource-variable/golos-text/files/golos-text-latin-ext-wght-normal.woff2?url'
@@ -137,11 +137,15 @@ function openNew(cv: HTMLCanvasElement, first: SceneKey, onView: (v: View) => vo
       })
       const data = buildData(cv)
       // пакет копируется в поток (структурное клонирование); основной поток оставляет себе GEO/NET
-      worker.postMessage({ type: 'data', data, fonts: FONTS } satisfies ToWorker)
+      toWorker({ type: 'data', data, fonts: FONTS } satisfies ToWorker)
     }
-    const off = cv.transferControlToOffscreen()
-    worker.postMessage({ type: 'init', id, canvas: off, first } satisfies ToWorker, [off])
-    return { id, h: { send: m => worker.postMessage({ ...m, id }) } }
+    try {
+      const off = cv.transferControlToOffscreen()
+      toWorker({ type: 'init', id, canvas: off, first } satisfies ToWorker, [off])
+    } catch {
+      failCanvasWorker()
+    }
+    return { id, h: { send: m => { toWorker({ ...m, id }) } } }
   }
   // запасной путь: отрисовка в основном потоке
   if (!localReady) {
@@ -185,6 +189,7 @@ const K_MIN = 0.6, K_MAX = 12
  *  двигать и перетаскивать точки. */
 export function StoryScene({ chapter, steps }: { chapter: string; steps: Step[] }) {
   const [step, setStep] = useState(0)
+  const workerFailed = useWorkerFailed()
   const [showGroups, setShowGroups] = useState(false)
   useEffect(() => setShowGroups(false), [step])
   const root = useRef<HTMLDivElement>(null)
@@ -198,6 +203,7 @@ export function StoryScene({ chapter, steps }: { chapter: string; steps: Step[] 
 
   useEffect(() => {
     const el = cv.current!
+    S.current.w = 0
     const hd = openScene(el, steps[0].scene, v => { S.current.view = v; if (zoomEl.current) zoomEl.current.textContent = `${Math.round(v.k * 100)}%` })
     h.current = hd
     const ro = new ResizeObserver(() => { const w = el.clientWidth; if (w !== S.current.w) { S.current.w = w; el.style.height = `${(w * H) / W}px`; hd.send({ type: 'size', w, dpr: (window.devicePixelRatio || 1) * scaleOf(el) }) } })
@@ -207,7 +213,7 @@ export function StoryScene({ chapter, steps }: { chapter: string; steps: Step[] 
     io.observe(root.current!)
     return () => { ro.disconnect(); io.disconnect(); hd.send({ type: 'vis', on: false }); h.current = null }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, [workerFailed])
   useSteps(root, setStep)
   useEffect(() => {
     const s = steps[step], L = SCENE[s.scene]
@@ -219,7 +225,7 @@ export function StoryScene({ chapter, steps }: { chapter: string; steps: Step[] 
     }
     h.current?.send({ type: 'step', step: msg })
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [step, showGroups])
+  }, [step, showGroups, workerFailed])
 
   // ---- взаимодействие (только шаги с графом): масштаб, сдвиг, перетаскивание; подсказка — на всех шагах
   const posNow = (): Float32Array | null => {
@@ -312,7 +318,7 @@ export function StoryScene({ chapter, steps }: { chapter: string; steps: Step[] 
           <p className="scene-title">{scene.title}</p>
           {interactive && <p className="fig-note">NCut10, декабрь 2024. Проекция X0/X1, не полная геометрия и не карта; показаны пять сильнейших связей каждого МО, включая равные веса.</p>}
           <div className="relative">
-            <canvas ref={cv} role="img" style={{ aspectRatio: `${W} / ${H}` }} aria-label={`История, шаг ${steps[step].k}`} className={`block w-full ${interactive ? 'cursor-grab touch-pan-y active:cursor-grabbing' : ''}`}
+            <canvas key={workerFailed ? 'local' : 'worker'} ref={cv} role="img" style={{ aspectRatio: `${W} / ${H}` }} aria-label={`История, шаг ${steps[step].k}`} className={`block w-full ${interactive ? 'cursor-grab touch-pan-y active:cursor-grabbing' : ''}`}
               onPointerDown={onDown} onPointerMove={onMove} onPointerUp={onUp} onPointerCancel={onUp} onPointerLeave={() => { hoverPt.current = null; if (S.current.hover != null) { S.current.hover = null; placeHover() } }} />
             <span ref={ringEl} hidden aria-hidden className="scene-ring" />
             <div ref={tipEl} hidden aria-hidden className="scene-tip" />

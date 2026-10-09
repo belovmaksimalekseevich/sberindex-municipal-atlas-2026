@@ -89,7 +89,21 @@ const emit = () => listeners.forEach(l => l())
 
 // Готовые файлы применяем по одному за задачу: если два варианта пришли вместе, их отрисовка не попадает в один длинный кадр.
 let applyChain = Promise.resolve()
-const settle = (fn: () => void) => { applyChain = applyChain.then(() => new Promise<void>(done => setTimeout(() => { fn(); requestAnimationFrame(() => done()) }, 0))) }
+function settle(apply: () => void): Promise<void> {
+  const operation = applyChain.then(() => new Promise<void>((resolve, reject) => {
+    setTimeout(() => {
+      try {
+        apply()
+        requestAnimationFrame(() => resolve())
+      } catch (error) {
+        reject(error)
+      }
+    }, 0)
+  }))
+  // Один повреждённый ответ не блокирует последующие файлы; вызывающий получает ошибку.
+  applyChain = operation.catch(() => {})
+  return operation
+}
 
 function load(id: string) {
   if (cache.has(id)) return

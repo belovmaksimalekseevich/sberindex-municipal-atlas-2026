@@ -1,0 +1,12 @@
+{
+  "UTC": "2026-10-09T08:15:36.797649+00:00",
+  "passed": true,
+  "files_checked": 3105,
+  "archive_sha256": "21ba132d6d92740d42c1b78b10eca9d85b5cb20dc811c81ba8dda0bdae7339ad",
+  "archive_bytes": 1661655306,
+  "completed_chunks": 34,
+  "completed_method_fits": 68,
+  "imported_method_fits": 4,
+  "scientific_acceptance": false,
+  "actual_live_owner_check": "separate target receipt required"
+}

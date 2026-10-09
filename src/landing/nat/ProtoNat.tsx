@@ -36,7 +36,7 @@ export function Opening() {
             <p className="start-guide-h">С чего начать</p>
             <ul className="start-guide">
               <li><a href="#atlas"><b>Карта групп</b><span>какие МО в какой группе, по месяцам</span></a></li>
-              <li><a href="#explore"><b>Найти свой МО</b><span>расходы, группа и похожие МО</span></a></li>
+              <li><a href="#explore"><b>Найти свой муниципалитет</b><span>расходы, группа и похожие МО</span></a></li>
               <li><a href="#methods"><b>Проверить метод</b><span>как сравнивали варианты и качество</span></a></li>
             </ul>
             <p className="scope">{SCOPE}</p>
@@ -45,8 +45,8 @@ export function Opening() {
         <h2 className="brief-h"><b>Коротко:</b> что мы нашли</h2>
         <ol className="brief-grid">
           <li><a href="#story"><span className="n">10</span><span className="t">Подробные расходные профили</span>
-            <span className="d">NCut10: {n(N.observedLast)} территорий в декабре 2024. Группы различаются уровнем и составом наблюдаемых расходов.</span></a></li>
-          <li><a href="#groups"><span className="n">6</span><span className="t">Укрупнённый обзор SSE6</span>
+            <span className="d">NCut10, декабрь 2024: число территорий — {n(N.observedLast)}. Группы различаются уровнем и составом наблюдаемых расходов.</span></a></li>
+          <li><a href="?v=SSE_K06#groups"><span className="n">6</span><span className="t">Укрупнённый обзор SSE6</span>
             <span className="d">В среднем устойчивее на подвыборках июня и декабря 2024, но объединяет часть содержательных различий. Это отдельное разбиение.</span></a></li>
           <li><a href="#atlas-map"><span className="n">{n(completeHistories)}<small> из {n(N.terr.length)}</small></span><span className="t">Полная история за 24 месяца</span>
             <span className="d">Изменения считаются после сопоставления групп на общих территориях. Пропуск публикации не считается переходом.</span></a></li>
@@ -66,7 +66,7 @@ export function AtlasSection() {
   const cm = entry.state === 'ready' ? entry.data[mi] : null
   return (
     <Sec id="atlas" n="02" title="Где какая группа и чем группы отличаются?"
-      answer={cm ? <>В {monthIn(MONTHS[mi].month)}: {cm.clusters.length} групп, {n(cm.native_n)} наблюдаемых территорий. {catalogOf(config).display_name}. Портреты показывают расходы, примеры и границы интерпретации.</> : <>Загружаем выбранное представление.</>}>
+      answer={cm ? <>В {monthIn(MONTHS[mi].month)}: число групп — {cm.clusters.length}, наблюдаемых территорий — {n(cm.native_n)}. {catalogOf(config).display_name}. Портреты показывают расходы, примеры и границы интерпретации.</> : <>Загружаем выбранное представление.</>}>
       <Tabs label="Атлас" items={[
         { id: 'atlas-map', label: 'Карта по месяцам', body: <MapAtlas /> },
         { id: 'groups', label: 'Портреты групп', body: <Bare><Groups /></Bare> },

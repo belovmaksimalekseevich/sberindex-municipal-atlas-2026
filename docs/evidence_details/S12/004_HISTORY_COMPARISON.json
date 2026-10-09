@@ -1,0 +1,76 @@
+{
+  "status": "HISTORICAL_INPUT_CORRECTIONS_DISCLOSED",
+  "comparisons": {
+    "initial_conditional_types_r00": {
+      "current_primary_N": 1419,
+      "historical_primary_N": 1419,
+      "common_query_N": 1419,
+      "common_regions": 67,
+      "equal_region_MAE_log_on_same_queries": {
+        "corrected_r02": {
+          "total": 0.17223392721760444,
+          "spending": 0.1544074976027546,
+          "context_no_salary": 0.15120276204905764,
+          "NCut_hard": 0.1594891055154756,
+          "SSE_hard": 0.15728905340656327,
+          "NCut_soft": 0.1559738935847254,
+          "SSE_soft": 0.15532595679976346,
+          "median": 0.2849003271142474
+        },
+        "initial_conditional_types_r00": {
+          "total": 0.17223392721760444,
+          "spending": 0.1544074976027546,
+          "context_no_salary": 0.15120276204905764,
+          "NCut_hard": 0.1594891055154756,
+          "SSE_hard": 0.15728905340656327,
+          "NCut_soft": 0.1559738935847254,
+          "SSE_soft": 0.15532595679976346,
+          "median": 0.2849003271142474
+        }
+      },
+      "neighbor_selection_byte_identical": true,
+      "per_query_byte_identical": true,
+      "historical_primary_numeric_gate": {
+        "methods_beating_both_controls": [],
+        "any_pass": false,
+        "claim": "Added value of cluster retrieval not confirmed against both controls in this protocol."
+      }
+    },
+    "historical_strict_exclusion_r01": {
+      "current_primary_N": 1419,
+      "historical_primary_N": 1362,
+      "common_query_N": 1362,
+      "common_regions": 67,
+      "equal_region_MAE_log_on_same_queries": {
+        "corrected_r02": {
+          "total": 0.17169078144085628,
+          "spending": 0.15262566277962006,
+          "context_no_salary": 0.15226227064596615,
+          "NCut_hard": 0.1579864090679118,
+          "SSE_hard": 0.15606205483038735,
+          "NCut_soft": 0.15449062655621382,
+          "SSE_soft": 0.15370251063871124,
+          "median": 0.2858451881657632
+        },
+        "historical_strict_exclusion_r01": {
+          "total": 0.17127889804373514,
+          "spending": 0.1524847768301806,
+          "context_no_salary": 0.15330324419445174,
+          "NCut_hard": 0.15810827707097505,
+          "SSE_hard": 0.1571163916228059,
+          "NCut_soft": 0.1541594996721477,
+          "SSE_soft": 0.1539554593474343,
+          "median": 0.2860397149190732
+        }
+      },
+      "neighbor_selection_byte_identical": false,
+      "per_query_byte_identical": false,
+      "historical_primary_numeric_gate": {
+        "methods_beating_both_controls": [],
+        "any_pass": false,
+        "claim": "Added value of cluster retrieval not confirmed against both controls in this protocol."
+      }
+    }
+  },
+  "meaning": "r02 uses authoritative half-open intervals. r01's 57 exclusions were an input bug and are not scientific sensitivity evidence. r00 retained original context CSV types; exact agreement with corrected registry is now separately checked."
+}

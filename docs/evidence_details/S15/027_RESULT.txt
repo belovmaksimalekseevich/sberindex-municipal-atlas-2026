@@ -1,0 +1,74 @@
+Независимая приёмка фактического EVENTS — PASS
+
+Проверены все114546 event/horizon rows,92 mappings,96 sensitivity rows и4 PRIMARY
+rows:2 основных pair_common и2 retrospective fixed_full24 sensitivity.
+Проверяющий не импортировал и не запускал events.py. Использована собственная
+арифметика порогов/окон/направлений; оптимальные пересечения, число оптимальных
+назначений и lexical tie-break восстановлены точным subset-DP для каждой пары.
+Все flags/statuses/labels/ID/counts совпали точно. Максимальная разница чисел
+6.661338147750939e-16 при допуске1e-12+1e-12*max(abs(a),abs(b)).
+
+Источник и завершение:
+- Целый actual ZIP SHA78dfb224429e63bff1acd841664642ae4e8dd5a05f18c6cf329c4c2cd97790d4;
+  все17 members CRC/SHA,точная inventory и extracted bytes проверены.
+- Actual outer exit0/owned_descendants_quiescent/cleanup_errors[],оба exact owners
+  связаны с registration,CPU7 и sourceZIPf6b5...;COMMIT связан с OUTPUT_MANIFEST.
+- Frozen input77a3...,plan49a4...,producer d363... связаны с принятой26-check source
+  review и actual receipt. Проверены source-manifest files.
+- Все24 input frames сверены с исходными72 cache/label members принятого national
+  архива: точные X/ID/NCut10/SSE10 labels и одна frozen reference. Эти72 members
+  повторно CRC/SHA проверены напрямую; whole historical3GB ZIP SHA не повторялся.
+- Перечисленные6 protected inputs одинаковы до/после.0native fits/0graphs/0SSH.
+
+Основной заранее заданный критерий: pair_common,2024,h2,q90,cosine>=0.5,
+устойчивое двухмесячное предыдущее состояние и unambiguous mappings.
+
+Метод       Сырые смены ID-boundary  Допустимые сырые смены  Кандидаты  Уникальные provider ID
+NCut10      7150                    3194                    172        161
+SSE10       8857                    4147                    253        242
+
+Общая опора основных2024 boundaries24958 ID-boundary observations у каждого метода.
+Сырые смены, event/horizon rows и уникальные ID — разные единицы.172 и253 не число
+уникальных МО, а повторяемые ID-boundary candidates. Допустимые сырые смены
+получены прямым фильтром каждой строки: статус не calendar/left/unstable/missing,
+baseline min8 и threshold>1e-12. Это не сумма/вычитание опубликованных исключений.
+Проценты от неверного или предполагаемого знаменателя не рассчитывались.
+
+Исключения primary h2:
+             calendar-right  unstable-pre  missing  baseline-invalid  mapping-ambiguous
+NCut10       504             3367          22       137               0
+SSE10        683             3911          39       182               0
+Категории могут пересекаться,особенно baseline-invalid с другими статусами.
+Число label-persistent1546/2074 включает feature-failing cases; его не считать
+числом подтверждённых candidates.
+
+Sensitivity:
+- fixed_full24:2016 provider IDs,6918/8574 сырых смен,171/248 кандидатов NCut/SSE;
+  соответствующие unique IDs160/237. Это retrospective sensitivity,не primary.
+- При h3 и прежних q90/cosine0.5:65/119 pair_common candidates. Calendar-right
+ 1182/1705; последние2месяца h3 цензурируются,последний месяц h2 цензурируется.
+  Их нельзя трактовать как отрицательное подтверждение или сравнимую полную экспозицию.
+- Полная сетка96 проверена; все пороги основаны только на до11 adjacent feature
+  steps2023 данногоID,без label-based отбора «тихих» месяцев. Для2023 это in-sample
+  calibration/descriptive. Для2024 новых шагов в threshold нет,но frozen full-panel
+  reference и saved labels остаются transductive; end-to-end holdout не появляется.
+
+Наблюдаемый результат и границы:
+Процедура формирует небольшой проверяемый перечень кандидатов,у которых смена
+парной кластерной метки сопровождается удержанным сдвигом расходныхX в коротком
+ретроспективном окне. Большинство основных candidates датированы2024-01:
+NCut103из172,SSE147из253. Подтверждение доступно лишь после следующего месяца;
+при h3 — после двух последующих. Сезонная корректировка не выполнялась, поэтому
+январскую концентрацию нельзя объяснять структурной экономической сменой.
+
+Больший/меньший event count не делает SSE/NCut лучше: алгоритмы имеют разные
+сырые смены и eligibility. Порог q90 — описательный heuristic,не significance
+level; число событий конкурента не целевая величина. Реальные экономические
+переходы,миграция,причинность и территориальная непрерывность не удостоверены.
+accepted_lineage=false; постоянная lineage не строится; модель не продвигается.
+
+Квитанция:receipt.json, SHA6add5e55d3c74900a5911ffae0715ee27b0cb9dc944e32ca805aa71f2948c43f.
+Полные92 pair supports/rawcounts:MAPPING92.json.
+Полные96 summary rows:RECOMPUTED_SENSITIVITY96.json.
+Прямые eligibility/exposure/distinct-ID counts:DENOMINATORS_AND_DISTINCT_IDS96.json.
+Четыре exact primary/sensitivity rows:PRIMARY4.json.

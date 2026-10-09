@@ -37,7 +37,7 @@ function Card({ cm, g, mi, maxDeviation, config }: { cm: ConfigMonth; g: number;
   return (
     <article className="grp" style={{ borderTopColor: color }}>
       <header>
-        <h3 className="tile-t">{title}<small className="grp-nm">Профиль {g + 1} · G{g} · {monthLabel(cm.month)}</small></h3>
+        <h3 className="tile-t">{displaySpendingText(title)}<small className="grp-nm">Профиль {g + 1} · G{g} · {monthLabel(cm.month)}</small></h3>
         <p className="m-0 text-[15px]"><b className="font-mono tnum">{n0(c.size)}</b> МО · медиана общих расходов {rub(c.median[0])}{q && q[1] != null && q[3] != null ? <> · центральные 50% — {rub(q[1])}–{rub(q[3])}</> : null}</p>
         {summary && <p className="m-0 text-[14px] leading-snug">{displaySpendingText(summary)}</p>}
       </header>
@@ -58,7 +58,7 @@ function Card({ cm, g, mi, maxDeviation, config }: { cm: ConfigMonth; g: number;
       <dl className="grp-ex">
         <div><dt>Примеры высокого SW</dt><dd>{c.typical.length ? c.typical.slice(0, 2).map(x => `${short(x.ti)} (SW ${num(x.sw, 2)})`).join(', ') : 'не переданы'}</dd></div>
         <div><dt>Примеры малого SW</dt><dd>{c.boundary.length ? c.boundary.slice(0, 2).map(x => `${short(x.ti)} (SW ${num(x.sw, 2)})`).join(', ') : 'не переданы'}</dd></div>
-        {(card?.coverage_note || coverage) && <div><dt>Контекст 2024</dt><dd>{card?.coverage_note ?? `${coverage!.covered_n} из ${c.size} МО; показатели относятся только к покрытой части.`}</dd></div>}
+        {(card?.coverage_note || coverage) && <div><dt>Контекст 2024</dt><dd>{card?.coverage_note ?? `${coverage!.covered_n} из ${c.size} МО; показатели относятся только к территориям с доступным годовым контекстом.`}</dd></div>}
       </dl>
       {card?.short_limit && <p className="note !m-0">{displaySpendingText(card.short_limit)}</p>}
     </article>

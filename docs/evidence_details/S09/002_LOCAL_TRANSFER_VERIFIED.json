@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "UTC": "2026-10-09T13:49:44.491929+00:00",
+  "zip_sha256": "acfc46573a47b23cd477ba2457ebe7edb2e399f91f50354d9f2948e0406b10bd",
+  "bytes": 1515911731,
+  "exact_member_inventory_SHA_CRC": true,
+  "member_count": 4014,
+  "package_manifest_sha256": "dd0e91c9383b7cfaa03c668edc135add56c19eed86e07af4d54b38749a970313",
+  "driver_sha256": "56f43612ad91b9c796e213d8cf2751df32c85f0c8465f1b1d2e0a4999bfc745e",
+  "completed_tasks": 44,
+  "logical_partitions": 88,
+  "extracted_directory": "campaign",
+  "source_after_matches": true,
+  "CLOSURE_sidecar_saved": true,
+  "external_owners_quiescent": true,
+  "new_fits": 0,
+  "scientific_acceptance": false,
+  "collector_required": true,
+  "source_fingerprints": {
+    "EXPORT.json": "b068c3f3e21d63126012c48f0ee3d3f0fb3ade4e0228475b9ee97be8f185815b",
+    "CLOSURE.json": "92b85625d71366895ab425fa19447a9020f3bb16eea5bcc995a3d6f6e8db89db",
+    "QUEUE.json": "725e749304fe3c676673ddbeed4f57f08a873fe068f0118dc7f8a587a1600b6e",
+    "REGISTRATION.json": "08d6f2bad2a24f80f2e6f68cc2e9d5df5fb816c41a94facf66a3ccac2504724d",
+    "MEASUREMENTS.json": "2a61b4cdb9ea620b580a0de415f8a471c5e7de29816dafd46c191925b0ca4713",
+    "ADMISSION.json": "90311364cc921f564c1e85275fff914907f23bc70ef3f1d33a0a4a957501b2f3",
+    "control/FINAL_READBACK.json": "085f065e50c79a34d682062276533e89edfcf422ffd4ded1777e38673743614d",
+    "control/EXIT.json": "3a3e7ee8217d4c4fbdc2beaf5a56bb2ab7f8a501689c6b47e0fa9cccf8b76dbf",
+    "control/LAUNCH.json": "9a0c5f08cb528955ec0a88c2f3b5e0b850cb44c71c571d9cabdcbd4ade3b9b31",
+    "control/DRIVER_OWNER.json": "40a45fa1980e3366efb9e0af93511889b635dab65e83968894985d57a9a8779e"
+  }
+}

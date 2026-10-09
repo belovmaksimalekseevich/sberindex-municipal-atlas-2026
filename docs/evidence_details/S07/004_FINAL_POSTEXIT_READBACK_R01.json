@@ -1,0 +1,29 @@
+{
+  "UTC": "2026-10-09T08:17:07.138030+00:00",
+  "status": "PASS_POSTEXIT_SNAPSHOT_AND_CLOCK",
+  "passed": true,
+  "checks": {
+    "fresh_inventory_after_exit": true,
+    "finish_before_registered_deadline": true,
+    "finish_matches_closure_clock": true,
+    "no_worker_guard_driver_in_snapshot": true,
+    "final_disk_reserve_remains": true,
+    "download_QA_matches_independent_archive": true,
+    "independent_closure_passed": true
+  },
+  "started_UTC": "2026-10-09T07:53:41+00:00",
+  "finished_UTC": "2026-10-09T08:12:26+00:00",
+  "postexit_snapshot_UTC": "2026-10-09T08:13:18.494442+00:00",
+  "active_research_processes": [],
+  "free_disk_bytes": 108233846784,
+  "evidence": {
+    "RESEARCH_R01_STARTED_UTC.txt": "85a48f309cbda62199905e97dcff231c41c93086d1e7e5fdd14725f1493fe2f6",
+    "RESEARCH_R01_FINISHED_UTC.txt": "ae8ea847cd4d9f7c2ed45042c626fc4b714c947806566955599119db3d01fcf7",
+    "RESEARCH_R01_POSTEXIT_INVENTORY.json": "ede65b543d0f3301cf963eacba4c9115892c9721d9bb7a18bae92bd974363509",
+    "RESEARCH_R01_POSTEXIT_VERIFY.json": "67e2b72b8809d435813657dcf60f58e1588aa68f2e68015f1812b97914924a3a"
+  },
+  "final_acceptance_sha256": "2fc050e8b838b3863ce670b5d29a200de50ea8948b30e08cdafac350aef510ee",
+  "scientific_acceptance": false,
+  "SSH": false,
+  "observation_limit": "Downloaded target snapshot at stated time, no claim of continuous monitoring"
+}

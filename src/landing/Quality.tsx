@@ -46,7 +46,7 @@ function Spark({ id, mi, config }: { id: string; mi: number; config: string }) {
       </div>
       <p className="m-0 text-[12.5px] leading-snug">{statusLabel(metric)}{metric?.reason ? `: ${reasonLabel(metric.reason)}` : ''}</p>
       {available.length > 0 && low != null && high != null ? <>
-        <svg viewBox={`-4 -4 ${width + 8} ${height + 8}`} preserveAspectRatio="none" className="block h-[44px] w-full" role="img" aria-label={`${id}: ${available.length} доступных месяцев, от ${fmt(id, low)} до ${fmt(id, high)}`}>
+        <svg viewBox={`-4 -4 ${width + 8} ${height + 8}`} preserveAspectRatio="none" className="block h-[44px] w-full" role="img" aria-label={`${id}: число месяцев с доступным значением — ${available.length}, от ${fmt(id, low)} до ${fmt(id, high)}`}>
           <path data-spark pathLength={1} d={path} fill="none" stroke="var(--ink)" strokeWidth="1.6" vectorEffect="non-scaling-stroke" />
           {values.map((v, i) => v == null ? null : <circle key={i} cx={x(i)} cy={y(v)} r={i === mi ? 4 : 1.5} fill={i === mi ? 'var(--g2)' : 'var(--ink)'} />)}
         </svg>

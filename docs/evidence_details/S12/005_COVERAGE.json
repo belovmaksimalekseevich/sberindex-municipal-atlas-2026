@@ -1,0 +1,68 @@
+{
+  "source_IDs": 1666,
+  "excluded_federal_city_N": 221,
+  "admitted_N": 1445,
+  "admitted_region_N": 67,
+  "admission_exclusion_reasons": {
+    "excluded_federal_city": 221
+  },
+  "admitted_supplier_type_counts": {
+    "городской округ": 289,
+    "муниципальный район": 859,
+    "муниципальный округ": 297
+  },
+  "methods": {
+    "total": {
+      "available_queries": 1445,
+      "available_regions": 67,
+      "coverage_fraction": 1.0,
+      "unavailable_reasons": {}
+    },
+    "spending": {
+      "available_queries": 1445,
+      "available_regions": 67,
+      "coverage_fraction": 1.0,
+      "unavailable_reasons": {}
+    },
+    "context_no_salary": {
+      "available_queries": 1445,
+      "available_regions": 67,
+      "coverage_fraction": 1.0,
+      "unavailable_reasons": {}
+    },
+    "NCut_hard": {
+      "available_queries": 1431,
+      "available_regions": 67,
+      "coverage_fraction": 0.9903114186851211,
+      "unavailable_reasons": {
+        "insufficient_same_cluster_candidates": 14
+      }
+    },
+    "SSE_hard": {
+      "available_queries": 1432,
+      "available_regions": 67,
+      "coverage_fraction": 0.9910034602076124,
+      "unavailable_reasons": {
+        "insufficient_same_cluster_candidates": 13
+      }
+    },
+    "NCut_soft": {
+      "available_queries": 1445,
+      "available_regions": 67,
+      "coverage_fraction": 1.0,
+      "unavailable_reasons": {}
+    },
+    "SSE_soft": {
+      "available_queries": 1445,
+      "available_regions": 67,
+      "coverage_fraction": 1.0,
+      "unavailable_reasons": {}
+    },
+    "median": {
+      "available_queries": 1445,
+      "available_regions": 67,
+      "coverage_fraction": 1.0,
+      "unavailable_reasons": {}
+    }
+  }
+}

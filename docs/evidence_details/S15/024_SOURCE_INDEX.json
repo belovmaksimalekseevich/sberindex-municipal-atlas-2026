@@ -1,0 +1,167 @@
+{
+  "UTC": "2026-10-08T09:37:06.250376+00:00",
+  "scope": "only files actually read for this synthesis; source artifacts remain unchanged",
+  "sources": {
+    "PLAN": {
+      "path": "ЛОКАЛЬНЫЙ_ПЛАН_2026-10-08.md",
+      "sha256": "8fe7549539206dbf4484392083bbfc84c8e40400ce7c754ac032ee0cc807d9b0",
+      "bytes": 44553
+    },
+    "CURRENT": {
+      "path": "workstreams/local_finalization_20261008_r00/CURRENT_RESULT.json",
+      "sha256": "d68872c028fd798ca0cb5cd4f9b756ff8d7ff0b41feabd9d22fda09a8ccfa09a",
+      "bytes": 7563
+    },
+    "ROOT_SOURCES": {
+      "path": "workstreams/local_finalization_20261008_r00/SOURCE_INDEX.json",
+      "sha256": "ecc65fa78f38297f6e931136701ad2d5aa6ad563e040f66f3ffa501eb12ad165",
+      "bytes": 4356
+    },
+    "ASSIGNMENTS": {
+      "path": "workstreams/local_finalization_20261008_r00/ASSIGNMENTS.json",
+      "sha256": "88dd981c9a83b6a74c569620dd2092e0c25159b61bf97d61f1feca1875fad118",
+      "bytes": 2656
+    },
+    "P": {
+      "path": "workstreams/hypothesis_wave2_external_independent_review_20261008_r00/actual_r00/receipt.json",
+      "sha256": "619b27050a5a03ceff9ed6d3de3fd7195ab6ab9a26c6ea506e82b15b1f61412e",
+      "bytes": 6077
+    },
+    "P_PROTOCOL": {
+      "path": "workstreams/hypothesis_wave2_external_20261008_r00/package_r00/frozen/protocol.json",
+      "sha256": "c67c198fe5b806bb4eedbabb3258690db31cff6af67091c0fa9465c09ebb5a5f",
+      "bytes": 7317
+    },
+    "P_TEXT": {
+      "path": "workstreams/hypothesis_wave2_external_independent_review_20261008_r00/actual_r00/Вывод_демографического_теста.md",
+      "sha256": "56499248723faebd56b4fad74a261a121ce2c38f48ad186fef230e12f256703f",
+      "bytes": 6822
+    },
+    "P_ADMISSION": {
+      "path": "workstreams/hypothesis_wave2_external_independent_review_20261008_r00/SOURCE_ADMISSION_RECEIPT.json",
+      "sha256": "e4e59198eeab82fb62e4ff94cc204197a3cdd80cba82f8f586d618ab3c81cddb",
+      "bytes": 2573
+    },
+    "S": {
+      "path": "workstreams/external_salary_K10_actual_independent_review_20261008_r00/delivery_r00/RESULT.json",
+      "sha256": "09b806af981379057c81209caf839a63c21957245449e29109937a3f8461a51c",
+      "bytes": 5894
+    },
+    "S_REVIEW": {
+      "path": "workstreams/external_salary_K10_actual_independent_review_20261008_r00/actual_r00/receipt.json",
+      "sha256": "4779abda19c55e1fd2aee285a748630e2f5c21248fb16160c663c71daa11b9f5",
+      "bytes": 1598
+    },
+    "S_PROTOCOL": {
+      "path": "workstreams/external_salary_K10_20261008_r00/package_r02/frozen/protocol.json",
+      "sha256": "ae6bac385a9446b221b8818ba75b35b03afcf3f5ea803a9fbff95e75015dbf1b",
+      "bytes": 18602
+    },
+    "R": {
+      "path": "workstreams/k10_external_received_20261008_r00/road_extracted_r00/output/result/2024-12.json",
+      "sha256": "9f66ea16a9cd7170bfb9ce0d9b78eb8ce909e6eec85ff19bf16ced805dcc390d",
+      "bytes": 7373847
+    },
+    "R_REVIEW": {
+      "path": "workstreams/k10_road_label_actual_scientific_review_20261008_r00/actual_r00/receipt.json",
+      "sha256": "db1366e5cc9ce228ea97e19cf8b6f68b5d1e92c8f87341333cb607278048b36b",
+      "bytes": 14550
+    },
+    "R_PROTOCOL": {
+      "path": "workstreams/k10_road_label_diagnostic_20261008_r00/package/PROTOCOL.json",
+      "sha256": "a9c53fcc85388e2fff6a750fce1f1bc053a277bcd112f9295b12cd9fbc019f7e",
+      "bytes": 4834
+    },
+    "R_README": {
+      "path": "workstreams/k10_road_label_diagnostic_20261008_r00/package/README.md",
+      "sha256": "ea98848d8c5186b6b75edc7332d1749c85e8cba9f33ccc7d5a1d163c809d0f47",
+      "bytes": 10769
+    },
+    "G": {
+      "path": "workstreams/geographic_context_delivery_20261007_r00/native_results/results.json",
+      "sha256": "105e916266da8fd9239f929c6e4b7facda8da5aa827c959e3b025499b340a411",
+      "bytes": 2996
+    },
+    "G_DECISION": {
+      "path": "workstreams/geographic_context_delivery_20261007_r00/native_results/decision.json",
+      "sha256": "d17d96955ac81265c0644751333c8b8fbc6f0e71cb5cf4d90593380b1c9eeac9",
+      "bytes": 949
+    },
+    "G_REVIEW": {
+      "path": "workstreams/geographic_context_delivery_20261007_r00/independent_review/receipt.json",
+      "sha256": "d6f93a93995e59de5395f9292d445c4d761c8ec6d29031d1558890a022dd563e",
+      "bytes": 4706
+    },
+    "G_PROTOCOL": {
+      "path": "workstreams/geographic_context_delivery_20261007_r00/frozen_inputs/protocol.json",
+      "sha256": "9f5a9356b81534825a1bd03b2c140d1e1eba9dda6f9b8450f273b8fc44643f33",
+      "bytes": 4722
+    },
+    "FIT_ROLE": {
+      "path": "workstreams/k10_road_label_diagnostic_20261008_r00/package/INPUT_PROOF.json",
+      "sha256": "7e93c139635fe1cb56adfa15d0c6178a55cd75008045e78fd2d2ffb9a22826c6",
+      "bytes": 3137
+    },
+    "C": {
+      "path": "workstreams/hypothesis_wave4_confidence_20261008_r00/review/actual_r00/SUMMARY.json",
+      "sha256": "0e82b50b607e4528948f2091893ee95a0dab24773acb009a404d6deb6d595130",
+      "bytes": 7830
+    },
+    "C_REVIEW": {
+      "path": "workstreams/hypothesis_wave4_confidence_20261008_r00/review/actual_r00/receipt.json",
+      "sha256": "b937296d072ce7fc9a2a78e1317b71c5950804c23bac50614eb63cb9e1f62fb5",
+      "bytes": 3212
+    },
+    "C_PROTOCOL": {
+      "path": "workstreams/hypothesis_wave4_confidence_20261008_r00/PROTOCOL.json",
+      "sha256": "fc2cf6d656d0447546be02aa8bc2deb670f024dfc567282d351b8695b920d3b0",
+      "bytes": 7798
+    },
+    "E": {
+      "path": "workstreams/hypothesis_wave2_events_actual_independent_review_20261008_r00/PRIMARY4.json",
+      "sha256": "58c937128dee09eaec4df90b95576f9c6cf29b3237e91cd9fce616c9d85a4b2e",
+      "bytes": 1875
+    },
+    "E_DENOM": {
+      "path": "workstreams/hypothesis_wave2_events_actual_independent_review_20261008_r00/DENOMINATORS_AND_DISTINCT_IDS96.json",
+      "sha256": "5f48ca716adc3d4870d63db05b2dd23ef32146cfb4e624ff8095dd8a58ec55cf",
+      "bytes": 51050
+    },
+    "E_REVIEW": {
+      "path": "workstreams/hypothesis_wave2_events_actual_independent_review_20261008_r00/receipt.json",
+      "sha256": "6add5e55d3c74900a5911ffae0715ee27b0cb9dc944e32ca805aa71f2948c43f",
+      "bytes": 6079
+    },
+    "E_TEXT": {
+      "path": "workstreams/hypothesis_wave2_events_actual_independent_review_20261008_r00/RESULT.txt",
+      "sha256": "80baef8a4d88a0def7a2d6d2c339d2e26d5a0c7c8692111846b8c094217c13cc",
+      "bytes": 6655
+    },
+    "W": {
+      "path": "workstreams/hypothesis_wave5_science_20261008_r00/actual_r00/DECISION.json",
+      "sha256": "608350b50b2dd4d996ab20b86483d67563a9af16fab147152e971d1f54e2a335",
+      "bytes": 1324
+    },
+    "W_FINAL": {
+      "path": "workstreams/hypothesis_wave5_campaign_20261008_r00/FINAL_ACCEPTANCE.json",
+      "sha256": "c56f6de2f6a6866a937ba2066cf43d1046d227827e78a93ecbc675421def6db0",
+      "bytes": 1139
+    },
+    "W_REVIEW": {
+      "path": "workstreams/hypothesis_wave5_science_20261008_r00/actual_r00/receipt.json",
+      "sha256": "3728a49acb9ab054283c3047b580db11075c678a729321cb698f89e79d88eb23",
+      "bytes": 6699
+    },
+    "W_PROTOCOL": {
+      "path": "workstreams/hypothesis_wave5_campaign_20261008_r00/REGISTRATION.json",
+      "sha256": "0fbe004dc675f12f375ca9d4193197a24c668f1d33b50d8a8a3fe2f683e0b0c7",
+      "bytes": 11056
+    },
+    "W_C5": {
+      "path": "workstreams/hypothesis_wave5_jury_20261008_r00/accepted_C5_r00/Итог_проверки_аналогов_C5.md",
+      "sha256": "df79605598c6548e8e7610df7413e5772e5e4dea6401858b2b820cb15c274156",
+      "bytes": 9545
+    }
+  },
+  "numeric_claims": "NUMERIC_EVIDENCE.csv"
+}

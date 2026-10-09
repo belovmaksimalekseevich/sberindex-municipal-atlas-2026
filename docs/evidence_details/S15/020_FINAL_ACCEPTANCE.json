@@ -1,0 +1,34 @@
+{
+  "UTC": "2026-10-08T07:01:39.814431+00:00",
+  "status": "COMPLETE_EVIDENCE_ACCEPTED_NO_MODEL_PROMOTION",
+  "scientific_hypothesis": "NOT_CONFIRMED",
+  "OP_PASS": true,
+  "independent_scientific_PASS": true,
+  "primary_gate_pass": false,
+  "general_utility_pass": false,
+  "automatic_model_promotion": false,
+  "main_monthly_K": 10,
+  "annual_context_K_separate": 6,
+  "exploratory_monthly_K": 20,
+  "observations": {
+    "known_query_ID_origins": 22523,
+    "scored_ID_origins": 22496,
+    "future_missing_ID_origins": 27,
+    "point_method_rows": 180184
+  },
+  "VM_counts": {
+    "call_pairs": 222,
+    "native_KMeans_entered": 176,
+    "eigensolve_entered": 11,
+    "seed_slots": 176,
+    "models": 22,
+    "unknown_calls": 0
+  },
+  "archive_sha256": "95c14d376c5902381f73564f3d3f44943cdb0104797561236a6cfe9a3572c0d4",
+  "source_index_sha256": "bc134157e4f4fe0a0aa506558a3620cfa9207efc9c4c6a2736fdc851a0865cc7",
+  "report_sha256": "5f655cd16558b10bdbd0e358b81af4b3f22b4b8fc6f77936761302ec49e857e0",
+  "pending_VM_work": false,
+  "pending_required_reviews": false,
+  "frontend_changed": false,
+  "old_protected_files_unchanged": 178
+}

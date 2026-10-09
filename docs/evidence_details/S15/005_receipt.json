@@ -1,0 +1,204 @@
+{
+  "passed": true,
+  "scope": "independent arithmetic verification of saved actual run; no new registered fits or target search",
+  "protocol_sha256": "c67c198fe5b806bb4eedbabb3258690db31cff6af67091c0fa9465c09ebb5a5f",
+  "input_sha256": "b105acba5eeea3d637c68dd0557997264fa1ec1af39ea1ed1fad312fab6b4991",
+  "evaluator_sha256": "1b9c74e47dc31f7f1c2ba42ce0a8cb1b678617f14bc9f679f406569b2531dc23",
+  "registration_sha256": "9a6d860fd80be6afed3049b77857954f8536da6405c51123995f179070f9bef6",
+  "archive_sha256": "f085ad031d5dba9b054f5ae8b853f5c9820d2ff9a9cb24fdeebb7fbd08adef21",
+  "pre_execution_receipt_sha256": "79f4b5156397a1c415e3921335748e3c8d6dfc21a67923f30a4a6d04dd1e44d6",
+  "outer_completion_and_ownerlinks_passed": true,
+  "N": 1473,
+  "regions": 66,
+  "saved_fits_verified": 420,
+  "saved_outer_parameter_normal_equation_checks": 20,
+  "max_beta_absolute_difference": 4.021435962009434e-14,
+  "max_stationarity_residual": 2.9970101921017456e-13,
+  "max_saved_OOF_prediction_error": 0.0,
+  "train_only_scale_checks": 420,
+  "alpha_choices_independently_verified": 20,
+  "OOF_rows_verified": 5892,
+  "global_errors": {
+    "C": {
+      "region_macro_MAE_logY": 0.017833066801476016,
+      "municipality_MAE_logY": 0.008553506455235279,
+      "municipality_RMSE_logY": 0.02937059442192072
+    },
+    "D": {
+      "region_macro_MAE_logY": 0.018325745917006944,
+      "municipality_MAE_logY": 0.01104760738482255,
+      "municipality_RMSE_logY": 0.03326817813395379
+    },
+    "E": {
+      "region_macro_MAE_logY": 0.018127221020355064,
+      "municipality_MAE_logY": 0.009927247135499986,
+      "municipality_RMSE_logY": 0.03095166034115603
+    },
+    "F": {
+      "region_macro_MAE_logY": 0.017869418311997183,
+      "municipality_MAE_logY": 0.008713709945174179,
+      "municipality_RMSE_logY": 0.029454198306231933
+    }
+  },
+  "contrasts": {
+    "D-C": {
+      "delta": 0.000492679115530929,
+      "relative_delta_percent": 2.762727920080189,
+      "municipality_delta": 0.002494100929587271,
+      "improved_regions": 38,
+      "worse_regions": 28,
+      "equal_regions": 0,
+      "outer_fold_deltas": [
+        0.003264207950185777,
+        0.00045000941810607664,
+        -0.00038230645879561674,
+        0.0001861987021624431,
+        -0.0008349549394267617
+      ],
+      "LOO_min": -9.503636742595143e-05,
+      "LOO_max": 0.0005788992276295427
+    },
+    "D-E": {
+      "delta": 0.00019852489665188238,
+      "relative_delta_percent": 1.0951755728523347,
+      "municipality_delta": 0.0011203602493225634,
+      "improved_regions": 31,
+      "worse_regions": 35,
+      "equal_regions": 0,
+      "outer_fold_deltas": [
+        0.0004782056896894757,
+        0.0005728660618167657,
+        -0.00032943234654393493,
+        0.0002328693495082201,
+        2.0386874587181362e-06
+      ],
+      "LOO_min": -6.79852727683342e-05,
+      "LOO_max": 0.0004589828104972761
+    },
+    "D-F": {
+      "delta": 0.00045632760500976236,
+      "relative_delta_percent": 2.553679123977935,
+      "municipality_delta": 0.0023338974396483712,
+      "improved_regions": 38,
+      "worse_regions": 28,
+      "equal_regions": 0,
+      "outer_fold_deltas": [
+        0.0032543064032011996,
+        0.0004573287824032888,
+        -0.0004948399684025155,
+        5.698626560046329e-06,
+        -0.000725780707682101
+      ],
+      "LOO_min": -0.00010054572543924612,
+      "LOO_max": 0.0005408774158373958
+    },
+    "E-C": {
+      "delta": 0.0002941542188790466,
+      "relative_delta_percent": 1.6494875623675669,
+      "municipality_delta": 0.0013737406802647074,
+      "improved_regions": 41,
+      "worse_regions": 25,
+      "equal_regions": 0,
+      "outer_fold_deltas": [
+        0.002786002260496301,
+        -0.00012285664371068905,
+        -5.2874112251681836e-05,
+        -4.6670647345777e-05,
+        -0.0008369936268854799
+      ],
+      "LOO_min": -2.705109465761724e-05,
+      "LOO_max": 0.0004138111056230661
+    }
+  },
+  "decision": "no_network_increment_on_registered_target",
+  "actual_train_absent_group_columns": [
+    {
+      "fit_id": 22,
+      "column": "NCut10:G9"
+    },
+    {
+      "fit_id": 24,
+      "column": "NCut10:G8"
+    },
+    {
+      "fit_id": 26,
+      "column": "NCut10:G9"
+    },
+    {
+      "fit_id": 28,
+      "column": "NCut10:G8"
+    },
+    {
+      "fit_id": 30,
+      "column": "NCut10:G9"
+    },
+    {
+      "fit_id": 32,
+      "column": "NCut10:G8"
+    },
+    {
+      "fit_id": 34,
+      "column": "NCut10:G9"
+    },
+    {
+      "fit_id": 36,
+      "column": "NCut10:G8"
+    },
+    {
+      "fit_id": 38,
+      "column": "NCut10:G9"
+    },
+    {
+      "fit_id": 40,
+      "column": "NCut10:G8"
+    },
+    {
+      "fit_id": 106,
+      "column": "NCut10:G9"
+    },
+    {
+      "fit_id": 110,
+      "column": "NCut10:G9"
+    },
+    {
+      "fit_id": 114,
+      "column": "NCut10:G9"
+    },
+    {
+      "fit_id": 118,
+      "column": "NCut10:G9"
+    },
+    {
+      "fit_id": 122,
+      "column": "NCut10:G9"
+    },
+    {
+      "fit_id": 274,
+      "column": "NCut10:G8"
+    },
+    {
+      "fit_id": 278,
+      "column": "NCut10:G8"
+    },
+    {
+      "fit_id": 282,
+      "column": "NCut10:G8"
+    },
+    {
+      "fit_id": 286,
+      "column": "NCut10:G8"
+    },
+    {
+      "fit_id": 290,
+      "column": "NCut10:G8"
+    }
+  ],
+  "new_registered_regression_fits": 0,
+  "new_clustering_fits": 0,
+  "SSH_calls": 0,
+  "automatic_model_promotion": false,
+  "interpretation": "Retrospective conditional descriptive population change, not migration, causation, prospective prediction or context6 validation",
+  "review_code_sha256": "b1bfa33a825029e4fefd2ace6bfff459fceff223efc5d9897b58bcd59001ce57",
+  "UTC": "2026-10-08T02:50:43.259522+00:00",
+  "review_metadata_correction": "Own receipt only: use the actual category-column list, not the similarly named decision boolean; source results and all numeric checks unchanged; no fits repeated."
+}

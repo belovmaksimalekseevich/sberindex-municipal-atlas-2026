@@ -1,0 +1,183 @@
+{
+  "UTC": "2026-10-09T15:13:01.979473+00:00",
+  "status": "LOCAL_FRONTEND_INTEGRATION_ACCEPTED_WITH_LIMITS",
+  "source_commit": "a898d30cd19fa39ac498db752a76109fcd92bcd1",
+  "fits": 0,
+  "SSH": 0,
+  "frontend_published": false,
+  "new_commits": 0,
+  "pushes": 0,
+  "manual_browser_scenarios": [
+    {
+      "id": "S01",
+      "status": "PASS",
+      "evidence": "Production landing loads at variants/landing.html; default NCut10 December 2103 assigned."
+    },
+    {
+      "id": "S02",
+      "status": "PASS",
+      "evidence": "NCut10, SSE10 and SSE6 selection changes atlas and passport; all 10/10/6 groups rendered."
+    },
+    {
+      "id": "S03",
+      "status": "PASS",
+      "evidence": "January 2023 SSE6: 2143 observed, 47 missing, 3 without geometry; June 2024:2084 observed."
+    },
+    {
+      "id": "S04",
+      "status": "PASS",
+      "evidence": "December SSE6 shows six named cards; 78-member food profile has annual coverage47/78."
+    },
+    {
+      "id": "S05",
+      "status": "PASS",
+      "evidence": "Names from December are not transferred to other months; generic labels used instead."
+    },
+    {
+      "id": "S06",
+      "status": "PASS",
+      "evidence": "Frolovsky ID1043: January missing, no group/no zero, 12/24 history and no annual context."
+    },
+    {
+      "id": "S07",
+      "status": "PASS",
+      "evidence": "ID1471 January retains28749RUB/group/SW despite no name/region/geometry; annual missing."
+    },
+    {
+      "id": "S08",
+      "status": "PASS",
+      "evidence": "Frolovsky JuneSSE10:4 switches/10 common adjacent pairs,10-draw aggregate stability; not individual probability."
+    },
+    {
+      "id": "S09",
+      "status": "PASS",
+      "evidence": "Neighbors and Frolovsky/Irkutsk comparison use selected month;4124km/no displayed edge in June."
+    },
+    {
+      "id": "S10",
+      "status": "PASS",
+      "evidence": "Annual1666/2190,69regions,year2024 and retrospective2023 note are separate from monthlySSE6."
+    },
+    {
+      "id": "S11",
+      "status": "PASS",
+      "evidence": "NCut10 December six ICVI: S_Dbw undefined/pair_denominator_zero, no false zero;2/24 available."
+    },
+    {
+      "id": "S12",
+      "status": "PASS",
+      "evidence": "Network December7263/21119 edges; all10 labels; projection and SSE comparison scope explained."
+    },
+    {
+      "id": "S13",
+      "status": "PASS",
+      "evidence": "Fullscreen network renders; Escape closes dialog; keyboard/month selection works."
+    },
+    {
+      "id": "S14",
+      "status": "PASS",
+      "evidence": "Deep link restores SSE6/month/territory; unknownmodel/badmonth/negativeID safely default; #[ does not crash."
+    },
+    {
+      "id": "S15",
+      "status": "PASS",
+      "evidence": "Mobile390x844: atlas/cards/passport and horizontally scrollable metrics fit without page overflow."
+    },
+    {
+      "id": "S16",
+      "status": "PASS",
+      "evidence": "Fast card→map→June/December clicks and passport Dynamics→Comparison succeed after removing tab snapshot animation."
+    },
+    {
+      "id": "S17",
+      "status": "PASS_WITH_SCOPE",
+      "evidence": "Resize during navigation after vt.ready handler produces no new error; one earlier canceled-transition error retained in session log."
+    },
+    {
+      "id": "S18",
+      "status": "PASS_WITH_SCOPE",
+      "evidence": "Footer old/new-view switch removed; current scope/repository label shown. Third-party word easter-egg not independently identified."
+    }
+  ],
+  "commands": {
+    "typecheck": 0,
+    "site_build": 0,
+    "lint": 0,
+    "git_diff_check": 0
+  },
+  "lint_warnings": 57,
+  "data_asset_parity": 35,
+  "independent_static_review_checks": 132,
+  "limits": [
+    "Local accepted data readout is not a new model fit or public deployment.",
+    "Normal index.html/dev/build is historical demo; use site:* and variants/landing.html.",
+    "57 source lint warnings remain; compiled historical prototypes/assets excluded, source rules unchanged.",
+    "Main bundle approximately7.7MB uncompressed/2.3MBgzip; slow-device/network benchmark not performed.",
+    "Legacy files and intermediate exports remain outside active route; rejected deletion not retried.",
+    "Footer switch removed, exact intended easter-egg not independently confirmed.",
+    "Scientific limits remain: administrative sensitivity, G7, negative analogue-filter test, no causal/competitive superiority.",
+    "Clean release, report, presentation, deployment and submission remain deferred steps5–7."
+  ],
+  "receipts": {
+    "ROOT_DATA_ACCEPTANCE.json": "b08e2fce3bf397c1bc8a0cd1cf72dd7f819af64d1d62d0644e93083169bf9d29",
+    "review/FRONTEND_DATA_PARITY.json": "5eaec7b071bbcb32501f42a56cd4490b86aa689362886ad187faad31835cf13a",
+    "review/FRONTEND_CROSS_REVIEW.json": "8642f00c912a7bc5f34c643f5be12f8a7a28b7d58614bfa5c1644ef6e3807b24",
+    "review/SCIENCE_FRONTEND_REVIEW.json": "6825afed8fe7864101a15520e266f7d3c9f9a2db3970b82ab6bed70a6a41284f",
+    "review/OPS_FRONTEND_REVIEW.json": "f33674f8a189973806bb20321bd954bbd18171a4caf1b9c212f3021c52e527ed",
+    "review/ROOT_UI_FIX_REVIEW.json": "8f5862b4c2524a5fe247a29e91820b6c5e8ae100e28fadde68232867394f13f6"
+  },
+  "frontend_source_hashes": {
+    "src/landing/App.tsx": "3ed9bb8380f8c429574774e897461c4378ef0a8718fa49485e262e7b7c327eac",
+    "src/landing/canvasNet.ts": "fe9e0ee9cddff670990c62dee55b038f99c00ac7e6e70e0760022de0265eab41",
+    "src/landing/Closing.tsx": "1da348ffb0dbfcbc65c02c014a5214439e77ae17d7b01c328a63db98d063c0dd",
+    "src/landing/data.ts": "283de4ebf30c15b941d5270cc8f8f07b2c17bd2649e6ba1b484ae82e66dd9cff",
+    "src/landing/Flow.tsx": "d5ca4081c2c9b96a6131d494d55d8a8e710a8f41f18fb7bc8227d1d1d7cad0c8",
+    "src/landing/Groups.tsx": "12129b27745b6edecd38a7cd404d95fe9fe7657d90a8f1b2a1ce41681ffd3c44",
+    "src/landing/landing.css": "383b72747787b0f44a409076cebc67859a3001e17b9fceb476d8ae4c29ac405d",
+    "src/landing/layout.ts": "ca364f43cedf599a33b8014213cb2db64e7decf9e1f7d1f6d5c19986caec16dc",
+    "src/landing/main.tsx": "a8e9b39c3b35319dd37d61d5fbcc72eb168bf7734c65fffeff55b40fb92d954d",
+    "src/landing/Method.tsx": "40df3d9dfeff3996ca1205273f83ccbc140043518fdcb0224fa5bdba32b2e715",
+    "src/landing/Methods.tsx": "fcb0bc8e13588232017a2908092a708e7a46d18ccb1d676e76dcf1a38649753b",
+    "src/landing/motion.ts": "9482799c43d8464ae4177c7ff81997741496430d52177af0fc601ef92a2da3b4",
+    "src/landing/nat/Chapters.tsx": "85341cde68fbcc77e5bb901789857b8c50269862f808032bbd0425c6818f4998",
+    "src/landing/nat/Chapters2.tsx": "4056e56e535fbe31c6a3cafb9a24f4bf0c5983e446083989f33903990392ac59",
+    "src/landing/nat/Head.tsx": "b7ae134d9556c1c423f28a0791f20c8d24b6127bac02c9efd6bc15be52af3e98",
+    "src/landing/nat/MapAtlas.tsx": "798e9ad25fe7ebb1c02d0d2ebe7e9fcd31735f416b463e5bc9555f80839a4006",
+    "src/landing/nat/MapCanvas.tsx": "91a1a9a20721da5b24c18e6271e4effd64fb978acddd5169be9de5bdfe450f8d",
+    "src/landing/nat/nat.css": "e91b7dc96ae261dd23164ebe07a85c150c481a1228c4304cdd4bbd2612c1ebf5",
+    "src/landing/nat/natdata.ts": "2440c3a07869425d5d59a62837dee5bfca13f6def4a55450a38077c863d0389c",
+    "src/landing/nat/Passport.tsx": "ddfdd1f0f383302ebb551a9c2a022c8a4abdc71f8a6666ed09bf2a029866ffc2",
+    "src/landing/nat/ProtoNat.tsx": "87c020ecdc2698f825b4caa9e8a39a0576e3148406beb78b1f2a4d59c3e2218a",
+    "src/landing/nat/redesign.css": "146791dabc0d474eb2f7557939ae046bce934a3d27f61ec7998c81d005a9b9d7",
+    "src/landing/nat/Scene.tsx": "534c3ab467e1deacf01a02e5caf42d0b2351384393a366e452d4ec3e05ffc993",
+    "src/landing/nat/sceneCore.ts": "1308b8bca1f2a16860ac43d47b656a19c6f2745cf0840821a1bbed5c69348f7d",
+    "src/landing/nat/sceneWorker.ts": "1a593961500fdab06c2b85c5cb0e9eea0a81bd4dcd7b79a8390296f216c3e097",
+    "src/landing/nat/steps.ts": "39ceb6a8814072adee61eeaf8dcba9a864e70e8655372116e3183876a38ad8d1",
+    "src/landing/nat/workerHost.ts": "7f1a3d6784e5c52161b1585cf5beb8b92d23754a350f61f18a4d797a2de07b17",
+    "src/landing/NetExpand.tsx": "857bd1fc429d0e26b5be825193911f3b48b0ff5563cfa49be4f7f86c84c85eec",
+    "src/landing/NetInteractive.tsx": "c76fd4fe0d52c86746011835015f09a6dafd99b9e04290b31b0dc4cd7079adb0",
+    "src/landing/Network.tsx": "bfad35bfd571fbf9cfd671e90f11c83b6f7febb990a09f934b9ec7183c3ee184",
+    "src/landing/Num.tsx": "82f972a68d41cf74f2bd196f3910b1afc6f0a229ddbc27169153846631b0e7cc",
+    "src/landing/Quality.tsx": "8cbc5b2f2f99ec94e79826b565ff7d673d1e744ba71014e12c1ade66d1752d2e",
+    "src/landing/reveal.ts": "fe116a72837cbbfb5d7f2adf77e720e9942d177a65464a05a90ae03833816b83",
+    "src/landing/Rules.tsx": "37713f058e925638f9bb631fe8fcc31e279bafb3a12d38a4e65700fe73380b31",
+    "src/landing/SiteHeader.tsx": "e79bb307d2be51f7a03a5483358933ab76fad6c10a44202dad5825fe43cf303e",
+    "src/landing/state.tsx": "aa99dbe7c52dfce0ae19d399a39509bca7735e86e0f47e79d48c01ddb598a204",
+    "src/landing/Toolbar.tsx": "bd1af74c49efc024f493fc136672c837297674213d51dc514e7537849d71d902",
+    "src/landing/zoom.ts": "bba41b486198e91dfe42b45cd6afa5bee4cffa6dcb2a47bd45cc0a5610f66199"
+  },
+  "screenshots": {
+    "desktop-sse6.jpg": {
+      "sha256": "031d80de1b88b105c8097c83465c64406a127db7305c245dfd19b1d55862d73d",
+      "bytes": 135614
+    },
+    "mobile-sse6.jpg": {
+      "sha256": "15a56916b8c1fd07249c00b0d3aa80899b1b7738dc8f01b52cc0f801ff5f1953",
+      "bytes": 74376
+    },
+    "desktop-network.jpg": {
+      "sha256": "2f85d760bac5dba2d77931134f9c02200a206a399db977e809178d6a0174a6d7",
+      "bytes": 73981
+    }
+  }
+}

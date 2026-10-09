@@ -3,7 +3,7 @@ import { MAP, N } from './natdata'
 import { dprFor } from '../canvasNet'
 import { scaleOf } from '../zoom'
 import { paintMap } from './sceneCore'
-import { canvasWorker, ensureLocalPaths, requestBitmap, showBitmap } from './workerHost'
+import { cancelBitmap, canvasWorker, ensureLocalPaths, requestBitmap, showBitmap, useWorkerFailed } from './workerHost'
 
 // Карта МО: 2,6 тыс. контуров растеризуются в фоновом потоке (OffscreenCanvas) и приходят готовой картинкой
 // (ImageBitmap → холст «bitmaprenderer», без копирования): основной поток не рисует ни одного контура.
@@ -56,6 +56,7 @@ export function MapCanvas({ fill, ring = null, ringFill, onHover, tipRef, onPick
   const wrap = useRef<HTMLDivElement>(null)
   const cv = useRef<HTMLCanvasElement>(null)
   const [w, setW] = useState(0)
+  const workerFailed = useWorkerFailed()
   // карта рисуется, когда подходит к экрану (не все карты страницы при загрузке)
   const [near, setNear] = useState(false)
   useEffect(() => {
@@ -90,8 +91,9 @@ export function MapCanvas({ fill, ring = null, ringFill, onHover, tipRef, onPick
     }
     const my = ++last.current
     // пришла устаревшая картинка (месяц уже сменился) — выбрасываем
-    requestBitmap({ type: 'map', w: W2, h: H2, scale: dpr * sc, lw: 0.35 / sc, fills, palette }, bmp => { if (last.current !== my || !cv.current) bmp.close(); else showBitmap(cv.current, bmp) }, [fills.buffer])
-  }, [w, version, near, still, budget])
+    const request = requestBitmap({ type: 'map', w: W2, h: H2, scale: dpr * sc, lw: 0.35 / sc, fills, palette }, bmp => { if (last.current !== my || !cv.current) bmp.close(); else showBitmap(cv.current, bmp) }, [fills.buffer])
+    return () => { cancelBitmap(request) }
+  }, [w, version, near, still, budget, workerFailed])
 
   const hit = (e: { clientX: number; clientY: number }) => {
     const r = wrap.current!.getBoundingClientRect(), sc = r.width / MAP.W, x = (e.clientX - r.left) / sc, y = (e.clientY - r.top) / sc
@@ -102,6 +104,13 @@ export function MapCanvas({ fill, ring = null, ringFill, onHover, tipRef, onPick
   // наведение: не чаще раза за кадр; React узнаёт только о смене МО, подсказка двигается напрямую
   const mv = useRef<{ raf: number; ev: { clientX: number; clientY: number } | null; last: number | null }>({ raf: 0, ev: null, last: null })
   useEffect(() => () => cancelAnimationFrame(mv.current.raf), [])
+  useEffect(() => {
+    const pointer = mv.current
+    cancelAnimationFrame(pointer.raf)
+    pointer.raf = 0
+    pointer.ev = null
+    pointer.last = null
+  }, [version])
   const onMove = (e: React.PointerEvent<HTMLDivElement>) => {
     const m = mv.current; m.ev = { clientX: e.clientX, clientY: e.clientY }
     if (m.raf) return
@@ -119,7 +128,7 @@ export function MapCanvas({ fill, ring = null, ringFill, onHover, tipRef, onPick
     <div ref={wrap} role="img" aria-label={label} className={`map-cv relative ${onPick ? 'cursor-pointer' : ''} ${className}`} style={{ aspectRatio: `${MAP.W} / ${MAP.H}` }}
       onPointerMove={onHover ? onMove : undefined} onPointerLeave={onHover ? leave : undefined}
       onClick={onPick ? e => { const h = hit(e); if (h.ti != null) onPick(h.ti) } : undefined}>
-      <canvas ref={cv} aria-hidden className="absolute inset-0 block h-full w-full" />
+      <canvas key={workerFailed ? 'local' : 'worker'} ref={cv} aria-hidden className="absolute inset-0 block h-full w-full" />
       {rs && (
         <svg viewBox={`0 0 ${MAP.W} ${MAP.H}`} className="pointer-events-none absolute inset-0 h-full w-full" aria-hidden>
           <path d={rs.d} fill={ringFill ?? 'none'} stroke="#111" strokeWidth={1.6} vectorEffect="non-scaling-stroke" />

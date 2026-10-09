@@ -1,0 +1,270 @@
+{
+  "protocol_id": "EXTERNAL-SALARY-DT24-DEC2023-K10-v1",
+  "status": "frozen_before_K10_Y_comparison_pending_review",
+  "registered_for_execution": false,
+  "current_Y_admission": "Affirmative conditional source and per-ID admission on 1631 municipalities in 75 supplier administrative regions, independently rederived from original CSV/XLSX. Annual published salary versus fixed December profiles. No physical polygon certificate or independence claim.",
+  "question": "Does saved national NCut10 add descriptive region-held-out salary2023 accuracy beyond the unchanged full December spending profile and same-geometry SSE10? Fixed selected roles are not retuned from Y.",
+  "scope": {
+    "Y": "ln(Y48423007), strictly positive finite annual January-December 2023 Total, frozen release v20250918",
+    "population": "Employees of organizations excluding small entrepreneurship in the published reporting circle. Not all residents, household income, purchasing power or all employment.",
+    "unit": "One admitted municipality row; original Y is annual average monthly RUB per covered employee; transform natural log for scoring.",
+    "X_time": "December 2023 monthly spending profile; not annual average X and not a prediction made before the year.",
+    "label_time": "Saved national DT24-M0012 December2023 NCut/SSE K10; K2 labels replaced, Y/mask/folds/current X unchanged.",
+    "annual_Y_rows_per_ID": 1,
+    "months_tested": 1,
+    "Y_years_tested": 1,
+    "same_finite_support_all_models": true,
+    "target_generalization": "Only admitted finite municipal support; excluded municipalities remain in the attrition/coverage report."
+  },
+  "frozen_partition_bindings": {
+    "NCut": {
+      "member": "months/DT24-M0012/output/cells/NCut_K10/result.json",
+      "member_sha256": "56ea6ac5eb900e7768c9e57aefde1603e3ae97f9a92fc9aa2d1e6479ba849f8a",
+      "full_support_IDs_sha256": "8e963477207f275266f316867c920e821e76397db531c56e0f09cbc7649fe98c",
+      "full_labels_sha256": "afea12c44982b8231ada40c915c75be70ced88a55afe9c88075894eab9fcadaf",
+      "restricted_ID_label_pairs_sha256": "dec392a090b4e9284feffb0d299383b91d0e687b4a2af3f4f2f9508d785a84cf",
+      "original_eligible_for_comparison": false,
+      "original_issues": [
+        "metric:S_Dbw:undefined"
+      ],
+      "provenance": {
+        "X": "c3f698bb5fd783138a57e67d3da05530a10288f7c99816e05e05df91f7263676",
+        "Y": "2907772c9e9a3729fa90325dee91a75faf43e1eae3ad66689c7842361e1cd001",
+        "W_eval": "ca4e7d381cb36409d8b92e68c79c0794606d3f44042b5b6a6ba8bd0872db85d2",
+        "W_fit": "80df9261e21ba9efa9951bf5028041a735633bcfce9916d564006d52c8b50f0f"
+      },
+      "reference_sha256": "5e1ed9eb3d241147bc4b8124855c7798c44a8b86883ff3b7132b88ec4193a8fb",
+      "representative_seed_index": 8
+    },
+    "SSE": {
+      "member": "months/DT24-M0012/output/cells/SSE_K10/result.json",
+      "member_sha256": "9c3b5a86efed2ace84f9e203112813f2157a4f22375f68b324e3f3867a505109",
+      "full_support_IDs_sha256": "8e963477207f275266f316867c920e821e76397db531c56e0f09cbc7649fe98c",
+      "full_labels_sha256": "796e3b11409fe848a9eb489da87d8cd57197d8b1bd286f53ad88c92c64964f6a",
+      "restricted_ID_label_pairs_sha256": "4072476536e46fc1af26d0be7dd81e218ab1aa97fb6880ab40125c744bd65ca0",
+      "original_eligible_for_comparison": false,
+      "original_issues": [
+        "metric:S_Dbw:undefined"
+      ],
+      "provenance": {
+        "X": "c3f698bb5fd783138a57e67d3da05530a10288f7c99816e05e05df91f7263676",
+        "Y": "2907772c9e9a3729fa90325dee91a75faf43e1eae3ad66689c7842361e1cd001",
+        "W_eval": "ca4e7d381cb36409d8b92e68c79c0794606d3f44042b5b6a6ba8bd0872db85d2",
+        "W_fit": "80df9261e21ba9efa9951bf5028041a735633bcfce9916d564006d52c8b50f0f"
+      },
+      "reference_sha256": "5e1ed9eb3d241147bc4b8124855c7798c44a8b86883ff3b7132b88ec4193a8fb",
+      "representative_seed_index": 7
+    }
+  },
+  "admission_gate": {
+    "must_pass_before_regression": [
+      "Positive source semantics review of exact indicator/year/Total/reporting circle/unit/geographic attribution, using published values as-is.",
+      "Per-ID exact unique upper-level native-code linkage using active half-open supplier versions, conservative source year interior and safe history rules, independently reread from original XLSX/CSV; addressed conditional admission, not a new physical boundary certificate.",
+      "Actual supplier administrative region code and name verified directly against active original workbook rows; source database region is not substituted.",
+      "Y finite and positive, QC resolved; missing/suppressed/ambiguous values stay excluded, never zero-filled or imputed.",
+      "Published December X and both saved national K10 label vectors available on exactly identical inherited IDs; no K2 label is used as a current feature.",
+      "Exact inherited 5x4 region folds nonempty. Missing training label categories are allowed with retained all10 columns, scale1/coefficient0 and explicit reporting. No fold or mask changes."
+    ],
+    "not_required_for_limited_external_table_description": "Unknown upstream Sber reuse remains an explicit limitation, never becomes independent confirmation by wording.",
+    "freeze_before_associations": [
+      "source-passport hash",
+      "Positive conditional row/region admission receipts and one frozen mask/exclusion ledger.",
+      "ordered ID/Y/logY/X/logTotal and raw source-row bindings",
+      "both full-support label hashes and restricted ID-label hashes",
+      "outer/inner region and ID membership manifests",
+      "protocol/code/dependency versions"
+    ],
+    "mask_policy": "One mask defined only by admission/availability/domain rules; no exclusions based on residuals, group contrasts or improvement; do not revise after results."
+  },
+  "features": {
+    "T": "Natural logarithm of frozen reported December total spending in RUB; raw-source column locator and vector hash must be bound before evaluation.",
+    "Q": "T squared, computed before any train-only standardization; fixed second-order level control inherited from step2.",
+    "X": "All six exact frozen I26 common primary LHCLR coordinates in published order; primary_coordinate_hash c3f698bb5fd783138a57e67d3da05530a10288f7c99816e05e05df91f7263676. Verify its level column is an affine transform of T; no new reference estimation.",
+    "NCut": "All ten symmetric one-hot columns of saved national NCut10; no reference category.",
+    "SSE": "All ten symmetric one-hot columns of saved national SSE10; no reference category.",
+    "A": [
+      "T",
+      "Q"
+    ],
+    "B": [
+      "T",
+      "Q",
+      "NCut10_all10"
+    ],
+    "C": [
+      "X_all6",
+      "Q"
+    ],
+    "D": [
+      "X_all6",
+      "Q",
+      "NCut10_all10"
+    ],
+    "E": [
+      "X_all6",
+      "Q",
+      "SSE10_all10"
+    ],
+    "no_extra_inputs": [
+      "population",
+      "region dummies",
+      "context6",
+      "new sector labels",
+      "other K/method/month",
+      "annual X aggregation",
+      "new reference or graph learning"
+    ],
+    "reason_no_region_dummies": "All test regions are held out; unseen-region intercept effects would not be identified. Regions define folds and scoring only."
+  },
+  "folds": {
+    "outer": 5,
+    "inner": 4,
+    "repeats": 1,
+    "deterministic_algorithm": "For each split catalogue, count admitted IDs by certified region. Sort regions by decreasing count, ties lexical canonical region code. Assign each next region to the fold with smallest current ID count, ties lower fold index. Outer assignment uses full admitted support; inner assignment repeats only within each outer training support.",
+    "no_Y_for_assignment": true,
+    "shared_between_all_models": true,
+    "no_region_crosses_train_validation": true,
+    "fold_manifest_frozen_before_scores": true,
+    "failure_policy": "If gate fails, stop as unavailable before fitting. Do not substitute row-random folds or fewer folds after inspecting scores.",
+    "inherited_class_counts_note": "folds.json is copied byte-for-byte to preserve memberships; its historical class_counts describe K2 only. Current K10 counts for every train split are in coverage.json."
+  },
+  "regression": {
+    "family": "Ridge with unpenalized intercept, deterministic SVD solver, float64",
+    "alphas": [
+      0.01,
+      0.1,
+      1,
+      10,
+      100
+    ],
+    "training_loss": "Unweighted sum of squared logY residuals + alpha*sum(beta^2); one unit weight per admitted municipality.",
+    "scaling": "Every non-intercept column, including all10 one-hot columns: training mean/std ddof0; zero variance scale1 and exactly coefficient0, retained validation column and reported absence. Equal Ridge penalty for all design columns.",
+    "inner_selection": "For each alpha collect all four inner held-out predictions, compute MAE per administrative region then mean those region MAEs. Minimize that single score. Values within1e-12 of minimum tie; select largest alpha.",
+    "outer_refit": "Fit exactly one selected-alpha model on entire outer training support; predict its held-out regions once. No final all-data regression is needed for this test.",
+    "same_budget": true,
+    "models": 5,
+    "fits_per_model": 105,
+    "maximum_regression_fits": 525,
+    "budget_formula": "5 models *5 outer folds *(5 alphas *4 inner folds +1 outer refit)",
+    "regression_fits_executed": 0,
+    "no_target_leakage": [
+      "No outer test Y in alpha selection/scalers/imputation/thresholds.",
+      "No inner validation Y in its fitted scalers or coefficients.",
+      "No Y-based label selection, cluster naming, mask selection or feature selection."
+    ],
+    "fit_failure": "Preserve failure and incomplete result; no adaptive solver/alpha/fold substitution or successful-fold-only score."
+  },
+  "evaluation": {
+    "primary": "Mean across administrative regions of each region mean absolute out-of-fold logY error; every region equal weight.",
+    "secondary": [
+      "Municipality-weighted MAE(logY) on identical OOF predictions.",
+      "Municipality-weighted RMSE(logY), all region sizes and all model/region errors."
+    ],
+    "primary_contrasts": [
+      "D-C: network increment beyond original profile",
+      "D-E: network increment versus SSE at same K and same design dimension"
+    ],
+    "mandatory_context_contrasts": [
+      "B-A: network increment beyond level only",
+      "E-C: SSE increment beyond original profile"
+    ],
+    "delta_orientation": "Candidate error minus control error; negative is improvement.",
+    "all_outputs": [
+      "Every municipality OOF prediction/residual for each model and outer-fold ID",
+      "chosen alphas and all inner validation scores",
+      "per-region paired errors",
+      "five outer-fold region-macro differences",
+      "global macro and municipality-weighted absolute/relative differences",
+      "leave-one-region-out range of mean paired regional errors with fixed OOF predictions; no refitting",
+      "coverage/exclusions by region and each frozen cluster"
+    ],
+    "relative_difference": "delta_error/control_error; if control_error=0 report undefined with absolute difference. No invented percentage interpretation of log units.",
+    "uncertainty": "No p-values, bootstrap, confidence intervals or independent-region sampling claim. Leave-one-region range is descriptive sensitivity only."
+  },
+  "decision_rules": {
+    "numeric_tolerance_log_MAE": 1e-10,
+    "not_executed": "Y not admitted or required provenance/fold gate fails; not a negative model result.",
+    "incomplete": "Any required regression or OOF row absent/nonfinite; no favorable-subset conclusion.",
+    "consistent_descriptive_network_increment": "Both D-C and D-E global region-macro deltas <-tol; their five outer-fold region-macro deltas all <-tol; upper endpoint of each leave-one-region sensitivity range <-tol.",
+    "no_network_increment_on_registered_target": "Both D-C and D-E global deltas >=-tol. If B-A improves, explicitly report level-only gain without gain beyond profile/SSE.",
+    "mixed_or_region_sensitive": "Every other complete outcome, including disagreement between D-C and D-E or global gain that reverses by held-out fold/leave-one-region sensitivity.",
+    "universal_negative": "If B-A, D-C and D-E all >=-tol, no tested NCut increment is identified under this protocol.",
+    "business_threshold": "Not specified. Numerical tolerance is not a practically meaningful benefit threshold.",
+    "no_model_replacement": true,
+    "negative_result_retained": true
+  },
+  "interpretation_limits": [
+    "Frozen labels/reference/selection used the full panel, including X of held-out regions and potentially later periods. This is transductive regression-on-frozen-description with held-out Y, not end-to-end out-of-region or future prediction.",
+    "No train-only reclustering, reference refit, label assignment rule for genuinely new municipalities, graph reconstruction or new eigensolve is performed.",
+    "Labels are a deterministic nonlinear summary of spending inputs. Improved finite-model regression does not prove new independent information, causal effect or economic mechanism.",
+    "Upstream inclusion of salary or related municipal statistics in Sber estimation is unknown. External table association is not independent certification.",
+    "Wage geography may reflect workplace/reporting organizations whereas spending profile geography concerns customers/residents; territorial join does not eliminate this conceptual difference.",
+    "One annual wage outcome is one observation per municipality, not twelve monthly independent outcomes. Earlier viewing history precludes an untouched-holdout claim.",
+    "A valid negative outcome preserves I26 as a descriptive network and cannot be repaired by switching K, month, Y, labels or thresholds within this registration.",
+    "Conservative source-history/version exclusions leave 1631/2103 published December IDs; sample is not nationally representative. Physical polygon equivalence was not proved.",
+    "This is an exploratory new-K diagnostic after prior K2 wage analysis; not an untouched preregistered external holdout. Prior K2 scores are not reread or recomputed in preparation.",
+    "The outcome is absent from national spending-only fit X, as shown by inherited source input hashes and source semantics. Upstream use by Sber is unknown.",
+    "Context6 contains salary2024 among fit inputs. This national salary2023 diagnostic is not independent external verification of context6.",
+    "Root role decision SHA 63b7e2d964e225d30009d288ad7acec9d771a2050f5ba9a6fb8d8b03da127c5a predates this K10 Y comparison and is fixed. No automatic promotion or new role selection from scores.",
+    "Both December K10 cells retain original eligible_for_comparison=false because S_Dbw is undefined. Labels were saved and role-selected exploratorily; this narrow regression diagnostic does not rewrite that original metric gate."
+  ],
+  "new_cluster_fits": 0,
+  "new_graphs": 0,
+  "new_eigensolves": 0,
+  "VM_calls": 0,
+  "pre_execution_clarifications": {
+    "proposed_protocol_sha256": "16ccaeef1aadc3850c48396e5c2e674c81a9fde5c8670b71fef8ed60e5919635",
+    "no_change_to_models_folds_selection_scoring_or_decisions": true,
+    "source_gate_clarification": "Direct published-value semantics and conservative per-ID reviews establish conditional eligibility; literal separate certificate is not necessary.",
+    "region_code": "Unpadded canonical integer code represented as string from supplier workbook; lexical tie break.",
+    "primary_support": 1631,
+    "annual_X_or_expanded_support_substitution": false
+  },
+  "operational_limit_seconds": 1200,
+  "runtime": {
+    "CPUs": [
+      6,
+      7
+    ],
+    "workers": 1,
+    "threads": 1,
+    "RSS_bytes": 4294967296,
+    "maximum_wall_seconds": 1200,
+    "absolute_deadline_UTC": "2026-10-08T05:00:00+00:00",
+    "root_and_independent_approval_required": true,
+    "new_cluster_fits": 0,
+    "maximum_regression_fits": 525
+  },
+  "inherited_from": {
+    "protocol_sha256": "99458ad115b537675915fbd59718bda0c7ff8fe151690d943547675fa53bd659",
+    "input_sha256": "8aac01abe50caaffadd224e39f3c271d8f52d8a6daf6380ae51e8931203ec6df",
+    "folds_sha256": "884f4dcfa4ac864684b0839396d15ea7f60af6922e91dbadc743eb5020c52faa",
+    "decision_sha256": "63b7e2d964e225d30009d288ad7acec9d771a2050f5ba9a6fb8d8b03da127c5a",
+    "changes_only": [
+      "saved K10 label vectors and all10 encoding",
+      "new source pins and frozen protocol",
+      "bounded runtime"
+    ],
+    "decision_rules_changed": false,
+    "scores_seen_during_preparation": false
+  },
+  "historical_source_sha256": {
+    "workstreams/step2_review_20261007_r00/Протокол_внешней_проверки.md": "88bab9caaa4f4463a59e6398dd2760f455e237b9bc59e81bde7ddc01051fc036",
+    "workstreams/step2_review_20261007_r00/salary_decision.json": "0ab7f695945c312bc9f519e0c64a45cc7b8acacd103e2bfe38331d26db0f39ba",
+    "workstreams/model_claims_20261007_r00/partition_bindings.json": "728790aa3a680ba0dc85d8ba05006839b84efcfc67236a128958411517486ba7",
+    "workstreams/model_claims_20261007_r00/frozen_assignments.csv": "b5e60c24ea92bb547ba77afb81435ef1f6ec3b9b7aabea923b6a0d58146c589e",
+    "workstreams/model_claims_20261007_r00/Паспорт_решения_и_допустимых_выводов.md": "64f51634b78852450517e689b4c4058b9ac91fe59a550f6b4d1f12b62cc5eb8b",
+    "research/e27_economic_validation/20261007/r00/external_test_status.json": "a34b637db4e2de02f4ce6271c48019fa03ac1b4801e03904c24bd5e5338c24db",
+    "research/e27_economic_validation/20261007/r00/salary_source_passport.json": "435687d1f40ba4751f9db11dcbcf37c83d2fb23b19d801f2df7b1ff4c13fb8c3",
+    "research/protocol/external_design_contract.json": "829e5af964d8912391137a558c8f18bfa58aa38517c7888093a7dbd8d68545bc"
+  },
+  "history_scope": "K2 mentions in inherited receipts/source documents describe historical admission and prior study only; no current K2 labels or outcome scores are used. Current designs use K10 only.",
+  "symmetric_label_encoding": {
+    "K": 10,
+    "all_columns": true,
+    "reference_category": null,
+    "unpenalized_intercept": true,
+    "train_absent_policy": "retain column, mean0/scale1/coefficient0; report; never revise folds or mask",
+    "label_permutation_invariance_fixture_required": true
+  }
+}

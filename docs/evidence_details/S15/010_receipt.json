@@ -1,0 +1,100 @@
+{
+  "passed": true,
+  "scope": "independent_actual_geographic_context_review",
+  "source_package_SHA": "51dc061cb15c5d5fd01dd66323d463564c9d230c923bcb28d294378375e9b5ad",
+  "registration_SHA": "6060c91af92fd2f5e7b4ec9c3266c5ddf08c121455d3b820d3b2039c1c398e1d",
+  "actual_archive_SHA": "4703885403aa0eb7c75c535675895aecb4720ed8f7a2cf51678bc183ab705abb",
+  "registered_before_actual_launch": true,
+  "raw_source_SHA": {
+    "consumption": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61",
+    "connection": "20cbd5213d3ac1d0a867f097b485431811614b283d7366eb5cba9f65dc80493d",
+    "dictionary": "4150658c3298fbc87ed79838f503f3a5b9a28da33257ff803c7d9231ddb775d6",
+    "dictionary_metadata": "cbe7f24ff94123812ec32b74d100d2a4c2c0befe8e661ba806a32322ce270611",
+    "dataset_description": "030269e726f969250b911a1fcb72131a4b61c3952aad10c8470ce9c0736c472f"
+  },
+  "source_admission_and_exclusion_reconstructed": true,
+  "exact_native_ID_dictionary_join": true,
+  "months": [
+    "2024-12",
+    "2024-06"
+  ],
+  "own_support_IDs": [
+    1642,
+    1661
+  ],
+  "own_regions": [
+    57,
+    59
+  ],
+  "support_intersection_IDs": 1602,
+  "independent_expected_formula": "Within same block: 2*m/(m-1)*population profile variance /5; distinct blocks: (varianceA+varianceB+norm(meanA-meanB)^2)/5.",
+  "small_enumeration_oracle_passed": true,
+  "all_region_k_rows_checked": 232,
+  "all_region_null_values_recomputed": 231768,
+  "all_macro_null_values_recomputed": 3996,
+  "all_LOO_values_checked": 232,
+  "all_registered_joint_gates": {
+    "December_primary_p_at_most_0_01": true,
+    "December_region_equal_gain_at_least_0_02": true,
+    "December_median_regional_gain_positive": true,
+    "December_at_least_60_percent_regions_positive": true,
+    "December_k10_gain_positive": true,
+    "December_without_federal_cities_gain_positive": true,
+    "December_no_single_region_removal_flips_sign": true,
+    "June_k5_gain_positive": true
+  },
+  "primary_December_k5": {
+    "region_equal_gain": 0.07202615993252992,
+    "ID_weighted_gain_descriptive": 0.12138947515935264,
+    "conditional_randomization_lower_tail_p": 0.001,
+    "null_draws": 999,
+    "observed_normalized_distance": 0.9279738400674701,
+    "exact_null_normalized_distance": 1.0,
+    "empirical_null_normalized_mean": 1.0006506639762702,
+    "median_regional_gain": 0.05102964407179378,
+    "positive_region_count": 40,
+    "positive_region_fraction": 0.7017543859649122,
+    "region_count": 57,
+    "ID_count": 1642,
+    "leave_one_region_out_gain_min": 0.06424048873319345,
+    "leave_one_region_out_gain_max": 0.075729436956951,
+    "excluding_federal_cities_gain": 0.057078402464742155
+  },
+  "June_k5_sensitivity": {
+    "region_equal_gain": 0.05716887209170396,
+    "ID_weighted_gain_descriptive": 0.10936246815873851,
+    "conditional_randomization_lower_tail_p": 0.001,
+    "null_draws": 999,
+    "observed_normalized_distance": 0.942831127908296,
+    "exact_null_normalized_distance": 1.0,
+    "empirical_null_normalized_mean": 1.000461695905913,
+    "median_regional_gain": 0.039451957632057555,
+    "positive_region_count": 44,
+    "positive_region_fraction": 0.7457627118644068,
+    "region_count": 59,
+    "ID_count": 1661,
+    "leave_one_region_out_gain_min": 0.0499337388715583,
+    "leave_one_region_out_gain_max": 0.06086956773233876,
+    "excluding_federal_cities_gain": 0.04369836067595115
+  },
+  "supported_claim": "Geographic association of five-category spending composition on separately selected month supports under the registered approximate within-region Total-block permutation design.",
+  "conditional_exchangeability_assumed_not_proved": true,
+  "source_independence_guaranteed": false,
+  "June_independent_holdout": false,
+  "nationwide_representative_inference": false,
+  "model_better_or_promoted": false,
+  "municipal_purchase_flows_observed": false,
+  "causality": false,
+  "new_clustering_fits": 0,
+  "national_dense_distance_matrices": 0,
+  "SSH_calls": 0,
+  "VM_calls": 0,
+  "verifier_SHA": "4ff84674eb0b2e0d9b61c86ea23b85ff17f955c549e2033cc7518fd2fe7c197c",
+  "outputs_SHA": {
+    "all_leave_one_region_out.csv": "7ba166a2521aa4d018ad9e0d89d2ef75db1e114a68c7f21b000c2b86d7d31197",
+    "all_null_replay.json": "d6f99d54cda33c5af6a377c37dbaef1e1486de441702b61584fb039d6dc34a54",
+    "regional_arithmetic.csv": "544c5405b487ff5eee9e4fc219d11b79c3259980bb13118b7e70240d0fbb078f",
+    "source_admission_and_coverage.json": "e33271e309fc072a6bc9c6a23f2ed7166bde8049d31b4d47ab68bbdf897ef691",
+    "tiny_expected_moment_oracle.json": "0d3697d2904e99e8b8865502459fb7309b28eefd625f5d8f18ac44b16106e49d"
+  }
+}

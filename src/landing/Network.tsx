@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { T, clusterOf, rankColor, rub, type ConfigMonth, type Net } from './data'
 import { layoutFor } from './layout'
 import { ID_VIEW, cssColor, dprFor, drawNet, fitCanvas, nearest, type P } from './canvasNet'
-import { canvasWorker, requestBitmap, showBitmap } from './nat/workerHost'
+import { cancelBitmap, canvasWorker, requestBitmap, showBitmap, useWorkerFailed } from './nat/workerHost'
 import { scaleOf } from './zoom'
 
 // связи сети как плоский массив (кэш на сеть): передаются в фоновый поток для рисования
@@ -19,6 +19,7 @@ export function Network({ cm, net, obs, focus = null, selected = null, onPick, s
   const { pos: lay, aspect } = useMemo(() => layoutFor(net), [net])
   const cv = useRef<HTMLCanvasElement>(null)
   const [size, setSize] = useState(0)
+  const workerFailed = useWorkerFailed()
   // МО под курсором: состояние меняется только при смене МО, подсказка двигается напрямую (ref), не чаще раза за кадр
   const [hoverTi, setHoverTi] = useState<number | null>(null)
   const tip = useRef<HTMLDivElement>(null)
@@ -31,7 +32,7 @@ export function Network({ cm, net, obs, focus = null, selected = null, onPick, s
     const ro = new ResizeObserver(() => setSize(el.clientWidth))
     ro.observe(el)
     return () => { ro.disconnect() }
-  }, [])
+  }, [workerFailed])
 
   // раскладка вписывается в холст с сохранением пропорций
   // Точки могут перекрываться: это сохранённая проекция двух координат, без раздвигания узлов.
@@ -52,12 +53,11 @@ export function Network({ cm, net, obs, focus = null, selected = null, onPick, s
   const active = hoverTi != null ? (typeof cm.lab[hoverTi] === 'number' ? (cm.lab[hoverTi] as number) : null) : focus
   const rOf = () => Math.max(1.1, Math.min(small ? 2.4 : 3, (3.1 * drawW.current) / 880))
   // поток: сеть рисуется там и приходит картинкой; без потока — в основном потоке
-  const useWorker = useRef(canvasWorker() != null).current
   const last = useRef(0)
   useEffect(() => {
     const el = cv.current
     if (!el || !size) return
-    if (useWorker) {
+    if (canvasWorker()) {
       const w = size, h = size / ratio, n = cm.lab.length, cvScale = scaleOf(el)
       const posA = new Float32Array(2 * n).fill(NaN), fills = new Uint8Array(n), group = new Int16Array(n).fill(-1), palette: string[] = [], memo = new Map<string, number>()
       const col = new Map<number, string>(); cm.clusters.forEach(c => col.set(c.g, cssColor(el, rankColor(cm, c.g))))
@@ -68,9 +68,9 @@ export function Network({ cm, net, obs, focus = null, selected = null, onPick, s
         let pi = memo.get(c); if (pi == null) { pi = palette.length; palette.push(c); memo.set(c, pi) } fills[i] = pi
       }
       const my = ++last.current
-      requestBitmap({ type: 'net', o: { w, h, dpr: dprFor(w, h, undefined, cvScale), pos: posA, edges: edgesOf(net).slice(), fills, palette, group, active: active ?? -1, r: rOf(), ring: hoverTi ?? selected ?? -1 } },
+      const request = requestBitmap({ type: 'net', o: { w, h, dpr: dprFor(w, h, undefined, cvScale), pos: posA, edges: edgesOf(net).slice(), fills, palette, group, active: active ?? -1, r: rOf(), ring: hoverTi ?? selected ?? -1 } },
         bmp => { if (last.current !== my || !cv.current) bmp.close(); else showBitmap(cv.current, bmp) })
-      return
+      return () => { cancelBitmap(request) }
     }
     const { ctx, w, h, dpr } = fitCanvas(el, size / ratio)
     const col = new Map<number, string>()
@@ -82,7 +82,7 @@ export function Network({ cm, net, obs, focus = null, selected = null, onPick, s
       hiEdge: active != null ? (s, t) => cm.lab[s] === active && cm.lab[t] === active : undefined,
       ring: hoverTi ?? selected,
     })
-  }, [pos, size, ratio, cm, net, active, hoverTi, selected, small])
+  }, [pos, size, ratio, cm, net, active, hoverTi, selected, small, workerFailed])
 
   const onMove = (e: React.PointerEvent<HTMLCanvasElement>) => {
     const r = e.currentTarget.getBoundingClientRect(), m = mv.current, z = scaleOf(e.currentTarget)
@@ -99,7 +99,7 @@ export function Network({ cm, net, obs, focus = null, selected = null, onPick, s
   const c = typeof hl === 'number' ? clusterOf(cm, hl) : undefined
   return (
     <div className="relative">
-      <canvas ref={cv} role="img" aria-label={label} className={`block w-full ${onPick ? 'cursor-pointer' : ''}`}
+      <canvas key={workerFailed ? 'local' : 'worker'} ref={cv} role="img" aria-label={label} className={`block w-full ${onPick ? 'cursor-pointer' : ''}`}
         style={{ height: size ? size / ratio : undefined, aspectRatio: size ? undefined : `${ratio}` }}
         tabIndex={onPick ? 0 : undefined}
         onKeyDown={e => {

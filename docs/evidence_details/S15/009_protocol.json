@@ -1,0 +1,81 @@
+{
+  "id": "ROAD_CONTEXT_DEC2024_WITH_JUNE_SENSITIVITY_R00",
+  "status": "frozen_before_any_real_association",
+  "months": [
+    "2024-12",
+    "2024-06"
+  ],
+  "primary_month": "2024-12",
+  "primary_k": 5,
+  "sensitivity_k": 10,
+  "permutations": 999,
+  "seed": 20261007,
+  "question": "Are published spending-composition profiles closer at road-neighbor municipalities than under whole-profile permutations among nearly equal-Total municipalities in the same supplier region?",
+  "source_periods": {
+    "spending": "2024-12 primary and 2024-06 sensitivity",
+    "road": "2024-12-31",
+    "dictionary": "unique annual active supplier record for 2024"
+  },
+  "admission": [
+    "all six published values present, finite and positive",
+    "unique active2024 supplier dictionary row; native territory_id exact join",
+    "shape=1 only; remove endpoints of zero highway distance between eligible shape1 centers WITHIN THE SAME region",
+    "retain largest connected within-region highway component; ties by minimum supplier ID; require complete positive pair distances inside it",
+    "at least12 eligible per region before matching",
+    "sort by (published Total, numeric supplierID) within each month and region; consecutive pairs, last triple if odd",
+    "discard entire block if max Total / min Total > 1.10; do not rematch",
+    "retain region only if at least12 IDs after matching"
+  ],
+  "support": {
+    "December_N": 1642,
+    "December_regions": 57,
+    "June_N": 1661,
+    "June_regions": 59,
+    "intersection_IDs": 1602,
+    "month_specific_level_matching": true
+  },
+  "profile": "CLR of the five selected categories only: log(v_c) minus mean log(selected five). Squared Euclidean CLR distance divided by5. No extra deflator, no sum-as-Total, no derived remainder category.",
+  "graph": "Directed k road-nearest centers within the ADMITTED SAME-REGION SAMPLE (not all Russian municipalities), with all ties at kth distance included; no added links or fitted geometry; each source ID row normalized by its actual neighbor count.",
+  "statistic": "Within each region D=mean_ID(mean_neighbors squared CLR distance). E=exact expectation under independent uniform whole-profile permutations within registered level blocks. Regional gain=1-D/E. Primary gain=unweighted mean regional gain. ID-weighted mean regional gain is descriptive only.",
+  "null": "999 seeded whole-profile permutations within each fixed level block; same draw used for k5 and k10. All edges involving a permuted node change jointly; no independent-edge t-test. p=(1+count macro normalized distance <= observed)/(1000), conservative float comparison tolerance1e-15.",
+  "interpretation": "Approximate conditional exchangeability within same-region near-Total pairs/triples is assumed, not established; p is a conditional randomization diagnostic, not exact continuous covariate adjustment, sampling-based national inference, or causal evidence.",
+  "registered_joint_gate": [
+    "December k5 p<=.01",
+    "December k5 region-equal gain>=.02 (a declared screening floor, not a validated utility threshold)",
+    "December k5 median regional gain>0",
+    "December k5 at least60% regional gains>0",
+    "December k10 gain>0",
+    "December k5 gain without Moscow, Saint Petersburg, Sevastopol>0",
+    "every leave-one-region-out December k5 gain>0",
+    "June k5 gain>0"
+  ],
+  "adverse_result": "Failure of any gate yields not_supported_by_registered_joint_gate; this does not prove absence of geography. Preserve/report every registered statistic.",
+  "sensitivity_limits": [
+    "June road snapshot is later than June spending: retrospective association, not an as-of-June forecast",
+    "June and December have separately frozen near-Total supports; report exact intersection; not an identical-cohort or independent holdout replication",
+    "small regions, remote unconnected territories and shared centers excluded: no blanket national generalization"
+  ],
+  "prohibited_claims": [
+    "causality",
+    "observed municipal purchase flows",
+    "mobility or travel frequency",
+    "local employment/income/industry type identified",
+    "NCut or K3 improvement or promotion",
+    "geographic edges validate feature-similarity edges",
+    "independent upstream transaction estimates guaranteed"
+  ],
+  "budget": {
+    "native_clustering_fits": 0,
+    "numerical_regression_fits": 0,
+    "stdlib_only": true,
+    "internal_wall_cap_seconds": 900,
+    "generic_kind": "temporal",
+    "CPU": [
+      7
+    ],
+    "outer_wall_cap_seconds": 1200,
+    "RSS_cap_bytes": 4294967296,
+    "absolute_deadline_UTC": "2026-10-08T05:00:00Z",
+    "auto_retry": false
+  }
+}

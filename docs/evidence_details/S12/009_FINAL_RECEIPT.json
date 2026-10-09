@@ -1,0 +1,41 @@
+{
+  "status": "CORRECTED_R02_LOCAL_COMPLETE_INDEPENDENT_REVIEW_PENDING",
+  "scientific_gate": {
+    "methods_beating_both_controls": [],
+    "any_pass": false,
+    "claim": "Added value of cluster retrieval not confirmed against both controls in this protocol."
+  },
+  "deterministic_repeat_artifacts": {
+    "TYPE_BINDING.json": "2ac8277ee8b7ac2488da3b2a00690985afce1e184558c99939310b38e44f1404",
+    "ADMISSION.csv": "ce57ab5604c2d35d1aaccbae6cb523cbfacaa2ee7c651cd0983c214bd12fc0ee",
+    "PER_QUERY.csv": "47771af9f74a4ec653467a8ab9cb8aed24d2f72e01f20acb16d80418219cb270",
+    "PER_REGION.csv": "57bf615334b5188581cf731fff1237db739106e06dde9fa581860325e2d176b7",
+    "NEIGHBORS.json": "2f374f7e18b5061e03052ba9e8a5a7d5341c956d33566293a257d0847b622e50",
+    "COVERAGE.json": "11af053df7267151b618f1153ad6a90a4274756fe6d9b59299886e0053db3f87",
+    "SUMMARY.json": "9f93d11d3f0cf8819f8310a585663f09441cc59e6f5aa2df9ef888b3975d14a8",
+    "SOURCE_HASHES.json": "453be297fde5fdc0657d37aba53ebbee99343c8c9bd3b97936c5cae469d069ce",
+    "QA.json": "942c9df41cac5ec100d0c8e6d79d0bf8aa55732d47e81a3c39d5e45e1b8e4bb7"
+  },
+  "input_bug_corrected": "year_to excludes terminal year; restored original nonfederal support using verified exact types",
+  "new_fit": false,
+  "new_SSH": false,
+  "independent_review": false,
+  "artifact_sha256": {
+    "ADMISSION.csv": "ce57ab5604c2d35d1aaccbae6cb523cbfacaa2ee7c651cd0983c214bd12fc0ee",
+    "COVERAGE.json": "11af053df7267151b618f1153ad6a90a4274756fe6d9b59299886e0053db3f87",
+    "finalize_test.py": "8d3b33be43bbdd43a66812681041369ada28fe2cc3f1e7f91a3c2ca26a335735",
+    "HISTORY_COMPARISON.json": "04be5bf98a8e2644850edd0e6cdf748779b5b79deb3aad1a767aea8e52a6d8b4",
+    "NEIGHBORS.json": "2f374f7e18b5061e03052ba9e8a5a7d5341c956d33566293a257d0847b622e50",
+    "PER_QUERY.csv": "47771af9f74a4ec653467a8ab9cb8aed24d2f72e01f20acb16d80418219cb270",
+    "PER_REGION.csv": "57bf615334b5188581cf731fff1237db739106e06dde9fa581860325e2d176b7",
+    "PROTOCOL.json": "16a32f3bc4f7024dae2e8e4a739b18cbcda9a2e97c7536dd7d550e38ab21bc58",
+    "PROTOCOL.md": "71f4e73d88af0d879450d88eb0f94ffaff1e958d275081439754da4d7811f437",
+    "QA.json": "942c9df41cac5ec100d0c8e6d79d0bf8aa55732d47e81a3c39d5e45e1b8e4bb7",
+    "RESULT.md": "7f9a906e28d5463af84bb5c53734b1b617841dfbe2a8aa1cde37e5f1624f4442",
+    "RUN_RECEIPT.json": "60c514452b1b0290808dcb2ce7e3c3fa325cb3bbe2863b6212b29e11d711cd52",
+    "run_test.py": "dd0759fdde52fddcd004f5183e461405107ab94bb940fe9a5b7c559ca8044130",
+    "SOURCE_HASHES.json": "453be297fde5fdc0657d37aba53ebbee99343c8c9bd3b97936c5cae469d069ce",
+    "SUMMARY.json": "9f93d11d3f0cf8819f8310a585663f09441cc59e6f5aa2df9ef888b3975d14a8",
+    "TYPE_BINDING.json": "2ac8277ee8b7ac2488da3b2a00690985afce1e184558c99939310b38e44f1404"
+  }
+}
