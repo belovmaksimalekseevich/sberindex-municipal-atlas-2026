@@ -1,0 +1,104 @@
+{
+  "sources": {
+    "data/input2190.npz": {
+      "source_workspace_relative": "research/e28_execution/20261007/package_r03/bundle/data/input2190.npz",
+      "sha256": "e4abc1a00495fae8280213b85c326169a1a0f5efcf7504400964b69b296c0547",
+      "bytes": 1757336
+    },
+    "data/reported2190.npz": {
+      "source_workspace_relative": "research/e28_execution/20261007/package_r03/bundle/data/reported2190.npz",
+      "sha256": "e5cd11d4295be6e20b11446eb48ffedaa1b31155c199adea327a39396da206bf",
+      "bytes": 825983
+    },
+    "data/reference.json": {
+      "source_workspace_relative": "workstreams/discretize_vm_20261007_r00/inputs/run_0001/reference.json",
+      "sha256": "733bf0c121b441bea7f423e2e10aa2dddfd9aa76e8bd152462d4bb4020c2052f",
+      "bytes": 3776
+    },
+    "engine/contract.py": {
+      "source_workspace_relative": "research/e28_execution/20261007/package_r03/bundle/engineering/e28_science_20261007_r00/contract.py",
+      "sha256": "b41d492060a2b92358bff1e5f90add7decab3c7b24b4b53f78e3ddedcaca9ec6",
+      "bytes": 8957
+    },
+    "engine/cosine.py": {
+      "source_workspace_relative": "research/e28_execution/20261007/package_r03/bundle/engineering/e28_science_20261007_r00/cosine.py",
+      "sha256": "011e3eef67a8e5f0baaf1a3ae82f56c7835202fb748e6f4f1fcd9df30519ccbd",
+      "bytes": 1908
+    },
+    "engine/robustness.py": {
+      "source_workspace_relative": "research/e28_execution/20261007/package_r03/bundle/engineering/e28_science_20261007_r00/robustness.py",
+      "sha256": "0cf986db7f5aed4513a8b76ff2272b09d7f512a2f96786671d65590d7568dab9",
+      "bytes": 2215
+    },
+    "engine/science.py": {
+      "source_workspace_relative": "research/e28_execution/20261007/package_r03/bundle/engineering/e28_science_20261007_r00/science.py",
+      "sha256": "8f67c403b6e1e8460a125b8c24795d74655afa3e47a24270a38e46647d0808b8",
+      "bytes": 10829
+    },
+    "engine/spectral_support.py": {
+      "source_workspace_relative": "research/e28_execution/20261007/package_r03/bundle/engineering/e28_science_20261007_r00/spectral_support.py",
+      "sha256": "de92674d41c88af3e92bc509df54ca9fe98587261cc2af13dd3f2d52461cc866",
+      "bytes": 1631
+    },
+    "engine/vendor/c5c3_metrics.py": {
+      "source_workspace_relative": "research/e28_execution/20261007/package_r03/bundle/engineering/e28_science_20261007_r00/vendor/c5c3_metrics.py",
+      "sha256": "e8e2ee72870d538bce56e66e56354ab04c3d5bcd6036bfb29224ea4450ad55a3",
+      "bytes": 1830
+    },
+    "engine/vendor/kernels.py": {
+      "source_workspace_relative": "research/e28_execution/20261007/package_r03/bundle/engineering/e28_science_20261007_r00/vendor/kernels.py",
+      "sha256": "0d9ae437f4eef1cc698473b7171db460e52d082e83fe52aff8f7686fdf24c3bc",
+      "bytes": 12957
+    },
+    "engine/vendor/metrics.py": {
+      "source_workspace_relative": "research/e28_execution/20261007/package_r03/bundle/engineering/e28_science_20261007_r00/vendor/metrics.py",
+      "sha256": "ed28977e5fa58e67a872392e2842a84ad1e17fba72bfb650b15de7e1911c0fb7",
+      "bytes": 6153
+    },
+    "engine/vendor/representative.py": {
+      "source_workspace_relative": "research/e28_execution/20261007/package_r03/bundle/engineering/e28_science_20261007_r00/vendor/representative.py",
+      "sha256": "cfc5552edada2b4e535de475a5e1fb9da5b71783cfa6881e43b2b89972a68865",
+      "bytes": 759
+    },
+    "engine/vendor/spectral_method.py": {
+      "source_workspace_relative": "research/e28_execution/20261007/package_r03/bundle/engineering/e28_science_20261007_r00/vendor/spectral_method.py",
+      "sha256": "c485d261bb4da9c64683b6ece61e11a965e3208bc42d59547d50a2f22355a85e",
+      "bytes": 1627
+    },
+    "engineering/detailed_typology_national_20261007_r00/util.py": {
+      "source_workspace_relative": "engineering/local_scale_k2_science_20261007_r00/util.py",
+      "sha256": "5bb0a5783c0dfa75f7ece96e4d2b5e533a2b40f1383c6d7fe16dff955422d7ec",
+      "bytes": 3358
+    },
+    "engineering/detailed_typology_national_20261007_r00/adapter.py": {
+      "source_workspace_relative": "engineering/detailed_typology_national_20261007_r00/adapter.py",
+      "sha256": "c62e2d05107a78ee1f5e3c4231a6cd5b0f4334883131463c314d22a117d36bac",
+      "bytes": 6044
+    },
+    "engineering/detailed_typology_national_20261007_r00/build_package.py": {
+      "source_workspace_relative": "engineering/detailed_typology_national_20261007_r00/build_package.py",
+      "sha256": "6812c971a643a2df4a9947f359132144735c42a94209d5fae6090d66bb55cb80",
+      "bytes": 7982
+    },
+    "engineering/detailed_typology_national_20261007_r00/run_month.py": {
+      "source_workspace_relative": "engineering/detailed_typology_national_20261007_r00/run_month.py",
+      "sha256": "122ea2e6063c710012b5e6ba1df6ff8f7c9aa157ce8df44a31d960b2722c5b61",
+      "bytes": 11827
+    },
+    "engineering/detailed_typology_national_20261007_r00/smoke.py": {
+      "source_workspace_relative": "engineering/detailed_typology_national_20261007_r00/smoke.py",
+      "sha256": "371b93cc092e9a32fae6aeac62ca5fb3b8b917a774078c61492f7a642c676a80",
+      "bytes": 2856
+    }
+  },
+  "accepted_Ward_source": {
+    "path": "engineering/model_family_probe_20261007_r00/runner.py",
+    "sha256": "8a85b4a1ea67a253ab0661d5448358522d3c7860f93c070cd772deae1cf09c24"
+  },
+  "source_K2_package_changed": false,
+  "local_national_fits": 0,
+  "provenance_amendment": {
+    "parent_package_manifest_sha256": "d73ae1311979bed866f475eb1aba39aba0f1a448793da6f4e5e615d74bc70d83",
+    "reason": "Synchronize corrected smoke harness copy provenance with its actual final member hash; no science,worker,inputs,plan,catalog changes"
+  }
+}

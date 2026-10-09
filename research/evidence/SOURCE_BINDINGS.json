@@ -1,0 +1,41 @@
+{
+  "source_status_sha256": "53d729324439a0b6781c312cfda9ed7bd6bd3b475ef1862d2392fed04325634d",
+  "bindings": [
+    {
+      "original_workspace_path": "workstreams/fresh_audit_20261009_r00/current_code_r04/PACKAGE_MANIFEST.json",
+      "included_path": "evidence/code_r04_manifest.json",
+      "sha256": "87c7a11d7ba406945f1fc982315b6fcee66eae49c916ab608bf90e2448b6fa06",
+      "bytes": 101422
+    },
+    {
+      "original_workspace_path": "workstreams/resolution_challenger_20261009_r00/ROOT_FINAL_ACCEPTANCE.json",
+      "included_path": "evidence/challenger_acceptance.json",
+      "sha256": "2a2181fe5dff125c43b9714223c8cf23024db688a4a04aa74ab8f1011f85d3c2",
+      "bytes": 3554
+    },
+    {
+      "original_workspace_path": "workstreams/resolution_challenger_20261009_r00/SCIENTIFIC_DECISION.md",
+      "included_path": "evidence/MODEL_DECISION.md",
+      "sha256": "684fa73d6602dc007857a17a862c44c816e46fc2bc8cdecf444183ed38e68f80",
+      "bytes": 12645
+    },
+    {
+      "original_workspace_path": "workstreams/research_vm_20261009_r00/FINAL_ROOT_ACCEPTANCE_r00.json",
+      "included_path": "evidence/full_control_acceptance.json",
+      "sha256": "8a96c8f59a29e8b628b1a978de319aa5b653af4722894c47e4fe77f136816ef2",
+      "bytes": 2761
+    },
+    {
+      "original_workspace_path": "workstreams/fresh_audit_20261009_r00/current_content_r01/CONTENT_DELTA.json",
+      "included_path": "evidence/content_acceptance.json",
+      "sha256": "ae980c0d068a590c4b541fdc91b3a185d1e8c21597843ceb6cdcd5f39765b2c9",
+      "bytes": 88367
+    },
+    {
+      "original_workspace_path": "ТЗ_кластеризация_СберИндекс_2026.md",
+      "included_path": "evidence/CLUSTERING_REQUIREMENTS.md",
+      "sha256": "c520b65574fe83c66016a16aaeea80a4457c2b20b94bf96ac617c5c7fdaaad12",
+      "bytes": 40026
+    }
+  ]
+}

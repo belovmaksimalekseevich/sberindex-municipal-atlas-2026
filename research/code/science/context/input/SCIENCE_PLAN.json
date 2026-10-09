@@ -1,0 +1,122 @@
+{
+  "schema": "context2024-input-science-plan-v1",
+  "stage": "input_and_scientific_constraints_frozen_before_new_context_clustering",
+  "objective": "Describe measured context differences that coarse consumption types absorb; compare peers by consumption and municipal context without inferring production function.",
+  "question": "At the same number of groups, how do size, accessibility, covered-organization wages and structure change the peer set of municipalities with similar spending?",
+  "scope": {
+    "reference_year": 2024,
+    "N": 1666,
+    "supplier_regions": 69,
+    "all_native_union_N": 2190,
+    "complete12month2024_N": 2048,
+    "national_full": false,
+    "additional_typology": true,
+    "replace_main_K2": false
+  },
+  "fixed_K_grid": [
+    4,
+    6,
+    8,
+    10,
+    12,
+    16,
+    20
+  ],
+  "report_every_K": true,
+  "variants": [
+    "context6",
+    "spending2"
+  ],
+  "same_IDs_for_variants": true,
+  "data_pins": {
+    "input_npz_sha256": "9f0c47a99464db78f9d10fcf5318a43cd905b92861b44cc7123b9a099d44f6ae",
+    "ID_sha256": "581a558ed2d0edfe31ff07207e1c9f9cb6c6b3dcab0eac9b83adb5d683f4dba0",
+    "preprocessing_sha256": "fb99bd54c1d288839d34209c126e764ef62ba55ad89dc6b67b7035565916bc69",
+    "source_binding_sha256": "688608183db5b76d018967d3d1a01a798da01abfbf8c348d050bd7d391f0898a"
+  },
+  "blocks": {
+    "context6": "Six blocks, weights1/6; median pair squared distance equals block weight after transformation.",
+    "spending2": "Same IDs; level and CLR blocks, weights1/2.",
+    "meaning": "Equal nominal/typical-distance block weights do not imply equal contribution to every pair or statistical independence."
+  },
+  "preprocessing": {
+    "function": "preprocessing.fit_transform(X_raw[indices], variant)",
+    "refit_for_each_draw": true,
+    "no_full_scales_reuse": true,
+    "no_clipping": true,
+    "no_imputation": true,
+    "constant_scale": "explicit task failure; do not silently omit a block",
+    "quantile": "NumPy linear",
+    "use_all_unordered_pairs": true
+  },
+  "execution_contract_boundary": {
+    "fitting_started_here": false,
+    "execution_preregistration_required_before_labels": true,
+    "owner": "Root-assigned separate context-fit author",
+    "must_freeze": [
+      "algorithm/implementation/version",
+      "exact ordered seeds",
+      "matched draw ID arrays for all K and variants",
+      "initializations/iterations/convergence rules",
+      "complete expected task catalog",
+      "CPU/wall/RSS/deadline limits",
+      "termination and incomplete-run disclosure",
+      "group-matching and stability scoring"
+    ],
+    "proposed_bounded_design": "Deterministic Lloyd/k-means++ Euclidean fits,8 initializations/full and per draw;20 matched80-percent draws;7Kx2variantsx21supports=294 chosen partitions/2352 starts. This is a proposal until separate executable registration pins exact seeds/draws and resource envelope; no outcomes may be consulted in choosing them."
+  },
+  "interpretation_and_evaluation": {
+    "mandatory_profiles": [
+      "N and share",
+      "region count/composition and largest-region share",
+      "all raw block medians/IQR/ranges",
+      "monthly spending profile and annual aggregation definition",
+      "representative IDs chosen by declared centroid-distance rule",
+      "all groups including rare/outlying groups",
+      "coverage vs complete2024 and original2190",
+      "draw-based membership/stability uncertainty with preprocessing rebuilt"
+    ],
+    "stability": "ARI on common IDs plus per-full-group matched Jaccard distributions and recovery frequency; keep tiny/unmatched groups visible. Small N alone is not automatic rejection.",
+    "within_K_comparison": "Matched support/draws/seeds and algorithm budget for both variants; report how peer sets/partitions and raw profiles change.",
+    "across_geometry": "Do not directly rank context6 against spending2 by inertia, SW or its own silhouette; metrics refer to different geometries. Any common-space score must name its geometry.",
+    "across_K": "No SW-only winner or best-looking month/K. Report fixed full grid and resolution-stability-size tradeoff; no automatic promotion of a single best K.",
+    "used_X_not_external_validation": true,
+    "no_p_values_for_in_sample_feature_separation": true,
+    "K2_crosswalk": "Descriptive only on exact common IDs: existing December K2 and annual2024 context represent different periods/geometries.",
+    "external_validation": "No independent unused outcome frozen in this stage. Salary, workers, education, population and access are training context, not held-out validation.",
+    "names": "Neutral measured profiles; do not infer industrial/tourist/budget/production functions from education share or spending alone."
+  },
+  "acceptance": {
+    "input_go": true,
+    "conditional_territory_admission": true,
+    "physical_boundary_certificate": false,
+    "usable_additional_typology": "All registered completed partitions auditable; profiles/stability/coverage honestly disclosed; useful peer differences described in measured terms. No guaranteed scientific improvement before fitting.",
+    "data_no_go": [
+      "full national context claim",
+      "full19-sector production-function classification",
+      "as-of2024 forecast",
+      "missing-to-zero or silent row substitution",
+      "independent external validation claim for included X"
+    ],
+    "model_selection_or_promotion": false
+  },
+  "scientific_limitations": [
+    "Retrospective processed data release2025-09-18 for reference2024; upstream original row publication dates unknown.",
+    "Unknown upstream reuse in modelled consumption; not fully independent measurement families.",
+    "Population stock Jan1_2024 differs from annual average workforce; intensity is a stock-denominator proxy, not resident employment.",
+    "Market access already contains population context; related blocks are not independent.",
+    "Selected CLR5 categories do not sum to Total; no invented residual category.",
+    "Unweighted municipality fitting describes municipalities rather than a population-weighted welfare distribution.",
+    "All months2024 used; no attractive-month selection; annual aggregation hides seasonality, raw monthly arrays retained."
+  ],
+  "new_clustering_fits": 0,
+  "new_association_tests": 0,
+  "admission_revision": {
+    "revision": "r01",
+    "before_new_context_clustering": true,
+    "correction_sha256": "06c3e062048f98e9dfc035b4400810aadc73498bec63bc37d2abb7db260f2ba0",
+    "previous_N": 1479,
+    "corrected_N": 1666,
+    "rule_no_outcome_selection": true
+  }
+}

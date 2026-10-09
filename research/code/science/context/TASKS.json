@@ -1,0 +1,170 @@
+[
+  {
+    "id": "context6_Ward_K04",
+    "variant": "context6",
+    "family": "Ward",
+    "K": 4
+  },
+  {
+    "id": "context6_Ward_K06",
+    "variant": "context6",
+    "family": "Ward",
+    "K": 6
+  },
+  {
+    "id": "context6_Ward_K08",
+    "variant": "context6",
+    "family": "Ward",
+    "K": 8
+  },
+  {
+    "id": "context6_Ward_K10",
+    "variant": "context6",
+    "family": "Ward",
+    "K": 10
+  },
+  {
+    "id": "context6_Ward_K12",
+    "variant": "context6",
+    "family": "Ward",
+    "K": 12
+  },
+  {
+    "id": "context6_Ward_K16",
+    "variant": "context6",
+    "family": "Ward",
+    "K": 16
+  },
+  {
+    "id": "context6_Ward_K20",
+    "variant": "context6",
+    "family": "Ward",
+    "K": 20
+  },
+  {
+    "id": "context6_KMeans_K04",
+    "variant": "context6",
+    "family": "KMeans",
+    "K": 4
+  },
+  {
+    "id": "context6_KMeans_K06",
+    "variant": "context6",
+    "family": "KMeans",
+    "K": 6
+  },
+  {
+    "id": "context6_KMeans_K08",
+    "variant": "context6",
+    "family": "KMeans",
+    "K": 8
+  },
+  {
+    "id": "context6_KMeans_K10",
+    "variant": "context6",
+    "family": "KMeans",
+    "K": 10
+  },
+  {
+    "id": "context6_KMeans_K12",
+    "variant": "context6",
+    "family": "KMeans",
+    "K": 12
+  },
+  {
+    "id": "context6_KMeans_K16",
+    "variant": "context6",
+    "family": "KMeans",
+    "K": 16
+  },
+  {
+    "id": "context6_KMeans_K20",
+    "variant": "context6",
+    "family": "KMeans",
+    "K": 20
+  },
+  {
+    "id": "spending2_Ward_K04",
+    "variant": "spending2",
+    "family": "Ward",
+    "K": 4
+  },
+  {
+    "id": "spending2_Ward_K06",
+    "variant": "spending2",
+    "family": "Ward",
+    "K": 6
+  },
+  {
+    "id": "spending2_Ward_K08",
+    "variant": "spending2",
+    "family": "Ward",
+    "K": 8
+  },
+  {
+    "id": "spending2_Ward_K10",
+    "variant": "spending2",
+    "family": "Ward",
+    "K": 10
+  },
+  {
+    "id": "spending2_Ward_K12",
+    "variant": "spending2",
+    "family": "Ward",
+    "K": 12
+  },
+  {
+    "id": "spending2_Ward_K16",
+    "variant": "spending2",
+    "family": "Ward",
+    "K": 16
+  },
+  {
+    "id": "spending2_Ward_K20",
+    "variant": "spending2",
+    "family": "Ward",
+    "K": 20
+  },
+  {
+    "id": "spending2_KMeans_K04",
+    "variant": "spending2",
+    "family": "KMeans",
+    "K": 4
+  },
+  {
+    "id": "spending2_KMeans_K06",
+    "variant": "spending2",
+    "family": "KMeans",
+    "K": 6
+  },
+  {
+    "id": "spending2_KMeans_K08",
+    "variant": "spending2",
+    "family": "KMeans",
+    "K": 8
+  },
+  {
+    "id": "spending2_KMeans_K10",
+    "variant": "spending2",
+    "family": "KMeans",
+    "K": 10
+  },
+  {
+    "id": "spending2_KMeans_K12",
+    "variant": "spending2",
+    "family": "KMeans",
+    "K": 12
+  },
+  {
+    "id": "spending2_KMeans_K16",
+    "variant": "spending2",
+    "family": "KMeans",
+    "K": 16
+  },
+  {
+    "id": "spending2_KMeans_K20",
+    "variant": "spending2",
+    "family": "KMeans",
+    "K": 20
+  }
+]

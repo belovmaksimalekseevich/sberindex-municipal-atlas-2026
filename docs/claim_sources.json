@@ -1,0 +1,402 @@
+{
+  "schema": "report-claims-v1",
+  "created_utc": "2026-10-09T15:56:37.570372+00:00",
+  "manuscript_sha256": "e43d23e31476278a7ce3eb628f805275e050e19e4e7036747eb45e35fd3f230e",
+  "sources": {
+    "S01": {
+      "title": "Задание и критерии конкурса в проверенной редакции",
+      "path": "workstreams/research_closure_20261008_r00/tz_review/input_snapshots/T01_ТЗ_кластеризация_СберИндекс_2026.md",
+      "portable_path": "evidence/S01.md",
+      "sha256": "c520b65574fe83c66016a16aaeea80a4457c2b20b94bf96ac617c5c7fdaaad12",
+      "bytes": 40026
+    },
+    "S02": {
+      "title": "Методология признаков графов и шести индексов",
+      "path": "workstreams/local_finalization_20261008_r00/methods/METHODS.md",
+      "portable_path": "evidence/S02.md",
+      "sha256": "72b460ad87c07f2148dd9ed606ddbea6b14d24cf70155a7412df79d3358bf600",
+      "bytes": 38973
+    },
+    "S03": {
+      "title": "Полная сетка и прежняя устойчивость",
+      "path": "workstreams/local_finalization_20261008_r00/methods/SUMMARY_FACTS.json",
+      "portable_path": "evidence/S03.json",
+      "sha256": "4190e264d9a29d6f6d58f21dfcc03b2371bacdc7a066db731cb64a46765b183b",
+      "bytes": 37094
+    },
+    "S04": {
+      "title": "Принятый месячный экспорт и межмесячные сопоставления",
+      "path": "workstreams/frontend_integration_20261009_r00/data_engineering/output_r03/base.json",
+      "portable_path": "evidence/S04.json",
+      "sha256": "ab4c4defb477942e25715b61ec531a14e89dde3b5b050a3e1768e2c2bd04e416",
+      "bytes": 3869376
+    },
+    "S05": {
+      "title": "Десять карточек NCut10",
+      "path": "workstreams/fresh_audit_20261009_r00/current_content_r01/cluster_cards/CLUSTER_CARDS.json",
+      "portable_path": "evidence/S05.json",
+      "sha256": "60f92da22167c42ad1db96830f0f062630c5a70b684da2e745af1adce85d4a16",
+      "bytes": 130074
+    },
+    "S06": {
+      "title": "Шесть карточек SSE6",
+      "path": "workstreams/frontend_integration_20261009_r00/content/SSE6_CARDS.json",
+      "portable_path": "evidence/S06.json",
+      "sha256": "c58dfe436bef8371ce5a0f9159589d1eae9d6f2183c0bd85266325ad2a4e55fe",
+      "bytes": 148939
+    },
+    "S07": {
+      "title": "Научное решение по устойчивости и административной опоре RC68",
+      "path": "workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "portable_path": "evidence/S07.md",
+      "sha256": "befa0423392bd077cb83906717347c8ad7ae60649acb5b1c0864b5e62e9a81a3",
+      "bytes": 7341
+    },
+    "S08": {
+      "title": "Итоговая приёмка полного воспроизведения",
+      "path": "workstreams/research_vm_20261009_r00/FINAL_ROOT_ACCEPTANCE_r00.json",
+      "portable_path": "evidence/S08.json",
+      "sha256": "8a96c8f59a29e8b628b1a978de319aa5b653af4722894c47e4fe77f136816ef2",
+      "bytes": 2761
+    },
+    "S09": {
+      "title": "Научное решение по K6 и K8",
+      "path": "workstreams/resolution_challenger_20261009_r00/SCIENTIFIC_DECISION.md",
+      "portable_path": "evidence/S09.md",
+      "sha256": "684fa73d6602dc007857a17a862c44c816e46fc2bc8cdecf444183ed38e68f80",
+      "bytes": 12645
+    },
+    "S10": {
+      "title": "Приёмка исследования K6 и K8",
+      "path": "workstreams/resolution_challenger_20261009_r00/ROOT_FINAL_ACCEPTANCE.json",
+      "portable_path": "evidence/S10.json",
+      "sha256": "2a2181fe5dff125c43b9714223c8cf23024db688a4a04aa74ab8f1011f85d3c2",
+      "bytes": 3554
+    },
+    "S11": {
+      "title": "Сводные источники сравнений и подвыборок",
+      "path": "workstreams/frontend_integration_20261009_r00/supporting_evidence.json",
+      "portable_path": "evidence/S11.json",
+      "sha256": "eef56d256da642dabe942fab0dfb9075e0083a5004b4b229350dc885747af40d",
+      "bytes": 575219
+    },
+    "S12": {
+      "title": "Исправленный тест аналогов и основные ошибки",
+      "path": "workstreams/research_closure_20261008_r00/analogue_test/corrected_r02/RESULT.md",
+      "portable_path": "evidence/S12.md",
+      "sha256": "7f9a906e28d5463af84bb5c53734b1b617841dfbe2a8aa1cde37e5f1624f4442",
+      "bytes": 14916
+    },
+    "S13": {
+      "title": "Машиночитаемые результаты теста аналогов",
+      "path": "workstreams/research_closure_20261008_r00/analogue_test/corrected_r02/SUMMARY.json",
+      "portable_path": "evidence/S13.json",
+      "sha256": "9f93d11d3f0cf8819f8310a585663f09441cc59e6f5aa2df9ef888b3975d14a8",
+      "bytes": 108412
+    },
+    "S14": {
+      "title": "Содержательный разбор временных изменений",
+      "path": "workstreams/research_closure_20261008_r00/dynamics/RESULT.md",
+      "portable_path": "evidence/S14.md",
+      "sha256": "81d827cce152864e667df96f362de57db31aaa2c03ea9f0763fc7e8609a77042",
+      "bytes": 19050
+    },
+    "S15": {
+      "title": "Внешние и прикладные проверки",
+      "path": "workstreams/local_finalization_20261008_r00/external/EXTERNAL_VALIDATION.md",
+      "portable_path": "evidence/S15.md",
+      "sha256": "dd008149756272cf7e504a5984271ebea5ce3ddcd530cd08feb43fd860d56117",
+      "bytes": 27066
+    },
+    "S16": {
+      "title": "Выполненные аналитические сценарии",
+      "path": "workstreams/economic_interpretation_20261008_r00/use_cases/CASES.md",
+      "portable_path": "evidence/S16.md",
+      "sha256": "1d1c7eaa116619186203aa673febd5271f052a7d4f4968eeef5fc855bc004e07",
+      "bytes": 21963
+    },
+    "S17": {
+      "title": "Годовой контекст и его охват",
+      "path": "workstreams/frontend_integration_20261009_r00/data_engineering/output_r03/annual.json",
+      "portable_path": "evidence/S17.json",
+      "sha256": "698b11680988145acc25e9f37b18f5319a9ec0e90d85298528f46be2403a10d4",
+      "bytes": 622244
+    },
+    "S18": {
+      "title": "Приёмка локального интерфейса",
+      "path": "workstreams/frontend_integration_20261009_r00/ROOT_UI_ACCEPTANCE.json",
+      "portable_path": "evidence/S18.json",
+      "sha256": "92b84ff54b1478f5269319989a945b8d97714beb82bb8322343527db049f4f11",
+      "bytes": 9626
+    },
+    "S19": {
+      "title": "Независимая содержательная проверка интерфейса",
+      "path": "workstreams/frontend_integration_20261009_r00/review/SCIENCE_FRONTEND_REVIEW.json",
+      "portable_path": "evidence/S19.json",
+      "sha256": "6825afed8fe7864101a15520e266f7d3c9f9a2db3970b82ab6bed70a6a41284f",
+      "bytes": 12016
+    },
+    "S20": {
+      "title": "Итог локального подключения данных",
+      "path": "workstreams/frontend_integration_20261009_r00/LOCAL_RESULT.md",
+      "portable_path": "evidence/S20.md",
+      "sha256": "bf7044b41eb4a83a344575ac12d3b9a404d3a64c3ab000689b356c4313029b04",
+      "bytes": 9326
+    },
+    "S21": {
+      "title": "Содержательные требования по C1 C6",
+      "path": "workstreams/research_vm_20261009_r00/content_readiness/FINAL_CONTENT_REQUIREMENTS.json",
+      "portable_path": "evidence/S21.json",
+      "sha256": "246b919dba1826a161ff345f47c03c019bd528d48ac5b4b7f3e87861e19e1f0a",
+      "bytes": 83636
+    },
+    "S22": {
+      "title": "Выбор числа групп и прежние альтернативы",
+      "path": "workstreams/local_finalization_20261008_r00/methods/K_SELECTION.md",
+      "portable_path": "evidence/S22.md",
+      "sha256": "fa1a8f4fa1d349b87928d97720432a179b28c4fd24c87b34e1e0c02f24695c3e",
+      "bytes": 8468
+    }
+  },
+  "claims": [
+    {
+      "claim_id": "C00",
+      "section": "Основной результат",
+      "source_ids": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S18"
+      ],
+      "locators": [],
+      "scope": "Descriptive result on the stated support and period; no causal or universal superiority claim"
+    },
+    {
+      "claim_id": "C01",
+      "section": "1 Задача и данные",
+      "source_ids": [
+        "S01",
+        "S02",
+        "S04",
+        "S12",
+        "S15",
+        "S17",
+        "S21"
+      ],
+      "locators": [],
+      "scope": "Descriptive result on the stated support and period; no causal or universal superiority claim"
+    },
+    {
+      "claim_id": "C02",
+      "section": "2 Как определяется близость",
+      "source_ids": [
+        "S02",
+        "S07",
+        "S09"
+      ],
+      "locators": [],
+      "scope": "Descriptive result on the stated support and period; no causal or universal superiority claim"
+    },
+    {
+      "claim_id": "C03",
+      "section": "3 Сравнение методов и выбор разрешения",
+      "source_ids": [
+        "S02",
+        "S03",
+        "S09",
+        "S11",
+        "S22"
+      ],
+      "locators": [],
+      "scope": "Descriptive result on the stated support and period; no causal or universal superiority claim"
+    },
+    {
+      "claim_id": "C04",
+      "section": "4 Качество и устойчивость",
+      "source_ids": [
+        "S02",
+        "S03",
+        "S04",
+        "S07",
+        "S08",
+        "S09",
+        "S11",
+        "S21",
+        "S22"
+      ],
+      "locators": [
+        "S04:/metrics/23",
+        "S11:/subsample_stability"
+      ],
+      "scope": "Descriptive result on the stated support and period; no causal or universal superiority claim"
+    },
+    {
+      "claim_id": "C05",
+      "section": "5 Десять подробных расходных профилей",
+      "source_ids": [
+        "S05",
+        "S07"
+      ],
+      "locators": [
+        "S05:/cards/0..9"
+      ],
+      "scope": "Descriptive result on the stated support and period; no causal or universal superiority claim"
+    },
+    {
+      "claim_id": "C06",
+      "section": "6 Шесть укрупнённых профилей",
+      "source_ids": [
+        "S06",
+        "S09"
+      ],
+      "locators": [
+        "S06:/cards/0..5"
+      ],
+      "scope": "Descriptive result on the stated support and period; no causal or universal superiority claim"
+    },
+    {
+      "claim_id": "C07",
+      "section": "7 Административная опора",
+      "source_ids": [
+        "S05",
+        "S07",
+        "S09"
+      ],
+      "locators": [],
+      "scope": "Descriptive result on the stated support and period; no causal or universal superiority claim"
+    },
+    {
+      "claim_id": "C08",
+      "section": "8 Изменения во времени",
+      "source_ids": [
+        "S04",
+        "S14",
+        "S19"
+      ],
+      "locators": [
+        "S04:/transitions",
+        "S19:/transition_recomputation"
+      ],
+      "scope": "Descriptive result on the stated support and period; no causal or universal superiority claim"
+    },
+    {
+      "claim_id": "C09",
+      "section": "9 Внешние проверки",
+      "source_ids": [
+        "S02",
+        "S15",
+        "S17"
+      ],
+      "locators": [],
+      "scope": "Descriptive result on the stated support and period; no causal or universal superiority claim"
+    },
+    {
+      "claim_id": "C10",
+      "section": "10 Практическое сравнение территорий",
+      "source_ids": [
+        "S12",
+        "S13",
+        "S16"
+      ],
+      "locators": [],
+      "scope": "Descriptive result on the stated support and period; no causal or universal superiority claim"
+    },
+    {
+      "claim_id": "C11",
+      "section": "11 Ограничения результата",
+      "source_ids": [
+        "S02",
+        "S05",
+        "S07",
+        "S09",
+        "S12",
+        "S15"
+      ],
+      "locators": [],
+      "scope": "Descriptive result on the stated support and period; no causal or universal superiority claim"
+    },
+    {
+      "claim_id": "C12",
+      "section": "12 Воспроизводимость и визуализация",
+      "source_ids": [
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S18",
+        "S20"
+      ],
+      "locators": [],
+      "scope": "Descriptive result on the stated support and period; no causal or universal superiority claim"
+    },
+    {
+      "claim_id": "C13",
+      "section": "13 Соответствие критериям конкурса",
+      "source_ids": [
+        "S01",
+        "S18",
+        "S20"
+      ],
+      "locators": [],
+      "scope": "Descriptive result on the stated support and period; no causal or universal superiority claim"
+    },
+    {
+      "claim_id": "C14A",
+      "section": "Приложение А Карточки NCut10",
+      "source_ids": [
+        "S05"
+      ],
+      "locators": [
+        "S05:/cards/0..9"
+      ],
+      "scope": "Descriptive result on the stated support and period; no causal or universal superiority claim"
+    },
+    {
+      "claim_id": "C14B",
+      "section": "Приложение Б Карточки SSE6",
+      "source_ids": [
+        "S06"
+      ],
+      "locators": [
+        "S06:/cards/0..5"
+      ],
+      "scope": "Descriptive result on the stated support and period; no causal or universal superiority claim"
+    },
+    {
+      "claim_id": "C14",
+      "section": "Приложение В Полный перечень 27 сравнений",
+      "source_ids": [
+        "S02",
+        "S11",
+        "S22"
+      ],
+      "locators": [
+        "S11:/similarity_comparison/rows"
+      ],
+      "scope": "Descriptive result on the stated support and period; no causal or universal superiority claim"
+    },
+    {
+      "claim_id": "C15",
+      "section": "Приложение Г Операционные определения шести индексов",
+      "source_ids": [
+        "S02"
+      ],
+      "locators": [],
+      "scope": "Descriptive result on the stated support and period; no causal or universal superiority claim"
+    }
+  ],
+  "table_bindings": {
+    "data_scope": "S01 sections3; S04 /months,/territories; S17 /native_n; S13 /panels/primary_all8",
+    "December_ICVI": "S04 /metrics/23",
+    "subsample_stability": "S11 /subsample_stability/K10 and SSE6",
+    "NCut10": "S05 /cards",
+    "SSE6": "S06 /cards",
+    "dynamics": "S04 /transitions; recomputation cross-checked with S19 /transition_recomputation",
+    "analogue": "S12 table Сравнение на одинаковых1419 запросах; S13 /panels/primary_all8",
+    "27comparisons": "S11 /similarity_comparison/rows"
+  },
+  "boundary": "Content and numerical author QA only. Scientific editorial acceptance and document rendering acceptance are separate."
+}

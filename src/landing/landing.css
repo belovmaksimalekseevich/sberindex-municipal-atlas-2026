@@ -1,0 +1,175 @@
+@import "tailwindcss" source("..");
+@source not "./i26";
+@source not "../proto2";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/golos-text";
+@import "@fontsource-variable/jetbrains-mono";
+@import "@fontsource/fira-sans-extra-condensed/cyrillic-800.css";
+@import "@fontsource/fira-sans-extra-condensed/latin-800.css";
+
+/* Лендинг «Сходство муниципалитетов»: система варианта A. Холодная бумага, тёмно-синие чернила,
+   два цвета групп только у групп выбранного месяца, тепловая карта в шкале от бумаги к чернилам.
+   Один гротеск (Golos Text) и моно для чисел. Скругления: 999px у кнопок, 14px у карточки, 0 у графиков. */
+@font-face { font-family: "Golos Fallback"; src: local("Arial"), local("Liberation Sans"), local("Helvetica"); size-adjust: 101%; }
+
+@theme inline {
+  --font-sans: "Golos Text Variable", "Golos Fallback", Arial, sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, monospace;
+  --color-background: var(--paper);
+  --color-foreground: var(--ink);
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-muted-ink: var(--muted);
+  --color-line: var(--line);
+  --color-g1: var(--g1);
+  --color-g2: var(--g2);
+  --color-muted: var(--wash);
+  --color-muted-foreground: var(--muted);
+  --color-accent: var(--wash);
+  --color-accent-foreground: var(--ink);
+  --color-secondary: var(--wash);
+  --color-secondary-foreground: var(--ink);
+  --color-border: var(--line);
+  --color-input: var(--line);
+  --color-ring: var(--g1);
+  --color-primary: var(--ink);
+  --color-primary-foreground: var(--paper);
+  --color-popover: var(--surface);
+  --color-popover-foreground: var(--ink);
+  --radius-sm: 6px; --radius-md: 10px; --radius-lg: 14px; --radius-xl: 20px;
+}
+:root {
+  /* плакат: белая бумага, чёрные чернила и линейки, жёлтый маркер; цвета групп те же, что на карте и в истории */
+  --paper: #FFFFFF; --surface: #FFFFFF; --ink: #111111; --muted: #555A66; --line: rgba(17, 17, 17, .16); --wash: #F1F2F5; --mark: #FFE14D;
+  --edge: rgba(17, 17, 17, .09); --g1: #3D6BFF; --g2: #FF7A1A; --track: #FF4D1A;
+  --heat-0: #F1F2F5; --heat-1: #D3D7E0; --heat-2: #A3ABBB; --heat-3: #6E7789; --heat-4: #3A4152; --heat-5: #111111; --miss: #D9DCE3;
+  --display: "Fira Sans Extra Condensed", "Arial Narrow", "Golos Text Variable", sans-serif;
+  color-scheme: light;
+}
+/* плавный переход к главам делает GSAP ScrollTo (с поправкой на шапку); CSS-плавность отключена, чтобы они не спорили */
+html { scroll-padding-top: 76px; scrollbar-gutter: stable; }
+html, body { background: var(--paper); color: var(--ink); }
+body { font-family: var(--font-sans); -webkit-font-smoothing: antialiased; touch-action: manipulation; -webkit-tap-highlight-color: color-mix(in oklab, var(--ink) 12%, transparent); }
+/* общая обводка фокуса только для ссылок, кнопок и фокусируемых блоков; поля ввода shadcn подсвечивают свою рамку сами,
+   вторая обводка с отступом вылезала за края всплывающего поиска */
+:where(a, button, summary, [tabindex]):focus-visible { outline: 2px solid var(--g1); outline-offset: 3px; }
+:where(input, textarea, [cmdk-input]):focus-visible { outline: none; }
+:where([tabindex="-1"]):focus, :where([tabindex="-1"]):focus-visible { outline: none; }
+/* контейнеры списков получают фокус программно (Radix/cmdk); видимый фокус у них показывает подсвеченный пункт, а не рамка всего окна */
+:where([cmdk-root], [data-slot=popover-content], [data-slot=sheet-content]):focus-visible { outline: none; }
+.tnum { font-variant-numeric: tabular-nums; }
+.hatch { background: repeating-linear-gradient(45deg, var(--miss) 0 2px, transparent 2px 5px); }
+
+/* ---- движение: токены личности «Swiss precise» (те же значения в motion.ts) */
+:root { --m-ui: 160ms; --m-base: 350ms; --m-ease: cubic-bezier(.25, 1, .5, 1); --m-move: cubic-bezier(.65, 0, .35, 1); }
+
+/* --rule не наследуется: анимация линии не пересчитывает стили всего содержимого главы */
+@property --rule { syntax: "<number>"; inherits: false; initial-value: 1; }
+/* ---- главы: верхняя линия рисуется слева направо (переменная --rule анимируется GSAP), без неё линия просто есть */
+[data-chapter] { position: relative; }
+/* главы далеко от экрана не участвуют в раскладке и отрисовке (на длинной странице это главная цена каждого кадра);
+   auto запоминает настоящую высоту после первого показа */
+main > [data-chapter] { content-visibility: auto; contain-intrinsic-size: auto 1100px; }
+[data-chapter]::before {
+  content: ""; position: absolute; inset: 0 0 auto; height: 1px; background: var(--line);
+  transform: scaleX(var(--rule, 1)); transform-origin: left center;
+}
+.chapter-title { font-size: clamp(32px, calc(4.1 * var(--vwu)), 58px); line-height: 1.02; font-weight: 600; letter-spacing: -0.035em; text-wrap: pretty; max-width: 18ch; }
+.chapter-title--sm { font-size: clamp(28px, calc(2.8 * var(--vwu)), 40px); }
+.chapter-lede { margin-top: 1.25rem; max-width: 40rem; font-size: clamp(17px, calc(1.3 * var(--vwu)), 19px); line-height: 1.55; color: var(--muted); }
+/* маска строк SplitText: запас под нижние выносные (у, р, д), чтобы маска их не срезала */
+.split-line { padding-bottom: .1em; margin-bottom: -.1em; }
+
+/* ---- кнопки: одна система (999px), нажатие чуть утапливает */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; min-height: 48px; padding: 0 1.25rem; border-radius: 999px;
+  font-size: 15px; font-weight: 500; white-space: nowrap; transition: background-color var(--m-ui) var(--m-ease), color var(--m-ui) var(--m-ease), border-color var(--m-ui) var(--m-ease), transform var(--m-ui) var(--m-ease); }
+.btn:active { transform: scale(.97); }
+.btn-solid { background: var(--ink); color: var(--paper); }
+.btn-solid:hover { background: color-mix(in oklab, var(--ink) 86%, var(--paper)); }
+.btn-line { border: 1px solid var(--ink); }
+.btn-sm { min-height: 36px; padding: 0 .9rem; }
+.btn-line:hover { background: var(--ink); color: var(--paper); }
+.step-btn { display: inline-grid; place-items: center; width: 32px; height: 32px; border-radius: 999px; border: 1px solid var(--line); transition: border-color var(--m-ui), transform var(--m-ui); }
+.step-btn:hover:not(:disabled) { border-color: var(--ink); }
+.step-btn:active:not(:disabled) { transform: scale(.94); }
+.step-btn:disabled { opacity: .4; }
+@media (min-width: 640px) { .step-btn { width: 36px; height: 36px; } }
+
+/* подпись охвата: обязательна на видном месте, поэтому не «бейдж», а заметка с линией слева */
+.scope-note { border-left: 2px solid var(--ink); padding: .15rem 0 .15rem .85rem; font-size: 14px; line-height: 1.45; color: var(--muted); }
+
+/* пункты листа-меню на мобильном: крупные цели касания, текущая глава отмечена линией */
+.sheet-link { display: flex; align-items: center; min-height: 48px; padding: 0 .9rem; border-radius: 10px; font-size: 17px; font-weight: 500; color: var(--muted); }
+.sheet-link:hover { color: var(--ink); background: var(--wash); }
+.sheet-link[aria-current] { color: var(--ink); box-shadow: inset 2px 0 0 var(--ink); border-radius: 0 10px 10px 0; }
+
+/* заготовка на время загрузки варианта: той же формы, без вращающихся индикаторов */
+.skeleton { border-radius: 14px; background: var(--wash); animation: skel 1.4s ease-in-out infinite; }
+@keyframes skel { 50% { opacity: .55; } }
+
+/* сеть первого экрана */
+.net-edge { stroke: var(--edge); transition: opacity .25s; }
+.net-node { stroke: var(--paper); stroke-width: 1.5px; vector-effect: non-scaling-stroke; transition: opacity .25s; }
+.net.focus .net-edge { opacity: .25; }
+.net.focus .net-edge.on { opacity: 1; stroke: var(--ink); stroke-opacity: .35; }
+.net.focus .net-node:not(.on) { opacity: .16; }
+
+/* смена пары: полосы и сегменты меняют размер, названия МО сменяются сдвигом */
+/* Снимок перехода не перекрывает действующие кнопки и вкладки. */
+::view-transition { pointer-events: none; }
+::view-transition-group(*) { animation-duration: 520ms; animation-timing-function: cubic-bezier(.2, .8, .2, 1); }
+::view-transition-old(.name-out) { animation: 220ms ease-in both name-out; }
+::view-transition-new(.name-in) { animation: 360ms 80ms cubic-bezier(.2, .8, .2, 1) both name-in; }
+@keyframes name-out { to { opacity: 0; transform: translateY(-8px); } }
+@keyframes name-in { from { opacity: 0; transform: translateY(10px); } }
+/* смена варианта: страницу целиком не растворяем, двигаются только названные элементы (подпись варианта, полосы пары) */
+::view-transition-old(root), ::view-transition-new(root) { animation: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; }
+  .skeleton { animation: none; }
+  ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
+}
+
+
+/* ================= плакатный стиль (07.10): поверх прежней системы, разметка разделов не меняется ================= */
+[data-chapter]::before { height: 2px; background: var(--ink); }
+.chapter-title { font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: -0.005em; line-height: .92;
+  font-size: clamp(40px, calc(5.4 * var(--vwu)), 84px); max-width: 20ch; }
+.chapter-title--sm { font-size: clamp(34px, calc(3.8 * var(--vwu)), 58px); }
+.chapter-lede { color: var(--muted); }
+.scope-note { border-left-color: var(--ink); color: var(--ink); }
+/* карточки: рамка, без скруглений и теней */
+main [class~="bg-surface"][class~="rounded-lg"], main [class~="bg-surface"][class~="rounded-xl"] { border: 2px solid var(--ink); border-radius: 0 !important; box-shadow: none !important; }
+main .rounded-lg, main .rounded-md { border-radius: 0; }
+/* кнопки */
+.btn { border-radius: 0; font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: .02em; font-size: 17px; border: 2px solid var(--ink); }
+.btn-solid { background: var(--mark); color: var(--ink); }
+.btn-solid:hover { background: var(--ink); color: #fff; }
+.btn-line:hover { background: var(--mark); color: var(--ink); }
+.step-btn { border-radius: 0; border: 2px solid var(--ink); }
+.skeleton { border-radius: 0; }
+/* шапка */
+[data-site-header] { background: #fff !important; border-bottom: 2px solid var(--ink) !important; backdrop-filter: none !important; }
+[data-site-header] nav a { font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: .03em; font-size: 15px; color: var(--ink); }
+[data-site-header] [aria-current="true"], [data-site-header] [aria-current="location"] { background: var(--mark); }
+/* сеть: тысячи связей одним контуром */
+.net-edges { fill: none; stroke: var(--edge); stroke-width: .6; vector-effect: non-scaling-stroke; transition: opacity .25s; }
+.net-edges-on { fill: none; stroke: var(--ink); stroke-opacity: .28; stroke-width: .8; vector-effect: non-scaling-stroke; }
+.net.focus .net-edges { opacity: .35; }
+.net-many .net-node { stroke: none; }
+.net-many .net-node.on { stroke: none; }
+/* сравнение профилей групп */
+.pc-cat { font: 800 19px var(--display); text-transform: uppercase; fill: var(--ink); }
+.pc-sub { font: 11px var(--font-mono); fill: var(--muted); }
+.pc-val { font: 600 12px var(--font-mono); fill: var(--ink); paint-order: stroke; stroke: #fff; stroke-width: 3px; }
+.pc-ratio { font: 800 30px var(--display); fill: var(--ink); }
+
+.section-controls { position: relative; z-index: 2; }
+
+/* масштаб под экран (src/landing/zoom.ts): #root увеличивается через zoom; vh/vw в zoom не пересчитываются, поэтому делятся на --z */
+:root { --z: 1; --svh: calc(100svh / var(--z)); --vwu: calc(1vw / var(--z)); --vw100: calc(100vw / var(--z)); }
+#root { zoom: var(--z); }

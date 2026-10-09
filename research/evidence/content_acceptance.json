@@ -1,0 +1,1792 @@
+{
+  "UTC": "2026-10-09T12:20:22.892862+00:00",
+  "status": "PASS_LOCAL_CONTENT_DELTA_PENDING_ROOT_REVIEW",
+  "passed": true,
+  "source_revision": "C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/local_content_r00",
+  "candidate_revision": "C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/fresh_audit_20261009_r00/current_content_r01",
+  "changes": [
+    "SCI-01: corrected X6 nearest-group wording in all 10 cards and aggregate MD/JSON without numeric changes",
+    "SCI-02: current full-control acceptance updated from final positive receipts; scientific limitations retained",
+    "Moved Markdown references rebound to existing absolute paths",
+    "Old QA/builders/draft figures excluded; immutable historical receipts linked in provenance",
+    "README amendment: use permanent external ROOT_CURRENT_ACCEPTANCE.json and requirements/CURRENT_REVISIONS_REVIEW.json status rule without links to future files"
+  ],
+  "unchanged": [
+    "all 10 card names, labels, numerical fields, examples and nearest-group choices",
+    "25 parameter numeric payloads except current acceptance flag and 445 receipt count",
+    "r01 figure bytes",
+    "all old local_content files and receipts"
+  ],
+  "checks_passed": 425,
+  "checks": [
+    {
+      "name": "output_absent_or_only_this_builder_files",
+      "passed": true
+    },
+    {
+      "name": "card_has_target:cluster_cards\\CLUSTER_CARDS.json",
+      "passed": true
+    },
+    {
+      "name": "card_has_target:cluster_cards\\CLUSTER_CARDS.md",
+      "passed": true
+    },
+    {
+      "name": "card_has_target:cluster_cards\\G0.json",
+      "passed": true
+    },
+    {
+      "name": "card_has_target:cluster_cards\\G0.md",
+      "passed": true
+    },
+    {
+      "name": "card_has_target:cluster_cards\\G1.json",
+      "passed": true
+    },
+    {
+      "name": "card_has_target:cluster_cards\\G1.md",
+      "passed": true
+    },
+    {
+      "name": "card_has_target:cluster_cards\\G2.json",
+      "passed": true
+    },
+    {
+      "name": "card_has_target:cluster_cards\\G2.md",
+      "passed": true
+    },
+    {
+      "name": "card_has_target:cluster_cards\\G3.json",
+      "passed": true
+    },
+    {
+      "name": "card_has_target:cluster_cards\\G3.md",
+      "passed": true
+    },
+    {
+      "name": "card_has_target:cluster_cards\\G4.json",
+      "passed": true
+    },
+    {
+      "name": "card_has_target:cluster_cards\\G4.md",
+      "passed": true
+    },
+    {
+      "name": "card_has_target:cluster_cards\\G5.json",
+      "passed": true
+    },
+    {
+      "name": "card_has_target:cluster_cards\\G5.md",
+      "passed": true
+    },
+    {
+      "name": "card_has_target:cluster_cards\\G6.json",
+      "passed": true
+    },
+    {
+      "name": "card_has_target:cluster_cards\\G6.md",
+      "passed": true
+    },
+    {
+      "name": "card_has_target:cluster_cards\\G7.json",
+      "passed": true
+    },
+    {
+      "name": "card_has_target:cluster_cards\\G7.md",
+      "passed": true
+    },
+    {
+      "name": "card_has_target:cluster_cards\\G8.json",
+      "passed": true
+    },
+    {
+      "name": "card_has_target:cluster_cards\\G8.md",
+      "passed": true
+    },
+    {
+      "name": "card_has_target:cluster_cards\\G9.json",
+      "passed": true
+    },
+    {
+      "name": "card_has_target:cluster_cards\\G9.md",
+      "passed": true
+    },
+    {
+      "name": "positive_final_receipts",
+      "passed": true
+    },
+    {
+      "name": "card_structure_and_all_numeric_values_preserved:G0.json",
+      "passed": true
+    },
+    {
+      "name": "card_structure_and_all_numeric_values_preserved:G1.json",
+      "passed": true
+    },
+    {
+      "name": "card_structure_and_all_numeric_values_preserved:G2.json",
+      "passed": true
+    },
+    {
+      "name": "card_structure_and_all_numeric_values_preserved:G3.json",
+      "passed": true
+    },
+    {
+      "name": "card_structure_and_all_numeric_values_preserved:G4.json",
+      "passed": true
+    },
+    {
+      "name": "card_structure_and_all_numeric_values_preserved:G5.json",
+      "passed": true
+    },
+    {
+      "name": "card_structure_and_all_numeric_values_preserved:G6.json",
+      "passed": true
+    },
+    {
+      "name": "card_structure_and_all_numeric_values_preserved:G7.json",
+      "passed": true
+    },
+    {
+      "name": "card_structure_and_all_numeric_values_preserved:G8.json",
+      "passed": true
+    },
+    {
+      "name": "card_structure_and_all_numeric_values_preserved:G9.json",
+      "passed": true
+    },
+    {
+      "name": "card_structure_and_all_numeric_values_preserved:CLUSTER_CARDS.json",
+      "passed": true
+    },
+    {
+      "name": "card_MD_only_approved_phrase_or_aggregate_status_changed:G0.md",
+      "passed": true
+    },
+    {
+      "name": "card_MD_only_approved_phrase_or_aggregate_status_changed:G1.md",
+      "passed": true
+    },
+    {
+      "name": "card_MD_only_approved_phrase_or_aggregate_status_changed:G2.md",
+      "passed": true
+    },
+    {
+      "name": "card_MD_only_approved_phrase_or_aggregate_status_changed:G3.md",
+      "passed": true
+    },
+    {
+      "name": "card_MD_only_approved_phrase_or_aggregate_status_changed:G4.md",
+      "passed": true
+    },
+    {
+      "name": "card_MD_only_approved_phrase_or_aggregate_status_changed:G5.md",
+      "passed": true
+    },
+    {
+      "name": "card_MD_only_approved_phrase_or_aggregate_status_changed:G6.md",
+      "passed": true
+    },
+    {
+      "name": "card_MD_only_approved_phrase_or_aggregate_status_changed:G7.md",
+      "passed": true
+    },
+    {
+      "name": "card_MD_only_approved_phrase_or_aggregate_status_changed:G8.md",
+      "passed": true
+    },
+    {
+      "name": "card_MD_only_approved_phrase_or_aggregate_status_changed:G9.md",
+      "passed": true
+    },
+    {
+      "name": "card_MD_only_approved_phrase_or_aggregate_status_changed:CLUSTER_CARDS.md",
+      "passed": true
+    },
+    {
+      "name": "table_numeric_values_preserved:P01",
+      "passed": true
+    },
+    {
+      "name": "table_numeric_values_preserved:P02",
+      "passed": true
+    },
+    {
+      "name": "table_numeric_values_preserved:P03",
+      "passed": true
+    },
+    {
+      "name": "table_numeric_values_preserved:P04",
+      "passed": true
+    },
+    {
+      "name": "table_numeric_values_preserved:P05",
+      "passed": true
+    },
+    {
+      "name": "table_numeric_values_preserved:P06",
+      "passed": true
+    },
+    {
+      "name": "table_numeric_values_preserved:P07",
+      "passed": true
+    },
+    {
+      "name": "table_numeric_values_preserved:P08",
+      "passed": true
+    },
+    {
+      "name": "table_numeric_values_preserved:P09",
+      "passed": true
+    },
+    {
+      "name": "table_numeric_values_preserved:P10",
+      "passed": true
+    },
+    {
+      "name": "table_numeric_values_preserved:P11",
+      "passed": true
+    },
+    {
+      "name": "table_numeric_values_preserved:P12",
+      "passed": true
+    },
+    {
+      "name": "table_numeric_values_preserved:P13",
+      "passed": true
+    },
+    {
+      "name": "table_numeric_values_preserved:P14",
+      "passed": true
+    },
+    {
+      "name": "table_numeric_values_preserved:P15",
+      "passed": true
+    },
+    {
+      "name": "table_numeric_values_preserved:P16",
+      "passed": true
+    },
+    {
+      "name": "table_numeric_values_preserved:P17",
+      "passed": true
+    },
+    {
+      "name": "table_numeric_values_preserved:P18",
+      "passed": true
+    },
+    {
+      "name": "table_numeric_values_preserved:P19",
+      "passed": true
+    },
+    {
+      "name": "table_numeric_values_preserved:P20",
+      "passed": true
+    },
+    {
+      "name": "table_numeric_values_preserved:P21",
+      "passed": true
+    },
+    {
+      "name": "table_numeric_values_preserved:P22",
+      "passed": true
+    },
+    {
+      "name": "table_numeric_values_preserved:P23",
+      "passed": true
+    },
+    {
+      "name": "table_numeric_values_preserved:P24",
+      "passed": true
+    },
+    {
+      "name": "table_numeric_values_preserved:P25",
+      "passed": true
+    },
+    {
+      "name": "no_jury_scores_assigned",
+      "passed": true
+    },
+    {
+      "name": "table_source_hash:requirements",
+      "passed": true
+    },
+    {
+      "name": "table_source_hash:decision",
+      "passed": true
+    },
+    {
+      "name": "table_source_hash:methods",
+      "passed": true
+    },
+    {
+      "name": "table_source_hash:old_current",
+      "passed": true
+    },
+    {
+      "name": "table_source_hash:terms",
+      "passed": true
+    },
+    {
+      "name": "table_source_hash:rc68_facts",
+      "passed": true
+    },
+    {
+      "name": "table_source_hash:rc68_review",
+      "passed": true
+    },
+    {
+      "name": "table_source_hash:addendum_data",
+      "passed": true
+    },
+    {
+      "name": "table_source_hash:addendum_acceptance",
+      "passed": true
+    },
+    {
+      "name": "table_source_hash:dynamics",
+      "passed": true
+    },
+    {
+      "name": "table_source_hash:dynamics_facts",
+      "passed": true
+    },
+    {
+      "name": "table_source_hash:dynamics_review",
+      "passed": true
+    },
+    {
+      "name": "table_source_hash:analogue_result",
+      "passed": true
+    },
+    {
+      "name": "table_source_hash:analogue_summary",
+      "passed": true
+    },
+    {
+      "name": "table_source_hash:analogue_review",
+      "passed": true
+    },
+    {
+      "name": "table_source_hash:practical_cases",
+      "passed": true
+    },
+    {
+      "name": "table_source_hash:case_review",
+      "passed": true
+    },
+    {
+      "name": "table_source_hash:external_validation",
+      "passed": true
+    },
+    {
+      "name": "table_source_hash:external_acceptance",
+      "passed": true
+    },
+    {
+      "name": "table_source_hash:report",
+      "passed": true
+    },
+    {
+      "name": "table_source_hash:slides",
+      "passed": true
+    },
+    {
+      "name": "table_source_hash:corrected_types",
+      "passed": true
+    },
+    {
+      "name": "table_source_hash:type_acceptance",
+      "passed": true
+    },
+    {
+      "name": "table_source_hash:economic_result",
+      "passed": true
+    },
+    {
+      "name": "table_source_hash:methods_facts",
+      "passed": true
+    },
+    {
+      "name": "table_source_hash:RC68_operations",
+      "passed": true
+    },
+    {
+      "name": "table_source_hash:VM_status_snapshot",
+      "passed": true
+    },
+    {
+      "name": "table_source_hash:FREEZE",
+      "passed": true
+    },
+    {
+      "name": "table_source_hash:validation_reference",
+      "passed": true
+    },
+    {
+      "name": "table_source_hash:acceptance_checker_readiness",
+      "passed": true
+    },
+    {
+      "name": "table_source_hash:final_root_acceptance",
+      "passed": true
+    },
+    {
+      "name": "table_source_hash:final_acceptance",
+      "passed": true
+    },
+    {
+      "name": "figure_bytes_preserved:figures\\r01\\FIGURE_DATA.json",
+      "passed": true
+    },
+    {
+      "name": "figure_bytes_preserved:figures\\r01\\RC68_model_tradeoffs.png",
+      "passed": true
+    },
+    {
+      "name": "figure_bytes_preserved:figures\\r01\\RC68_model_tradeoffs.svg",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:COMPETITIVE_POSITION.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/competitors/CAPABILITIES.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:COMPETITIVE_POSITION.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/competitors/sources/GITHUB_REFRESH.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:COMPETITIVE_POSITION.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/competitors/receipt.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:COMPETITIVE_POSITION.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:COMPETITIVE_POSITION.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/scientific_review/actual_r01/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:COMPETITIVE_POSITION.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/interpretation_addendum/CLUSTER_EVIDENCE.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:COMPETITIVE_POSITION.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_closure_20261008_r00/LOCAL_RESULT.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:COMPETITIVE_POSITION.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/CURRENT_RESULT.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:COMPETITIVE_POSITION.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/content_readiness/FINAL_CONTENT_REQUIREMENTS.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:COMPETITIVE_POSITION.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/FINAL_ROOT_ACCEPTANCE_r00.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:COMPETITIVE_POSITION.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/final_acceptance_review/FINAL_ACCEPTANCE_r00.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:README.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/FINAL_ROOT_ACCEPTANCE_r00.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:README.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/final_acceptance_review/FINAL_ACCEPTANCE_r00.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:README.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/fresh_audit_20261009_r00/current_content_r01/cluster_cards/CLUSTER_CARDS.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:README.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/fresh_audit_20261009_r00/current_content_r01/jury_tables/TABLES.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:README.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/fresh_audit_20261009_r00/current_content_r01/COMPETITIVE_POSITION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:README.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/fresh_audit_20261009_r00/current_content_r01/integration_text/README.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:README.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/fresh_audit_20261009_r00/current_content_r01/figures/r01/RC68_model_tradeoffs.png",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:README.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/fresh_audit_20261009_r00/current_content_r01/figures/r01/RC68_model_tradeoffs.svg",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:README.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/fresh_audit_20261009_r00/current_content_r01/provenance/README.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/profiles/PROFILE_CLAIMS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/interpretation_addendum/CLUSTER_EVIDENCE.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/meaning/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/context/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/use_cases/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/profiles/PROFILE_CLAIMS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/interpretation_addendum/CLUSTER_EVIDENCE.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/meaning/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/context/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/profiles/PROFILE_CLAIMS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/interpretation_addendum/CLUSTER_EVIDENCE.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/meaning/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/context/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/profiles/PROFILE_CLAIMS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/interpretation_addendum/CLUSTER_EVIDENCE.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/meaning/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/context/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/use_cases/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/profiles/PROFILE_CLAIMS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/interpretation_addendum/CLUSTER_EVIDENCE.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/meaning/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/context/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/profiles/PROFILE_CLAIMS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/interpretation_addendum/CLUSTER_EVIDENCE.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/meaning/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/context/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/profiles/PROFILE_CLAIMS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/interpretation_addendum/CLUSTER_EVIDENCE.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/meaning/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/context/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/use_cases/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/profiles/PROFILE_CLAIMS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/interpretation_addendum/CLUSTER_EVIDENCE.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/meaning/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/context/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/use_cases/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/profiles/PROFILE_CLAIMS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/interpretation_addendum/CLUSTER_EVIDENCE.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/meaning/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/context/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/profiles/PROFILE_CLAIMS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/interpretation_addendum/CLUSTER_EVIDENCE.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/meaning/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/context/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\CLUSTER_CARDS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G0.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/profiles/PROFILE_CLAIMS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G0.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/interpretation_addendum/CLUSTER_EVIDENCE.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G0.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/meaning/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G0.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/context/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G0.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G0.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/use_cases/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G1.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/profiles/PROFILE_CLAIMS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G1.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/interpretation_addendum/CLUSTER_EVIDENCE.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G1.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/meaning/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G1.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/context/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G1.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G2.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/profiles/PROFILE_CLAIMS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G2.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/interpretation_addendum/CLUSTER_EVIDENCE.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G2.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/meaning/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G2.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/context/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G2.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G3.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/profiles/PROFILE_CLAIMS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G3.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/interpretation_addendum/CLUSTER_EVIDENCE.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G3.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/meaning/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G3.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/context/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G3.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G3.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/use_cases/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G4.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/profiles/PROFILE_CLAIMS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G4.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/interpretation_addendum/CLUSTER_EVIDENCE.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G4.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/meaning/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G4.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/context/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G4.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G5.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/profiles/PROFILE_CLAIMS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G5.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/interpretation_addendum/CLUSTER_EVIDENCE.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G5.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/meaning/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G5.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/context/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G5.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G6.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/profiles/PROFILE_CLAIMS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G6.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/interpretation_addendum/CLUSTER_EVIDENCE.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G6.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/meaning/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G6.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/context/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G6.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G6.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/use_cases/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G7.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/profiles/PROFILE_CLAIMS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G7.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/interpretation_addendum/CLUSTER_EVIDENCE.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G7.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/meaning/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G7.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/context/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G7.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G7.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/use_cases/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G8.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/profiles/PROFILE_CLAIMS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G8.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/interpretation_addendum/CLUSTER_EVIDENCE.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G8.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/meaning/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G8.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/context/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G8.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G9.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/profiles/PROFILE_CLAIMS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G9.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/interpretation_addendum/CLUSTER_EVIDENCE.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G9.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/meaning/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G9.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/context/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:cluster_cards\\G9.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\01_SCOPE.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/report/REPORT.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\01_SCOPE.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\01_SCOPE.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/report/REPORT.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\01_SCOPE.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/methods/METHODS.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\01_SCOPE.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/content_readiness/FINAL_CONTENT_REQUIREMENTS.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\01_SCOPE.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/scientific_review/actual_r01/REVIEW.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\01_SCOPE.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/FINAL_ROOT_ACCEPTANCE_r00.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\01_SCOPE.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/final_acceptance_review/FINAL_ACCEPTANCE_r00.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\02_NCUT_SSE_K.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/report/REPORT.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\02_NCUT_SSE_K.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\02_NCUT_SSE_K.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/methods/K_SELECTION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\02_NCUT_SSE_K.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/detailed_typology_validation_20261007_r00/semantic_correction_r01/summary/stability_by_method_K.csv",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\02_NCUT_SSE_K.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/scientific_review/actual_r01/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\02_NCUT_SSE_K.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/report/REPORT.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\02_NCUT_SSE_K.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/content_readiness/FINAL_CONTENT_REQUIREMENTS.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\03_STABILITY.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/report/REPORT.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\03_STABILITY.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/content_readiness/FINAL_CONTENT_REQUIREMENTS.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\03_STABILITY.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/methods/K_SELECTION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\03_STABILITY.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/detailed_typology_validation_20261007_r00/semantic_correction_r01/summary/stability_by_method_K.csv",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\03_STABILITY.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/scientific_review/actual_r01/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\03_STABILITY.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/scientific_review/actual_r01/REVIEW.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\03_STABILITY.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/interpretation_addendum/CLUSTER_EVIDENCE.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\03_STABILITY.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\04_ADMINISTRATIVE.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/report/REPORT.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\04_ADMINISTRATIVE.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\04_ADMINISTRATIVE.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/scientific_review/actual_r01/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\04_ADMINISTRATIVE.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/interpretation_addendum/CLUSTER_EVIDENCE.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\04_ADMINISTRATIVE.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_closure_20261008_r00/LOCAL_RESULT.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\04_ADMINISTRATIVE.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/content_readiness/FINAL_CONTENT_REQUIREMENTS.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\05_UTILITY_AND_DYNAMICS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/report/REPORT.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\05_UTILITY_AND_DYNAMICS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_closure_20261008_r00/LOCAL_RESULT.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\05_UTILITY_AND_DYNAMICS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_closure_20261008_r00/analogue_test/corrected_r02/SUMMARY.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\05_UTILITY_AND_DYNAMICS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_closure_20261008_r00/analogue_test/corrected_r02/COVERAGE.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\05_UTILITY_AND_DYNAMICS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_closure_20261008_r00/analogue_test/corrected_r02/RESULT.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\05_UTILITY_AND_DYNAMICS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_closure_20261008_r00/review_analogue/REVIEW.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\05_UTILITY_AND_DYNAMICS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_closure_20261008_r00/dynamics/RESULT.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\05_UTILITY_AND_DYNAMICS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_closure_20261008_r00/dynamics_independent_review/REVIEW.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\05_UTILITY_AND_DYNAMICS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/report/REPORT.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\05_UTILITY_AND_DYNAMICS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/external/EXTERNAL_VALIDATION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\05_UTILITY_AND_DYNAMICS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\05_UTILITY_AND_DYNAMICS.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/content_readiness/FINAL_CONTENT_REQUIREMENTS.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\README.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/FINAL_ROOT_ACCEPTANCE_r00.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\README.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/final_acceptance_review/FINAL_ACCEPTANCE_r00.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:integration_text\\README.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/fresh_audit_20261009_r00/current_content_r01/provenance/README.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/FINAL_ROOT_ACCEPTANCE_r00.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/final_acceptance_review/FINAL_ACCEPTANCE_r00.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/methods/METHODS.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/methods/METHODS.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/CURRENT_RESULT.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_closure_20261008_r00/tz_review/input_snapshots/T01_ТЗ_кластеризация_СберИндекс_2026.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/report/REPORT.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/methods/METHODS.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/methods/METHODS.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/CURRENT_RESULT.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/interpretation_addendum/CLUSTER_EVIDENCE.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/CURRENT_RESULT.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/methods/METHODS.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/report/REPORT.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/CURRENT_RESULT.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/methods/SUMMARY_FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/methods/METHODS.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/FINAL_ROOT_ACCEPTANCE_r00.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/final_acceptance_review/FINAL_ACCEPTANCE_r00.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/methods/METHODS.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/methods/METHODS.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/methods/SUMMARY_FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/methods/SUMMARY_FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/CURRENT_RESULT.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/methods/METHODS.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/methods/SUMMARY_FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/methods/METHODS.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/CURRENT_RESULT.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/methods/SUMMARY_FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/methods/METHODS.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/CURRENT_RESULT.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/methods/SUMMARY_FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/methods/METHODS.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/CURRENT_RESULT.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/tz_review/FINAL_OPERATIONAL_ACCEPTANCE_R01.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/scientific_review/actual_r01/REVIEW.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/scientific_review/actual_r01/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/scientific_review/actual_r01/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/scientific_review/actual_r01/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/content_readiness/FINAL_CONTENT_REQUIREMENTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/scientific_review/actual_r01/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/scientific_review/actual_r01/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/scientific_review/actual_r01/REVIEW.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/interpretation_addendum/CLUSTER_EVIDENCE.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/tz_review/INTERPRETATION_STATUS_DELTA_REVIEW.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/RESULT.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/content_readiness/FINAL_CONTENT_REQUIREMENTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/interpretation_addendum/CLUSTER_EVIDENCE.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_closure_20261008_r00/dynamics/RESULT.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_closure_20261008_r00/dynamics/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_closure_20261008_r00/dynamics_independent_review/REVIEW.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/content_readiness/FINAL_CONTENT_REQUIREMENTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_closure_20261008_r00/analogue_test/corrected_r02/RESULT.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_closure_20261008_r00/analogue_test/corrected_r02/SUMMARY.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_closure_20261008_r00/review_analogue/REVIEW.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/external/EXTERNAL_VALIDATION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/scientific_review/external_r01/receipt.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/content_readiness/FINAL_CONTENT_REQUIREMENTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/use_cases/CASES.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/ROOT_CASE_REVIEW.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/RESULT.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/CURRENT_RESULT.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/vm_ready_r01/FREEZE.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/vm_validation/REFERENCE.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/FINAL_ROOT_ACCEPTANCE_r00.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/final_acceptance_review/FINAL_ACCEPTANCE_r00.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/methods/METHODS.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/CURRENT_RESULT.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/content_readiness/FINAL_CONTENT_REQUIREMENTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/FINAL_ROOT_ACCEPTANCE_r00.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/final_acceptance_review/FINAL_ACCEPTANCE_r00.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/methods/METHODS.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/methods/SUMMARY_FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_closure_20261008_r00/dynamics/RESULT.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/CURRENT_RESULT.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/content_readiness/FINAL_CONTENT_REQUIREMENTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/methods/METHODS.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/methods/SUMMARY_FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/scientific_review/actual_r01/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/content_readiness/FINAL_CONTENT_REQUIREMENTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/methods/METHODS.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/methods/SUMMARY_FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/scientific_review/actual_r01/FACTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/CURRENT_RESULT.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/content_readiness/FINAL_CONTENT_REQUIREMENTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/FINAL_ROOT_ACCEPTANCE_r00.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/final_acceptance_review/FINAL_ACCEPTANCE_r00.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/interpretation_addendum/CLUSTER_EVIDENCE.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/scientific_review/actual_r01/REVIEW.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/tz_review/FINAL_OPERATIONAL_ACCEPTANCE_R01.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_closure_20261008_r00/dynamics/RESULT.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_closure_20261008_r00/analogue_test/corrected_r02/RESULT.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/external/EXTERNAL_VALIDATION.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/use_cases/CASES.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/content_readiness/FINAL_CONTENT_REQUIREMENTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/FINAL_ROOT_ACCEPTANCE_r00.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/final_acceptance_review/FINAL_ACCEPTANCE_r00.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/report/REPORT.md",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/local_finalization_20261008_r00/presentation/SLIDE_SOURCES.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/interpretation_addendum/CLUSTER_EVIDENCE.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:jury_tables\\TABLES.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/content_readiness/FINAL_CONTENT_REQUIREMENTS.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:provenance\\README.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/local_content_r00/ROOT_CONTENT_ACCEPTANCE.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:provenance\\README.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/local_content_r00/cluster_cards/QA.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:provenance\\README.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/local_content_r00/integration_text/SOURCE_QA.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:provenance\\README.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/local_content_r00/integration_text/REVIEW_COMPETITION.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:provenance\\README.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/local_content_r00/jury_tables/QA.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:provenance\\README.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/local_content_r00/jury_tables/FIGURE_REVIEW.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:provenance\\README.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/local_content_r00/jury_tables/STATUS_USED.json",
+      "passed": true
+    },
+    {
+      "name": "markdown_link_exists:provenance\\README.md:C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/fresh_audit_20261009_r00/science/REVIEW.md",
+      "passed": true
+    },
+    {
+      "name": "all_historical_files_unchanged",
+      "passed": true
+    },
+    {
+      "name": "no_draft_figures",
+      "passed": true
+    },
+    {
+      "name": "no_historical_builders_as_current",
+      "passed": true
+    },
+    {
+      "name": "no_stale_fullcontrol_pending_claim:COMPETITIVE_POSITION.md",
+      "passed": true
+    },
+    {
+      "name": "no_stale_fullcontrol_pending_claim:README.md",
+      "passed": true
+    },
+    {
+      "name": "no_stale_fullcontrol_pending_claim:cluster_cards/CLUSTER_CARDS.md",
+      "passed": true
+    },
+    {
+      "name": "no_stale_fullcontrol_pending_claim:cluster_cards/G0.md",
+      "passed": true
+    },
+    {
+      "name": "no_stale_fullcontrol_pending_claim:cluster_cards/G1.md",
+      "passed": true
+    },
+    {
+      "name": "no_stale_fullcontrol_pending_claim:cluster_cards/G2.md",
+      "passed": true
+    },
+    {
+      "name": "no_stale_fullcontrol_pending_claim:cluster_cards/G3.md",
+      "passed": true
+    },
+    {
+      "name": "no_stale_fullcontrol_pending_claim:cluster_cards/G4.md",
+      "passed": true
+    },
+    {
+      "name": "no_stale_fullcontrol_pending_claim:cluster_cards/G5.md",
+      "passed": true
+    },
+    {
+      "name": "no_stale_fullcontrol_pending_claim:cluster_cards/G6.md",
+      "passed": true
+    },
+    {
+      "name": "no_stale_fullcontrol_pending_claim:cluster_cards/G7.md",
+      "passed": true
+    },
+    {
+      "name": "no_stale_fullcontrol_pending_claim:cluster_cards/G8.md",
+      "passed": true
+    },
+    {
+      "name": "no_stale_fullcontrol_pending_claim:cluster_cards/G9.md",
+      "passed": true
+    },
+    {
+      "name": "no_stale_fullcontrol_pending_claim:integration_text/01_SCOPE.md",
+      "passed": true
+    },
+    {
+      "name": "no_stale_fullcontrol_pending_claim:integration_text/02_NCUT_SSE_K.md",
+      "passed": true
+    },
+    {
+      "name": "no_stale_fullcontrol_pending_claim:integration_text/03_STABILITY.md",
+      "passed": true
+    },
+    {
+      "name": "no_stale_fullcontrol_pending_claim:integration_text/04_ADMINISTRATIVE.md",
+      "passed": true
+    },
+    {
+      "name": "no_stale_fullcontrol_pending_claim:integration_text/05_UTILITY_AND_DYNAMICS.md",
+      "passed": true
+    },
+    {
+      "name": "no_stale_fullcontrol_pending_claim:integration_text/README.md",
+      "passed": true
+    },
+    {
+      "name": "no_stale_fullcontrol_pending_claim:jury_tables/TABLES.md",
+      "passed": true
+    },
+    {
+      "name": "no_stale_fullcontrol_pending_claim:provenance/README.md",
+      "passed": true
+    },
+    {
+      "name": "README_only_permanent_external_status_rule_replacement",
+      "passed": true
+    },
+    {
+      "name": "all_other_38_hashed_outputs_unchanged_after_README_amendment",
+      "passed": true
+    }
+  ],
+  "source_receipts": {
+    "root": {
+      "path": "workstreams/research_vm_20261009_r00/FINAL_ROOT_ACCEPTANCE_r00.json",
+      "absolute_path": "C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/FINAL_ROOT_ACCEPTANCE_r00.json",
+      "sha256": "8a96c8f59a29e8b628b1a978de319aa5b653af4722894c47e4fe77f136816ef2",
+      "bytes": 2761
+    },
+    "independent": {
+      "path": "workstreams/research_vm_20261009_r00/final_acceptance_review/FINAL_ACCEPTANCE_r00.json",
+      "absolute_path": "C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/final_acceptance_review/FINAL_ACCEPTANCE_r00.json",
+      "sha256": "600df3a52ee742d8e9cb187758dbc08244b1fe5b404b20a6fd28999c0379015a",
+      "bytes": 43880
+    }
+  },
+  "output_sha256_excluding_this_receipt": {
+    "COMPETITIVE_POSITION.md": "d9e0df90df2c0cbc050235a94365a76b729637f1a36d894855bd81a8796ede5e",
+    "README.md": "ae46eb8cef33e5e013c1ab4f91c4b5c068eb2cbccab846a5d632a88b65d27672",
+    "cluster_cards/CLUSTER_CARDS.json": "60f92da22167c42ad1db96830f0f062630c5a70b684da2e745af1adce85d4a16",
+    "cluster_cards/CLUSTER_CARDS.md": "e1f009d4d820fa916c8b1cb0d059e1f8ccba562a2b51dc520506334407f34e31",
+    "cluster_cards/G0.json": "bab339c3adee04bf3608fea69d8dede9677571398404ff8e2d29b2d96392c63d",
+    "cluster_cards/G0.md": "f7106c2519885d771dfa53748646b0f47e41d80fc2af24a693d1857fa515c3ef",
+    "cluster_cards/G1.json": "26441975d00b19625b3fbd5741a3c7916bb7a869bb995a7133ea5cd94fca3001",
+    "cluster_cards/G1.md": "e0dbd3671f708fc9e83e04771a7f790d28f2b9fb51809e5e3dac4e8d404b5655",
+    "cluster_cards/G2.json": "e5773a4ae691992498531b08c6687e23fff5e9928b6721a194468ee56ad437cc",
+    "cluster_cards/G2.md": "ecfa6c44a8240bafb3504ed05c9141e201c909641c2129d435a133a26d8233a9",
+    "cluster_cards/G3.json": "951aa00592acd9ff3682acbb8f6ab23c29662bfd8c328950aa1364a58e3e9d8c",
+    "cluster_cards/G3.md": "b5fbed05395a9cbab5a1915604cc5928444a0edffa6661c2e0ca9e5b6c08cf17",
+    "cluster_cards/G4.json": "bdf4ab6aaeeece473c8e7fdf1e770dde934f679874bdb831c271e44ba4669f69",
+    "cluster_cards/G4.md": "2840a0b8407da70d493df1071757e7f9c40e7fb48e1ad9e89f93ebf40b35b80d",
+    "cluster_cards/G5.json": "b02b29dc07b17380e1e85c58081f1efd472543c7bf0f84c53d45f67b29551a2b",
+    "cluster_cards/G5.md": "ef3b9dad1299489c069b4229f70c5f5d36b22700193d1cf27d400d5aa37165c3",
+    "cluster_cards/G6.json": "fa3d87e0fc3f851b957fcf7b30a4b925d87a5e2f793608460257719c99b6f7d7",
+    "cluster_cards/G6.md": "5ef5b22b224cc68ea086e622d9ca75d614734cdc4ccc4f0e04823d32db0581b9",
+    "cluster_cards/G7.json": "06ced5bd6c693ba37e66120e8d890058f69af13c9eaf2603ac57952e529ff7e5",
+    "cluster_cards/G7.md": "16dba9ea3aa760d6aaf5f79ee3444ec7503916131660a3041f82e636c9e34363",
+    "cluster_cards/G8.json": "564ab42beb524afa7119425664e01edf2139e500b6779e9eb4772a7703ee47fa",
+    "cluster_cards/G8.md": "991021e14f658d2270e221b29e28ff18afb0555d2b3a6fcce8baf64b113f13f7",
+    "cluster_cards/G9.json": "add336fb5040060fdae190195d3e60251a4c3b3cf99cb13b0519dbba356fd721",
+    "cluster_cards/G9.md": "4a193bdb185440fa321d26ead4ee190dbe3d05b795752e2aaa124f38d25e7ea3",
+    "figures/r01/FIGURE_DATA.json": "00ed4b807e6f502f15d1bfb23ffc758a06fadc70f65b2a419b0dce2b687eed4f",
+    "figures/r01/RC68_model_tradeoffs.png": "117e3ad6483b5f5a319ae432b27af854b35c5ec5e8eb450031c080d54c24597e",
+    "figures/r01/RC68_model_tradeoffs.svg": "0848da6ff6653196bfd3cc6fec119c99af0cfdac105181db3e956bf3affd9707",
+    "integration_text/01_SCOPE.md": "b3fb5941ab6c8243c7ff18f4cc84c4a811ccc348b9b176fbcd68d2db81fd3d4f",
+    "integration_text/02_NCUT_SSE_K.md": "7d6ac76932e043a3a7460df0451b141023b5f28aa3aebee9272771c73cc35a23",
+    "integration_text/03_STABILITY.md": "5d62d900ee8395f6b663a49c8e2cfc4867a94760f091760bf9b5ee2511d39ca6",
+    "integration_text/04_ADMINISTRATIVE.md": "47beac851874ddf0df618743c041bb830b31b389283b4e7d73e8b77465e5bd93",
+    "integration_text/05_UTILITY_AND_DYNAMICS.md": "edc6a004a6c7f9f0ec89ad7be77a8758cb1c888ef7b5addabf6f252f3fe00d93",
+    "integration_text/README.md": "63891e94c11d7824f91da8ab8852e2eff6d29fc3910098e99076f0a05bba630c",
+    "jury_tables/SOURCE_INDEX.json": "3346db7a210f552fce10b67eb847215c226aa21d72b1a8f809a07b50731accdd",
+    "jury_tables/STATUS_USED.json": "f855435bf0d6f63b63fa8f709ec86ceaa806233eb8873b34f43eac3e1eb8c299",
+    "jury_tables/TABLES.json": "5d2062e5e2590c56ca2bed5c7d4214352b73c709198cdf025d6592108b400750",
+    "jury_tables/TABLES.md": "5ac300c14fd29bbad4e5a570dea6ce6845d07ae7f2da5242829c49d4f35b4e77",
+    "provenance/HISTORICAL_SOURCES.json": "812a97ed1353cf8272d4eefebf6f36b45ee1fba96b272bd935de56b5d795036f",
+    "provenance/README.md": "c9fa8b642ba2517fba1b0550e5eb008f066bef6d830310a1164f76bd56b97cc7"
+  },
+  "new_fits": 0,
+  "SSH": 0,
+  "final_report_presentation_frontend_modified": false,
+  "root_candidate_acceptance": false,
+  "submission_done": false,
+  "README_status_rule_amendment": {
+    "UTC": "2026-10-09T12:22:07.929295+00:00",
+    "request": "Replace transient root-pending wording with permanent external status-receipt rule",
+    "before_SHA256": "b841e6d97a5591995c867ac1d0840b3d9f3542d602a5b76561193335967518eb",
+    "after_SHA256": "ae46eb8cef33e5e013c1ab4f91c4b5c068eb2cbccab846a5d632a88b65d27672",
+    "previous_author_receipt_SHA256": "06022f104520361f938b4a655480137084e232e1f2ce0329bc18cdac95dba975",
+    "only_README_content_changed": true,
+    "future_files_linked": false
+  }
+}

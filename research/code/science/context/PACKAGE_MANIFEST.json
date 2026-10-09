@@ -1,0 +1,66 @@
+{
+  "CODE_MANIFEST.json": {
+    "sha256": "65c2cc86fb680ea716074477484409818d7436006c74a092e81cfabe7a978793",
+    "bytes": 1175
+  },
+  "CODE_ORIGIN.json": {
+    "sha256": "09086de3010a0e15f8ef1c2f064fe5b37b6edddb173d016466cf5074644c22f0",
+    "bytes": 1787
+  },
+  "CODE_POLICY.json": {
+    "sha256": "9de6468c4341cefe797b0c8b11888051a25e0245edf4dc4acd6ee10f6761aab4",
+    "bytes": 5704
+  },
+  "input/ADMISSION_CORRECTION.json": {
+    "sha256": "06c3e062048f98e9dfc035b4400810aadc73498bec63bc37d2abb7db260f2ba0",
+    "bytes": 4606
+  },
+  "input/context2024.npz": {
+    "sha256": "9f0c47a99464db78f9d10fcf5318a43cd905b92861b44cc7123b9a099d44f6ae",
+    "bytes": 737419
+  },
+  "input/core_ID_context.csv": {
+    "sha256": "f83e8d03cb82605125bf7c288321e3f5893705511c84bd4eb8447a603ef00329",
+    "bytes": 523528
+  },
+  "input/schema.json": {
+    "sha256": "8e3a94b515db1ab54d5b0c6e061142efa3bf91105c93ee5f1ebc641348ef8ecb",
+    "bytes": 4561
+  },
+  "input/SCIENCE_PLAN.json": {
+    "sha256": "92d7b796e6d80b9f5cf828b357f51692d1a6f01ad95f53da68bd1d97fa1dce75",
+    "bytes": 6695
+  },
+  "input/SEMANTICS.md": {
+    "sha256": "843d5a629733542badb8d61b877889bdbc77d7b7a41d2ef0984d6b40d2841f61",
+    "bytes": 10674
+  },
+  "input/SOURCE_BINDING.json": {
+    "sha256": "688608183db5b76d018967d3d1a01a798da01abfbf8c348d050bd7d391f0898a",
+    "bytes": 5067
+  },
+  "input/source_semantics.json": {
+    "sha256": "2df51d8ad38e1f64bd080997d15e5de8175a27285b4178aba898309eec19f216",
+    "bytes": 5497
+  },
+  "model.py": {
+    "sha256": "abe313e36be87063dd43c9987c906c6d46c3b3f78924dc469d165b09d0404667",
+    "bytes": 13875
+  },
+  "PLAN.json": {
+    "sha256": "d89fd76deb012e0939ea6e3ba0006a457a4aff0b7672581c9f0a6d2c973a8ddd",
+    "bytes": 6966
+  },
+  "preprocessing.py": {
+    "sha256": "fb99bd54c1d288839d34209c126e764ef62ba55ad89dc6b67b7035565916bc69",
+    "bytes": 4417
+  },
+  "runner.py": {
+    "sha256": "adbc9302fa84518121dbc98ca9dcb33916105d263540f111682cf51d95a61bd8",
+    "bytes": 12015
+  },
+  "TASKS.json": {
+    "sha256": "021fb7c1d001cdb6296696ac9457cf0b657e1a49b480e01ac10224da0e6068cc",
+    "bytes": 3073
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "status": "assigned_for_local_final_VM_preparation",
+  "scope": "sequential frozen national504 plus context28 control of final package",
+  "reference": "vm_timing/MEASURED_RUNTIME.json",
+  "compute": {
+    "national_task_seconds": 1800,
+    "context_task_seconds": 600,
+    "session_seconds": 18000,
+    "worker_tree_RSS_bytes": 4294967296,
+    "library_threads": 1,
+    "parallel_workers": 1,
+    "automatic_retry": false
+  },
+  "overall_window_seconds": 21600,
+  "closure_reserve_seconds": 3600,
+  "minimum_start_free_disk_bytes": 34359738368,
+  "minimum_free_disk_before_each_task_bytes": 12884901888,
+  "disk_basis": {
+    "national_uncompressed_output_bytes": 12767086076,
+    "national_compressed_archive_bytes": 3411234770,
+    "context_output_bytes": 30223076,
+    "context_archive_bytes": 30250859,
+    "lower_floor_matches_accepted_historical_policy": true,
+    "known_output_is_not_measured_transient_peak": true,
+    "note": "The preliminary 64GiB recommendation assumed an unvalidated 32GiB per-task floor. Final policy uses the historical accepted 12GiB floor and 32GiB at start, retaining reserve beyond observed output and archive. No automatic deletion or expansion follows from this policy."
+  },
+  "time_basis": {
+    "old_sequential_sum_plus_context_seconds": 10420.111295559007,
+    "slowdown_assumption": 1.5,
+    "next_task_reserve_seconds": 1800,
+    "old_parallel_workflow_seconds": 2404.076777733,
+    "note": "The approximately40min old workflow used six workers. The final sequential adapter is estimated from sum of task durations, not that parallel wall time. Actual new full-run duration remains unmeasured."
+  },
+  "VM_resource_check_required_before_launch": true,
+  "VM_started": false,
+  "SSH_calls": 0,
+  "full_new_run_accepted": false
+}

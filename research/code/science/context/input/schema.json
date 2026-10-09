@@ -1,0 +1,191 @@
+{
+  "schema": "context2024-input-v1",
+  "status": "prepared_input_no_clustering_or_association",
+  "N": 1666,
+  "regions": 69,
+  "ID_order": "lexicographic native supplier ID strings",
+  "ID_sha256_newline_utf8": "581a558ed2d0edfe31ff07207e1c9f9cb6c6b3dcab0eac9b83adb5d683f4dba0",
+  "feature_reference_year": 2024,
+  "retrospective": true,
+  "predictive_asof_2024": false,
+  "universe": {
+    "native24month_union": 2190,
+    "complete12month2024": 2048,
+    "context_subset": 1666,
+    "context_regions": 69,
+    "percent_of_complete2024": 81.34765625,
+    "percent_of_native2190": 76.07305936073058,
+    "national_full": false
+  },
+  "required_npz_loading": "numpy.load(path, allow_pickle=False)",
+  "npz_array_shapes": {
+    "IDs": [
+      1666
+    ],
+    "regions": [
+      1666
+    ],
+    "native_oktmo8": [
+      1666
+    ],
+    "months": [
+      12
+    ],
+    "categories": [
+      6
+    ],
+    "monthly_consumption_RUB": [
+      1666,
+      12,
+      6
+    ],
+    "population_jan1_2024": [
+      1666
+    ],
+    "market_access_2024": [
+      1666
+    ],
+    "organization_salary_RUB_2024": [
+      1666
+    ],
+    "organization_workers_2024": [
+      1666
+    ],
+    "education_workers_2024": [
+      1666
+    ],
+    "education_worker_share_2024": [
+      1666
+    ],
+    "organization_workers_per_resident_2024": [
+      1666
+    ],
+    "features": [
+      11
+    ],
+    "X_raw": [
+      1666,
+      11
+    ],
+    "X_context6_full": [
+      1666,
+      11
+    ],
+    "X_spending2_full": [
+      1666,
+      6
+    ]
+  },
+  "blocks": [
+    {
+      "name": "spending_level",
+      "columns": [
+        0
+      ],
+      "coordinate_IQR": false,
+      "weight_context6": 0.16666666666666666
+    },
+    {
+      "name": "spending_shape",
+      "columns": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "coordinate_IQR": false,
+      "weight_context6": 0.16666666666666666
+    },
+    {
+      "name": "population_size",
+      "columns": [
+        6
+      ],
+      "coordinate_IQR": false,
+      "weight_context6": 0.16666666666666666
+    },
+    {
+      "name": "market_access",
+      "columns": [
+        7
+      ],
+      "coordinate_IQR": false,
+      "weight_context6": 0.16666666666666666
+    },
+    {
+      "name": "organization_wage",
+      "columns": [
+        8
+      ],
+      "coordinate_IQR": false,
+      "weight_context6": 0.16666666666666666
+    },
+    {
+      "name": "organization_structure",
+      "columns": [
+        9,
+        10
+      ],
+      "coordinate_IQR": true,
+      "weight_context6": 0.16666666666666666
+    }
+  ],
+  "features": [
+    "mean_monthly_log_total",
+    "mean_monthly_clr_food",
+    "mean_monthly_clr_health",
+    "mean_monthly_clr_marketplaces",
+    "mean_monthly_clr_restaurants",
+    "mean_monthly_clr_transport",
+    "log_population_jan1_2024",
+    "log1p_market_access_2024",
+    "log_annual_mean_monthly_organization_salary_2024",
+    "log1p_organization_workers_per_resident",
+    "arcsin_sqrt_education_worker_share"
+  ],
+  "raw_axis": {
+    "months": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11",
+      "2024-12"
+    ],
+    "categories": [
+      "Все категории",
+      "Продовольствие",
+      "Здоровье",
+      "Маркетплейсы",
+      "Общественное питание",
+      "Транспорт"
+    ]
+  },
+  "preprocessing_version": "context2024-sixblocks-v1",
+  "no_missing_imputation": true,
+  "no_additional_deflation": true,
+  "old_K2_labels_in_features": false,
+  "source_semantics": "source_semantics.json and SEMANTICS.md",
+  "K_grid": [
+    4,
+    6,
+    8,
+    10,
+    12,
+    16,
+    20
+  ],
+  "transform_note": "Annual mean monthly log Total and mean monthly CLR5; selected five categories are not an exhaustive partition of Total.",
+  "boundary_admission": "Conditional exact native-code/upper-level/history admission; source interval override only under ADMISSION_CORRECTION.json; no physical-boundary certificate.",
+  "source_vintage": "Rosstat/Tochno processed release2025-09-18; reference periods2024; supplier dictionary active2024; original row publication dates unverified.",
+  "revision": "r01",
+  "admission_correction": "ADMISSION_CORRECTION.json",
+  "previous_cohort_N": 1479
+}

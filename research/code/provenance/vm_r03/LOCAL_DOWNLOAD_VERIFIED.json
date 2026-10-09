@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "UTC": "2026-10-09T11:24:23.910619+00:00",
+  "zip_sha256": "f75fa1082cbce2fb96daee987725afe4fb8e0d1ac200b350dcf4d95b02e5c653",
+  "archive_bytes": 3305366038,
+  "exact_member_inventory_SHA_CRC": true,
+  "members": 14307,
+  "new_fits": 0,
+  "fresh_audit_bound": true,
+  "fixture_only": false,
+  "current_remote_processes_inspected": false,
+  "final_acceptance": false,
+  "remaining": "bind VM final workflow/owner receipt and local download verification in root acceptance"
+}

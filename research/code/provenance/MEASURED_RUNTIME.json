@@ -1,0 +1,440 @@
+{
+  "schema": "measured-DT24-runtime-budget-v1",
+  "UTC": "2026-10-08T09:57:20.454471+00:00",
+  "status": "offline_evidence_complete_VM_launch_not_authorized_or_executed",
+  "run_info": {
+    "clean_replay": {
+      "archive": {
+        "bytes": 3411234770,
+        "members": 14379,
+        "uncompressed_member_bytes": 12767086076,
+        "compressed_payload_bytes": 3408194640
+      },
+      "sequential_task_wall_sum_seconds": 10383.761416621008,
+      "task_wall_min_seconds": 119.22627313799967,
+      "task_wall_max_seconds": 469.7191268940005,
+      "task_wall_median_seconds": 433.7863081780015,
+      "max_single_task_sampled_RSS_bytes": 1091653632,
+      "monthly_aggregate_sampled_RSS_bytes": 5047939072,
+      "peak_active_month_workers": 6,
+      "preparation_call_sum_seconds": 855.303893557,
+      "cell_interval_sum_seconds": 9456.340321086987,
+      "native_Lloyd_entries": 2688,
+      "Ward_cuts": 168,
+      "actual_eigensolves": 24,
+      "partitions": 504,
+      "chunks": 25,
+      "historical_effective_policy": {
+        "schema": "detailed-typology-runtime-policy-1",
+        "absolute_deadline_UTC": "2026-10-08T05:00:00Z",
+        "campaign_seconds": 21600,
+        "closure_reserve_seconds": 3600,
+        "audit_seconds": 1200,
+        "calibration_cap_seconds": 1800,
+        "month_cap_upper_seconds": 3600,
+        "max_workers": 6,
+        "threads": 1,
+        "worker_RSS_cap_bytes": 6442450944,
+        "aggregate_RSS_cap_bytes": 42949672960,
+        "minimum_available_memory_bytes": 8589934592,
+        "free_disk_floor_bytes": 12884901888,
+        "maximum_output_bytes": 34359738368,
+        "calibration_month": "2023-01",
+        "calibration_K": [
+          10,
+          20
+        ],
+        "grid_K": [
+          4,
+          6,
+          8,
+          10,
+          12,
+          16,
+          20
+        ],
+        "methods": [
+          "SSE",
+          "Ward",
+          "NCut"
+        ],
+        "cost_safety_factor": 2.0,
+        "automatic_retry": false,
+        "automatic_cap_increase": false,
+        "scientific_outcome_is_admission_filter": false,
+        "archive_compression": "deflated"
+      },
+      "pilot_archive_cost_probe": {
+        "passed": true,
+        "fixed_bytes": 97204137,
+        "variable_bytes": 15617819,
+        "archive_bytes": 112821956,
+        "archive_sha256": "1274022fffaad79bd08cea0bdfce60db29644aaf47d7777ddd100ea68138aff7",
+        "wall_seconds": 4.614306938001391,
+        "source_deleted": false,
+        "original_member_bytes_preserved": true,
+        "compression": "ZIP_DEFLATED_level6"
+      }
+    },
+    "original_accepted": {
+      "archive": {
+        "bytes": 3411237069,
+        "members": 14380,
+        "uncompressed_member_bytes": 12767102670,
+        "compressed_payload_bytes": 3408196799
+      },
+      "sequential_task_wall_sum_seconds": 10435.310734211997,
+      "task_wall_min_seconds": 121.77704165700015,
+      "task_wall_max_seconds": 473.205461810001,
+      "task_wall_median_seconds": 436.08262460100013,
+      "max_single_task_sampled_RSS_bytes": 1019871232,
+      "monthly_aggregate_sampled_RSS_bytes": 5294075904,
+      "peak_active_month_workers": 6,
+      "preparation_call_sum_seconds": 853.41446373,
+      "cell_interval_sum_seconds": 9508.999540184963,
+      "native_Lloyd_entries": 2688,
+      "Ward_cuts": 168,
+      "actual_eigensolves": 24,
+      "partitions": 504,
+      "chunks": 25
+    }
+  },
+  "contexts": {
+    "clean_replay": {
+      "receipt": {
+        "status": "completed",
+        "UTC": "2026-10-08T01:14:31.426698+00:00",
+        "passed": true,
+        "reason": null,
+        "returncode": 0,
+        "elapsed_seconds": 36.349878937999165,
+        "peak_sampled_RSS_bytes": 347066368,
+        "peak_output_bytes": 30223076,
+        "sampled_CPU_seconds": 33.7,
+        "payload_spawned": true,
+        "owned_descendants_quiescent": true,
+        "automatic_retry": false,
+        "scientific_acceptance": false,
+        "resource_scope": "RSS sampled every0.1s across supervisor and owned descendants; not a transient peak guarantee"
+      },
+      "archive": {
+        "bytes": 30250859,
+        "members": 113,
+        "uncompressed_member_bytes": 30230635,
+        "compressed_payload_bytes": 30230635
+      },
+      "routine_count": 28,
+      "routine_wall_sum_seconds": 34.01995877299487,
+      "CPUs": [
+        7
+      ],
+      "parallel_workers": 1,
+      "KMeans_attempts": 112
+    },
+    "original_accepted": {
+      "receipt": {
+        "status": "completed",
+        "UTC": "2026-10-07T21:43:59.393859+00:00",
+        "passed": true,
+        "reason": null,
+        "returncode": 0,
+        "elapsed_seconds": 35.87638499499735,
+        "peak_sampled_RSS_bytes": 346726400,
+        "peak_output_bytes": 30222853,
+        "sampled_CPU_seconds": 33.81,
+        "payload_spawned": true,
+        "owned_descendants_quiescent": true,
+        "automatic_retry": false,
+        "scientific_acceptance": false,
+        "resource_scope": "RSS sampled every0.1s across supervisor and owned descendants; not a transient peak guarantee"
+      },
+      "archive": {
+        "bytes": 30250636,
+        "members": 113,
+        "uncompressed_member_bytes": 30230412,
+        "compressed_payload_bytes": 30230412
+      },
+      "routine_count": 28,
+      "routine_wall_sum_seconds": 33.53625556100451,
+      "CPUs": [
+        7
+      ],
+      "parallel_workers": 1,
+      "KMeans_attempts": 112
+    }
+  },
+  "clean_workflow_monotonic_seconds": 2404.076777733,
+  "journal_phases": [
+    {
+      "stage": "national_gate_launch",
+      "started_UTC": "2026-10-08T00:34:31.821943+00:00",
+      "ended_UTC": "2026-10-08T00:34:37.351390+00:00",
+      "wall_seconds": 5.529452505001245,
+      "method": "monotonic_delta",
+      "scope": "launch_to_receipt_close"
+    },
+    {
+      "stage": "national_gate_collect",
+      "started_UTC": "2026-10-08T00:34:37.351473+00:00",
+      "ended_UTC": "2026-10-08T00:34:37.478231+00:00",
+      "wall_seconds": 0.12677179599995725,
+      "method": "monotonic_delta",
+      "scope": "entered_to_returned"
+    },
+    {
+      "stage": "national_prepare",
+      "started_UTC": "2026-10-08T00:34:37.478685+00:00",
+      "ended_UTC": "2026-10-08T00:34:37.556568+00:00",
+      "wall_seconds": 0.07789404899813235,
+      "method": "monotonic_delta",
+      "scope": "entered_to_returned"
+    },
+    {
+      "stage": "national_check",
+      "started_UTC": "2026-10-08T00:34:37.556667+00:00",
+      "ended_UTC": "2026-10-08T00:34:37.631997+00:00",
+      "wall_seconds": 0.07534200300142402,
+      "method": "monotonic_delta",
+      "scope": "entered_to_returned"
+    },
+    {
+      "stage": "national_fit",
+      "started_UTC": "2026-10-08T00:34:37.632104+00:00",
+      "ended_UTC": "2026-10-08T01:06:18.547023+00:00",
+      "wall_seconds": 1900.9149319339995,
+      "method": "monotonic_delta",
+      "scope": "entered_to_returned"
+    },
+    {
+      "stage": "national_collect",
+      "started_UTC": "2026-10-08T01:06:18.547358+00:00",
+      "ended_UTC": "2026-10-08T01:09:37.468049+00:00",
+      "wall_seconds": 198.92070361700098,
+      "method": "monotonic_delta",
+      "scope": "entered_to_returned"
+    },
+    {
+      "stage": "national_OP_launch",
+      "started_UTC": "2026-10-08T01:09:37.478963+00:00",
+      "ended_UTC": "2026-10-08T01:10:23.224385+00:00",
+      "wall_seconds": 45.74542830599967,
+      "method": "monotonic_delta",
+      "scope": "launch_to_receipt_close"
+    },
+    {
+      "stage": "national_OP_collect",
+      "started_UTC": "2026-10-08T01:10:23.224479+00:00",
+      "ended_UTC": "2026-10-08T01:10:23.274857+00:00",
+      "wall_seconds": 0.050385477999952855,
+      "method": "monotonic_delta",
+      "scope": "entered_to_returned"
+    },
+    {
+      "stage": "national_saved_readback_launch",
+      "started_UTC": "2026-10-08T01:10:23.275477+00:00",
+      "ended_UTC": "2026-10-08T01:10:35.875400+00:00",
+      "wall_seconds": 12.599929080002767,
+      "method": "monotonic_delta",
+      "scope": "launch_to_receipt_close"
+    },
+    {
+      "stage": "national_saved_readback_collect",
+      "started_UTC": "2026-10-08T01:10:35.875481+00:00",
+      "ended_UTC": "2026-10-08T01:10:35.950786+00:00",
+      "wall_seconds": 0.07531693599958089,
+      "method": "monotonic_delta",
+      "scope": "entered_to_returned"
+    },
+    {
+      "stage": "national_numeric_launch",
+      "started_UTC": "2026-10-08T01:10:35.951783+00:00",
+      "ended_UTC": "2026-10-08T01:13:54.127004+00:00",
+      "wall_seconds": 198.17522854799972,
+      "method": "monotonic_delta",
+      "scope": "launch_to_receipt_close"
+    },
+    {
+      "stage": "national_numeric_collect",
+      "started_UTC": "2026-10-08T01:13:54.127091+00:00",
+      "ended_UTC": "2026-10-08T01:13:54.274563+00:00",
+      "wall_seconds": 0.14748472000064794,
+      "method": "monotonic_delta",
+      "scope": "entered_to_returned"
+    },
+    {
+      "stage": "context_preflight_launch",
+      "started_UTC": "2026-10-08T01:13:54.276554+00:00",
+      "ended_UTC": "2026-10-08T01:13:54.936385+00:00",
+      "wall_seconds": 0.6598386999976356,
+      "method": "monotonic_delta",
+      "scope": "launch_to_receipt_close"
+    },
+    {
+      "stage": "context_preflight_collect",
+      "started_UTC": "2026-10-08T01:13:54.936466+00:00",
+      "ended_UTC": "2026-10-08T01:13:54.991823+00:00",
+      "wall_seconds": 0.05536477900022874,
+      "method": "monotonic_delta",
+      "scope": "entered_to_returned"
+    },
+    {
+      "stage": "context_full_0001_launch",
+      "started_UTC": "2026-10-08T01:13:54.993432+00:00",
+      "ended_UTC": "2026-10-08T01:14:31.541588+00:00",
+      "wall_seconds": 36.54816108800151,
+      "method": "monotonic_delta",
+      "scope": "launch_to_receipt_close"
+    },
+    {
+      "stage": "context_full_0001_collect",
+      "started_UTC": "2026-10-08T01:14:31.541672+00:00",
+      "ended_UTC": "2026-10-08T01:14:31.769400+00:00",
+      "wall_seconds": 0.22774081700117677,
+      "method": "monotonic_delta",
+      "scope": "entered_to_returned"
+    },
+    {
+      "stage": "context_saved_readback_launch",
+      "started_UTC": "2026-10-08T01:14:31.770283+00:00",
+      "ended_UTC": "2026-10-08T01:14:35.677164+00:00",
+      "wall_seconds": 3.9068889089976437,
+      "method": "monotonic_delta",
+      "scope": "launch_to_receipt_close"
+    },
+    {
+      "stage": "context_saved_readback_collect",
+      "started_UTC": "2026-10-08T01:14:35.677276+00:00",
+      "ended_UTC": "2026-10-08T01:14:35.898469+00:00",
+      "wall_seconds": 0.22120355400329572,
+      "method": "monotonic_delta",
+      "scope": "entered_to_returned"
+    }
+  ],
+  "historical_national_CPUs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "historical_context_CPUs": [
+    7
+  ],
+  "historical_context_threads": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "BLIS_NUM_THREADS": "1"
+  },
+  "historical_download": {
+    "completed_UTC": "2026-10-08T01:18:57.6920649Z",
+    "bytes": 3411234770,
+    "elapsed_seconds": null,
+    "reason": "download receipt has no start; time since workflow close includes other activity"
+  },
+  "archive_inventory": {
+    "national": {
+      "sha256": "783aca2a54c1ec14554867dc432cca4ead84123a2ec8bc6be7a37bc80c59c98a",
+      "bytes": 3411234770
+    },
+    "national_gate": {
+      "sha256": "9eec274d50b229c4a753a0c99490724a376692a61f48d78b55b3f30b74b4802f",
+      "bytes": 142031
+    },
+    "national_OP": {
+      "sha256": "d6dd03eef7a304be9bac403553f67ad0b581a409bf036e0e4922a2f172928c89",
+      "bytes": 15060
+    },
+    "national_saved_readback": {
+      "sha256": "3bf29ec049d9541419c3f75d0605b884a3cc1aecef68a7ce7b5f111ad6ba6ffc",
+      "bytes": 3919746
+    },
+    "national_numeric": {
+      "sha256": "9c2b4fa6fc1c9280f8f6bc71712d7bcb8b2c5e630c84359c93a147efdd988900",
+      "bytes": 931126
+    },
+    "context_preflight": {
+      "sha256": "7de14222f7cd4693bb5996fc3fb75258e492057e9eff95c79aae3abcc3f299f0",
+      "bytes": 6766
+    },
+    "context_full_0001": {
+      "sha256": "0bea180ce5c4620ec5895213d36333dcf54309bda0d20684a424c90879ee0e0d",
+      "bytes": 30250859
+    },
+    "context_saved_readback": {
+      "sha256": "93e954c2dac3be185aade0b03a3b50c356785b10fff8b00a78bad0953b522a2b",
+      "bytes": 30407150
+    }
+  },
+  "archive_inventory_bytes": 3476907508,
+  "candidate_snapshot": {
+    "configuration": {
+      "national_cpu": 0,
+      "context_cpu": 7,
+      "national_task_seconds": 7200,
+      "context_task_seconds": 1800,
+      "session_seconds": 0,
+      "RSS_bytes": 4294967296,
+      "minimum_free_disk_bytes": 34359738368
+    },
+    "release": {
+      "real_compute": "HELD_PENDING_LINUX_CLEANUP_ACCEPTANCE",
+      "reason": "The new owner-tree adapter has not been exercised and independently accepted on Linux. Windows checks and deterministic simulations cannot release this gate.",
+      "saved_result_commands": "available",
+      "plan": "available"
+    },
+    "planned_parallel_workers": 1,
+    "binding": "snapshot only, not final candidate or Linux acceptance"
+  },
+  "recommendation": {
+    "applicability": "same frozen 504+28 science; sequential adapter, one process/one library thread, exclusive compatible CPUs and comparable CPU speed",
+    "baseline_sequential_seconds": 10420.111295559007,
+    "slowdown_factor_assumption": 1.5,
+    "scaled_compute_seconds": 15630.16694333851,
+    "next_task_admission_reserve_seconds": 1800,
+    "formula_compute_bound": "ceil-up-to-5h(1.5 * (sum25_native_task_wall + context_elapsed) + 1800 admission reserve)",
+    "proposed_national_task_seconds": 1800,
+    "proposed_context_task_seconds": 600,
+    "proposed_compute_session_seconds": 18000,
+    "external_reserves_seconds": {
+      "preflight_inputs": 600,
+      "validation_parity_archive": 1500,
+      "download_local_hash": 1200,
+      "final_quiescence": 300
+    },
+    "total_window_seconds": 21600,
+    "rounding_slack_seconds": 0,
+    "baseline_vs_new_adapter": "sum is a transfer estimate; new sequential CPU speed and adapter overhead unmeasured",
+    "old_task_cap_admission_issue": "7200s task caps reserve the full next cap; a 5h session with those caps can reject late tasks even at baseline. Recommend 1800s per national task, not changing science.",
+    "proposed_worker_tree_RSS_cap_bytes": 4294967296,
+    "recommended_incremental_free_disk_VM_bytes": 68719476736,
+    "recommended_incremental_free_disk_local_bytes": 34359738368,
+    "disk_basis": {
+      "national_final_uncompressed_member_bytes": 12767086076,
+      "national_archive_bytes": 3411234770,
+      "final_context_archive_bytes": 30250859,
+      "live_new_adapter_before_every_task_free_floor_bytes": 34359738368,
+      "peak_used_disk_measured": false,
+      "formula": "32GiB per-task free floor + ~12GiB output tree + ~3.2GiB compressed export + working margin; 64GiB incremental free after inputs/environment"
+    },
+    "no_automatic_retry": true,
+    "old_campaign_absolute_deadline_reused": false,
+    "limitation": "budget recommendation only; root freezes candidate and validates Linux ownership/cleanup before VM readiness"
+  },
+  "unknowns": [
+    "new adapter real runtime and full output measured peak",
+    "isolated eigensolver duration",
+    "pure native fit time excluding evaluation/I/O",
+    "upload/unpack/dependency setup duration",
+    "download start/throughput and offline parity elapsed time",
+    "transient RSS and total VM memory/disk peaks",
+    "new candidate archive creation elapsed time"
+  ],
+  "new_fits": 0,
+  "SSH": 0,
+  "Docker": 0,
+  "source_directories_modified": false
+}

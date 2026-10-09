@@ -1,0 +1,45 @@
+{
+  "schema": "r03-VM-acceptance-binding-for-reader-r04-v1",
+  "accepted_code_revision": "r03",
+  "accepted_candidate_manifest_sha256": "8a507b9c4384a9332f8ceadcd7ba58d0abcf55f47418cc3649a043424cf7e0cc",
+  "accepted_status": "PASS_FINAL_ROOT_ACCEPTANCE__VM_CAN_BE_SWITCHED_OFF",
+  "accepted_UTC": "2026-10-09T11:27:04.995185+00:00",
+  "counts": {
+    "workflow_owner_records": 59,
+    "national_partitions": 504,
+    "context_partitions": 28,
+    "packaged_cells": 532,
+    "scientific_records": 897,
+    "steps": 26,
+    "native_returns": 2688,
+    "closed_call_pairs": 3721,
+    "S_Dbw_ok": 175,
+    "S_Dbw_undefined": 329,
+    "archive_members": 14307
+  },
+  "source_freeze_sha256": "f93ab67948917eb19e5a0d2dbbc9dc059cb48c90c430b4770c73b60c7c58fae9",
+  "archive_sha256": "f75fa1082cbce2fb96daee987725afe4fb8e0d1ac200b350dcf4d95b02e5c653",
+  "archive_bytes": 3305366038,
+  "independent_acceptance_sha256": "600df3a52ee742d8e9cb187758dbc08244b1fe5b404b20a6fd28999c0379015a",
+  "workflow_sha256": "2dad1feb97695c2009dccbc66fea7355089c59f617f316e43efbb3aebd5ee7b7",
+  "owners_sha256": "973a1c73cebdb06aa4fc877c766124ae882737640925fc8d721569c665b11b67",
+  "copied_receipts": {
+    "FINAL_ROOT_ACCEPTANCE.original.json": {
+      "path": "provenance/vm_r03/FINAL_ROOT_ACCEPTANCE.original.json",
+      "sha256": "8a96c8f59a29e8b628b1a978de319aa5b653af4722894c47e4fe77f136816ef2"
+    },
+    "CANDIDATE_VERIFY.json": {
+      "path": "provenance/vm_r03/CANDIDATE_VERIFY.json",
+      "sha256": "5222474c0b6290738d8f6e699a6c27ff634ca5e4ec6bb6fc2e25a52c46fd84ba"
+    },
+    "LOCAL_DOWNLOAD_VERIFIED.json": {
+      "path": "provenance/vm_r03/LOCAL_DOWNLOAD_VERIFIED.json",
+      "sha256": "0d499149677edf1f93a541ecfe21a51604d83d4ed638f5c1d48ebabebe8175be"
+    }
+  },
+  "r04_full_replay_performed": false,
+  "r04_change_scope": "Saved CSV output path guard and current documentation/provenance only. Scientific inputs, models, seeds, parameters, compute and owner modules unchanged.",
+  "scientific_superiority_or_universal_functions_accepted": false,
+  "full_archive_and_independent_review_bundled": false,
+  "history_note": "The original root receipt retains historical operator paths. They are provenance strings, not runtime dependencies or active launch instructions."
+}

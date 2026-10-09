@@ -1,0 +1,2475 @@
+{
+  "schema": "typology-code-release-candidate-v1",
+  "revision": "r04",
+  "base_manifest_sha256": "8a507b9c4384a9332f8ceadcd7ba58d0abcf55f47418cc3649a043424cf7e0cc",
+  "files": {
+    ".gitattributes": {
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      "bytes": 8
+    },
+    ".gitignore": {
+      "sha256": "3d53d9839bfaaef4eab0e5fd66d9d35c77ddb600287499c0111d86669f6684e7",
+      "bytes": 46
+    },
+    "AUTHORS.md": {
+      "sha256": "631616764e9728a92711750f2b3c9d74bdb92fc8e7626d572c1dae92fd04aecb",
+      "bytes": 789
+    },
+    "check_identity.py": {
+      "sha256": "8940b5327e0df0a58276b6c2f29ce71d633a623d98249847ec56cc5bca23c148",
+      "bytes": 2112
+    },
+    "compute.py": {
+      "sha256": "c32b14c5f1b71b478d4e73b5737012838163f7f8a7d119f94be3eac4b0c2027b",
+      "bytes": 9382
+    },
+    "config/compute.json": {
+      "sha256": "2e03a39a220be78ddaabf512bc543c84611770d141077ce4f6522d7487179719",
+      "bytes": 214
+    },
+    "config/release.json": {
+      "sha256": "da6ec9a544ce7909f50e69379d942b5e8deb434a0cb21080c6b88619c285d83e",
+      "bytes": 1175
+    },
+    "CURRENT_CONTEXT.md": {
+      "sha256": "4abfbfb5bbf8e9ac85507f9dfd0681657e392419ff8227213e38491e913e94fe",
+      "bytes": 5513
+    },
+    "MAINTAINERS.md": {
+      "sha256": "6b4f099cd42b5d79039bce1378efe3b3527083a24cd0f520b756472dc77fe5b9",
+      "bytes": 1982
+    },
+    "owned_processes.py": {
+      "sha256": "cd80dc619f725735bcd03edcf90531f8d63cc7eb971605baf7be5791d74518d5",
+      "bytes": 7750
+    },
+    "provenance/context_original_manifest.json": {
+      "sha256": "102615d07744fc1593b7ba7787d2d1b16738eb3b565b87bd343f1b893e04f9a9",
+      "bytes": 7128
+    },
+    "provenance/CURRENT_RESULT.json": {
+      "sha256": "d68872c028fd798ca0cb5cd4f9b756ff8d7ff0b41feabd9d22fda09a8ccfa09a",
+      "bytes": 7563
+    },
+    "provenance/DT24_SOURCE_LOCK.json": {
+      "sha256": "4544772fa2597199e89fc806f6aaefa2e67c78a9ab28619033d23f8de6211b42",
+      "bytes": 18304
+    },
+    "provenance/FILE_MAP.json": {
+      "sha256": "c525ea381e80f8d27980855d3ad88c43afdd400556f918e56cd00540fe039668",
+      "bytes": 786557
+    },
+    "provenance/FINAL_RUNTIME_BUDGET.json": {
+      "sha256": "948c21248e46f5fec341bb3bb4af4796e60a5a23e8f05eebbac46a73af14b4f3",
+      "bytes": 1777
+    },
+    "provenance/history/CHANGELOG_r01.md": {
+      "sha256": "08df0d7f131aedf40b8f6a7b14dd4ca08f3411bdd8d5d4c710d5c0538a908923",
+      "bytes": 3256
+    },
+    "provenance/history/CODE_REVIEW_r01.md": {
+      "sha256": "2ed9f8710c5b97c1da283513067e694b634e922ef1cde397106559b3834d4c27",
+      "bytes": 10748
+    },
+    "provenance/history/r03/config/release.json": {
+      "sha256": "217997b98d248af8bcd1ee543636f1cecfcdb552eb84e7efed9b000371208f9d",
+      "bytes": 759
+    },
+    "provenance/history/r03/CURRENT_CONTEXT.md": {
+      "sha256": "83531a079fee94d02f7691ca4dcab3848e63f486934db311789b494111bd79e9",
+      "bytes": 4985
+    },
+    "provenance/history/r03/PACKAGE_MANIFEST.json": {
+      "sha256": "8a507b9c4384a9332f8ceadcd7ba58d0abcf55f47418cc3649a043424cf7e0cc",
+      "bytes": 99288
+    },
+    "provenance/history/r03/provenance/FILE_MAP.json": {
+      "sha256": "d0f5470ad976e110d6197ca571c903362b9e93a679f6a967dead360da8c7c584",
+      "bytes": 785358
+    },
+    "provenance/history/r03/provenance/SOURCE_INDEX.json": {
+      "sha256": "04b8f7bb42d4605334e7748a26f0c8052685dac0809cbfdce6d6e1429972d7b8",
+      "bytes": 24132
+    },
+    "provenance/history/r03/provenance/VALIDATION_STATUS.md": {
+      "sha256": "7378bfba788aac4578d6fff635de90199077f5fd4fb9deea901ee013aaa21c52",
+      "bytes": 2245
+    },
+    "provenance/history/r03/README.md": {
+      "sha256": "186a16df2e442dfa8f1671c05324145b815fcad6b8e4ce125fa170e8f9a3a69c",
+      "bytes": 14108
+    },
+    "provenance/IMPORT_INVENTORY.json": {
+      "sha256": "354b33d38967ac54a7a93287a6a83f182da31fcf080db1de76dae526ef66e014",
+      "bytes": 4156
+    },
+    "provenance/Linux_author_process_receipt.json": {
+      "sha256": "c9e2fffb655ac69173542d85b5ec36d8e081263ce98df568ad54b6f2ff257188",
+      "bytes": 10957
+    },
+    "provenance/Linux_independent_process_receipt.json": {
+      "sha256": "f680abef9a748891ed0190f0dae456046249c48beddb4dca61e50ca0ec0b4abc",
+      "bytes": 4939
+    },
+    "provenance/MEASURED_RUNTIME.json": {
+      "sha256": "fd0870031663788497341d0534a9c6a8d2822e6842ed917d55ce4ce659ccea70",
+      "bytes": 16068
+    },
+    "provenance/national_original_manifest.json": {
+      "sha256": "3fff012455c449fd66b0d4a391f52294858a7c2d5495a3b58221e3f02b9339c0",
+      "bytes": 3484
+    },
+    "provenance/READER_DELTA_r04.json": {
+      "sha256": "a241d8b210584b3cd7d21c933175600ea1aad1b94500ba0a8ecb7a052ec445b5",
+      "bytes": 1998
+    },
+    "provenance/release_status.json": {
+      "sha256": "bf343f6c1e667c59b1636d7e208b8b679ec3e4beff24c13e0bf09d6a3bc766ee",
+      "bytes": 2214
+    },
+    "provenance/replay_acceptance.json": {
+      "sha256": "ad36066faf8ce81a1eba69ea9fb26f27879e49a53fefbb9c0b5773c2cb65d73b",
+      "bytes": 6924
+    },
+    "provenance/replay_parity.json": {
+      "sha256": "c2590ddff9b2b091d7e562810d8cf112f44fbef7de28693c2789d0de2dfd288e",
+      "bytes": 3448
+    },
+    "provenance/RESOURCE_POLICY.json": {
+      "sha256": "86ea4a3488aae3a270b9b559ccee78df57b7ed389510117a46a2a2ad5e2db9dd",
+      "bytes": 1166
+    },
+    "provenance/runtime_acceptance_r01.json": {
+      "sha256": "6c6019e82bf333ad8181d186f16d978713a135124f4c579d8d954eedd06e79e7",
+      "bytes": 3887
+    },
+    "provenance/semantic_acceptance.json": {
+      "sha256": "b8a6fc2081e5611227d1f9c21b2ec19e62cfa5697369d5c9f2cfb00554d41f36",
+      "bytes": 3692
+    },
+    "provenance/SOURCE_INDEX.json": {
+      "sha256": "bb490eb8127bcd929c039e698233d4dbedc1ce11b67f713ab4bc708ccc8cdec8",
+      "bytes": 26426
+    },
+    "provenance/VALIDATION_STATUS.md": {
+      "sha256": "c7538294af00b04930006227b69eb6260c51da296b0a293af75c7d9578032044",
+      "bytes": 1562
+    },
+    "provenance/vm_r03/CANDIDATE_VERIFY.json": {
+      "sha256": "5222474c0b6290738d8f6e699a6c27ff634ca5e4ec6bb6fc2e25a52c46fd84ba",
+      "bytes": 159
+    },
+    "provenance/vm_r03/FINAL_ROOT_ACCEPTANCE.original.json": {
+      "sha256": "8a96c8f59a29e8b628b1a978de319aa5b653af4722894c47e4fe77f136816ef2",
+      "bytes": 2761
+    },
+    "provenance/vm_r03/LOCAL_DOWNLOAD_VERIFIED.json": {
+      "sha256": "0d499149677edf1f93a541ecfe21a51604d83d4ed638f5c1d48ebabebe8175be",
+      "bytes": 510
+    },
+    "provenance/VM_R03_ACCEPTANCE.json": {
+      "sha256": "db1620a723a37ac66a40c7c1a302bc416b5ce33ce2e272ff30191073db983983",
+      "bytes": 2308
+    },
+    "README.md": {
+      "sha256": "19887f2c79e0d1644081377462c7b0252a48bb7ac6ce180196ada249775b264d",
+      "bytes": 16466
+    },
+    "requirements-compute.txt": {
+      "sha256": "cdd59bd595ec55a0abc1b5bcfe66f5f19bb958cfeaf46c9d7cc2bdaf6cc92467",
+      "bytes": 96
+    },
+    "saved/context/context6/KMeans_K04.json.gz": {
+      "sha256": "f716123407acd956acbb243d27f541a0ae362c4167fdf44962dd2ac5eb09a045",
+      "bytes": 41623
+    },
+    "saved/context/context6/KMeans_K06.json.gz": {
+      "sha256": "f49dabba8c0de156a186064a71c966499183321a27f131862bd0f3377f8a9657",
+      "bytes": 49101
+    },
+    "saved/context/context6/KMeans_K08.json.gz": {
+      "sha256": "b94e7f526e9f676cd75f2a2ea90e4c4078789de9f021f82e67c33ac7bcc2bd0b",
+      "bytes": 56186
+    },
+    "saved/context/context6/KMeans_K10.json.gz": {
+      "sha256": "62c9be26c7cc6449f0954c88cfc96a28e4e7da7eba3b634cb1586d2851fb3c2e",
+      "bytes": 64021
+    },
+    "saved/context/context6/KMeans_K12.json.gz": {
+      "sha256": "2d18152d668d29adf6b5913f8d0d907be656f81d7696c7689f5c2aad38f6ef3b",
+      "bytes": 70580
+    },
+    "saved/context/context6/KMeans_K16.json.gz": {
+      "sha256": "f9d67d17b79c803fe3b2cd8881b2fe5aad853103cb049277192d2970fb9a7e49",
+      "bytes": 85304
+    },
+    "saved/context/context6/KMeans_K20.json.gz": {
+      "sha256": "f95164742db885d024b06165a5f82b9341c51cc8d57babe1426962567e0705fc",
+      "bytes": 99429
+    },
+    "saved/context/context6/Ward_K04.json.gz": {
+      "sha256": "47f7e05f6f49bf5e2129afe004dc40b009c1e2ec0e98470da85b6469c211c01d",
+      "bytes": 41724
+    },
+    "saved/context/context6/Ward_K06.json.gz": {
+      "sha256": "b99b5f81240640f14195d0f3e68ac674d8d7331d16104d722a68260e31ae62e6",
+      "bytes": 49248
+    },
+    "saved/context/context6/Ward_K08.json.gz": {
+      "sha256": "0e919a66b794542312c9dab46dcae228af3cb21911a83fd16d305ec4dba5313f",
+      "bytes": 56652
+    },
+    "saved/context/context6/Ward_K10.json.gz": {
+      "sha256": "2396afe9305d8baa0d78efa0494c977ca399adff1167f9c96be7490612968f51",
+      "bytes": 63921
+    },
+    "saved/context/context6/Ward_K12.json.gz": {
+      "sha256": "97599ae0fa8e2455ac0c435c285cdc8a60014e1a72e71bcd77d21fbc1d026289",
+      "bytes": 71369
+    },
+    "saved/context/context6/Ward_K16.json.gz": {
+      "sha256": "455a07c025109d3865ec7da5cbda1155b14ff7e75ac4bb2a6d5148e8b860ce7f",
+      "bytes": 85303
+    },
+    "saved/context/context6/Ward_K20.json.gz": {
+      "sha256": "25882e474710894872c2ab5ff3d4a1b4de779cd566eaf8dc351dc2bba683f5a8",
+      "bytes": 99338
+    },
+    "saved/context/spending2/KMeans_K04.json.gz": {
+      "sha256": "7173ba82e8719db92d5e3062ae39ca0a7a0a891fc9e842bcd8742e522d618773",
+      "bytes": 41700
+    },
+    "saved/context/spending2/KMeans_K06.json.gz": {
+      "sha256": "830d7bb64a006585df5f2fb01573ad9baee260d1df82727ba8d4c40f65b307b0",
+      "bytes": 49385
+    },
+    "saved/context/spending2/KMeans_K08.json.gz": {
+      "sha256": "ca25d7c094c6b8c7120ad9c9bd5e7955e4b898c3dcd05e6282d504139b70a31a",
+      "bytes": 56632
+    },
+    "saved/context/spending2/KMeans_K10.json.gz": {
+      "sha256": "8ea298bd51ee7b691054f15942687343960d755cc1be10e62736718426ff7a0e",
+      "bytes": 63866
+    },
+    "saved/context/spending2/KMeans_K12.json.gz": {
+      "sha256": "249e72d0d7ac804d5737c2785a4e3f8098e5a9ca85a6cad5093bf2fd3c99c1b8",
+      "bytes": 70953
+    },
+    "saved/context/spending2/KMeans_K16.json.gz": {
+      "sha256": "493121ab874154507e4be956158b4872c5b3b2801361092b91632328a334089c",
+      "bytes": 85250
+    },
+    "saved/context/spending2/KMeans_K20.json.gz": {
+      "sha256": "7272da467b8a620efd9bc2a99bb74fb26c1695aefa7ad084a3c1bcd035793401",
+      "bytes": 98491
+    },
+    "saved/context/spending2/Ward_K04.json.gz": {
+      "sha256": "678700c6daa6258f71c284fa1e9f5edc746e27c0623255a00414a1b1259e6333",
+      "bytes": 41852
+    },
+    "saved/context/spending2/Ward_K06.json.gz": {
+      "sha256": "9a14d1a79cd2dee54ee64cf4c9b9b0e1410cccdee5fa29ecb2a70aeabc7d0913",
+      "bytes": 49645
+    },
+    "saved/context/spending2/Ward_K08.json.gz": {
+      "sha256": "84414f5e3e80863a56e565b63e85b145cb2515e0f6d5e17414cda01e4e1db6c2",
+      "bytes": 56758
+    },
+    "saved/context/spending2/Ward_K10.json.gz": {
+      "sha256": "e99ccebb5181047853e57ac5398dcd6f42e92254525665deefee385ca0e43466",
+      "bytes": 63988
+    },
+    "saved/context/spending2/Ward_K12.json.gz": {
+      "sha256": "c5b30924c6806bc363479b83dc1373ea5c94f3c4451facd9f3307f2912085ba7",
+      "bytes": 70880
+    },
+    "saved/context/spending2/Ward_K16.json.gz": {
+      "sha256": "b5eb011f8c3eca408c87932a73f4a862778d7b5c751de0f1d28cb31e58462257",
+      "bytes": 84834
+    },
+    "saved/context/spending2/Ward_K20.json.gz": {
+      "sha256": "f02c2434eb36cc168b9c6b8cec7e8f1802af7ad03f21bbbb9fd1cbbe8b3450fe",
+      "bytes": 98851
+    },
+    "saved/national/2023-01/NCut_K04.json.gz": {
+      "sha256": "cd63ac9f80c0cc49aec5afac8cb94b041e466134afcc4151f6f0d375f0a1109b",
+      "bytes": 28224
+    },
+    "saved/national/2023-01/NCut_K06.json.gz": {
+      "sha256": "fab8065ee1f654558b351e1354f6e0e5474a52f4eb47251b591d51985b991a24",
+      "bytes": 29217
+    },
+    "saved/national/2023-01/NCut_K08.json.gz": {
+      "sha256": "3c9819859b28e6ff1d5be0fd287d889710ad0103d4f5a56a701c6f4a635ffe9e",
+      "bytes": 29892
+    },
+    "saved/national/2023-01/NCut_K10.json.gz": {
+      "sha256": "3011a3883477a41913d758c1ab5a285b25872d017e377fcc974a9d52cd433a6d",
+      "bytes": 30732
+    },
+    "saved/national/2023-01/NCut_K12.json.gz": {
+      "sha256": "fa33924ff6cb2c56494819f79d3210c38b94aee68c1f3ec598c25b25bf6d7b8d",
+      "bytes": 31414
+    },
+    "saved/national/2023-01/NCut_K16.json.gz": {
+      "sha256": "3f27504591ef0ea43f5cbe59697608648f110c57ffc1ce5295ecde8badb5924f",
+      "bytes": 32644
+    },
+    "saved/national/2023-01/NCut_K20.json.gz": {
+      "sha256": "4be5247aed47a8c668e893d70b16a2ac016f07a201e9cc11a3996185b5980510",
+      "bytes": 33848
+    },
+    "saved/national/2023-01/SSE_K04.json.gz": {
+      "sha256": "dca429b770b4a87fa39ba32296604c5ddc9964d8c45bba3b4f34a851a61341df",
+      "bytes": 28054
+    },
+    "saved/national/2023-01/SSE_K06.json.gz": {
+      "sha256": "5f848dc2d7e11167b7d8dbcfaffd0389763c5307f053c28b7fd0b80d11394625",
+      "bytes": 29071
+    },
+    "saved/national/2023-01/SSE_K08.json.gz": {
+      "sha256": "405c93020b4f4314757eabb693c0e5cda979f65d9c4359834a212c232d33325e",
+      "bytes": 29912
+    },
+    "saved/national/2023-01/SSE_K10.json.gz": {
+      "sha256": "d8587a3bc2787db45299a22daf9cd4176ebf761a10e38721228dc8059fce8ed7",
+      "bytes": 30677
+    },
+    "saved/national/2023-01/SSE_K12.json.gz": {
+      "sha256": "41ff7c3b0a5e56ea6d7df3047b45bc8d23ef5f6a402eee002a5f8ae583a7a9c8",
+      "bytes": 31213
+    },
+    "saved/national/2023-01/SSE_K16.json.gz": {
+      "sha256": "d5d4135614411e613aae062f317e252f0eea28ecfedbb06239a66b7802c2fd50",
+      "bytes": 32488
+    },
+    "saved/national/2023-01/SSE_K20.json.gz": {
+      "sha256": "28c838647a9114ce9016f6561345deec06b8f491a9520e126deea5391481d05e",
+      "bytes": 33703
+    },
+    "saved/national/2023-01/Ward_K04.json.gz": {
+      "sha256": "3210775c482cdbfc3d76951253228216012874362bcf12f32479a8d5925d8ae7",
+      "bytes": 28067
+    },
+    "saved/national/2023-01/Ward_K06.json.gz": {
+      "sha256": "cc6f3bfb0e6c283f52a7d26f36214a00bbe46e19964651e34e096dcff0156415",
+      "bytes": 29097
+    },
+    "saved/national/2023-01/Ward_K08.json.gz": {
+      "sha256": "09c548c52a0445046ecbf5cff655b02ccb5e2fde179fa13bd2f146d88dd8d413",
+      "bytes": 29954
+    },
+    "saved/national/2023-01/Ward_K10.json.gz": {
+      "sha256": "8404c956bfa3b5ebea2adaa6d17e460330fa06d8ff304cd6cc65d933d3e3cbf8",
+      "bytes": 30704
+    },
+    "saved/national/2023-01/Ward_K12.json.gz": {
+      "sha256": "88131e26eef40f7f9c7bcb57ad6859da4f15a5f36a165e6d3f5b1d521fd20ec9",
+      "bytes": 31324
+    },
+    "saved/national/2023-01/Ward_K16.json.gz": {
+      "sha256": "fc55f82f0b9f9b558e0d0415c4d30bddb1efa7d3a8e214a1b8b764cad235042b",
+      "bytes": 32520
+    },
+    "saved/national/2023-01/Ward_K20.json.gz": {
+      "sha256": "dd10b4c39f7606ba02d43463a7c410869b3f3d118134c19c8e28f4adbc9a49c1",
+      "bytes": 33823
+    },
+    "saved/national/2023-02/NCut_K04.json.gz": {
+      "sha256": "5c96473553a4c9a44fc50879f5dc77c40dd184411276a12e0f1975bcbcc1308d",
+      "bytes": 28291
+    },
+    "saved/national/2023-02/NCut_K06.json.gz": {
+      "sha256": "2743c32d5d8b1397a9c582420d0c45f55ed93e35f143db46f1ea00e51c8d1ea1",
+      "bytes": 29218
+    },
+    "saved/national/2023-02/NCut_K08.json.gz": {
+      "sha256": "c81f16fba8c980f1c5d064f3c2620a43a7fa19bae4af632097095a0072be6e0a",
+      "bytes": 29907
+    },
+    "saved/national/2023-02/NCut_K10.json.gz": {
+      "sha256": "20ee3de042c005096316cd18ac4ea1998df10716c67bc2524fe3ade121931d56",
+      "bytes": 30628
+    },
+    "saved/national/2023-02/NCut_K12.json.gz": {
+      "sha256": "aef3d1991160b33638af6e1e16d5ab2a31437b5b95c4077573029214b6efe670",
+      "bytes": 31263
+    },
+    "saved/national/2023-02/NCut_K16.json.gz": {
+      "sha256": "d27851def47a32cd448700c240ef1775b5197c3d1c526e4e0b26a4390cf29ca8",
+      "bytes": 32630
+    },
+    "saved/national/2023-02/NCut_K20.json.gz": {
+      "sha256": "008ede31bdf296b811a5a90adf00494b0c7f52716f8bf54cab164a271126e429",
+      "bytes": 33852
+    },
+    "saved/national/2023-02/SSE_K04.json.gz": {
+      "sha256": "4ff8105f60710e868f50b103feee3c39c8485dfe6e964065ddcd0e026316ced7",
+      "bytes": 28032
+    },
+    "saved/national/2023-02/SSE_K06.json.gz": {
+      "sha256": "e22fc5ba93cb1b831de3df1fa2182e7cdc62f78d9ea9b69d1cb12bfaa858ee9b",
+      "bytes": 29001
+    },
+    "saved/national/2023-02/SSE_K08.json.gz": {
+      "sha256": "820b464dd9e4cc27e4d59d5fdc83369d65e25b585d74d3cdbc83c291d0809d68",
+      "bytes": 29874
+    },
+    "saved/national/2023-02/SSE_K10.json.gz": {
+      "sha256": "1fb814da2527e7d14aaf9bc0e9607562e0dc1811d23c3ea88bf53cb15061feb2",
+      "bytes": 30501
+    },
+    "saved/national/2023-02/SSE_K12.json.gz": {
+      "sha256": "24012772ee2fb52be6e31e59458fceba014118f753571488864c5e113932302c",
+      "bytes": 31227
+    },
+    "saved/national/2023-02/SSE_K16.json.gz": {
+      "sha256": "1e9408d5a6f50bbb436ddaf732dd61559e44268ff5c8ccde76607e0ca6d8d6b9",
+      "bytes": 32409
+    },
+    "saved/national/2023-02/SSE_K20.json.gz": {
+      "sha256": "558beded1160cb2907814fd590e9cacfe5274e4b6a1400cb731bdeed76cfdaaa",
+      "bytes": 33695
+    },
+    "saved/national/2023-02/Ward_K04.json.gz": {
+      "sha256": "6d9eb405d423dd040423030a6a4c6cada39ec8e7b97244cd2b07301c49e3f2d9",
+      "bytes": 28069
+    },
+    "saved/national/2023-02/Ward_K06.json.gz": {
+      "sha256": "f7318eef0ee98dda07c147733e152919f3d741b51415804489b58bf5dfa7af18",
+      "bytes": 29170
+    },
+    "saved/national/2023-02/Ward_K08.json.gz": {
+      "sha256": "818f6007a45cf113afb632ce24377566145fba0ae92c5d7669330eb6bf8bde3f",
+      "bytes": 29924
+    },
+    "saved/national/2023-02/Ward_K10.json.gz": {
+      "sha256": "b64842a349592bc5213b0cf2d464058335257ccef7e9a6274de2f2ad8df469fc",
+      "bytes": 30730
+    },
+    "saved/national/2023-02/Ward_K12.json.gz": {
+      "sha256": "43799827daf17bbf4a25aab921aedadf7b6b314db61d6ef6da9510749a4a1be4",
+      "bytes": 31314
+    },
+    "saved/national/2023-02/Ward_K16.json.gz": {
+      "sha256": "587307d54730f61892f9c61e72e5a01d50ae8773b3aae19992c6764203d11761",
+      "bytes": 32470
+    },
+    "saved/national/2023-02/Ward_K20.json.gz": {
+      "sha256": "0685ac74e6c3607d148407d01ce6aa3b9a9657eb7c9aad3fc511455e9bf48fc7",
+      "bytes": 33765
+    },
+    "saved/national/2023-03/NCut_K04.json.gz": {
+      "sha256": "a361f1e7866afe5b2a39c364d58d2fe39fcb48cc1876509571ceb694ab3d6251",
+      "bytes": 28153
+    },
+    "saved/national/2023-03/NCut_K06.json.gz": {
+      "sha256": "e769e85bddd1fa931c944f2b8f882dbe44968f53066aeca62e9c896fabf636cf",
+      "bytes": 29235
+    },
+    "saved/national/2023-03/NCut_K08.json.gz": {
+      "sha256": "bac9681bec839e3d6096dfb24ed693142614f42dbd3ce8adc20c3ef5cb1cf516",
+      "bytes": 30029
+    },
+    "saved/national/2023-03/NCut_K10.json.gz": {
+      "sha256": "31c20dc9170edbaf7649ee50f95677ad7546718fd7a87d0598f48d871fde9237",
+      "bytes": 30774
+    },
+    "saved/national/2023-03/NCut_K12.json.gz": {
+      "sha256": "dac0d14692da313da713b030ad194bd16b5ad28faa3815ad76494d094a3c1fb9",
+      "bytes": 31388
+    },
+    "saved/national/2023-03/NCut_K16.json.gz": {
+      "sha256": "d4d83a88e72ba97a418dccc1e38953cd1e272b13d4fbf797c3e0f15a973a7289",
+      "bytes": 32735
+    },
+    "saved/national/2023-03/NCut_K20.json.gz": {
+      "sha256": "e5932eed62decf12086dd4e0e8a9de93588931e16879ae07ae5a633ab83e0a6d",
+      "bytes": 33904
+    },
+    "saved/national/2023-03/SSE_K04.json.gz": {
+      "sha256": "8cef1a192b004e0589af8b2a4a87386f153a84dcf4a1d95a011ab7ec04379932",
+      "bytes": 28109
+    },
+    "saved/national/2023-03/SSE_K06.json.gz": {
+      "sha256": "1a5360a356aadcef2f0d671523026390e0204b39ab7652e5a56ed5b5b582551d",
+      "bytes": 29154
+    },
+    "saved/national/2023-03/SSE_K08.json.gz": {
+      "sha256": "f80872cb03adf4ede9c88cdcc16e66954b3743916231e835c9a486a30017651f",
+      "bytes": 29947
+    },
+    "saved/national/2023-03/SSE_K10.json.gz": {
+      "sha256": "e438e81586a6621cf4cc36e96028c61e84a3537f818c3e44ea95d8456d62e0ab",
+      "bytes": 30577
+    },
+    "saved/national/2023-03/SSE_K12.json.gz": {
+      "sha256": "6b6eb002dce1fe538b5ede01efd2aba640e7c4cf733ec6cd7d91d2542b7cd1b5",
+      "bytes": 31296
+    },
+    "saved/national/2023-03/SSE_K16.json.gz": {
+      "sha256": "45d71dcc30bea015706d2eb266d93b37945a4df38c3794eec24d0665f51b170b",
+      "bytes": 32582
+    },
+    "saved/national/2023-03/SSE_K20.json.gz": {
+      "sha256": "7072dab8480bc327fb322b2db699c89b9a6f11819269c952cf0354247d0c0623",
+      "bytes": 33829
+    },
+    "saved/national/2023-03/Ward_K04.json.gz": {
+      "sha256": "be9865ccfccca01935ad104dec47d63ac9ccce025f1b1b475830af3c67af3e17",
+      "bytes": 28127
+    },
+    "saved/national/2023-03/Ward_K06.json.gz": {
+      "sha256": "71ca311224a36e4280ec42df5d9fbe348ae79f07422b8c4cecc444443b364cde",
+      "bytes": 29190
+    },
+    "saved/national/2023-03/Ward_K08.json.gz": {
+      "sha256": "f9b059ba74144b0944a63eb06946754adcd11b24e33e8d5c7a7110fb8b09c690",
+      "bytes": 30042
+    },
+    "saved/national/2023-03/Ward_K10.json.gz": {
+      "sha256": "63a2a0a0c972f614d3a5b55a9f683abb648047c9792d0863c37bc47a623c52e0",
+      "bytes": 30740
+    },
+    "saved/national/2023-03/Ward_K12.json.gz": {
+      "sha256": "f28945becb53beaf0c703103073caf9d2a89b3d7e6cae05ae24cddcb3466d553",
+      "bytes": 31473
+    },
+    "saved/national/2023-03/Ward_K16.json.gz": {
+      "sha256": "fc862d05d86a61e9a3e1b9fcc20f79f1bbf32acc7ad3d8344cbcc2cf27aed8f9",
+      "bytes": 32633
+    },
+    "saved/national/2023-03/Ward_K20.json.gz": {
+      "sha256": "0a8b24510c201e769cc010ad3ececfc567abb071eb43959494223f0265ba3a23",
+      "bytes": 33843
+    },
+    "saved/national/2023-04/NCut_K04.json.gz": {
+      "sha256": "08c1fd825df6c7f548e5174067ee71873691bb0270f79f9ca31c6ac6c4ee9e6a",
+      "bytes": 28193
+    },
+    "saved/national/2023-04/NCut_K06.json.gz": {
+      "sha256": "cef66c2d4a3df14dbb2415566c3a15cd1443cdc227c2eeffda2c86395f5fb85d",
+      "bytes": 29004
+    },
+    "saved/national/2023-04/NCut_K08.json.gz": {
+      "sha256": "e4d06c0fd76ce44432f730f387a13793ff99aa7b8d867a41b2eaf1969cd06729",
+      "bytes": 29777
+    },
+    "saved/national/2023-04/NCut_K10.json.gz": {
+      "sha256": "b54f807cb3819446843c661a30cb6510b69ef793f776447bf3a2055ae79354fb",
+      "bytes": 30487
+    },
+    "saved/national/2023-04/NCut_K12.json.gz": {
+      "sha256": "c3d5316e20746b0429bd7d93a979c7ee81d7a981bf8a16307d59bd807573328a",
+      "bytes": 31283
+    },
+    "saved/national/2023-04/NCut_K16.json.gz": {
+      "sha256": "fdfc2f45cf5a32e08fe166c67da55f5f91257e12480ca22d9aaf123bd79b282a",
+      "bytes": 32535
+    },
+    "saved/national/2023-04/NCut_K20.json.gz": {
+      "sha256": "36ea087eadcff8ee91b94f907d6e87b281fbab584e5b730023efa4b4804af53d",
+      "bytes": 33753
+    },
+    "saved/national/2023-04/SSE_K04.json.gz": {
+      "sha256": "a4061136457dfdc01e0b08462cdf85176f9fabb2ae6e9f813233bdc816464562",
+      "bytes": 27922
+    },
+    "saved/national/2023-04/SSE_K06.json.gz": {
+      "sha256": "42503f6f408eb78e940635c7d83fee05c3614de6d712534a4790b77d63e681cd",
+      "bytes": 28958
+    },
+    "saved/national/2023-04/SSE_K08.json.gz": {
+      "sha256": "66cd21d554dc45e0ef3a9c8fcd48b5d41eb5df916fad2b78a82d3b8a16b16f31",
+      "bytes": 29704
+    },
+    "saved/national/2023-04/SSE_K10.json.gz": {
+      "sha256": "3f43c5621db25f449dce49b45cca96098828035e38d97a6438e9eed649b22769",
+      "bytes": 30365
+    },
+    "saved/national/2023-04/SSE_K12.json.gz": {
+      "sha256": "dfa0a4bc13780df1433610d39e978ccb1ce56302d35fd2086f4bc3eb1d5828d8",
+      "bytes": 31051
+    },
+    "saved/national/2023-04/SSE_K16.json.gz": {
+      "sha256": "b266f3d00a36834d68f6f89be1775a6683ad12dcb84fd5355262f39428594417",
+      "bytes": 32332
+    },
+    "saved/national/2023-04/SSE_K20.json.gz": {
+      "sha256": "3602aad019fc3549729fa29897e2a666303321fa267c9ce156a1f3718fdafd5a",
+      "bytes": 33583
+    },
+    "saved/national/2023-04/Ward_K04.json.gz": {
+      "sha256": "d922ab41576e6b9dc620b4a967ffe36378e459bd9c8118e02a1d1b559a2ae278",
+      "bytes": 27605
+    },
+    "saved/national/2023-04/Ward_K06.json.gz": {
+      "sha256": "8d83aaa50e5c945d68023fa3a91aa330051094b2e9e424d1dbc6725d35db4368",
+      "bytes": 29067
+    },
+    "saved/national/2023-04/Ward_K08.json.gz": {
+      "sha256": "652d1d1fc38e32bbd6e71b5bc7381eb06183af8ac7b691bd07d41b9fd4354f86",
+      "bytes": 29820
+    },
+    "saved/national/2023-04/Ward_K10.json.gz": {
+      "sha256": "8c37f10001f6bea21323d9b29367f37f678eff7f4ba3b7915e9c7577a45f747e",
+      "bytes": 30494
+    },
+    "saved/national/2023-04/Ward_K12.json.gz": {
+      "sha256": "74fd557f405407e3a5fd44c5f9bafed1a8157a1a0032b0a6503cf044b7f17e4e",
+      "bytes": 31116
+    },
+    "saved/national/2023-04/Ward_K16.json.gz": {
+      "sha256": "06541171d9f5257f7c568fa321f076664af981471805575c4dda96a2e62635b5",
+      "bytes": 32387
+    },
+    "saved/national/2023-04/Ward_K20.json.gz": {
+      "sha256": "4133fbe91c8b606e3823e73b1c3b15294fc8883efd3ad0d7a83fa70000ec0435",
+      "bytes": 33638
+    },
+    "saved/national/2023-05/NCut_K04.json.gz": {
+      "sha256": "9c47684255857bb5b2e888a4f3664a401a9c5fa7aed6bf12dac7faf15b9cf925",
+      "bytes": 28145
+    },
+    "saved/national/2023-05/NCut_K06.json.gz": {
+      "sha256": "c96b8151da576029f38ffbb13ff219b6c2d7554bb396125c76762b9af5031715",
+      "bytes": 28967
+    },
+    "saved/national/2023-05/NCut_K08.json.gz": {
+      "sha256": "4a12c1e8b7976043834bffa9c443c0bea7dd4322504a60bd516b5ad8043d125a",
+      "bytes": 29675
+    },
+    "saved/national/2023-05/NCut_K10.json.gz": {
+      "sha256": "1b2a35bcf3abde4c06d4b49606cc224f2f8524bd3fb8646082c5e07e6117d5a3",
+      "bytes": 30482
+    },
+    "saved/national/2023-05/NCut_K12.json.gz": {
+      "sha256": "4e875e5b495f34f5a607815feb5d5c3a268231f4cffc4886b867f36932c0a3a7",
+      "bytes": 31154
+    },
+    "saved/national/2023-05/NCut_K16.json.gz": {
+      "sha256": "52eab463727af387068c3ccc9634deb9c2b7e062fdfe0adf7e49a372bd1aa19b",
+      "bytes": 32290
+    },
+    "saved/national/2023-05/NCut_K20.json.gz": {
+      "sha256": "5d7e2259429b9f85b96ff688b202b153813035d2df9963b5f484aa795e38ebdd",
+      "bytes": 33722
+    },
+    "saved/national/2023-05/SSE_K04.json.gz": {
+      "sha256": "c92bee4ab48b319d497519a7810b02251052f8feb5e556dd48c58856fc47ade5",
+      "bytes": 27848
+    },
+    "saved/national/2023-05/SSE_K06.json.gz": {
+      "sha256": "a0b71e1fcfd79b854fd724c49889be999d74c290e15e0f93b301f9bf73f95d71",
+      "bytes": 28899
+    },
+    "saved/national/2023-05/SSE_K08.json.gz": {
+      "sha256": "05372e011c00ecd8f4b07b442c5d3e036eb689e10464ddd6b45c767f6c2d5101",
+      "bytes": 29639
+    },
+    "saved/national/2023-05/SSE_K10.json.gz": {
+      "sha256": "f79c21c77fe74778cf914d5908e944cecbd8c523b871a69d5d284799fa5d09ae",
+      "bytes": 30221
+    },
+    "saved/national/2023-05/SSE_K12.json.gz": {
+      "sha256": "3b85334154049dc2fb92aa6972446b50a7a7bb7000004fa947e12c04f4442b13",
+      "bytes": 30920
+    },
+    "saved/national/2023-05/SSE_K16.json.gz": {
+      "sha256": "79eda8676d0174d1910064485bc416b82b31d9b8baad870b29ba7be2889240d6",
+      "bytes": 32182
+    },
+    "saved/national/2023-05/SSE_K20.json.gz": {
+      "sha256": "4f53703243e93381b0ceb292bd7699552a86ab2ab73e67dad0b912cd8d1d7327",
+      "bytes": 33423
+    },
+    "saved/national/2023-05/Ward_K04.json.gz": {
+      "sha256": "a8741a15b93a14f0a2153256bdd7b071a9ce09f86fee87d3916b04fd831f656d",
+      "bytes": 27794
+    },
+    "saved/national/2023-05/Ward_K06.json.gz": {
+      "sha256": "bb7ab22df23e06d0cba10de87af073dcd87ddbb2e5593cce94012f5aad1e5746",
+      "bytes": 28943
+    },
+    "saved/national/2023-05/Ward_K08.json.gz": {
+      "sha256": "36858dd1f9ccd42a7cd6b5cb53f8b8574441f8e69d87f00f5fbdef36fbd5ee3d",
+      "bytes": 29593
+    },
+    "saved/national/2023-05/Ward_K10.json.gz": {
+      "sha256": "9b89897eaf051a84ceb845037d1115ca05e29331d29ddef494c5434121de5b47",
+      "bytes": 30268
+    },
+    "saved/national/2023-05/Ward_K12.json.gz": {
+      "sha256": "f152a3ea5cada3021323f4438030d9f85cd8416891a0894307b400df3d44500b",
+      "bytes": 31020
+    },
+    "saved/national/2023-05/Ward_K16.json.gz": {
+      "sha256": "02a5c4916c78ef4f287d0ea30d4f45586c4e98ef5b6927803a559a190bc8bae1",
+      "bytes": 32319
+    },
+    "saved/national/2023-05/Ward_K20.json.gz": {
+      "sha256": "eeb3df369f367bd333dac9c1cdf9f181705c8e90035bf238362ae286f435b544",
+      "bytes": 33520
+    },
+    "saved/national/2023-06/NCut_K04.json.gz": {
+      "sha256": "b49b80800b2097c727abd34949c9d2ac9e5b09588f6906a62b21a4f89cf66f88",
+      "bytes": 28001
+    },
+    "saved/national/2023-06/NCut_K06.json.gz": {
+      "sha256": "f1307f753ccf822cd12169f9b251a87e194d7129e4d9345cbadd4e111790e8ea",
+      "bytes": 28961
+    },
+    "saved/national/2023-06/NCut_K08.json.gz": {
+      "sha256": "1af3bc0b820227582bfac2aa8240fc66e36cbebe55cb6d4c8e7cab9fffee3b96",
+      "bytes": 29640
+    },
+    "saved/national/2023-06/NCut_K10.json.gz": {
+      "sha256": "e8a7e2f9cfcff1e8f6991ce17c5e68b1ce5c6e8d210fabb3e9ebfcc1b78378af",
+      "bytes": 30382
+    },
+    "saved/national/2023-06/NCut_K12.json.gz": {
+      "sha256": "c872506160bda1932c5b0cd03549df9c9ffca072b576d2738d4d0605ee7b10d4",
+      "bytes": 31118
+    },
+    "saved/national/2023-06/NCut_K16.json.gz": {
+      "sha256": "6d3b261c89b345bb236f89ad27f1ab3fe245ec80374a1147bbf26f6dd48fec29",
+      "bytes": 32386
+    },
+    "saved/national/2023-06/NCut_K20.json.gz": {
+      "sha256": "80f70ebcde2ed2c6e9cc15ca57e912eada6499e7591697199033b2d8c6146445",
+      "bytes": 33690
+    },
+    "saved/national/2023-06/SSE_K04.json.gz": {
+      "sha256": "024c135661f8b1265b779ed1a04d9c8e025b9c3ffe8ff2d41fcfb1e993206509",
+      "bytes": 27801
+    },
+    "saved/national/2023-06/SSE_K06.json.gz": {
+      "sha256": "acfea6795fbd155b59d68811363b6ae180d8cd0ffe9ca20c680f6899304edf40",
+      "bytes": 28777
+    },
+    "saved/national/2023-06/SSE_K08.json.gz": {
+      "sha256": "3cc77e3b215db4ef3a1cc1d312da5917f91ac2206f5c78901e9084dc2904838b",
+      "bytes": 29636
+    },
+    "saved/national/2023-06/SSE_K10.json.gz": {
+      "sha256": "b1e7b2921872769acb43b26c49b383f08bbc4733181666bd005959bb0456fb86",
+      "bytes": 30239
+    },
+    "saved/national/2023-06/SSE_K12.json.gz": {
+      "sha256": "f0839e49dc1ed5c96305885de7c06c0deaa72d31453f8b63bbfec6323d5e6508",
+      "bytes": 30865
+    },
+    "saved/national/2023-06/SSE_K16.json.gz": {
+      "sha256": "9abdc55927d80c1ce0dfe82c387295b6718cf9495c08b4cb75f585669e1a1fc5",
+      "bytes": 32188
+    },
+    "saved/national/2023-06/SSE_K20.json.gz": {
+      "sha256": "63f3fd5fbdaf7398283fd69fdef216496adb89ada04f16e8081826c7f1786943",
+      "bytes": 33372
+    },
+    "saved/national/2023-06/Ward_K04.json.gz": {
+      "sha256": "d6d42b0ee09ce2f8c5a34df92510ea9d31ddbc1237e625d1a9b600bf6d2e86e4",
+      "bytes": 27940
+    },
+    "saved/national/2023-06/Ward_K06.json.gz": {
+      "sha256": "c5e03ceedd228a3bee31c4401a3ad8ff0f7899064fb4a59d2acb157a59c064e8",
+      "bytes": 28934
+    },
+    "saved/national/2023-06/Ward_K08.json.gz": {
+      "sha256": "7cedd40cb8eff52c83a34aed35aa7a02e6ea80a75ec82d2f2fe33a14ba9eb9c4",
+      "bytes": 29578
+    },
+    "saved/national/2023-06/Ward_K10.json.gz": {
+      "sha256": "08a63fc15a13f36af1a8e57af0bd5410d77a7c843ec93b95e17a2a0eee2ef0a4",
+      "bytes": 30311
+    },
+    "saved/national/2023-06/Ward_K12.json.gz": {
+      "sha256": "f70b2d002df2b92b9977053ca7ea80f06ec03f6de3cd80df5b1f47be63e8042b",
+      "bytes": 30995
+    },
+    "saved/national/2023-06/Ward_K16.json.gz": {
+      "sha256": "fbc88b4e83f95197f599b152950174f5cefa8b09cdcf62a1b507c8e1b069728c",
+      "bytes": 32346
+    },
+    "saved/national/2023-06/Ward_K20.json.gz": {
+      "sha256": "83baf1c8df68aa7897e017a67a3e6c8b48dcd36f4ba39da6162e038d2c3326cc",
+      "bytes": 33545
+    },
+    "saved/national/2023-07/NCut_K04.json.gz": {
+      "sha256": "063d4a82467845d5f179fb729cf455dc4a90d0ebc28c6cb4b28265e245ed0c9e",
+      "bytes": 28039
+    },
+    "saved/national/2023-07/NCut_K06.json.gz": {
+      "sha256": "10cd2ad00b490b8b153927d34d5d55ef4e1c4f61d268eb63af047c184cec2b41",
+      "bytes": 29020
+    },
+    "saved/national/2023-07/NCut_K08.json.gz": {
+      "sha256": "88d980899eb07e98b251aae40210ea0cb098e590cadde603a7d012f33110f5c2",
+      "bytes": 29773
+    },
+    "saved/national/2023-07/NCut_K10.json.gz": {
+      "sha256": "4f33d26dc722a8bc30df702a8de107da25526b3265bc053a6954d4c367f8b361",
+      "bytes": 30556
+    },
+    "saved/national/2023-07/NCut_K12.json.gz": {
+      "sha256": "d0cd60073e64b13c18dbbdfca9ebd4bbbbadb5952dc497fdde906d5f58ef0b22",
+      "bytes": 31200
+    },
+    "saved/national/2023-07/NCut_K16.json.gz": {
+      "sha256": "14db16da532252068dc72b276dab0af29aa6df0d881f28627a0cad0fcda9def6",
+      "bytes": 32380
+    },
+    "saved/national/2023-07/NCut_K20.json.gz": {
+      "sha256": "b3e0a0cfb01269e83a4e231192f343e07fce74f971ec626c61e151cde6b92a1b",
+      "bytes": 33695
+    },
+    "saved/national/2023-07/SSE_K04.json.gz": {
+      "sha256": "33303815516cf51f7549324036e286229c4e40ea846d2c5d87606f458a3e628c",
+      "bytes": 27919
+    },
+    "saved/national/2023-07/SSE_K06.json.gz": {
+      "sha256": "4bd793bda28dcee4ad520577c9067b017e067a4311fc3ec79c443b402e9d64ed",
+      "bytes": 28869
+    },
+    "saved/national/2023-07/SSE_K08.json.gz": {
+      "sha256": "a4674688f589d9915891273edfd123c24778eb38fc9489eac2f86a3dfa36541b",
+      "bytes": 29650
+    },
+    "saved/national/2023-07/SSE_K10.json.gz": {
+      "sha256": "6c828ba62156453a8dfb2af8586a3465656f98f3be99a99e46971aa1cd7fa00c",
+      "bytes": 30336
+    },
+    "saved/national/2023-07/SSE_K12.json.gz": {
+      "sha256": "4d11e353e2e39d84873f694f933e686328f3a7940ee7158fb3d2e56ce0f3acec",
+      "bytes": 31051
+    },
+    "saved/national/2023-07/SSE_K16.json.gz": {
+      "sha256": "29e3f4c295dbee4ca3e502219fa601a0be8471f3877da7d993d4eb1bdaf037df",
+      "bytes": 32286
+    },
+    "saved/national/2023-07/SSE_K20.json.gz": {
+      "sha256": "65f3ab2d80dd75b72265ad37b48c0c1b1343902afb03bb333da872eb2744f3e0",
+      "bytes": 33533
+    },
+    "saved/national/2023-07/Ward_K04.json.gz": {
+      "sha256": "470d3a1dbadfc4ce8960adfe9bcb8a4f7f7362bb28c8ed5f7a511b8cb459451c",
+      "bytes": 28170
+    },
+    "saved/national/2023-07/Ward_K06.json.gz": {
+      "sha256": "8aba8d2f5b46140dcc2cfcfeda75cbc5e4c0f6efac9a8c5517bd587a1a647473",
+      "bytes": 28872
+    },
+    "saved/national/2023-07/Ward_K08.json.gz": {
+      "sha256": "0a16e79ba254229ba8f8f91e74a2895d9e6f45861bed8f764044e210fe70a3d9",
+      "bytes": 29587
+    },
+    "saved/national/2023-07/Ward_K10.json.gz": {
+      "sha256": "c13a4c4a7830e54326df66d21490300f900fef6c21ad197f6a8d2e0518a24c44",
+      "bytes": 30454
+    },
+    "saved/national/2023-07/Ward_K12.json.gz": {
+      "sha256": "5116f8475429894e824a6a1452d50210d92df08704d83221cf5b250571e4a6a7",
+      "bytes": 31053
+    },
+    "saved/national/2023-07/Ward_K16.json.gz": {
+      "sha256": "230537bd5ddff4d3a980b42beb89a0fceb07eb00bb97ea23f39e1b1eae8b9faf",
+      "bytes": 32362
+    },
+    "saved/national/2023-07/Ward_K20.json.gz": {
+      "sha256": "315fee9b729e689e9e82cf64ccf61b38e7634863d671e9a9a2a679b3e56825c5",
+      "bytes": 33550
+    },
+    "saved/national/2023-08/NCut_K04.json.gz": {
+      "sha256": "bfc89e81f9809addc10f44ad139cb1a873235790618ef5570711b3371c2c4222",
+      "bytes": 27873
+    },
+    "saved/national/2023-08/NCut_K06.json.gz": {
+      "sha256": "f537855204d783d11e7cfb9840f94836c2fdde9119f1020a811e6680b80b3310",
+      "bytes": 28980
+    },
+    "saved/national/2023-08/NCut_K08.json.gz": {
+      "sha256": "302221c2f61f830bad7f2406d5992f1cfdffb571808f35c4ef9076ca9f76e96b",
+      "bytes": 29640
+    },
+    "saved/national/2023-08/NCut_K10.json.gz": {
+      "sha256": "3bd43fe7bd50ddcc42a990bc439d891b77425ad7ed786722633743ee3bea998d",
+      "bytes": 30342
+    },
+    "saved/national/2023-08/NCut_K12.json.gz": {
+      "sha256": "d238c6dfa6ea0a4355a7bd02a4114b94b266dfb83c5b9b0645b968a810c25650",
+      "bytes": 31113
+    },
+    "saved/national/2023-08/NCut_K16.json.gz": {
+      "sha256": "77ae5b8d6703b10964c9bde438b16edbf359ad60e8dc70302fd2df32c3933056",
+      "bytes": 32347
+    },
+    "saved/national/2023-08/NCut_K20.json.gz": {
+      "sha256": "eccbc0bf7a6ebd489bfabee8ec4edf4ab9df85465b0d95f5a5907fbc58a062dc",
+      "bytes": 33595
+    },
+    "saved/national/2023-08/SSE_K04.json.gz": {
+      "sha256": "8d5ada1304b2a3717bcc305bf73b718710b7c944cd1ae217a11066a7ba5dcdbb",
+      "bytes": 27744
+    },
+    "saved/national/2023-08/SSE_K06.json.gz": {
+      "sha256": "c336b4ee710faa108e6f9cb2cc6e9b34910e42fc57d6f8acc1268e4dfad48c65",
+      "bytes": 28769
+    },
+    "saved/national/2023-08/SSE_K08.json.gz": {
+      "sha256": "933ee46d8a944843e9b63765665ddf0a646059c8fd3b6d83708de2d6428b4a89",
+      "bytes": 29585
+    },
+    "saved/national/2023-08/SSE_K10.json.gz": {
+      "sha256": "a6e06fbda12c3df57055b90edd320865333bb9221a0f58864c88d0f80a29fa3d",
+      "bytes": 30288
+    },
+    "saved/national/2023-08/SSE_K12.json.gz": {
+      "sha256": "e0e8c5e4dedc287e666f6e37e00df4667e8a168c65bd4a1824bf4eb199024f53",
+      "bytes": 30943
+    },
+    "saved/national/2023-08/SSE_K16.json.gz": {
+      "sha256": "596b4de5ee882062708ffe6850bd6f0550f482f894c72928496c2a355cab2d6d",
+      "bytes": 32176
+    },
+    "saved/national/2023-08/SSE_K20.json.gz": {
+      "sha256": "d19a7ddcb2096ae9090869df888c736b86d4c88c1f5c9cf7b11564b813bc786d",
+      "bytes": 33359
+    },
+    "saved/national/2023-08/Ward_K04.json.gz": {
+      "sha256": "798ae7bd9b5155c0af9930f81af452002c24424ad654ffdac026e48842206b1d",
+      "bytes": 28110
+    },
+    "saved/national/2023-08/Ward_K06.json.gz": {
+      "sha256": "e1e1054d7324913d57bf96cd3c65fabe043eb2956c7f221bfde82317abd2aaa1",
+      "bytes": 28947
+    },
+    "saved/national/2023-08/Ward_K08.json.gz": {
+      "sha256": "e000c5a16a020486b8854f7dad7d4d29c4111a019f7248603be734ce03547f76",
+      "bytes": 29710
+    },
+    "saved/national/2023-08/Ward_K10.json.gz": {
+      "sha256": "7a578e335085f68b6bf0c18276cde0a9f2823f4aff2cbcce41cf17beed4c28c4",
+      "bytes": 30483
+    },
+    "saved/national/2023-08/Ward_K12.json.gz": {
+      "sha256": "8167fb427a9eac53b200143f53fc938c55a664a94244dfd1d6d0e5c9e850109d",
+      "bytes": 31046
+    },
+    "saved/national/2023-08/Ward_K16.json.gz": {
+      "sha256": "598401e5489627ebe23ec5d01e745dd2dad570c64749058a54ba40c43afb6f2d",
+      "bytes": 32279
+    },
+    "saved/national/2023-08/Ward_K20.json.gz": {
+      "sha256": "3e21bf2a7be3678c8445dc4a4bd144f9f137e41a8c3d62f15fb070fbd42ed6be",
+      "bytes": 33444
+    },
+    "saved/national/2023-09/NCut_K04.json.gz": {
+      "sha256": "003e06ba6093ee1d84ca193d65ac28dd9d4cd31b95f73231b5d8b8f297bdee0f",
+      "bytes": 27886
+    },
+    "saved/national/2023-09/NCut_K06.json.gz": {
+      "sha256": "1c5dad47fb66167128473a9260d3e75464afa5cc77a72a4c68b5ba69d901676e",
+      "bytes": 28833
+    },
+    "saved/national/2023-09/NCut_K08.json.gz": {
+      "sha256": "a96da021b4560fe41b6589b7f7741f03d56fde052c4d73a16d950cf31a515cfa",
+      "bytes": 29539
+    },
+    "saved/national/2023-09/NCut_K10.json.gz": {
+      "sha256": "d073a1d9ae0efead835e07fc66940c700e241aa212c3c0151dfd0dc1fd5e3052",
+      "bytes": 30213
+    },
+    "saved/national/2023-09/NCut_K12.json.gz": {
+      "sha256": "4ae180110b4af4825c1afd05891c32ab2d33db1912a57b079fecb71c243b5167",
+      "bytes": 31049
+    },
+    "saved/national/2023-09/NCut_K16.json.gz": {
+      "sha256": "8139cf3afec366784583526bb6dab9ecea7d3e7fbdc0460c7b6bc6dd5a8e8f44",
+      "bytes": 32220
+    },
+    "saved/national/2023-09/NCut_K20.json.gz": {
+      "sha256": "a3e6aa62b755a7223ef75ff3a9705d8d25e54a40d9c4944c1cebb785b75ce941",
+      "bytes": 33449
+    },
+    "saved/national/2023-09/SSE_K04.json.gz": {
+      "sha256": "f7f2d5c5de35377673d261cb9379e56d95d7c11b1ee6a6c49b2c5059c169541d",
+      "bytes": 27580
+    },
+    "saved/national/2023-09/SSE_K06.json.gz": {
+      "sha256": "56c8957ee285c821a43f2bb468960004871148fad27a017ba904371674c726ea",
+      "bytes": 28678
+    },
+    "saved/national/2023-09/SSE_K08.json.gz": {
+      "sha256": "0a47a927d39a44e29f16eb7a0dcae3c25fdaaea35e68fc963b6b446f0a69cb43",
+      "bytes": 29489
+    },
+    "saved/national/2023-09/SSE_K10.json.gz": {
+      "sha256": "8a63a16e03973762a0e6ed5b02ae6156c505eb9e6d08e9109fec605f5b7d5d2e",
+      "bytes": 30148
+    },
+    "saved/national/2023-09/SSE_K12.json.gz": {
+      "sha256": "ecbb52d548504ff290970780950b72ebc1a94eefa5934f482be5731829631fea",
+      "bytes": 30904
+    },
+    "saved/national/2023-09/SSE_K16.json.gz": {
+      "sha256": "25b77bc1f4d0f0f1a138253018d66ada105f1e9c4c1635300ba09994e46bb5e3",
+      "bytes": 31991
+    },
+    "saved/national/2023-09/SSE_K20.json.gz": {
+      "sha256": "a3180776d985adf1c370b328bcff3baf4f5f1f3b1161aa94bc490d9863e0041a",
+      "bytes": 33186
+    },
+    "saved/national/2023-09/Ward_K04.json.gz": {
+      "sha256": "6977cf50031c417cbdf61e409781d87f29cb60ef70e0e26b4ca83be7d973f7ec",
+      "bytes": 28018
+    },
+    "saved/national/2023-09/Ward_K06.json.gz": {
+      "sha256": "d9d8be353918a6de380a0f805c85b6594d1be2168834f6c55ed8d899bd00dc4a",
+      "bytes": 28807
+    },
+    "saved/national/2023-09/Ward_K08.json.gz": {
+      "sha256": "6fde4297ad167716feb6ff1700c6b0451bcb069839f0f2ed095e361dacd76d04",
+      "bytes": 29528
+    },
+    "saved/national/2023-09/Ward_K10.json.gz": {
+      "sha256": "f9018a8953fed103e30bfbcb49787c8ee9740462455a889c33ec137bd0a4d6b9",
+      "bytes": 30298
+    },
+    "saved/national/2023-09/Ward_K12.json.gz": {
+      "sha256": "e01d331889f2785a2bf1d3d67326d73d38488b79e044e9dff422d6392acae743",
+      "bytes": 30935
+    },
+    "saved/national/2023-09/Ward_K16.json.gz": {
+      "sha256": "d1dc89e4bba7956857bc17edeb5b84c271fc41fca42fde12a156ae8b2b6c9e76",
+      "bytes": 32138
+    },
+    "saved/national/2023-09/Ward_K20.json.gz": {
+      "sha256": "bcb18f9f2b12951f5e4c626b57436ceb65b8c6e588450bc88f9f8cbf3f4ccae3",
+      "bytes": 33415
+    },
+    "saved/national/2023-10/NCut_K04.json.gz": {
+      "sha256": "4dd9d2884765b8a459d7f3cffbb6d3ca27e4b8c8bd140aef019b32d896d31897",
+      "bytes": 27717
+    },
+    "saved/national/2023-10/NCut_K06.json.gz": {
+      "sha256": "d67a1712b58df5784a150b34a171fbd6429bf779ecca70ca5def54ddb899eaac",
+      "bytes": 28782
+    },
+    "saved/national/2023-10/NCut_K08.json.gz": {
+      "sha256": "76d3537b0361de31028800b4b5865f5cb7c8eac79b1d96278ecee8be8c1ad09e",
+      "bytes": 29488
+    },
+    "saved/national/2023-10/NCut_K10.json.gz": {
+      "sha256": "a239b4e9c075ab8507e17b51d3c6075a1e1ea5b6c2c1ff4ed1f15da1feba3585",
+      "bytes": 30088
+    },
+    "saved/national/2023-10/NCut_K12.json.gz": {
+      "sha256": "b8a102c2a47c05aef5f55e3b6bcb8bff2041a078b272115223f5d2d321bf1aa5",
+      "bytes": 30779
+    },
+    "saved/national/2023-10/NCut_K16.json.gz": {
+      "sha256": "1f4ecf71afb7c778b44100452888e107549ea10162e1b06f16e55847735b9a3f",
+      "bytes": 32183
+    },
+    "saved/national/2023-10/NCut_K20.json.gz": {
+      "sha256": "b9453eebb75daef9916d3ea58fa8a6664372874130789e14dbb2537044ed98eb",
+      "bytes": 33409
+    },
+    "saved/national/2023-10/SSE_K04.json.gz": {
+      "sha256": "ca380a734c4a2e4958d1b9500ee098a89beeeb25ea6952a83c0ad0932644f82f",
+      "bytes": 27494
+    },
+    "saved/national/2023-10/SSE_K06.json.gz": {
+      "sha256": "985981967ec7f7a3e2769f61f2e049e7eafd9e3ceae49fc1fd8383b65c3a8982",
+      "bytes": 28645
+    },
+    "saved/national/2023-10/SSE_K08.json.gz": {
+      "sha256": "fa5308ec68d99d0907d329eb04b7e0f72e26112a427402691a59d99aef8538d8",
+      "bytes": 29340
+    },
+    "saved/national/2023-10/SSE_K10.json.gz": {
+      "sha256": "005b99cdf1def695242e13c714a5bdc8449e61e665db334e998cf00d3f48f98f",
+      "bytes": 30138
+    },
+    "saved/national/2023-10/SSE_K12.json.gz": {
+      "sha256": "a8734f3f4d9e33c528d29e34a6115efb7c552dbc89168f4b5207bc3dfafd6f83",
+      "bytes": 30751
+    },
+    "saved/national/2023-10/SSE_K16.json.gz": {
+      "sha256": "c3d7e271e7a6fa7ec273f99efc1dfdc4430ab7346629c898aa300569c5ad24b6",
+      "bytes": 31991
+    },
+    "saved/national/2023-10/SSE_K20.json.gz": {
+      "sha256": "874a8c6653eb4cc99e2a8fc56f5553a2f6f909fdaf7dd273bc1c2ca81a645200",
+      "bytes": 33174
+    },
+    "saved/national/2023-10/Ward_K04.json.gz": {
+      "sha256": "62d3a96370490287107b135692631ff0009ec818cf411f757715a0e273388b4e",
+      "bytes": 27611
+    },
+    "saved/national/2023-10/Ward_K06.json.gz": {
+      "sha256": "41ae19b874243cebfaa6a2874926bdb1139e3f66ddf78cf8924ca0940080d342",
+      "bytes": 28727
+    },
+    "saved/national/2023-10/Ward_K08.json.gz": {
+      "sha256": "173ec17c33a1f952b95cfec95d8178ddc225deaea25c705daae6a6bc391b85b0",
+      "bytes": 29591
+    },
+    "saved/national/2023-10/Ward_K10.json.gz": {
+      "sha256": "dfbb526cf202c8365b890ebc2477d1077d9a97a7e4e380902e71e26bbc93654e",
+      "bytes": 30232
+    },
+    "saved/national/2023-10/Ward_K12.json.gz": {
+      "sha256": "cf076cf0669c667a30fc9a314ce84d54b685a5d0c92492f9b762e2202b83c47e",
+      "bytes": 30931
+    },
+    "saved/national/2023-10/Ward_K16.json.gz": {
+      "sha256": "1981bda8669f94ddae7d08648d90b699c3a6c7e6e806a0daaad62aa0115afa65",
+      "bytes": 32129
+    },
+    "saved/national/2023-10/Ward_K20.json.gz": {
+      "sha256": "3d6ecf733981a427274386ef2601d23e7341487112998007ca98a8863c4e61fa",
+      "bytes": 33339
+    },
+    "saved/national/2023-11/NCut_K04.json.gz": {
+      "sha256": "f2d9f3113de1fb3304d7cccb48c9e70953deabab3ab62a3a1edebc05d11eb3c1",
+      "bytes": 27615
+    },
+    "saved/national/2023-11/NCut_K06.json.gz": {
+      "sha256": "d3154401bf1f0cd617c2b84a74395a61b598b204dad0da33eb36c56c481917d3",
+      "bytes": 28683
+    },
+    "saved/national/2023-11/NCut_K08.json.gz": {
+      "sha256": "cfdde69ccb3f45a124fd1a498a5a5568b65b0a2030b7a4f2a7a374f7478aa17e",
+      "bytes": 29298
+    },
+    "saved/national/2023-11/NCut_K10.json.gz": {
+      "sha256": "8b6dbbc179e6c0341470ea98904efddbb159bd003d04d1e6aa859791efdc3f4c",
+      "bytes": 30149
+    },
+    "saved/national/2023-11/NCut_K12.json.gz": {
+      "sha256": "774fc8f7c59796ac85d3ed35d4e8f3662bebea34a564649bd0514fdc87cb741d",
+      "bytes": 30814
+    },
+    "saved/national/2023-11/NCut_K16.json.gz": {
+      "sha256": "c3d7c8837d46b22db267e6b052f3d8cfcfdeed58a57e0f799db756c1722db4c3",
+      "bytes": 32126
+    },
+    "saved/national/2023-11/NCut_K20.json.gz": {
+      "sha256": "e43e68f073068a32cba87ba39b7da2565938fbc44ccffd720edd7c7109d75442",
+      "bytes": 33233
+    },
+    "saved/national/2023-11/SSE_K04.json.gz": {
+      "sha256": "d0433e70f1af71dc538667d9ab41bf99e0acf8dc409be391da70ebe901342692",
+      "bytes": 27427
+    },
+    "saved/national/2023-11/SSE_K06.json.gz": {
+      "sha256": "a1a9c9b9359e7bfa809861b3524b76c082c9dcdc5b79f2a4f58641c149499589",
+      "bytes": 28472
+    },
+    "saved/national/2023-11/SSE_K08.json.gz": {
+      "sha256": "17a2d3660bfcda7364724cee429658fe978a7bcebe5ce353a60546777d4e51c8",
+      "bytes": 29341
+    },
+    "saved/national/2023-11/SSE_K10.json.gz": {
+      "sha256": "0be53e8f7d2be3e0898179fa038e10197d8fe565ddfaa801185ba579564198ca",
+      "bytes": 30005
+    },
+    "saved/national/2023-11/SSE_K12.json.gz": {
+      "sha256": "82d421357a8b28b90b590348e19666704d447237e510f78f3bbdbea4867ae783",
+      "bytes": 30672
+    },
+    "saved/national/2023-11/SSE_K16.json.gz": {
+      "sha256": "be29e555a990589bd592ecdda8f00bf6dc23247f11c1187f7e8e613af81fcf0e",
+      "bytes": 31875
+    },
+    "saved/national/2023-11/SSE_K20.json.gz": {
+      "sha256": "56168a9c9bffb294d2b2112fec06132b2b0fa22967680b715888f3d7b4117597",
+      "bytes": 33091
+    },
+    "saved/national/2023-11/Ward_K04.json.gz": {
+      "sha256": "6e19f4c0ddbec4b5d037a41a70190f959c89b8258f2594cd0296d5f6c49378c0",
+      "bytes": 27848
+    },
+    "saved/national/2023-11/Ward_K06.json.gz": {
+      "sha256": "456bde41fdc8cce694e00acc50f5376ee933eba690a5c209c1173bf0163c829b",
+      "bytes": 28652
+    },
+    "saved/national/2023-11/Ward_K08.json.gz": {
+      "sha256": "a710355db4e1140d351575cc421e2067dec25d1b7182d4f36573845e3eb29c17",
+      "bytes": 29482
+    },
+    "saved/national/2023-11/Ward_K10.json.gz": {
+      "sha256": "224eb0e8a981ae1ae5a3cc47ddad2591904d3ace88aa584125a320a032a68ab6",
+      "bytes": 30084
+    },
+    "saved/national/2023-11/Ward_K12.json.gz": {
+      "sha256": "3af4ccabd342550f5e6f659c4fa06becf1e76fd332c5e0866938b365ac91a757",
+      "bytes": 30723
+    },
+    "saved/national/2023-11/Ward_K16.json.gz": {
+      "sha256": "7baa5a1183c252a092a8e6044dcabb31dadccf635de146b4faa9b7393a65aecc",
+      "bytes": 31940
+    },
+    "saved/national/2023-11/Ward_K20.json.gz": {
+      "sha256": "becb3f8a81e4e3ad590352c4a0ff8865560faef4b96672f04d36a76de666759f",
+      "bytes": 33223
+    },
+    "saved/national/2023-12/NCut_K04.json.gz": {
+      "sha256": "8f5b7e0d69142128d4d0940030428b37242dab04f1f43c2f3f13d5d4ed130bb3",
+      "bytes": 27888
+    },
+    "saved/national/2023-12/NCut_K06.json.gz": {
+      "sha256": "af85fc9d434a4e3ec538d98b37ab9aa167bc2a0bdcfecdaeb21e3cda9010c7c6",
+      "bytes": 28780
+    },
+    "saved/national/2023-12/NCut_K08.json.gz": {
+      "sha256": "f2db857e9a845a6106e13e0025aeb84656829ac5608e720bcfbae221d73598f6",
+      "bytes": 29539
+    },
+    "saved/national/2023-12/NCut_K10.json.gz": {
+      "sha256": "3ce236034e930667e3e966c0322e1d217d933ae23b249a3bfef62cde65f77fd5",
+      "bytes": 30150
+    },
+    "saved/national/2023-12/NCut_K12.json.gz": {
+      "sha256": "fbe95de040bcbead42b6c457bc0348964350466846735c905f70ead4cf9613c8",
+      "bytes": 30871
+    },
+    "saved/national/2023-12/NCut_K16.json.gz": {
+      "sha256": "e0a44a4168224ab0f34f1b823c78e162665a701df8b98c7b23545845d8584b5a",
+      "bytes": 32198
+    },
+    "saved/national/2023-12/NCut_K20.json.gz": {
+      "sha256": "69ea441ece92794137422a6fbd8d54bf6690bb5703a91413eb4ab93c8eb20c04",
+      "bytes": 33395
+    },
+    "saved/national/2023-12/SSE_K04.json.gz": {
+      "sha256": "ad39527c796687cdc3efcd71266dbe570896cd79f9559013d5bf243b9d3e75ab",
+      "bytes": 27580
+    },
+    "saved/national/2023-12/SSE_K06.json.gz": {
+      "sha256": "fc15072a9bc2aa69678a5a5aaf85692b9b27beaa006ac510a8eae0b8ba20525c",
+      "bytes": 28608
+    },
+    "saved/national/2023-12/SSE_K08.json.gz": {
+      "sha256": "648071f351477bc72539e6166c81213336d68e33367e4ea497ed9cff01d79bac",
+      "bytes": 29454
+    },
+    "saved/national/2023-12/SSE_K10.json.gz": {
+      "sha256": "134187ae2acf918893f8636d1faa4a594a836823c68454a4a6d155316e709640",
+      "bytes": 30109
+    },
+    "saved/national/2023-12/SSE_K12.json.gz": {
+      "sha256": "f5449becdcf038f221d1c4dbcc4541316bfbca2b48332692c67b594933d07dbe",
+      "bytes": 30758
+    },
+    "saved/national/2023-12/SSE_K16.json.gz": {
+      "sha256": "3ddf467275681371db4308cc4db4321066980a879c8be736f230b22058d7d957",
+      "bytes": 31964
+    },
+    "saved/national/2023-12/SSE_K20.json.gz": {
+      "sha256": "d29280eaff81b308d207827663ad4d622a3404271da8cfcf28047e2deb4a15f8",
+      "bytes": 33217
+    },
+    "saved/national/2023-12/Ward_K04.json.gz": {
+      "sha256": "9500cf97f09c46f17eed264ed20da27da586fb0a882b4a50ea9337ec629192f7",
+      "bytes": 27612
+    },
+    "saved/national/2023-12/Ward_K06.json.gz": {
+      "sha256": "459e2cbd4b712b366adbe12bb5deed9e679985b200ad315f52d584f3f248467b",
+      "bytes": 28734
+    },
+    "saved/national/2023-12/Ward_K08.json.gz": {
+      "sha256": "420a956465c1fb67e488fc205f057b80e4e99098dbed608c1320c04642988594",
+      "bytes": 29439
+    },
+    "saved/national/2023-12/Ward_K10.json.gz": {
+      "sha256": "1e586105efa6098126586af912ca24e9ca05dd62144bd33d3bd5cf5c3d159269",
+      "bytes": 30249
+    },
+    "saved/national/2023-12/Ward_K12.json.gz": {
+      "sha256": "e1fbe6a7ba2825e71c6ab130b15c292d66778075d93955c6caccd1196db95d60",
+      "bytes": 30884
+    },
+    "saved/national/2023-12/Ward_K16.json.gz": {
+      "sha256": "a881d73bfe9fecb50b0af6b282e10e1359c2c70a89164cd29a6d158cc982c562",
+      "bytes": 32178
+    },
+    "saved/national/2023-12/Ward_K20.json.gz": {
+      "sha256": "f6b96dce34341dd69cef0631875fa304a4ae775add7b53f4d4804c291bb5ec1b",
+      "bytes": 33354
+    },
+    "saved/national/2024-01/NCut_K04.json.gz": {
+      "sha256": "1930649c93ef99a6032d77f6fa124e2fec172dd4d8053a22d2fe16116c2788d4",
+      "bytes": 27606
+    },
+    "saved/national/2024-01/NCut_K06.json.gz": {
+      "sha256": "5d03af1f9faa28278f94fe96de641b5a57f370581896630be23cf8b93028d27d",
+      "bytes": 28403
+    },
+    "saved/national/2024-01/NCut_K08.json.gz": {
+      "sha256": "d7f1fa0abe1bb2a2c1a650b984133d5e4daca2b5dfec8e3fa0d0a70cb6a5e47c",
+      "bytes": 29114
+    },
+    "saved/national/2024-01/NCut_K10.json.gz": {
+      "sha256": "56213865c4e5c3863719c3dcb3a4ab2bd141768619fd8cc2d0386e2d7ed41ca6",
+      "bytes": 29869
+    },
+    "saved/national/2024-01/NCut_K12.json.gz": {
+      "sha256": "0dbc677d0638119314ae952266608b08ee23e063b44a2005877df7880a6924b9",
+      "bytes": 30476
+    },
+    "saved/national/2024-01/NCut_K16.json.gz": {
+      "sha256": "b5dbfd46da4424e6ba5cae2a444f1c125b40552d4c13b0184d03e263119944f2",
+      "bytes": 31786
+    },
+    "saved/national/2024-01/NCut_K20.json.gz": {
+      "sha256": "673c8fe336b1e5da2a8d4655651028ba3e13392f8c2dcc908e55e788012d9b77",
+      "bytes": 33047
+    },
+    "saved/national/2024-01/SSE_K04.json.gz": {
+      "sha256": "3694ea72ca522450e985a044d5877b30e8cf750d9aceb3891c6995487526c292",
+      "bytes": 27558
+    },
+    "saved/national/2024-01/SSE_K06.json.gz": {
+      "sha256": "2757b6f86215bc9dd6bfa22d0acb703677f747b801008babd4465ee580a8559b",
+      "bytes": 28262
+    },
+    "saved/national/2024-01/SSE_K08.json.gz": {
+      "sha256": "fdf0048844b25b7f15851ebe2236b2886f958ecfdd2116a0f5e9442601d485ae",
+      "bytes": 29089
+    },
+    "saved/national/2024-01/SSE_K10.json.gz": {
+      "sha256": "18f1f4db8ee54dbdeb5922ab6509ef3a4f05d64fde4f4b2a762f0bec22ed384c",
+      "bytes": 29667
+    },
+    "saved/national/2024-01/SSE_K12.json.gz": {
+      "sha256": "d964fa53b989ca9001a38be86e809327da9f6491a42f8ecc60cf8afb082dd2cb",
+      "bytes": 30328
+    },
+    "saved/national/2024-01/SSE_K16.json.gz": {
+      "sha256": "464f259d7504ee31b946aee7d0ac6d17fb53bc809eba688810131420ab032761",
+      "bytes": 31699
+    },
+    "saved/national/2024-01/SSE_K20.json.gz": {
+      "sha256": "8494fe7b9c8308e78cbdb16800037cff77e9f5464eaef26c277fdd498c08d1cb",
+      "bytes": 32820
+    },
+    "saved/national/2024-01/Ward_K04.json.gz": {
+      "sha256": "d1fc3b27f3681c7ea84dc583e741cc28b768b12a55c021ae888e31fcf1a55e01",
+      "bytes": 27629
+    },
+    "saved/national/2024-01/Ward_K06.json.gz": {
+      "sha256": "2e469f2af40f07554e0445553f91b394b45c938f7e04b4d76d6d67257b62f863",
+      "bytes": 28431
+    },
+    "saved/national/2024-01/Ward_K08.json.gz": {
+      "sha256": "0d981f15a731bab96f69de545668b63a42eef8cf1e840282af8380d1d563137c",
+      "bytes": 29189
+    },
+    "saved/national/2024-01/Ward_K10.json.gz": {
+      "sha256": "9de8a074cff6b918b0ec742c51c084dfa2acd067d0ef11e501b928252bb18f1a",
+      "bytes": 29823
+    },
+    "saved/national/2024-01/Ward_K12.json.gz": {
+      "sha256": "40f4814856e80bc9f66a644c209917900e110ae0a4584562b053dfd1564d5811",
+      "bytes": 30493
+    },
+    "saved/national/2024-01/Ward_K16.json.gz": {
+      "sha256": "aa9dbe5b3c131c1596ca01d77a3c87c823c15c153f844a275043857d1fd95d0e",
+      "bytes": 31720
+    },
+    "saved/national/2024-01/Ward_K20.json.gz": {
+      "sha256": "477890500bfe1f8f4f59ab370165ee3c7c641980ef73369386a288840f734b16",
+      "bytes": 32975
+    },
+    "saved/national/2024-02/NCut_K04.json.gz": {
+      "sha256": "493c49567d6c2debc4f62d2de997712809eca74fb00ad389c768bd9673a6b49b",
+      "bytes": 27520
+    },
+    "saved/national/2024-02/NCut_K06.json.gz": {
+      "sha256": "28b301c9e86ed47254f8344c4a49f30417a39fb3d772ff897f8ea74946e29a28",
+      "bytes": 28485
+    },
+    "saved/national/2024-02/NCut_K08.json.gz": {
+      "sha256": "7ee2a58a1461240f13700e4fcdb23b0195f0a75c063889fd8fe5a337c6c5d6ef",
+      "bytes": 29179
+    },
+    "saved/national/2024-02/NCut_K10.json.gz": {
+      "sha256": "29b17b385cda54ff3502fc3201f0607cb08b7b6de223cc563f5d5aada3a1f244",
+      "bytes": 29887
+    },
+    "saved/national/2024-02/NCut_K12.json.gz": {
+      "sha256": "06c5ff578a9494386023dcfc3b46a6f4afdf5f2a5b480c70c13169ecf2525054",
+      "bytes": 30672
+    },
+    "saved/national/2024-02/NCut_K16.json.gz": {
+      "sha256": "34474ba609c6bd175798a7786521f92f89a7c7d0a4e6921f7efda6fa44cfc0d9",
+      "bytes": 31874
+    },
+    "saved/national/2024-02/NCut_K20.json.gz": {
+      "sha256": "3ccfa3d66b74a6bcfebd9c6123827505becca51f669ade954e6a5f645b19a98f",
+      "bytes": 33011
+    },
+    "saved/national/2024-02/SSE_K04.json.gz": {
+      "sha256": "69db048eeae2bcc7ef5f09d41136217bd0e6ceff0f952abaaec03c7e26c9a137",
+      "bytes": 27221
+    },
+    "saved/national/2024-02/SSE_K06.json.gz": {
+      "sha256": "bf0c47f831599c63fd614ca6e65da6f8731e580c930ec4f94790611ea474b197",
+      "bytes": 28343
+    },
+    "saved/national/2024-02/SSE_K08.json.gz": {
+      "sha256": "13cf65209e59fec3cc6a94a68a1e87ad3a65ad3fe99162ce1c7520cea5c33e86",
+      "bytes": 29114
+    },
+    "saved/national/2024-02/SSE_K10.json.gz": {
+      "sha256": "5472e6599f07d05faaaf752a50d8c8a9eaf3cd51f76afdcdd0f23183d81d9fa2",
+      "bytes": 29848
+    },
+    "saved/national/2024-02/SSE_K12.json.gz": {
+      "sha256": "928ab7957f3721617f9e1cbeb69a19b809024fcc93db6e5ff637fc642297e340",
+      "bytes": 30462
+    },
+    "saved/national/2024-02/SSE_K16.json.gz": {
+      "sha256": "a792cea06e5fc7d3a7b31abc6715c8ddffb44fd1cd7a253a3c6eca5483272b7b",
+      "bytes": 31742
+    },
+    "saved/national/2024-02/SSE_K20.json.gz": {
+      "sha256": "3ea0cf5c8f81e8198da0305b92480102964c6ec0036adca012a8751a4b0ee1d5",
+      "bytes": 32955
+    },
+    "saved/national/2024-02/Ward_K04.json.gz": {
+      "sha256": "7edad33678b8d039b1e4952c7bcb3cad407dae7b6aa7843406baf595164018b2",
+      "bytes": 27731
+    },
+    "saved/national/2024-02/Ward_K06.json.gz": {
+      "sha256": "9149c00862f5ccc34b33f926894eec9dc3a12e4008f43720c27558519e92f88c",
+      "bytes": 28464
+    },
+    "saved/national/2024-02/Ward_K08.json.gz": {
+      "sha256": "24b30a4f3ca803aba16d225a773cfe2ce812dc6990815fd7419c5ae4fd6be42b",
+      "bytes": 29274
+    },
+    "saved/national/2024-02/Ward_K10.json.gz": {
+      "sha256": "9804416c161c7f30351320f65baea973e9b6956d440932c1a5f94c87cfd739a6",
+      "bytes": 29931
+    },
+    "saved/national/2024-02/Ward_K12.json.gz": {
+      "sha256": "20f5b0e57489841239d170e80221e2ecc85aa748a49c02bf057483efbe5d270d",
+      "bytes": 30505
+    },
+    "saved/national/2024-02/Ward_K16.json.gz": {
+      "sha256": "cb8e01dd2d8f7ce274c5ed70bd22f2ad1a2ca2b9c924d9d3053ffc3872ec0cec",
+      "bytes": 31821
+    },
+    "saved/national/2024-02/Ward_K20.json.gz": {
+      "sha256": "7e7cb13c10a2db1a3fadafd100cd64b1d24527f2dd84bf62e0950d2560b61826",
+      "bytes": 33064
+    },
+    "saved/national/2024-03/NCut_K04.json.gz": {
+      "sha256": "da75e69325aa0faa66d579814903aa11720eace47ef2ee887b0e97cc74d615b9",
+      "bytes": 27515
+    },
+    "saved/national/2024-03/NCut_K06.json.gz": {
+      "sha256": "0f9648f7d27806930a38259896a1167e24af108032c5efc787256f01f89574c9",
+      "bytes": 28541
+    },
+    "saved/national/2024-03/NCut_K08.json.gz": {
+      "sha256": "4cef02a794c9e87bca1645d72aaa48393bbbe756f05f5195cb7570b344e2b88c",
+      "bytes": 29179
+    },
+    "saved/national/2024-03/NCut_K10.json.gz": {
+      "sha256": "8811affabff456f6ca7be5d3edbf332a157d46aab89534add1333c0215fa2899",
+      "bytes": 29918
+    },
+    "saved/national/2024-03/NCut_K12.json.gz": {
+      "sha256": "e8224f1c478edcc151baa3ccc8d0b57233c7a22a192ec5db5ea5441f41f17326",
+      "bytes": 30626
+    },
+    "saved/national/2024-03/NCut_K16.json.gz": {
+      "sha256": "af1ba41819a9eb6acf02684419a9519d767093908e131bbf369624e65966c7eb",
+      "bytes": 32000
+    },
+    "saved/national/2024-03/NCut_K20.json.gz": {
+      "sha256": "2cf82554b64afd643b84507162eb28037625df5e681f4d8322017f547e548bbb",
+      "bytes": 33147
+    },
+    "saved/national/2024-03/SSE_K04.json.gz": {
+      "sha256": "46e30606794ab1cf4fda4ea4309ed70af4be31b605461ecd92394324c81cc489",
+      "bytes": 27275
+    },
+    "saved/national/2024-03/SSE_K06.json.gz": {
+      "sha256": "a594ebe1f9c0ab74ccefdd018ac7bb30e4f232d6f16ce4d5cc78d9825a9ed44d",
+      "bytes": 28334
+    },
+    "saved/national/2024-03/SSE_K08.json.gz": {
+      "sha256": "5b210e9b7132c177235382877e7ebd1ec64053296f61a7c75e5ccec02c6ff50d",
+      "bytes": 29156
+    },
+    "saved/national/2024-03/SSE_K10.json.gz": {
+      "sha256": "69ed59f1851556a94e49609d45aff1f696f189b5a5119124478421e643bb0a6b",
+      "bytes": 29833
+    },
+    "saved/national/2024-03/SSE_K12.json.gz": {
+      "sha256": "dff7c0cb65331a364a2f761d370aeb633922a772fd9d8628b484eb8c16085de1",
+      "bytes": 30500
+    },
+    "saved/national/2024-03/SSE_K16.json.gz": {
+      "sha256": "d85ab509b1401f0a797bc6965fc2e05a0a0783bcff745d0d1d1ea9a432681fbd",
+      "bytes": 31819
+    },
+    "saved/national/2024-03/SSE_K20.json.gz": {
+      "sha256": "602d3e15bed6849eef019f5026f928bf6440d41b7b16cbc439385d5620d6426a",
+      "bytes": 32973
+    },
+    "saved/national/2024-03/Ward_K04.json.gz": {
+      "sha256": "69bee0346dce9a7c209bd6201ac817c8bfb0a1ddb78b02d7dc8af9754fc82386",
+      "bytes": 27734
+    },
+    "saved/national/2024-03/Ward_K06.json.gz": {
+      "sha256": "7ef5a95d99bd362b476e1568a6c88fa0ca05c68ca1e45a8e923a11c3c2c901f9",
+      "bytes": 28408
+    },
+    "saved/national/2024-03/Ward_K08.json.gz": {
+      "sha256": "e2850fd9fa95e91c59637572cafd7f2f7238c730f7af51467d13bf061691f466",
+      "bytes": 29292
+    },
+    "saved/national/2024-03/Ward_K10.json.gz": {
+      "sha256": "03494cc8bd8a9bc0673f85d847a4b9687ff7485bdd1416ec751d7d3ddf8d7701",
+      "bytes": 30006
+    },
+    "saved/national/2024-03/Ward_K12.json.gz": {
+      "sha256": "014974dd25051945fd082abcc3d82856fc9c00ac7392e002a366e4930939a651",
+      "bytes": 30622
+    },
+    "saved/national/2024-03/Ward_K16.json.gz": {
+      "sha256": "c6d453b760a76f772317a4ef4999109a3f37f38c3bd1ccee325e1c8ff430cda4",
+      "bytes": 31838
+    },
+    "saved/national/2024-03/Ward_K20.json.gz": {
+      "sha256": "f79ab806d5f1dc04fc6a2f8ecc3e632377b59c818b1f7c6aac12bbdec521fe14",
+      "bytes": 33046
+    },
+    "saved/national/2024-04/NCut_K04.json.gz": {
+      "sha256": "3ea36cd75a81a730044a6944110ce1ac808228e495572d5b8ac09da3f47b2132",
+      "bytes": 27634
+    },
+    "saved/national/2024-04/NCut_K06.json.gz": {
+      "sha256": "462d3a98be25f6cef3eaa9af58c78a89d5311c64a99cbecb35204730560914e8",
+      "bytes": 28538
+    },
+    "saved/national/2024-04/NCut_K08.json.gz": {
+      "sha256": "9ade6a0b16198b9070956cf827491f94e8f796ac012649bf23c074a1e39296e9",
+      "bytes": 29211
+    },
+    "saved/national/2024-04/NCut_K10.json.gz": {
+      "sha256": "e753fecea5c812d7ccca84c345c932f4ffd179313b542509d28092598e1d109f",
+      "bytes": 29983
+    },
+    "saved/national/2024-04/NCut_K12.json.gz": {
+      "sha256": "35ee39eabe1e4b8f25b9e5fa0f0b98c825759eb8b3bf3d8fb72b942ddfd1be91",
+      "bytes": 30696
+    },
+    "saved/national/2024-04/NCut_K16.json.gz": {
+      "sha256": "1c499a8af043940a40320d022a93929b3a1418234f2fb07fb444650671a8cbf7",
+      "bytes": 31879
+    },
+    "saved/national/2024-04/NCut_K20.json.gz": {
+      "sha256": "33f9373d14cd531a7da0b8779bab34f7294d2525ae607c3da7c266f4061bbebe",
+      "bytes": 33128
+    },
+    "saved/national/2024-04/SSE_K04.json.gz": {
+      "sha256": "f10b4c061d80a17f859f9492f5a97fdcc7acbf9d0d5bac73b587cb233c2313d8",
+      "bytes": 27383
+    },
+    "saved/national/2024-04/SSE_K06.json.gz": {
+      "sha256": "571c6db64b07dac5b31633f456925bbd2aa12dcc83342909da35721dad76e7cd",
+      "bytes": 28395
+    },
+    "saved/national/2024-04/SSE_K08.json.gz": {
+      "sha256": "6a8f5d4bb38b31dc5f374fcd1af8bdf87c31e828b2caf6aeb319e5282a58927f",
+      "bytes": 29242
+    },
+    "saved/national/2024-04/SSE_K10.json.gz": {
+      "sha256": "5d54777174116f5e10ff1effcbe245a7ff992004b8842ff5536a1ee543b9a319",
+      "bytes": 29879
+    },
+    "saved/national/2024-04/SSE_K12.json.gz": {
+      "sha256": "0563f1baee76cbb8b36da9b3179fc814f026653d40168558c8b4efac305b9f75",
+      "bytes": 30572
+    },
+    "saved/national/2024-04/SSE_K16.json.gz": {
+      "sha256": "675de23499138b2528cf1fd5f0a862255feff0dad9085eec277be3a2e54229c8",
+      "bytes": 31817
+    },
+    "saved/national/2024-04/SSE_K20.json.gz": {
+      "sha256": "362702de2b0888cf5e1541184f43f8f5b3ea348574ec15e0671f883b04da9352",
+      "bytes": 33043
+    },
+    "saved/national/2024-04/Ward_K04.json.gz": {
+      "sha256": "0460b74519101faf6b0e995d6c2b3397769dd2d1666227c7c6c70b80afd4187d",
+      "bytes": 27205
+    },
+    "saved/national/2024-04/Ward_K06.json.gz": {
+      "sha256": "041f8edea48a1ce410fea121662eb03440b6b9b3ec83b51d9bd6ea6bb9d53c39",
+      "bytes": 28566
+    },
+    "saved/national/2024-04/Ward_K08.json.gz": {
+      "sha256": "7caa959892dfb4ca82ae36750aec3bd65930c9e7be3df40f24c60a50edb0d2e3",
+      "bytes": 29383
+    },
+    "saved/national/2024-04/Ward_K10.json.gz": {
+      "sha256": "7fccf6a31a3750f3e07042112c735ce3ff903581bb4605b0ba77a4a4d199e18d",
+      "bytes": 29976
+    },
+    "saved/national/2024-04/Ward_K12.json.gz": {
+      "sha256": "9befa20d8701555397c760de8d256967055fc9d16bfcdd77437ceada59cd4807",
+      "bytes": 30595
+    },
+    "saved/national/2024-04/Ward_K16.json.gz": {
+      "sha256": "befa5a1ae1bab04ecd9f9b95a4d520ec833914df1a12213272796c4e5c05f585",
+      "bytes": 31859
+    },
+    "saved/national/2024-04/Ward_K20.json.gz": {
+      "sha256": "8925f368931859ad79a95e70e793eb91508a101e5a8b8dd7cc1f800471b5eec0",
+      "bytes": 33161
+    },
+    "saved/national/2024-05/NCut_K04.json.gz": {
+      "sha256": "4a0d4bf817e680e2fbacd008383fda97cc4b6f8668d29bbeb3727ce181830be7",
+      "bytes": 27659
+    },
+    "saved/national/2024-05/NCut_K06.json.gz": {
+      "sha256": "9734d8d4af8d38c279888712afff44f98ffade25ea8501646f37d78696d83286",
+      "bytes": 28530
+    },
+    "saved/national/2024-05/NCut_K08.json.gz": {
+      "sha256": "9ca5f7dee954427d1d90e55c770061869e88957b22ab3131d9106e87cafecb58",
+      "bytes": 29240
+    },
+    "saved/national/2024-05/NCut_K10.json.gz": {
+      "sha256": "ce305a83784ce35941d17bd1e8d3946b7743ff4f020fb2d7edceee0e75eee43c",
+      "bytes": 29999
+    },
+    "saved/national/2024-05/NCut_K12.json.gz": {
+      "sha256": "e48ca47c34db30a33a957ff16701d38faeeb5234c8c7b38d6432183e888e1a2b",
+      "bytes": 30698
+    },
+    "saved/national/2024-05/NCut_K16.json.gz": {
+      "sha256": "a0ae3b488713256d7bc6dca039fcaaa705de41e0575aefd7348c29a8657b221c",
+      "bytes": 32032
+    },
+    "saved/national/2024-05/NCut_K20.json.gz": {
+      "sha256": "f0e306fd5c92fca67f89916cc701721107614e790da97facf1b8429be7e32151",
+      "bytes": 33155
+    },
+    "saved/national/2024-05/SSE_K04.json.gz": {
+      "sha256": "23246bc02f2082d7aa90ad61b80072105bc4f199a8bd7a649d9131fef17af6bd",
+      "bytes": 27382
+    },
+    "saved/national/2024-05/SSE_K06.json.gz": {
+      "sha256": "a2bad2a2187623cac8ce3f4f060974e82485b50ae7646ccb30a00fb5615aecc7",
+      "bytes": 28380
+    },
+    "saved/national/2024-05/SSE_K08.json.gz": {
+      "sha256": "2a4f075e56bccd18ed984dc4cef24324ed4d48d9378c6ef4a9a839288fb0b15a",
+      "bytes": 29179
+    },
+    "saved/national/2024-05/SSE_K10.json.gz": {
+      "sha256": "b10c16edac899aef199a2c131f43b86102231137fd7dc20686d5bbc9713f537e",
+      "bytes": 29811
+    },
+    "saved/national/2024-05/SSE_K12.json.gz": {
+      "sha256": "a175de1facb081136d106e3d8df5e5d777f480de44ad33fb60b98cca95c8eb9d",
+      "bytes": 30557
+    },
+    "saved/national/2024-05/SSE_K16.json.gz": {
+      "sha256": "6cf78d8852a896575666208fa41be775099e619cf51be27a64bcb82dda25f156",
+      "bytes": 31838
+    },
+    "saved/national/2024-05/SSE_K20.json.gz": {
+      "sha256": "6040e144105f68473305b976f90f7f77643c3c37df5e3fae5bea000153b44805",
+      "bytes": 33056
+    },
+    "saved/national/2024-05/Ward_K04.json.gz": {
+      "sha256": "29de7e1451568f9668a4352d224ee46459c53a458325c6e5d7deb6972f4cef43",
+      "bytes": 27286
+    },
+    "saved/national/2024-05/Ward_K06.json.gz": {
+      "sha256": "7f2d831dfbcdca25af111ac224452df8ebbb4fcfb85ae0cbe02f24d120064227",
+      "bytes": 28463
+    },
+    "saved/national/2024-05/Ward_K08.json.gz": {
+      "sha256": "45f02c00135e7085d13b61525406c521e7f5028aa6d1c32497e2f74dc832bed0",
+      "bytes": 29320
+    },
+    "saved/national/2024-05/Ward_K10.json.gz": {
+      "sha256": "2b7054c3aa4878683932b3eaf46c3b2c850c48e7e330ae5486aba682efd6118e",
+      "bytes": 30008
+    },
+    "saved/national/2024-05/Ward_K12.json.gz": {
+      "sha256": "ac8774f84c18ca6896640653c4516c33e45aacee8dd5870113c0309a3e72cfb4",
+      "bytes": 30620
+    },
+    "saved/national/2024-05/Ward_K16.json.gz": {
+      "sha256": "b48a064cf14ddc1d225ff7d9188955a853fe8856377d160bac4dea4a9225a931",
+      "bytes": 31884
+    },
+    "saved/national/2024-05/Ward_K20.json.gz": {
+      "sha256": "85767e7f95775ee1e21ad13da1edbec2666ca5064982cb1e78f440dd195cfc56",
+      "bytes": 33088
+    },
+    "saved/national/2024-06/NCut_K04.json.gz": {
+      "sha256": "0362e873bc120b48e4a39c4f876be42ee321854a5f4840f897f43c3d2208e1e8",
+      "bytes": 27482
+    },
+    "saved/national/2024-06/NCut_K06.json.gz": {
+      "sha256": "597deeda3d5cdf3587dd888c067abd4f1cb50a94403d5f119ea7fd2a3ecb3bfe",
+      "bytes": 28581
+    },
+    "saved/national/2024-06/NCut_K08.json.gz": {
+      "sha256": "6b9fbb7aed2efd4bfd2777dfdaaa62b9ff3b0feecc9a0d9cac8234d85f10aff6",
+      "bytes": 29250
+    },
+    "saved/national/2024-06/NCut_K10.json.gz": {
+      "sha256": "a0e38e46d008eb59f330ce537c7004cd394cdf193015ecd6389ad55cc3a11229",
+      "bytes": 29861
+    },
+    "saved/national/2024-06/NCut_K12.json.gz": {
+      "sha256": "dabf8865b6f539a07b36f68da1a6cb2dfb1977c0fb21a0e8baaf03a7e7c156cc",
+      "bytes": 30659
+    },
+    "saved/national/2024-06/NCut_K16.json.gz": {
+      "sha256": "89a2f653e888ba3400a0c825d0c743123551c2ffb3c70e2a94c4d01bb30f72a4",
+      "bytes": 31841
+    },
+    "saved/national/2024-06/NCut_K20.json.gz": {
+      "sha256": "0d8ef6194c4d45d37f20ad5dcdfa3ae3753a0abad5ad80c60bea2288c50ad7c8",
+      "bytes": 33183
+    },
+    "saved/national/2024-06/SSE_K04.json.gz": {
+      "sha256": "818bb8fc0d0a2ebf34b845bd33207cdc39aed0a5f43786def6872f6b8688ec44",
+      "bytes": 27300
+    },
+    "saved/national/2024-06/SSE_K06.json.gz": {
+      "sha256": "b77eae53ecf0403fa0658200817b773236673954b92b244e1ca981d22d4bdcda",
+      "bytes": 28390
+    },
+    "saved/national/2024-06/SSE_K08.json.gz": {
+      "sha256": "d4ddaf1fde3f49e74c781cb5426f69b1164981fc194b519a0140d5954bce33eb",
+      "bytes": 29221
+    },
+    "saved/national/2024-06/SSE_K10.json.gz": {
+      "sha256": "dd416c89bc020561782b4dbc3d16829613a204a36d18c6af17779fc75020474f",
+      "bytes": 29838
+    },
+    "saved/national/2024-06/SSE_K12.json.gz": {
+      "sha256": "c01a702f0415779a6f5d8650d5b496830b3e3e173397942cf8bbf617daeda96f",
+      "bytes": 30514
+    },
+    "saved/national/2024-06/SSE_K16.json.gz": {
+      "sha256": "df85b92b9c177fb3b0932b450ae2b159d6af3b87f6a970013db54102dd2b7038",
+      "bytes": 31695
+    },
+    "saved/national/2024-06/SSE_K20.json.gz": {
+      "sha256": "23215cc20c3bcd93e8adf52f6b34788e88736dee1d9222d0e7deba4893e518ed",
+      "bytes": 32962
+    },
+    "saved/national/2024-06/Ward_K04.json.gz": {
+      "sha256": "19616c007154240bfaa0c3fb55c75cbd6af7232c80f79a8c4e4fd62fc4283fc4",
+      "bytes": 27685
+    },
+    "saved/national/2024-06/Ward_K06.json.gz": {
+      "sha256": "4e6afa761ce795ded478de773c094d3e7deb8fb4025d6fd274c86255527ab8ed",
+      "bytes": 28443
+    },
+    "saved/national/2024-06/Ward_K08.json.gz": {
+      "sha256": "6f661db2e80ec91c048f14c1a19e1216606854f77f533905ef5da19c674b0bec",
+      "bytes": 29232
+    },
+    "saved/national/2024-06/Ward_K10.json.gz": {
+      "sha256": "da2a2681de415e126ab099e89dd21e4d4be27d26d1b88d866a7de2ac7fa14255",
+      "bytes": 29886
+    },
+    "saved/national/2024-06/Ward_K12.json.gz": {
+      "sha256": "dff97f8496cb5a4fd6da706a23f0b5931d9cdbbda2ffb8ec36e2ac25387dee16",
+      "bytes": 30678
+    },
+    "saved/national/2024-06/Ward_K16.json.gz": {
+      "sha256": "26c92dd9b18ec7a3b668e00f85cbd8d1068a49b01890321b9ec9f2c8f1bb5c5b",
+      "bytes": 31819
+    },
+    "saved/national/2024-06/Ward_K20.json.gz": {
+      "sha256": "a663398592e42471f992cbd3cf09c6669105772506a7f163d15b78a473807901",
+      "bytes": 33182
+    },
+    "saved/national/2024-07/NCut_K04.json.gz": {
+      "sha256": "112a0269cdec5a51cab1947795b42f6a4b692706a5ddaafcc5e96467309d9821",
+      "bytes": 27668
+    },
+    "saved/national/2024-07/NCut_K06.json.gz": {
+      "sha256": "0d448898affb821cd64f48aade88b8b9833332a0738d19363379006fa4c5013c",
+      "bytes": 28608
+    },
+    "saved/national/2024-07/NCut_K08.json.gz": {
+      "sha256": "ad5bc834ce7643c9bb5d8259bb2a04897c7f20a4d39e48357b88aabfb72bd622",
+      "bytes": 29267
+    },
+    "saved/national/2024-07/NCut_K10.json.gz": {
+      "sha256": "650d81a537e8818593b3eddd7fe2f824f62f4fe23e3dbb6b612efb4e38fa695e",
+      "bytes": 30022
+    },
+    "saved/national/2024-07/NCut_K12.json.gz": {
+      "sha256": "403766c918b7c234275e3cfb5b5512a2711796e269655ac44afdd58566b050de",
+      "bytes": 30729
+    },
+    "saved/national/2024-07/NCut_K16.json.gz": {
+      "sha256": "3c43dba6f5dd602b1a2899f1c562cec469a1e35918f2f27b88a280a2607ef81d",
+      "bytes": 32014
+    },
+    "saved/national/2024-07/NCut_K20.json.gz": {
+      "sha256": "ca32f2d78a1a52703d401081a279b71daa60f39475804edbf028393ba4e76ae4",
+      "bytes": 33305
+    },
+    "saved/national/2024-07/SSE_K04.json.gz": {
+      "sha256": "d5d9f8a7f5d0aaa79930ca7bf15d01cb5f26749577b939b2130be512a3a466a8",
+      "bytes": 27632
+    },
+    "saved/national/2024-07/SSE_K06.json.gz": {
+      "sha256": "e59a07d82441f686001d769524ce381b103832a19a10379e35e5327b2b6a2aa7",
+      "bytes": 28392
+    },
+    "saved/national/2024-07/SSE_K08.json.gz": {
+      "sha256": "6d0709016a208b19929f53aaf6606f42455ab17782a7df7336ca73be0f78e006",
+      "bytes": 29289
+    },
+    "saved/national/2024-07/SSE_K10.json.gz": {
+      "sha256": "209ceb1a76112a94ae8172f25829123aa065576a9b241c6608ff836c7025991a",
+      "bytes": 29865
+    },
+    "saved/national/2024-07/SSE_K12.json.gz": {
+      "sha256": "5eec879082df9f8f5593bb7ff296ba7202376a4d60c735536ef2b94289a279df",
+      "bytes": 30598
+    },
+    "saved/national/2024-07/SSE_K16.json.gz": {
+      "sha256": "35fb5c808291cc5709fb6f00ed98f58b1688e8d6c819827102ee3151d7236f18",
+      "bytes": 31831
+    },
+    "saved/national/2024-07/SSE_K20.json.gz": {
+      "sha256": "1e64b82441a87cda998bfdcd1eda0c12d4de0a792f138a310ca55084b93a96ca",
+      "bytes": 33090
+    },
+    "saved/national/2024-07/Ward_K04.json.gz": {
+      "sha256": "7b04c71ca1f0f0bd1afcaea8e0c54b6638cd274f6658544599f2b2933120659f",
+      "bytes": 27729
+    },
+    "saved/national/2024-07/Ward_K06.json.gz": {
+      "sha256": "c84bf48f2184181ab1274d1d73f644c4a9ec1d85167da6e2e592dfd1f845f7f4",
+      "bytes": 28633
+    },
+    "saved/national/2024-07/Ward_K08.json.gz": {
+      "sha256": "415d95ed80d6284faf4680eb69ea2e55e219feda8354f9932a4066cc05873698",
+      "bytes": 29352
+    },
+    "saved/national/2024-07/Ward_K10.json.gz": {
+      "sha256": "b549b0a80a1c65d29669b54365b87e9d3e35e5491924b8ac4d4c838f8326fe83",
+      "bytes": 30004
+    },
+    "saved/national/2024-07/Ward_K12.json.gz": {
+      "sha256": "b33c6448d507861f90fcc89cdac2b00ad7617100c1613a1c7a7ec115f5fd41dc",
+      "bytes": 30736
+    },
+    "saved/national/2024-07/Ward_K16.json.gz": {
+      "sha256": "a9ae3007cae2bbf4b1c61fa5f63e1e4d44bd2811c13a498240f447c5ba70e24c",
+      "bytes": 32006
+    },
+    "saved/national/2024-07/Ward_K20.json.gz": {
+      "sha256": "c1962226391223098cf14f663c092abf1f5d13027efa8baa9392505457b3d4bb",
+      "bytes": 33145
+    },
+    "saved/national/2024-08/NCut_K04.json.gz": {
+      "sha256": "741d447bf21f6d9806d19715da22d6d740583bf153a95b90c4eefd7a9946013a",
+      "bytes": 27720
+    },
+    "saved/national/2024-08/NCut_K06.json.gz": {
+      "sha256": "370d8524de406eb22e8e31e16bbef21d1c3a4b8e0ae4a6f0eecb14ab51f1ea81",
+      "bytes": 28654
+    },
+    "saved/national/2024-08/NCut_K08.json.gz": {
+      "sha256": "ebf6e804fb6772b155e49b464e9d2166a5f574a49f3c5107883782c1f251191a",
+      "bytes": 29392
+    },
+    "saved/national/2024-08/NCut_K10.json.gz": {
+      "sha256": "893ba0d318330d2c30a7d23c939291b354674034c43e374f17aca0785107e9dc",
+      "bytes": 30175
+    },
+    "saved/national/2024-08/NCut_K12.json.gz": {
+      "sha256": "e8d571c6cd37c9adc8a19db980c708d1b9a4037128b382d17833c64c65691851",
+      "bytes": 30748
+    },
+    "saved/national/2024-08/NCut_K16.json.gz": {
+      "sha256": "5b214c53727cda100ca8598c0e6214d500e5bff2791d2cd76513bc693b05698c",
+      "bytes": 32040
+    },
+    "saved/national/2024-08/NCut_K20.json.gz": {
+      "sha256": "53ff3504f5d8be7a41d14a99c970c6a470542caebcc4cd94ee3eaf2aae65b8df",
+      "bytes": 33277
+    },
+    "saved/national/2024-08/SSE_K04.json.gz": {
+      "sha256": "32e6574a01ed512476af663218d4b262e04a2cda0ca86fa2a06f8b69edca02f3",
+      "bytes": 27759
+    },
+    "saved/national/2024-08/SSE_K06.json.gz": {
+      "sha256": "422970c5c79ffd77a7d7bae89a9ce047f6b8ced33db0500214a8d2311468845c",
+      "bytes": 28477
+    },
+    "saved/national/2024-08/SSE_K08.json.gz": {
+      "sha256": "bdf36d0c6cbf3c422cbb2e5601f2aee53b226fb914945612b630e85fe1509350",
+      "bytes": 29283
+    },
+    "saved/national/2024-08/SSE_K10.json.gz": {
+      "sha256": "ec7f68b97c24e919c779371f20c829ecdbbbd756d637207d9d839c737cb0b6f3",
+      "bytes": 29998
+    },
+    "saved/national/2024-08/SSE_K12.json.gz": {
+      "sha256": "cb023eb9f9fe41f8781f0377532e8a8cc9bbced6af241063062bb2ed6c59c9e1",
+      "bytes": 30728
+    },
+    "saved/national/2024-08/SSE_K16.json.gz": {
+      "sha256": "c87d3ed157fc4f1e544183beff2031b9f65f498a5c8a8ae3140b89c4ffa878c8",
+      "bytes": 31913
+    },
+    "saved/national/2024-08/SSE_K20.json.gz": {
+      "sha256": "7ecbf982ea9c4dca734e0b333b1bd2b531a02c24f1660c35ae30e931c80b1c88",
+      "bytes": 33036
+    },
+    "saved/national/2024-08/Ward_K04.json.gz": {
+      "sha256": "bf772e2f58b44dd301992e7b78fa4f01623487175fa44bb672c2b57d8ac23690",
+      "bytes": 27949
+    },
+    "saved/national/2024-08/Ward_K06.json.gz": {
+      "sha256": "101bae9cd88e0b3d74f3b85eb71fc5631b2afd61dbc9c02c697b16abd4d1893a",
+      "bytes": 28678
+    },
+    "saved/national/2024-08/Ward_K08.json.gz": {
+      "sha256": "0e47bb5ca8e94cf8824888a7987964174e400e44034cc0c16aa64e0ee5078ed9",
+      "bytes": 29459
+    },
+    "saved/national/2024-08/Ward_K10.json.gz": {
+      "sha256": "ae747eca43470ee66fb5062d4fc411fadee49e8e4ab20fcedd4dd8d15bd72d69",
+      "bytes": 30166
+    },
+    "saved/national/2024-08/Ward_K12.json.gz": {
+      "sha256": "fad351daf35a3c349a51787560e5fe406589594bffd406b4737c0266956da5c5",
+      "bytes": 30712
+    },
+    "saved/national/2024-08/Ward_K16.json.gz": {
+      "sha256": "82b300d08ab215504a333348c2ed004861887c665a4e0e8402e1980bb0e2c9dd",
+      "bytes": 32005
+    },
+    "saved/national/2024-08/Ward_K20.json.gz": {
+      "sha256": "e57a6ee451244ae117ef34b499efdba1d6215cd1b60da3a1c05e24d762c718da",
+      "bytes": 33216
+    },
+    "saved/national/2024-09/NCut_K04.json.gz": {
+      "sha256": "e1574d0ec768bb3c0dc3638523346516bc1f1331b736c3368e93db97c83087aa",
+      "bytes": 27664
+    },
+    "saved/national/2024-09/NCut_K06.json.gz": {
+      "sha256": "a525dab0159ff35f7f39f52c9003c1881b652f87ccbc56a6fd770c0a13505fb9",
+      "bytes": 28705
+    },
+    "saved/national/2024-09/NCut_K08.json.gz": {
+      "sha256": "a52ba0427828693024ecc8b49673defae632c4b98c38af4257c0ded5feafb63b",
+      "bytes": 29409
+    },
+    "saved/national/2024-09/NCut_K10.json.gz": {
+      "sha256": "4a7baeb8d2c227b762a38388dde6a3b601a91d30b363121d4b5c093d19d7ff6c",
+      "bytes": 30090
+    },
+    "saved/national/2024-09/NCut_K12.json.gz": {
+      "sha256": "6a8a5cba0ff6ce0fd54cf0a67a7150a11ff83f7000b131f59611aee6ff85920c",
+      "bytes": 30809
+    },
+    "saved/national/2024-09/NCut_K16.json.gz": {
+      "sha256": "c735bad93b233935bb6e02cd68cb042ab5513ae359189b0d036126a2756bd3a9",
+      "bytes": 32135
+    },
+    "saved/national/2024-09/NCut_K20.json.gz": {
+      "sha256": "461dd7b0269a3d4d9655e549ada8ef6dc3fb29f228c2041d7866babdafac0a24",
+      "bytes": 33393
+    },
+    "saved/national/2024-09/SSE_K04.json.gz": {
+      "sha256": "c01d7e4298e7b8749ea4bef73f69ed9e4c0dd7f6e20384589a3d8b06a3fd6b90",
+      "bytes": 27865
+    },
+    "saved/national/2024-09/SSE_K06.json.gz": {
+      "sha256": "24447f173f6ecc33891f866ecbb10b637bdd78e00423b4e4e56ff5c737ab51df",
+      "bytes": 28543
+    },
+    "saved/national/2024-09/SSE_K08.json.gz": {
+      "sha256": "04c0936a4dfca68e89044e7d747eeb351130ed122800c3a46086ae3b3b4405e2",
+      "bytes": 29322
+    },
+    "saved/national/2024-09/SSE_K10.json.gz": {
+      "sha256": "3f73b7c3eefbffd7235e99b1afaa2084985b20cc7922d2a0cc50768402c0edd1",
+      "bytes": 30095
+    },
+    "saved/national/2024-09/SSE_K12.json.gz": {
+      "sha256": "9d2ce9deda05549c7cf032d9020f721c78f6f44151acb784ec98b6f7029ab702",
+      "bytes": 30714
+    },
+    "saved/national/2024-09/SSE_K16.json.gz": {
+      "sha256": "24558108f9f13d15b791bb05d9ab857dab15541280478cb9be445695fb50423a",
+      "bytes": 32020
+    },
+    "saved/national/2024-09/SSE_K20.json.gz": {
+      "sha256": "5b7f94f05107db0925c105e9eb2908e306c3c80a833565f12adcf0a1550bcaf9",
+      "bytes": 33169
+    },
+    "saved/national/2024-09/Ward_K04.json.gz": {
+      "sha256": "62e0c38ce2447ed7bee0f73e32d421d6ddf915f396dbcc8d4426696a3a20c38b",
+      "bytes": 27508
+    },
+    "saved/national/2024-09/Ward_K06.json.gz": {
+      "sha256": "ae42553366c9c1b03319c895fb83168f2759a87c9f3ac8ffb5196eb8f410d047",
+      "bytes": 28645
+    },
+    "saved/national/2024-09/Ward_K08.json.gz": {
+      "sha256": "62e35d2196a479e42760ebefdd3703d14ec2fdd4156d6ea917a7990afbd47314",
+      "bytes": 29507
+    },
+    "saved/national/2024-09/Ward_K10.json.gz": {
+      "sha256": "73319f9939e39af7874bfc369b662ab443dd395616975d56f13b781d5480092b",
+      "bytes": 30231
+    },
+    "saved/national/2024-09/Ward_K12.json.gz": {
+      "sha256": "4d1e15ac0a044b0d0d42d4040d9916a6f0d827afc126852877d67f85babfcd0e",
+      "bytes": 30836
+    },
+    "saved/national/2024-09/Ward_K16.json.gz": {
+      "sha256": "fef21265b696df9fe08a85dd487d0001e9616d0223c847f6e3197306b723487a",
+      "bytes": 32090
+    },
+    "saved/national/2024-09/Ward_K20.json.gz": {
+      "sha256": "91c1e08f1a581a2c8412f839ff75e4bb996538d94e0b47b0b7964a5bca336412",
+      "bytes": 33314
+    },
+    "saved/national/2024-10/NCut_K04.json.gz": {
+      "sha256": "ddc0173043a046cf6bb34ee34f3f58c7d300750b20b9f1bc85daac007f6857cf",
+      "bytes": 27597
+    },
+    "saved/national/2024-10/NCut_K06.json.gz": {
+      "sha256": "660bea2eaaafc13415e67004e2faeea1a98f32ed55ab862908b00740c8dfd640",
+      "bytes": 28583
+    },
+    "saved/national/2024-10/NCut_K08.json.gz": {
+      "sha256": "972808e2270bfc70f0b319a077d50f654231e24936589bf666ba6bdac8ede220",
+      "bytes": 29366
+    },
+    "saved/national/2024-10/NCut_K10.json.gz": {
+      "sha256": "2a23b9d9cc808ff43c3ea5bafd3a6a1173a61cdc14e584941a0a8b639e1e516c",
+      "bytes": 30073
+    },
+    "saved/national/2024-10/NCut_K12.json.gz": {
+      "sha256": "000a0a3949135cc9a4a64f27d20ba2d11fa23c02a0f692ed87252a046ec532da",
+      "bytes": 30778
+    },
+    "saved/national/2024-10/NCut_K16.json.gz": {
+      "sha256": "67c1fb0345be214d0a59a127f7ba2d9d6c37340f507ff85eda05187b7b6b1b90",
+      "bytes": 32047
+    },
+    "saved/national/2024-10/NCut_K20.json.gz": {
+      "sha256": "946fc5e5c88d24bb7eeb83c4f2db10f7d9ea9fa5b9cc9c00d877b9fa2323b680",
+      "bytes": 33232
+    },
+    "saved/national/2024-10/SSE_K04.json.gz": {
+      "sha256": "7de529d7f224138483a86c56e741bd5dbe1d71574e11f025911d04aca0b2bd3d",
+      "bytes": 27695
+    },
+    "saved/national/2024-10/SSE_K06.json.gz": {
+      "sha256": "32cb0efd8d30ad13ac59c1ce375b763ab7e7ee1145006b32119256ad2e6df535",
+      "bytes": 28477
+    },
+    "saved/national/2024-10/SSE_K08.json.gz": {
+      "sha256": "95f1cf64c6f05af6d6c5c79ebfd3bb877d834f4717b5dd970563f326969fb988",
+      "bytes": 29233
+    },
+    "saved/national/2024-10/SSE_K10.json.gz": {
+      "sha256": "b63c11c8d6a27fedb2c086847e577055051bc9a4230376f8fa9ecf3930b85833",
+      "bytes": 29947
+    },
+    "saved/national/2024-10/SSE_K12.json.gz": {
+      "sha256": "0660628f9492bb6f001026bbbf38d2501a53dd31246505d4b2072aae5a934d69",
+      "bytes": 30648
+    },
+    "saved/national/2024-10/SSE_K16.json.gz": {
+      "sha256": "cc2a05c508cc4b4164a48be0f0a43720adeb1df38b8c3d9373c4591d64befe0b",
+      "bytes": 31826
+    },
+    "saved/national/2024-10/SSE_K20.json.gz": {
+      "sha256": "35b92b2b942ce586e3a88b59fc96ebe946d07ac33105214c672068d138c23ec3",
+      "bytes": 33062
+    },
+    "saved/national/2024-10/Ward_K04.json.gz": {
+      "sha256": "6230b3ec37fcd4c91a4340bbc58399ddd732b1b0b5ffbf3450b88b90ab40cb34",
+      "bytes": 27355
+    },
+    "saved/national/2024-10/Ward_K06.json.gz": {
+      "sha256": "e744a9314242f0f286eee264d3e37a22f90242f84aa06e5bdbc7cdf060fb641a",
+      "bytes": 28539
+    },
+    "saved/national/2024-10/Ward_K08.json.gz": {
+      "sha256": "546e35794d143192f58f384f7ead508e4d4e792478de6707a2000739ea371674",
+      "bytes": 29313
+    },
+    "saved/national/2024-10/Ward_K10.json.gz": {
+      "sha256": "7ee5f73df4f0fa352af3203f1279b51d8be7c4f82b23d83993f28ec155d246cf",
+      "bytes": 30144
+    },
+    "saved/national/2024-10/Ward_K12.json.gz": {
+      "sha256": "04ce891c3c5ae93aaabd7b4ff1ba26004776941d03aae47550fe6d37983c3fac",
+      "bytes": 30748
+    },
+    "saved/national/2024-10/Ward_K16.json.gz": {
+      "sha256": "214564484eceee78448c4b2f46f16622a5b12127dac46b59642b37365abade7e",
+      "bytes": 31978
+    },
+    "saved/national/2024-10/Ward_K20.json.gz": {
+      "sha256": "53073375d81724efbf7167eea1bc0f430780f25ec32a370fb2f63f4ddb1707fe",
+      "bytes": 33207
+    },
+    "saved/national/2024-11/NCut_K04.json.gz": {
+      "sha256": "b7e418b01f6992b89cc036f6b803a8db007c856bf5434111dd6dc96d8388b307",
+      "bytes": 27776
+    },
+    "saved/national/2024-11/NCut_K06.json.gz": {
+      "sha256": "93a2a94dbec256281c3dfbf936f5d81b14a62c1f25f3486da8fc9adcb20efa7b",
+      "bytes": 28721
+    },
+    "saved/national/2024-11/NCut_K08.json.gz": {
+      "sha256": "a64030e87b1a57fe800a2b436aa18e3c47f1288f9921f4acbff28294a2e73e11",
+      "bytes": 29387
+    },
+    "saved/national/2024-11/NCut_K10.json.gz": {
+      "sha256": "591378f11f274115ede6f483756701b24303a15a61c8e63a29320849bcfeaec8",
+      "bytes": 30206
+    },
+    "saved/national/2024-11/NCut_K12.json.gz": {
+      "sha256": "fdcd0f5156ed01a2661f029888d0c00441e43d6532836ee4b6db7572a842bdb3",
+      "bytes": 30921
+    },
+    "saved/national/2024-11/NCut_K16.json.gz": {
+      "sha256": "9fdafcb3ee789b7fc26eea8c9ca8a2a91571d93f817ef75a609e8c7d973d6514",
+      "bytes": 32084
+    },
+    "saved/national/2024-11/NCut_K20.json.gz": {
+      "sha256": "866932591a4d1f9342cab7b44ef10f20291d2883c8a7f5d8b0358fc4eada9452",
+      "bytes": 33382
+    },
+    "saved/national/2024-11/SSE_K04.json.gz": {
+      "sha256": "2bc8d440c0cff61781cee003cf32c4e79a3a5b3c3bc8e40952427089e3dc922d",
+      "bytes": 27807
+    },
+    "saved/national/2024-11/SSE_K06.json.gz": {
+      "sha256": "c6caf1607f24ed3bf0be7c7bf5a2c304d466289143c4deda72407bac37a67414",
+      "bytes": 28534
+    },
+    "saved/national/2024-11/SSE_K08.json.gz": {
+      "sha256": "ac2851b364a3624580a7eb15ca12c9faa09cfd55c6ff184ac4b19b5d2c7bcdf0",
+      "bytes": 29361
+    },
+    "saved/national/2024-11/SSE_K10.json.gz": {
+      "sha256": "91ef615d069816a322ac7fc38adc70a327a6caa48e15cd87fe3ffc3e4457e4b9",
+      "bytes": 30069
+    },
+    "saved/national/2024-11/SSE_K12.json.gz": {
+      "sha256": "a11d9099403ddabedd41b691b1e195c6bd64b135f72f3a693024a07e33d2c4de",
+      "bytes": 30656
+    },
+    "saved/national/2024-11/SSE_K16.json.gz": {
+      "sha256": "1db5ac4d1d7dff43b8e0028c1e88b804f91bab63be5fda9e40e25fbbb7280668",
+      "bytes": 31868
+    },
+    "saved/national/2024-11/SSE_K20.json.gz": {
+      "sha256": "f31e8a4cfb546d68dae9db05e4884687b5364b94c607e18c15c3c81a5cc183ba",
+      "bytes": 33130
+    },
+    "saved/national/2024-11/Ward_K04.json.gz": {
+      "sha256": "2d579042ee4fc164a3210ade25396fe1b6a82064487c27fe63b1b33037ed3c30",
+      "bytes": 27731
+    },
+    "saved/national/2024-11/Ward_K06.json.gz": {
+      "sha256": "03c2e1fef5d6fd10dd3d6d4fb52e626c51727c4b330b8fd77b109628b6a337a1",
+      "bytes": 28724
+    },
+    "saved/national/2024-11/Ward_K08.json.gz": {
+      "sha256": "a8bc030d03a6c87a337e01703401140481ec89fec6b83e8387927bc518fd3449",
+      "bytes": 29449
+    },
+    "saved/national/2024-11/Ward_K10.json.gz": {
+      "sha256": "6a76d22d0724abc185020581e340df94d81a7a74db9855fb33f0d02cf16009ad",
+      "bytes": 30037
+    },
+    "saved/national/2024-11/Ward_K12.json.gz": {
+      "sha256": "11cd061e50938060e6f7e5044499fd8a5469fc004e0ac08985defbfa82750af2",
+      "bytes": 30758
+    },
+    "saved/national/2024-11/Ward_K16.json.gz": {
+      "sha256": "c90192294e904864ac9af2b85094efd763fcdf5bea16759f160c6e88dfdc9b8c",
+      "bytes": 32109
+    },
+    "saved/national/2024-11/Ward_K20.json.gz": {
+      "sha256": "b8bf48a2352ef9ae14b1a6f9dfa60b3442a8a44a3ec8caa5648f8fbe3c8e4370",
+      "bytes": 33354
+    },
+    "saved/national/2024-12/NCut_K04.json.gz": {
+      "sha256": "d096d7f2452de6fa369151abec5d2295e5960884c8262d5883b5ad90d3267807",
+      "bytes": 27902
+    },
+    "saved/national/2024-12/NCut_K06.json.gz": {
+      "sha256": "cbf3e67ec83977898f1b157d30e84d5a19a413f5a37815029a7da2250b588dd4",
+      "bytes": 28757
+    },
+    "saved/national/2024-12/NCut_K08.json.gz": {
+      "sha256": "88aea5fa56e5c2f1f652d18176972e6282f36ea82eaab76e844837cd71d70b3b",
+      "bytes": 29535
+    },
+    "saved/national/2024-12/NCut_K10.json.gz": {
+      "sha256": "1758bd0e968f9d53e469735b27d642d0df67e6482fc814b06ca79442c756cbc3",
+      "bytes": 30222
+    },
+    "saved/national/2024-12/NCut_K12.json.gz": {
+      "sha256": "2bef33facb390aefd6d2123f7f71151a5517ea6d6f79d369e995135d6e3d1b61",
+      "bytes": 30887
+    },
+    "saved/national/2024-12/NCut_K16.json.gz": {
+      "sha256": "1f443e02b5e89fe94c1378f09c2b3640353fd35b55d9bba061bc498ec2068b30",
+      "bytes": 32094
+    },
+    "saved/national/2024-12/NCut_K20.json.gz": {
+      "sha256": "a750251782290e3b33e22a4a270d036886e02b3aa41e235dfd72010986c60b28",
+      "bytes": 33347
+    },
+    "saved/national/2024-12/SSE_K04.json.gz": {
+      "sha256": "bb73f06aa6b63b2998a2be6a8bc98325dda186591fe684e0168817e7ec6cbc0c",
+      "bytes": 27836
+    },
+    "saved/national/2024-12/SSE_K06.json.gz": {
+      "sha256": "48069f984dd5b1faebe36a6eadac008bf821ef3ba2c1cd93937904c34fc385d8",
+      "bytes": 28548
+    },
+    "saved/national/2024-12/SSE_K08.json.gz": {
+      "sha256": "27df97e9f852e9d639db7cc2cb0a7aa957351f0439fb100af69ec6d8a58342e0",
+      "bytes": 29407
+    },
+    "saved/national/2024-12/SSE_K10.json.gz": {
+      "sha256": "151a11cdbbbe64a78faee11c4970f37fc2225e48ba75347fc46632da54ed923f",
+      "bytes": 30098
+    },
+    "saved/national/2024-12/SSE_K12.json.gz": {
+      "sha256": "3a7c26a608b9e1cf7996ebf7188b168c9a06cb813d1f6e66e3b83540e4ae4bd9",
+      "bytes": 30723
+    },
+    "saved/national/2024-12/SSE_K16.json.gz": {
+      "sha256": "6275cf923dc3a894acd9107e0b825f503893b8b605b0fbe42c85963a69cff837",
+      "bytes": 31991
+    },
+    "saved/national/2024-12/SSE_K20.json.gz": {
+      "sha256": "a62a50912612da8cfbf76ff9e781bcb67623d3cdf3aa0140860970f2e2519a80",
+      "bytes": 33146
+    },
+    "saved/national/2024-12/Ward_K04.json.gz": {
+      "sha256": "8dedc85a6bae5efba9bae4fa7ea4c33138d8086d681c2a003d0abf4150542267",
+      "bytes": 27929
+    },
+    "saved/national/2024-12/Ward_K06.json.gz": {
+      "sha256": "aa63d98271fc55dfe8de37a4657a448ba7d684310e9a9aa22bf187fe0912efc1",
+      "bytes": 28790
+    },
+    "saved/national/2024-12/Ward_K08.json.gz": {
+      "sha256": "26d882b541704ca49bdf99c31ad303718fc339259b588bc4bd113e50ccd5ea06",
+      "bytes": 29477
+    },
+    "saved/national/2024-12/Ward_K10.json.gz": {
+      "sha256": "3f3970f9eb41057c356a9fd8d2ebc10da7a5f4fb408dc3f73ce959d0dd712f8e",
+      "bytes": 30119
+    },
+    "saved/national/2024-12/Ward_K12.json.gz": {
+      "sha256": "c7346cd4bb1baf10997adfa5096e1ea3749b9c701c740f103df9da75eb42283a",
+      "bytes": 30671
+    },
+    "saved/national/2024-12/Ward_K16.json.gz": {
+      "sha256": "e84717b1ab8d1fa636815c423974fa951af30796ebb970214510ee4516e49546",
+      "bytes": 32095
+    },
+    "saved/national/2024-12/Ward_K20.json.gz": {
+      "sha256": "f45397b743a00f3a3b5e5cfd470ab944c2768ba2f9e496f6c6ef7217eb508869",
+      "bytes": 33356
+    },
+    "science/context/CODE_MANIFEST.json": {
+      "sha256": "65c2cc86fb680ea716074477484409818d7436006c74a092e81cfabe7a978793",
+      "bytes": 1175
+    },
+    "science/context/CODE_ORIGIN.json": {
+      "sha256": "09086de3010a0e15f8ef1c2f064fe5b37b6edddb173d016466cf5074644c22f0",
+      "bytes": 1787
+    },
+    "science/context/CODE_POLICY.json": {
+      "sha256": "9de6468c4341cefe797b0c8b11888051a25e0245edf4dc4acd6ee10f6761aab4",
+      "bytes": 5704
+    },
+    "science/context/input/ADMISSION_CORRECTION.json": {
+      "sha256": "06c3e062048f98e9dfc035b4400810aadc73498bec63bc37d2abb7db260f2ba0",
+      "bytes": 4606
+    },
+    "science/context/input/context2024.npz": {
+      "sha256": "9f0c47a99464db78f9d10fcf5318a43cd905b92861b44cc7123b9a099d44f6ae",
+      "bytes": 737419
+    },
+    "science/context/input/core_ID_context.csv": {
+      "sha256": "f83e8d03cb82605125bf7c288321e3f5893705511c84bd4eb8447a603ef00329",
+      "bytes": 523528
+    },
+    "science/context/input/schema.json": {
+      "sha256": "8e3a94b515db1ab54d5b0c6e061142efa3bf91105c93ee5f1ebc641348ef8ecb",
+      "bytes": 4561
+    },
+    "science/context/input/SCIENCE_PLAN.json": {
+      "sha256": "92d7b796e6d80b9f5cf828b357f51692d1a6f01ad95f53da68bd1d97fa1dce75",
+      "bytes": 6695
+    },
+    "science/context/input/SEMANTICS.md": {
+      "sha256": "843d5a629733542badb8d61b877889bdbc77d7b7a41d2ef0984d6b40d2841f61",
+      "bytes": 10674
+    },
+    "science/context/input/SOURCE_BINDING.json": {
+      "sha256": "688608183db5b76d018967d3d1a01a798da01abfbf8c348d050bd7d391f0898a",
+      "bytes": 5067
+    },
+    "science/context/input/source_semantics.json": {
+      "sha256": "2df51d8ad38e1f64bd080997d15e5de8175a27285b4178aba898309eec19f216",
+      "bytes": 5497
+    },
+    "science/context/model.py": {
+      "sha256": "abe313e36be87063dd43c9987c906c6d46c3b3f78924dc469d165b09d0404667",
+      "bytes": 13875
+    },
+    "science/context/PACKAGE_MANIFEST.json": {
+      "sha256": "ee85bd59707fb19087c39d372309a6ded511cffa6719c407c3638456fa5f5c70",
+      "bytes": 2173
+    },
+    "science/context/PLAN.json": {
+      "sha256": "d89fd76deb012e0939ea6e3ba0006a457a4aff0b7672581c9f0a6d2c973a8ddd",
+      "bytes": 6966
+    },
+    "science/context/preprocessing.py": {
+      "sha256": "fb99bd54c1d288839d34209c126e764ef62ba55ad89dc6b67b7035565916bc69",
+      "bytes": 4417
+    },
+    "science/context/runner.py": {
+      "sha256": "adbc9302fa84518121dbc98ca9dcb33916105d263540f111682cf51d95a61bd8",
+      "bytes": 12015
+    },
+    "science/context/TASKS.json": {
+      "sha256": "021fb7c1d001cdb6296696ac9457cf0b657e1a49b480e01ac10224da0e6068cc",
+      "bytes": 3073
+    },
+    "science/national/data/input2190.npz": {
+      "sha256": "e4abc1a00495fae8280213b85c326169a1a0f5efcf7504400964b69b296c0547",
+      "bytes": 1757336
+    },
+    "science/national/data/reference.json": {
+      "sha256": "733bf0c121b441bea7f423e2e10aa2dddfd9aa76e8bd152462d4bb4020c2052f",
+      "bytes": 3776
+    },
+    "science/national/data/reported2190.npz": {
+      "sha256": "e5cd11d4295be6e20b11446eb48ffedaa1b31155c199adea327a39396da206bf",
+      "bytes": 825983
+    },
+    "science/national/engine/cosine.py": {
+      "sha256": "011e3eef67a8e5f0baaf1a3ae82f56c7835202fb748e6f4f1fcd9df30519ccbd",
+      "bytes": 1908
+    },
+    "science/national/engine/science.py": {
+      "sha256": "8f67c403b6e1e8460a125b8c24795d74655afa3e47a24270a38e46647d0808b8",
+      "bytes": 10829
+    },
+    "science/national/engine/spectral_support.py": {
+      "sha256": "de92674d41c88af3e92bc509df54ca9fe98587261cc2af13dd3f2d52461cc866",
+      "bytes": 1631
+    },
+    "science/national/engine/vendor/c5c3_metrics.py": {
+      "sha256": "e8e2ee72870d538bce56e66e56354ab04c3d5bcd6036bfb29224ea4450ad55a3",
+      "bytes": 1830
+    },
+    "science/national/engine/vendor/kernels.py": {
+      "sha256": "0d9ae437f4eef1cc698473b7171db460e52d082e83fe52aff8f7686fdf24c3bc",
+      "bytes": 12957
+    },
+    "science/national/engine/vendor/metrics.py": {
+      "sha256": "ed28977e5fa58e67a872392e2842a84ad1e17fba72bfb650b15de7e1911c0fb7",
+      "bytes": 6153
+    },
+    "science/national/engine/vendor/representative.py": {
+      "sha256": "cfc5552edada2b4e535de475a5e1fb9da5b71783cfa6881e43b2b89972a68865",
+      "bytes": 759
+    },
+    "science/national/engine/vendor/spectral_method.py": {
+      "sha256": "c485d261bb4da9c64683b6ece61e11a965e3208bc42d59547d50a2f22355a85e",
+      "bytes": 1627
+    },
+    "science/national/engineering/detailed_typology_national_20261007_r00/adapter.py": {
+      "sha256": "c62e2d05107a78ee1f5e3c4231a6cd5b0f4334883131463c314d22a117d36bac",
+      "bytes": 6044
+    },
+    "science/national/engineering/detailed_typology_national_20261007_r00/run_month.py": {
+      "sha256": "122ea2e6063c710012b5e6ba1df6ff8f7c9aa157ce8df44a31d960b2722c5b61",
+      "bytes": 11827
+    },
+    "science/national/engineering/detailed_typology_national_20261007_r00/util.py": {
+      "sha256": "5bb0a5783c0dfa75f7ece96e4d2b5e533a2b40f1383c6d7fe16dff955422d7ec",
+      "bytes": 3358
+    },
+    "science/national/PACKAGE_MANIFEST.json": {
+      "sha256": "50983404a3e6dd4c5afa3146eef22fc70696a1d5a0150404e516ab3ee26dc23a",
+      "bytes": 2818
+    },
+    "science/national/PLAN.json": {
+      "sha256": "e906537945554578c42a6671b71e782507ace6cc29b864e3587a8e75193a46b1",
+      "bytes": 5366
+    },
+    "science/national/SOURCE_BINDING.json": {
+      "sha256": "e758ab8640eb36979f180b8948c47c7cc18b45db142f9440fa6c44f914618015",
+      "bytes": 5724
+    },
+    "science/national/task_catalog.json": {
+      "sha256": "8165c2dee4cce69a6dc4adc69cc8a90f85b20d6ee0ce8cfa59817722265f7e81",
+      "bytes": 15160
+    },
+    "tables/all_cells.csv": {
+      "sha256": "b6a2312235840ae47731c3f53620d0cda114fc6731c3b9ad0d5228a06a5d77ad",
+      "bytes": 232177
+    },
+    "tables/metric_availability.csv": {
+      "sha256": "745122e33b133eca8007f5911959a873e78bf726eb2f23ba2c63486d1923cfde",
+      "bytes": 177031
+    },
+    "tables/sameK_method_deltas.csv": {
+      "sha256": "6046c6a04241b68edae792eb0b8d07f16bf6d8f1f4b4d69e8ea32e0682ff0f6f",
+      "bytes": 286726
+    },
+    "tables/seed_sensitivity.csv": {
+      "sha256": "8e263a04702dd4f5932f2a2e8fe28848ca1c7ade5a60263180f2a202d640790e",
+      "bytes": 858990
+    },
+    "tables/summary_method_K.csv": {
+      "sha256": "285031e528b4cc8fe74881a10f49c821f29f8332a54cafc7790b9b022d224662",
+      "bytes": 3933
+    },
+    "typology.py": {
+      "sha256": "bc3ce2b4b44af70c6003d5d4b703c5a9a0c2eedf1a52c250912c9a2991f6f144",
+      "bytes": 13008
+    }
+  }
+}

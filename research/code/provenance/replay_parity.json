@@ -1,0 +1,85 @@
+{
+  "schema": "DT24-scientific-projection-parity-1",
+  "passed": true,
+  "fixture_only": false,
+  "fresh_runtime_receipts_bound": true,
+  "national_partitions": 504,
+  "context_partitions": 28,
+  "projection_records": 897,
+  "exact_scalar_checks": 9943410,
+  "float_scalar_checks": 2544934,
+  "max_abs_float_difference": 0.0,
+  "differences": 0,
+  "examples": [],
+  "bindings": {
+    "national": {
+      "reference": {
+        "archive": "C:\\Users\\Максим\\Documents\\ChatGPT\\сберИндекс\\workstreams\\detailed_typology_national_received_20261008_r00\\campaign_0003.closed.zip",
+        "sha256": "b703fcb13f10d2653b2587c42eb8ec4ac383822ead07f7c6e6975b1e2e7db3b3",
+        "selected_members_SHA_checked": 865
+      },
+      "fresh": {
+        "archive": "C:\\Users\\Максим\\Documents\\ChatGPT\\сберИндекс\\workstreams\\detailed_typology_replay_received_20261008_r00\\national.closed.zip",
+        "sha256": "783aca2a54c1ec14554867dc432cca4ead84123a2ec8bc6be7a37bc80c59c98a",
+        "selected_members_SHA_checked": 865
+      },
+      "partitions": 504
+    },
+    "context": {
+      "reference": {
+        "archive": "C:\\Users\\Максим\\Documents\\ChatGPT\\сберИндекс\\workstreams\\detailed_typology_context_received_20261008_r00\\context_full_0001.zip",
+        "sha256": "9d2f7f6108b5450c88979c59c043ba9430d0720f333754dbd2359b902db514a1",
+        "selected_members_SHA_checked": 35
+      },
+      "fresh": {
+        "archive": "C:\\Users\\Максим\\Documents\\ChatGPT\\сберИндекс\\workstreams\\detailed_typology_replay_received_20261008_r00\\context_full_0001.zip",
+        "sha256": "0bea180ce5c4620ec5895213d36333dcf54309bda0d20684a424c90879ee0e0d",
+        "selected_members_SHA_checked": 35
+      },
+      "partitions": 28
+    }
+  },
+  "float_rule": {
+    "atol": 2e-11,
+    "rtol": 2e-10,
+    "formula": "abs(a-b)<=atol+rtol*max(abs(a),abs(b))"
+  },
+  "exact_rule": "keys/types/list order,IDs,labels,statuses,seed indices/seed labels,source/reference/geometry hash bindings and exact objective fraction strings; no label permutation matching",
+  "excluded_operational_keys": [
+    "boot_id",
+    "cache_from",
+    "cwd",
+    "elapsed_seconds",
+    "finished_utc",
+    "out",
+    "output_path",
+    "owner",
+    "owners",
+    "parent_pid",
+    "path",
+    "peak_sampled_RSS_bytes",
+    "pid",
+    "resource",
+    "resources",
+    "sampled_CPU_seconds",
+    "seconds",
+    "start_ticks",
+    "start_time",
+    "started_utc",
+    "time_ns",
+    "timestamp"
+  ],
+  "fits": 0,
+  "SSH": 0,
+  "bitwise_portability_claimed": false,
+  "scientific_acceptance": false,
+  "checker_sha256": "5e401cba88dc89b47d869b7488045683b7e5c5efb0d94c15c2e4f57d0de5d2c3",
+  "limits": [
+    "Strict projection parity against registered artifacts, not cross-machine bitwise portability",
+    "All source/reference and numeric geometry fingerprint fields compare exactly; float tolerance does not relax hash differences",
+    "Existing guards/OP own lifetime and full archive verification; this reader verifies whole ZIP SHA plus every selected scientific member SHA/CRC",
+    "No refit, no independent graph/eigen reconstruction, no external validation or model selection"
+  ],
+  "UTC": "2026-10-08T01:33:13.204596+00:00",
+  "references_config_sha256": "32d179d1ecd3b6a1bed29bae72ee6f01d74518b6bdb37f95bc6e347af0e448c7"
+}

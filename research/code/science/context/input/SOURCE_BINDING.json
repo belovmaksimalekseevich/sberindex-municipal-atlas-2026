@@ -1,0 +1,105 @@
+{
+  "source_files": {
+    "dictionary": {
+      "path": "data/raw/municipal_dictionary/t_dict_municipal_districts.xlsx",
+      "bytes": 322024,
+      "sha256": "4150658c3298fbc87ed79838f503f3a5b9a28da33257ff803c7d9231ddb775d6"
+    },
+    "consumption": {
+      "path": "data/raw/hackathonlicence/consumption.parquet",
+      "bytes": 2373939,
+      "sha256": "9833ddaaee7b2a182ed4cceeed16469031700ea87d508bd976150c6770ef8a61"
+    },
+    "market_access": {
+      "path": "data/raw/hackathonlicence/market_access.parquet",
+      "bytes": 25163,
+      "sha256": "434258afe322b7e6e6610b2552d129ae47094613de72dae3d13f6965a28d1dc1"
+    },
+    "salary": {
+      "path": "data/raw/rosstat/Y48423007_2022_2024.csv",
+      "bytes": 388905649,
+      "sha256": "54eb972e20cd85b52f1bffe997287cbfad22594fa8b45813168e6ce982dff894"
+    },
+    "workers": {
+      "path": "data/raw/rosstat/Y48423005_2022_2024.csv",
+      "bytes": 311361313,
+      "sha256": "fb7782f6479fe66db0200095bdb0e2cdf5a74bb3bcc89b664f65e9d8fb0a0a91"
+    },
+    "population": {
+      "path": "data/raw/rosstat/Y48112027_2022_2024.csv",
+      "bytes": 57504593,
+      "sha256": "959d36ed4d1b20cd71a56937af7a790ce43934972ddfefcf5bf7f5761bd41230"
+    }
+  },
+  "source_before_after_read_verified_by": "inspect_2024.py / feasibility_counts.json",
+  "upstream_raw_files_not_bundled": true,
+  "source_license_note": "Contest data CC BY-SA4.0 per supplied description; processed BDPMO CC BY stated without exact version in local description; verify redistribution obligations separately, no new license grant inferred.",
+  "derived_sources": {
+    "inspect_2024.py": {
+      "path": "workstreams/context_typology_feasibility_20261007_r00/inspect_2024.py",
+      "bytes": 12715,
+      "sha256": "cc8948c774700d6b1133e8a1ea43d3404e268ccce383017af4eb24d1e3a0e703"
+    },
+    "prepare_input_r01.py": {
+      "path": "workstreams/context_typology_feasibility_20261007_r00/prepare_input_r01.py",
+      "bytes": 9014,
+      "sha256": "f50c581f95b81f277ddcc6045d1f65ff7bfebd87b13cebf396d6971ef54439a5"
+    },
+    "preprocessing.py": {
+      "path": "workstreams/context_typology_feasibility_20261007_r00/preprocessing.py",
+      "bytes": 4417,
+      "sha256": "fb99bd54c1d288839d34209c126e764ef62ba55ad89dc6b67b7035565916bc69"
+    },
+    "feasibility_counts.json": {
+      "path": "workstreams/context_typology_feasibility_20261007_r00/feasibility_counts.json",
+      "bytes": 19515,
+      "sha256": "2183f80c2102fad45db9232c4f71d8b908dfaa7cad4395ff57f0ee74a998b541"
+    },
+    "ID_2024_feasibility_r01.csv": {
+      "path": "workstreams/context_typology_feasibility_20261007_r00/ID_2024_feasibility_r01.csv",
+      "bytes": 1074089,
+      "sha256": "557a7a9d3bc7a7ef003d9dca82c727eed58afc8251f3b3413f8c8242edf44f59"
+    },
+    "matched_source_rows_2024.csv": {
+      "path": "workstreams/context_typology_feasibility_20261007_r00/matched_source_rows_2024.csv",
+      "bytes": 8976650,
+      "sha256": "1458d2a14c1694928927abdf0722db83fb54ffd0c807ca749da56d79dbdd9358"
+    },
+    "source_semantics.json": {
+      "path": "workstreams/context_typology_feasibility_20261007_r00/source_semantics/source_semantics.json",
+      "bytes": 5497,
+      "sha256": "2df51d8ad38e1f64bd080997d15e5de8175a27285b4178aba898309eec19f216"
+    }
+  },
+  "original_source_rows_retained_in": "selected_original_context_rows.csv",
+  "no_names_or_fuzzy_or_region_id_join": true,
+  "physical_boundary_certificate": false,
+  "new_clustering_fits": 0,
+  "new_association_tests": 0,
+  "semantic_primary_sources": {
+    "workstreams/research_scout_20261007_r00/sources/sber_municipal_consumption_2025.pdf": {
+      "bytes": 2172153,
+      "sha256": "5c58768635aa79344f9c022125fd2d43dbbef3d2916147c21f330d0b8d9467d1"
+    },
+    "sources/official/description_bdpmo_v20250918.txt": {
+      "bytes": 74910,
+      "sha256": "d0ac9f00428d73838ddad630f97ce70ac19fcaebf7ba72abe90c4b798a541272"
+    },
+    "data/raw/metadata_municipal_dict_sberindex_2.txt": {
+      "bytes": 9221,
+      "sha256": "cbe7f24ff94123812ec32b74d100d2a4c2c0befe8e661ba806a32322ce270611"
+    }
+  },
+  "preprocessing_sha256": "fb99bd54c1d288839d34209c126e764ef62ba55ad89dc6b67b7035565916bc69",
+  "input_npz_sha256": "9f0c47a99464db78f9d10fcf5318a43cd905b92861b44cc7123b9a099d44f6ae",
+  "source_join_review": "Peer e28_operational_review read inspect_2024 plus 1479x4 matched records: one exact native code/source region per ID, correct upper level and 2024 period, no P1; not a raw-file rehash or physical-boundary certification.",
+  "admission_correction": {
+    "path": "ADMISSION_CORRECTION.json",
+    "sha256": "06c3e062048f98e9dfc035b4400810aadc73498bec63bc37d2abb7db260f2ba0"
+  },
+  "independent_admission_rule_review": {
+    "path": "admission_evidence/independent_recovery_rule_review.json",
+    "sha256": "478a851916ad600c942c30ab2c7fa8b5157a3d8751a9538a7e373093c66177bc"
+  },
+  "r00_input_manifest_sha256": "81681bd0d5f92a7eb27e9348534ab2f5e96640cba0b10e0757be5c0db1d8b54e"
+}

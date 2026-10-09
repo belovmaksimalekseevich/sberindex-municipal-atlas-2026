@@ -1,0 +1,75 @@
+{
+  "schema": "detailed-typology-science-package-v1",
+  "files": {
+    "data/input2190.npz": {
+      "sha256": "e4abc1a00495fae8280213b85c326169a1a0f5efcf7504400964b69b296c0547",
+      "bytes": 1757336
+    },
+    "data/reference.json": {
+      "sha256": "733bf0c121b441bea7f423e2e10aa2dddfd9aa76e8bd152462d4bb4020c2052f",
+      "bytes": 3776
+    },
+    "data/reported2190.npz": {
+      "sha256": "e5cd11d4295be6e20b11446eb48ffedaa1b31155c199adea327a39396da206bf",
+      "bytes": 825983
+    },
+    "engine/cosine.py": {
+      "sha256": "011e3eef67a8e5f0baaf1a3ae82f56c7835202fb748e6f4f1fcd9df30519ccbd",
+      "bytes": 1908
+    },
+    "engine/science.py": {
+      "sha256": "8f67c403b6e1e8460a125b8c24795d74655afa3e47a24270a38e46647d0808b8",
+      "bytes": 10829
+    },
+    "engine/spectral_support.py": {
+      "sha256": "de92674d41c88af3e92bc509df54ca9fe98587261cc2af13dd3f2d52461cc866",
+      "bytes": 1631
+    },
+    "engine/vendor/c5c3_metrics.py": {
+      "sha256": "e8e2ee72870d538bce56e66e56354ab04c3d5bcd6036bfb29224ea4450ad55a3",
+      "bytes": 1830
+    },
+    "engine/vendor/kernels.py": {
+      "sha256": "0d9ae437f4eef1cc698473b7171db460e52d082e83fe52aff8f7686fdf24c3bc",
+      "bytes": 12957
+    },
+    "engine/vendor/metrics.py": {
+      "sha256": "ed28977e5fa58e67a872392e2842a84ad1e17fba72bfb650b15de7e1911c0fb7",
+      "bytes": 6153
+    },
+    "engine/vendor/representative.py": {
+      "sha256": "cfc5552edada2b4e535de475a5e1fb9da5b71783cfa6881e43b2b89972a68865",
+      "bytes": 759
+    },
+    "engine/vendor/spectral_method.py": {
+      "sha256": "c485d261bb4da9c64683b6ece61e11a965e3208bc42d59547d50a2f22355a85e",
+      "bytes": 1627
+    },
+    "engineering/detailed_typology_national_20261007_r00/adapter.py": {
+      "sha256": "c62e2d05107a78ee1f5e3c4231a6cd5b0f4334883131463c314d22a117d36bac",
+      "bytes": 6044
+    },
+    "engineering/detailed_typology_national_20261007_r00/run_month.py": {
+      "sha256": "122ea2e6063c710012b5e6ba1df6ff8f7c9aa157ce8df44a31d960b2722c5b61",
+      "bytes": 11827
+    },
+    "engineering/detailed_typology_national_20261007_r00/util.py": {
+      "sha256": "5bb0a5783c0dfa75f7ece96e4d2b5e533a2b40f1383c6d7fe16dff955422d7ec",
+      "bytes": 3358
+    },
+    "PLAN.json": {
+      "sha256": "e906537945554578c42a6671b71e782507ace6cc29b864e3587a8e75193a46b1",
+      "bytes": 5366
+    },
+    "SOURCE_BINDING.json": {
+      "sha256": "e758ab8640eb36979f180b8948c47c7cc18b45db142f9440fa6c44f914618015",
+      "bytes": 5724
+    },
+    "task_catalog.json": {
+      "sha256": "8165c2dee4cce69a6dc4adc69cc8a90f85b20d6ee0ce8cfa59817722265f7e81",
+      "bytes": 15160
+    }
+  },
+  "plan_sha256": "e906537945554578c42a6671b71e782507ace6cc29b864e3587a8e75193a46b1",
+  "scientific_acceptance": false
+}

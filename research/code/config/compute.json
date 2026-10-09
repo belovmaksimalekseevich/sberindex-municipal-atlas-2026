@@ -1,0 +1,9 @@
+{
+  "national_cpu": 0,
+  "context_cpu": 7,
+  "national_task_seconds": 1800,
+  "context_task_seconds": 600,
+  "session_seconds": 18000,
+  "RSS_bytes": 4294967296,
+  "minimum_free_disk_bytes": 12884901888
+}

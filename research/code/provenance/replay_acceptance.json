@@ -1,0 +1,160 @@
+{
+  "schema": "DT24-clean-replay-independent-final-acceptance-v1",
+  "passed": true,
+  "UTC": "2026-10-08T01:34:26.643171+00:00",
+  "source_package_sha256": "95801b330b89ffa72819b712feb2f20340ce0559c8c732c6392ac9e4c8c34025",
+  "source_lock_sha256": "4544772fa2597199e89fc806f6aaefa2e67c78a9ab28619033d23f8de6211b42",
+  "contract_sha256": "7326a69a7cbefc45b96ab493f1411fcd763efd7cccf44f46454404a6004fc891",
+  "cold_new_pilot": true,
+  "reused_pilot_chunks": 0,
+  "national_chunks": 25,
+  "national_partitions": 504,
+  "national_native_entries": 2688,
+  "national_closed_call_pairs": 3721,
+  "national_metric_status_checks": 3024,
+  "context_partitions": 28,
+  "context_KMeans_attempts": 112,
+  "whole_workflow_completed": true,
+  "required_owner_identities_verified_dead": 110,
+  "final_snapshot_identities_verified_dead": 112,
+  "all_eight_archives_SHA_CRC_exact_inventory": true,
+  "scientific_projection_records": 897,
+  "exact_scalar_checks": 9943410,
+  "float_scalar_checks": 2544934,
+  "max_abs_float_difference": 0.0,
+  "differences": 0,
+  "parity_actual_not_fixture": true,
+  "runtime_provenance_fields_excluded_per_frozen_policy": true,
+  "scientific_label_spelling_compared": true,
+  "local_scientific_fits": 0,
+  "SSH_calls": 0,
+  "scientific_model_selected": false,
+  "inputs_and_archives_modified": false,
+  "artifacts": [
+    {
+      "path": "workstreams/detailed_typology_replay_acceptance_20261008_r00/INPUTS.final.json",
+      "sha256": "ad3477606707269cd2c55ce967de59f6c90a96df39b9efb235394bbe0e042b65",
+      "bytes": 10024
+    },
+    {
+      "path": "workstreams/detailed_typology_replay_acceptance_20261008_r00/INPUTS.complete.json",
+      "sha256": "20054355bc6c4f761602b32b1402360d5ab57c80179edbdf7f794cfc1b1f097a",
+      "bytes": 10190
+    },
+    {
+      "path": "workstreams/detailed_typology_replay_received_20261008_r00/independent_national_closure_r00.json",
+      "sha256": "aa8417ba545867bc85addec1a2220edff6c9695f730fe80e0d62c7d88a107d45",
+      "bytes": 5624
+    },
+    {
+      "path": "workstreams/detailed_typology_replay_received_20261008_r00/independent_workflow_closure_r00.json",
+      "sha256": "903214b88dd49496d8a1c7c2b2408f32edf66b790c77bc15ef4d88d7374424ac",
+      "bytes": 2538
+    },
+    {
+      "path": "workstreams/detailed_typology_replay_parity_20261008_r00/PARITY.json",
+      "sha256": "c2590ddff9b2b091d7e562810d8cf112f44fbef7de28693c2789d0de2dfd288e",
+      "bytes": 3448
+    },
+    {
+      "path": "workstreams/detailed_typology_replay_acceptance_20261008_r00/PARITY_INPUT_COPIES.json",
+      "sha256": "5dd14bf92fafe70dc884430735621fa50ed7d3668f7cbada6ca7b0920a80aded",
+      "bytes": 1953
+    },
+    {
+      "path": "workstreams/detailed_typology_replay_acceptance_20261008_r00/ACTUAL_CHECKPOINT_r00.json",
+      "sha256": "bdd3b2119d0146b88fa4c1c490428ebb21d624ba1b841aab8d2e40b960b80610",
+      "bytes": 978
+    },
+    {
+      "path": "workstreams/detailed_typology_replay_acceptance_20261008_r00/verifier_amendment_r01/OUTPUT_MANIFEST.json",
+      "sha256": "0d8a6be0a321719976886586d73166fb0dc32362e35d63ccb8ac4d076991aaed",
+      "bytes": 730
+    },
+    {
+      "path": "workstreams/detailed_typology_replay_acceptance_20261008_r00/verifier_amendment_r01/r00_failure.json",
+      "sha256": "d3ce053d21b0ed19c5ebadf81635806558bc640b542e2860dd58d6500a626309",
+      "bytes": 539
+    },
+    {
+      "path": "workstreams/detailed_typology_replay_acceptance_20261008_r00/verifier_amendment_r01/r00_to_r01.diff",
+      "sha256": "220ce0fd44c52a3f7bedd1a473db10a462927fcad7bb1cbe013f4fb049c961b9",
+      "bytes": 4217
+    },
+    {
+      "path": "workstreams/detailed_typology_replay_acceptance_20261008_r00/verifier_amendment_r01/REGRESSION.json",
+      "sha256": "90b9007ed92c583507d478263a567c7f3ff517789144d86e92a5d710cbdd3be6",
+      "bytes": 1109
+    },
+    {
+      "path": "engineering/vm_target_checks_20261007_r00/verify_clean_replay_delivery.py",
+      "sha256": "d04fc5b5d45203690b28aff5dcac992586a3f0a3a4d2f77a30050016f721df05",
+      "bytes": 25765
+    },
+    {
+      "path": "engineering/vm_target_checks_20261007_r00/verify_clean_replay_delivery_r01.py",
+      "sha256": "4f9d07faedc8f81098022e1ab53ca09d0370b4771e74512a7571de31f96582d6",
+      "bytes": 28219
+    },
+    {
+      "path": "engineering/vm_target_checks_20261007_r00/verify_detailed_typology_cold_download.py",
+      "sha256": "04831c6c94220952136c64a871d82fe2321693882fa2f8f6eb9b598f2db04b8a",
+      "bytes": 27494
+    },
+    {
+      "path": "engineering/dt24_parity_r00/parity_check.py",
+      "sha256": "5e401cba88dc89b47d869b7488045683b7e5c5efb0d94c15c2e4f57d0de5d2c3",
+      "bytes": 13008
+    },
+    {
+      "path": "engineering/dt24_parity_r00/PARITY_REFERENCES.local.json",
+      "sha256": "32d179d1ecd3b6a1bed29bae72ee6f01d74518b6bdb37f95bc6e347af0e448c7",
+      "bytes": 1107
+    }
+  ],
+  "archive_inventory": {
+    "national": {
+      "sha256": "783aca2a54c1ec14554867dc432cca4ead84123a2ec8bc6be7a37bc80c59c98a",
+      "bytes": 3411234770
+    },
+    "national_gate": {
+      "sha256": "9eec274d50b229c4a753a0c99490724a376692a61f48d78b55b3f30b74b4802f",
+      "bytes": 142031
+    },
+    "national_OP": {
+      "sha256": "d6dd03eef7a304be9bac403553f67ad0b581a409bf036e0e4922a2f172928c89",
+      "bytes": 15060
+    },
+    "national_saved_readback": {
+      "sha256": "3bf29ec049d9541419c3f75d0605b884a3cc1aecef68a7ce7b5f111ad6ba6ffc",
+      "bytes": 3919746
+    },
+    "national_numeric": {
+      "sha256": "9c2b4fa6fc1c9280f8f6bc71712d7bcb8b2c5e630c84359c93a147efdd988900",
+      "bytes": 931126
+    },
+    "context_preflight": {
+      "sha256": "7de14222f7cd4693bb5996fc3fb75258e492057e9eff95c79aae3abcc3f299f0",
+      "bytes": 6766
+    },
+    "context_full_0001": {
+      "sha256": "0bea180ce5c4620ec5895213d36333dcf54309bda0d20684a424c90879ee0e0d",
+      "bytes": 30250859
+    },
+    "context_saved_readback": {
+      "sha256": "93e954c2dac3be185aade0b03a3b50c356785b10fff8b00a78bad0953b522a2b",
+      "bytes": 30407150
+    }
+  },
+  "verifier_amendment": {
+    "old_preserved": true,
+    "reason": "r00 wrongly rejected expected negative HELD fixtures of the successful national Linux gate",
+    "r01_scope": "exact eight negative fixture paths and expected reasons only;14 positive gate checks;0science fits;real-stage HELD and unknown remain fatal",
+    "regression_checks": 13
+  },
+  "limits": [
+    "Actual registered projection reproducibility is established for this clean run against accepted historical artifacts.",
+    "This does not independently establish correct semantic feature names, external scientific validity, model choice, or cross-machine bitwise portability.",
+    "No model fitting, graph construction, eigensolve, or arithmetic ICVI recomputation was performed during this local acceptance."
+  ]
+}

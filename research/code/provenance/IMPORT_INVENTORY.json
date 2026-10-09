@@ -1,0 +1,228 @@
+[
+  {
+    "file": "check_identity.py",
+    "imports": [
+      "argparse",
+      "json",
+      "pathlib",
+      "re",
+      "subprocess",
+      "sys"
+    ]
+  },
+  {
+    "file": "compute.py",
+    "imports": [
+      "datetime",
+      "importlib.metadata",
+      "json",
+      "os",
+      "owned_processes",
+      "pathlib",
+      "platform",
+      "psutil",
+      "shutil",
+      "subprocess",
+      "sys",
+      "time",
+      "typology"
+    ]
+  },
+  {
+    "file": "owned_processes.py",
+    "imports": [
+      "ctypes",
+      "os",
+      "pathlib",
+      "platform",
+      "psutil",
+      "signal",
+      "time"
+    ]
+  },
+  {
+    "file": "science/context/model.py",
+    "imports": [
+      "csv",
+      "hashlib",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "pathlib",
+      "preprocessing",
+      "scipy.cluster.hierarchy",
+      "scipy.spatial.distance",
+      "sklearn.cluster",
+      "sklearn.metrics",
+      "threadpoolctl",
+      "warnings"
+    ]
+  },
+  {
+    "file": "science/context/preprocessing.py",
+    "imports": [
+      "numpy"
+    ]
+  },
+  {
+    "file": "science/context/runner.py",
+    "imports": [
+      "argparse",
+      "hashlib",
+      "importlib.metadata",
+      "json",
+      "model",
+      "numpy",
+      "os",
+      "pathlib",
+      "psutil",
+      "scipy.cluster.hierarchy",
+      "signal",
+      "subprocess",
+      "sys",
+      "time",
+      "traceback"
+    ]
+  },
+  {
+    "file": "science/national/engine/cosine.py",
+    "imports": [
+      "fractions",
+      "kernels",
+      "math",
+      "numpy"
+    ]
+  },
+  {
+    "file": "science/national/engine/science.py",
+    "imports": [
+      "cosine",
+      "fractions",
+      "hashlib",
+      "json",
+      "kernels",
+      "math",
+      "metrics",
+      "numpy",
+      "pathlib",
+      "representative",
+      "spectral_support",
+      "sys"
+    ]
+  },
+  {
+    "file": "science/national/engine/spectral_support.py",
+    "imports": [
+      "collections",
+      "hashlib",
+      "numpy",
+      "spectral_method",
+      "types"
+    ]
+  },
+  {
+    "file": "science/national/engine/vendor/c5c3_metrics.py",
+    "imports": [
+      "fractions",
+      "hashlib",
+      "json",
+      "math",
+      "numpy"
+    ]
+  },
+  {
+    "file": "science/national/engine/vendor/kernels.py",
+    "imports": [
+      "fractions",
+      "hashlib",
+      "math",
+      "numpy",
+      "statistics"
+    ]
+  },
+  {
+    "file": "science/national/engine/vendor/metrics.py",
+    "imports": [
+      "c5c3_metrics",
+      "fractions",
+      "itertools",
+      "kernels",
+      "math",
+      "numpy"
+    ]
+  },
+  {
+    "file": "science/national/engine/vendor/representative.py",
+    "imports": [
+      "fractions"
+    ]
+  },
+  {
+    "file": "science/national/engine/vendor/spectral_method.py",
+    "imports": [
+      "math",
+      "numpy",
+      "spectral_support"
+    ]
+  },
+  {
+    "file": "science/national/engineering/detailed_typology_national_20261007_r00/adapter.py",
+    "imports": [
+      "fractions",
+      "math",
+      "numpy"
+    ]
+  },
+  {
+    "file": "science/national/engineering/detailed_typology_national_20261007_r00/run_month.py",
+    "imports": [
+      "adapter",
+      "argparse",
+      "importlib.metadata",
+      "importlib.util",
+      "numpy",
+      "os",
+      "pathlib",
+      "platform",
+      "psutil",
+      "scipy.cluster.hierarchy",
+      "spectral_support",
+      "sys",
+      "threadpoolctl",
+      "time",
+      "traceback",
+      "util"
+    ]
+  },
+  {
+    "file": "science/national/engineering/detailed_typology_national_20261007_r00/util.py",
+    "imports": [
+      "fractions",
+      "hashlib",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "pathlib",
+      "psutil",
+      "time",
+      "uuid"
+    ]
+  },
+  {
+    "file": "typology.py",
+    "imports": [
+      "argparse",
+      "collections",
+      "compute",
+      "csv",
+      "gzip",
+      "hashlib",
+      "json",
+      "math",
+      "pathlib",
+      "sys"
+    ]
+  }
+]

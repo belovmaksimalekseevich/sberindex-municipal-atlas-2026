@@ -1,0 +1,113 @@
+{
+  "scope": "Source meaning and period feasibility only; no ID joins, admitted coverage, associations or model fits",
+  "source_SHA": {
+    "data/raw/rosstat/Y48423005_2022_2024.csv": {
+      "bytes": 311361313,
+      "sha256": "fb7782f6479fe66db0200095bdb0e2cdf5a74bb3bcc89b664f65e9d8fb0a0a91"
+    },
+    "data/raw/rosstat/Y48112027_2022_2024.csv": {
+      "bytes": 57504593,
+      "sha256": "959d36ed4d1b20cd71a56937af7a790ce43934972ddfefcf5bf7f5761bd41230"
+    },
+    "data/raw/rosstat/download_manifest.json": {
+      "bytes": 2020,
+      "sha256": "0ccf07212b95ff9c43f24a6430a018cac95d5b145171922c2fb53b7f0eb68b75"
+    },
+    "sources/foundation/F1_20261002/municipal_catalog_2024.html": {
+      "bytes": 565790,
+      "sha256": "9f245a8e1a1cfad4565cfa6ad2980b4f4b8f8f6e61ac8beddd01d6fc92ca2501"
+    },
+    "sources/foundation/F1_20261002/municipal_catalog_2024.txt": {
+      "bytes": 84088,
+      "sha256": "724012104eef40153bd72341b3a2f0b72f1537f6f72541c4905784443563f5c1"
+    },
+    "sources/foundation/F1_20261002/P4_instructions_872_20221130.pdf": {
+      "bytes": 1124522,
+      "sha256": "fd6abc90927bb42591f9db13bd5995d9ed91b75e2a3713722a3649982bc4962c"
+    },
+    "sources/foundation/F1_20261002/P4_instructions_872_20221130.txt": {
+      "bytes": 552532,
+      "sha256": "5730fe2a3d574a292d7f2a0c9449b3bed4a307f89a383e66e0aab714f5be77ef"
+    },
+    "sources/source_followup/statistical_scope_20261003/BUL_MO_2024.xlsx": {
+      "bytes": 1599578,
+      "sha256": "c831e1b408a6a21e061074f0b3a5a04c2e3bb4f8eabae6c72edff55185e921bd"
+    },
+    "sources/official/description_bdpmo_v20250918.txt": {
+      "bytes": 74910,
+      "sha256": "d0ac9f00428d73838ddad630f97ce70ac19fcaebf7ba72abe90c4b798a541272"
+    },
+    "workstreams/external_socioeconomic_20261007_r00/source_manifest.json": {
+      "bytes": 8645,
+      "sha256": "d8653eefa99528faaea20974433a9f707876c310bd05e20721afc7aecc446cd6"
+    },
+    "workstreams/external_sector_20261007_r00/frozen_r00/protocol.json": {
+      "bytes": 17365,
+      "sha256": "e3ad8fafa08e4a2bdf79fe5354bb31b1cd791e676c3142ab2bcb5a13a7ba594c"
+    },
+    "workstreams/external_sector_20261007_r00/frozen_r00/SOURCE_BINDING.json": {
+      "bytes": 13686,
+      "sha256": "aeaf83e548f141c54e340110a1666c295edaf5b3bb016e281d0fe4db34c264d8"
+    }
+  },
+  "annual2024": {
+    "indicator": "Y48423005",
+    "period": "Январь-декабрь",
+    "unit": "Человек",
+    "Total_facet": "Всего по обследуемым видам экономической деятельности",
+    "P_facet": "Раздел P Образование",
+    "raw_rows_all_levels_Total": 2421,
+    "raw_rows_all_levels_P": 2384,
+    "counts_are_not_admitted_ID_coverage": true
+  },
+  "population2024": {
+    "indicator": "Y48112027",
+    "period": "На 1 января",
+    "date": "2024-01-01",
+    "facet": "Все население",
+    "unit": "Человек",
+    "exists_in_subset": true,
+    "official_local_bulletin": "sources/source_followup/statistical_scope_20261003/BUL_MO_2024.xlsx",
+    "locators": [
+      "Титул!B14",
+      "Предисловие!A4:A13",
+      "Содержание table27"
+    ]
+  },
+  "population2025": {
+    "date": "2025-01-01",
+    "exists_in_subset": false,
+    "exists_in_local_original_member": true,
+    "archive": "data/raw/rosstat/rosstat_selected_originals.zip",
+    "member": "data_Y48112027_112_v20250918.csv",
+    "member_bytes": 305603878,
+    "member_sha256": "b877176935f9801969ffe7ae1cdf33ec37486b08503a0f30b2bc94403038e626",
+    "entire_member_SHA_checked_against_download_manifest": true,
+    "entire_member_ZIP_CRC_checked_by_complete_read": true,
+    "all_population_raw_rows_2025_all_levels": 12946,
+    "no_archive_extraction": true,
+    "official_BUL_MO_2025_local_not_found": true,
+    "no_2025_ID_or_boundary_admission_performed": true
+  },
+  "reading_locators": {
+    "municipal_catalog_2024": "indicator8423005: annual cumulative P4, upper municipal levels and activities",
+    "P4_instructions_872_20221130": "PDFpp108-109 section73-74,pp112-113 section76,pp118-119 section77.6-77.7; historical local instructions effective2023, no current-law review claimed",
+    "description_bdpmo_v20250918.txt": "history/update18.09.2025,lines143,148,153-169; producerRosstat/processorTochno",
+    "external_sector_frozen_protocol": "scope.outcome_year2023 andtargetdefinitions; existing source binding does not certify2024"
+  },
+  "recommended_primary_alignment": {
+    "spending": "explicitly fixed2024month (e.g.December) or separately preregistered2024annualprofile; do not labelDecember annual",
+    "education": "P annual2024 / Total annual2024",
+    "intensity": "Total annual2024 / permanent_population2024-01-01; displayper1000 optional fixedlog1p",
+    "population": "permanentresidentstock2024-01-01",
+    "optional_denominator_sensitivity": "Jan1_2025 or mean(Jan1_2024,Jan1_2025) only after same-territory/date admission; latter is endpoint-average proxy, not official annual mean",
+    "forecast": false,
+    "time_vintage": "frozen processor release2025-09-18; exact original row publication dates unverified",
+    "no_new_forecast_claim": "requires point-in-time available data, dated territorial matching, lagged design and future holdout"
+  },
+  "new_fits": 0,
+  "new_associations": 0,
+  "SSH_calls": 0,
+  "downloads": 0,
+  "raw_or_frozen_modifications": 0
+}

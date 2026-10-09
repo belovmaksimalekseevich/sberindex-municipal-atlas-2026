@@ -1,0 +1,107 @@
+{
+  "UTC": "2026-10-08T10:04:10.093974+00:00",
+  "status": "ACCEPTED_LOCAL_READER_AND_LINUX_PROCESS_CLEANUP",
+  "revision": "r01",
+  "source_hashes": {
+    "compute.py": "c32b14c5f1b71b478d4e73b5737012838163f7f8a7d119f94be3eac4b0c2027b",
+    "owned_processes.py": "cd80dc619f725735bcd03edcf90531f8d63cc7eb971605baf7be5791d74518d5"
+  },
+  "package_manifest_sha256": "edca228506b526ebe0d6fb9240c940b2be83c54bf2ceca8a28c4b1ac1b3710d2",
+  "frozen_science_verification": {
+    "passed": true,
+    "files_checked": 597,
+    "byte_identical_frozen_members": 33,
+    "partitions": {
+      "national": 504,
+      "context": 28
+    },
+    "S_Dbw_status_counts": {
+      "ok": 175,
+      "undefined": 329
+    },
+    "new_fits": 0
+  },
+  "R1": "resolved on actual local Linux: 10 author process cases, identity mismatch, and 4 independent process cases",
+  "R2": "resolved by CURRENT_CONTEXT.md and README linkage; frozen historical documentation unchanged",
+  "R3": "resolved and independently reproduced rejection of extra/PACKAGE_MANIFEST.json",
+  "local_Linux_image_id": "sha256:b6cf8289c3622e0f41d371461f140906900e81951ee279e1aa7a5e09604b9dc2",
+  "local_Linux_limits": {
+    "cpus": 1,
+    "memory_bytes": 536870912,
+    "pids": 64,
+    "network": "none",
+    "rootfs": "read-only",
+    "write_bind": "code_review/LinuxQA only"
+  },
+  "independent_cases": [
+    {
+      "case": "wall",
+      "seconds": 3.0373672589999785,
+      "cleanup_all_owned_absent": true
+    },
+    {
+      "case": "rss",
+      "seconds": 0.7163915929999973,
+      "cleanup_all_owned_absent": true
+    },
+    {
+      "case": "parent_exit",
+      "seconds": 0.825009620000003,
+      "cleanup_all_owned_absent": true
+    },
+    {
+      "case": "success",
+      "seconds": 0.6101755980000121,
+      "cleanup_all_owned_absent": true
+    }
+  ],
+  "fixture_amendment": "First independent r01 attempt used a 1.2s wall timeout and ended before child identity was written. Outputs retained; bounded repeat raised fixture wall to 3s and other cases to 8s; candidate code unchanged.",
+  "scope_boundaries": {
+    "full_real_compute_executed": false,
+    "model_acceptance_changed": false,
+    "resource_budget_assigned": false,
+    "release_gate_modified_by_reviewer": false,
+    "session_seconds_still_unassigned": true,
+    "Linux_cleanup_component_accepted": true,
+    "supervisor_crash_external_recovery_tested": false,
+    "raw_source_admission_reconstructed": false,
+    "publication_or_submission": false,
+    "fits": 0,
+    "eigensolves": 0,
+    "SSH": 0
+  },
+  "evidence": {
+    "reader_r01/RECEIPT.json": {
+      "sha256": "70602fbc88c415e0278e0285e6bfc2a55744772de25eb4d573ea8265bb6d939e",
+      "bytes": 102619
+    },
+    "reader_r01/logs/verify.stdout.txt": {
+      "sha256": "577548a7e910f83fc1f251e820165f3b16ae61fbdba879d0079b5ceb6994f79e",
+      "bytes": 245
+    },
+    "LinuxQA/old_r00/RECEIPT.json": {
+      "sha256": "82c51bb3b79526797ac1fb7d8460dcdbac5379ca3a0aa31943661895f4e34dd7",
+      "bytes": 1141
+    },
+    "LinuxQA/author_r01/receipt.json": {
+      "sha256": "c9e2fffb655ac69173542d85b5ec36d8e081263ce98df568ad54b6f2ff257188",
+      "bytes": 10957
+    },
+    "LinuxQA/independent_r01b/RECEIPT.json": {
+      "sha256": "f680abef9a748891ed0190f0dae456046249c48beddb4dca61e50ca0ec0b4abc",
+      "bytes": 4939
+    },
+    "LinuxQA/probe_guarded_r01.py": {
+      "sha256": "9ec6fc8e4ecc1487467898c7aa28668b6bd67bdb24ef0dc92b643873cb814c25",
+      "bytes": 4750
+    },
+    "LinuxQA/author_fixture_r01/qa_cleanup.py": {
+      "sha256": "3868f88e9ad899c8e4b00406a7b3fdabc88d78cdb69d4b5208535c8f9a45e6a6",
+      "bytes": 6399
+    },
+    "LinuxQA/author_fixture_r01/cleanup_fixture.py": {
+      "sha256": "9e64d41e28e526d8a49412f4921d93af1563b4751b6732869abc0935d66c0d22",
+      "bytes": 1647
+    }
+  }
+}

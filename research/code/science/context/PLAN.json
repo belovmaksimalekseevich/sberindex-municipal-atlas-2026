@@ -1,0 +1,197 @@
+{
+  "schema": "context-typology-execution-v1",
+  "status": "bound_to_root_accepted_input_before_first_real_scores",
+  "reference_year": 2024,
+  "retrospective": true,
+  "predictive_asof_2024": false,
+  "preprocessing_sha256": "fb99bd54c1d288839d34209c126e764ef62ba55ad89dc6b67b7035565916bc69",
+  "variants": [
+    "context6",
+    "spending2"
+  ],
+  "K": [
+    4,
+    6,
+    8,
+    10,
+    12,
+    16,
+    20
+  ],
+  "families": [
+    "Ward",
+    "KMeans"
+  ],
+  "common_space": "same prepared X and IDs for all K and methods within each variant; scores across different variants are not a quality ranking",
+  "preprocessing": {
+    "implementation": "source-owned preprocessing.fit_transform(X_raw[indices],variant)",
+    "version": "context2024-sixblocks-v1",
+    "full_reference_reuse_for_draw": false,
+    "refit_each_draw": true,
+    "no_clipping": true,
+    "no_imputation": true,
+    "constant_scale": "fail explicit; no block silently dropped",
+    "six_block_weights": [
+      0.16666666666666666,
+      0.16666666666666666,
+      0.16666666666666666,
+      0.16666666666666666,
+      0.16666666666666666,
+      0.16666666666666666
+    ],
+    "spending_block_weights": [
+      0.5,
+      0.5
+    ],
+    "robust_scale": "sqrt(median all unordered pair squared distances) per block; organization coordinates first divided by IQR; median centering; NumPy linear quantiles",
+    "raw_reconstruction_platform_tolerance": {
+      "rtol": 1e-13,
+      "atol": 1e-13
+    },
+    "actual_fit_X_raw": "byte-frozen source X_raw, not reconstructed replacement"
+  },
+  "Ward": {
+    "implementation": "scipy.cluster.hierarchy.linkage",
+    "method": "ward",
+    "metric": "euclidean",
+    "optimal_ordering": false,
+    "trees": 2,
+    "cut": "cut_tree(n_clusters=[K]); same full tree for every K within variant",
+    "seed": "not_applicable"
+  },
+  "KMeans": {
+    "implementation": "sklearn.cluster.KMeans",
+    "init": "k-means++",
+    "n_init_per_seed": 1,
+    "algorithm": "lloyd",
+    "max_iter": 300,
+    "tol": 1e-06,
+    "seeds": [
+      1000003,
+      1104732,
+      1209461,
+      1314190,
+      1418919,
+      1523648,
+      1628377,
+      1733106
+    ],
+    "iteration_cap": "attempt not eligible if n_iter>=300; no automatic extension",
+    "representative": "min sklearn inertia among valid attempts; exact ties canonical labels then seed index",
+    "all_attempts_retained": true
+  },
+  "metrics": {
+    "SW": "sklearn silhouette_samples exact all points Euclidean common X",
+    "CH": "sklearn calinski_harabasz_score",
+    "DB": "sklearn davies_bouldin_score",
+    "inertia": "sum squared distances to canonical-label mean centers; not a K-selection criterion"
+  },
+  "profiles": {
+    "units": "raw measured values; typical RUB=geometric mean of all12months; closed shape only selected5, not all Total",
+    "raw_quantiles": [
+      0,
+      0.1,
+      0.25,
+      0.5,
+      0.75,
+      0.9,
+      1
+    ],
+    "monthly_spending_quantiles": [
+      0.25,
+      0.5,
+      0.75
+    ],
+    "medoid": "min sum of within-cluster Euclidean distances; exact tie lexical ID",
+    "centroid_representative": "closest observed ID to group mean; exact tie lexical ID",
+    "examples": 5,
+    "boundary_per_cluster": 10,
+    "boundary_order": "lowest pointwise SW then lexical ID",
+    "boundary_error_probability": false,
+    "economic_names_automatic": false,
+    "covered_organization_staff_is_resident_employment": false
+  },
+  "crosswalk": {
+    "Ward": "strict nested cuts, validated per child",
+    "KMeans": "overlap counts/Jaccard/ARI only, no subtype/lineage claim",
+    "across_spaces": "same IDs matched partition overlap only, no cross-space SW ranking"
+  },
+  "selection": {
+    "automatic_best_K_or_model": false,
+    "use_full_grid": true,
+    "requires": "separate substantive profile review and draw robustness track",
+    "tiny_groups": "retained and exposed, not automatically rejected",
+    "included_context_is_independent_validation": false
+  },
+  "robustness_interface": {
+    "module": "model",
+    "prepare": "prepare_for_indices(raw_input,input_schema,indices,variant)",
+    "fit": "fit_partition(prepared,family,K,seeds=SEEDS)",
+    "indices": "unique sorted integer source row indices; subsample without replacement; bootstrap duplicates explicitly rejected by this API",
+    "refit_preprocessing": "mandatory every draw",
+    "draw_plan_owned_elsewhere": true,
+    "no_full_draws_registered_here": true
+  },
+  "budget": {
+    "max_workers": 1,
+    "root_reserved_cpus": [
+      7
+    ],
+    "threads_per_worker": 1,
+    "aggregate_RSS_bytes": 4294967296,
+    "wall_seconds": 1800,
+    "compute_seconds": 1500,
+    "finalization_reserve_seconds": 300,
+    "task_seconds": 180,
+    "full_tasks": 28,
+    "Ward_trees": 2,
+    "Ward_cuts": 14,
+    "KMeans_fits_max": 112,
+    "RSS_poll_seconds": 0.1,
+    "target_runtime_measured": false,
+    "outer_supervisor": "root generic probe must guard full preparation and execution too"
+  },
+  "dependencies": {
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.8.0",
+    "psutil": "7.2.2",
+    "joblib": "1.5.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "scientific_acceptance": false,
+  "national_full": false,
+  "frontend_changes": false,
+  "package_for_Zhenya": false,
+  "N_and_regions": "dynamic accepted input schema",
+  "input_gate": "root-accepted sealed corrected input; r00 is staging, not launch authorization",
+  "tiny_QA_receipt_sha256": "9589de46a0157188cd0c52d61de8390962281aee7bbee388565ef69eab98fb39",
+  "scope": {
+    "native24month_union": 2190,
+    "complete12month2024": 2048,
+    "context_subset": 1666,
+    "context_regions": 69,
+    "percent_of_complete2024": 81.34765625,
+    "percent_of_native2190": 76.07305936073058,
+    "national_full": false
+  },
+  "input_sha256": "9f0c47a99464db78f9d10fcf5318a43cd905b92861b44cc7123b9a099d44f6ae",
+  "input_archive_sha256": "3e26256836e54e007c324c62a08bf50ad99ef1afc365153d992dd224b7c94e9f",
+  "input_manifest_sha256": "fc004dd2e1627710f522b205d9ea4d6a9673ec1eb0e26718d8b64af8b1e9cb1c",
+  "source_schema_sha256": "8e3a94b515db1ab54d5b0c6e061142efa3bf91105c93ee5f1ebc641348ef8ecb",
+  "source_science_plan_sha256": "92d7b796e6d80b9f5cf828b357f51692d1a6f01ad95f53da68bd1d97fa1dce75",
+  "input_metadata_source": "approved r01 exact 35-member source; no input Python or bytecode imported",
+  "frozen_code_policy_sha256": "9de6468c4341cefe797b0c8b11888051a25e0245edf4dc4acd6ee10f6761aab4",
+  "operational_amendment": {
+    "reason": "root resource lease: CPU7 only, one worker; no scientific change",
+    "old_max_workers": 2,
+    "old_cpus": [
+      6,
+      7
+    ],
+    "wall_seconds_unchanged": 1800,
+    "compute_seconds_unchanged": 1500,
+    "reserve_seconds_unchanged": 300,
+    "RSS_bytes_unchanged": 4294967296
+  }
+}

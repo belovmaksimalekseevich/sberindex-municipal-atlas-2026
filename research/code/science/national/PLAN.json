@@ -1,0 +1,158 @@
+{
+  "schema": "detailed-typology-national-plan-v1",
+  "study_id": "DT24-MIXED-GRID-v1",
+  "frozen_before_new_outcomes": true,
+  "months": [
+    "2023-01",
+    "2023-02",
+    "2023-03",
+    "2023-04",
+    "2023-05",
+    "2023-06",
+    "2023-07",
+    "2023-08",
+    "2023-09",
+    "2023-10",
+    "2023-11",
+    "2023-12",
+    "2024-01",
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05",
+    "2024-06",
+    "2024-07",
+    "2024-08",
+    "2024-09",
+    "2024-10",
+    "2024-11",
+    "2024-12"
+  ],
+  "K": [
+    10,
+    20,
+    4,
+    6,
+    8,
+    12,
+    16
+  ],
+  "methods": [
+    "SSE",
+    "Ward",
+    "NCut"
+  ],
+  "partitions": 504,
+  "observed_only": true,
+  "ID_universe": 2190,
+  "geometry": "unchanged original LHCLR alpha=.5 beta=.5 reference, symmetric7 evaluation; no reference refit",
+  "common_graph": "unchanged exact radius1.5 sigma1",
+  "fitting_graph": "unchanged exact union15 ties/zeros Gaussian sigma1",
+  "SSE": "unchanged exact Lloyd, PCG64/D2,8firstseeds,max300, own exact SSE selection",
+  "NCut": "unchanged original symmetric eigensystem, K-specific gap/residual/row-norm admission,8exactLloyd,own exact NCut selection",
+  "Ward": "previous accepted scipy linkage(X,ward,euclidean,optimal_ordering=False),cut_tree; one tree/month,no seeds applicable",
+  "representative": "unchanged scale/1e10 ties canonical labels then seed index; SSE scale max(1,SST),NCut scale K",
+  "reuse": "same monthly readonly X/Y/W/distance and exact Dyadic objects; spectral fullfactor once/month; Ward fulltree once/month",
+  "primary_seeds": [
+    1000003,
+    1104732,
+    1209461,
+    1314190,
+    1418919,
+    1523648,
+    1628377,
+    1733106
+  ],
+  "seed_slots": 2688,
+  "eigensolves_max": 24,
+  "Ward_trees": 24,
+  "monthly_chunks": 25,
+  "pilot": {
+    "task_id": "DT24-PILOT",
+    "month": "2023-01",
+    "K": [
+      10,
+      20
+    ],
+    "selection": "first calendar month fixed before outcomes; runtime only",
+    "included_in504": true,
+    "refit": false
+  },
+  "main_January_requires_closed_pilot_cache": true,
+  "common_anchor_hash_checks": {
+    "2023-03": {
+      "X": "6baec0adab06c39f59e6844d1f2e34cd88d829f601a657f087fd7291e33768b5",
+      "Y": "f5fa99dd23e81e05a260a4c27ab4198ea016a842b32a2db5dba5a39557e14a12",
+      "W": "e6fedd641c6febc1202b197ba9840a9bb17a303f48d36eee221edbc2c0a8f7d6"
+    },
+    "2023-06": {
+      "X": "fad2825c7b6d35e05befb90c351213723aa3e5d23d0082959ce5bc226e999ea7",
+      "Y": "e9cfc672fc5d26d2c4d292cf5743f39facae2867d821ab9afd327f13d36488aa",
+      "W": "16ee11103c57588e572c0f06c11f34b68f10e12b6653a8ce567c8dc37c974faa"
+    },
+    "2023-09": {
+      "X": "dc5d7169251e9a753b7b5bccc96eb1d89a2bcd2ab1e9c05ac31c055fc4fd0fc2",
+      "Y": "7134eca5bf4af89838858668e884ca7e77295206aa53914ebfb52baeab3c2040",
+      "W": "a28bbab8535158e028468c9a58fdaadfaef817f33b6026b0c9e1e79d6df5dc66"
+    },
+    "2023-12": {
+      "X": "c3f698bb5fd783138a57e67d3da05530a10288f7c99816e05e05df91f7263676",
+      "Y": "2907772c9e9a3729fa90325dee91a75faf43e1eae3ad66689c7842361e1cd001",
+      "W": "ca4e7d381cb36409d8b92e68c79c0794606d3f44042b5b6a6ba8bd0872db85d2"
+    },
+    "2024-03": {
+      "X": "9a49a742a7cb8cf2afbc20bf27c0b10947f73305199b67f75399df1c84772c9c",
+      "Y": "ea0f0be4af37752de0d33e60020f3602a0eb410eec671e9067f5af85c786ab2b",
+      "W": "c0a0016e3672d23730649e6a100860823a154dc00fceb3c67da3dc6e39964446"
+    },
+    "2024-06": {
+      "X": "b72ab4c57b852b2df8f69ec67045057f340aae3f57e32310a8a5ca63d504b094",
+      "Y": "25b58d01cb25f77baa1cf4b5664a6522d2f9855ebbc9c04d54afb2dfcce9b074",
+      "W": "86ee3c8ce1ceb747edf6f57db14d748b33a37de1425b3ed45567dd07848636de"
+    },
+    "2024-09": {
+      "X": "e2bdabac22f314173479bcf7fa62939bb6b3b88a84f199b0769a4c677cc2333f",
+      "Y": "0b3f44e0181dbabb2af2f790fd691e50ec505f894ee52e78b5b568d72e22d5e3",
+      "W": "a4b9ad0bb5694c716b4c3b7a162d2e4381d90f8b21e7013d96fd6b9124a09f66"
+    },
+    "2024-12": {
+      "X": "ef8175f67712d0b1fce8d441e59ea77653fc41dbc586a8c6373c88bf07a2a1bd",
+      "Y": "6f2da91c8f74e5532b16e6144ee476f3cb49745a37de14c43ed85c3c68cc56c3",
+      "W": "26e6fee8ef168eb0d806c1d85cfa43e53da8971b226e07099670a70d30aed8ea"
+    }
+  },
+  "metrics": [
+    "SW",
+    "CH",
+    "S_Dbw",
+    "AVI",
+    "AVU",
+    "MQ"
+  ],
+  "all_outcomes_retained": true,
+  "min_group_size2_for_comparison": true,
+  "no_metric_weighted_winner": true,
+  "no_economic_names_before_interpretation": true,
+  "scientific_acceptance": false,
+  "model_promoted": false,
+  "dependencies": {
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "psutil": "7.2.2",
+    "threadpoolctl": "3.6.0"
+  },
+  "operations": {
+    "workers_proposal": 6,
+    "threads": 1,
+    "RSS_per_worker_proposal_bytes": 4294967296,
+    "aggregate_RSS_proposal_bytes": 25769803776,
+    "month_hardcap_proposal_seconds": 7200,
+    "deadline_UTC": "2026-10-08T05:00:00Z",
+    "delivery_reserve_proposal_seconds": 600,
+    "root_must_bind_exclusive_resources_and_measure_pilot": true,
+    "automatic_retry": false,
+    "worker_contract": "fresh single chunk output; result.json + COMMIT.json; expected_call_pairs=1+22*len(K), not LS10pairs",
+    "cache_contract": "January main --cache-from CLOSED DT24-PILOT result; matching packageSHA/month/memberSHA required",
+    "root_generic_wrapper_required": "root owns queue,RSS/deadline/disk/ownercleanup; must not reuse LS180s or LS10pair validation"
+  }
+}

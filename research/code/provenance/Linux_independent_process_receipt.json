@@ -1,0 +1,190 @@
+{
+  "linux": "linux",
+  "python": "3.11.16 (main, Sep 19 2026, 01:04:43) [GCC 14.2.0]",
+  "psutil": "7.2.2",
+  "compute_sha256": "c32b14c5f1b71b478d4e73b5737012838163f7f8a7d119f94be3eac4b0c2027b",
+  "owned_processes_sha256": "cd80dc619f725735bcd03edcf90531f8d63cc7eb971605baf7be5791d74518d5",
+  "observations": [
+    {
+      "case": "wall",
+      "result": {
+        "exit_code": -9,
+        "stop_reason": "wall_deadline",
+        "seconds": 3.0373672589999785,
+        "peak_sampled_RSS_bytes": 35303424,
+        "poll_seconds": 0.1,
+        "RSS_is_sampled_not_kernel_enforced": true,
+        "cleanup": {
+          "owners": [
+            {
+              "pid": 7,
+              "start_ticks": 20282,
+              "boot_id": "1bed8fd2-fa25-4a7c-9441-ea14fb759d67"
+            },
+            {
+              "pid": 8,
+              "start_ticks": 20301,
+              "boot_id": "1bed8fd2-fa25-4a7c-9441-ea14fb759d67"
+            }
+          ],
+          "all_owned_absent": true,
+          "Linux_pidfds_and_subreaper": true
+        }
+      },
+      "process_identities": [
+        {
+          "pid": 7,
+          "create_time": 1791453732.82,
+          "pgid": 7,
+          "sid": 7
+        },
+        {
+          "pid": 8,
+          "create_time": 1791453733.01,
+          "pgid": 8,
+          "sid": 8
+        }
+      ],
+      "alive_after_guarded": [],
+      "expected_stop_reason": "wall_deadline",
+      "passed": true
+    },
+    {
+      "case": "rss",
+      "result": {
+        "exit_code": -9,
+        "stop_reason": "sampled_aggregate_RSS_cap",
+        "seconds": 0.7163915929999973,
+        "peak_sampled_RSS_bytes": 79192064,
+        "poll_seconds": 0.1,
+        "RSS_is_sampled_not_kernel_enforced": true,
+        "cleanup": {
+          "owners": [
+            {
+              "pid": 9,
+              "start_ticks": 20607,
+              "boot_id": "1bed8fd2-fa25-4a7c-9441-ea14fb759d67"
+            },
+            {
+              "pid": 10,
+              "start_ticks": 20622,
+              "boot_id": "1bed8fd2-fa25-4a7c-9441-ea14fb759d67"
+            }
+          ],
+          "all_owned_absent": true,
+          "Linux_pidfds_and_subreaper": true
+        }
+      },
+      "process_identities": [
+        {
+          "pid": 9,
+          "create_time": 1791453736.07,
+          "pgid": 9,
+          "sid": 9
+        },
+        {
+          "pid": 10,
+          "create_time": 1791453736.22,
+          "pgid": 10,
+          "sid": 10
+        }
+      ],
+      "alive_after_guarded": [],
+      "expected_stop_reason": "sampled_aggregate_RSS_cap",
+      "passed": true
+    },
+    {
+      "case": "parent_exit",
+      "result": {
+        "exit_code": 0,
+        "stop_reason": null,
+        "seconds": 0.825009620000003,
+        "peak_sampled_RSS_bytes": 35434496,
+        "poll_seconds": 0.1,
+        "RSS_is_sampled_not_kernel_enforced": true,
+        "cleanup": {
+          "owners": [
+            {
+              "pid": 11,
+              "start_ticks": 20701,
+              "boot_id": "1bed8fd2-fa25-4a7c-9441-ea14fb759d67"
+            },
+            {
+              "pid": 12,
+              "start_ticks": 20716,
+              "boot_id": "1bed8fd2-fa25-4a7c-9441-ea14fb759d67"
+            }
+          ],
+          "all_owned_absent": true,
+          "Linux_pidfds_and_subreaper": true
+        }
+      },
+      "process_identities": [
+        {
+          "pid": 11,
+          "create_time": 1791453737.01,
+          "pgid": 11,
+          "sid": 11
+        },
+        {
+          "pid": 12,
+          "create_time": 1791453737.16,
+          "pgid": 12,
+          "sid": 12
+        }
+      ],
+      "alive_after_guarded": [],
+      "expected_stop_reason": null,
+      "passed": true
+    },
+    {
+      "case": "success",
+      "result": {
+        "exit_code": 0,
+        "stop_reason": null,
+        "seconds": 0.6101755980000121,
+        "peak_sampled_RSS_bytes": 35348480,
+        "poll_seconds": 0.1,
+        "RSS_is_sampled_not_kernel_enforced": true,
+        "cleanup": {
+          "owners": [
+            {
+              "pid": 13,
+              "start_ticks": 20804,
+              "boot_id": "1bed8fd2-fa25-4a7c-9441-ea14fb759d67"
+            },
+            {
+              "pid": 14,
+              "start_ticks": 20821,
+              "boot_id": "1bed8fd2-fa25-4a7c-9441-ea14fb759d67"
+            }
+          ],
+          "all_owned_absent": true,
+          "Linux_pidfds_and_subreaper": true
+        }
+      },
+      "process_identities": [
+        {
+          "pid": 13,
+          "create_time": 1791453738.04,
+          "pgid": 13,
+          "sid": 13
+        },
+        {
+          "pid": 14,
+          "create_time": 1791453738.21,
+          "pgid": 14,
+          "sid": 14
+        }
+      ],
+      "alive_after_guarded": [],
+      "expected_stop_reason": null,
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "fits": 0,
+  "eigensolves": 0,
+  "network": false,
+  "cleanup_after_observation_passed": true
+}

@@ -1,0 +1,209 @@
+/* Редизайн «читаемый» в исходных цветах сайта: чёрный текст и рамки, жёлтый маркер, белый фон.
+   Главное выделено жёлтым (плашка главы, «Коротко», выбранная вкладка, ключевые цифры), остальное тише: тонкие линии, обычный регистр.
+   Включён по умолчанию; адрес с ?design=old возвращает исходный плакатный вид целиком (класс rd на <html> ставит main.tsx).
+   Оранжевый и синий остаются только цветами групп на картах и графиках — интерфейс их не использует. */
+
+html.rd {
+  --ink: #111111;        /* текст, рамки, номер на плашке */
+  --ink-2: #4A4F5B;      /* второй текст: подписи, заметки */
+  --ink-3: #7A7F8C;      /* номера, мелкие подсказки */
+  --page: #FFFFFF;       /* фон страницы */
+  --card-line: #D5D8E0;  /* линии карточек и таблиц */
+  --wash: #F1F2F5;       /* наведение, шапка таблиц */
+  --mark: #FFE14D;      /* жёлтый маркер: плашки, выбранное, ключевые цифры */
+  --cream: #FFF8D6;     /* светлый жёлтый: главный вывод, выбранная строка */
+  --shadow: 0 4px 18px rgba(17, 17, 17, .08);
+  --display: "Golos Text Variable", system-ui, sans-serif;
+}
+html.rd .p2, html.rd .p2.poster, html.rd .poster, html.rd .nat { --display: "Golos Text Variable", system-ui, sans-serif; --muted: var(--ink-2); }
+
+/* страница и регистр: заглавные буквы только там, где это сокращение */
+.rd .p2 { background: var(--page); }
+.rd .p2 *, .rd [data-site-header] *, .rd .site-foot * { text-transform: none !important; }
+.rd .note, .rd .p2 .note { color: var(--ink-2); font-size: 14px; }
+
+/* шапка и полоса глав: текущая глава — жёлтая */
+.rd [data-site-header] { background: #fff; border-bottom: 2px solid var(--ink); }
+.rd .ch-strip { border-top: 1px solid var(--card-line); }
+.rd .ch-strip a { font: 600 14px/1 var(--sans); padding: 8px 12px 7px; border-radius: 8px 8px 0 0; color: var(--ink); }
+.rd .ch-strip a b { color: var(--ink-3); font: 700 12.5px/1 var(--mono); }
+.rd .ch-strip a:hover { background: var(--wash); }
+.rd .ch-strip a[aria-current="location"] { background: var(--mark); color: var(--ink); }
+.rd .ch-strip a[aria-current="location"] b { color: var(--ink); }
+
+/* заголовок главы: жёлтая плашка, номер на чёрном */
+.rd .sec-pin { background: var(--mark); border: 2px solid var(--ink); border-radius: 10px; color: var(--ink); overflow: hidden; }
+.rd .sec-pin .ch-num { background: var(--ink); border: 0; color: var(--mark); font: 800 24px/1 var(--mono) !important; }
+.rd .sec-pin .ch-q { color: var(--ink); font: 800 clamp(19px, calc(1.9 * var(--vwu)), 27px)/1.15 var(--sans) !important; padding: 8px 16px; }
+/* «Коротко»: главный вывод главы — первым, на светло-жёлтой подложке */
+.rd .p2 .ch-a { max-width: none; margin: 10px 0 0; padding: 10px 16px; background: var(--cream); border: 0; border-radius: 10px; color: var(--ink); font-size: clamp(15px, calc(1.15 * var(--vwu)), 17px); line-height: 1.45; }
+.rd .p2 .ch-a b { color: var(--ink); font-weight: 800; background: var(--mark); padding: 0 5px; border-radius: 4px; }
+
+/* вкладки и кнопки: выбранное — жёлтое с чёрной рамкой, остальное — белое с тонкой линией */
+.rd .tab-list { gap: 8px; }
+.rd .tab { border: 1px solid var(--card-line); border-radius: 8px; background: #fff; color: var(--ink); font: 600 14.5px/1 var(--sans); padding: 10px 16px; letter-spacing: 0; word-spacing: 0; }
+.rd .tab:hover { background: var(--cream); border-color: var(--ink); }
+.rd .tab[aria-selected="true"] { background: var(--mark); border-color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); color: var(--ink); }
+.rd .pbtn { border: 1px solid var(--card-line); border-radius: 8px; background: #fff; font: 600 14px/1.1 var(--sans); letter-spacing: 0; color: var(--ink); }
+.rd .pbtn:hover { background: var(--cream); border-color: var(--ink); }
+.rd .pbtn[aria-pressed="true"], .rd .pbtn.on { background: var(--mark); border-color: var(--ink); color: var(--ink); }
+.rd .pbtn-sm { font-size: 13.5px; }
+.rd .tag { border: 1px solid var(--card-line); border-radius: 6px; }
+
+/* карточки: белые, тонкая линия, небольшое скругление */
+.rd .tiles { gap: 10px; border: 0; }
+.rd .tiles > * { border: 1px solid var(--card-line); border-radius: 10px; background: #fff; }
+.rd .tiles .on { background: #fff; border: 2px solid var(--ink); }
+.rd .box, .rd .box-flat, .rd .ptable-wrap, .rd .atlas-bar, .rd .atlas-map { border: 1px solid var(--card-line); border-radius: 10px; background: #fff; }
+/* ключевая цифра — с жёлтым маркером */
+.rd .tile-n, .rd .brief-grid li .n, .rd .pp-kpi b { color: var(--ink) !important; background: linear-gradient(transparent 62%, var(--mark) 62%); display: block; width: fit-content; justify-self: start; padding: 0 3px; margin-left: -3px; }
+.rd .tile-t { font: 700 17px/1.2 var(--sans); }
+.rd .tile-k, .rd .sub-h { font-family: var(--sans); letter-spacing: 0; }
+.rd .tile-k { font-size: 12.5px; font-weight: 600; color: var(--ink-2); }
+.rd .sub-h { font-weight: 800; font-size: clamp(18px, calc(1.5 * var(--vwu)), 21px); color: var(--ink); }
+.rd .ptable thead th { background: var(--wash); color: var(--ink); border-bottom: 2px solid var(--ink); font: 700 12px/1.3 var(--sans); letter-spacing: 0; }
+.rd .ptable tr.sel { background: var(--cream); }
+.rd .ptable .best { background: var(--mark); }
+.rd .ptable td, .rd .ptable th { border-bottom-color: #E6E8EE; }
+
+/* первый экран */
+.rd .p2.nat h1, .rd .p2.poster h1 { font: 800 clamp(30px, calc(3.4 * var(--vwu)), 50px)/1.08 var(--sans); letter-spacing: -0.02em; color: var(--ink); }
+.rd .kicker { background: var(--mark); color: var(--ink); border-radius: 6px; font-family: var(--sans); font-weight: 700; letter-spacing: 0; }
+.rd .p2 .stat dd, .rd .p2.poster .stat dd { color: var(--ink); }
+.rd .p2 .stat dt { color: var(--ink-2); }
+.rd .poster-art, .rd .p2 .hero-sec .map-art { box-shadow: 8px 8px 0 var(--mark); border: 2px solid var(--ink); border-radius: 0; background: #fff; }
+.rd .brief-h b { background: var(--mark); color: var(--ink); padding: 2px 6px; border-radius: 4px; }
+.rd .brief-h { font: 700 18px/1.2 var(--sans); }
+.rd .brief-grid { gap: 10px; border: 0; }
+.rd .brief-grid li { border: 0; }
+.rd .brief-grid a { border: 1px solid var(--card-line); border-radius: 10px; background: #fff; }
+.rd .brief-grid a:hover { background: var(--cream); border-color: var(--ink); }
+
+/* «С чего начать»: три шага чёрными кнопками */
+.start-guide, .start-guide-h { display: none; }
+.rd .start-guide { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin: 2px 0 0; padding: 0; list-style: none; }
+.rd .start-guide li { display: flex; min-width: 0; }
+.rd .start-guide a { flex: 1; display: grid; align-content: start; gap: 2px; padding: 10px 14px; border-radius: 10px; background: var(--ink); color: #fff; text-decoration: none; line-height: 1.25; min-width: 0; }
+.rd .start-guide a b { font-weight: 700; font-size: 15px; color: var(--mark); }
+.rd .start-guide a span { font-size: 12.5px; }
+.rd .start-guide a:hover { background: #2B2B2B; }
+.rd .start-guide-h { display: block; margin: 6px 0 0; font: 700 13px/1.2 var(--sans); color: var(--ink-2); }
+@media (max-width: 640px) { .rd .start-guide { grid-template-columns: 1fr; } }
+
+/* паспорт МО и атлас */
+.rd .pp-search input { border: 2px solid var(--ink); border-radius: 10px; box-shadow: 6px 6px 0 var(--mark); }
+.rd .pp-search input:focus { box-shadow: 6px 6px 0 var(--ink); }
+.rd .pp-quick button { border-radius: 8px; border: 1px solid var(--card-line); font: 600 14px var(--sans); }
+.rd .pp-quick button:hover { background: var(--cream); border-color: var(--ink); }
+.rd .pp-quick button[aria-pressed="true"] { background: var(--mark); border-color: var(--ink); color: var(--ink); }
+.rd .pp-id h3, .rd .pp-head h3 { font-family: var(--sans); font-weight: 800; letter-spacing: -0.02em; }
+.rd .pp-right, .rd .pp-kpi { border: 1px solid var(--card-line); border-radius: 10px; background: #fff; overflow: hidden; }
+.rd .pp-kpi > div { border-right: 1px solid #E6E8EE; border-bottom: 1px solid #E6E8EE; }
+.rd .pp-badges span { border: 0; border-radius: 6px; font-weight: 600; }
+.rd .pp-left .pp-id { margin-bottom: 4px; }
+.rd .atlas-play { border-radius: 8px; border: 2px solid var(--ink); background: var(--mark); color: var(--ink); }
+.rd .atlas-legend button { border-radius: 8px; }
+
+/* подвал */
+.rd .site-foot { border-top: 2px solid var(--ink); background: #fff; }
+.rd .site-foot b { font-family: var(--sans); font-weight: 800; font-size: 17px; }
+.design-switch { margin: 6px 0 0; font-size: 13px; }
+.design-switch a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+
+/* невысокое окно: главный экран и главы ужимаются, чтобы помещаться в экран целиком */
+@media (min-width: 861px) and (min-height: 560px) and (max-height: 820px) {
+  .rd .start-guide-h { display: none; }
+  .rd .start-guide a { padding: 7px 12px; }
+  .rd .start-guide a span { display: none; }
+  .rd .p2.nat h1, .rd .p2.poster h1 { font-size: clamp(28px, calc(3 * var(--vwu)), 40px); }
+  .rd .p2 .hero-sec .hero { padding-block: 4px 6px; }
+  .rd .p2 .ch-a { padding: 6px 12px; font-size: 14.5px; line-height: 1.35; margin-top: 8px; }
+  .rd .sec-pin .ch-q { padding: 5px 14px; font-size: clamp(18px, calc(1.7 * var(--vwu)), 23px) !important; }
+  .rd .sec-pin .ch-num { font-size: 20px !important; min-width: 48px; }
+  .rd .tab { padding: 8px 14px; font-size: 14px; }
+  .rd .tiles > * { padding: 7px 12px; }
+}
+@media (min-width: 861px) and (min-height: 560px) and (max-height: 820px) {
+  .rd .icvi-tile { gap: 4px; }
+  .rd .icvi-tile svg { height: 30px; }
+  .rd .icvi-tile code { padding: 2px 6px; font-size: 12px; }
+  .rd .icvi-tile p { font-size: 12px; line-height: 1.3; }
+  .rd .p2 .hero-sec .brief-grid a { padding: 9px 12px 10px; gap: 3px; }
+  .rd .p2 .hero-sec .brief-grid .n { font-size: 28px; }
+  .rd .p2 .hero-sec .brief-note { margin-top: 4px; font-size: 12px; }
+  .rd .p2 .hero-sec .brief-h { margin: 2px 0 4px; font-size: 16px; }
+  .rd .p2 .hero-sec .stat dd { font-size: 26px; }
+  .rd .p2 .grp { padding-block: 8px; }
+}
+@media (min-width: 861px) and (min-height: 560px) and (max-height: 820px) {
+  .rd .p2 .atlas { gap: 6px 18px; }
+  .rd .p2 .atlas-bar { padding: 8px 10px; gap: 8px 12px; }
+}
+@media (min-width: 861px) and (min-height: 560px) and (max-height: 760px) {
+  .rd .p2 .devbars .db-row, .rd .p2 .grp .db-row { min-height: 22px; }
+  .rd .p2 .grp .tile-t { margin-bottom: 4px; }
+}
+
+/* портреты групп: карточка в общем стиле, цвет группы — верхняя полоса */
+.rd .grp { border: 1px solid var(--card-line); border-top-width: 5px; border-radius: 10px; background: #fff; box-shadow: var(--shadow); overflow: hidden; }
+@media (min-width: 861px) and (min-height: 560px) and (max-height: 760px) {
+  .rd .p2 .fig-cap { margin: 2px 0; font-size: 12px; line-height: 1.3; }
+  .rd .p2 .grp-ex { font-size: 12px; line-height: 1.3; }
+  .rd .p2 .grp-grid { gap: 10px; }
+}
+.rd .grp-ex { border-top: 1px solid var(--card-line); }
+.rd .grp-ex dt { font-family: var(--sans); font-weight: 700; }
+
+/* ===================== удобство и доступность =====================
+   Проверено по Web Interface Guidelines и UX-правилам: контраст текста не ниже 4,5:1, текст не мельче 12 px,
+   зоны нажатия на сенсорных экранах от 44 px, заметный фокус клавиатуры, без задержки касания. */
+html.rd { --ink-3: #5B6170; }
+.rd .scope-mini, .rd .myear-h, .rd .p2 small, .rd .p2 .fig-cap, .rd .p2 .tsub, .rd .p2 code, .rd .pp-kpi > div span, .rd .pp-kpi > div small,
+.rd .p2 .tile-k, .rd .p2 .db-row b, .rd .p2 .pp-note, .rd .p2 .icvi-tile p { font-size: max(12px, 0.75rem); }
+.rd .p2 .steps .f, .rd .p2 code.f, .rd .p2 .pp-ax, .rd .pp-ax { font-size: 12px; }
+.rd .site-foot a { display: inline-block; padding-block: 4px; }
+.rd :where(a, button, [role="tab"], [role="radio"], input, summary) { touch-action: manipulation; }
+.rd :focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; box-shadow: 0 0 0 5px var(--mark); border-radius: 6px; }
+.rd .p2 [tabindex="-1"]:focus, .rd .p2 [tabindex="-1"]:focus-visible { outline: none; box-shadow: none; }
+.rd [data-site-header] a[href="#top"] { min-height: 28px; align-items: center; }
+.rd .atlas-step button { border: 1px solid var(--card-line); border-radius: 8px; }
+.rd .atlas-step button:hover:not(:disabled) { background: var(--cream); border-color: var(--ink); }
+.rd h1, .rd h2, .rd h3, .rd .ch-q { text-wrap: balance; }
+.rd .p2 p, .rd .p2 li { text-wrap: pretty; }
+.rd .tile-n, .rd .stat dd, .rd .pp-kpi b, .rd .brief-grid .n, .rd .atlas-legend b, .rd .ptable { font-variant-numeric: tabular-nums; }
+@media (pointer: coarse) {
+  .rd .ch-strip a { min-height: 44px; display: inline-flex; align-items: center; }
+  .rd .tab, .rd .pbtn, .rd .pbtn-sm, .rd .pp-quick button, .rd .atlas-legend button, .rd .start-guide a { min-height: 44px; }
+  .rd .pp-quick button, .rd .pbtn { display: inline-flex; align-items: center; justify-content: center; }
+  .rd .btn, .rd .step-btn, .rd .p2 input { min-height: 44px; }
+  .rd .step-btn { min-width: 44px; }
+}
+.rd .atlas-step .atlas-play { border: 1px solid var(--ink); border-radius: 8px; background: var(--mark); color: var(--ink); }
+.rd .atlas-step .atlas-play[aria-pressed="true"] { background: var(--ink); color: #fff; }
+@media (min-width: 861px) and (min-height: 560px) and (max-height: 760px) {
+  .rd .p2 .atlas-notes-p { font-size: 12px; line-height: 1.35; }
+  .rd .p2 .tab-body { gap: 8px; }
+  .rd .p2 .note { margin-top: 6px; }
+}
+
+/* 03: контекст МО */
+.rd .pp-ctx { border: 1px solid var(--card-line); border-radius: 10px; overflow: hidden; }
+.rd .pp-ctx-row { border-color: #E6E8EE; }
+.rd .pp-ctx h4 { font-family: var(--sans); letter-spacing: 0; color: var(--ink-2); font-size: 13px; }
+.rd .pp-ctx .v { background: linear-gradient(transparent 62%, var(--mark) 62%); padding: 0 3px; margin-right: -3px; }
+.rd .pp-ctx p, .rd .pp-grp { color: var(--ink-2); }
+.rd .pp-split, .rd .pp-split i, .rd .pp-strip i { border-radius: 3px; }
+@media (min-width: 861px) and (min-height: 560px) and (max-height: 820px) {
+  .rd .pp-ctx-row { padding: 6px 12px; gap: 2px; }
+  .rd .pp-ctx .v { font-size: 18px; }
+  .rd .pp-ctx p, .rd .pp-grp { font-size: 12px; line-height: 1.25; }
+  .rd .pp-grp { margin-top: 3px; }
+}
+
+/* 03: компактнее на низких экранах (плитки показателей, вкладки паспорта) */
+@media (min-width: 861px) and (min-height: 560px) and (max-height: 820px) {
+  .rd .p2 .pp-mid .pp-kpi > div { padding: 5px 8px; gap: 1px; }
+  .rd .p2 .pp-mid .pp-kpi b { font-size: 18px; }
+  .rd .p2 .pp-mid .pp-kpi span, .rd .p2 .pp-mid .pp-kpi small { font-size: 12px; line-height: 1.2; }
+  .rd .p2 .passport .pp-row { padding-block: 0; }
+}

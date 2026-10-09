@@ -1,0 +1,47 @@
+{
+  "schema": "saved-reader-r04-delta-v1",
+  "base_revision": "r03",
+  "base_manifest_sha256": "8a507b9c4384a9332f8ceadcd7ba58d0abcf55f47418cc3649a043424cf7e0cc",
+  "reader_change": "Reject export/labels output whose resolved path is inside ROOT or an enclosing manifest package; accepted external CSV bytes unchanged.",
+  "reader_before_sha256": "1d343e1e712ca31662208118c2327d78176db5b36330855f99a0c4e45fc57ab6",
+  "reader_after_sha256": "bc3ce2b4b44af70c6003d5d4b703c5a9a0c2eedf1a52c250912c9a2991f6f144",
+  "changed_existing_files": [
+    "CURRENT_CONTEXT.md",
+    "README.md",
+    "config/release.json",
+    "provenance/FILE_MAP.json",
+    "provenance/SOURCE_INDEX.json",
+    "provenance/VALIDATION_STATUS.md",
+    "typology.py"
+  ],
+  "added_files": [
+    "provenance/READER_DELTA_r04.json",
+    "provenance/VM_R03_ACCEPTANCE.json",
+    "provenance/history/r03/CURRENT_CONTEXT.md",
+    "provenance/history/r03/PACKAGE_MANIFEST.json",
+    "provenance/history/r03/README.md",
+    "provenance/history/r03/config/release.json",
+    "provenance/history/r03/provenance/FILE_MAP.json",
+    "provenance/history/r03/provenance/SOURCE_INDEX.json",
+    "provenance/history/r03/provenance/VALIDATION_STATUS.md",
+    "provenance/vm_r03/CANDIDATE_VERIFY.json",
+    "provenance/vm_r03/FINAL_ROOT_ACCEPTANCE.original.json",
+    "provenance/vm_r03/LOCAL_DOWNLOAD_VERIFIED.json"
+  ],
+  "protected_unchanged": [
+    "compute.py",
+    "owned_processes.py",
+    "config/compute.json",
+    "requirements-compute.txt",
+    "science/**",
+    "saved/**",
+    "tables/**"
+  ],
+  "full_compute_accepted_revision": "r03",
+  "new_full_replay_performed": false,
+  "new_fits": 0,
+  "local_QA_receipt": "External engineering/R04_QA.json; independent root acceptance remains separate",
+  "history_preserved": true,
+  "root_manifest_rebuilt": true,
+  "inventory_note": "Lists exclude only the root PACKAGE_MANIFEST.json. Historical nested manifests are ordinary tracked files."
+}

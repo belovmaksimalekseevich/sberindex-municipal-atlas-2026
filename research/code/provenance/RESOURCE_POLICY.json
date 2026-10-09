@@ -1,0 +1,31 @@
+{
+  "schema": "final-r02-resource-policy-v1",
+  "configuration": {
+    "national_cpu": 0,
+    "context_cpu": 7,
+    "national_task_seconds": 1800,
+    "context_task_seconds": 600,
+    "session_seconds": 18000,
+    "RSS_bytes": 4294967296,
+    "minimum_free_disk_bytes": 12884901888
+  },
+  "recommended_start_free_disk_after_inputs_bytes": 34359738368,
+  "external_closure_reserve_seconds": 3600,
+  "total_control_window_seconds": 21600,
+  "basis": {
+    "measurement_file": "MEASURED_RUNTIME.json",
+    "measurement_sha256": "fd0870031663788497341d0534a9c6a8d2822e6842ed917d55ce4ce659ccea70",
+    "historical_successful_free_disk_floor_bytes": 12884901888,
+    "national_uncompressed_output_bytes": 12767086076,
+    "national_archive_bytes": 3411234770,
+    "output_plus_archive_GiB": 15.067235423251987,
+    "remaining_from_start_GiB": 16.932764576748013,
+    "initial_64GiB_recommendation_superseded": true
+  },
+  "runtime_source_changed": false,
+  "new_full_run_measured": false,
+  "final_assignment": {
+    "path": "FINAL_RUNTIME_BUDGET.json",
+    "sha256": "948c21248e46f5fec341bb3bb4af4796e60a5a23e8f05eebbac46a73af14b4f3"
+  }
+}

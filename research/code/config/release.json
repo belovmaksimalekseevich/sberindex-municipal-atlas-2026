@@ -1,0 +1,23 @@
+{
+  "real_compute": "ACCEPTED_AFTER_LINUX_CLEANUP_REVIEW",
+  "runtime_acceptance": {
+    "path": "provenance/runtime_acceptance_r01.json",
+    "sha256": "6c6019e82bf333ad8181d186f16d978713a135124f4c579d8d954eedd06e79e7",
+    "status": "ACCEPTED_LOCAL_READER_AND_LINUX_PROCESS_CLEANUP",
+    "source_hashes": {
+      "compute.py": "c32b14c5f1b71b478d4e73b5737012838163f7f8a7d119f94be3eac4b0c2027b",
+      "owned_processes.py": "cd80dc619f725735bcd03edcf90531f8d63cc7eb971605baf7be5791d74518d5"
+    }
+  },
+  "full_final_package_compute": "R03_CONTROL_ACCEPTED__R04_READER_ONLY_DELTA_NO_NEW_FULL_REPLAY",
+  "saved_result_commands": "available",
+  "plan": "available",
+  "scope": "Full scientific control accepted for exact r03. r04 adds only saved-output path protection and current documentation/provenance; no new r04 full computation.",
+  "revision": "r04",
+  "accepted_full_compute": {
+    "code_revision": "r03",
+    "manifest_sha256": "8a507b9c4384a9332f8ceadcd7ba58d0abcf55f47418cc3649a043424cf7e0cc",
+    "binding": "provenance/VM_R03_ACCEPTANCE.json",
+    "binding_sha256": "db1620a723a37ac66a40c7c1a302bc416b5ce33ce2e272ff30191073db983983"
+  }
+}

@@ -1,0 +1,298 @@
+{
+  "schema": "science-frontend-review-v1",
+  "generated_utc": "2026-10-09T15:06:06.233039+00:00",
+  "status": "PASS_WITH_SCOPE",
+  "reviewer": "vm_live_science_review",
+  "scope": "Independent static scientific/content cross-review of four files authored by vm_live_tz_review plus independent recomputation of saved transition arithmetic and annual coverage. No fit, SSH, browser, data mutation or model selection.",
+  "author_independence": "Reviewer did not author the four primary files. Reviewer authored the five separately listed companion files and previous science/content; their inclusion as hashes is not independent authorship review.",
+  "primary_files": [
+    "Flow.tsx",
+    "nat/Passport.tsx",
+    "nat/Chapters.tsx",
+    "nat/Chapters2.tsx"
+  ],
+  "checks": [
+    {
+      "id": "S01",
+      "status": "PASS",
+      "statement": "All 4 primary files read as final source; active config/month and fixed story scopes distinguished."
+    },
+    {
+      "id": "S02",
+      "status": "PASS",
+      "statement": "69 saved adjacent transition panels checked against exact raw labels, shared IDs and frozen from_raw_to_raw mappings."
+    },
+    {
+      "id": "S03",
+      "status": "PASS",
+      "statement": "Each of 72 config-month panels has matching assigned counts, cluster-size sum and raw-to-display mappings."
+    },
+    {
+      "id": "S04",
+      "status": "PASS",
+      "statement": "At each shared observed adjacent pair, changed display color equals changed membership after mapping; raw label number is not treated as identity."
+    },
+    {
+      "id": "S05",
+      "status": "PASS",
+      "statement": "Territory-level switch and compared-pair sums equal saved transition totals. Missing observations are not connected across gaps."
+    },
+    {
+      "id": "S06",
+      "status": "PASS",
+      "statement": "Complete and incomplete histories separated; no claim of 24-month stability from an incomplete record."
+    },
+    {
+      "id": "S07",
+      "status": "PASS",
+      "statement": "Passport observed values, medians and percentile denominators use selected month; missing values are not zero; even-size median helper is correct."
+    },
+    {
+      "id": "S08",
+      "status": "PASS",
+      "statement": "Annual observation coverage 1666/2190 and 69 regions independently counted; three displayed annual fields exist on every covered ID."
+    },
+    {
+      "id": "S09",
+      "status": "PASS",
+      "statement": "Annual context6 separated from monthly SSE6; salary of organization employees not called resident income; 2023 retrospective attachment is disclosed."
+    },
+    {
+      "id": "S10",
+      "status": "PASS",
+      "statement": "June/December subsample summaries are whole-partition statistics, not per-territory membership probability or all-month resampling."
+    },
+    {
+      "id": "S11",
+      "status": "PASS",
+      "statement": "Fixed story is explicitly NCut10 December 2024, preserving ten groups while illustrating only two extremes. Source comparisons are group medians, not each member."
+    },
+    {
+      "id": "S12",
+      "status": "PASS",
+      "statement": "Graph is displayed union of top5 positive connections including ties, not all edges, financial flow or geographic layout; X0/X1 projection scope explicit."
+    },
+    {
+      "id": "S13",
+      "status": "PASS",
+      "statement": "SSE6 called a separate coarse alternative, not a parent hierarchy. G6/G8/G9 merge291-to333 and G7 limitations agree with accepted scientific review."
+    },
+    {
+      "id": "S14",
+      "status": "PASS",
+      "statement": "No causality, universal functional-type, competitive superiority or probability-of-correctness claim in the reviewed files."
+    },
+    {
+      "id": "S15",
+      "status": "PASS",
+      "statement": "Resolved text checks: unsupported per-capita absent; ambiguous transformed six-dimensional wording replaced with multidimensional."
+    }
+  ],
+  "resolved_findings": [
+    {
+      "id": "F01",
+      "severity": "P2",
+      "files": [
+        "nat/Passport.tsx",
+        "nat/Chapters.tsx"
+      ],
+      "issue": "Unsupported per-capita wording for Total",
+      "resolution": "Author removed all per-capita wording; exact accepted definition is model estimate of mean residents cashless spending for a month."
+    },
+    {
+      "id": "F02",
+      "severity": "P2",
+      "files": [
+        "nat/Chapters.tsx"
+      ],
+      "issue": "Six-dimensional wording conflated 7 stored L+h+CLR5 coordinates with 6 independent dimensions.",
+      "resolution": "Author uses multidimensional wording; X0/X1 projection remains explicit."
+    }
+  ],
+  "open_scientific_ui_defects": [],
+  "transition_recomputation": {
+    "NCut_K10": {
+      "complete_without_changes": 188,
+      "complete_with_changes": 1828,
+      "incomplete": 174,
+      "change_events": 13917,
+      "common_adjacent_ID_pairs": 48223,
+      "minimum_adjacent_ARI": 0.4015863278388781,
+      "maximum_adjacent_ARI": 0.6133129301674127,
+      "ambiguous_matching_count": 0
+    },
+    "SSE_K10": {
+      "complete_without_changes": 190,
+      "complete_with_changes": 1826,
+      "incomplete": 174,
+      "change_events": 15350,
+      "common_adjacent_ID_pairs": 48223,
+      "minimum_adjacent_ARI": 0.355029353621432,
+      "maximum_adjacent_ARI": 0.6917026597183696,
+      "ambiguous_matching_count": 0
+    },
+    "SSE_K06": {
+      "complete_without_changes": 810,
+      "complete_with_changes": 1206,
+      "incomplete": 174,
+      "change_events": 6044,
+      "common_adjacent_ID_pairs": 48223,
+      "minimum_adjacent_ARI": 0.5399842775985336,
+      "maximum_adjacent_ARI": 0.7909360150819994,
+      "ambiguous_matching_count": 0
+    }
+  },
+  "annual_recomputation": {
+    "catalog_IDs": 2190,
+    "covered_IDs": 1666,
+    "regions": 69
+  },
+  "companion_corrections_not_independent_here": [
+    {
+      "file": "Method.tsx",
+      "change": "r04 scope accurately states path-reader/export guard and documentation; computational result bytes remain r03."
+    },
+    {
+      "file": "Groups.tsx",
+      "change": "Human profile number and native raw group shown separately, e.g. Profile1/G0."
+    },
+    {
+      "file": "Methods.tsx",
+      "change": "27 historical rows additionally show stored fitting_similarity, fitting_edges and comparison_axis."
+    }
+  ],
+  "runtime_boundary": {
+    "browser_run_by_this_reviewer": false,
+    "typecheck_and_site_build": "Root reported pass; logs available but exit status not independently captured by this reviewer. Production browser acceptance is separate.",
+    "typecheck_log": "review/TYPECHECK.log",
+    "build_log": "review/SITE_BUILD.log"
+  },
+  "scientific_limits": [
+    "Computational acceptance does not establish universal economic types or superiority to competitors.",
+    "SSE6 resampling evidence covers June and December 2024, with K10 reference results reused on the same draw IDs.",
+    "SSE6 administrative sensitivity remains untested; NCut10 administrative dependence remains a limitation.",
+    "Negative cluster-filter analogue result is not repaired by the UI; no causal dynamics claim."
+  ],
+  "files": [
+    {
+      "path": "frontend/src/landing/Flow.tsx",
+      "bytes": 12892,
+      "sha256": "d5ca4081c2c9b96a6131d494d55d8a8e710a8f41f18fb7bc8227d1d1d7cad0c8",
+      "role": "independent_primary_review"
+    },
+    {
+      "path": "frontend/src/landing/nat/Passport.tsx",
+      "bytes": 24781,
+      "sha256": "ddfdd1f0f383302ebb551a9c2a022c8a4abdc71f8a6666ed09bf2a029866ffc2",
+      "role": "independent_primary_review"
+    },
+    {
+      "path": "frontend/src/landing/nat/Chapters.tsx",
+      "bytes": 10940,
+      "sha256": "85341cde68fbcc77e5bb901789857b8c50269862f808032bbd0425c6818f4998",
+      "role": "independent_primary_review"
+    },
+    {
+      "path": "frontend/src/landing/nat/Chapters2.tsx",
+      "bytes": 16641,
+      "sha256": "4056e56e535fbe31c6a3cafb9a24f4bf0c5983e446083989f33903990392ac59",
+      "role": "independent_primary_review"
+    },
+    {
+      "path": "frontend/src/landing/data.ts",
+      "bytes": 17008,
+      "sha256": "283de4ebf30c15b941d5270cc8f8f07b2c17bd2649e6ba1b484ae82e66dd9cff",
+      "role": "read_only_context_adapter"
+    },
+    {
+      "path": "frontend/src/landing/nat/natdata.ts",
+      "bytes": 5014,
+      "sha256": "2440c3a07869425d5d59a62837dee5bfca13f6def4a55450a38077c863d0389c",
+      "role": "read_only_context_adapter"
+    },
+    {
+      "path": "frontend/src/landing/nat/Scene.tsx",
+      "bytes": 24770,
+      "sha256": "534c3ab467e1deacf01a02e5caf42d0b2351384393a366e452d4ec3e05ffc993",
+      "role": "read_only_context_adapter"
+    },
+    {
+      "path": "frontend/src/landing/Groups.tsx",
+      "bytes": 6989,
+      "sha256": "12129b27745b6edecd38a7cd404d95fe9fe7657d90a8f1b2a1ce41681ffd3c44",
+      "role": "own_authored_files_cross_reviewed_by_other_agents_not_independent_here"
+    },
+    {
+      "path": "frontend/src/landing/Methods.tsx",
+      "bytes": 12287,
+      "sha256": "fcb0bc8e13588232017a2908092a708e7a46d18ccb1d676e76dcf1a38649753b",
+      "role": "own_authored_files_cross_reviewed_by_other_agents_not_independent_here"
+    },
+    {
+      "path": "frontend/src/landing/Quality.tsx",
+      "bytes": 6822,
+      "sha256": "8cbc5b2f2f99ec94e79826b565ff7d673d1e744ba71014e12c1ade66d1752d2e",
+      "role": "own_authored_files_cross_reviewed_by_other_agents_not_independent_here"
+    },
+    {
+      "path": "frontend/src/landing/Method.tsx",
+      "bytes": 8003,
+      "sha256": "40df3d9dfeff3996ca1205273f83ccbc140043518fdcb0224fa5bdba32b2e715",
+      "role": "own_authored_files_cross_reviewed_by_other_agents_not_independent_here"
+    },
+    {
+      "path": "frontend/src/landing/Closing.tsx",
+      "bytes": 9993,
+      "sha256": "1da348ffb0dbfcbc65c02c014a5214439e77ae17d7b01c328a63db98d063c0dd",
+      "role": "own_authored_files_cross_reviewed_by_other_agents_not_independent_here"
+    },
+    {
+      "path": "frontend/src/landing/i26/base.json",
+      "bytes": 3869376,
+      "sha256": "ab4c4defb477942e25715b61ec531a14e89dde3b5b050a3e1768e2c2bd04e416",
+      "role": "read_only_accepted_source_asset"
+    },
+    {
+      "path": "frontend/src/landing/i26/annual.json",
+      "bytes": 622244,
+      "sha256": "698b11680988145acc25e9f37b18f5319a9ec0e90d85298528f46be2403a10d4",
+      "role": "read_only_accepted_source_asset"
+    },
+    {
+      "path": "frontend/src/landing/i26/lead.json",
+      "bytes": 1790764,
+      "sha256": "4929a81a84047714b7a7ec67b359179d99583474d1ea4056dbfc425d4cd24a38",
+      "role": "read_only_accepted_source_asset"
+    },
+    {
+      "path": "frontend/src/landing/i26/leadnet.json",
+      "bytes": 560208,
+      "sha256": "4e67b502546e6f5836c28c27044d6e475d071967bd8e893aaeaac63dfb4ad307",
+      "role": "read_only_accepted_source_asset"
+    },
+    {
+      "path": "frontend/src/landing/i26/supporting_evidence.json",
+      "bytes": 575219,
+      "sha256": "eef56d256da642dabe942fab0dfb9075e0083a5004b4b229350dc885747af40d",
+      "role": "read_only_accepted_source_asset"
+    },
+    {
+      "path": "frontend/public-landing/i26/config/NCut_K10.json",
+      "bytes": 1790764,
+      "sha256": "4929a81a84047714b7a7ec67b359179d99583474d1ea4056dbfc425d4cd24a38",
+      "role": "read_only_accepted_source_asset"
+    },
+    {
+      "path": "frontend/public-landing/i26/config/SSE_K10.json",
+      "bytes": 1779443,
+      "sha256": "76d6ebf8780c8450d50679ce1347b8a994aacf6bef3a06d23a036cb5d4db2e5c",
+      "role": "read_only_accepted_source_asset"
+    },
+    {
+      "path": "frontend/public-landing/i26/config/SSE_K06.json",
+      "bytes": 1613457,
+      "sha256": "72fe4e0b7c12f952d384af070291a944a7a3e91e5e8bb7c721c85e3fc2787c10",
+      "role": "read_only_accepted_source_asset"
+    }
+  ]
+}

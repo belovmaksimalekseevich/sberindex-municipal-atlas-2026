@@ -1,0 +1,16 @@
+{
+  "real_compute": "ACCEPTED_AFTER_LINUX_CLEANUP_REVIEW",
+  "runtime_acceptance": {
+    "path": "provenance/runtime_acceptance_r01.json",
+    "sha256": "6c6019e82bf333ad8181d186f16d978713a135124f4c579d8d954eedd06e79e7",
+    "status": "ACCEPTED_LOCAL_READER_AND_LINUX_PROCESS_CLEANUP",
+    "source_hashes": {
+      "compute.py": "c32b14c5f1b71b478d4e73b5737012838163f7f8a7d119f94be3eac4b0c2027b",
+      "owned_processes.py": "cd80dc619f725735bcd03edcf90531f8d63cc7eb971605baf7be5791d74518d5"
+    }
+  },
+  "full_final_package_compute": "PENDING_CONTROL_RUN",
+  "saved_result_commands": "available",
+  "plan": "available",
+  "scope": "Local reader and actual Linux process cleanup accepted; new complete scientific execution remains pending."
+}

@@ -1,0 +1,821 @@
+[
+  {
+    "task_id": "DT24-PILOT",
+    "month_index": 0,
+    "month": "2023-01",
+    "N": 2143,
+    "ordered_IDs_sha256": "65c449ec27236301fec2a9b3d7479c8c39dc041817fc2e6c6dda46660a3ba4c8",
+    "observed_mask_sha256": "448029ee025844e04a597f0032b032b62827d1202f60688e4bccc46cefee3823",
+    "K": [
+      10,
+      20
+    ],
+    "methods": [
+      "SSE",
+      "Ward",
+      "NCut"
+    ],
+    "primary_seeds": [
+      1000003,
+      1104732,
+      1209461,
+      1314190,
+      1418919,
+      1523648,
+      1628377,
+      1733106
+    ],
+    "sample": "full",
+    "stage": "runtime_only_pilot"
+  },
+  {
+    "task_id": "DT24-M0001",
+    "month_index": 0,
+    "month": "2023-01",
+    "N": 2143,
+    "ordered_IDs_sha256": "65c449ec27236301fec2a9b3d7479c8c39dc041817fc2e6c6dda46660a3ba4c8",
+    "observed_mask_sha256": "448029ee025844e04a597f0032b032b62827d1202f60688e4bccc46cefee3823",
+    "K": [
+      4,
+      6,
+      8,
+      12,
+      16
+    ],
+    "methods": [
+      "SSE",
+      "Ward",
+      "NCut"
+    ],
+    "primary_seeds": [
+      1000003,
+      1104732,
+      1209461,
+      1314190,
+      1418919,
+      1523648,
+      1628377,
+      1733106
+    ],
+    "sample": "full"
+  },
+  {
+    "task_id": "DT24-M0002",
+    "month_index": 1,
+    "month": "2023-02",
+    "N": 2141,
+    "ordered_IDs_sha256": "76e1306b542bfa3d2cd63993a469d68bf9204d9c2d5da019a64131878ef039f8",
+    "observed_mask_sha256": "75aa20a0725c920b686de6b0e58ae1eceac33640ec26dda39f7cb94c49448a4e",
+    "K": [
+      10,
+      20,
+      4,
+      6,
+      8,
+      12,
+      16
+    ],
+    "methods": [
+      "SSE",
+      "Ward",
+      "NCut"
+    ],
+    "primary_seeds": [
+      1000003,
+      1104732,
+      1209461,
+      1314190,
+      1418919,
+      1523648,
+      1628377,
+      1733106
+    ],
+    "sample": "full"
+  },
+  {
+    "task_id": "DT24-M0003",
+    "month_index": 2,
+    "month": "2023-03",
+    "N": 2149,
+    "ordered_IDs_sha256": "49039c5c73aa0f729247273a6e80a77f4dff813f0b97fcdc9534e028cf13f967",
+    "observed_mask_sha256": "0a06553b103212761125d91f58fa4103da4a03c7622605ec8b133cba403312ac",
+    "K": [
+      10,
+      20,
+      4,
+      6,
+      8,
+      12,
+      16
+    ],
+    "methods": [
+      "SSE",
+      "Ward",
+      "NCut"
+    ],
+    "primary_seeds": [
+      1000003,
+      1104732,
+      1209461,
+      1314190,
+      1418919,
+      1523648,
+      1628377,
+      1733106
+    ],
+    "sample": "full"
+  },
+  {
+    "task_id": "DT24-M0004",
+    "month_index": 3,
+    "month": "2023-04",
+    "N": 2129,
+    "ordered_IDs_sha256": "7f652d066c3da9c26f55d2cd07d538cdae46aae71c2e43c0bb0b978877a5f110",
+    "observed_mask_sha256": "6204beb924036cd99d4118354eb4b8af7a9cd6a5235fe3e3804c3e9485cddc5c",
+    "K": [
+      10,
+      20,
+      4,
+      6,
+      8,
+      12,
+      16
+    ],
+    "methods": [
+      "SSE",
+      "Ward",
+      "NCut"
+    ],
+    "primary_seeds": [
+      1000003,
+      1104732,
+      1209461,
+      1314190,
+      1418919,
+      1523648,
+      1628377,
+      1733106
+    ],
+    "sample": "full"
+  },
+  {
+    "task_id": "DT24-M0005",
+    "month_index": 4,
+    "month": "2023-05",
+    "N": 2121,
+    "ordered_IDs_sha256": "162a49d510012d946809006ccfef7b8ecf6dbe2e91ee9ec705baf42812e8b672",
+    "observed_mask_sha256": "377acb427bb12e0f8ccfca795e0c774d530149b4a07215c83926dc2ce06a1ef1",
+    "K": [
+      10,
+      20,
+      4,
+      6,
+      8,
+      12,
+      16
+    ],
+    "methods": [
+      "SSE",
+      "Ward",
+      "NCut"
+    ],
+    "primary_seeds": [
+      1000003,
+      1104732,
+      1209461,
+      1314190,
+      1418919,
+      1523648,
+      1628377,
+      1733106
+    ],
+    "sample": "full"
+  },
+  {
+    "task_id": "DT24-M0006",
+    "month_index": 5,
+    "month": "2023-06",
+    "N": 2119,
+    "ordered_IDs_sha256": "963f705bc7203a337d2856597b446267d9abf0ad2d6eecfa2412050219f1fe8a",
+    "observed_mask_sha256": "28d3e88151f8b69b14b2dff100a3fea3533ba51b89bccc193c16738c7fb7e0a7",
+    "K": [
+      10,
+      20,
+      4,
+      6,
+      8,
+      12,
+      16
+    ],
+    "methods": [
+      "SSE",
+      "Ward",
+      "NCut"
+    ],
+    "primary_seeds": [
+      1000003,
+      1104732,
+      1209461,
+      1314190,
+      1418919,
+      1523648,
+      1628377,
+      1733106
+    ],
+    "sample": "full"
+  },
+  {
+    "task_id": "DT24-M0007",
+    "month_index": 6,
+    "month": "2023-07",
+    "N": 2126,
+    "ordered_IDs_sha256": "afbae3f208321608220b67da66a9befb759f0a1d08be9e0cc74de82be3c2821e",
+    "observed_mask_sha256": "c8a90bf1319b525ddc6793c640c07d540bcc12a59b4366a78e82d93dd63a029e",
+    "K": [
+      10,
+      20,
+      4,
+      6,
+      8,
+      12,
+      16
+    ],
+    "methods": [
+      "SSE",
+      "Ward",
+      "NCut"
+    ],
+    "primary_seeds": [
+      1000003,
+      1104732,
+      1209461,
+      1314190,
+      1418919,
+      1523648,
+      1628377,
+      1733106
+    ],
+    "sample": "full"
+  },
+  {
+    "task_id": "DT24-M0008",
+    "month_index": 7,
+    "month": "2023-08",
+    "N": 2118,
+    "ordered_IDs_sha256": "5736d9ee4218b555d769d81edfeb0e6a230527a5b382842678dc2b711259c6b2",
+    "observed_mask_sha256": "4ee349590680974142487af68fcf1d1932325f9df20211aa67e9ffbc34d221ee",
+    "K": [
+      10,
+      20,
+      4,
+      6,
+      8,
+      12,
+      16
+    ],
+    "methods": [
+      "SSE",
+      "Ward",
+      "NCut"
+    ],
+    "primary_seeds": [
+      1000003,
+      1104732,
+      1209461,
+      1314190,
+      1418919,
+      1523648,
+      1628377,
+      1733106
+    ],
+    "sample": "full"
+  },
+  {
+    "task_id": "DT24-M0009",
+    "month_index": 8,
+    "month": "2023-09",
+    "N": 2109,
+    "ordered_IDs_sha256": "de90be533feb52b6e544a9f9e3b27df60ccd2c49a89d6eb5bb86bdbd60cfaf71",
+    "observed_mask_sha256": "fbbf0b48983e8f13a63a298821f420449215491d4ab9c38aaaacb63848608572",
+    "K": [
+      10,
+      20,
+      4,
+      6,
+      8,
+      12,
+      16
+    ],
+    "methods": [
+      "SSE",
+      "Ward",
+      "NCut"
+    ],
+    "primary_seeds": [
+      1000003,
+      1104732,
+      1209461,
+      1314190,
+      1418919,
+      1523648,
+      1628377,
+      1733106
+    ],
+    "sample": "full"
+  },
+  {
+    "task_id": "DT24-M0010",
+    "month_index": 9,
+    "month": "2023-10",
+    "N": 2103,
+    "ordered_IDs_sha256": "42ca1d882ca194042d69b4fd1230fefa25c4e0ab9cb488ac5eaaa6f13be3be49",
+    "observed_mask_sha256": "8fcf1c0d845c42f7a25b0e6e63605aecd61aae6ab5724c819627c97796a37ec6",
+    "K": [
+      10,
+      20,
+      4,
+      6,
+      8,
+      12,
+      16
+    ],
+    "methods": [
+      "SSE",
+      "Ward",
+      "NCut"
+    ],
+    "primary_seeds": [
+      1000003,
+      1104732,
+      1209461,
+      1314190,
+      1418919,
+      1523648,
+      1628377,
+      1733106
+    ],
+    "sample": "full"
+  },
+  {
+    "task_id": "DT24-M0011",
+    "month_index": 10,
+    "month": "2023-11",
+    "N": 2093,
+    "ordered_IDs_sha256": "f8178eac695c21e30074d72225e1e05d4603da067ac9a0e42d1e641191541db3",
+    "observed_mask_sha256": "2b509e9f67c0f8a241d108ed9bbb2c0e12ca525908f91ff9c793229495b0c64b",
+    "K": [
+      10,
+      20,
+      4,
+      6,
+      8,
+      12,
+      16
+    ],
+    "methods": [
+      "SSE",
+      "Ward",
+      "NCut"
+    ],
+    "primary_seeds": [
+      1000003,
+      1104732,
+      1209461,
+      1314190,
+      1418919,
+      1523648,
+      1628377,
+      1733106
+    ],
+    "sample": "full"
+  },
+  {
+    "task_id": "DT24-M0012",
+    "month_index": 11,
+    "month": "2023-12",
+    "N": 2103,
+    "ordered_IDs_sha256": "8e963477207f275266f316867c920e821e76397db531c56e0f09cbc7649fe98c",
+    "observed_mask_sha256": "ba54a1152713330dbbfffdfd7a518fc2ec1d73fa8aa7440c96a5f5e604be5731",
+    "K": [
+      10,
+      20,
+      4,
+      6,
+      8,
+      12,
+      16
+    ],
+    "methods": [
+      "SSE",
+      "Ward",
+      "NCut"
+    ],
+    "primary_seeds": [
+      1000003,
+      1104732,
+      1209461,
+      1314190,
+      1418919,
+      1523648,
+      1628377,
+      1733106
+    ],
+    "sample": "full"
+  },
+  {
+    "task_id": "DT24-M0013",
+    "month_index": 12,
+    "month": "2024-01",
+    "N": 2072,
+    "ordered_IDs_sha256": "0f141e27b40c7495b80197ded7670b8715f7aa24160f10efa131892f645620ba",
+    "observed_mask_sha256": "a5250c27e08c05f85e97220484dc8492700b23fddfb847b73297b8b0cf83a598",
+    "K": [
+      10,
+      20,
+      4,
+      6,
+      8,
+      12,
+      16
+    ],
+    "methods": [
+      "SSE",
+      "Ward",
+      "NCut"
+    ],
+    "primary_seeds": [
+      1000003,
+      1104732,
+      1209461,
+      1314190,
+      1418919,
+      1523648,
+      1628377,
+      1733106
+    ],
+    "sample": "full"
+  },
+  {
+    "task_id": "DT24-M0014",
+    "month_index": 13,
+    "month": "2024-02",
+    "N": 2078,
+    "ordered_IDs_sha256": "6874dbcc5829f3022f00cb1c1f487e6620e01a12cb2bbcf65c3030071122c23b",
+    "observed_mask_sha256": "955ce1fbdb30ccf0f8056c4f0dd5dcf04735d825d0d27304051b12fc488b164f",
+    "K": [
+      10,
+      20,
+      4,
+      6,
+      8,
+      12,
+      16
+    ],
+    "methods": [
+      "SSE",
+      "Ward",
+      "NCut"
+    ],
+    "primary_seeds": [
+      1000003,
+      1104732,
+      1209461,
+      1314190,
+      1418919,
+      1523648,
+      1628377,
+      1733106
+    ],
+    "sample": "full"
+  },
+  {
+    "task_id": "DT24-M0015",
+    "month_index": 14,
+    "month": "2024-03",
+    "N": 2083,
+    "ordered_IDs_sha256": "c8783b4e1303d2fc16bb73f6af2932896a4318197729a8c59ec0c36d71c34da0",
+    "observed_mask_sha256": "6c8ba38609de87a8193fe4e8406d448e9fd8229bdd017d604740643762b31e9c",
+    "K": [
+      10,
+      20,
+      4,
+      6,
+      8,
+      12,
+      16
+    ],
+    "methods": [
+      "SSE",
+      "Ward",
+      "NCut"
+    ],
+    "primary_seeds": [
+      1000003,
+      1104732,
+      1209461,
+      1314190,
+      1418919,
+      1523648,
+      1628377,
+      1733106
+    ],
+    "sample": "full"
+  },
+  {
+    "task_id": "DT24-M0016",
+    "month_index": 15,
+    "month": "2024-04",
+    "N": 2087,
+    "ordered_IDs_sha256": "3b1c45edf19be2c7b22f27a6b19dd968e330d9e096a20ba96c3396b2589a6ebf",
+    "observed_mask_sha256": "ba4621d048aab037a99abcd92c820e29acf1ae0f0203f1916634fd838008bdc0",
+    "K": [
+      10,
+      20,
+      4,
+      6,
+      8,
+      12,
+      16
+    ],
+    "methods": [
+      "SSE",
+      "Ward",
+      "NCut"
+    ],
+    "primary_seeds": [
+      1000003,
+      1104732,
+      1209461,
+      1314190,
+      1418919,
+      1523648,
+      1628377,
+      1733106
+    ],
+    "sample": "full"
+  },
+  {
+    "task_id": "DT24-M0017",
+    "month_index": 16,
+    "month": "2024-05",
+    "N": 2085,
+    "ordered_IDs_sha256": "d15928f1fd2c100d2ce9e000dcbaaf21f6d04b63ae7ad0bcde5659f210d956c5",
+    "observed_mask_sha256": "f4edfd36dc3246aa8d24732d9aa3dfc6e55492491e103093e2060dff2da3c4b9",
+    "K": [
+      10,
+      20,
+      4,
+      6,
+      8,
+      12,
+      16
+    ],
+    "methods": [
+      "SSE",
+      "Ward",
+      "NCut"
+    ],
+    "primary_seeds": [
+      1000003,
+      1104732,
+      1209461,
+      1314190,
+      1418919,
+      1523648,
+      1628377,
+      1733106
+    ],
+    "sample": "full"
+  },
+  {
+    "task_id": "DT24-M0018",
+    "month_index": 17,
+    "month": "2024-06",
+    "N": 2084,
+    "ordered_IDs_sha256": "6ecc1cb7144a218d5f439133ad3f019600fc65bb52c46d31eb0d842b6fc4410c",
+    "observed_mask_sha256": "a3be0083022d35add14af851810d6eeefec9a05766c05866fdfdcf91758cde11",
+    "K": [
+      10,
+      20,
+      4,
+      6,
+      8,
+      12,
+      16
+    ],
+    "methods": [
+      "SSE",
+      "Ward",
+      "NCut"
+    ],
+    "primary_seeds": [
+      1000003,
+      1104732,
+      1209461,
+      1314190,
+      1418919,
+      1523648,
+      1628377,
+      1733106
+    ],
+    "sample": "full"
+  },
+  {
+    "task_id": "DT24-M0019",
+    "month_index": 18,
+    "month": "2024-07",
+    "N": 2089,
+    "ordered_IDs_sha256": "807f2df0667f44fc0096ba33d7047cc87f9bc678f56ac505a6c43f60bbed8e0c",
+    "observed_mask_sha256": "52cc532e20dfde4de1b1ad230e5ba50ba8c47f54e011bdc8644f46fb9305a622",
+    "K": [
+      10,
+      20,
+      4,
+      6,
+      8,
+      12,
+      16
+    ],
+    "methods": [
+      "SSE",
+      "Ward",
+      "NCut"
+    ],
+    "primary_seeds": [
+      1000003,
+      1104732,
+      1209461,
+      1314190,
+      1418919,
+      1523648,
+      1628377,
+      1733106
+    ],
+    "sample": "full"
+  },
+  {
+    "task_id": "DT24-M0020",
+    "month_index": 19,
+    "month": "2024-08",
+    "N": 2094,
+    "ordered_IDs_sha256": "1ac11ef1ba96668b0dd51977ed1224dbbe6b04068fcd1c38c38d860c12a3652f",
+    "observed_mask_sha256": "ff29fa96048ed3dcce4f8a38a2d81f239dbe240c50e9a43273c826a2bd014148",
+    "K": [
+      10,
+      20,
+      4,
+      6,
+      8,
+      12,
+      16
+    ],
+    "methods": [
+      "SSE",
+      "Ward",
+      "NCut"
+    ],
+    "primary_seeds": [
+      1000003,
+      1104732,
+      1209461,
+      1314190,
+      1418919,
+      1523648,
+      1628377,
+      1733106
+    ],
+    "sample": "full"
+  },
+  {
+    "task_id": "DT24-M0021",
+    "month_index": 20,
+    "month": "2024-09",
+    "N": 2100,
+    "ordered_IDs_sha256": "8ac54194f6bd7fe6c4ea286083cc06d06f94ba6a5dfc6c1c4a9c79b0da232d7e",
+    "observed_mask_sha256": "7c860571dfbe8a87528d30c2bff99bdb48bacbc9754a5beabae93079958d7400",
+    "K": [
+      10,
+      20,
+      4,
+      6,
+      8,
+      12,
+      16
+    ],
+    "methods": [
+      "SSE",
+      "Ward",
+      "NCut"
+    ],
+    "primary_seeds": [
+      1000003,
+      1104732,
+      1209461,
+      1314190,
+      1418919,
+      1523648,
+      1628377,
+      1733106
+    ],
+    "sample": "full"
+  },
+  {
+    "task_id": "DT24-M0022",
+    "month_index": 21,
+    "month": "2024-10",
+    "N": 2092,
+    "ordered_IDs_sha256": "6f095114c2c4c362137ee89d3b1ad21dcfca0b02f584cefccde9a1e5d0fe7ac4",
+    "observed_mask_sha256": "35d2c77cf41783afcc734302d150c189ca6f4d351581a40005c5097b07b93c88",
+    "K": [
+      10,
+      20,
+      4,
+      6,
+      8,
+      12,
+      16
+    ],
+    "methods": [
+      "SSE",
+      "Ward",
+      "NCut"
+    ],
+    "primary_seeds": [
+      1000003,
+      1104732,
+      1209461,
+      1314190,
+      1418919,
+      1523648,
+      1628377,
+      1733106
+    ],
+    "sample": "full"
+  },
+  {
+    "task_id": "DT24-M0023",
+    "month_index": 22,
+    "month": "2024-11",
+    "N": 2100,
+    "ordered_IDs_sha256": "5dc479e87237226ece9092111b8f71b5d1c9b34012ad58f21cf8687de2cab26f",
+    "observed_mask_sha256": "78c289536467ad55f3ef0b31116f765984d7055127303422b1f78f14708637b2",
+    "K": [
+      10,
+      20,
+      4,
+      6,
+      8,
+      12,
+      16
+    ],
+    "methods": [
+      "SSE",
+      "Ward",
+      "NCut"
+    ],
+    "primary_seeds": [
+      1000003,
+      1104732,
+      1209461,
+      1314190,
+      1418919,
+      1523648,
+      1628377,
+      1733106
+    ],
+    "sample": "full"
+  },
+  {
+    "task_id": "DT24-M0024",
+    "month_index": 23,
+    "month": "2024-12",
+    "N": 2103,
+    "ordered_IDs_sha256": "1424ef4611243fc1204dd5dc7fefd43338776e717445f7a62e58b1ccfd5073c1",
+    "observed_mask_sha256": "34f3514342740f9ec7e1cbec5e2faae9de0fd4c20ff125983e18ea3bedb529a6",
+    "K": [
+      10,
+      20,
+      4,
+      6,
+      8,
+      12,
+      16
+    ],
+    "methods": [
+      "SSE",
+      "Ward",
+      "NCut"
+    ],
+    "primary_seeds": [
+      1000003,
+      1104732,
+      1209461,
+      1314190,
+      1418919,
+      1523648,
+      1628377,
+      1733106
+    ],
+    "sample": "full"
+  }
+]

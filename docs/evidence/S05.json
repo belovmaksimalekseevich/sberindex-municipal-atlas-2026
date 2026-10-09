@@ -1,0 +1,2277 @@
+{
+  "schema": "accepted-evidence-insert-ready-cluster-cards-v1",
+  "UTC": "2026-10-09T11:01:52.715032+00:00",
+  "status": "READY_FOR_LATER_CONTENT_INTEGRATION",
+  "scientific_role": "Descriptive spending profiles on observed mixed administrative support; no universal functional types.",
+  "full_project_acceptance": false,
+  "full_control_acceptance": "accepted_20261009_final_root_receipt",
+  "cards": [
+    {
+      "group_id": "G0",
+      "name_ru": "Повышенные расходы крупных по населению территорий",
+      "source_month": "2024-12",
+      "method": "NCut",
+      "K": 10,
+      "original_members_sha256_newline_utf8": "7c0755ad17b9c29cf4e78351fecb1a0b7961e682f7ca373b5a733e5c5a5d3af6",
+      "status": "READY_TEXT_FOR_LATER_INTEGRATION_NOT_FINAL_PROJECT_ACCEPTANCE",
+      "meaning_ru": "Расходы выше середины декабрьской опоры. В части с доступным контекстом территории заметно крупнее по населению, а зарплата организаций выше общей медианы. Это сочетание масштаба и потребления, а не общий отраслевой тип.",
+      "scope": {
+        "labels_method": "NCut",
+        "K": 10,
+        "labels_month": "2024-12",
+        "N": 192,
+        "context_year": 2024,
+        "context_N": 146,
+        "context_coverage": 0.7604166666666666,
+        "context_regions": 51,
+        "context_missing_N": 46
+      },
+      "spending": {
+        "median_Total_RUB": 42417.5,
+        "q25_Total_RUB": 39906.5,
+        "q75_Total_RUB": 44469.75,
+        "full_December_median_Total_RUB": 32172.0,
+        "nearest_group": "G3",
+        "nearest_comparison_original_units": [
+          {
+            "feature": "RUB_Total",
+            "label": "общие расходы Total",
+            "own": 42417.5,
+            "nearest": 36151.5,
+            "unit": "₽/месяц"
+          },
+          {
+            "feature": "RUB_restaurants",
+            "label": "общественное питание",
+            "own": 1797.5,
+            "nearest": 987.0,
+            "unit": "₽/месяц"
+          },
+          {
+            "feature": "RUB_food",
+            "label": "продовольствие",
+            "own": 16220.5,
+            "nearest": 15066.5,
+            "unit": "₽/месяц"
+          }
+        ]
+      },
+      "context": [
+        {
+          "feature": "population_jan1_2024",
+          "label": "население",
+          "unit": "человек",
+          "median": 101371.0,
+          "N": 146,
+          "period": "2024"
+        },
+        {
+          "feature": "organization_salary_RUB_2024",
+          "label": "зарплата охваченных организаций",
+          "unit": "₽/месяц",
+          "median": 74319.5,
+          "N": 146,
+          "period": "2024"
+        }
+      ],
+      "administrative_composition": {
+        "support_scope": "all original December group members",
+        "intra_city_N": 2,
+        "non_intra_N": 190,
+        "intra_city_fraction": 0.010416666666666666,
+        "unknown_type_N": 0,
+        "exact_type_counts": {
+          "urban_okrug": 118,
+          "municipal_district": 58,
+          "municipal_okrug": 14,
+          "intra_city": 2
+        },
+        "interval_rule": "year_from <= year < year_to",
+        "not_equal_to_context_coverage_or_Moscow_SPb_geography": true
+      },
+      "context_capital_confirmed_N": 1,
+      "stability": {
+        "draws": 10,
+        "sampling_fraction": 0.8,
+        "draw_N": 1682,
+        "reference_refitted_on_draw_IDs_full_calendar": true,
+        "matching": "Hungarian maximum sum clusterwise Jaccard on common IDs",
+        "mean_Jaccard": 0.7691640664838649,
+        "minimum_Jaccard": 0.6587677725118484,
+        "individual_draws": [
+          {
+            "task_id": "S202412-01",
+            "Jaccard": 0.8597560975609756
+          },
+          {
+            "task_id": "S202412-02",
+            "Jaccard": 0.9620253164556962
+          },
+          {
+            "task_id": "S202412-03",
+            "Jaccard": 0.6587677725118484
+          },
+          {
+            "task_id": "S202412-04",
+            "Jaccard": 0.8421052631578947
+          },
+          {
+            "task_id": "S202412-05",
+            "Jaccard": 0.6729559748427673
+          },
+          {
+            "task_id": "S202412-06",
+            "Jaccard": 0.7423312883435583
+          },
+          {
+            "task_id": "S202412-07",
+            "Jaccard": 0.7610062893081762
+          },
+          {
+            "task_id": "S202412-08",
+            "Jaccard": 0.7712765957446809
+          },
+          {
+            "task_id": "S202412-09",
+            "Jaccard": 0.7358490566037735
+          },
+          {
+            "task_id": "S202412-10",
+            "Jaccard": 0.6855670103092784
+          }
+        ],
+        "not_temporal_stability_or_confidence_interval": true
+      },
+      "geometry": {
+        "mean_SW": 0.3012530957265515,
+        "negative_SW_N": 13,
+        "negative_SW_fraction": 0.06770833333333333,
+        "computed_as_summary_of_saved_pointwise_SW": true,
+        "negative_fraction_is_not_error_probability": true
+      },
+      "administrative_stress": {
+        "remaining_original_members": 190,
+        "assigned_refit_raw_label": 1,
+        "assigned_intersection": 90,
+        "assigned_Jaccard": 0.46153846153846156,
+        "assigned_group_size": 95,
+        "all_nonzero_intersections_by_refit_raw_label": {
+          "0": 24,
+          "1": 90,
+          "2": 73,
+          "9": 3
+        },
+        "source_group_absent_from_support": false,
+        "global_assignment_zero_does_not_mean_all_intersections_zero": true
+      },
+      "retained_temporal_Jaccard_range": [
+        0.4918032786885246,
+        0.7351598173515982
+      ],
+      "named_examples": [
+        {
+          "ID": "1523",
+          "native_oktmo8": "22701000",
+          "supplier_name": "городской округ город Нижний Новгород",
+          "supplier_type": "городской округ",
+          "supplier_region": "Нижегородская область",
+          "december_consumption_RUB": {
+            "Все категории": 47006.0,
+            "Продовольствие": 17075.0,
+            "Здоровье": 2538.0,
+            "Общественное питание": 2000.0,
+            "Транспорт": 2794.0,
+            "Маркетплейсы": 7530.0
+          },
+          "context_2024": {
+            "population_jan1_2024": 1228702.0,
+            "market_access_2024": 367.7,
+            "organization_salary_RUB_2024": 91812.7,
+            "organization_workers_per_resident_2024": 0.31655112468279534,
+            "education_worker_share_2024": 0.11211553245043669
+          },
+          "NCut_group": 0,
+          "SSE_group": 6,
+          "NCut_SW": 0.18106163773818057,
+          "SSE_SW": 0.2944322639822856
+        }
+      ],
+      "example_selection": "Only previously reviewed analytical cases; not medoids or representative sampling. None invented for remaining groups.",
+      "practical_question_ru": "Какие территории сопоставимы по населению и расходам, и чем отличаются их отдельные категории после проверки административного уровня?",
+      "limitations_ru": [
+        "Не называем всех участников региональными центрами или промышленными городами. Даже при сохранении почти всей группы её границы меняются после удаления внутригородских единиц из остальной сети; низкая доля таких единиц внутри G0 не гарантирует переносимость разбиения."
+      ],
+      "text_blocks_ru": {
+        "scope": "Декабрь 2024 · NCut, K=10. Территорий: 192. Контекст 2024: 146/192 территорий; регионов в покрытой части: 51.",
+        "Total_definition": "Total — модельная оценка средних безналичных расходов жителей за месяц, а не общий оборот территории. Медиана и центральные 50% ниже описывают территориальные показатели, а не распределение расходов между людьми.",
+        "meaning": "Расходы выше середины декабрьской опоры. В части с доступным контекстом территории заметно крупнее по населению, а зарплата организаций выше общей медианы. Это сочетание масштаба и потребления, а не общий отраслевой тип.",
+        "numbers": "Медиана Total — 42 417,5 ₽ в месяц; центральные 50% территорий — 39 906,5–44 469,75 ₽. Медианы покрытой контекстом части: население — 101 371 человек; зарплата охваченных организаций — 74 319,5 ₽/месяц.",
+        "nearest_contrast": "Сопоставление с ближайшей расходной группой G3: общие расходы Total 42 417,5 против 36 151,5 ₽; общественное питание 1 797,5 против 987 ₽; продовольствие 16 220,5 против 15 066,5 ₽. Ближайшая группа определена по расстоянию между средними преобразованных признаков X6. Рублёвые медианы показывают содержательное отличие; контекст в подборе не участвовал.",
+        "administrative_composition": "городские округа — 118; муниципальные районы — 58; муниципальные округа — 14; внутригородские территории — 2. Тип установлен для всей группы; это отдельная опора от экономического контекста.",
+        "reliability": "Jaccard состава: среднее 0,769, минимум 0,659 в десяти декабрьских выборках 80%. Средний SW полного декабря 0,301; отрицателен у 13/192 (6,77%). После исключения внутригородских из всей сети остаются 190/192 исходных участников; Jaccard назначенного соответствия 0,462.",
+        "limitations": "Не называем всех участников региональными центрами или промышленными городами. Даже при сохранении почти всей группы её границы меняются после удаления внутригородских единиц из остальной сети; низкая доля таких единиц внутри G0 не гарантирует переносимость разбиения.",
+        "verified_example": "Городской округ город Нижний Новгород (ID 1523) относится к G0: Total 47 006 ₽, население в контексте 1 228 702 человека. Это проверенный участник, не автоматически типичный представитель всех 192 территорий.",
+        "practical_question": "Какие территории сопоставимы по населению и расходам, и чем отличаются их отдельные категории после проверки административного уровня?"
+      },
+      "sources": [
+        {
+          "source": "profiles",
+          "json_pointer": "/profiles/0"
+        },
+        {
+          "source": "accepted_addendum",
+          "json_pointer": "/groups/0"
+        },
+        {
+          "source": "meaning",
+          "json_pointer": "/profiles/0"
+        },
+        {
+          "source": "context",
+          "json_pointer": "/profiles/0"
+        },
+        {
+          "source": "accepted_decision",
+          "section": "Что меняется в содержательном объяснении"
+        },
+        {
+          "source": "cases",
+          "section": "case1/candidate_pool"
+        }
+      ]
+    },
+    {
+      "group_id": "G1",
+      "name_ru": "Небольшие территории с низкими расходами и повышенной ролью маркетплейсов",
+      "source_month": "2024-12",
+      "method": "NCut",
+      "K": 10,
+      "original_members_sha256_newline_utf8": "8a4d582e35d1f9c4d9f63d43468dd7b2b0ffa944a14e413445278529bf48e50d",
+      "status": "READY_TEXT_FOR_LATER_INTEGRATION_NOT_FINAL_PROJECT_ACCEPTANCE",
+      "meaning_ru": "Невысокий общий расходный уровень сочетается с повышенным относительным положением маркетплейсов среди пяти наблюдаемых категорий. В покрытой части это небольшие территории. Относительное положение не равно доле всех расходов или развитию местной электронной торговли.",
+      "scope": {
+        "labels_method": "NCut",
+        "K": 10,
+        "labels_month": "2024-12",
+        "N": 248,
+        "context_year": 2024,
+        "context_N": 205,
+        "context_coverage": 0.8266129032258065,
+        "context_regions": 41,
+        "context_missing_N": 43
+      },
+      "spending": {
+        "median_Total_RUB": 26678.0,
+        "q25_Total_RUB": 24710.0,
+        "q75_Total_RUB": 28601.25,
+        "full_December_median_Total_RUB": 32172.0,
+        "nearest_group": "G4",
+        "nearest_comparison_original_units": [
+          {
+            "feature": "RUB_Total",
+            "label": "общие расходы Total",
+            "own": 26678.0,
+            "nearest": 24889.0,
+            "unit": "₽/месяц"
+          },
+          {
+            "feature": "RUB_restaurants",
+            "label": "общественное питание",
+            "own": 181.0,
+            "nearest": 293.0,
+            "unit": "₽/месяц"
+          },
+          {
+            "feature": "RUB_marketplaces",
+            "label": "маркетплейсы",
+            "own": 5994.5,
+            "nearest": 5347.5,
+            "unit": "₽/месяц"
+          }
+        ]
+      },
+      "context": [
+        {
+          "feature": "population_jan1_2024",
+          "label": "население",
+          "unit": "человек",
+          "median": 11464.0,
+          "N": 205,
+          "period": "2024"
+        },
+        {
+          "feature": "organization_salary_RUB_2024",
+          "label": "зарплата охваченных организаций",
+          "unit": "₽/месяц",
+          "median": 48078.1,
+          "N": 205,
+          "period": "2024"
+        }
+      ],
+      "administrative_composition": {
+        "support_scope": "all original December group members",
+        "intra_city_N": 0,
+        "non_intra_N": 248,
+        "intra_city_fraction": 0.0,
+        "unknown_type_N": 0,
+        "exact_type_counts": {
+          "urban_okrug": 8,
+          "municipal_district": 170,
+          "municipal_okrug": 70,
+          "intra_city": 0
+        },
+        "interval_rule": "year_from <= year < year_to",
+        "not_equal_to_context_coverage_or_Moscow_SPb_geography": true
+      },
+      "context_capital_confirmed_N": 0,
+      "stability": {
+        "draws": 10,
+        "sampling_fraction": 0.8,
+        "draw_N": 1682,
+        "reference_refitted_on_draw_IDs_full_calendar": true,
+        "matching": "Hungarian maximum sum clusterwise Jaccard on common IDs",
+        "mean_Jaccard": 0.9159488099180263,
+        "minimum_Jaccard": 0.8578199052132701,
+        "individual_draws": [
+          {
+            "task_id": "S202412-01",
+            "Jaccard": 0.8960396039603961
+          },
+          {
+            "task_id": "S202412-02",
+            "Jaccard": 0.9181818181818182
+          },
+          {
+            "task_id": "S202412-03",
+            "Jaccard": 0.8578199052132701
+          },
+          {
+            "task_id": "S202412-04",
+            "Jaccard": 0.9211822660098522
+          },
+          {
+            "task_id": "S202412-05",
+            "Jaccard": 0.925
+          },
+          {
+            "task_id": "S202412-06",
+            "Jaccard": 0.9123711340206185
+          },
+          {
+            "task_id": "S202412-07",
+            "Jaccard": 0.9405940594059405
+          },
+          {
+            "task_id": "S202412-08",
+            "Jaccard": 0.9343434343434344
+          },
+          {
+            "task_id": "S202412-09",
+            "Jaccard": 0.9192825112107623
+          },
+          {
+            "task_id": "S202412-10",
+            "Jaccard": 0.9346733668341709
+          }
+        ],
+        "not_temporal_stability_or_confidence_interval": true
+      },
+      "geometry": {
+        "mean_SW": 0.1851365432263042,
+        "negative_SW_N": 39,
+        "negative_SW_fraction": 0.15725806451612903,
+        "computed_as_summary_of_saved_pointwise_SW": true,
+        "negative_fraction_is_not_error_probability": true
+      },
+      "administrative_stress": {
+        "remaining_original_members": 248,
+        "assigned_refit_raw_label": 3,
+        "assigned_intersection": 189,
+        "assigned_Jaccard": 0.7620967741935484,
+        "assigned_group_size": 189,
+        "all_nonzero_intersections_by_refit_raw_label": {
+          "3": 189,
+          "5": 48,
+          "6": 10,
+          "8": 1
+        },
+        "source_group_absent_from_support": false,
+        "global_assignment_zero_does_not_mean_all_intersections_zero": true
+      },
+      "retained_temporal_Jaccard_range": [
+        0.45843828715365237,
+        0.5634218289085545
+      ],
+      "named_examples": [],
+      "example_selection": "Only previously reviewed analytical cases; not medoids or representative sampling. None invented for remaining groups.",
+      "practical_question_ru": "При близких общих расходах и населении где выше относительная роль маркетплейсов и сохраняется ли различие в рублёвых показателях?",
+      "limitations_ru": [
+        "Повышенное относительное положение маркетплейсов не означает высокий абсолютный расход, переход всего потребления в онлайн или развитие электронной торговли территории. Малое население и невысокие расходы не устанавливают бедность или сельский характер."
+      ],
+      "text_blocks_ru": {
+        "scope": "Декабрь 2024 · NCut, K=10. Территорий: 248. Контекст 2024: 205/248 территорий; регионов в покрытой части: 41.",
+        "Total_definition": "Total — модельная оценка средних безналичных расходов жителей за месяц, а не общий оборот территории. Медиана и центральные 50% ниже описывают территориальные показатели, а не распределение расходов между людьми.",
+        "meaning": "Невысокий общий расходный уровень сочетается с повышенным относительным положением маркетплейсов среди пяти наблюдаемых категорий. В покрытой части это небольшие территории. Относительное положение не равно доле всех расходов или развитию местной электронной торговли.",
+        "numbers": "Медиана Total — 26 678 ₽ в месяц; центральные 50% территорий — 24 710–28 601,25 ₽. Медианы покрытой контекстом части: население — 11 464 человек; зарплата охваченных организаций — 48 078,1 ₽/месяц. Относительное положение маркетплейсов среди пяти категорий выше полной медианы в 1,46 раза, хотя рублёвая медиана категории 5 994,5 ₽ ниже общей 6 568 ₽; это не доля маркетплейсов в Total.",
+        "nearest_contrast": "Сопоставление с ближайшей расходной группой G4: общие расходы Total 26 678 против 24 889 ₽; общественное питание 181 против 293 ₽; маркетплейсы 5 994,5 против 5 347,5 ₽. Ближайшая группа определена по расстоянию между средними преобразованных признаков X6. Рублёвые медианы показывают содержательное отличие; контекст в подборе не участвовал.",
+        "administrative_composition": "городские округа — 8; муниципальные районы — 170; муниципальные округа — 70. Тип установлен для всей группы; это отдельная опора от экономического контекста.",
+        "reliability": "Jaccard состава: среднее 0,916, минимум 0,858 в десяти декабрьских выборках 80%. Средний SW полного декабря 0,185; отрицателен у 39/248 (15,73%). После исключения внутригородских из всей сети остаются 248/248 исходных участников; Jaccard назначенного соответствия 0,762.",
+        "limitations": "Повышенное относительное положение маркетплейсов не означает высокий абсолютный расход, переход всего потребления в онлайн или развитие электронной торговли территории. Малое население и невысокие расходы не устанавливают бедность или сельский характер.",
+        "verified_example": null,
+        "practical_question": "При близких общих расходах и населении где выше относительная роль маркетплейсов и сохраняется ли различие в рублёвых показателях?"
+      },
+      "sources": [
+        {
+          "source": "profiles",
+          "json_pointer": "/profiles/1"
+        },
+        {
+          "source": "accepted_addendum",
+          "json_pointer": "/groups/1"
+        },
+        {
+          "source": "meaning",
+          "json_pointer": "/profiles/1"
+        },
+        {
+          "source": "context",
+          "json_pointer": "/profiles/1"
+        },
+        {
+          "source": "accepted_decision",
+          "section": "Что меняется в содержательном объяснении"
+        }
+      ]
+    },
+    {
+      "group_id": "G2",
+      "name_ru": "Умеренные расходы небольших территорий",
+      "source_month": "2024-12",
+      "method": "NCut",
+      "K": 10,
+      "original_members_sha256_newline_utf8": "d2b618efd72d0b9de086babe6ea92cf7aba295e24f30cdbbc92f686b306d761e",
+      "status": "READY_TEXT_FOR_LATER_INTEGRATION_NOT_FINAL_PROJECT_ACCEPTANCE",
+      "meaning_ru": "Расходный уровень близок к середине декабрьской опоры; в покрытой части население сравнительно невелико, зарплата организаций близка к общей медиане. Профиль подходит для описательного сравнения небольших территорий, но не задаёт норму потребления.",
+      "scope": {
+        "labels_method": "NCut",
+        "K": 10,
+        "labels_month": "2024-12",
+        "N": 362,
+        "context_year": 2024,
+        "context_N": 264,
+        "context_coverage": 0.7292817679558011,
+        "context_regions": 44,
+        "context_missing_N": 98
+      },
+      "spending": {
+        "median_Total_RUB": 30852.0,
+        "q25_Total_RUB": 29322.25,
+        "q75_Total_RUB": 32767.5,
+        "full_December_median_Total_RUB": 32172.0,
+        "nearest_group": "G4",
+        "nearest_comparison_original_units": [
+          {
+            "feature": "RUB_Total",
+            "label": "общие расходы Total",
+            "own": 30852.0,
+            "nearest": 24889.0,
+            "unit": "₽/месяц"
+          },
+          {
+            "feature": "RUB_restaurants",
+            "label": "общественное питание",
+            "own": 423.5,
+            "nearest": 293.0,
+            "unit": "₽/месяц"
+          },
+          {
+            "feature": "RUB_health",
+            "label": "здоровье",
+            "own": 1194.5,
+            "nearest": 1084.5,
+            "unit": "₽/месяц"
+          }
+        ]
+      },
+      "context": [
+        {
+          "feature": "population_jan1_2024",
+          "label": "население",
+          "unit": "человек",
+          "median": 18100.0,
+          "N": 264,
+          "period": "2024"
+        },
+        {
+          "feature": "organization_salary_RUB_2024",
+          "label": "зарплата охваченных организаций",
+          "unit": "₽/месяц",
+          "median": 59227.6,
+          "N": 264,
+          "period": "2024"
+        }
+      ],
+      "administrative_composition": {
+        "support_scope": "all original December group members",
+        "intra_city_N": 1,
+        "non_intra_N": 361,
+        "intra_city_fraction": 0.0027624309392265192,
+        "unknown_type_N": 0,
+        "exact_type_counts": {
+          "urban_okrug": 61,
+          "municipal_district": 201,
+          "municipal_okrug": 99,
+          "intra_city": 1
+        },
+        "interval_rule": "year_from <= year < year_to",
+        "not_equal_to_context_coverage_or_Moscow_SPb_geography": true
+      },
+      "context_capital_confirmed_N": 0,
+      "stability": {
+        "draws": 10,
+        "sampling_fraction": 0.8,
+        "draw_N": 1682,
+        "reference_refitted_on_draw_IDs_full_calendar": true,
+        "matching": "Hungarian maximum sum clusterwise Jaccard on common IDs",
+        "mean_Jaccard": 0.8699302346982576,
+        "minimum_Jaccard": 0.7536231884057971,
+        "individual_draws": [
+          {
+            "task_id": "S202412-01",
+            "Jaccard": 0.8207547169811321
+          },
+          {
+            "task_id": "S202412-02",
+            "Jaccard": 0.8651315789473685
+          },
+          {
+            "task_id": "S202412-03",
+            "Jaccard": 0.7536231884057971
+          },
+          {
+            "task_id": "S202412-04",
+            "Jaccard": 0.9238410596026491
+          },
+          {
+            "task_id": "S202412-05",
+            "Jaccard": 0.9297658862876255
+          },
+          {
+            "task_id": "S202412-06",
+            "Jaccard": 0.8862275449101796
+          },
+          {
+            "task_id": "S202412-07",
+            "Jaccard": 0.9022801302931596
+          },
+          {
+            "task_id": "S202412-08",
+            "Jaccard": 0.8557993730407524
+          },
+          {
+            "task_id": "S202412-09",
+            "Jaccard": 0.8771331058020477
+          },
+          {
+            "task_id": "S202412-10",
+            "Jaccard": 0.8847457627118644
+          }
+        ],
+        "not_temporal_stability_or_confidence_interval": true
+      },
+      "geometry": {
+        "mean_SW": 0.27820695335779566,
+        "negative_SW_N": 8,
+        "negative_SW_fraction": 0.022099447513812154,
+        "computed_as_summary_of_saved_pointwise_SW": true,
+        "negative_fraction_is_not_error_probability": true
+      },
+      "administrative_stress": {
+        "remaining_original_members": 361,
+        "assigned_refit_raw_label": 5,
+        "assigned_intersection": 218,
+        "assigned_Jaccard": 0.48444444444444446,
+        "assigned_group_size": 307,
+        "all_nonzero_intersections_by_refit_raw_label": {
+          "4": 128,
+          "5": 218,
+          "7": 1,
+          "8": 14
+        },
+        "source_group_absent_from_support": false,
+        "global_assignment_zero_does_not_mean_all_intersections_zero": true
+      },
+      "retained_temporal_Jaccard_range": [
+        0.5111111111111111,
+        0.6244813278008299
+      ],
+      "named_examples": [],
+      "example_selection": "Only previously reviewed analytical cases; not medoids or representative sampling. None invented for remaining groups.",
+      "practical_question_ru": "Какие категории отличают конкретную территорию от расходного диапазона группы при сопоставимых населении и административном уровне?",
+      "limitations_ru": [
+        "Это не норматив расходов и не универсальная «средняя Россия». Почти весь состав G2 остаётся в административной проверке, но существенно перераспределяется между новыми группами; границы зависят от состава всей сети."
+      ],
+      "text_blocks_ru": {
+        "scope": "Декабрь 2024 · NCut, K=10. Территорий: 362. Контекст 2024: 264/362 территорий; регионов в покрытой части: 44.",
+        "Total_definition": "Total — модельная оценка средних безналичных расходов жителей за месяц, а не общий оборот территории. Медиана и центральные 50% ниже описывают территориальные показатели, а не распределение расходов между людьми.",
+        "meaning": "Расходный уровень близок к середине декабрьской опоры; в покрытой части население сравнительно невелико, зарплата организаций близка к общей медиане. Профиль подходит для описательного сравнения небольших территорий, но не задаёт норму потребления.",
+        "numbers": "Медиана Total — 30 852 ₽ в месяц; центральные 50% территорий — 29 322,25–32 767,5 ₽. Медианы покрытой контекстом части: население — 18 100 человек; зарплата охваченных организаций — 59 227,6 ₽/месяц.",
+        "nearest_contrast": "Сопоставление с ближайшей расходной группой G4: общие расходы Total 30 852 против 24 889 ₽; общественное питание 423,5 против 293 ₽; здоровье 1 194,5 против 1 084,5 ₽. Ближайшая группа определена по расстоянию между средними преобразованных признаков X6. Рублёвые медианы показывают содержательное отличие; контекст в подборе не участвовал.",
+        "administrative_composition": "городские округа — 61; муниципальные районы — 201; муниципальные округа — 99; внутригородские территории — 1. Тип установлен для всей группы; это отдельная опора от экономического контекста.",
+        "reliability": "Jaccard состава: среднее 0,870, минимум 0,754 в десяти декабрьских выборках 80%. Средний SW полного декабря 0,278; отрицателен у 8/362 (2,21%). После исключения внутригородских из всей сети остаются 361/362 исходных участников; Jaccard назначенного соответствия 0,484.",
+        "limitations": "Это не норматив расходов и не универсальная «средняя Россия». Почти весь состав G2 остаётся в административной проверке, но существенно перераспределяется между новыми группами; границы зависят от состава всей сети.",
+        "verified_example": null,
+        "practical_question": "Какие категории отличают конкретную территорию от расходного диапазона группы при сопоставимых населении и административном уровне?"
+      },
+      "sources": [
+        {
+          "source": "profiles",
+          "json_pointer": "/profiles/2"
+        },
+        {
+          "source": "accepted_addendum",
+          "json_pointer": "/groups/2"
+        },
+        {
+          "source": "meaning",
+          "json_pointer": "/profiles/2"
+        },
+        {
+          "source": "context",
+          "json_pointer": "/profiles/2"
+        },
+        {
+          "source": "accepted_decision",
+          "section": "Что меняется в содержательном объяснении"
+        }
+      ]
+    },
+    {
+      "group_id": "G3",
+      "name_ru": "Повышенные расходы при умеренной зарплате организаций",
+      "source_month": "2024-12",
+      "method": "NCut",
+      "K": 10,
+      "original_members_sha256_newline_utf8": "acd2b396a392709f2a53431ad2608abd655bd6a18f9e7c8b8262aeeb10192c5d",
+      "status": "READY_TEXT_FOR_LATER_INTEGRATION_NOT_FINAL_PROJECT_ACCEPTANCE",
+      "meaning_ru": "Расходы выше общей медианы, а зарплата охваченных организаций в покрытой части лишь немного выше контекстной медианы. Такое сочетание помогает выделять вопросы для анализа; оно не объясняет источники средств жителей.",
+      "scope": {
+        "labels_method": "NCut",
+        "K": 10,
+        "labels_month": "2024-12",
+        "N": 274,
+        "context_year": 2024,
+        "context_N": 193,
+        "context_coverage": 0.7043795620437956,
+        "context_regions": 48,
+        "context_missing_N": 81
+      },
+      "spending": {
+        "median_Total_RUB": 36151.5,
+        "q25_Total_RUB": 33803.25,
+        "q75_Total_RUB": 38033.5,
+        "full_December_median_Total_RUB": 32172.0,
+        "nearest_group": "G0",
+        "nearest_comparison_original_units": [
+          {
+            "feature": "RUB_Total",
+            "label": "общие расходы Total",
+            "own": 36151.5,
+            "nearest": 42417.5,
+            "unit": "₽/месяц"
+          },
+          {
+            "feature": "RUB_restaurants",
+            "label": "общественное питание",
+            "own": 987.0,
+            "nearest": 1797.5,
+            "unit": "₽/месяц"
+          },
+          {
+            "feature": "RUB_food",
+            "label": "продовольствие",
+            "own": 15066.5,
+            "nearest": 16220.5,
+            "unit": "₽/месяц"
+          }
+        ]
+      },
+      "context": [
+        {
+          "feature": "population_jan1_2024",
+          "label": "население",
+          "unit": "человек",
+          "median": 37866.0,
+          "N": 193,
+          "period": "2024"
+        },
+        {
+          "feature": "organization_salary_RUB_2024",
+          "label": "зарплата охваченных организаций",
+          "unit": "₽/месяц",
+          "median": 64438.2,
+          "N": 193,
+          "period": "2024"
+        }
+      ],
+      "administrative_composition": {
+        "support_scope": "all original December group members",
+        "intra_city_N": 0,
+        "non_intra_N": 274,
+        "intra_city_fraction": 0.0,
+        "unknown_type_N": 0,
+        "exact_type_counts": {
+          "urban_okrug": 113,
+          "municipal_district": 116,
+          "municipal_okrug": 45,
+          "intra_city": 0
+        },
+        "interval_rule": "year_from <= year < year_to",
+        "not_equal_to_context_coverage_or_Moscow_SPb_geography": true
+      },
+      "context_capital_confirmed_N": 0,
+      "stability": {
+        "draws": 10,
+        "sampling_fraction": 0.8,
+        "draw_N": 1682,
+        "reference_refitted_on_draw_IDs_full_calendar": true,
+        "matching": "Hungarian maximum sum clusterwise Jaccard on common IDs",
+        "mean_Jaccard": 0.7921211893932321,
+        "minimum_Jaccard": 0.6285714285714286,
+        "individual_draws": [
+          {
+            "task_id": "S202412-01",
+            "Jaccard": 0.9055793991416309
+          },
+          {
+            "task_id": "S202412-02",
+            "Jaccard": 0.8956521739130435
+          },
+          {
+            "task_id": "S202412-03",
+            "Jaccard": 0.6285714285714286
+          },
+          {
+            "task_id": "S202412-04",
+            "Jaccard": 0.8509803921568627
+          },
+          {
+            "task_id": "S202412-05",
+            "Jaccard": 0.7222222222222222
+          },
+          {
+            "task_id": "S202412-06",
+            "Jaccard": 0.7725490196078432
+          },
+          {
+            "task_id": "S202412-07",
+            "Jaccard": 0.8761061946902655
+          },
+          {
+            "task_id": "S202412-08",
+            "Jaccard": 0.7586206896551724
+          },
+          {
+            "task_id": "S202412-09",
+            "Jaccard": 0.8192307692307692
+          },
+          {
+            "task_id": "S202412-10",
+            "Jaccard": 0.691699604743083
+          }
+        ],
+        "not_temporal_stability_or_confidence_interval": true
+      },
+      "geometry": {
+        "mean_SW": 0.2521500205762971,
+        "negative_SW_N": 17,
+        "negative_SW_fraction": 0.06204379562043796,
+        "computed_as_summary_of_saved_pointwise_SW": true,
+        "negative_fraction_is_not_error_probability": true
+      },
+      "administrative_stress": {
+        "remaining_original_members": 274,
+        "assigned_refit_raw_label": 2,
+        "assigned_intersection": 99,
+        "assigned_Jaccard": 0.2742382271468144,
+        "assigned_group_size": 186,
+        "all_nonzero_intersections_by_refit_raw_label": {
+          "0": 61,
+          "2": 99,
+          "4": 114
+        },
+        "source_group_absent_from_support": false,
+        "global_assignment_zero_does_not_mean_all_intersections_zero": true
+      },
+      "retained_temporal_Jaccard_range": [
+        0.39473684210526316,
+        0.45604395604395603
+      ],
+      "named_examples": [
+        {
+          "ID": "1131",
+          "native_oktmo8": "24633000",
+          "supplier_name": "Шуйский муниципальный район",
+          "supplier_type": "муниципальный район",
+          "supplier_region": "Ивановская область",
+          "december_consumption_RUB": {
+            "Все категории": 32565.0,
+            "Продовольствие": 13535.0,
+            "Здоровье": 1174.0,
+            "Общественное питание": 738.0,
+            "Транспорт": 1405.0,
+            "Маркетплейсы": 6786.0
+          },
+          "context_2024": {
+            "population_jan1_2024": 19184.0,
+            "market_access_2024": 425.0,
+            "organization_salary_RUB_2024": 42714.8,
+            "organization_workers_per_resident_2024": 0.056818181818181816,
+            "education_worker_share_2024": 0.4073394495412844
+          },
+          "NCut_group": 3,
+          "SSE_group": 3,
+          "NCut_SW": 0.11237518783445728,
+          "SSE_SW": 0.4290792626888096
+        },
+        {
+          "ID": "1163",
+          "native_oktmo8": "25640000",
+          "supplier_name": "Усольский муниципальный район",
+          "supplier_type": "муниципальный район",
+          "supplier_region": "Иркутская область",
+          "december_consumption_RUB": {
+            "Все категории": 32951.0,
+            "Продовольствие": 12325.0,
+            "Здоровье": 1154.0,
+            "Общественное питание": 768.0,
+            "Транспорт": 1585.0,
+            "Маркетплейсы": 7406.0
+          },
+          "context_2024": {
+            "population_jan1_2024": 47850.0,
+            "market_access_2024": 187.0,
+            "organization_salary_RUB_2024": 83332.4,
+            "organization_workers_per_resident_2024": 0.17118077324973877,
+            "education_worker_share_2024": 0.2197533878647296
+          },
+          "NCut_group": 3,
+          "SSE_group": 3,
+          "NCut_SW": 0.23486616478732475,
+          "SSE_SW": 0.46171801145490166
+        }
+      ],
+      "example_selection": "Only previously reviewed analytical cases; not medoids or representative sampling. None invented for remaining groups.",
+      "practical_question_ru": "Насколько различаются расходные категории территорий с близкой зарплатой организаций, если отдельно учесть население и доступность рынков?",
+      "limitations_ru": [
+        "Расходы жителей и зарплата работников организаций относятся к разным совокупностям. Их сочетание не доказывает туризм, трансферты или неучтённые доходы. Все исходные участники G3 остаются в административной проверке, но её границы меняются особенно сильно."
+      ],
+      "text_blocks_ru": {
+        "scope": "Декабрь 2024 · NCut, K=10. Территорий: 274. Контекст 2024: 193/274 территорий; регионов в покрытой части: 48.",
+        "Total_definition": "Total — модельная оценка средних безналичных расходов жителей за месяц, а не общий оборот территории. Медиана и центральные 50% ниже описывают территориальные показатели, а не распределение расходов между людьми.",
+        "meaning": "Расходы выше общей медианы, а зарплата охваченных организаций в покрытой части лишь немного выше контекстной медианы. Такое сочетание помогает выделять вопросы для анализа; оно не объясняет источники средств жителей.",
+        "numbers": "Медиана Total — 36 151,5 ₽ в месяц; центральные 50% территорий — 33 803,25–38 033,5 ₽. Медианы покрытой контекстом части: население — 37 866 человек; зарплата охваченных организаций — 64 438,2 ₽/месяц.",
+        "nearest_contrast": "Сопоставление с ближайшей расходной группой G0: общие расходы Total 36 151,5 против 42 417,5 ₽; общественное питание 987 против 1 797,5 ₽; продовольствие 15 066,5 против 16 220,5 ₽. Ближайшая группа определена по расстоянию между средними преобразованных признаков X6. Рублёвые медианы показывают содержательное отличие; контекст в подборе не участвовал.",
+        "administrative_composition": "городские округа — 113; муниципальные районы — 116; муниципальные округа — 45. Тип установлен для всей группы; это отдельная опора от экономического контекста.",
+        "reliability": "Jaccard состава: среднее 0,792, минимум 0,629 в десяти декабрьских выборках 80%. Средний SW полного декабря 0,252; отрицателен у 17/274 (6,20%). После исключения внутригородских из всей сети остаются 274/274 исходных участников; Jaccard назначенного соответствия 0,274.",
+        "limitations": "Расходы жителей и зарплата работников организаций относятся к разным совокупностям. Их сочетание не доказывает туризм, трансферты или неучтённые доходы. Все исходные участники G3 остаются в административной проверке, но её границы меняются особенно сильно.",
+        "verified_example": "Шуйский муниципальный район (ID 1131) и Усольский муниципальный район (ID 1163) оба в G3: Total 32 565/32 951 ₽, но доступность рынков 425/187, зарплата организаций 42 714,8/83 332,4 ₽. Это намеренно выбранный контраст, не оценка частоты такого явления. Шуйский район здесь не городской округ Шуя из анализа динамики.",
+        "practical_question": "Насколько различаются расходные категории территорий с близкой зарплатой организаций, если отдельно учесть население и доступность рынков?"
+      },
+      "sources": [
+        {
+          "source": "profiles",
+          "json_pointer": "/profiles/3"
+        },
+        {
+          "source": "accepted_addendum",
+          "json_pointer": "/groups/3"
+        },
+        {
+          "source": "meaning",
+          "json_pointer": "/profiles/3"
+        },
+        {
+          "source": "context",
+          "json_pointer": "/profiles/3"
+        },
+        {
+          "source": "accepted_decision",
+          "section": "Что меняется в содержательном объяснении"
+        },
+        {
+          "source": "cases",
+          "section": "case2/pair"
+        }
+      ]
+    },
+    {
+      "group_id": "G4",
+      "name_ru": "Минимальный расходный уровень небольших территорий",
+      "source_month": "2024-12",
+      "method": "NCut",
+      "K": 10,
+      "original_members_sha256_newline_utf8": "2428285525359ada81fbab04599e03c631e147506675951d624fffc86c889cd2",
+      "status": "READY_TEXT_FOR_LATER_INTEGRATION_NOT_FINAL_PROJECT_ACCEPTANCE",
+      "meaning_ru": "Самая низкая медиана общих расходов среди десяти декабрьских групп. Доступный контекст описывает небольшие территории с невысокой зарплатой охваченных организаций. Это нижний расходный диапазон данной выборки, а не установленный уровень бедности.",
+      "scope": {
+        "labels_method": "NCut",
+        "K": 10,
+        "labels_month": "2024-12",
+        "N": 298,
+        "context_year": 2024,
+        "context_N": 263,
+        "context_coverage": 0.8825503355704698,
+        "context_regions": 36,
+        "context_missing_N": 35
+      },
+      "spending": {
+        "median_Total_RUB": 24889.0,
+        "q25_Total_RUB": 23364.5,
+        "q75_Total_RUB": 26176.5,
+        "full_December_median_Total_RUB": 32172.0,
+        "nearest_group": "G2",
+        "nearest_comparison_original_units": [
+          {
+            "feature": "RUB_Total",
+            "label": "общие расходы Total",
+            "own": 24889.0,
+            "nearest": 30852.0,
+            "unit": "₽/месяц"
+          },
+          {
+            "feature": "RUB_restaurants",
+            "label": "общественное питание",
+            "own": 293.0,
+            "nearest": 423.5,
+            "unit": "₽/месяц"
+          },
+          {
+            "feature": "RUB_health",
+            "label": "здоровье",
+            "own": 1084.5,
+            "nearest": 1194.5,
+            "unit": "₽/месяц"
+          }
+        ]
+      },
+      "context": [
+        {
+          "feature": "population_jan1_2024",
+          "label": "население",
+          "unit": "человек",
+          "median": 15011.0,
+          "N": 263,
+          "period": "2024"
+        },
+        {
+          "feature": "organization_salary_RUB_2024",
+          "label": "зарплата охваченных организаций",
+          "unit": "₽/месяц",
+          "median": 47933.4,
+          "N": 263,
+          "period": "2024"
+        }
+      ],
+      "administrative_composition": {
+        "support_scope": "all original December group members",
+        "intra_city_N": 0,
+        "non_intra_N": 298,
+        "intra_city_fraction": 0.0,
+        "unknown_type_N": 0,
+        "exact_type_counts": {
+          "urban_okrug": 10,
+          "municipal_district": 222,
+          "municipal_okrug": 66,
+          "intra_city": 0
+        },
+        "interval_rule": "year_from <= year < year_to",
+        "not_equal_to_context_coverage_or_Moscow_SPb_geography": true
+      },
+      "context_capital_confirmed_N": 0,
+      "stability": {
+        "draws": 10,
+        "sampling_fraction": 0.8,
+        "draw_N": 1682,
+        "reference_refitted_on_draw_IDs_full_calendar": true,
+        "matching": "Hungarian maximum sum clusterwise Jaccard on common IDs",
+        "mean_Jaccard": 0.8966100102385958,
+        "minimum_Jaccard": 0.8049792531120332,
+        "individual_draws": [
+          {
+            "task_id": "S202412-01",
+            "Jaccard": 0.8725099601593626
+          },
+          {
+            "task_id": "S202412-02",
+            "Jaccard": 0.9233870967741935
+          },
+          {
+            "task_id": "S202412-03",
+            "Jaccard": 0.8049792531120332
+          },
+          {
+            "task_id": "S202412-04",
+            "Jaccard": 0.9147286821705426
+          },
+          {
+            "task_id": "S202412-05",
+            "Jaccard": 0.921875
+          },
+          {
+            "task_id": "S202412-06",
+            "Jaccard": 0.8816326530612245
+          },
+          {
+            "task_id": "S202412-07",
+            "Jaccard": 0.9190283400809717
+          },
+          {
+            "task_id": "S202412-08",
+            "Jaccard": 0.8858267716535433
+          },
+          {
+            "task_id": "S202412-09",
+            "Jaccard": 0.9071729957805907
+          },
+          {
+            "task_id": "S202412-10",
+            "Jaccard": 0.9349593495934959
+          }
+        ],
+        "not_temporal_stability_or_confidence_interval": true
+      },
+      "geometry": {
+        "mean_SW": 0.2606796198075377,
+        "negative_SW_N": 6,
+        "negative_SW_fraction": 0.020134228187919462,
+        "computed_as_summary_of_saved_pointwise_SW": true,
+        "negative_fraction_is_not_error_probability": true
+      },
+      "administrative_stress": {
+        "remaining_original_members": 298,
+        "assigned_refit_raw_label": 6,
+        "assigned_intersection": 242,
+        "assigned_Jaccard": 0.7857142857142857,
+        "assigned_group_size": 252,
+        "all_nonzero_intersections_by_refit_raw_label": {
+          "5": 41,
+          "6": 242,
+          "7": 15
+        },
+        "source_group_absent_from_support": false,
+        "global_assignment_zero_does_not_mean_all_intersections_zero": true
+      },
+      "retained_temporal_Jaccard_range": [
+        0.2922077922077922,
+        0.4802784222737819
+      ],
+      "named_examples": [],
+      "example_selection": "Only previously reviewed analytical cases; not medoids or representative sampling. None invented for remaining groups.",
+      "practical_question_ru": "Чем отличаются небольшие территории нижнего расходного диапазона друг от друга и от G1 при сходном общем уровне?",
+      "limitations_ru": [
+        "Низкий расходный уровень не устанавливает бедность жителей, бюджетную зависимость или слабость местного бизнеса. Доля работников образования в охваченных организациях не равна доле бюджетной экономики."
+      ],
+      "text_blocks_ru": {
+        "scope": "Декабрь 2024 · NCut, K=10. Территорий: 298. Контекст 2024: 263/298 территорий; регионов в покрытой части: 36.",
+        "Total_definition": "Total — модельная оценка средних безналичных расходов жителей за месяц, а не общий оборот территории. Медиана и центральные 50% ниже описывают территориальные показатели, а не распределение расходов между людьми.",
+        "meaning": "Самая низкая медиана общих расходов среди десяти декабрьских групп. Доступный контекст описывает небольшие территории с невысокой зарплатой охваченных организаций. Это нижний расходный диапазон данной выборки, а не установленный уровень бедности.",
+        "numbers": "Медиана Total — 24 889 ₽ в месяц; центральные 50% территорий — 23 364,5–26 176,5 ₽. Медианы покрытой контекстом части: население — 15 011 человек; зарплата охваченных организаций — 47 933,4 ₽/месяц.",
+        "nearest_contrast": "Сопоставление с ближайшей расходной группой G2: общие расходы Total 24 889 против 30 852 ₽; общественное питание 293 против 423,5 ₽; здоровье 1 084,5 против 1 194,5 ₽. Ближайшая группа определена по расстоянию между средними преобразованных признаков X6. Рублёвые медианы показывают содержательное отличие; контекст в подборе не участвовал.",
+        "administrative_composition": "городские округа — 10; муниципальные районы — 222; муниципальные округа — 66. Тип установлен для всей группы; это отдельная опора от экономического контекста.",
+        "reliability": "Jaccard состава: среднее 0,897, минимум 0,805 в десяти декабрьских выборках 80%. Средний SW полного декабря 0,261; отрицателен у 6/298 (2,01%). После исключения внутригородских из всей сети остаются 298/298 исходных участников; Jaccard назначенного соответствия 0,786.",
+        "limitations": "Низкий расходный уровень не устанавливает бедность жителей, бюджетную зависимость или слабость местного бизнеса. Доля работников образования в охваченных организациях не равна доле бюджетной экономики.",
+        "verified_example": null,
+        "practical_question": "Чем отличаются небольшие территории нижнего расходного диапазона друг от друга и от G1 при сходном общем уровне?"
+      },
+      "sources": [
+        {
+          "source": "profiles",
+          "json_pointer": "/profiles/4"
+        },
+        {
+          "source": "accepted_addendum",
+          "json_pointer": "/groups/4"
+        },
+        {
+          "source": "meaning",
+          "json_pointer": "/profiles/4"
+        },
+        {
+          "source": "context",
+          "json_pointer": "/profiles/4"
+        },
+        {
+          "source": "accepted_decision",
+          "section": "Что меняется в содержательном объяснении"
+        }
+      ]
+    },
+    {
+      "group_id": "G5",
+      "name_ru": "Низкие расходы с иным составом потребления — кандидатный профиль",
+      "source_month": "2024-12",
+      "method": "NCut",
+      "K": 10,
+      "original_members_sha256_newline_utf8": "6a0e7498c096d3d1502d672403def55b5f8f81adcd5ebfd04084d9ffa564b779",
+      "status": "READY_TEXT_FOR_LATER_INTEGRATION_NOT_FINAL_PROJECT_ACCEPTANCE",
+      "meaning_ru": "Низкий расходный уровень близок G4, но соотношения наблюдаемых категорий отличаются. Группа остаётся кандидатным профилем для ручного разбора: воспроизводимость декабрьского состава не устраняет перекрытие и изменения состава во времени.",
+      "scope": {
+        "labels_method": "NCut",
+        "K": 10,
+        "labels_month": "2024-12",
+        "N": 256,
+        "context_year": 2024,
+        "context_N": 206,
+        "context_coverage": 0.8046875,
+        "context_regions": 36,
+        "context_missing_N": 50
+      },
+      "spending": {
+        "median_Total_RUB": 26813.5,
+        "q25_Total_RUB": 24147.0,
+        "q75_Total_RUB": 28935.5,
+        "full_December_median_Total_RUB": 32172.0,
+        "nearest_group": "G4",
+        "nearest_comparison_original_units": [
+          {
+            "feature": "RUB_Total",
+            "label": "общие расходы Total",
+            "own": 26813.5,
+            "nearest": 24889.0,
+            "unit": "₽/месяц"
+          },
+          {
+            "feature": "RUB_restaurants",
+            "label": "общественное питание",
+            "own": 622.0,
+            "nearest": 293.0,
+            "unit": "₽/месяц"
+          },
+          {
+            "feature": "RUB_marketplaces",
+            "label": "маркетплейсы",
+            "own": 5400.0,
+            "nearest": 5347.5,
+            "unit": "₽/месяц"
+          }
+        ]
+      },
+      "context": [
+        {
+          "feature": "population_jan1_2024",
+          "label": "население",
+          "unit": "человек",
+          "median": 23952.0,
+          "N": 206,
+          "period": "2024"
+        },
+        {
+          "feature": "organization_salary_RUB_2024",
+          "label": "зарплата охваченных организаций",
+          "unit": "₽/месяц",
+          "median": 51363.05,
+          "N": 206,
+          "period": "2024"
+        }
+      ],
+      "administrative_composition": {
+        "support_scope": "all original December group members",
+        "intra_city_N": 0,
+        "non_intra_N": 256,
+        "intra_city_fraction": 0.0,
+        "unknown_type_N": 0,
+        "exact_type_counts": {
+          "urban_okrug": 28,
+          "municipal_district": 184,
+          "municipal_okrug": 44,
+          "intra_city": 0
+        },
+        "interval_rule": "year_from <= year < year_to",
+        "not_equal_to_context_coverage_or_Moscow_SPb_geography": true
+      },
+      "context_capital_confirmed_N": 0,
+      "stability": {
+        "draws": 10,
+        "sampling_fraction": 0.8,
+        "draw_N": 1682,
+        "reference_refitted_on_draw_IDs_full_calendar": true,
+        "matching": "Hungarian maximum sum clusterwise Jaccard on common IDs",
+        "mean_Jaccard": 0.8836042617377702,
+        "minimum_Jaccard": 0.8325123152709359,
+        "individual_draws": [
+          {
+            "task_id": "S202412-01",
+            "Jaccard": 0.9313725490196079
+          },
+          {
+            "task_id": "S202412-02",
+            "Jaccard": 0.8768472906403941
+          },
+          {
+            "task_id": "S202412-03",
+            "Jaccard": 0.875
+          },
+          {
+            "task_id": "S202412-04",
+            "Jaccard": 0.8325123152709359
+          },
+          {
+            "task_id": "S202412-05",
+            "Jaccard": 0.8385650224215246
+          },
+          {
+            "task_id": "S202412-06",
+            "Jaccard": 0.8990825688073395
+          },
+          {
+            "task_id": "S202412-07",
+            "Jaccard": 0.8918918918918919
+          },
+          {
+            "task_id": "S202412-08",
+            "Jaccard": 0.9073170731707317
+          },
+          {
+            "task_id": "S202412-09",
+            "Jaccard": 0.9118942731277533
+          },
+          {
+            "task_id": "S202412-10",
+            "Jaccard": 0.8715596330275229
+          }
+        ],
+        "not_temporal_stability_or_confidence_interval": true
+      },
+      "geometry": {
+        "mean_SW": 0.11066260818983568,
+        "negative_SW_N": 80,
+        "negative_SW_fraction": 0.3125,
+        "computed_as_summary_of_saved_pointwise_SW": true,
+        "negative_fraction_is_not_error_probability": true
+      },
+      "administrative_stress": {
+        "remaining_original_members": 256,
+        "assigned_refit_raw_label": 7,
+        "assigned_intersection": 189,
+        "assigned_Jaccard": 0.6948529411764706,
+        "assigned_group_size": 205,
+        "all_nonzero_intersections_by_refit_raw_label": {
+          "0": 46,
+          "4": 21,
+          "7": 189
+        },
+        "source_group_absent_from_support": false,
+        "global_assignment_zero_does_not_mean_all_intersections_zero": true
+      },
+      "retained_temporal_Jaccard_range": [
+        0.3182897862232779,
+        0.373015873015873
+      ],
+      "named_examples": [],
+      "example_selection": "Only previously reviewed analytical cases; not medoids or representative sampling. None invented for remaining groups.",
+      "practical_question_ru": "Какие территории действительно имеют иной состав потребления при близком контексте с G4, а какие лучше рассматривать вместе с ближайшей альтернативой SSE?",
+      "limitations_ru": [
+        "Самостоятельная сервисная или туристическая функция не установлена. В четырёх прежних сезонных сопоставлениях лучший Jaccard с декабрьским составом составлял 0,318–0,373. Новая декабрьская устойчивость к подвыборке не отменяет этой временной проблемы и геометрического перекрытия."
+      ],
+      "text_blocks_ru": {
+        "scope": "Декабрь 2024 · NCut, K=10. Территорий: 256. Контекст 2024: 206/256 территорий; регионов в покрытой части: 36.",
+        "Total_definition": "Total — модельная оценка средних безналичных расходов жителей за месяц, а не общий оборот территории. Медиана и центральные 50% ниже описывают территориальные показатели, а не распределение расходов между людьми.",
+        "meaning": "Низкий расходный уровень близок G4, но соотношения наблюдаемых категорий отличаются. Группа остаётся кандидатным профилем для ручного разбора: воспроизводимость декабрьского состава не устраняет перекрытие и изменения состава во времени.",
+        "numbers": "Медиана Total — 26 813,5 ₽ в месяц; центральные 50% территорий — 24 147–28 935,5 ₽. Медианы покрытой контекстом части: население — 23 952 человек; зарплата охваченных организаций — 51 363,05 ₽/месяц.",
+        "nearest_contrast": "Сопоставление с ближайшей расходной группой G4: общие расходы Total 26 813,5 против 24 889 ₽; общественное питание 622 против 293 ₽; маркетплейсы 5 400 против 5 347,5 ₽. Ближайшая группа определена по расстоянию между средними преобразованных признаков X6. Рублёвые медианы показывают содержательное отличие; контекст в подборе не участвовал.",
+        "administrative_composition": "городские округа — 28; муниципальные районы — 184; муниципальные округа — 44. Тип установлен для всей группы; это отдельная опора от экономического контекста.",
+        "reliability": "Jaccard состава: среднее 0,884, минимум 0,833 в десяти декабрьских выборках 80%. Средний SW полного декабря 0,111; отрицателен у 80/256 (31,25%). После исключения внутригородских из всей сети остаются 256/256 исходных участников; Jaccard назначенного соответствия 0,695.",
+        "limitations": "Самостоятельная сервисная или туристическая функция не установлена. В четырёх прежних сезонных сопоставлениях лучший Jaccard с декабрьским составом составлял 0,318–0,373. Новая декабрьская устойчивость к подвыборке не отменяет этой временной проблемы и геометрического перекрытия.",
+        "verified_example": null,
+        "practical_question": "Какие территории действительно имеют иной состав потребления при близком контексте с G4, а какие лучше рассматривать вместе с ближайшей альтернативой SSE?"
+      },
+      "sources": [
+        {
+          "source": "profiles",
+          "json_pointer": "/profiles/5"
+        },
+        {
+          "source": "accepted_addendum",
+          "json_pointer": "/groups/5"
+        },
+        {
+          "source": "meaning",
+          "json_pointer": "/profiles/5"
+        },
+        {
+          "source": "context",
+          "json_pointer": "/profiles/5"
+        },
+        {
+          "source": "accepted_decision",
+          "section": "Что меняется в содержательном объяснении"
+        }
+      ]
+    },
+    {
+      "group_id": "G6",
+      "name_ru": "Столичная концентрация: высокий уровень расходов",
+      "source_month": "2024-12",
+      "method": "NCut",
+      "K": 10,
+      "original_members_sha256_newline_utf8": "1a2838d6eddc73da4567c4e153bb801eba4a738db2331db1c6b421358af4b86f",
+      "status": "READY_TEXT_FOR_LATER_INTEGRATION_NOT_FINAL_PROJECT_ACCEPTANCE",
+      "meaning_ru": "Высокие расходы сочетаются со столичной концентрацией в известной географии. Среди G6/G8/G9 это нижний расходный диапазон. В группе есть и территории вне Москвы и Санкт-Петербурга; название не описывает каждого участника.",
+      "scope": {
+        "labels_method": "NCut",
+        "K": 10,
+        "labels_month": "2024-12",
+        "N": 135,
+        "context_year": 2024,
+        "context_N": 114,
+        "context_coverage": 0.8444444444444444,
+        "context_regions": 13,
+        "context_missing_N": 21
+      },
+      "spending": {
+        "median_Total_RUB": 55346.0,
+        "q25_Total_RUB": 52997.0,
+        "q75_Total_RUB": 57217.0,
+        "full_December_median_Total_RUB": 32172.0,
+        "nearest_group": "G8",
+        "nearest_comparison_original_units": [
+          {
+            "feature": "RUB_Total",
+            "label": "общие расходы Total",
+            "own": 55346.0,
+            "nearest": 62759.5,
+            "unit": "₽/месяц"
+          },
+          {
+            "feature": "RUB_restaurants",
+            "label": "общественное питание",
+            "own": 3385.0,
+            "nearest": 4245.0,
+            "unit": "₽/месяц"
+          },
+          {
+            "feature": "RUB_food",
+            "label": "продовольствие",
+            "own": 18375.0,
+            "nearest": 19756.0,
+            "unit": "₽/месяц"
+          }
+        ]
+      },
+      "context": [
+        {
+          "feature": "organization_salary_RUB_2024",
+          "label": "зарплата охваченных организаций",
+          "unit": "₽/месяц",
+          "median": 109613.0,
+          "N": 114,
+          "period": "2024"
+        },
+        {
+          "feature": "market_access_2024",
+          "label": "индекс доступности рынков",
+          "unit": "индекс",
+          "median": 405.79999999999995,
+          "N": 114,
+          "period": "2024"
+        }
+      ],
+      "administrative_composition": {
+        "support_scope": "all original December group members",
+        "intra_city_N": 92,
+        "non_intra_N": 43,
+        "intra_city_fraction": 0.6814814814814815,
+        "unknown_type_N": 0,
+        "exact_type_counts": {
+          "urban_okrug": 36,
+          "municipal_district": 6,
+          "municipal_okrug": 1,
+          "intra_city": 92
+        },
+        "interval_rule": "year_from <= year < year_to",
+        "not_equal_to_context_coverage_or_Moscow_SPb_geography": true
+      },
+      "context_capital_confirmed_N": 83,
+      "stability": {
+        "draws": 10,
+        "sampling_fraction": 0.8,
+        "draw_N": 1682,
+        "reference_refitted_on_draw_IDs_full_calendar": true,
+        "matching": "Hungarian maximum sum clusterwise Jaccard on common IDs",
+        "mean_Jaccard": 0.8873572600210488,
+        "minimum_Jaccard": 0.71875,
+        "individual_draws": [
+          {
+            "task_id": "S202412-01",
+            "Jaccard": 0.9032258064516129
+          },
+          {
+            "task_id": "S202412-02",
+            "Jaccard": 0.9142857142857143
+          },
+          {
+            "task_id": "S202412-03",
+            "Jaccard": 0.71875
+          },
+          {
+            "task_id": "S202412-04",
+            "Jaccard": 0.9230769230769231
+          },
+          {
+            "task_id": "S202412-05",
+            "Jaccard": 0.9615384615384616
+          },
+          {
+            "task_id": "S202412-06",
+            "Jaccard": 0.831858407079646
+          },
+          {
+            "task_id": "S202412-07",
+            "Jaccard": 0.8706896551724138
+          },
+          {
+            "task_id": "S202412-08",
+            "Jaccard": 0.8833333333333333
+          },
+          {
+            "task_id": "S202412-09",
+            "Jaccard": 0.9357798165137615
+          },
+          {
+            "task_id": "S202412-10",
+            "Jaccard": 0.9310344827586207
+          }
+        ],
+        "not_temporal_stability_or_confidence_interval": true
+      },
+      "geometry": {
+        "mean_SW": 0.301915739518072,
+        "negative_SW_N": 15,
+        "negative_SW_fraction": 0.1111111111111111,
+        "computed_as_summary_of_saved_pointwise_SW": true,
+        "negative_fraction_is_not_error_probability": true
+      },
+      "administrative_stress": {
+        "remaining_original_members": 43,
+        "assigned_refit_raw_label": 9,
+        "assigned_intersection": 38,
+        "assigned_Jaccard": 0.38,
+        "assigned_group_size": 95,
+        "all_nonzero_intersections_by_refit_raw_label": {
+          "1": 5,
+          "9": 38
+        },
+        "source_group_absent_from_support": false,
+        "global_assignment_zero_does_not_mean_all_intersections_zero": true
+      },
+      "retained_temporal_Jaccard_range": [
+        0.7342657342657343,
+        0.8188405797101449
+      ],
+      "named_examples": [
+        {
+          "ID": "1971",
+          "native_oktmo8": "65701000",
+          "supplier_name": "городской округ город Екатеринбург",
+          "supplier_type": "городской округ",
+          "supplier_region": "Свердловская область",
+          "december_consumption_RUB": {
+            "Все категории": 50463.0,
+            "Продовольствие": 17614.0,
+            "Здоровье": 2753.0,
+            "Общественное питание": 2955.0,
+            "Транспорт": 3198.0,
+            "Маркетплейсы": 6997.0
+          },
+          "context_2024": {
+            "population_jan1_2024": 1580109.0,
+            "market_access_2024": 298.5,
+            "organization_salary_RUB_2024": 101589.0,
+            "organization_workers_per_resident_2024": 0.2967909175885967,
+            "education_worker_share_2024": 0.10279937393648099
+          },
+          "NCut_group": 6,
+          "SSE_group": 6,
+          "NCut_SW": 0.4634870847247734,
+          "SSE_SW": 0.5051401850919259
+        }
+      ],
+      "example_selection": "Only previously reviewed analytical cases; not medoids or representative sampling. None invented for remaining groups.",
+      "practical_question_ru": "Как различаются расходные профили сопоставимых внутригородских единиц этого диапазона и более высоких диапазонов G8/G9?",
+      "limitations_ru": [
+        "Столичная характеристика относится к подтверждённой части, а не ко всем участникам. Внутригородские единицы нельзя автоматически приравнивать к самостоятельным городам и районам. Расходная градация не доказывает единую столичную функцию или богатство жителей."
+      ],
+      "text_blocks_ru": {
+        "scope": "Декабрь 2024 · NCut, K=10. Территорий: 135. Контекст 2024: 114/135 территорий; регионов в покрытой части: 13.",
+        "Total_definition": "Total — модельная оценка средних безналичных расходов жителей за месяц, а не общий оборот территории. Медиана и центральные 50% ниже описывают территориальные показатели, а не распределение расходов между людьми.",
+        "meaning": "Высокие расходы сочетаются со столичной концентрацией в известной географии. Среди G6/G8/G9 это нижний расходный диапазон. В группе есть и территории вне Москвы и Санкт-Петербурга; название не описывает каждого участника.",
+        "numbers": "Медиана Total — 55 346 ₽ в месяц; центральные 50% территорий — 52 997–57 217 ₽. Медианы покрытой контекстом части: зарплата охваченных организаций — 109 613 ₽/месяц; индекс доступности рынков — 405,80 (индекс).",
+        "nearest_contrast": "Сопоставление с ближайшей расходной группой G8: общие расходы Total 55 346 против 62 759,5 ₽; общественное питание 3 385 против 4 245 ₽; продовольствие 18 375 против 19 756 ₽. Ближайшая группа определена по расстоянию между средними преобразованных признаков X6. Рублёвые медианы показывают содержательное отличие; контекст в подборе не участвовал.",
+        "administrative_composition": "городские округа — 36; муниципальные районы — 6; муниципальные округа — 1; внутригородские территории — 92. Тип установлен для всей группы; это отдельная опора от экономического контекста. В покрытой контекстом части подтверждены внутригородские территории Москвы/Санкт-Петербурга: 83/114; этот географический охват не расширяется до полной группы.",
+        "reliability": "Jaccard состава: среднее 0,887, минимум 0,719 в десяти декабрьских выборках 80%. Средний SW полного декабря 0,302; отрицателен у 15/135 (11,11%). После исключения внутригородских из всей сети остаются 43/135 исходных участников; Jaccard назначенного соответствия 0,380.",
+        "limitations": "Столичная характеристика относится к подтверждённой части, а не ко всем участникам. Внутригородские единицы нельзя автоматически приравнивать к самостоятельным городам и районам. Расходная градация не доказывает единую столичную функцию или богатство жителей.",
+        "verified_example": "Городской округ город Екатеринбург (ID 1971) тоже входит в G6: Total 50 463 ₽. Этот проверенный пример показывает, почему столичную концентрацию нельзя приписывать каждому участнику.",
+        "practical_question": "Как различаются расходные профили сопоставимых внутригородских единиц этого диапазона и более высоких диапазонов G8/G9?"
+      },
+      "sources": [
+        {
+          "source": "profiles",
+          "json_pointer": "/profiles/6"
+        },
+        {
+          "source": "accepted_addendum",
+          "json_pointer": "/groups/6"
+        },
+        {
+          "source": "meaning",
+          "json_pointer": "/profiles/6"
+        },
+        {
+          "source": "context",
+          "json_pointer": "/profiles/6"
+        },
+        {
+          "source": "accepted_decision",
+          "section": "Что меняется в содержательном объяснении"
+        },
+        {
+          "source": "cases",
+          "section": "case1/anchor"
+        }
+      ]
+    },
+    {
+      "group_id": "G7",
+      "name_ru": "Высокие расходы и зарплата организаций при низкой доступности рынков",
+      "source_month": "2024-12",
+      "method": "NCut",
+      "K": 10,
+      "original_members_sha256_newline_utf8": "d342c264e5b5447e78e3eb281de3b1eacc6cd3bd4c63b00c142799b0bd35c552",
+      "status": "READY_TEXT_FOR_LATER_INTEGRATION_NOT_FINAL_PROJECT_ACCEPTANCE",
+      "meaning_ru": "В покрытой части высокие расходы и зарплата организаций сочетаются с низким индексом доступности рынков. Это содержательный контраст со столичными профилями, однако сама группа геометрически неоднородна, и отдельные территории не повторяют её медианные свойства.",
+      "scope": {
+        "labels_method": "NCut",
+        "K": 10,
+        "labels_month": "2024-12",
+        "N": 182,
+        "context_year": 2024,
+        "context_N": 132,
+        "context_coverage": 0.7252747252747253,
+        "context_regions": 21,
+        "context_missing_N": 50
+      },
+      "spending": {
+        "median_Total_RUB": 49720.0,
+        "q25_Total_RUB": 43080.75,
+        "q75_Total_RUB": 54521.75,
+        "full_December_median_Total_RUB": 32172.0,
+        "nearest_group": "G3",
+        "nearest_comparison_original_units": [
+          {
+            "feature": "RUB_Total",
+            "label": "общие расходы Total",
+            "own": 49720.0,
+            "nearest": 36151.5,
+            "unit": "₽/месяц"
+          },
+          {
+            "feature": "RUB_restaurants",
+            "label": "общественное питание",
+            "own": 1599.0,
+            "nearest": 987.0,
+            "unit": "₽/месяц"
+          },
+          {
+            "feature": "RUB_marketplaces",
+            "label": "маркетплейсы",
+            "own": 7376.5,
+            "nearest": 6745.5,
+            "unit": "₽/месяц"
+          }
+        ]
+      },
+      "context": [
+        {
+          "feature": "organization_salary_RUB_2024",
+          "label": "зарплата охваченных организаций",
+          "unit": "₽/месяц",
+          "median": 111061.45,
+          "N": 132,
+          "period": "2024"
+        },
+        {
+          "feature": "market_access_2024",
+          "label": "индекс доступности рынков",
+          "unit": "индекс",
+          "median": 170.7,
+          "N": 132,
+          "period": "2024"
+        }
+      ],
+      "administrative_composition": {
+        "support_scope": "all original December group members",
+        "intra_city_N": 5,
+        "non_intra_N": 177,
+        "intra_city_fraction": 0.027472527472527472,
+        "unknown_type_N": 0,
+        "exact_type_counts": {
+          "urban_okrug": 67,
+          "municipal_district": 76,
+          "municipal_okrug": 34,
+          "intra_city": 5
+        },
+        "interval_rule": "year_from <= year < year_to",
+        "not_equal_to_context_coverage_or_Moscow_SPb_geography": true
+      },
+      "context_capital_confirmed_N": 0,
+      "stability": {
+        "draws": 10,
+        "sampling_fraction": 0.8,
+        "draw_N": 1682,
+        "reference_refitted_on_draw_IDs_full_calendar": true,
+        "matching": "Hungarian maximum sum clusterwise Jaccard on common IDs",
+        "mean_Jaccard": 0.8520906440834739,
+        "minimum_Jaccard": 0.7192982456140351,
+        "individual_draws": [
+          {
+            "task_id": "S202412-01",
+            "Jaccard": 0.7852760736196319
+          },
+          {
+            "task_id": "S202412-02",
+            "Jaccard": 0.9551282051282052
+          },
+          {
+            "task_id": "S202412-03",
+            "Jaccard": 0.7192982456140351
+          },
+          {
+            "task_id": "S202412-04",
+            "Jaccard": 0.8285714285714286
+          },
+          {
+            "task_id": "S202412-05",
+            "Jaccard": 0.967948717948718
+          },
+          {
+            "task_id": "S202412-06",
+            "Jaccard": 0.891156462585034
+          },
+          {
+            "task_id": "S202412-07",
+            "Jaccard": 0.7758620689655172
+          },
+          {
+            "task_id": "S202412-08",
+            "Jaccard": 0.8383233532934131
+          },
+          {
+            "task_id": "S202412-09",
+            "Jaccard": 0.8636363636363636
+          },
+          {
+            "task_id": "S202412-10",
+            "Jaccard": 0.8957055214723927
+          }
+        ],
+        "not_temporal_stability_or_confidence_interval": true
+      },
+      "geometry": {
+        "mean_SW": -0.12225486931086514,
+        "negative_SW_N": 116,
+        "negative_SW_fraction": 0.6373626373626373,
+        "computed_as_summary_of_saved_pointwise_SW": true,
+        "negative_fraction_is_not_error_probability": true
+      },
+      "administrative_stress": {
+        "remaining_original_members": 177,
+        "assigned_refit_raw_label": 8,
+        "assigned_intersection": 117,
+        "assigned_Jaccard": 0.6062176165803109,
+        "assigned_group_size": 133,
+        "all_nonzero_intersections_by_refit_raw_label": {
+          "2": 14,
+          "4": 2,
+          "8": 117,
+          "9": 44
+        },
+        "source_group_absent_from_support": false,
+        "global_assignment_zero_does_not_mean_all_intersections_zero": true
+      },
+      "retained_temporal_Jaccard_range": [
+        0.5070422535211268,
+        0.6648648648648648
+      ],
+      "named_examples": [
+        {
+          "ID": "1480",
+          "native_oktmo8": "46776000",
+          "supplier_name": "городской округ Ступино",
+          "supplier_type": "городской округ",
+          "supplier_region": "Московская область",
+          "december_consumption_RUB": {
+            "Все категории": 51486.0,
+            "Продовольствие": 18462.0,
+            "Здоровье": 2367.0,
+            "Общественное питание": 2225.0,
+            "Транспорт": 3023.0,
+            "Маркетплейсы": 9755.0
+          },
+          "context_2024": {
+            "population_jan1_2024": 118129.0,
+            "market_access_2024": 441.1,
+            "organization_salary_RUB_2024": 102284.6,
+            "organization_workers_per_resident_2024": 0.2474328911613575,
+            "education_worker_share_2024": 0.10178247630777652
+          },
+          "NCut_group": 7,
+          "SSE_group": 6,
+          "NCut_SW": -0.6545682273221969,
+          "SSE_SW": 0.5459339499820934
+        }
+      ],
+      "example_selection": "Only previously reviewed analytical cases; not medoids or representative sampling. None invented for remaining groups.",
+      "practical_question_ru": "Какие высокорасходные территории имеют разную доступность рынков и требует ли конкретное назначение просмотра альтернативы SSE?",
+      "limitations_ru": [
+        "Наличие контекстного объяснения не устраняет слабую геометрическую границу G7. Не установлены ресурсная или промышленная специализация, высокая стоимость жизни либо причина высокой зарплаты. Низкий индекс доступности рынков не равен измеренной плохой дороге."
+      ],
+      "text_blocks_ru": {
+        "scope": "Декабрь 2024 · NCut, K=10. Территорий: 182. Контекст 2024: 132/182 территорий; регионов в покрытой части: 21.",
+        "Total_definition": "Total — модельная оценка средних безналичных расходов жителей за месяц, а не общий оборот территории. Медиана и центральные 50% ниже описывают территориальные показатели, а не распределение расходов между людьми.",
+        "meaning": "В покрытой части высокие расходы и зарплата организаций сочетаются с низким индексом доступности рынков. Это содержательный контраст со столичными профилями, однако сама группа геометрически неоднородна, и отдельные территории не повторяют её медианные свойства.",
+        "numbers": "Медиана Total — 49 720 ₽ в месяц; центральные 50% территорий — 43 080,75–54 521,75 ₽. Медианы покрытой контекстом части: зарплата охваченных организаций — 111 061,45 ₽/месяц; индекс доступности рынков — 170,7 (индекс).",
+        "nearest_contrast": "Сопоставление с ближайшей расходной группой G3: общие расходы Total 49 720 против 36 151,5 ₽; общественное питание 1 599 против 987 ₽; маркетплейсы 7 376,5 против 6 745,5 ₽. Ближайшая группа определена по расстоянию между средними преобразованных признаков X6. Рублёвые медианы показывают содержательное отличие; контекст в подборе не участвовал.",
+        "administrative_composition": "городские округа — 67; муниципальные районы — 76; муниципальные округа — 34; внутригородские территории — 5. Тип установлен для всей группы; это отдельная опора от экономического контекста.",
+        "reliability": "Jaccard состава: среднее 0,852, минимум 0,719 в десяти декабрьских выборках 80%. Средний SW полного декабря -0,122; отрицателен у 116/182 (63,74%). После исключения внутригородских из всей сети остаются 177/182 исходных участников; Jaccard назначенного соответствия 0,606.",
+        "limitations": "Наличие контекстного объяснения не устраняет слабую геометрическую границу G7. Не установлены ресурсная или промышленная специализация, высокая стоимость жизни либо причина высокой зарплаты. Низкий индекс доступности рынков не равен измеренной плохой дороге.",
+        "verified_example": "Городской округ Ступино (ID 1480): Total 51 486 ₽, доступность рынков 441,1 при медиане покрытой G7 170,7. Его SW в NCut10 равен −0,655, в группе 6 альтернативной модели SSE10 — +0,546. Низкую доступность из названия G7 на эту территорию переносить нельзя.",
+        "practical_question": "Какие высокорасходные территории имеют разную доступность рынков и требует ли конкретное назначение просмотра альтернативы SSE?"
+      },
+      "sources": [
+        {
+          "source": "profiles",
+          "json_pointer": "/profiles/7"
+        },
+        {
+          "source": "accepted_addendum",
+          "json_pointer": "/groups/7"
+        },
+        {
+          "source": "meaning",
+          "json_pointer": "/profiles/7"
+        },
+        {
+          "source": "context",
+          "json_pointer": "/profiles/7"
+        },
+        {
+          "source": "accepted_decision",
+          "section": "Что меняется в содержательном объяснении"
+        },
+        {
+          "source": "cases",
+          "section": "case3/territory"
+        }
+      ]
+    },
+    {
+      "group_id": "G8",
+      "name_ru": "Столичная концентрация: более высокий уровень расходов",
+      "source_month": "2024-12",
+      "method": "NCut",
+      "K": 10,
+      "original_members_sha256_newline_utf8": "857d77af97fd45d1643f2b1b654da7c435d83a772deb3ef532bd71f6d5c00677",
+      "status": "READY_TEXT_FOR_LATER_INTEGRATION_NOT_FINAL_PROJECT_ACCEPTANCE",
+      "meaning_ru": "Расходы выше, чем в G6; в покрытой части также выше зарплата организаций и доступность рынков. Почти вся известная география относится к Москве и Санкт-Петербургу. Разница расходного уровня не доказывает другую экономическую функцию.",
+      "scope": {
+        "labels_method": "NCut",
+        "K": 10,
+        "labels_month": "2024-12",
+        "N": 108,
+        "context_year": 2024,
+        "context_N": 99,
+        "context_coverage": 0.9166666666666666,
+        "context_regions": 4,
+        "context_missing_N": 9
+      },
+      "spending": {
+        "median_Total_RUB": 62759.5,
+        "q25_Total_RUB": 61454.5,
+        "q75_Total_RUB": 64073.5,
+        "full_December_median_Total_RUB": 32172.0,
+        "nearest_group": "G6",
+        "nearest_comparison_original_units": [
+          {
+            "feature": "RUB_Total",
+            "label": "общие расходы Total",
+            "own": 62759.5,
+            "nearest": 55346.0,
+            "unit": "₽/месяц"
+          },
+          {
+            "feature": "RUB_restaurants",
+            "label": "общественное питание",
+            "own": 4245.0,
+            "nearest": 3385.0,
+            "unit": "₽/месяц"
+          },
+          {
+            "feature": "RUB_food",
+            "label": "продовольствие",
+            "own": 19756.0,
+            "nearest": 18375.0,
+            "unit": "₽/месяц"
+          }
+        ]
+      },
+      "context": [
+        {
+          "feature": "organization_salary_RUB_2024",
+          "label": "зарплата охваченных организаций",
+          "unit": "₽/месяц",
+          "median": 134399.1,
+          "N": 99,
+          "period": "2024"
+        },
+        {
+          "feature": "market_access_2024",
+          "label": "индекс доступности рынков",
+          "unit": "индекс",
+          "median": 598.6,
+          "N": 99,
+          "period": "2024"
+        }
+      ],
+      "administrative_composition": {
+        "support_scope": "all original December group members",
+        "intra_city_N": 98,
+        "non_intra_N": 10,
+        "intra_city_fraction": 0.9074074074074074,
+        "unknown_type_N": 0,
+        "exact_type_counts": {
+          "urban_okrug": 10,
+          "municipal_district": 0,
+          "municipal_okrug": 0,
+          "intra_city": 98
+        },
+        "interval_rule": "year_from <= year < year_to",
+        "not_equal_to_context_coverage_or_Moscow_SPb_geography": true
+      },
+      "context_capital_confirmed_N": 93,
+      "stability": {
+        "draws": 10,
+        "sampling_fraction": 0.8,
+        "draw_N": 1682,
+        "reference_refitted_on_draw_IDs_full_calendar": true,
+        "matching": "Hungarian maximum sum clusterwise Jaccard on common IDs",
+        "mean_Jaccard": 0.9314259382630068,
+        "minimum_Jaccard": 0.85,
+        "individual_draws": [
+          {
+            "task_id": "S202412-01",
+            "Jaccard": 0.9444444444444444
+          },
+          {
+            "task_id": "S202412-02",
+            "Jaccard": 0.9468085106382979
+          },
+          {
+            "task_id": "S202412-03",
+            "Jaccard": 0.85
+          },
+          {
+            "task_id": "S202412-04",
+            "Jaccard": 0.9333333333333333
+          },
+          {
+            "task_id": "S202412-05",
+            "Jaccard": 0.9655172413793104
+          },
+          {
+            "task_id": "S202412-06",
+            "Jaccard": 0.9270833333333334
+          },
+          {
+            "task_id": "S202412-07",
+            "Jaccard": 0.8854166666666666
+          },
+          {
+            "task_id": "S202412-08",
+            "Jaccard": 0.9186046511627907
+          },
+          {
+            "task_id": "S202412-09",
+            "Jaccard": 0.9545454545454546
+          },
+          {
+            "task_id": "S202412-10",
+            "Jaccard": 0.9885057471264368
+          }
+        ],
+        "not_temporal_stability_or_confidence_interval": true
+      },
+      "geometry": {
+        "mean_SW": 0.47905837607021684,
+        "negative_SW_N": 0,
+        "negative_SW_fraction": 0.0,
+        "computed_as_summary_of_saved_pointwise_SW": true,
+        "negative_fraction_is_not_error_probability": true
+      },
+      "administrative_stress": {
+        "remaining_original_members": 10,
+        "assigned_refit_raw_label": 4,
+        "assigned_intersection": 0,
+        "assigned_Jaccard": 0.0,
+        "assigned_group_size": 265,
+        "all_nonzero_intersections_by_refit_raw_label": {
+          "9": 10
+        },
+        "source_group_absent_from_support": false,
+        "global_assignment_zero_does_not_mean_all_intersections_zero": true
+      },
+      "retained_temporal_Jaccard_range": [
+        0.7518248175182481,
+        0.8803418803418803
+      ],
+      "named_examples": [],
+      "example_selection": "Only previously reviewed analytical cases; not medoids or representative sampling. None invented for remaining groups.",
+      "practical_question_ru": "Ограничивается ли отличие от G6 общим расходным уровнем или у сопоставимых по административному виду территорий меняются отдельные категории?",
+      "limitations_ru": [
+        "После исключения внутригородских единиц все десять оставшихся участников попадают в новую группу с номером 9. Ноль Jaccard относится к иной группе, назначенной глобальным взаимно-однозначным сопоставлением; он не означает отсутствия любых пересечений. Новый номер 9 не является исходной G9. Более высокий расходный уровень не доказывает иную функцию или более высокое качество жизни."
+      ],
+      "text_blocks_ru": {
+        "scope": "Декабрь 2024 · NCut, K=10. Территорий: 108. Контекст 2024: 99/108 территорий; регионов в покрытой части: 4.",
+        "Total_definition": "Total — модельная оценка средних безналичных расходов жителей за месяц, а не общий оборот территории. Медиана и центральные 50% ниже описывают территориальные показатели, а не распределение расходов между людьми.",
+        "meaning": "Расходы выше, чем в G6; в покрытой части также выше зарплата организаций и доступность рынков. Почти вся известная география относится к Москве и Санкт-Петербургу. Разница расходного уровня не доказывает другую экономическую функцию.",
+        "numbers": "Медиана Total — 62 759,5 ₽ в месяц; центральные 50% территорий — 61 454,5–64 073,5 ₽. Медианы покрытой контекстом части: зарплата охваченных организаций — 134 399,1 ₽/месяц; индекс доступности рынков — 598,6 (индекс).",
+        "nearest_contrast": "Сопоставление с ближайшей расходной группой G6: общие расходы Total 62 759,5 против 55 346 ₽; общественное питание 4 245 против 3 385 ₽; продовольствие 19 756 против 18 375 ₽. Ближайшая группа определена по расстоянию между средними преобразованных признаков X6. Рублёвые медианы показывают содержательное отличие; контекст в подборе не участвовал.",
+        "administrative_composition": "городские округа — 10; внутригородские территории — 98. Тип установлен для всей группы; это отдельная опора от экономического контекста. В покрытой контекстом части подтверждены внутригородские территории Москвы/Санкт-Петербурга: 93/99; этот географический охват не расширяется до полной группы.",
+        "reliability": "Jaccard состава: среднее 0,931, минимум 0,850 в десяти декабрьских выборках 80%. Средний SW полного декабря 0,479; отрицателен у 0/108 (0,00%). После исключения внутригородских из всей сети остаются 10/108 исходных участников; Jaccard назначенного соответствия 0,000.",
+        "limitations": "После исключения внутригородских единиц все десять оставшихся участников попадают в новую группу с номером 9. Ноль Jaccard относится к иной группе, назначенной глобальным взаимно-однозначным сопоставлением; он не означает отсутствия любых пересечений. Новый номер 9 не является исходной G9. Более высокий расходный уровень не доказывает иную функцию или более высокое качество жизни.",
+        "verified_example": null,
+        "practical_question": "Ограничивается ли отличие от G6 общим расходным уровнем или у сопоставимых по административному виду территорий меняются отдельные категории?"
+      },
+      "sources": [
+        {
+          "source": "profiles",
+          "json_pointer": "/profiles/8"
+        },
+        {
+          "source": "accepted_addendum",
+          "json_pointer": "/groups/8"
+        },
+        {
+          "source": "meaning",
+          "json_pointer": "/profiles/8"
+        },
+        {
+          "source": "context",
+          "json_pointer": "/profiles/8"
+        },
+        {
+          "source": "accepted_decision",
+          "section": "Что меняется в содержательном объяснении"
+        }
+      ]
+    },
+    {
+      "group_id": "G9",
+      "name_ru": "Столичная концентрация: верхний расходный диапазон",
+      "source_month": "2024-12",
+      "method": "NCut",
+      "K": 10,
+      "original_members_sha256_newline_utf8": "ca5d4ba4296271d09add039167ccb3889715e897603d8d71eda92d9cb92ad604",
+      "status": "READY_TEXT_FOR_LATER_INTEGRATION_NOT_FINAL_PROJECT_ACCEPTANCE",
+      "meaning_ru": "Верхняя медиана общих расходов среди десяти групп. Все территории с доступным контекстом относятся к Москве или Санкт-Петербургу. Высокое отношение работников организаций к жителям требует отдельного объяснения и не является уровнем занятости жителей.",
+      "scope": {
+        "labels_method": "NCut",
+        "K": 10,
+        "labels_month": "2024-12",
+        "N": 48,
+        "context_year": 2024,
+        "context_N": 44,
+        "context_coverage": 0.9166666666666666,
+        "context_regions": 2,
+        "context_missing_N": 4
+      },
+      "spending": {
+        "median_Total_RUB": 74505.5,
+        "q25_Total_RUB": 70739.0,
+        "q75_Total_RUB": 79388.0,
+        "full_December_median_Total_RUB": 32172.0,
+        "nearest_group": "G8",
+        "nearest_comparison_original_units": [
+          {
+            "feature": "RUB_Total",
+            "label": "общие расходы Total",
+            "own": 74505.5,
+            "nearest": 62759.5,
+            "unit": "₽/месяц"
+          },
+          {
+            "feature": "RUB_restaurants",
+            "label": "общественное питание",
+            "own": 5776.0,
+            "nearest": 4245.0,
+            "unit": "₽/месяц"
+          },
+          {
+            "feature": "RUB_marketplaces",
+            "label": "маркетплейсы",
+            "own": 10673.5,
+            "nearest": 10178.5,
+            "unit": "₽/месяц"
+          }
+        ]
+      },
+      "context": [
+        {
+          "feature": "organization_salary_RUB_2024",
+          "label": "зарплата охваченных организаций",
+          "unit": "₽/месяц",
+          "median": 184170.8,
+          "N": 44,
+          "period": "2024"
+        },
+        {
+          "feature": "organization_workers_per_resident_2024",
+          "label": "работники охваченных организаций / жители",
+          "unit": "работников на жителя",
+          "median": 0.5756334173227329,
+          "N": 44,
+          "period": "2024"
+        }
+      ],
+      "administrative_composition": {
+        "support_scope": "all original December group members",
+        "intra_city_N": 47,
+        "non_intra_N": 1,
+        "intra_city_fraction": 0.9791666666666666,
+        "unknown_type_N": 0,
+        "exact_type_counts": {
+          "urban_okrug": 1,
+          "municipal_district": 0,
+          "municipal_okrug": 0,
+          "intra_city": 47
+        },
+        "interval_rule": "year_from <= year < year_to",
+        "not_equal_to_context_coverage_or_Moscow_SPb_geography": true
+      },
+      "context_capital_confirmed_N": 44,
+      "stability": {
+        "draws": 10,
+        "sampling_fraction": 0.8,
+        "draw_N": 1682,
+        "reference_refitted_on_draw_IDs_full_calendar": true,
+        "matching": "Hungarian maximum sum clusterwise Jaccard on common IDs",
+        "mean_Jaccard": 0.9214837016707593,
+        "minimum_Jaccard": 0.8372093023255814,
+        "individual_draws": [
+          {
+            "task_id": "S202412-01",
+            "Jaccard": 0.8913043478260869
+          },
+          {
+            "task_id": "S202412-02",
+            "Jaccard": 1.0
+          },
+          {
+            "task_id": "S202412-03",
+            "Jaccard": 0.8372093023255814
+          },
+          {
+            "task_id": "S202412-04",
+            "Jaccard": 0.9285714285714286
+          },
+          {
+            "task_id": "S202412-05",
+            "Jaccard": 0.9333333333333333
+          },
+          {
+            "task_id": "S202412-06",
+            "Jaccard": 1.0
+          },
+          {
+            "task_id": "S202412-07",
+            "Jaccard": 0.9302325581395349
+          },
+          {
+            "task_id": "S202412-08",
+            "Jaccard": 0.8604651162790697
+          },
+          {
+            "task_id": "S202412-09",
+            "Jaccard": 0.8837209302325582
+          },
+          {
+            "task_id": "S202412-10",
+            "Jaccard": 0.95
+          }
+        ],
+        "not_temporal_stability_or_confidence_interval": true
+      },
+      "geometry": {
+        "mean_SW": 0.36422914024525754,
+        "negative_SW_N": 6,
+        "negative_SW_fraction": 0.125,
+        "computed_as_summary_of_saved_pointwise_SW": true,
+        "negative_fraction_is_not_error_probability": true
+      },
+      "administrative_stress": {
+        "remaining_original_members": 1,
+        "assigned_refit_raw_label": 0,
+        "assigned_intersection": 0,
+        "assigned_Jaccard": 0.0,
+        "assigned_group_size": 131,
+        "all_nonzero_intersections_by_refit_raw_label": {
+          "8": 1
+        },
+        "source_group_absent_from_support": false,
+        "global_assignment_zero_does_not_mean_all_intersections_zero": true
+      },
+      "retained_temporal_Jaccard_range": [
+        0.7708333333333334,
+        0.9230769230769231
+      ],
+      "named_examples": [],
+      "example_selection": "Only previously reviewed analytical cases; not medoids or representative sampling. None invented for remaining groups.",
+      "practical_question_ru": "Что показывает индивидуальная проверка верхнего расходного диапазона по сравнению с G8, и каков знаменатель показателя работников на жителя?",
+      "limitations_ru": [
+        "Единственный оставшийся после административного исключения участник попадает в новую группу с номером 8. Нулевой Jaccard назначенной пары не означает отсутствия пересечений со всеми новыми группами; новый номер 8 не является исходной G8. Работники и жители — разные совокупности: их отношение не доказывает деловой центр или маятниковую миграцию. География четырёх территорий без контекста здесь не установлена."
+      ],
+      "text_blocks_ru": {
+        "scope": "Декабрь 2024 · NCut, K=10. Территорий: 48. Контекст 2024: 44/48 территорий; регионов в покрытой части: 2.",
+        "Total_definition": "Total — модельная оценка средних безналичных расходов жителей за месяц, а не общий оборот территории. Медиана и центральные 50% ниже описывают территориальные показатели, а не распределение расходов между людьми.",
+        "meaning": "Верхняя медиана общих расходов среди десяти групп. Все территории с доступным контекстом относятся к Москве или Санкт-Петербургу. Высокое отношение работников организаций к жителям требует отдельного объяснения и не является уровнем занятости жителей.",
+        "numbers": "Медиана Total — 74 505,5 ₽ в месяц; центральные 50% территорий — 70 739–79 388 ₽. Медианы покрытой контекстом части: зарплата охваченных организаций — 184 170,8 ₽/месяц; работники охваченных организаций / жители — 0,576 работников на жителя.",
+        "nearest_contrast": "Сопоставление с ближайшей расходной группой G8: общие расходы Total 74 505,5 против 62 759,5 ₽; общественное питание 5 776 против 4 245 ₽; маркетплейсы 10 673,5 против 10 178,5 ₽. Ближайшая группа определена по расстоянию между средними преобразованных признаков X6. Рублёвые медианы показывают содержательное отличие; контекст в подборе не участвовал.",
+        "administrative_composition": "городские округа — 1; внутригородские территории — 47. Тип установлен для всей группы; это отдельная опора от экономического контекста. В покрытой контекстом части подтверждены внутригородские территории Москвы/Санкт-Петербурга: 44/44; этот географический охват не расширяется до полной группы.",
+        "reliability": "Jaccard состава: среднее 0,921, минимум 0,837 в десяти декабрьских выборках 80%. Средний SW полного декабря 0,364; отрицателен у 6/48 (12,50%). После исключения внутригородских из всей сети остаются 1/48 исходных участников; Jaccard назначенного соответствия 0,000.",
+        "limitations": "Единственный оставшийся после административного исключения участник попадает в новую группу с номером 8. Нулевой Jaccard назначенной пары не означает отсутствия пересечений со всеми новыми группами; новый номер 8 не является исходной G8. Работники и жители — разные совокупности: их отношение не доказывает деловой центр или маятниковую миграцию. География четырёх территорий без контекста здесь не установлена.",
+        "verified_example": null,
+        "practical_question": "Что показывает индивидуальная проверка верхнего расходного диапазона по сравнению с G8, и каков знаменатель показателя работников на жителя?"
+      },
+      "sources": [
+        {
+          "source": "profiles",
+          "json_pointer": "/profiles/9"
+        },
+        {
+          "source": "accepted_addendum",
+          "json_pointer": "/groups/9"
+        },
+        {
+          "source": "meaning",
+          "json_pointer": "/profiles/9"
+        },
+        {
+          "source": "context",
+          "json_pointer": "/profiles/9"
+        },
+        {
+          "source": "accepted_decision",
+          "section": "Что меняется в содержательном объяснении"
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "accepted_decision": {
+      "file": "workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "absolute_path": "C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/SCIENTIFIC_DECISION.md",
+      "sha256": "befa0423392bd077cb83906717347c8ad7ae60649acb5b1c0864b5e62e9a81a3"
+    },
+    "accepted_addendum": {
+      "file": "workstreams/research_vm_20261009_r00/interpretation_addendum/CLUSTER_EVIDENCE.json",
+      "absolute_path": "C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/interpretation_addendum/CLUSTER_EVIDENCE.json",
+      "sha256": "a76c131544070652c6dd9e55ee4602a54612280ab4eb691e7a79865ac4cf06ef"
+    },
+    "addendum_acceptance": {
+      "file": "workstreams/research_vm_20261009_r00/tz_review/INTERPRETATION_STATUS_DELTA_REVIEW.json",
+      "absolute_path": "C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/tz_review/INTERPRETATION_STATUS_DELTA_REVIEW.json",
+      "sha256": "70c3d45760843effcf860863826f77004f2f63f668183111c267fc1b314b4636"
+    },
+    "profiles": {
+      "file": "workstreams/economic_interpretation_20261008_r00/profiles/PROFILE_CLAIMS.json",
+      "absolute_path": "C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/profiles/PROFILE_CLAIMS.json",
+      "sha256": "0758fdcd6538dd9e5b5e0e610d99ea68e3e2aea5e182671a3d51116ca34987a2"
+    },
+    "profile_acceptance": {
+      "file": "workstreams/economic_interpretation_20261008_r00/review/REVIEW.json",
+      "absolute_path": "C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/review/REVIEW.json",
+      "sha256": "b796239c0754bd670a7d54a3072e6ee788a1920267a3e3d2bdaa71d9916dbc4a"
+    },
+    "meaning": {
+      "file": "workstreams/semantic_gate_20261008_r00/meaning/FACTS.json",
+      "absolute_path": "C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/meaning/FACTS.json",
+      "sha256": "2ae977842565eca5cf2f7a44042de25cff94810246f2e5bb92ba231ce9cf3d1f"
+    },
+    "context": {
+      "file": "workstreams/semantic_gate_20261008_r00/context/FACTS.json",
+      "absolute_path": "C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/semantic_gate_20261008_r00/context/FACTS.json",
+      "sha256": "97c56655bc3cc1371c855a5033aafb48f6e00dafe0bdecf68f20323b80d43861"
+    },
+    "cases": {
+      "file": "workstreams/economic_interpretation_20261008_r00/use_cases/FACTS.json",
+      "absolute_path": "C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/use_cases/FACTS.json",
+      "sha256": "08269e386b0fd92fc83354a4e057bf143782c7684f1060c2b21b9e1b65ac5818"
+    },
+    "case_acceptance": {
+      "file": "workstreams/economic_interpretation_20261008_r00/ROOT_CASE_REVIEW.json",
+      "absolute_path": "C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/economic_interpretation_20261008_r00/ROOT_CASE_REVIEW.json",
+      "sha256": "640045a57b01b3bae4aa5707da451a323eb1910590fb562d125add5db82aa540"
+    },
+    "requirements": {
+      "file": "workstreams/research_vm_20261009_r00/content_readiness/FINAL_CONTENT_REQUIREMENTS.json",
+      "absolute_path": "C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/content_readiness/FINAL_CONTENT_REQUIREMENTS.json",
+      "sha256": "246b919dba1826a161ff345f47c03c019bd528d48ac5b4b7f3e87861e19e1f0a"
+    },
+    "baseline": {
+      "file": "workstreams/research_closure_20261008_r00/vm/package_r03/BASELINES.json",
+      "absolute_path": "C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_closure_20261008_r00/vm/package_r03/BASELINES.json",
+      "sha256": "28c23bfd189dae6310798f9ef2a0cb15c758330824b24750e6b04c391c6c3cc2"
+    },
+    "admin": {
+      "file": "workstreams/research_vm_20261009_r00/research_readback_r01/ADMIN_COMPARISONS.json",
+      "absolute_path": "C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/research_readback_r01/ADMIN_COMPARISONS.json",
+      "sha256": "3f3f260f58fa815f303d7d6669a6ad31d29f360d40d304c5dd80f135f0700347"
+    },
+    "actual_full": {
+      "file": "workstreams/research_vm_20261009_r00/download_r01/work/calibration01/A202412-full/output/cells/NCut_K10/result.json",
+      "absolute_path": "C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/download_r01/work/calibration01/A202412-full/output/cells/NCut_K10/result.json",
+      "sha256": "c1e4f3833dde80f072674dd5f96f4f81f8c03738a132ac245374cd612f054785"
+    },
+    "actual_coordinates": {
+      "file": "workstreams/research_vm_20261009_r00/download_r01/work/calibration01/A202412-full/output/coordinates.npz",
+      "absolute_path": "C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/download_r01/work/calibration01/A202412-full/output/coordinates.npz",
+      "sha256": "1048bf98024ecabda52513b9491f9e427fc0b3bc2ba180cab195f29cee0c7051"
+    }
+  },
+  "scope": {
+    "new_fits": 0,
+    "new_graphs": 0,
+    "new_ICVI": 0,
+    "SSH": 0,
+    "old_files_modified": false,
+    "frontend_edits": 0,
+    "final_report_edited": false,
+    "presentation_edited": false,
+    "Zhenya_package_created": false
+  },
+  "reading_rules": "# Десять карточек расходных профилей\n\nГотовые тексты для последующей интеграции. Исходные ID, названия и модель не изменены. Это самостоятельные карточки содержания; итоговый отчёт, презентация, фронтенд и пакет передачи ими не обновлены. Полный вычислительный контроль 504+28 на новой ВМ принят 9 октября; научная область применения карточек остаётся описательной.\n\nВсе группы относятся к исходному NCut10 за декабрь 2024: 2103 наблюдаемые территории. Total — модельная оценка средних безналичных расходов жителей за месяц, а не общий оборот территории; медианы и квартили ниже рассчитаны между территориальными показателями, не между людьми. Центральные 50% — разброс, не доверительный интервал. Номинальные суммы не очищены от ценовых различий.\n\nКонтекст 2024 доступен для 1666 территорий. Население относится к 01.01.2024; зарплата — к работникам охваченных организаций без малого предпринимательства за 2024 год, а не ко всем доходам жителей. Средний контекст группы не приписывается каждому участнику. Полный административный справочник не добавляет отсутствующий экономический контекст и не устанавливает географию всех неизвестных строк.\n\nJaccard показывает сохранение состава в десяти выборках 80% из декабря с переоценкой нормировки на выбранных ID за 24 месяца и глобальным сопоставлением групп. Он не измеряет неизменность во времени. SW характеризует евклидову компактность; доля отрицательных SW не равна вероятности ошибочной метки. Административная проверка исключает внутригородские единицы из всей сети. Её результат не является причинным эффектом статуса.\n\nПрактические вопросы ниже предназначены для индивидуального сравнения профилей и контекста. Кластер не становится обязательным фильтром аналогов: добавочная польза такого ограничения в принятом количественном тесте не подтверждена.\n",
+  "current_full_control_receipts": {
+    "root": {
+      "path": "workstreams/research_vm_20261009_r00/FINAL_ROOT_ACCEPTANCE_r00.json",
+      "absolute_path": "C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/FINAL_ROOT_ACCEPTANCE_r00.json",
+      "sha256": "8a96c8f59a29e8b628b1a978de319aa5b653af4722894c47e4fe77f136816ef2",
+      "bytes": 2761
+    },
+    "independent": {
+      "path": "workstreams/research_vm_20261009_r00/final_acceptance_review/FINAL_ACCEPTANCE_r00.json",
+      "absolute_path": "C:/Users/Максим/Documents/ChatGPT/сберИндекс/workstreams/research_vm_20261009_r00/final_acceptance_review/FINAL_ACCEPTANCE_r00.json",
+      "sha256": "600df3a52ee742d8e9cb187758dbc08244b1fe5b404b20a6fd28999c0379015a",
+      "bytes": 43880
+    }
+  }
+}

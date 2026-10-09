@@ -1,0 +1,47 @@
+{
+  "UTC": "2026-10-08T02:07:30.522459+00:00",
+  "role_selection_unchanged": true,
+  "new_external_outcomes_seen": true,
+  "bindings": {
+    "role_decision": {
+      "path": "workstreams\\detailed_typology_model_decision_20261008_r00\\DECISION.json",
+      "sha256": "63b7e2d964e225d30009d288ad7acec9d771a2050f5ba9a6fb8d8b03da127c5a"
+    },
+    "fresh_workflow_OP": {
+      "path": "workstreams\\detailed_typology_replay_received_20261008_r00\\independent_workflow_closure_r00.json",
+      "sha256": "903214b88dd49496d8a1c7c2b2408f32edf66b790c77bc15ef4d88d7374424ac"
+    },
+    "semantic_correction": {
+      "path": "workstreams\\detailed_typology_semantic_correction_independent_review_20261008_r00\\receipt.json",
+      "sha256": "b8a6fc2081e5611227d1f9c21b2ec19e62cfa5697369d5c9f2cfb00554d41f36"
+    },
+    "actual_parity": {
+      "path": "workstreams\\detailed_typology_replay_parity_20261008_r00\\PARITY.json",
+      "sha256": "c2590ddff9b2b091d7e562810d8cf112f44fbef7de28693c2789d0de2dfd288e"
+    }
+  },
+  "P1_semantic_release": "accepted correctedr01 only; obsolete frozen names preserved historically and prohibited for current narrative",
+  "fresh_OP": "PASS",
+  "fresh_parity": "PASS all504+28/897records/exact scientific fields, numericmaxdiff0",
+  "new_external_diagnostics": {
+    "road": "primary not supported",
+    "salary": "mixed_or_region_sensitive"
+  },
+  "frontend_and_Zhenya_package": "deferred",
+  "publication_or_submission": false,
+  "whole_project_complete": false,
+  "core_model_results_locally_accepted": true,
+  "external_bindings": {
+    "road_science": {
+      "path": "workstreams/k10_road_label_actual_scientific_review_20261008_r00/actual_r00/receipt.json",
+      "sha256": "db1366e5cc9ce228ea97e19cf8b6f68b5d1e92c8f87341333cb607278048b36b"
+    },
+    "salary_science": {
+      "path": "workstreams/external_salary_K10_actual_independent_review_20261008_r00/actual_r00/receipt.json",
+      "sha256": "4779abda19c55e1fd2aee285a748630e2f5c21248fb16160c663c71daa11b9f5"
+    }
+  },
+  "VM_required": false,
+  "all_planned_compute_complete": true,
+  "remaining": "base jury/narrative integration; frontend/package/submission deferred"
+}

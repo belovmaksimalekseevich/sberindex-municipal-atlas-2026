@@ -1,0 +1,6 @@
+# Манифесты проверяют точные байты. Git не должен менять окончания строк.
+* -text
+*.pdf binary
+*.pptx binary
+*.npz binary
+*.gz binary
