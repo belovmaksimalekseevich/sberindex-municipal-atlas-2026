@@ -3,6 +3,7 @@ on:
   push:
     branches: [main]
   pull_request:
+  workflow_dispatch:
 permissions:
   contents: read
 jobs:
@@ -20,3 +21,15 @@ jobs:
       - run: python -B -m unittest discover -s experiments -p 'test_*.py'
       - run: python -B experiments/run.py plan --config experiments/configs/ncut.json
       - run: python -B research/release.py verify
+      - run: python -B -m unittest discover -s scripts -p 'test_full_fit_check.py'
+      - name: Calculate one published month
+        run: python -B experiments/run.py run --config experiments/configs/replay-sse6-december.json --out "${{ runner.temp }}/sberindex-sse-replay"
+      - name: Compare with the published groups and metrics
+        run: python -B scripts/check-sse6-replay.py --out "${{ runner.temp }}/sberindex-sse-replay"
+      - name: Check rejection of incomplete or altered results
+        run: python -B scripts/test_sse6_replay.py --out "${{ runner.temp }}/sberindex-sse-replay" --scratch "${{ runner.temp }}/sberindex-replay-tests"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sse-december-k6-replay
+          path: ${{ runner.temp }}/sberindex-sse-replay
+          if-no-files-found: error

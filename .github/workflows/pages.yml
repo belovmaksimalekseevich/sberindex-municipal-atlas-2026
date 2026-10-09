@@ -25,12 +25,7 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npm run verify:data
-      - run: npm run lint
-      - run: npm run test:runtime
-      - run: npm run build
-      - run: npm run verify:dist
-      - run: npm run verify:documents -- --dist
+      - run: npm run check
       - run: touch dist/.nojekyll
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

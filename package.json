@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "check": "npm run verify:data && npm run lint && npm run test:runtime && npm run build && npm run verify:dist && npm run verify:documents -- --dist",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
