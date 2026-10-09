@@ -26,7 +26,7 @@ export function Opening() {
           <div className="hero-copy">
             <p className="kicker">00 · Онлайн-конкурс СберИндекса · «Кластеризация»</p>
             <h1 id="top-t">Какие муниципалитеты тратят похоже?</h1>
-            <p className="lede">Безналичные расходы жителей 2 190 территорий России по шести показателям: сеть сходства, группы похожих МО и то, насколько вывод зависит от способа сравнения.</p>
+            <p className="lede">Сравните безналичные расходы жителей 2 190 территорий России: найдите похожие муниципалитеты, изучите их расходные профили и посмотрите, как меняется состав групп по месяцам.</p>
             <dl className="stats">
               <div className="stat"><dt>муниципалитетов</dt><dd><b>{n(total)}</b></dd></div>
               <div className="stat"><dt>регионов</dt><dd><b>{N.regionsN}</b></dd></div>
@@ -47,13 +47,13 @@ export function Opening() {
           <li><a href="#story"><span className="n">10</span><span className="t">Подробные расходные профили</span>
             <span className="d">NCut10, декабрь 2024: число территорий — {n(N.observedLast)}. Группы различаются уровнем и составом наблюдаемых расходов.</span></a></li>
           <li><a href="?v=SSE_K06#groups"><span className="n">6</span><span className="t">Укрупнённый обзор SSE6</span>
-            <span className="d">В среднем устойчивее на подвыборках июня и декабря 2024, но объединяет часть содержательных различий. Это отдельное разбиение.</span></a></li>
+            <span className="d">Средний ARI: 0,9469 в июне и 0,9252 в декабре 2024, по десять подвыборок из 80% территорий.</span></a></li>
           <li><a href="#atlas-map"><span className="n">{n(completeHistories)}<small> из {n(N.terr.length)}</small></span><span className="t">Полная история за 24 месяца</span>
             <span className="d">Изменения считаются после сопоставления групп на общих территориях. Пропуск публикации не считается переходом.</span></a></li>
           <li><a href="#methods"><span className="n">6</span><span className="t">Индексов качества</span>
             <span className="d">SW, CH, S_Dbw, AVI, AVU и MQ. Неопределённые значения сохраняем; устойчивость и разделённость оцениваем отдельно.</span></a></li>
         </ol>
-        <p className="brief-note">Подробный NCut10, сравнение SSE10 и укрупнённый SSE6 отвечают на разные вопросы. Число групп не складывается: это не иерархия и не доказанные функциональные типы экономик.</p>
+        <p className="brief-note">Начните с шести укрупнённых профилей SSE6; для подробного сравнения перейдите к NCut10 и контрольному SSE10. Это самостоятельные разбиения, их группы не складываются.</p>
       </section>
     </div>
   )
@@ -66,7 +66,7 @@ export function AtlasSection() {
   const cm = entry.state === 'ready' ? entry.data[mi] : null
   return (
     <Sec id="atlas" n="02" title="Где какая группа и чем группы отличаются?"
-      answer={cm ? <>В {monthIn(MONTHS[mi].month)}: число групп — {cm.clusters.length}, наблюдаемых территорий — {n(cm.native_n)}. {catalogOf(config).display_name}. Портреты показывают расходы, примеры и границы интерпретации.</> : <>Загружаем выбранное представление.</>}>
+      answer={cm ? <>В {monthIn(MONTHS[mi].month)}: число групп — {cm.clusters.length}, наблюдаемых территорий — {n(cm.native_n)}. {catalogOf(config).display_name}. Портреты показывают характерные расходы, разброс и примеры территорий.</> : <>Загружаем выбранное представление.</>}>
       <Tabs label="Атлас" items={[
         { id: 'atlas-map', label: 'Карта по месяцам', body: <MapAtlas /> },
         { id: 'groups', label: 'Портреты групп', body: <Bare><Groups /></Bare> },

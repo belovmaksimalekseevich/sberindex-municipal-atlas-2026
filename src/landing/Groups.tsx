@@ -56,8 +56,8 @@ function Card({ cm, g, mi, maxDeviation, config }: { cm: ConfigMonth; g: number;
         })}
       </div>
       <dl className="grp-ex">
-        <div><dt>Примеры высокого SW</dt><dd>{c.typical.length ? c.typical.slice(0, 2).map(x => `${short(x.ti)} (SW ${num(x.sw, 2)})`).join(', ') : 'не переданы'}</dd></div>
-        <div><dt>Примеры малого SW</dt><dd>{c.boundary.length ? c.boundary.slice(0, 2).map(x => `${short(x.ti)} (SW ${num(x.sw, 2)})`).join(', ') : 'не переданы'}</dd></div>
+        <div><dt>Примеры с наибольшим SW</dt><dd>{c.typical.length ? c.typical.slice(0, 2).map(x => `${short(x.ti)} (SW ${num(x.sw, 2)})`).join(', ') : 'нет данных'}</dd></div>
+        <div><dt>Пограничные примеры (SW)</dt><dd>{c.boundary.length ? c.boundary.slice(0, 2).map(x => `${short(x.ti)} (SW ${num(x.sw, 2)})`).join(', ') : 'нет данных'}</dd></div>
         {(card?.coverage_note || coverage) && <div><dt>Контекст 2024</dt><dd>{card?.coverage_note ?? `${coverage!.covered_n} из ${c.size} МО; показатели относятся только к территориям с доступным годовым контекстом.`}</dd></div>}
       </dl>
       {card?.short_limit && <p className="note !m-0">{displaySpendingText(card.short_limit)}</p>}
@@ -77,7 +77,7 @@ export function Groups() {
   const { mi, setMi, config } = useView()
   return (
     <Sec id="groups" n="10" className="cv" title="Чем различаются расходные профили?"
-      answer={<>Показаны все группы выбранного метода и месяца: подробные NCut10, сравнение SSE10 или самостоятельный укрупнённый SSE6. Медианы описывают состав расходов; единую функцию экономики территории они не устанавливают.</>}>
+      answer={<>Сравните характерные расходы групп, разброс значений и примеры территорий. NCut10 даёт подробные профили, SSE6 — укрупнённый обзор, SSE10 — сравнение методов при одинаковом числе групп.</>}>
       <div className="flex flex-wrap items-center gap-3" role="group" aria-label="Месяц портретов">
         <button type="button" className="step-btn" aria-label="Предыдущий месяц" disabled={mi === 0} onClick={() => setMi(Math.max(0, mi - 1))}><ChevronLeft className="size-4" aria-hidden /></button>
         <span className="grp-month" aria-live="polite">{monthLabel(MONTHS[mi].month)}</span>

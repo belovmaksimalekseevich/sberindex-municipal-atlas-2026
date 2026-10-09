@@ -75,7 +75,7 @@ export const catalogOf = (id: string) => base.catalog.find(c => c.config_id === 
 /** Обязательная подпись охвата на каждом экране. */
 // Статус относится к принятому национальному описательному расчёту, а не к конкурсной подаче или публикации.
 export const monthsCount = (n: number) => `${n} ${n % 10 === 1 && n % 100 !== 11 ? 'месяц' : [2, 3, 4].includes(n % 10) && ![12, 13, 14].includes(n % 100) ? 'месяца' : 'месяцев'}`
-export const SCOPE_NOTE = `Реальные данные: ${T.length.toLocaleString('ru-RU')} ID, ${monthsCount(MONTHS.length)}. Принятый национальный описательный расчёт расходов; универсальные экономические типы и причинность не установлены.`
+export const SCOPE_NOTE = `Данные СберИндекса: ${T.length.toLocaleString('ru-RU')} территорий за ${monthsCount(MONTHS.length)}. Для каждого месяца показаны доступные наблюдения; отсутствие публикации не означает нулевые расходы.`
 
 // ---- загрузка вариантов: кэш + подписка, без повторных запросов
 type Entry = { state: 'ready'; data: ConfigMonth[] } | { state: 'loading' } | { state: 'error'; message: string }

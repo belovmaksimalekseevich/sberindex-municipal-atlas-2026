@@ -10,8 +10,8 @@ import { goTo, STRIP } from './navigation'
 
 
 /** Короткая подпись охвата в шапке: видна на любом экране, полная — во всплывающей подсказке и в меню. */
-const SCOPE_SHORT = `${T.length.toLocaleString('ru-RU')} территорий · ${MONTHS.length} мес. · проверенные расходные профили`
-const SCOPE_XS = 'описательная типология расходов · 2023–2024'
+const SCOPE_SHORT = `${T.length.toLocaleString('ru-RU')} территорий · ${MONTHS.length} мес. · сравнение расходов`
+const SCOPE_XS = 'расходные профили · 2023–2024'
 const GROUPS = [
   { title: 'Подробное представление', items: base.catalog.filter(c => c.config_id === 'NCut_K10') },
   { title: 'Сравнение и укрупнение', items: base.catalog.filter(c => c.fit_method === 'SSE') },
@@ -98,7 +98,7 @@ export function ResetLink() {
   if (config === LEAD) return null
   return (
     <button onClick={() => startTransition(() => setConfig(LEAD))} className="hidden shrink-0 text-[13px] underline decoration-line underline-offset-4 hover:decoration-ink xl:inline">
-      вернуть выбранный исследованием
+      вернуть основной обзор
     </button>
   )
 }
@@ -120,7 +120,7 @@ export function VariantPicker() {
           <ViewTransition key={config} enter="name-in" exit="name-out" default="none">
             <span className="min-w-0 truncate font-medium"><span className="sm:hidden">{shortOf(config)}</span><span className="max-sm:hidden">{cur.display_name}</span></span>
           </ViewTransition>
-          {config === LEAD && <span className="hidden shrink-0 rounded-full bg-ink px-2 py-0.5 text-[11px] leading-4 text-paper md:inline">выбран исследованием</span>}
+          {config === LEAD && <span className="hidden shrink-0 rounded-full bg-ink px-2 py-0.5 text-[11px] leading-4 text-paper md:inline">основной обзор</span>}
           <ChevronDown aria-hidden strokeWidth={1.75} className="ml-auto size-4 shrink-0 text-muted-ink transition-transform duration-200 group-aria-expanded:rotate-180" />
         </button>
       </PopoverTrigger>
@@ -136,7 +136,7 @@ export function VariantPicker() {
                       onSelect={() => { setOpen(false); startTransition(() => setConfig(c.config_id)) }} className="items-start gap-3 rounded-md px-3 py-2.5">
                       <span className="min-w-0 flex-1">
                         <span className="flex flex-wrap items-center gap-x-2 gap-y-1 font-medium">{c.display_name}
-                          {c.config_id === LEAD && <span className="rounded-full bg-ink px-2 py-0.5 text-[11px] leading-4 font-normal text-paper">выбран исследованием</span>}
+                          {c.config_id === LEAD && <span className="rounded-full bg-ink px-2 py-0.5 text-[11px] leading-4 font-normal text-paper">основной обзор</span>}
                         </span>
                         <span className="block text-[13px] text-muted-ink">{hintOf(c.config_id)}</span>
                       </span>
@@ -147,7 +147,7 @@ export function VariantPicker() {
             ))}
           </CommandList>
           <p className="border-t border-line px-4 py-3 text-[12px] leading-snug text-muted-ink">
-            Выбор обновляет атлас, паспорт, сеть и метрики. Рёбра общей сети остаются теми же; меняются группы. Вступительная история отдельно показывает NCut10 за декабрь 2024. Основной вариант — описательный выбор, а не победитель по всем метрикам.
+            Выбор обновляет атлас, паспорт, сеть и метрики. Рёбра общей сети остаются теми же; меняются группы. Вступительная история отдельно показывает NCut10 за декабрь 2024. Сильные стороны каждого варианта описаны в разделе сравнения методов.
           </p>
         </Command>
       </PopoverContent>
