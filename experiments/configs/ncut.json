@@ -1,0 +1,19 @@
+{
+  "schema": "municipal-experiment-v1",
+  "month": "2024-12",
+  "method": "NCut",
+  "K": 6,
+  "seeds": [
+    1000003
+  ],
+  "graph": {
+    "kind": "union",
+    "k": 15,
+    "sigma": 1.0,
+    "radius": null
+  },
+  "optimizer": {
+    "max_iterations": 300
+  },
+  "threads": 1
+}

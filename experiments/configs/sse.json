@@ -1,0 +1,14 @@
+{
+  "schema": "municipal-experiment-v1",
+  "month": "2024-12",
+  "method": "SSE",
+  "K": 6,
+  "seeds": [
+    1000003
+  ],
+  "graph": null,
+  "optimizer": {
+    "max_iterations": 300
+  },
+  "threads": 1
+}
