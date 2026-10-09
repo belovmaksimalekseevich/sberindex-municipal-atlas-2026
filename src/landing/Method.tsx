@@ -19,7 +19,7 @@ export function Method() {
   return <Sec id="method" n="14" className="cv" title="Шесть шагов от данных до смысла"
     answer={<>От наблюдаемых расходов — к динамической сети близости, подробным группам и проверяемому укрупнению. Это описательная кластеризация; прогноз, причинность и универсальные экономические функции не установлены.</>}>
     <ol className="steps">{steps.map((step, i) => <li key={step.title}><span className="st-n" aria-hidden>{String(i + 1).padStart(2, '0')}</span><h3>{step.title}</h3><p>{step.text}</p>{step.formula && <code className="f">{step.formula}</code>}</li>)}</ol>
-    <p className="note !m-0 flex flex-wrap items-center gap-3"><a className="pbtn pbtn-sm" href={REPO} target="_blank" rel="noreferrer">Репозиторий проекта ↗</a><span>Интерфейс читает сохранённые результаты. Смена месяца или представления не запускает обучение.</span></p>
+    <p className="note document-downloads !m-0 flex flex-wrap items-center gap-3"><a className="pbtn pbtn-sm" href={REPO} target="_blank" rel="noreferrer">Репозиторий проекта ↗</a><a className="pbtn pbtn-sm" href={`${import.meta.env.BASE_URL}docs/report.pdf`} download>Отчёт PDF ↓</a><a className="pbtn pbtn-sm" href={`${import.meta.env.BASE_URL}docs/presentation.pdf`} download>Презентация PDF ↓</a><span>Интерфейс читает сохранённые результаты. Смена месяца или представления не запускает обучение.</span></p>
   </Sec>
 }
 

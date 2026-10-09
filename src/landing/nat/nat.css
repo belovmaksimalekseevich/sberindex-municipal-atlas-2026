@@ -892,6 +892,7 @@ body { margin: 0; }
 .p2 .steps > li { grid-template-columns: auto minmax(0, 1fr); column-gap: 8px; align-items: center; }
 .p2 .steps > li > p, .p2 .steps > li > .f { grid-column: 1 / -1; }
 .p2 #method > .note, .p2 #method .note { flex-wrap: nowrap; }
+.p2 #method .note.document-downloads { flex-wrap: wrap; }
 .story-dots { display: none !important; }
 .story.scene .net-ctl { position: static; margin-top: 8px; width: max-content; max-width: 100%; flex-wrap: wrap; box-shadow: none; }
 .p2 .story-sec .story-fig { align-items: flex-start; }

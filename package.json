@@ -14,6 +14,7 @@
     "site:preview": "npm run preview",
     "verify:data": "node scripts/verify-data.mjs",
     "verify:dist": "node scripts/verify-data.mjs --dist",
+    "verify:documents": "node scripts/verify-documents.mjs",
     "test:runtime": "node scripts/verify-runtime-faults.cjs"
   },
   "dependencies": {

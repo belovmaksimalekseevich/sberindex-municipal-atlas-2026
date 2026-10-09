@@ -30,6 +30,7 @@ jobs:
       - run: npm run test:runtime
       - run: npm run build
       - run: npm run verify:dist
+      - run: npm run verify:documents -- --dist
       - run: touch dist/.nojekyll
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
